@@ -99,7 +99,7 @@
 \providecommand{\ord}{\operatorname{ord}}
 \providecommand{\ind}{\operatorname{ind}}
 \providecommand{\abs}[1]{\left|#1\right|}
-\providecommand{\sect}[2]{\section*{\S.\,#1. #2}}
+\providecommand{\sect}[2]{\section*{\S~#1. #2}}
 \providecommand{\frp}{\mathfrak p}
 \providecommand{\frP}{\mathfrak P}
 \providecommand{\frG}{\mathfrak G}
@@ -107,9 +107,458 @@
 \providecommand{\frB}{\mathfrak B}
 
 \begin{document}
-\section*{Gordan--Kerschensteiner, Vorlesungen über Invariantentheorie --- Zweiter Band: Binäre Formen}
-\noindent\textit{Vollständiger erster deutscher Transkriptionsdurchgang der erfassten Blätter; ausdrückliche Unsicherheiten bleiben; keine kanonische Neukollation.}\par\bigskip
+\pagenumbering{roman}
+% ===== front matter: title page, Vorwort, Inhaltsverzeichniss (GDZ PPN588632678, pdf idx 3-14) =====
+% Diplomatic transcription checked against the scan. Page starts carry a PRINTED marker (roman page number)
+% where the page shows its number, a SCAN marker (pdf index) where it does not. Misprints are kept as printed
+% and flagged by a sic comment at the line end.
+% Not transcribed: pdf idx 1 = printed paper wrapper, repeating the title page (handwritten accession number
+% "1887. 2466."); pdf idx 2 = publisher's advertisement "Neuer Verlag von B. G. Teubner in Leipzig. 1886. 1887.".
+%
+% !SCAN 3
+% title page (page I by the pagination; no number printed)
+\thispagestyle{empty}
+\begin{center}
+\vspace*{1.5\baselineskip}
+{\large D\textsc{r}. PAUL GORDAN'S VORLESUNGEN}\\[1.1em]
+{\scriptsize ÜBER}\\[1.1em]
+{\LARGE INVARIANTENTHEORIE.}\\[1.5em]
+\rule{3em}{0.4pt}\\[1.5em]
+{\small HERAUSGEGEBEN}\\[0.9em]
+{\scriptsize\bfseries VON}\\[0.9em]
+{\bfseries D{\footnotesize R}. GEORG KERSCHENSTEINER.}\\[1.5em]% "Dr." with small capital R as in the line above (no bold small caps in Latin Modern)
+\rule{3em}{0.4pt}\\[1.5em]
+{\small ZWEITER BAND:}\\[0.7em]
+\gesperrt{BINÄRE FORMEN.}
+\vfill
+% printer's mark: Teubner monogram (the letters B, G and T interlaced); not reproduced
+\vfill
+\gesperrt{LEIPZIG,}\\[0.5em]
+{\scriptsize\bfseries\gesperrt{DRUCK UND VERLAG VON B. G. TEUBNER.}}\\[0.5em]
+1887.
+\end{center}
+% !SCAN 4
+% verso of the title page (page II): no printed text; only the library stamp
+% "EX BIBLIOTHECA REGIA ACADEM. GEORGIAE AUG."
+\clearpage
 
+% !SCAN 5
+% Vorwort, first page (page III by the pagination; no number printed)
+\begin{center}
+{\large\gesperrt{Vorwort.}}\\[0.4em]
+\rule{2.5em}{0.4pt}
+\end{center}
+
+Ueber die Stellung dieser Vorlesungen zu den bisher in deutscher Sprache erschienenen Invariantenwerken, sowie über den Inhalt und die Ziele der vorliegenden Bearbeitung, habe ich mich bereits im ersten Bande ausgesprochen. Doch dürfte ich vielleicht das Eine nochmals betonen, dass es der Gordan'sche Satz von der Endlichkeit des Formensystemes ist, auf dem das ganze Werk seine Grundlage findet. Diese einheitliche Basis habe ich stets beizubehalten gesucht, wenn ich auch in der Bearbeitung mir grundsätzliche Aenderungen in der Anordnung, Systematisirung und Gliederung des Stoffes erlaubte, wozu mich mancherlei Gründe veranlassten.
+
+Wer es je unternommen hat, in ein so abstractes Gebiet wie die Theorie der Invarianten tiefer einzudringen, ein Gebiet, das manchmal durch die Sprödigkeit seiner Materie einer anziehenden Darstellung nicht unwesentliche Schwierigkeiten bereitet, der hat vielleicht lebhafter als sonst das Bedürfniss empfunden, die wesentlichen Methoden und deren Tragweite und innern Zusammenhang rasch zu erkennen. Und wer bereits auf dem Gebiete heimisch war, der mochte von einem neuen Werke insbesondere Klarheit über das Wachsthum der einzelnen Theile und über die Gestaltung der Grenzen fordern, bis zu welchen die Forschung in diesen Theilen neuerdings gedrungen ist. Beiden Bedürfnissen suchte ich gerecht zu werden.
+
+Dementsprechend fasste ich die Processe für invariante Bildungen zu einer ersten in sich abgeschlossenen Gruppe, die Untersuchungen über die Formen zweiter, dritter und vierter Ordnung zu einer zweiten, und die, insbesondere auf Grund des oben erwähnten Fundamentalsatzes sich entwickelnden Theorien, zu einer dritten Gruppe zusammen.
+
+Ich leugne nicht, dass hiebei vielleicht der erste Theil stellenweise grössere Schwierigkeiten dem Studium bieten mag als der zweite, oder selbst der dritte, und gebe zu, dass der lebendige Vortrag des Lehrers vielleicht mit den quadratischen Formen beginnen und, in concentrischen Kreisen sich ausbreitend, an den geeigneten Stellen
+% foot of page III: sheet signature "a*" (not transcribed)
+% !PRINTED IV
+% (pdf idx 6; running head "IV  Vorwort.")
+allmählich die allgemeinen Theorien entwickeln wird. Allein das Lehrbuch gestattet, verwandte Theile ein und desselben Gebietes nicht bloss \gesperrt{nach einander}, sondern auch \gesperrt{neben einander} zu durchforschen, und insbesondere kann hier das Studium des zweiten Theiles Hand in Hand gehen mit dem des ersten, sobald nur für die einfacheren Fälle die Grundprocesse verstanden sind. Uebrigens habe ich in mannigfachen Beispielen und Anwendungen an jeder Stelle die Theorie vorzubereiten oder doch wenigstens nachträglich zu erläutern gesucht.
+
+Für mich aber war die enge Verwandtschaft, welche zwischen den Processen der Invariantenbildung besteht, zu wichtig, als dass ich unter Zerstörung des Bildes von ihrem innern Zusammenhange sie räumlich trennen durfte. Denn nur dadurch wird die jeder Theorie und jeder Methode zukommende Bedeutung weder über- noch unterschätzt, dass sie den verwandten Theorien und Methoden entgegengestellt ist. So erscheint hier alsdann der \gesperrt{Faltungsprocess} als die Fundamentaloperation, aus der sowohl der Ueberschiebungs- als der Omegaprocess, den ich als Ueberschiebungsprocess für Formen \gesperrt{mehrerer} Reihen Variabler bezeichnen möchte, sich zusammensetzen; so zeigt sich der Aronhold'sche Process als ein Polarenprocess, nur dass Coefficienten und Variable ihre Bedeutung als solche im Momente der Anwendung des Processes vertauscht haben.
+
+Indem ich aber so die Processe für invariante Bildungen im Zusammenhange darstellte, gewannen auch die andern Theile an innerer Einheit, so dass ich, um nur einige Beispiele hervorzuheben, die vollständige Theorie der quadratischen Formen, soweit sie gegenwärtig bekannt ist, in einem Zuge erledigen konnte, und der Beweis von der Endlichkeit des Formensystemes nunmehr ohne fremdartige Zwischensätze in knapper und prägnanter Weise sich darstellen liess. Bei aller Freiheit der Darstellung habe ich mich indess stets auf den von Gordan selbst gebotenen Inhalt beschränkt mit wenigen Ausnahmen, die sich auf die allerneuesten Arbeiten anderer Forscher beziehen. So möge denn diese Arbeit als ein getreues Spiegelbild seiner Vorlesungen und einschlägigen Arbeiten vor die mathematische Welt treten. Möge sie im Gegensatze zu dem Zuge nach \gesperrt{Verallgemeinerung}, der sie gegenwärtig zu durchziehen scheint, durch die hier gebotenen mannigfachen neuen Resultate auf bekanntem Gebiete auch die Lust zur \gesperrt{Vertiefung} einer Disciplin wieder stärker beleben.
+
+\gesperrt{Nürnberg} im Juli 1887.
+
+\noindent\hfill\textbf{Georg Kerschensteiner.}
+
+\clearpage
+% !SCAN 7
+% Inhaltsverzeichniss, first page (page V by the pagination; no number printed). The print's dot leaders are
+% not reproduced; the "Absatz ... Seite" heading, printed at the top of every page, is the longtable head.
+\begin{center}
+{\large\bfseries Inhaltsverzeichniss.}\\[0.4em]
+\rule{2.5em}{0.4pt}\\[1.2em]
+{\large\gesperrt{Erster Theil.}}\\[0.5em]
+{\bfseries Processe für invariante Bildungen.}\\[0.6em]
+\S~1. \gesperrt{Lineare Transformation und Faltungsprocess.}
+\end{center}
+{\small
+% contents rows: Absatz number & title, ending in the page number set flush right on its last line;
+% continuation lines are indented as in the print (the two helper macros are local to this group)
+\newcommand{\InhSeite}[1]{\nobreak\hfill\nobreak\makebox[2.2em][r]{#1}}
+\newcommand{\InhZeile}{\rightskip=2.6em plus 1fil\relax\parfillskip=-2.6em plus -1fil\relax%
+  \hangindent=1.5em\relax\hangafter=1\relax}
+\begin{longtable}{@{}>{\raggedleft}p{3.9em}@{\hspace{0.7em}}>{\InhZeile}p{\dimexpr\linewidth-4.6em\relax}@{}}
+\multicolumn{2}{@{}l@{}}{\scriptsize Absatz\hfill Seite}\\
+\endfirsthead
+\multicolumn{2}{@{}l@{}}{\scriptsize Absatz\hfill Seite}\\
+\endhead
+1--2. & Einführung der Symbolik\InhSeite{1}\\
+3. & Lineare Transformation\InhSeite{3}\\
+4. & Cogredienz und Contragredienz\InhSeite{4}\\
+5. & Definition der Invarianten\InhSeite{5}\\
+6. & Definition der Covarianten\InhSeite{6}\\
+7. & Beispiele simultaner Invarianten und Covarianten\InhSeite{7}\\
+8. & Eigenschaften der In- und Covarianten, die sich aus dem symbolischen Producte direct erkennen lassen\InhSeite{8}\\
+9. & Definition des Faltungsprocesses\InhSeite{10}\\
+10. & Zusammenhang der durch Faltung entstehenden Producte\InhSeite{11}\\
+11. & Identitäts- und Productsatz\InhSeite{12}\\
+12. & Ein Beispiel symbolischer Rechnung\InhSeite{14}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~2. \gesperrt{Process der Polarenbildung.}}\\*
+\noalign{\smallskip}
+13. & Definition der Polare einfacher Formen\InhSeite{17}\\
+14--19. & Unsymbolische Methoden für den Polarenprocess\InhSeite{18}\\
+20. & Der Omegaprocess\InhSeite{22}\\
+21--23. & Polaren eines Productes von Formen\InhSeite{24}\\
+24--25. & Benachbarte Glieder von Polaren eines Productes von zwei Formen\InhSeite{25}\\
+26--27. & Beispiele\InhSeite{27}\\
+28. & Unsymbolische Methode für den Polarenprocess bei mehr als zwei Formen\InhSeite{30}\\
+29. & Beispiele\InhSeite{30}\\
+30. & Benachbarte Glieder von Polaren eines Productes von mehr als zwei Formen\InhSeite{31}\\ % page number 31 partly blotted in the scan
+31. & Polaren mit mehr als zwei Reihen cogredienter Variabler\InhSeite{32}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~3. \gesperrt{Ueberschiebungsprocess.}}\\*
+\noalign{\smallskip}
+32. & Definition\InhSeite{33}\\
+33. & Der Omegaprocess und die Ueberschiebung\InhSeite{34}\\
+34. & Ueberschiebung der Polaren zweier Formen\InhSeite{35}\\
+35. & Unsymbolische Darstellung der Ueberschiebung zweier Formen\InhSeite{35}\\
+36--37. & Beispiele\InhSeite{37}\\
+% !PRINTED VI
+% (pdf idx 8)
+38. & Ueberschiebung von Producten\InhSeite{39}\\
+39. & Beispiele\InhSeite{40}\\
+40--41. & Ueberschiebung der Polaren von Producten von Formen\InhSeite{41}\\
+42--43. & Benachbarte Glieder\InhSeite{43}\\
+44. & Differenz der Ueberschiebung und eines Gliedes\InhSeite{47}\\
+45--46. & Darstellung eines symbolischen Productes als Summe von Ueberschiebungen\InhSeite{48}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~4. \gesperrt{Die einfachsten Ueberschiebungen.}}\\*
+\noalign{\smallskip}
+47--48. & Die Functionaldeterminante zweier Formen\InhSeite{50}\\
+49. & Die Functionaldeterminante der zweiten Polaren dreier Formen\InhSeite{53}\\
+50. & Relation zwischen drei und vier binären Formen\InhSeite{54}\\
+51. & Die Functionaldeterminante $(f, \varphi)$ und die erste Polare $(f\cdot\varphi)_y$\InhSeite{55}\\
+52--53. & Functionaldeterminanten von Functionaldeterminanten\InhSeite{56}\\
+54--55. & Die Hesse'sche Covariante\InhSeite{58}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~5. \gesperrt{Der Aronhold'sche Process.}}\\*
+\noalign{\smallskip}
+56--57. & Definition des Aronhold'schen Processes bei unabhängigen Formen\InhSeite{60}\\
+58--59. & Beispiele\InhSeite{62}\\
+60--61 & Darstellung des A. Processes an einem symbolischen Product\InhSeite{64}\\ % [sic] no full stop after the number 60--61
+62. & Aronhold'scher Process, wenn $f$ und $\varphi$ covariant sind\InhSeite{66}\\
+63--64. & Beispiel\InhSeite{68}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~6. \gesperrt{Combinanten.}}\\*
+\noalign{\smallskip}
+65. & Definition der Combinante\InhSeite{70}\\
+66. & Combinanten eines Systemes unabhängiger Formen\InhSeite{70}\\
+67. & Beispiel\InhSeite{71}\\
+68. & Ueber eine formale Eigenschaft der Combinanten\InhSeite{72}\\
+69. & Combinanten abhängiger Formen\InhSeite{73}\\
+70--73. & Beweise für deren Combinanteneigenschaft $J_{f+\lambda\varphi} = u\,i$\InhSeite{75}\\ % the dot of the i is not visible in the scan (light impression); no sign is visible between u and i (the text, Nr. 72, has J = u . i)
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~7. \gesperrt{Process der Reihenentwicklung.}}\\*
+\noalign{\smallskip}
+74. & Symbolische Darstellung von Formen $F$ mit zwei Reihen Variabler\InhSeite{78}\\
+75. & Die Elementarcovarianten von $F$.\InhSeite{80}\\ % full stop set directly after F, before the leaders
+76. & Zusammenhang von $F$ mit den Elementarcovarianten\InhSeite{81}\\
+77--81. & Reihenentwicklung von $F$ nach Potenzen von $(xy)$\InhSeite{81}\\
+82. & Beispiele\InhSeite{86}\\
+83--84. & Verallgemeinerung der Reihenentwicklung\InhSeite{87}\\
+85. & Alternirende und symmetrische Formen\InhSeite{88}\\
+86--87. & Umkehrung der Reihe\InhSeite{89}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~8. \gesperrt{Anwendungen des Processes der Reihenentwicklung.}}\\*
+\noalign{\smallskip}
+88. & Zweck der Reihenentwicklung\InhSeite{90}\\
+89. & Ueberschiebungen der Form $f = a_x^4$ über ihre Covariante $\Delta = (ab)^2\,a_x^2\,b_x^2$\InhSeite{91}\\
+90--92. & Die aszygetischen Covarianten dritten Grades in den Coefficienten von $f = a_x^5$\InhSeite{93}\\
+93. & Reciprocitätssatz von Hermite\InhSeite{97}\\
+94--97. & Darstellung einer in den Wurzeln von $\varphi = A_x^m$ ausgedrückten Covariante durch ein symbolisches Product\InhSeite{98}\\
+% !PRINTED VII
+% (pdf idx 9)
+98. & Ueber eine Eigenschaft gewisser Covarianten dritten Grades in den Coefficienten von $f = a_x^m$\InhSeite{105}\\ % exponent m as printed (the heading of Nr. 98 in the text has a_x^n)
+99. & Ueber die Cayley'sche resp. Bézout'sche Methode der Discriminantenbildung\InhSeite{108}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~9. \gesperrt{Beweis, dass jede In- und Covariante durch ein}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{symbolisches Product darstellbar ist.}}\\*
+\noalign{\smallskip}
+100. & Formulirung der Aufgabe für binäre Formen\InhSeite{110}\\
+101. & Umformung der Definitionsgleichung einer Invariante\InhSeite{111}\\
+102. & Erster Beweis.\InhSeite{112}\\ % full stop set directly after Beweis, before the leaders
+103. & Zweiter Beweis\InhSeite{113}\\
+104--106. & Verallgemeinerung des zweiten Beweises\InhSeite{114}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~10. \gesperrt{Partielle Differentialgleichungen für}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{In- und Covarianten.}}\\*
+\noalign{\smallskip}
+107. & Aufstellung der Differentialgleichungen, denen die Invariante $i$ einer einzigen Form genügt\InhSeite{119}\\
+108. & Das System von Differentialgleichungen ist vollständig\InhSeite{122}\\
+109--110. & Differentialgleichungen für simultane Co- und Invarianten\InhSeite{123}\\
+111. & Begriff der Evectante\InhSeite{127}\\
+112. & Beispiel\InhSeite{127}\\
+113. & Symbolische Darstellung des Evectantenprocesses\InhSeite{128}\\
+114. & Umformung der Differentialgleichungen\InhSeite{128}\\
+115. & Evectanten von Combinanten\InhSeite{129}\\
+116. & Zweite Methode zur Aufstellung der Differentialgleichungen\InhSeite{130}\\
+117. & Ueber eine Anwendung des Evectantenprocesses\InhSeite{132}\\
+\noalign{\bigskip}
+\multicolumn{2}{@{}c@{}}{\large\gesperrt{Zweiter Theil.}}\\*
+\noalign{\smallskip}
+\multicolumn{2}{@{}c@{}}{\bfseries Die Formen zweiten, dritten und vierten Grades.}\\*
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~11. \gesperrt{Die Form zweiten Grades: System einer und zweier}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{simultaner Formen.}}\\*
+\noalign{\smallskip}
+118. & Ueberblick über die folgenden Untersuchungen\InhSeite{135}\\
+119. & System einer quadratischen Form\InhSeite{136}\\
+120. & Auflösung der quadratischen Gleichung\InhSeite{137}\\
+121. & Discriminante der quadratischen Form\InhSeite{138}\\
+122--126. & Aufstellung des simultanen Systemes zweier quadratischer Formen\InhSeite{138}\\
+127. & Tabelle der Relationen zwischen den Formen dieses Systemes\InhSeite{143}\\
+128. & Bedingung, dass zwei quadratische Formen einander proportional\InhSeite{143}\\
+129. & Bedingung, dass zwei quadratische Formen einen gemeinsamen linearen Factor haben\InhSeite{144}\\
+130. & Kanonische Form zweier simultaner quadratischer Formen\InhSeite{145}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~12. \gesperrt{Die Formen zweiten Grades: System dreier}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{und mehr simultaner Formen.}}\\*
+\noalign{\smallskip}
+131--133. & Das simultane System dreier quadratischer Formen\InhSeite{147}\\
+134--135. & Relationen zwischen den Formen des Systemes\InhSeite{151}\\
+136. & Das simultane System von $n$ quadratischen Formen\InhSeite{155}\\
+% !PRINTED VIII
+% (pdf idx 10)
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~13. \gesperrt{Specielle quadratische Formen.}}\\*
+\noalign{\smallskip}
+137. & Conjugirte quadratische Formen\InhSeite{156}\\
+138. & Kanonische Form dreier conjugirter Formen (Octaeder)\InhSeite{156}\\
+139--141. & Die vier quadratischen Formen des Würfels\InhSeite{158}\\
+142. & a) Relationen zwischen den vier Formen\InhSeite{161}\\
+ & b) Die sechs quadratischen Formen des Ikosaeders\InhSeite{163}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~14. \gesperrt{Die Form dritten Grades.}}\\*
+\noalign{\smallskip}
+143. & Einleitende Bemerkungen\InhSeite{167}\\
+144--147. & Die Reducenten dieses Systemes\InhSeite{168}\\
+148. & Tabelle der Formen des Systemes und der Werthe ihrer Ueberschiebungen\InhSeite{172}\\
+149. & Das Formensystem von $Q + \lambda f$\InhSeite{173}\\
+150. & Beispiele\InhSeite{173}\\
+151. & Die Discriminante\InhSeite{174}\\
+152--154. & Auflösung cubischer Gleichungen\InhSeite{175}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~15. \gesperrt{Das Formensystem der Form vierten Grades.}}\\* % the 5 of 15 is blotted in the scan
+\noalign{\smallskip}
+155. & Die fundamentalen In- und Covarianten\InhSeite{178}\\
+156--161. & Beweis der Endlichkeit dieses Systemes von Covarianten\InhSeite{179}\\
+162. & Die Fundamentalrelation zwischen den fünf Formen des Systemes\InhSeite{182}\\
+163--168. & Die Ueberschiebungen von $t$ über sich selbst und über $f$ und $\Delta$\InhSeite{183}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~16. \gesperrt{Anwendung des Aronhold'schen Processes auf}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{das Formensystem der Form vierten Grades.}}\\*
+\noalign{\smallskip}
+169. & Wirkung des Processes auf die Grundformen\InhSeite{186}\\
+170. & Die Combinanten von $\varphi = kf + \lambda\Delta$\InhSeite{188}\\
+171. & Berechnung von $\Delta_\varphi$\InhSeite{188}\\
+172. & Berechnung von $i_\varphi$ und $j_\varphi$\InhSeite{189}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~17. \gesperrt{Die Gleichung vierten Grades.}}\\*
+\noalign{\smallskip}
+173. & Die Discriminante\InhSeite{191}\\
+174--175. & Die Cayley'sche Auflösung der Gleichung vierten Grades\InhSeite{192}\\
+176. & Bedingung, dass $f = a_x^4 = 0$ drei gleiche Wurzeln hat\InhSeite{195}\\
+177. & Bedingung, dass $f = a_x^4 = 0$ ein vollständiges Quadrat ist\InhSeite{196}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~18. \gesperrt{Normalform von} $f = a_x^4$\gesperrt{; Transformation in}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{die Normalform.}}\\*
+\noalign{\smallskip}
+178. & Formensystem der Normalform\InhSeite{198}\\
+179. & Transformation in die Normalform $x_1^4 + 6\,m\,x_1^2x_2^2 + x_2^2$\InhSeite{199}\\ % [sic] last exponent 2 as printed; the normal form is x_1^4 + 6m x_1^2 x_2^2 + x_2^4 (text, Nr. 178)
+180. & Berechnung des Parameters $m$ der Normalform\InhSeite{200}\\
+181. & Berechnung des Moduls der Transformation aus dem Parameter $m$\InhSeite{201}\\
+182. & Rationale Transformation der biquadratischen Form\InhSeite{202}\\
+183. & Das Doppelverhältniss der vier Wurzeln von $a_x^4 = 0$\InhSeite{203}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~19. \gesperrt{Ueber die Formen, für welche} $(f, f)^4 = 0$\gesperrt{.}}\\*
+\noalign{\smallskip}
+184. & Einleitende Bemerkungen\InhSeite{204}\\
+185. & Die Coefficientenrelationen, die aus $(f, f)^4 = 0$ hervorgehen\InhSeite{204}\\
+186--187. & Die Formen mit mehrfachen Wurzeln\InhSeite{206}\\
+% !PRINTED IX
+% (pdf idx 11)
+188. & Die Formen $f$ ohne mehrfache Wurzeln\InhSeite{209}\\
+189. & Die Formen des Tetraeders und Octaeders\InhSeite{210}\\
+190. & Die Ikosaederform\InhSeite{212}\\
+191. & Allgemeine Betrachtungen über reguläre Körper\InhSeite{213}\\
+192. & Octaederirrationalität\InhSeite{214}\\
+193. & Tetraederirrationalität\InhSeite{215}\\
+194. & Auflösung der Octaedergleichung\InhSeite{216}\\
+195. & Auflösung der Gleichung vierten Grades\InhSeite{217}\\
+\noalign{\bigskip}
+\multicolumn{2}{@{}c@{}}{\large\gesperrt{Dritter Theil.}}\\*
+\noalign{\smallskip}
+\multicolumn{2}{@{}c@{}}{\bfseries Systeme einzelner und simultaner Formen}\\*
+\multicolumn{2}{@{}c@{}}{\bfseries höheren Grades.}\\*
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~20. \gesperrt{Ueberschiebung von Systemen.}}\\*
+\noalign{\smallskip}
+196. & Begriff des Systemes im Allgemeinen\InhSeite{221}\\
+197--198. & Ueberschiebung zweier Systeme\InhSeite{221}\\
+199. & Lehrsatz über das System, welches durch Ueberschiebung zweier \gesperrt{endlichen} Systeme entsteht\InhSeite{223}\\
+200. & Begriff des vollständigen Systemes\InhSeite{224}\\
+201. & Lehrsatz über das System, welches durch Ueberschiebung zweier \gesperrt{vollständiger} Systeme entsteht\InhSeite{225}\\
+202. & Begriff des relativ vollständigen Systemes\InhSeite{227}\\
+203--204. & Zwei Lehrsätze über \gesperrt{relativ vollständige} Systeme\InhSeite{227}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~21. \gesperrt{Beweis für die Endlichkeit des Formensystemes}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{einer binären Form.}}\\*
+\noalign{\smallskip}
+205. & Gedankengang des Beweises\InhSeite{231}\\
+206. & Aufstellung der Hilfssysteme $(B^{(k)})$\InhSeite{232}\\
+207. & Eigenschaft derselben\InhSeite{233}\\
+208. & Zusammenfassung der Begriffe\InhSeite{235}\\
+209. & Beweis der Endlichkeit\InhSeite{235}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~22. \gesperrt{Das Formensystem der Form fünfter}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{Ordnung.}}\\*
+\noalign{\smallskip}
+210. & Aufstellung der Systeme $(A^{(k)})$ und $(B^{(k)})$\InhSeite{236}\\
+211--212. & Ueberschiebung derselben\InhSeite{237}\\
+213. & Tabelle der 23 Formen des Systemes\InhSeite{240}\\
+214. & Uebernommene Formen\InhSeite{241}\\
+215. & Definition der Form $j$\InhSeite{242}\\
+216--220. & Ersetzung der Formen des Systemes durch eines ihrer Glieder\InhSeite{243}\\
+221. & Tabelle der nunmehr für gewisse Formen des Systemes eingeführten symbolischen Producte\InhSeite{247}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~23. \gesperrt{Relationen zwischen den Formen des Systemes.}}\\*
+\noalign{\smallskip}
+222. & Die Quadrate der vier linearen Covarianten $\alpha$, $\beta$, $\gamma$, $\delta$\InhSeite{247}\\
+223. & Die sechs simultanen Invarianten $M$, $N$, $P$, $R$ etc.\ derselben\InhSeite{248}\\
+224. & Berechnung von $N$\InhSeite{249}\\
+% foot of page IX: sheet signature line "Gordan, Invarianten. II." and signature "a**" (not transcribed)
+% !PRINTED X
+% (pdf idx 12)
+225. & Beweis der Relation $(f, \tau)^2 = -\left\{\frac{2}{3}\,Aj + i\alpha\right\}$\InhSeite{249}\\
+226. & Berechnung von $M$\InhSeite{250}\\
+227. & Die Ueberschiebungen der quadratischen Formen $i$, $\tau$, $\vartheta$ übereinander\InhSeite{251}\\
+228. & Die Ueberschiebnngen von $\vartheta$ über $\alpha$, $\beta$, $\gamma$, $\delta$\InhSeite{252}\\ % [sic] Ueberschiebnngen (for Ueberschiebungen)
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~24. \gesperrt{Typische Darstellung der Form fünften Grades.}}\\*
+\noalign{\smallskip}
+229. & Begriff der typischen Darstellung\InhSeite{253}\\
+230. & Die Ueberschiebungen $(f, \alpha^\varrho)^\varrho$\InhSeite{254}\\
+231. & Berechnung der typischen Coefficienten\InhSeite{255}\\
+232. & Typische Darstellung der Form $j$\InhSeite{256}\\
+233. & Darstellung von $f = a_x^5$ durch drei fünfte Potenzen\InhSeite{257}\\
+234--235. & Typische Darstellung der Form $f$, wenn $C = 0$\InhSeite{258}\\
+236--237. & Die Invariante $C$ ist gleich der Resultante von $j$ und $i$\InhSeite{260}\\
+238. & Typische Darstellung von $f$, wenn $B = 0$\InhSeite{263}\\
+239. & Beweis des Hilfssatzes hiezu: $(f, \gamma) = \frac{3}{2}\,\tau^2 + B\cdot(f, j)^2$\InhSeite{263}\\
+240. & Berechnung der typischen Coefficienten, wenn $B = 0$\InhSeite{265}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~25. \gesperrt{Die Discriminante und Auflösung der Gleichung}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{fünften Grades.}}\\*
+\noalign{\smallskip}
+241--242. & Zwei Methoden zur Berechnung der Discriminante\InhSeite{266}\\
+243. & Auflösung specieller Gleichungen fünften Grades\InhSeite{269}\\
+244. & Erster Fall: $R = 0$, $M \gtrless 0$, $N \gtrless 0$\InhSeite{270}\\
+245--246. & Zweiter Fall: $R = 0$, $M = 0$, $N = 0$, also auch $\alpha = 0$\InhSeite{270}\\
+247. & Dritter Fall: $A = 0$, $B = 0$, $C = 0$, $\alpha = 0$, $j \gtrless 0$\InhSeite{273}\\
+248. & Vierter Fall: $B = 0$, $C = 0$, $\alpha = 0$, $j = 0$, $A \gtrless 0$\InhSeite{273}\\
+249. & Fünfter Fall: $A = 0$, $B = 0$, $C = 0$, $\alpha = 0$, $j = 0$\InhSeite{274}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~26. \gesperrt{Das Formensystem der Form sechsten Grades.}}\\*
+\noalign{\smallskip}
+250. & Aufstellung der Systeme $(A^{(i)})$ und $(B^{(i)})$\InhSeite{275}\\
+251. & Methode der Ueberschiebung derselben\InhSeite{275}\\
+252--257. & Die Reducenten\InhSeite{276}\\
+258. & Rückblick\InhSeite{279}\\
+259--260. & Ermittelung der Formen des vollständigen Systemes\InhSeite{280}\\
+261. & Tabelle der Formen des Systemes\InhSeite{283}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~27. \gesperrt{Relationen zwischen Formen des Systemes.}}\\*
+\noalign{\smallskip}
+262. & Einführung von Ueberschiebungsgliedern an Stelle der Ueberschiebungen\InhSeite{283}\\
+263. & Die sechs quadratischen Formen des Systemes\InhSeite{284}\\
+264. & Die fünf Invarianten des Systemes\InhSeite{286}\\
+265. & Die zweiten Ueberschiebungen von $\Delta$ und $k$ über die quadratischen Formen $l$, $m$, $n$\InhSeite{286}\\
+266. & Die Ueberschiebungen von $f$ über Producte von $l$, $m$, $n$\InhSeite{287}\\
+267. & Die Invarianten des simultanen Systemes $l$, $m$, $n$\InhSeite{290}\\
+268. & Die Relation für die schiefe Invariante\InhSeite{291}\\
+% !PRINTED XI
+% (pdf idx 13)
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~28. \gesperrt{Die Discriminante der Form sechsten Grades}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{und irrationale Relationen.}}\\*
+\noalign{\smallskip}
+269--271. & Berechnung der Discriminante\InhSeite{291}\\
+272. & Irrationale Relationen bei Combinanten\InhSeite{295}\\
+273--276. & Als Beispiel die Functionaldeterminante sechsten Grades zweier biquadratischer Formen $f$ und $\varphi$\InhSeite{296}\\
+277. & Schlussbemerkungen\InhSeite{301}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~29. \gesperrt{Typische Darstellung der Form sechsten Grades.}}\\*
+\noalign{\smallskip}
+278--280. & Typische Darstellung im allgemeinen Falle\InhSeite{302}\\
+281. & Der specielle Fall $R = 0$\InhSeite{304}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~30. \gesperrt{Auflösung specieller Gleichungen sechsten Grades.}}\\*
+\noalign{\smallskip}
+282. & Ueberblick\InhSeite{306}\\
+283. & Erster Fall: $R = 0$, $A_{\nu\nu} \gtrless 0$\InhSeite{307}\\
+284--292. & Zweiter Fall: $R = 0$, $A_{\nu\nu} = 0$\InhSeite{308}\\
+293. & Dritter Fall: $A = 0$, $C = 0$\InhSeite{318}\\
+294. & Vierter Fall: $B = \frac{7}{50}\,A^2$, $C = -\frac{9}{500}\,A^3$\InhSeite{319}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~31. \gesperrt{Simultanes System einer quadratischen}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{und cubischen Form.}}\\*
+\noalign{\smallskip}
+295. & Allgemeine Betrachtungen\InhSeite{320}\\
+296--299. & Aufstellung des simultanen Systemes von $f = a_x^2$ und $\varphi = \alpha_x^3$\InhSeite{321}\\
+300. & Einführung von Ueberschiebungsgliedern für die Formen des Systemes\InhSeite{323}\\
+301--303. & Relationen zwischen den Formen des Systemes\InhSeite{324}\\
+304. & Typische Darstellung: Allgemeiner Fall\InhSeite{327}\\
+305. & Typische Darstellung: Ausnahmefälle\InhSeite{328}\\
+306. & Resultante von $f$ und $\varphi$\InhSeite{329}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~32. \gesperrt{Simultanes System zweier cubischer Formen.}}\\*
+\noalign{\smallskip}
+307--309. & Aufstellung des Systemes\InhSeite{330}\\
+310--314. & Die linearen Formen $p$ und $\pi$ des Systemes\InhSeite{334}\\
+315. & Die biquadratische Covariante $\vartheta$\InhSeite{338}\\
+316. & Die cubischen und quadratischen Covarianten\InhSeite{339}\\
+317. & Die vier linearen Formen $(\Delta, p)$, $(\Delta, \pi)$, $(\nabla, p)$, $(\nabla, \pi)$\InhSeite{340}\\
+318. & Anderweitige lineare Formen\InhSeite{340}\\
+319. & Die Invarianten\InhSeite{342}\\
+320--321. & Die Invariantenrelation für $2\,\Omega^2$ und $\Omega\cdot J$\InhSeite{344}\\
+322. & Zusammenfassung\InhSeite{345}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~33. \gesperrt{Anwendungen des simultanen Systemes}}\\*
+\multicolumn{2}{@{}c@{}}{\gesperrt{zweier cubischer Formen.}}\\*
+\noalign{\smallskip}
+323. & Typische Darstellung der quadratischen Covarianten $\Delta$, $\Theta$, $\nabla$\InhSeite{346}\\
+324. & Die typischen Coefficienten von $f$ und $\varphi$\InhSeite{347}\\
+325--326. & Die typischen Darstellungen von $f$ und $\varphi$ sind gegeben durch die partiellen Differentialquotienten von $F = -8\,\Omega^3(f\pi + \varphi p)$\InhSeite{348}\\
+% !PRINTED XII
+% (pdf idx 14)
+327. & Die Resultante von $f$ und $\varphi$\InhSeite{350}\\
+328--331. & Fälle, in denen die typische Darstellung unmöglich ist\InhSeite{350}\\
+\noalign{\medskip}
+\multicolumn{2}{@{}c@{}}{\S~34. \gesperrt{Die Schwesterformen.}}\\*
+\noalign{\smallskip}
+332. & Einleitende Bemerkungen\InhSeite{354}\\
+333. & Jedes symbolische Product ist gleich einer rationalen Function von Covarianten, deren Nenner eine Potenz von $f$ ist\InhSeite{355}\\
+334. & Die Formen $\Psi_k = a_x^{n-k}(af)$ haben $f$ als Factor\InhSeite{356}\\
+335. & Definition der Schwesterformen $u_k$\InhSeite{357}\\
+336--337. & Stellung der Schwesterformen zum vollen System\InhSeite{358}\\
+\end{longtable}
+}
+\begin{center}
+\rule{4em}{0.4pt}
+\end{center}
+\clearpage
+
+\pagenumbering{arabic}
 % ===== pdf idx 15, printed 1.0 =====
 % !PRINTED 1
 \weberpage{1}
@@ -118,7 +567,7 @@
 \end{center}
 
 \begin{center}
-\textbf{Processse für invariante Bildungen.}
+\textbf{Processe für invariante Bildungen.}
 \end{center}
 
 \begin{center}
@@ -164,7 +613,7 @@ symbolisch darzustellen. Aus dem Ausdrucke $a_1{}^{2n-5}a_2{}^5$ lässt sich abe
 \overline{a_2}\cdot\overline{a_3} = a_1{}^{n-2}a_2{}^2\cdot b_1{}^{n-3}b_3 = c_1{}^{n-2}c_2\cdot d_1{}^{n-3}d_2{}^3 = \text{etc.}
 \]
 \[
-\overline{a_4}{}^3 = a_1{}^{n-4}a_2{}^4\cdot b_1{}^{n-4}b_2{}^4\ c_1{}^{n-4}c_2{}^4 = \text{etc.}\,, % ?? uncertain: printed spacing between b_2^4 and c_1^{n-4} shows no visible multiplication dot/comma; reproduced as printed
+\overline{a_4}{}^3 = a_1{}^{n-4}a_2{}^4\cdot b_1{}^{n-4}b_2{}^4\ c_1{}^{n-4}c_2{}^4 = \text{etc.}\,, % checked against the GDZ scan (27 Oct 2026): only a space between b_2^4 and c_1^{n-4}, no dot or comma
 \]
 hin und zurück nur auf eine Weise zu deuten, in welcher Vertauschung auch die symbolischen Factoren rechts auftreten. Die Form $f$ selbst ist alsdann durch jedes der symbolischen Producte
 \[
@@ -230,7 +679,7 @@ der Substitutionscoefficienten nennen wir den \glqq Modul\grqq{} der Transformat
 Setzt man hierin:
 \weq{II}{\left.\begin{aligned}
 \overline{a_0}\xi_1{}^2 + 2\overline{a_1}\xi_1\xi_2 + \overline{a_2}\xi_2{}^2 &= \overline{A_0} \\
-\overline{a_0}\xi_1y_1 + \overline{a_1}(\xi_2\eta_1+\xi_1\eta_2) + \overline{a_2}\xi_2\eta_2 &= \overline{A_1} % ?? uncertain: printed as xi_1 y_1 (not eta_1); reproduced as read, possibly a printed slip for xi_1 eta_1
+\overline{a_0}\xi_1y_1 + \overline{a_1}(\xi_2\eta_1+\xi_1\eta_2) + \overline{a_2}\xi_2\eta_2 &= \overline{A_1} % checked against the GDZ scan (27 Oct 2026): printed xi_1 y_1 with a Latin y (misprint for xi_1 eta_1); kept as printed
 \\
 \overline{a_0}\eta_1{}^2 + 2\overline{a_1}\eta_1\eta_2 + \overline{a_2}\eta_2{}^2 &= \overline{A_2}
 \end{aligned}\right\}}
@@ -782,7 +1231,7 @@ der Determinante
 \[
 \begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_x & b_x & c_x \end{vmatrix} ,
 \]
-% ?? uncertain: bottom-row entries blurred in scan; read as a_x, b_x, c_x
+die mit $x_1$ multiplicirt gedachte erste und die mit $x_2$ multiplicirt gedachte zweite Zeile von der dritten subtrahirt.% the footnote ends at the foot of p. 13 in the print; checked against the GDZ scan (27 Oct 2026): bottom row a_x, b_x, c_x; b_x and c_x are printed from broken type (faint c, broken x)
 %CONT>>
 
 
@@ -795,8 +1244,8 @@ $-d_1$ ersetzen, in der Form schreiben können
 
 \weq{II}{(ad)(bc) + (bd)(ca) + (cd)(ab) = 0,}
 
-oder auch, wenn wir in (I)% ?? uncertain: footnote anchor asterisk not visible on this crop; footnote text below is attached here as best guess
-\footnote{die mit $x_1$ multiplicirt gedachte erste und die mit $x_2$ multiplicirt gedachte zweite Zeile von der dritten subtrahirt.}
+oder auch, wenn wir in (I) % checked against the GDZ scan (27 Oct 2026): no footnote mark after (I); the two footnote lines at the foot of this page continue the footnote *) of p. 12 and are given with that footnote
+% (the end of the footnote of p. 12, printed at the foot of this page, is given with that footnote)
 für $c_1$ schreiben $y_2$, für $c_2$ dagegen $-y_1$,
 in der Form
 
@@ -834,7 +1283,7 @@ so dass, wenn $\varrho$ solche Factorenpaare vorhanden sind, $P$ übergeht in
 \[
 P = \frac{(ab)^{2\mu+1}}{2^\varrho}\{a_\xi b_\eta + b_\xi a_\eta\}\cdot
 \{a_\zeta b_\tau + b_\zeta a_\tau\}\ldots \times \overline{Q}
-+ \frac{(ab)^{2\mu+1}}{2^\varrho}\sum_i \overline{Q}_i.
++ \frac{(ab)^{2\mu+1}}{2^\varrho}\sum \overline{Q}_i.
 \]
 
 Der erste Term rechts ist Null, da er durch Vertauschung von $a$ mit
@@ -882,7 +1331,7 @@ aufheben, so umzuformen, dass sie die Gestalt
 annimmt, aus welcher das identische Verschwinden der Function $F(A_i)$
 direct ersichtlich ist. Die Möglichkeit dieser Umformung liegt in der
 Beziehung, welche vermöge des Identitätssatzes zwischen zwei Nachbargliedern
-der Function $F(A_i)$ besteht\footnote{Einen strengen Beweis der Relation (VI) wollen wir später bringen. (\S.\,10.)}. Sind nämlich $G_\lambda$ und $G_\mu$
+der Function $F(A_i)$ besteht\footnote{Einen strengen Beweis der Relation (VI) wollen wir später bringen. (\S~10.)}. Sind nämlich $G_\lambda$ und $G_\mu$
 zwei Nachbarglieder
 
 \[
@@ -1010,7 +1459,7 @@ Unter Benutzung der Gleichung (1) geht demnach die Relation (4)
 &{}\quad + \{(b\alpha)a_x + (\alpha a)b_x + (ab)\alpha_x\}(\alpha\beta)^2(ab)(b\beta)a_x\\
 &{}\quad - (\alpha\beta)^2(ab)^2(b\beta)a_x\alpha_x\\
 &{}\quad - \{(b\beta)\alpha_x + (\beta\alpha)b_x + (\alpha b)\beta_x\}(ab)^2(\alpha\beta)(\alpha a)\beta_x
-% ?? uncertain: the beta_x in this line prints with a heavier/bolder glyph than elsewhere on the page; reading as ordinary beta_x
+% checked against the GDZ scan (27 Oct 2026): ordinary beta_x; the heavy look is an ink blot on the stem of the beta
 \\
 &{}\quad + (\alpha\beta)^2(ab)^2(a\alpha)b_x\beta_x\\
 &{}\quad - \{(a\beta)\alpha_x + (\beta\alpha)a_x + (\alpha a)\beta_x\}(ab)^2(\alpha\beta)(\beta b)\alpha_x\\
@@ -1045,7 +1494,7 @@ In ähnlicher Weise kann man jede Relation in die Form (I) bringen.
 \weberpage{17}
 
 \begin{center}
-\S.\,2. \textbf{Process der Polarenbildung.}
+\S~2. \textbf{Process der Polarenbildung.}
 \end{center}
 
 13. \textit{Definition der Polare einfacher Formen.} An der binären Form $f=a_x^n$ können wir folgende symbolische Operation vornehmen. Wir sondern $\mu$ Factoren $a_x$ von $a_x^n$ ab und ersetzen sie durch gleich viel Factoren $a_y$. Die so entstehende Form
@@ -1056,14 +1505,14 @@ Man sieht, dass beide Polaren (1) und (2) durch Vertauschung von $x$ mit $y$ aus
 
 Ich will diesen sehr einfachen Process im Interesse späterer Betrachtungen etwas umständlicher formuliren. Um $f_{y^\mu}$ zu bilden, kann man sich nämlich die $n$ Factoren $a_x$ von $f$ momentan durch $n$ lineare Factoren
 \[ r_{1x},\ r_{2x},\ r_{3x}\ldots r_{nx} \]
-ersetzt denken. Das entstehende Product wird nun $\mu$ mal polarisirt, indem man in allen Combinationen je $\mu$ Factoren $r_{kx}$ durch die $\mu!$ Permutationen gleichviel entsprechender Factoren $r_{ky}$ ersetzt. Dadurch entstehen $\binom{n}{\mu}\mu! = n(n-1)(n-2)\ldots(n-\mu+1)$ Glieder, nämlich gerade so viel, als die Anzahl aller Variationen von $n$ Elementen zur $k^{\text{ten}}$ Klasse beträgt. Bildet man deren Summe, dividirt dieselbe durch diese Anzahl, und ersetzt hierauf wieder alle Symbole $r_k$ durch $a$, so entsteht gerade wieder das Product $a_x^{n-\mu}a_y^\mu$. Es ist also:
+ersetzt denken. Das entstehende Product wird nun $\mu$ mal polarisirt, indem man in allen Combinationen je $\mu$ Factoren $r_{kx}$ durch die $\mu!$ Permutationen gleichviel entsprechender Factoren $r_{ky}$ ersetzt. Dadurch entstehen $\binom{n}{\mu}\mu! = n(n-1)(n-2)\ldots(n-\mu+1)$ Glieder, nämlich gerade so viel, als die Anzahl aller Variationen von $n$ Elementen zur $k^{\text{ten}}$ Klasse beträgt. Bildet man deren Summe, dividirt dieselbe durch diese Anzahl, und ersetzt hierauf wieder alle Symbole $r_k$ durch $a$, so entsteht gerade wieder das Product $a_x^{n-\mu}a_\mu^y$. Es ist also: % [sic] print a_mu^y (y raised, mu lowered) for a_y^mu
 \[
 \begin{aligned}
 f_{y^{n-\mu}} &= a_x^{n-\mu}a_y^\mu\\
-&= \frac{1}{\binom{n}{\mu}\mu!}\sum r_{i_1y}r_{i_2y}\ldots r_{i_\mu y}\cdot\frac{f}{r_{i_1x}r_{i_2x}\ldots r_{i_\mu x}}\,.
+&= \binom{n}{\mu}\mu!\sum r_{i_1y}r_{i_2y}\ldots r_{i_\mu y}\cdot\frac{f}{r_{i_1x}r_{i_2x}\ldots r_{i_\mu x}}\,.
 \end{aligned}
 \]
-% ?? uncertain: the exact placement/form of the coefficient before the sum on the second line is partly obscured by an ink mark in the scan; read here as $1/\binom{n}{\mu}\mu!$, consistent with the surrounding text ("dividirt dieselbe durch diese Anzahl").
+% checked against the GDZ scan (27 Oct 2026): the coefficient is printed \binom{n}{\mu}\mu! without a fraction; the 1 above it, the arc under the 1 and an ink dot with a loop before the sum sign are handwritten (a reader's correction to 1/(\binom{n}{\mu}\mu!))
 
 Der Polarenprocess ist nun aber nicht, wie der Faltungsprocess rein symbolischer Natur, vielmehr lässt er sich in mehrfacher Weise
 %CONT>>
@@ -1098,9 +1547,9 @@ Die zweite Polare ist also durch die Gleichung definirt:
 \[ f_{y^2} = y_1^2f_{11}+2y_1y_2f_{12}+y_2^2f_{22} \]
 oder
 \weq{7}{f_{y^2} = \frac{1}{n(n-1)}\left\{y_1^2\frac{\partial^2 f}{\partial x_1^2}+2y_1y_2\frac{\partial^2 f}{\partial x_1\partial x_2}+y_2^2\frac{\partial^2 f}{\partial x_2^2}\right\}.}
-Fährt man auf diese Weise fort, so kommt man der Reihe nach zu allen Polaren. Die rechten Seiten dieser Gleichungen (3) und (7) sind aber nichts anderes als die totalen Differentiale von $f=a_x^n$, wobei nur die Increments $dx_1$, $dx_2$ und durch $y_1$ resp. $y_2$ ersetzt sind. Daher der Satz:
+Fährt man auf diese Weise fort, so kommt man der Reihe nach zu allen Polaren. Die rechten Seiten dieser Gleichungen (3) und (7) sind aber nichts anderes als die totalen Differentiale von $f=a_x^n$, wobei nur die Incremente $dx_1$, $dx_2$ und durch $y_1$ resp. $y_2$ ersetzt sind. Daher der Satz:
 
-\glqq Die $\mu^{\text{te}}$ Polare $a_x^{n-\mu}a_y^\mu$ wird erhalten, indem man $a_x^n$ $\mu$ mal total differentiirt, die Increments durch $y_1$ bezw. $y_2$ ersetzt und endlich mit
+\glqq Die $\mu^{\text{te}}$ Polare $a_x^{n-\mu}a_y^\mu$ wird erhalten, indem man $a_x^n$ $\mu$ mal total differentiirt, die Incremente durch $y_1$ bezw. $y_2$ ersetzt und endlich mit
 %CONT>>
 
 
@@ -1124,7 +1573,7 @@ Durch diese Methode bestätigt man leicht folgende Sätze:
 
 $\nu>n$.
 
-Es ist gleichgiltig, ob man das $\nu^{\text{te}}$ totale Differential nach $x$ von der $\mu^{\text{ten}}$ Polare, oder das $\mu+\nu^{\text{te}}$ totale Differential der nullten Polare, also der Form $f$ selbst bildet, ferner ob man die Originalform $k$ mal total nach $x$ differentiirt und die Increments durch $y$ ersetzt oder die $(\varrho+k)^{\text{te}}$ Polare von $f$ $\varrho$ mal nach $y$ differentiirt und an Stelle der Increments wieder die Variable $x$ einführt. Man bestätigt dies leicht durch Rechnung und überzeugt sich so von der Richtigkeit des Satzes:
+Es ist gleichgiltig, ob man das $\nu^{\text{te}}$ totale Differential nach $x$ von der $\mu^{\text{ten}}$ Polare, oder das $\mu+\nu^{\text{te}}$ totale Differential der nullten Polare, also der Form $f$ selbst bildet, ferner ob man die Originalform $k$ mal total nach $x$ differentiirt und die Incremente durch $y$ ersetzt oder die $(\varrho+k)^{\text{te}}$ Polare von $f$ $\varrho$ mal nach $y$ differentiirt und an Stelle der Incremente wieder die Variable $x$ einführt. Man bestätigt dies leicht durch Rechnung und überzeugt sich so von der Richtigkeit des Satzes:
 
 4) \gesperrt{Polaren von Polaren sind selbst wieder Polaren der Originalform.}
 
@@ -1220,7 +1669,7 @@ a_x^{n-k-\lambda}a_y^k a_z^\lambda, \quad a_x^{n-k-\lambda-\mu}a_y^k a_z^\lambda
 Polaren der Form $f$. Ihr Bildungsprocess ist folgendermassen definirt. Man sondere vom Producte $a_x^n$ zunächst $\varkappa+\lambda+\mu$ Factoren ab, ersetze $\varkappa$ derselben durch $a_y$, $\lambda$ Factoren durch $a_z$, $\mu$ Factoren durch $a_u$; oder: Man nehme zuerst $\varkappa+\lambda+\mu$ Factoren $a_x$ hinweg und ersetze sie durch Factoren $a_y$; von diesen trenne man wieder $\lambda+\mu$ Factoren ab und ersetze sie durch Grössen $a_z$, hierauf bringe man an Stelle von $\mu$ Factoren $a_z$ wiederum $\mu$ Factoren $a_u$.
 
 Man kann auch die so definirten Polaren durch rechnerische Processe erhalten. So würde die Differentiationsmethode folgende Operationen verlangen: Die Form $f$ differentiire man $k+\lambda+\mu$ mal total nach $x$, ersetze die Incremente durch $y$.
-% ?? uncertain: "Increment"/"Incremente" — plural form as printed on this page could not be fully confirmed at the line break
+% checked against the GDZ scan (27 Oct 2026): Incremente is printed in full, without a break, in all three places on this page
 Hierauf differentiire man $\lambda+\mu$ mal nach $y$, ersetze die neuen Incremente durch $z$, endlich differentiire man $\mu$ mal total nach $z$, und ersetze die Incremente durch $u$.
 
 \textit{19. Differentialgleichung der Polaren.} Die Polaren sind also Formen mit mehreren Reihen cogredienter Variabler. Doch lässt sich aus ihrer Bildung erkennen, dass sie sehr specielle Formen dieser Art sind. In der That genügen sie auch einer bestimmten Differentialgleichung, die sich leicht aufstellen lässt. Bezeichnet man die Polare mit $U$, so dass also
@@ -1486,14 +1935,14 @@ so kann man den eben erhaltenen Satz in die algebraische Form bringen
 \weq{I}{G_\varrho=F_{y^k}+(xy)\sum c_iG_{(f,\varphi)_{y^{k-1}}}\,.}
 Die Iteration liegt nahe. Ich ersetze die einzelnen Glieder der Summe in (I) gerade nach diesem Gesetze wieder durch die ihnen zugehörigen $(k-1)^{\text{ten}}$ Polaren und eine Summe anderer Glieder $K$, die neuerdings den Factor $(ab)(xy)$ erhalten, also $(k-2)^{\text{ten}}$ Polaren angehören von Formen, die durch zweimalige Faltung aus $f\cdot\varphi$ entstanden sind. Der Ausdruck (I) wird dann:
 \[
-G_\varrho=F_{y^k}+(xy)\sum c_i(f,\varphi)_{y^{k-1}}+(xy)^2\sum c_i^{(1)}K_{(f,\varphi)^2_{y^{k-2}}}
+G_\varrho=F_{y^k}+(xy)\sum c_i(f,\varphi)_{y^{k-1}}+(xy)^2\sum c_i^{(1)}K_{(f,\varphi)^2_{y^{k-1}}}
 \]
-% ?? uncertain: the exponent/subscript on K in the last term is partly obscured in the scan (looks like "k-1\cdot 2"); transcribed here as $(f,\varphi)^2_{y^{k-2}}$ by analogy with the corresponding term on the next line of print.
+% checked against the GDZ scan (27 Oct 2026): printed (f,\varphi)^2_{y^{k-1}} (misprint for k-2); the 1 is struck through in ink and a dot and a 2 are written after it by hand
 Wiederholt man diesen Process so lange, bis man schliesslich auf nullte Polaren kommt, von Formen, die aus $f\cdot\varphi$ durch $k$malige Faltung hervorgingen, so gelangt man endlich zu dem Resultat:
 \weq{II}{G_\varrho=F_{y^k}+(xy)\sum c_i(f,\varphi)_{y^{k-1}}+(xy)^2\sum c_i^{(1)}(f,\varphi)^2_{y^{k-2}}+\cdots+(xy)^k\sum c_i^{k-1}(f,\varphi)^k_{y^0}\,,\ \text{d.\,h.}}
 \glqq Jedes Glied einer Polare lässt sich entwickeln in eine Summe von Polaren, multiplicirt mit Potenzen von $(xy)$. Das erste Glied dieser Summe ist die ursprüngliche Polare selbst und hat den Co\"efficienten Eins.\grqq{}
 
-Für den hier betrachteten einfachen Fall werden wir später ($\S.\,8$) die Reihenentwicklung mit Angabe der Co\"efficienten geben.
+Für den hier betrachteten einfachen Fall werden wir später ($\S~8$) die Reihenentwicklung mit Angabe der Co\"efficienten geben.
 
 26. \textit{Beispiel.} Ich will die bisher gewonnenen Resultate an einem Beispiele verificiren. Es sei gegeben das Product
 \[
@@ -1653,7 +2102,7 @@ und multipliciren die so erhaltenen Summen. Der Coefficient von $\lambda^k$ divi
 \]
 liefert die $k^{\text{te}}$ Polare von $F$. Die Coefficienten dieser Polare haben demnach die Form
 \[
-\frac{\binom{m}{i_1}\binom{n}{i_2}\binom{p}{i_3}\cdots\binom{s}{i_k}}{\binom{m+n+p+\cdots s}{k}} % ?? uncertain: subscript under lower denominator binomial shows a smudged mark that may not simply be k
+\frac{\binom{m}{i_1}\binom{n}{i_2}\binom{p}{i_3}\cdots\binom{s}{i_k}}{\binom{m+n+p+\cdots s}{k}} % checked against the GDZ scan (27 Oct 2026): the lower entry is printed k (heavy impression); the cursive mark in front of it is handwritten
 \]
 und ihre Summe ist wiederum gleich Eins, wie aus der ursprünglichen Definition Nr. 21 unmittelbar ersichtlich ist.
 
@@ -1740,7 +2189,7 @@ Wir nennen sie wiederum eine \gesperrt{gemischte Polare} und alle Sätze, welche
 \weberpage{33}
 
 \begin{center}
-\S.\,3.
+\S~3.
 
 \textbf{Ueberschiebungsprocess.}
 \end{center}
@@ -2444,7 +2893,7 @@ die Differenz der betreffenden Glieder den Factor
 \weberpage{44}
 %<<CONT
 \[
-a_x(b\alpha) - b_x(a\alpha) = \mathfrak{a}_x(ab), % ?? uncertain: unusual letterform before \textquotedbl{}_x(ab)\textquotedbl{} in the scan, possibly a print defect rather than intentional Fraktur
+a_x(b\alpha) - b_x(a\alpha) = a_x(ab), % checked against the GDZ scan (27 Oct 2026): printed italic a_x, overwritten in ink by a handwritten alpha (a reader's correction); the stroke under the = sign is also handwritten
 \]
 im zweiten Falle den Factor
 \[
@@ -2520,7 +2969,7 @@ wir an der Potenz $\varphi^\varrho$ die nämlichen Faltungen vornehmen, die wir
 an $f^\varrho$ machten, um die Form $A_i$ zu erhalten. Nennen wir der
 Einfachheit halber $A_i$ das Modell, $B_i$ das Bild. Ist insbesondere
 \[
-\varphi=(ab)^{2\mu}a_x^{n-2\mu}b_x^{n-2\mu}=(aa_1)^{2\mu}a_x^{n-\mu}a_{1x}^{n-\mu}, % ?? uncertain: faint diacritic marks over several exponents in this line; read by degree-balance as n-2\mu (left) and n-\mu (right)
+\varphi=(ab)^{2\mu}a_x^{n-\mu}b_x^{n-\mu}=(aa_1)^{2\mu}a_x^{n-\mu}a_{1x}^{n-\mu}, % checked against the GDZ scan (27 Oct 2026): all four exponents are printed n-\mu (misprint for n-2\mu); the thin 2s written over the minus signs are handwritten
 \]
 also eine gerade Ueberschiebung der Form $f$ über sich selbst, so können wir
 mit Hilfe der Eigenschaft benachbarter Glieder für Bilder $B_i$, welche aus
@@ -2529,7 +2978,7 @@ ableiten.
 
 In diesem Falle nämlich kann man aus der Potenz
 \[
-\varphi^\varrho=(aa_1)^{2\mu}a_x^{n-\mu}a_{1x}^{n-\mu}\cdot(bb_1)^{2\mu}b_x^{n-\mu}b_{1x}^{n-\mu}\cdots(rr_1)^{2\mu}r_x^{n-\mu}r_{1x}^{n-\mu} % ?? uncertain: same faint diacritics over the exponents as above
+\varphi^\varrho=(aa_1)^{2\mu}a_x^{n-\mu}a_{1x}^{n-\mu}\cdot(bb_1)^{2\mu}b_x^{n-\mu}b_{1x}^{n-\mu}\cdots(rr_1)^{2\mu}r_x^{n-\mu}r_{1x}^{n-\mu} % checked against the GDZ scan (27 Oct 2026): exponents printed n-\mu; the marks over them are handwritten 2s, as above
 \]
 eine Menge Bilder $B_i$ nach dem Modelle $A_i$ herstellen, je nachdem man die
 durch $A_i$ dictirten Faltungen der Potenz
@@ -2803,9 +3252,9 @@ nur je ein einziges enthält, sei es das Symbol $A$ der Form $\varphi$, oder das
 
 Auf diese Weise gelangen wir schliesslich zu einer Summe von Gliedern, deren jedes nur mehr zwei Symbole enthält. Solche symbolische Producte haben wir aber als einfache Ueberschiebungen definirt, und wir sind somit berechtigt den Satz aufzustellen: \glqq\gesperrt{Jedes symbolische Product lässt sich durch eine Summe von einfachen Ueberschiebungen darstellen.}\grqq{}
 
-\S.\,4. \textbf{Die einfachsten Ueberschiebungen.}
+\S~4. \textbf{Die einfachsten Ueberschiebungen.}
 
-47. \textit{Die Functionaldeterminante.} Unter den Ueberschiebungen haben insbesondere zwei eine hervorragende Bedeutung. Es sind gerade die beiden einfachsten Ueberschiebungen zweier Formen, nämlich die erste und die zweite. Die erste ist bekannt unter dem Namen \glqq Functionaldeterminante\grqq{} oder auch \glqq Jacobi'sche Determinante\grqq{} (vergl. Bd. I \S.\,9). Sie ist, wenn
+47. \textit{Die Functionaldeterminante.} Unter den Ueberschiebungen haben insbesondere zwei eine hervorragende Bedeutung. Es sind gerade die beiden einfachsten Ueberschiebungen zweier Formen, nämlich die erste und die zweite. Die erste ist bekannt unter dem Namen \glqq Functionaldeterminante\grqq{} oder auch \glqq Jacobi'sche Determinante\grqq{} (vergl. Bd. I \S~9). Sie ist, wenn
 \[
 f = a_x^m, \quad \varphi = b_x^n
 \]
@@ -2813,7 +3262,7 @@ die beiden Formen sind, dargestellt durch
 \[
 (f, \varphi) = a_x^{m-1}\,b_x^{n-1}\,(ab),
 \]
-und unterscheidet sich von der im ersten Bande \S.\,9 definirten Function nur um den Factor $m \cdot n$. Man erkennt dies unmittelbar aus der unsymbolischen Schreibweise dieser Form (vgl. Nr. 35, III)
+und unterscheidet sich von der im ersten Bande \S~9 definirten Function nur um den Factor $m \cdot n$. Man erkennt dies unmittelbar aus der unsymbolischen Schreibweise dieser Form (vgl. Nr. 35, III)
 %CONT>>
 
 
@@ -2922,7 +3371,7 @@ Auch diese Covariante $U$ ist eine Form ungeraden Charakters und wir können sie
 2\,U = \begin{vmatrix} f_{22}, & -2f_{12}, & f_{11} \\ \varphi_{22}, & -2\varphi_{12}, & \varphi_{11} \\ \psi_{22}, & -2\psi_{12}, & \psi_{11} \end{vmatrix},
 \]
 so erhalten wir:
-% ?? uncertain: isolated mark/dot in the left margin before this display, possibly a printer's ornament or dust mark
+% checked against the GDZ scan (27 Oct 2026): a round dot stands in the left margin beside this display; not part of the text
 \weq{II}{
 2\,U^2 = \begin{vmatrix} (f,\,f)^2, & (f,\,\varphi)^2, & (f,\,\psi)^2 \\ (f,\,\varphi)^2, & (\varphi,\,\varphi)^2, & (\varphi,\,\psi)^2 \\ (f,\,\psi)^2, & (\varphi,\,\psi)^2, & (\psi,\,\psi)^2 \end{vmatrix}.
 }
@@ -2965,7 +3414,7 @@ und
 2\,D = \begin{vmatrix} f_{22}, & -2f_{12}, & f_{11}, & 0 \\ \varphi_{22}, & -2\varphi_{12}, & \varphi_{11}, & 0 \\ \psi_{22}, & -2\psi_{12}, & \psi_{11}, & 0 \\ x_2{}^2, & +2x_1x_2, & x_1{}^2, & 0 \end{vmatrix}
 }
 mit einander multipliciren. Das Resultat der Multiplication ist:
-% ?? uncertain: isolated mark/dot in the left margin near this display, possibly a printer's ornament or dust mark
+% checked against the GDZ scan (27 Oct 2026): no mark in the left margin; a stray dot stands to the right of this display, below the number (III); not part of the text
 \weq{III}{
 0 = \begin{vmatrix} (f,\,f)^2, & (f,\,\varphi)^2, & (f,\,\psi)^2, & f \\ (f,\,\varphi)^2, & (\varphi,\,\varphi)^2, & (\varphi,\,\psi)^2, & \varphi \\ (f,\,\psi)^2, & (\varphi,\,\psi)^2, & (\psi,\,\psi)^2, & \psi \\ f, & \varphi, & \psi, & 0 \end{vmatrix} = \varDelta.
 }
@@ -3202,7 +3651,7 @@ oder, weil $a_x^m\cdot b_y^2 b_x^{n-2} = b_x^m a_y^2 a_x^{m-2} = f\cdot f_{y^2}$
 
 \weq{2}{\frac{(xy)^2}{2}H = f\cdot f_{y^2} - f_y{}^2 = 0.}
 
-Zu dieser Voraussetzung (2) tritt noch eine zweite, dass nämlich jede Form $f(x)$ mindestens einen linearen Factor $\alpha_x$ besitzt (vgl. Fundamentalsatz der Algebra Bd. I \S.\,12), oder, um ganz allgemein zu sein, dass $f$ von der Form ist:
+Zu dieser Voraussetzung (2) tritt noch eine zweite, dass nämlich jede Form $f(x)$ mindestens einen linearen Factor $\alpha_x$ besitzt (vgl. Fundamentalsatz der Algebra Bd. I \S~12), oder, um ganz allgemein zu sein, dass $f$ von der Form ist:
 
 \weq{3}{f = \alpha_x^{\varrho}\cdot\psi_x^{\sigma} = \alpha_x^{\varrho}\cdot\psi\,,^{*)}\quad(\sigma + \varrho = m).}
 
@@ -3256,7 +3705,7 @@ m = \varrho\,,
 was zu beweisen war.
 
 \begin{center}
-\S.\,5. \textbf{Der Aronhold'sche Process.}
+\S~5. \textbf{Der Aronhold'sche Process.}
 \end{center}
 
 56. \textit{Aufgabe.} Viele Fragen der Algebra und Geometrie erheischen die Lösung folgender Aufgabe: Gegeben ist eine Form $f$ und eine ihrer Invarianten (Covarianten) $i$; gegeben ist ferner eine Form $\varphi$ von gleichem Grade in $x$ wie die Form $f$. Dann besitzt das lineare System $f + \lambda\varphi$ eine entsprechende simultane Invariante $J$, welche aus $i$ entsteht, wenn man darin die Coefficienten $\bar a_i$ von $f$ durch die Coefficienten $\bar a_i + \lambda\bar\alpha_i$ von $f + \lambda\varphi$ ersetzt$^{*)}$. Diese Invariante $J$ lässt sich nach Potenzen von $\lambda$ anordnen, und die Coefficienten der Potenzen von $\lambda$ werden alsdann selbst wieder simultane Invarianten von $f$ und $\varphi$ sein. Die Aufgabe nun, die wir uns stellen, ist: womöglich eine independente Darstellung der Coefficienten von $\lambda^k$ zu geben. Es wird sich zeigen, dass sich, so lange $f$ und $\varphi$ von einander unabhängig sind, immer ein Process angeben lässt, eng verwandt mit dem Polarenprocess, vermöge welchem jeder dieser Coefficienten unmittelbar aus der Invariante $i$ hergestellt werden kann; im anderen Falle erhält man für dieselben Recursionsformeln.
@@ -3470,7 +3919,7 @@ laren durch
 \[
 (p_a^3)_{\alpha^2} = \frac{1}{3\cdot 2}\sum\frac{\partial j}{\partial\bar a_k\partial\bar a_\lambda}\bar\alpha_k\bar\alpha_\lambda = \frac{2}{6}\left\{(\bar\alpha_0\bar\alpha_2\bar a_4)+(\bar\alpha_0\bar a_2\bar\alpha_4)+(\bar a_0\bar\alpha_2\bar\alpha_4)\right\}
 \]
-% ?? uncertain: exact placement of overlines (barred vs. unbarred a/alpha) inside the two bracketed triple-product sums above; reproduced by the pattern implied by the printed exponent structure, not fully legible at this resolution
+% checked against the GDZ scan (27 Oct 2026): every a and alpha in the two bracketed sums above carries a bar, as transcribed
 \[
 (p_a^3)_{\alpha^3} = \frac{1}{3\cdot 2\cdot 1}\sum\frac{\partial j}{\partial\bar a_k\partial\bar a_\lambda\partial\bar a_\nu}\cdot\bar\alpha_k\bar\alpha_\lambda\bar\alpha_\nu = (\bar\alpha_0\bar\alpha_2\bar\alpha_4) = ((\varphi,\,\varphi)^2,\,\varphi)^4
 \]
@@ -4116,7 +4565,7 @@ J=g^\mu\cdot i,
 was zu zeigen war. [Vergl. das Beispiel in Nr.\,69 (II).]
 
 \begin{center}
-\S.\,7.\\
+\S~7.\\
 \gesperrt{Binäre Formen mit zwei und mehr Reihen cogredienter Variabler. (Process der Reihenentwicklung.)}
 \end{center}
 
@@ -4153,7 +4602,7 @@ einer Form $F$ mit zwei Reihen cogredienter Variabler. In ihr kommt also erst de
 % ===== pdf idx 94, printed 80.0 =====
 % !PRINTED 80
 \weberpage{80}
-75. \textit{Die Elementarcovarianten von $F$.} Unsere Aufgabe ist nun, die Covarianten einer solchen Function mit zwei Reihen Variabler zu untersuchen. Unter denselben gehören jedenfalls wieder die symbolischen Producte, welche sich zusammensetzen:
+75. \textit{Die Elementarcovarianten von $F$.} Unsere Aufgabe ist nun, die Covarianten einer solchen Function mit zwei Reihen Variabler zu untersuchen. Unter dieselben gehören jedenfalls wieder die symbolischen Producte, welche sich zusammensetzen:
 
 $\alpha$) aus den Factoren erster Art:
 \[
@@ -4246,7 +4695,7 @@ und
 \[ F = \sum C''_\mu \cdot E_{y^\mu} \cdot (xy)^\nu, \]
 dann würde die Differenz beider eine Entwicklung für den Werth Null geben:
 \[ 0 = \sum (C'_\mu - C''_\mu)\, E_{y^\mu} . (xy)^\nu . \]
-% ?? uncertain: an isolated mark appears to the right of this display in the scan (possibly a print blemish or stray punctuation); not transcribed as text
+% checked against the GDZ scan (27 Oct 2026): a stray dot stands to the right of this display, apart from its final period; not part of the text
 
 
 % ===== pdf idx 97, printed 83.0 =====
@@ -4286,7 +4735,7 @@ Daher erhalten wir aus Gleichung (I) für $\psi = (xy)^\lambda$:
 
 80. \textit{Berechnung der Coefficienten $C_\mu$.} Die zuletzt erhaltene Formel benutzen wir nun, um die Coefficienten der Reihe
 \weq{III}{(rs)^\lambda r_x^{m-\lambda} s_y^{n-\lambda} = \sum C_{\lambda,k} (\overline{rs})_{y^{n-k}}^k (xy)^{k-\lambda}, \quad k \geqq \lambda}
-% ?? uncertain: printed relation symbol before "lambda" read as double-bar geqq; single-bar geq is also plausible at this resolution
+% checked against the GDZ scan (27 Oct 2026): the sign has two bars under the > (\geqq)
 zu bestimmen. Dass die einzelnen Glieder rechts die hier gegebene Form besitzen müssen, haben wir bereits in Nr. 76 und 77 entwickelt. Ihr Grad in $y$ ist
 \[ n-k+k-\lambda = n-\lambda, \]
 ihr Grad in $x$ ist
@@ -4350,7 +4799,7 @@ Multiplicirt man die untereinander stehenden Gleichungen, so erhält man:
 &= C_{k-\varrho,\,k}\cdot \varrho!\,(m+n-2k+2)(m+n-2k+3)\cdots(m+n-2k+\varrho+1),
 \end{align*}
 oder:
-\weq{1}{\frac{(m-k+\varrho)!}{(m-k)!}\cdot\frac{(n-k+\varrho)!}{(n-k)!}=C_{k-\varrho,\,k}\cdot \varrho!\,\frac{(m+n-2k+\varrho+1)!}{(m+n-2k+1)!}.}
+\weq{1}{\frac{(m-k+\varrho)!}{(m-k)!}\cdot\frac{(n-k+\varrho)!}{(n-k)!}=C_{k-\varrho,\,k}\cdot \varrho!\,\frac{(m+n-2k+\varrho+1)!}{(m+n-2k+1)!}\cdot}
 Nun ist aber:
 \[
 \frac{(m-k+\varrho)!}{(m-k)!}=\binom{m-k+\varrho}{\varrho}\cdot \varrho\,!
@@ -4450,7 +4899,7 @@ r_x^4 s_y^4=(\overline{rs})^0_{y^4}+2(\overline{rs})^1_{y^3}(xy)+\frac{12}{7}(\o
 
 83. \textit{Verallgemeinerung der Reihenentwicklung.} Wir können die eben gewonnene Reihenentwicklung noch auf etwas complicirtere Formen ausdehnen. Die zunächst liegenden Formen $F$ sind durch das symbolische Product dargestellt:
 \[
-r_x^\lambda s_y^m r_y^\varrho=F'.
+r_x^\lambda s_y^m r_y^\varrho=F.
 \]
 Um die Reihen für diese Form zu erhalten, brauchen wir nur die Formel (VIII) $\varrho$mal nach $x$ zu differentiiren und die Incremente durch $y$ zu ersetzen; dann erhalten wir:
 \[
@@ -4461,7 +4910,7 @@ Hierbei muss $\varrho$ kleiner als $(m-k)$ sein. Nach Division der Gleichung mit
 \weq{1}{r_x^{m-\varrho} s_y^n r_y^\varrho=\sum \frac{\binom{m}{k}\binom{n}{k}}{\binom{m+n-k+1}{k}}\cdot\frac{(m-k)\dots(m-k-\varrho+1)}{m(m-1)\dots(m-\varrho+1)}\cdot(xy)^k(\overline{rs})^k_{y^{n-k+\varrho}}.}
 Nun ist aber
 \[
-\binom{m}{k}\cdot\frac{(m-k)\dots(m-k-\varrho+1)}{m(m-1)\dots(m-\varrho+1)}=\frac{m(m-1)\dots(m-\varrho+1)(m-\varrho)\dots(m-\varrho-k+1)}{m(m-1)\dots(m-\varrho+1)\,.\,1\,.\,2\,.\,3\,.\,.\,k}=\binom{m-\varrho}{k}.
+\binom{m}{k}\cdot\frac{(m-k)\dots(m-k-\varrho+1)}{m(m-1)\dots(m-\varrho+1)}=\frac{m(m-1)\dots(m-\varrho+1)(m-\varrho)\dots(m-\varrho-k+1)}{m(m-1)\dots(m-\varrho+1)\,.\,1\,.\,2\,.\,3\,.\,.\,k}=\binom{m-\varrho}{k}\cdot
 \]
 
 
@@ -4511,7 +4960,7 @@ f(x)\varphi(y) - \varphi(x)f(y) = P.
 
 86. \textit{Umkehrung der Reihe (VIII).} Ersetzt man in der Reihe (VIII) die Gr\"ossen $m$ und $n$ bezw. durch $m-\nu$, $n-\nu$ und multiplicirt auf beiden Seiten mit $(rs)^\nu \cdot (xy)^\nu$, so kommt:
 \[
-(rs)^\nu r_x^{m-\nu} s_y^{n-\nu} (xy)^\nu = \sum \frac{\binom{m-\nu}{k}\binom{n-\nu}{k}}{\binom{m+n-2\nu-k+1}{k}} (\overline{rs})_{y^{n-(\nu+k)}}^{\nu+k} (xy)^{k+\nu}. % ?? uncertain: exact stacked placement of the exponent n-(v+k) on the y-subscript of the barred (rs) term
+(rs)^\nu r_x^{m-\nu} s_y^{n-\nu} (xy)^\nu = \sum \frac{\binom{m-\nu}{k}\binom{n-\nu}{k}}{\binom{m+n-2\nu-k+1}{k}} (\overline{rs})_{y^{n-(\nu+k)}}^{\nu+k} (xy)^{k+\nu}. % checked against the GDZ scan (27 Oct 2026): printed (\overline{rs})^{\nu+k}_{y^{n-(\nu+k)}}, as transcribed
 \]
 
 Legt man hier dem $\nu$ alle m\"oglichen Werthe bei von $\nu = 0$ bis $\nu = n$, so erh\"alt man $(n+1)$ Gleichungen, in denen rechts nur die $(n+1)$ Polaren der $(n+1)$ Elementarcovarianten $(rs)^k$ in linearer Verbindung auftreten. Dabei beginnt mit wachsendem $\nu$ die Entwicklung rechts mit einer immer h\"oheren Elementarcovariante, so dass also, wenn man diese $(n+1)$ Gleichungen nach der Determinantenmethode aufl\"ost, die Nennerdeterminante den Werth Eins besitzt, da ihr Diagonalglied nur Elemente vom Werthe 1 und links derselben nur Elemente vom Werthe 0 enth\"alt. Bei Aufl\"osung der Gleichungen nach diesen Polaren tritt also kein Nenner auf, und es wird sich somit der Werth einer Polare in der Form darstellen:
@@ -4563,7 +5012,7 @@ C_k = (-1)^k \frac{\binom{m}{k}\binom{n}{k}}{\binom{m+n}{k}}.
 Tr\"agt man diesen Werth von $C_k$ in die Relation (2) ein, so erh\"alt man:
 \weq{XI}{(r_x^m s_x^n)_{y^n} = \sum (-1)^k \frac{\binom{m}{k}\binom{n}{k}}{\binom{m+n}{k}} (rs)^k r_x^{m-k} s_y^{n-k}(xy)^k \cdot}
 
-\S.\,8. \textbf{Anwendungen des Processes der Reihenentwicklung.}
+\S~8. \textbf{Anwendungen des Processes der Reihenentwicklung.}
 
 88. \textit{Zweck der Reihenentwicklungen.} Die Reihenentwicklungen dienen in erster Linie dazu, complicirte symbolische Producte in einfache \"uberzuf\"uhren, oder unbekannte Formen durch bekannte darzu-
 %CONT>>
@@ -4590,7 +5039,7 @@ Zur Berechnung von $(f,\Delta)^3$ entwickeln wir ein Glied der dritten Polare vo
 \[
 \begin{aligned}
 (ab)^2 b_x a_y^2 b_y &= (ab)^2 \sum \frac{\binom{1}{k}\binom{2}{k}}{\binom{1+1+2-k+1}{k}} \cdot (\overline{ab})^{k}_{y^{2-k+1}} (xy)^k \\
-&= \left[(ab)^2 a_x^2 b_x^2\right]_{y^3} + \frac{2}{4}\left[(ab)^3 a_x b_x\right](xy). % ?? uncertain: exact stacked exponent arrangement on the barred (ab) term in the line above
+&= \left[(ab)^2 a_x^2 b_x^2\right]_{y^3} + \frac{2}{4}\left[(ab)^3 a_x b_x\right](xy). % checked against the GDZ scan (27 Oct 2026): the barred term in the line above is printed (\overline{ab})^k_{y^{2-k+1}}, as transcribed
 \end{aligned}
 \]
 Weil aber $(ab)^3 a_x b_x$ identisch null, und $(ab)^2 a_x^2 b_x^2 = \Delta$, so hat man
@@ -4616,7 +5065,7 @@ die erste und dritte Elementarcovariante null, und sie reducirt sich demnach auf
 \[
 \begin{aligned}
 (ab)\,a_x^3 b_y^3 &= \frac{3}{2}\left\{(ab)^2 a_x^2 b_x^2\right\}_{y^2} (xy) + \frac{1}{4}(ab)^4 (xy)^3 \\
-&= \frac{3}{2}\Delta_{y^2}\cdot (xy) + \frac{1}{4}(ab)^4 (xy)^3.
+&= \frac{3}{2}\Delta_{y^2}\cdot (xy) + \frac{1}{4}(ab)^4 (xy)^3\cdot
 \end{aligned}
 \]
 Ersetzen wir hierin $y_1$ durch $-c_2$, $y_2$ durch $+c_1$ und multipliciren mit $c_x$, so kommt:
@@ -4934,10 +5383,10 @@ welche vierten Grades in den Coefficienten der Form
 \[
 \varphi=\alpha_{1x}\alpha_{2x}\alpha_{3x}=A_x^3
 \]
-ist, deren drei Wurzeln die Werthe $\alpha^{(1)}=\dfrac{\alpha_1^{(1)}}{\alpha_2^{(1)}}$, $\alpha^{(2)}=\dfrac{\alpha_1^{(2)}}{\alpha_2^{(2)}}$, $\alpha^{(3)}=\dfrac{\alpha_1^{(3)}}{\alpha_2^{(3)}}$ % ?? uncertain: the relation sign before the third fraction is faint/broken in the scan and reads more like a short dash than a full equals sign; transcribed as = by inference from the parallel construction
+ist, deren drei Wurzeln die Werthe $\alpha^{(1)}=\dfrac{\alpha_1^{(1)}}{\alpha_2^{(1)}}$, $\alpha^{(2)}=\dfrac{\alpha_1^{(2)}}{\alpha_2^{(2)}}$, $\alpha^{(3)}-\dfrac{\alpha_1^{(3)}}{\alpha_2^{(3)}}$ % checked against the GDZ scan (27 Oct 2026): a single bar on the math axis (a minus sign, misprint for =) is printed before the third fraction
 besitzen.
 
-94. \textit{Darstellung einer in den Wurzeln von $\varphi=A_x^m$ ausgedrückten Covariante durch ein symbolisches Product; Beispiel.} Wir haben schon in \S.\,1 Nr. 8 darauf hingewiesen, dass jede symmetrische simultane Covariante der $m$ linearen Factoren $\alpha_{ix}$ von $\varphi$ auch eine \gesperrt{rationale} Covariante der Form $\varphi$ ist, und haben den einfachen Beweis dieser Thatsache eben gegeben. Die Reihenentwicklungen für Formen mit
+94. \textit{Darstellung einer in den Wurzeln von $\varphi=A_x^m$ ausgedrückten Covariante durch ein symbolisches Product; Beispiel.} Wir haben schon in \S~1 Nr. 8 darauf hingewiesen, dass jede symmetrische simultane Covariante der $m$ linearen Factoren $\alpha_{ix}$ von $\varphi$ auch eine \gesperrt{rationale} Covariante der Form $\varphi$ ist, und haben den einfachen Beweis dieser Thatsache eben gegeben. Die Reihenentwicklungen für Formen mit
 %CONT>>
 
 
@@ -5234,7 +5683,7 @@ von andern Producten entwickelt werden können, die durchwegs
 mindestens $(ab)^{2\mu+2}$ als Factor enthalten. Zu diesen gehören unter
 andern alle geraden Ueberschiebungen:
 \[
-U = \big((f,f)^{2\mu}, f\big)^{2\mu+\varrho} \doteq \big((ab)^{2\mu}\,a_x^{n-2\mu}\,b_x^{n-2\mu},\, c_x^n\big)^{2\mu+\varrho},
+U = \big((f,f)^{2\mu}, f\big)^{2\mu+\varrho} = \big((ab)^{2\mu}\,a_x^{n-2\mu}\,b_x^{n-2\mu},\, c_x^n\big)^{2\mu+\varrho}, % the mark above this = in the print is a slanted stray streak over its left end, not a dot
 \]
 %CONT>>
 
@@ -5306,7 +5755,7 @@ Ersetzen wir alsdann wiederum $y_1$ durch $c_2$, $y_2$ durch $-c_1$ und multipli
 mit $c_x^{n-2\mu-1}$, so kommt:
 \[
 (ab)^{2\mu-1}(ac)^{2\mu+\lambda+1}\,b_x^{2\mu+\lambda+1}\,c_x^{n-2\mu-1}
-\doteq \text{Const.}\times \big((f,f)^{2\mu}, f\big)^{2\mu} \bmod. (ab)^{2\mu+2},
+\quad \text{Const.}\times \big((f,f)^{2\mu}, f\big)^{2\mu} \bmod. (ab)^{2\mu+2}, % [sic] no relation sign is printed before Const. (blank gap, only a speck at the height of the top bar of an \equiv); \equiv intended, cf. p. 106
 \]
 oder, weil das Glied links wegen $(ac)^{2\mu+1}$ selbst $\equiv \bmod. (ab)^{2\mu+2}$, so ist:
 \weq{II}{\big((f,f)^{2\mu}, f\big)^{2\mu} \equiv 0 \bmod. (ab)^{2\mu+2}, \quad \mu < \dfrac{n}{4}.}
@@ -5360,7 +5809,7 @@ von Formen darstellbar, die aus $(f,f)^{2\mu} = (ab)^{2\mu}\,a_x^{n-2\mu}\,b_x^{
 $f = c_x^n$ durch Faltung entstehen. Die Faltung von $c_x^n$ liefert aber 0,
 die von $(f,f)^{2\mu}$ einen weitern Klammerfactor $(ab)$. Demnach ist:
 \[
-G - \dot U \equiv 0 \bmod. (ab)^{2\mu+2}, % ?? uncertain: dot accent over U as printed, cause unclear
+G - \dot U \equiv 0 \bmod. (ab)^{2\mu+2}, % checked against the GDZ scan (27 Oct 2026): a round dot is printed over the U; kept as printed
 \]
 oder, weil $U$ selbst $\equiv 0 \bmod. (ab)^{2\mu+2}$, $j$,
 \[
@@ -5377,9 +5826,9 @@ Der Eingangs aufgestellte Satz ist sonach bewiesen. Symbolische
 Producte $G$ dieser Art liefern insbesondere die Ueberschiebungen
 $\big((f,f)^{2\mu}, (f,f)^{2\mu}\big)^{2\mu}$; und demnach ist:
 \[
-U_1 = \big((f,f)^{2\mu}, (f,f)^{2\mu}\big)^{2\mu} \equiv 0 \bmod. (ab)^{2\mu+2}, \; j, % ?? uncertain: relation symbol faint in scan, read as \equiv
+U_1 = \big((f,f)^{2\mu}, (f,f)^{2\mu}\big)^{2\mu} \equiv 0 \bmod. (ab)^{2\mu+2}, \; j, % checked against the GDZ scan (27 Oct 2026): only a faint piece (about 4pt) of the lowest bar of the sign printed, at the height of the lowest bar of the \equiv in G - \dot U \equiv 0 above; read as \equiv
 \]
-da wie vorhin so auch hier $G - U_1 \equiv 0 \bmod. (ab)^{2\mu+2}$ ist. % ?? uncertain: relation symbol faint in scan, read as \equiv
+da wie vorhin so auch hier $G - U_1 \quad 0 \bmod. (ab)^{2\mu+2}$ ist. % checked against the GDZ scan (27 Oct 2026): no relation sign is printed between U_1 and 0 (blank gap); \equiv intended, as in the formula above
 
 99. \textit{Ueber die Cayley'sche respective Bézout'sche Methode der
 Discriminantenbildung.} Die Discriminante einer Form $n^{\text{ten}}$ Grades ist
@@ -5462,13 +5911,13 @@ der Discriminante nur um einen numerischen Factor verschieden sein.
 % ===== pdf idx 124, printed 110.0 =====
 % !PRINTED 110
 \weberpage{110}
-\S.\,9. \textbf{Beweis, dass jede In- und Covariante durch ein symbolisches
+\S~9. \textbf{Beweis, dass jede In- und Covariante durch ein symbolisches
 Product darstellbar ist.}
 
 100. \textit{Formulirung der Aufgabe für eine binäre Form.} Dass jedes
 symbolische Product, sobald es nur die Symbole in geeigneter Zahl
 enthält, eine simultane Invariante respective Covariante mehrerer gegebener
- Formen darstellt, haben wir bereits in \S.\,1 dieses Bandes erkannt
+ Formen darstellt, haben wir bereits in \S~1 dieses Bandes erkannt
 . Dies genügte für die bisherigen Untersuchungen. Die nun
 folgenden Untersuchungen erheischen aber die Existenz des umgekehrten
  Satzes: Jede Invariante und Covariante einer Form oder eines
@@ -5509,8 +5958,8 @@ vom Modul
 \]
 geht diese Form $f$ über in die Form
 \[
-F = \bar{A}_0y_1^n + \binom{n}{1}\bar{A}_1y_1^{n-1}y_2 + \binom{n}{2}\bar{A}_2y_1^{n-2}y_2^2 + \cdots + \bar{A}_ny_2^n
-% ?? uncertain: exponent on y_2 in the middle term of F, read by analogy with f above as y_2^2
+F = \bar{A}_0y_1^n + \binom{n}{1}\bar{A}_1y_1^{n-1}y_2 + \binom{n}{2}\bar{A}_2y_1^{n-2}y_2 + \cdots + \bar{A}_ny_2^n
+% checked against the GDZ scan (27 Oct 2026): the term with \bar{A}_2 is printed y_1^{n-2}y_2, without an exponent on y_2 (misprint for y_2^2; cf. f above)
 \]
 \[
 = (a_\xi y_1 + a_\eta y_2)^n = (b_\xi y_1 + b_\eta y_2)^n = \ldots \text{etc.},
@@ -5569,7 +6018,7 @@ nun $a_1, b_1, r_1, t_1 \ldots$ etc. durch $a_\xi, b_\xi, r_\xi t_\xi \ldots$ et
 b_2, r_2, t_2 \ldots$ etc. durch $a_\eta, b_\eta, r_\eta, t_\eta \ldots$ etc., so erhalten wir das entsprechende
  Glied
 \weq{1}{\bar{G}_k = \lambda_k a_\xi^{n-k}a_\eta^k \cdot b_\xi^{n-k}b_\eta^k \cdots r_\xi^{n-\pi}r_\eta^\pi \cdot t_\xi^{n-\pi}t_\eta^\pi \cdots s_\xi^{n-\nu}s_\eta \cdots \text{etc.}}
-% ?? uncertain: last factor of (1), s_\xi^{n-\nu}s_\eta -- exponent on the final s-term is unclear in the scan, read by analogy with the r- and t-terms
+% checked against the GDZ scan (27 Oct 2026): the second s of the last factor of (1) has no exponent; its subscript is a small triangular ink blot, read as \eta by analogy with the r- and t-terms
 der Invariante $J$. Es enthält $\varrho$ Factoren, die linear in $\xi$ und ebenso
 viele, die linear in $\eta$ sind; daher können wir dasselbe kürzer bezeichnen
  mit
@@ -5646,7 +6095,7 @@ q_2 &= \nu_1 n_2^{(1)} + \nu_2 n_2^{(2)} + \cdots + \nu_s n_2^{(s)}.
 \]
 Ersetzt man daher in $(pq)$ die Grössen $p_1\,p_2\,q_1\,q_2$ durch diese ihre Werthe in $m^{(k)}$ und $n^{(k)}$, so geht $(pq)$ über in $\sum \mu_k \nu_\lambda (mn)$ und demnach wird:
 \[
-(pq)^\varrho = \left\{\sum \mu_k \nu_\lambda (mn)\right\}^\varrho = \sum c_i \cdot (m_{k_1} n_{\lambda_1})^{\varrho_1} (m_{k_2} n_{\lambda_2})^{\varrho_2} \cdots -, % ?? uncertain: a small dot is printed above the second summation sign here; not reproducible as a diacritic on \sum, noted but not altered
+(pq)^\varrho = \left\{\sum \mu_k \nu_\lambda (mn)\right\}^\varrho = \sum c_i \cdot (m_{k_1} n_{\lambda_1})^{\varrho_1} (m_{k_2} n_{\lambda_2})^{\varrho_2} \cdots -, % checked against the GDZ scan (27 Oct 2026): the dot is a round ink blot above the factor (m_{k_2} n_{\lambda_2}), well above the line and not over a summation sign; not part of the text
 \]
 wobei $\varrho_1 + \varrho_2 + \varrho_3 + \cdots = \varrho$.
 
@@ -5742,12 +6191,12 @@ Da ferner der Transformationsmodul durch die fünfreihige Determinante
 (\xi\eta\zeta\lambda\tau) =
 \begin{vmatrix}
 \xi_1 & \xi_2 & \xi_3 & \xi_4 & \xi_5\\
-\eta_1 & \eta_2 & \eta_3 & \cdot & \cdot\\
-\zeta_1 & \cdot & \cdot & \cdot & \cdot\\
-\cdot & \cdot & \cdot & \cdot & \cdot\\
-\tau_1 & \tau_2 & \tau_3 & \cdot & \tau_5
+\eta_1 & \eta_2 & \eta_3 & \cdot\ \ \cdot & \cdot\\
+\zeta_1 & \cdot\ \ \cdot & \cdot & \cdot\ \ \cdot & \cdot\\
+\cdot & \cdot\ \ \cdot & \cdot & \cdot & \cdot\\
+\tau_1 & \tau_2 & \tau_3 & \cdot\ \ \cdot & \tau_5
 \end{vmatrix}
-= \Delta % ?? uncertain: several matrix entries are printed only as a row of dots indicating omitted terms; the dot placement is reproduced as best legible, not a literal transcription of each dot's column
+= \Delta % checked against the GDZ scan (27 Oct 2026): the omitted entries are dots on a grid finer than the columns: three dots after eta_3, six after zeta_1, six in the fourth row (none between the 4th and 5th columns), two between tau_3 and tau_5; a cell with two dots holds the dot of the column and the one after it
 \]
 dargestellt ist, so wird im quinären Gebiete der analytische Ausdruck für die Definition einer Invariante:
 \weq{I}{J = i (\xi\eta\zeta\lambda\tau)^\varrho.}
@@ -5817,7 +6266,7 @@ Nun sind aber $\dfrac{\partial \Delta}{\partial \xi_i}$, $\dfrac{\partial \Delta
 \[
 \frac{\partial^2 \Delta}{\partial \xi_2\, \partial \eta_1} = -\, \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2}
 \]
-% ?? uncertain: a faint mark beneath/after $\eta_2$ in this display on the scan; could not resolve it to a real diacritic, transcribed as plain $\eta_2$
+% checked against the GDZ scan (27 Oct 2026): plain eta_2; the short mark above it is the right end of the bar of the right-hand fraction, the rest of which did not print, and the speck at the foot of the subscript 2 is a type blemish
 und ebenso, dass $\dfrac{\partial \Delta}{\partial \xi_1} \cdot \dfrac{\partial \Delta}{\partial \eta_2} - \dfrac{\partial \Delta}{\partial \xi_2} \cdot \dfrac{\partial \Delta}{\partial \eta_1}$ nichts anderes ist als der Minor $n - 2 = 3^{\text{ter}}$ Ordnung der zu $\Delta$ adjungirten Determinante, dass also der Werth dieses Ausdruckes dargestellt ist durch (vgl. Nr. 88, Bd. I)
 \[
 \Delta \cdot \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2}\,.
@@ -5831,7 +6280,7 @@ oder:
 Durch Comparation der mit $i$ multiplicirten Gleichung (7) mit der Gleichung (5) erh\"alt man sonach
 \weq{I}{\varrho^2\, p_{\xi}^{\varrho-1} \cdot q_{\eta}^{\varrho-1} m_{\zeta}^{\varrho} n_{\lambda}^{\varrho} k_{\tau}^{\varrho} \cdot (pq) = i \cdot \varrho\, (\varrho + 1)\, \Delta^{\varrho-1}\cdot \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2}\,.}
 
-106. \textit{Wir untersuchen nun weiter die Wirkung des $\Omega$-Processes, wenn auch noch die Variable $\xi$ mit hereingezogen wird, so dass nur mehr $\eta$ und $\tau$ als constant betrachtet werden.} Zu dem Zwecke differentiiren wir die Gleichungen (I) von Nr. 105 partiell nach $\xi_3$ und erhalten auf der linken Seite:
+106. \textit{Wir untersuchen nun weiter die Wirkung des $\Omega$-Processes, wenn auch noch die Variable $\zeta$ mit hereingezogen wird, so dass nur mehr $\eta$ und $\tau$ als constant betrachtet werden.} Zu dem Zwecke differentiiren wir die Gleichungen (I) von Nr. 105 partiell nach $\zeta_3$ und erhalten auf der linken Seite:
 \weq{8}{\varrho^3 \cdot p_{\xi}^{\varrho-1}\, q_{\eta}^{\varrho-1}\, m_{\zeta}^{\varrho-1}\, n_{\lambda}^{\varrho}\, k_{\tau}^{\varrho}\, (p_1 q_2 - q_1 p_2) \cdot m_3\,,}
 auf der rechten Seite dagegen:
 \weq{9}{i \cdot \varrho \cdot (\varrho + 1)(\varrho - 1) \cdot \Delta^{\varrho-2} \cdot \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2} \cdot \frac{\partial \Delta}{\partial \zeta_3} + i \cdot \varrho \cdot (\varrho + 1) \cdot \Delta^{\varrho-1} \cdot \frac{\partial^3 \Delta}{\partial \xi_1\, \partial \eta_2\, \partial \zeta_3}\,.}
@@ -5839,8 +6288,8 @@ Hieraus entsteht durch cyklische Vertauschung der Zahlen 1, 2, 3 zun\"achst aus 
 \weq{10}{\varrho^3 \cdot p_{\xi}^{\varrho-1}\, q_{\eta}^{\varrho-1}\, m_{\zeta}^{\varrho-1}\, n_{\lambda}^{\varrho}\, k_{\tau}^{\varrho}\, (p_2 q_3 - q_2 p_3)\, m_1\,,}
 und
 \weq{11}{\varrho^3 \cdot p_{\xi}^{\varrho-1}\, q_{\eta}^{\varrho-1}\, m_{\zeta}^{\varrho-1}\, n_{\lambda}^{\varrho}\, k_{\tau}^{\varrho}\, (p_3 q_1 - q_3 p_1)\, m_2\,.}
-Im Ausdrucke (9) bleibt bei dieser Vertauschung der zweite Term seinem Werthe nach unver\"andert, da $\dfrac{\partial^3 \Delta}{\partial \xi_1\, \partial \eta_2\, \partial \zeta_3}$, $\dfrac{\partial^3 \Delta}{\partial \xi_2\, \partial \eta_3\, \partial \zeta_1}$, $\dfrac{\partial^3 \Delta}{\partial \xi_3\, \partial \eta_1\, \partial \zeta_2}$ die n\"amlichen Unterdeterminanten inclusive Vorzeichen repr\"asentiren.
-% ?? uncertain: a small speck is printed just before the third partial-derivative term above on the scan; treated as a printing blemish and not transcribed as a symbol
+Im Ausdrucke (9) bleibt bei dieser Vertauschung der zweite Term seinem Werte nach unver\"andert, da $\dfrac{\partial^3 \Delta}{\partial \xi_1\, \partial \eta_2\, \partial \zeta_3}$, $\dfrac{\partial^3 \Delta}{\partial \xi_2\, \partial \eta_3\, \partial \zeta_1}$, $\dfrac{\partial^3 \Delta}{\partial \xi_3\, \partial \eta_1\, \partial \zeta_2}$ die n\"amlichen Unterdeterminanten inclusive Vorzeichen repr\"asentiren.
+% checked against the GDZ scan (27 Oct 2026): a round ink blot (about 4pt) stands left of the numerator of the third fraction, above its bar; not a symbol
 
 
 % ===== pdf idx 132, printed 118.0 =====
@@ -5885,7 +6334,7 @@ Substituirt man also diesen Werth und setzt die beiden Seiten einander gleich, s
 \end{aligned}
 \]
 oder:
-% ?? uncertain: a stray printed dot appears before "oder" and again at the start of the next formula line on the scan; not transcribed as a symbol
+% checked against the GDZ scan (27 Oct 2026): a round ink blot stands after "oder:" and a small dot at the start of the formula line below; neither is a symbol
 \weq{II}{\varrho^3 \cdot p_{\xi}^{\varrho-1}\, q_{\eta}^{\varrho-1}\, m_{\zeta}^{\varrho-1}\, n_{\lambda}^{\varrho}\, k_{\tau}^{\varrho}\, (pqm) = i \cdot \varrho \cdot (\varrho + 1)(\varrho + 2) \cdot \Delta^{\varrho-1} \cdot \frac{\partial^3 \Delta}{\partial \xi_1\, \partial \eta_2\, \partial \zeta_3}}
 
 
@@ -5998,8 +6447,8 @@ so nehmen die Gleichungen (II) unmittelbar die Form an:
 \sum k\cdot \overline{A}_k\ \ \frac{\partial J}{\partial \overline{A}_k} &= \varrho J
 \end{aligned}\right\}.
 }
-Sie gelten für jeden Werth von $\xi$ und $\eta$; also auch für $\xi_1 = \eta_2 = 1$, $\xi_2 = \eta_1 = 0$.
-Für diese Werthe geht aber $\overline{A}_k$ in $\overline{a}_k$ und demnach $J$ in $i$ über, so dass
+Sie gelten für jeden Wert von $\xi$ und $\eta$; also auch für $\xi_1 = \eta_2 = 1$, $\xi_2 = \eta_1 = 0$.
+Für diese Werte geht aber $\overline{A}_k$ in $\overline{a}_k$ und demnach $J$ in $i$ über, so dass
 endlich die gesuchten Differentialgleichungen in der Form sich ergeben:
 \weq{III}{
 \left.\begin{aligned}
@@ -6518,7 +6967,7 @@ Wir haben somit durch reine Invariantenprocesse die Existenz der Gleichungen (A)
 \[
 \sum \{(ab)c_x + (bc)a_x + (ca)b_x\} \varphi_\lambda = 0.
 \]
-Zum Schlusse noch eine Anwendung des Evectantenprocesses. Ich habe bereits in \S.\,1 an einem Beispiele gezeigt, wie sich eine in Coefficienten und Variabeln homogene Relation $F(A_i)=0$ von symbolischen Producten $A_i$ in die Gestalt bringen lässt
+Zum Schlusse noch eine Anwendung des Evectantenprocesses. Ich habe bereits in \S~1 an einem Beispiele gezeigt, wie sich eine in Coefficienten und Variabeln homogene Relation $F(A_i)=0$ von symbolischen Producten $A_i$ in die Gestalt bringen lässt
 \[
 \sum \{(ab)c_x + (bc)a_x + (ca)b_x\} = 0.
 \]
@@ -6640,7 +7089,9 @@ F(A_i) = \sum \{(ab)\,c_x + (bc)\,a_x + (ca)\,b_x\}\,\varphi_\lambda = 0.
 %  marking the close of "Erster Theil"; remainder of the page is blank]
 
 
-% ===== pdf idx 149, printed 134.001 =====
+% ===== pdf idx 149, printed 135.0 =====
+% !PRINTED 135
+\weberpage{135}
 % !PRINTED none
 % Unnumbered part-opening leaf: large blank area at the head of the page
 % (a short horizontal rule and two small printer's dots), followed by the
@@ -6785,7 +7236,7 @@ oder
 Q = \frac{1}{2}\,D\cdot(\xi\eta).
 \]
 
-Das Product $P$ hat also die Discriminante $D$ als Factor, und die Ursache liegt in dem Auftreten des Klammerfactors $(ab)$. Durch Absonderung dieses Factors $D$ wird $P$ auf ein einfacheres Product $P_1$ zurückgeführt; es ist, wie wir uns in Zukunft ausdrücken werden, reducibel auf $D$ und $P_1$. In $P_1$ treten aber immer nur Klammerfactoren vom Typus $(ab)$ auf, an deren Stelle wieder die Discriminante $D$ eingeführt werden kann. Was übrig bleibt ist eine Constante mal einer Potenz der Form $f$. $P$ ist also reducibel auf $D^u\cdot f^v$; d. h. irgend ein symbolisches Product $P$ ist rational durch $D$ und $f$ darstellbar.
+Das Product $P$ hat also die Discriminante $D$ als Factor, und die Ursache liegt in dem Auftreten des Klammerfactors $(ab)$. Durch Absonderung dieses Factors $D$ wird $P$ auf ein einfacheres Product $P_1$ zurückgeführt; es ist, wie wir uns in Zukunft ausdrücken werden, reducibel auf $D$ und $P_1$. In $P_1$ treten aber immer nur Klammerfactoren vom Typus $(ab)$ auf, an deren Stelle wieder die Discriminante $D$ eingeführt werden kann. Was übrig bleibt ist eine Constante mal einer Potenz der Form $f$. $P$ ist also reducibel auf $D^\mu\cdot f^\nu$; d. h. irgend ein symbolisches Product $P$ ist rational durch $D$ und $f$ darstellbar.
 
 120. \textit{Auflösung der quadratischen Gleichung.} Eine Gleichung ist als gelöst zu betrachten, wenn sie in ihre Linearfactoren zerfällt. Diese Zerfällung kann man für
 \[
@@ -6955,7 +7406,7 @@ und erhalten so:
 
 Das symbolische Product rechts erhalten wir aber auch, wenn wir
 ein Glied der ersten Polare von $\vartheta_x^2 = (b\beta)\,b_x\beta_x$ in die Reihe (VIII)
-\S.\,7 entwickeln. Es ist nämlich:
+\S~7 entwickeln. Es ist nämlich:
 
 \weq{2}{(b\beta)\,b_x\beta_y = \{(b\beta)\,b_x\beta_x\}_y + \frac{1}{2}\,(b\beta)^2(xy)\,,}
 
@@ -7645,7 +8096,7 @@ Somit sind alle Producte, welche irgend einen der vorhandenen Klammerfactoren \g
 \left.\begin{aligned}
 A_{f\vartheta_2} &= A_{f\vartheta_3} = 0\\
 A_{\varphi\vartheta_1} &= A_{\varphi\vartheta_3} = 0\\
-A_{\psi\vartheta_1} &= A_{\psi\vartheta_2} = 0 % ?? uncertain: source shows a small mark on this \vartheta_2 subscript (dust speck or prime-like artifact); reproduced per the pattern of the other two rows
+A_{\psi\vartheta_1} &= A_{\psi\vartheta_2} = 0 % checked against the GDZ scan (27 Oct 2026): the small round dot between \vartheta and the subscript 2 is an ink speck, not a prime; plain A_{\psi\vartheta_2}
 \end{aligned}\right\}\ \text{vergl. Nr. 127 (2),}
 \]
 \[
@@ -7951,26 +8402,26 @@ Doch ist auch deren Reducibilit\"at bereits nachgewiesen. Die erste Ueberschiebu
 von denen ich hier nur diejenigen anf\"uhren will, die sich auf die unter (I) angegebenen Ueberschiebungen beziehen. Man hat:
 
 \[
-((f_i, f_k), (f_\varrho, f_\sigma))^0 = \vartheta_{ik}\cdot\vartheta_{\varrho\sigma}
+1)\quad ((f_i, f_k), (f_\varrho, f_\sigma))^0 = \vartheta_{ik}\cdot\vartheta_{\varrho\sigma}
 = -\frac{1}{2}\left\{ A_{i\varrho} f_k f_\sigma - A_{i\sigma} f_k f_\varrho + A_{k\sigma} f_i f_\varrho - A_{k\varrho} f_i f_\sigma \right\}\,, \qquad \text{Nr. 48 (II)}
 \]
 
 \[
-((f_i, f_k), (f_\varrho, f_\sigma))^1 = (\vartheta_{ik},\ \vartheta_{\varrho\sigma})
+2)\quad ((f_i, f_k), (f_\varrho, f_\sigma))^1 = (\vartheta_{ik},\ \vartheta_{\varrho\sigma})
 = \frac{1}{2}\left\{ R_{i\varrho\sigma} f_k - R_{k\varrho\sigma} f_i \right\} \qquad \text{Nr. 53 (III)}
 \]
 
 \[
-((f_i, f_k), (f_\varrho, f_\sigma))^2 = (\vartheta_{ik},\ \vartheta_{\varrho\sigma})^2
+3)\quad ((f_i, f_k), (f_\varrho, f_\sigma))^2 = (\vartheta_{ik},\ \vartheta_{\varrho\sigma})^2
 = \frac{1}{2}\left\{ A_{i\varrho} A_{k\sigma} - A_{i\sigma} A_{k\varrho} \right\}\,. \qquad \text{Nr. 132 (II)}
 \]
 
 \[
-(A_{\varrho\varrho},\ A_{kk},\ A_{\sigma\sigma},\ A_{ii}) = 0\,. \qquad \text{Nr. 50.}
+4)\quad (A_{\varrho\varrho},\ A_{kk},\ A_{\sigma\sigma},\ A_{ii}) = 0\,. \qquad \text{Nr. 50.}
 \]
 
 \begin{center}
-\S.\,13. \textbf{Specielle quadratische Formen.}
+\S\ 13. \textbf{Specielle quadratische Formen.}
 \end{center}
 
 137. \textit{Conjugirte quadratische Formen.} Bei der Cayley'schen Methode der Aufl\"osung einer Gleichung vierten Grades mit Hilfe der Invariantentheorie (vgl. Nr. 175) zeigen sich drei quadratische Formen $\varphi$, $\psi$, $\chi$ (die quadratischen Factoren der Covariante $t$), deren zweite Ueberschiebungen $A_{\varphi\psi}$, $A_{\varphi\chi}$, $A_{\psi\chi}$ identisch verschwinden. Wir wollen allgemein drei solche quadratische Formen $f_0$, $f_1$, $f_2$ conjugirt nennen, sobald ihre simultanen Invarianten $A_{f_0f_1}$, $A_{f_0f_2}$, $A_{f_1f_2}$ identisch null sind. Das volle System dreier conjugirter quadratischer Formen enth\"alt nicht mehr 13, sondern nur 7 selbst\"andige Formen. Die Bedingung $A_{f_if_k} = 0$ bewirkt n\"amlich, dass die Functionaldeterminanten
@@ -8010,9 +8461,9 @@ und ebenso $(f_1,\ \vartheta_1)$, $(f_2,\ \vartheta_2)$. Das Verschwinden dieser
 Formen, wenn man eine derselben in ihrer einfachsten kanonischen
 Form $f_0 = 2x_1x_2$ zu Grunde legt? Zur Beantwortung dieser Frage
 nehmen wir an $f_1 = \alpha_x^2$ sei eine zu $f_0 = a_x^2$ conjugirte Form, dann
-muss, weil nach Voraussetzung
+muss, weil nach Vorausetzung % [sic] printed "Vorausetzung"
 \[
-A_{f_0f_1} = \bar a_0\bar a_2 - 2\bar a_1\bar a_1 + \bar a_0\bar a_2 = 0, \quad \bar a_0 = \bar a_2 = 0, \quad \bar a_1 = 1,
+A_{f_0f_1} = \bar a_0\bar\alpha_2 - 2\bar\alpha_1\bar a_1 + \bar\alpha_0\bar a_2 = 0, \quad \bar a_0 = \bar a_2 = 0, \quad \bar a_1 = 1,
 \]
 auch $\alpha_1 = 0$ sein, d. h. die betreffende Form $f_1$ muss dem Büschel
 angehören:
@@ -8116,7 +8567,7 @@ mag von vornherein bemerkt sein, dass dieser Werth $\varrho$ von $\pm 2$ verschi
  sein muss. Denn da die gesuchten Formen keinen gemeinschaftlichen
  Factor besitzen sollen, so müssen die Resultanten
 \[
-R_{f_if_k} \gtrless 0
+R_{f_if_k} \lessgtr 0
 \]
 sein. Nun ist aber nach Nr. 134 (1, $\beta$)
 %CONT>>
@@ -8260,7 +8711,7 @@ Damit ist die Aufgabe gelöst, quadratische Formen $f$ so zu bestimmen, dass ihr
 \[
 W = \text{Const.}\ xy\,(x^6 - 8x^3y^3 - 8y^6)\,,
 \]
-wenn wir der Einfachheit halber $\frac{2}{3}x_2=y$, $x_1=x$ setzen. Klein nennt diese Form (vgl. Vorles. über das Ikosaeder \S.\,5 und 10) Würfel, da man wiederum die Gauss'sche Zahlenebene so auf eine im Nullpunkt derselben berührende Kugel projiciren kann, dass die acht Wurzeln von $W=0$ auf der Kugel acht Punkte bestimmen, die gerade die acht Ecken eines der Kugel einbeschriebenen Würfels bilden. Ueber diese Form $W$ vergleiche auch \S.\,19.
+wenn wir der Einfachheit halber $\frac{2}{3}x_2=y$, $x_1=x$ setzen. Klein nennt diese Form (vgl. Vorles. über das Ikosaeder \S~5 und 10) Würfel, da man wiederum die Gauss'sche Zahlenebene so auf eine im Nullpunkt derselben berührende Kugel projiciren kann, dass die acht Wurzeln von $W=0$ auf der Kugel acht Punkte bestimmen, die gerade die acht Ecken eines der Kugel einbeschriebenen Würfels bilden. Ueber diese Form $W$ vergleiche auch \S~19.
 
 142. \textit{Relationen zwischen den vier Formen $f_i$.} Man erkennt direct, dass die Summe aller vier Formen identisch verschwindet; demnach hat man als erste Relation:
 \weq{1}{f_0+f_1+f_2+f_3=0\,.}
@@ -8310,7 +8761,7 @@ Durch die Substitution
 \]
 geht sie über in die Gleichung
 \weq{I}{\eta^4+\eta+c=0\,,}
-eine Gleichung vierten Grades, die nur einen einzigen Parameter $C$ besitzt. Sie hat eine cubische Resolvente, die oben erwähnte Gleichung $\Phi=0$, die natürlich ebenfalls nur diesen einen Parameter $C$ enthalten kann. Man könnte diesen Umstand benutzen — wenn man nicht aus praktischen Gründen davon absehen müsste — die allgemeine Gleichung vierten Grades aufzulösen. Zu dem Zwecke bringt man sie zunächst — was immer möglich ist — auf die Form (I), vergleicht die Parameter und löst nun die Gleichung (I) mit Hilfe der cubischen Resolvente, aus deren Wurzeln $\varphi_{ik}$ sich leicht die Wurzeln $f_i$ der vorgelegten Gleichung bestimmen lassen. (Vgl. auch \S.\,19.)
+eine Gleichung vierten Grades, die nur einen einzigen Parameter $C$ besitzt. Sie hat eine cubische Resolvente, die oben erwähnte Gleichung $\Phi=0$, die natürlich ebenfalls nur diesen einen Parameter $C$ enthalten kann. Man könnte diesen Umstand benutzen — wenn man nicht aus praktischen Gründen davon absehen müsste — die allgemeine Gleichung vierten Grades aufzulösen. Zu dem Zwecke bringt man sie zunächst — was immer möglich ist — auf die Form (I), vergleicht die Parameter und löst nun die Gleichung (I) mit Hilfe der cubischen Resolvente, aus deren Wurzeln $\varphi_{ik}$ sich leicht die Wurzeln $f_i$ der vorgelegten Gleichung bestimmen lassen. (Vgl. auch \S~19.)
 
 \textit{Anmerkung.} 2. Herr Brill hat im 20. Bande der Math. Annalen (Binäre Formen und Gleichung sechsten Grades) gleichfalls gezeigt: Man kann immer vier quadratische Formen so finden, dass zwischen ihnen sowohl als zwischen ihren Quadraten je eine lineare Relation besteht, also dass man, wenn $f_1$ $f_2$ $f_3$ $f_4$ die vier quadratischen Formen, die Beziehungen hat:
 \weq{1}{f_1+f_2+f_3+f_4=0}
@@ -8465,7 +8916,7 @@ Ich möchte noch darauf aufmerksam machen, dass auch zwischen den sechs quadrati
 \weq{1}{\sum_{i=0}^{i=5}\psi_i^2 = 0\,,}
 \weq{2}{\sum_{i=0}^{i=5}\psi_i^4 = 0\,,}
 \weq{3}{\sum_{i=0}^{i=5}\psi_i^6 = 0\,,}
-\weq{4}{\sum_{1}^{5}\psi_i^3 = \dfrac{(1+\sqrt5)^3}{(1-\sqrt5)^2\sqrt5}\Big(\sum_1^5 \psi_i\Big)^3.}
+\weq{4}{\sum_{i=0}^{i=5}\psi_i^3 = \dfrac{(1+\sqrt5)^3}{(1-\sqrt5)^2\sqrt5}\Big(\sum_1^5 \psi_i\Big)^3.}
 Aus den ersten drei Relationen geht sofort hervor, dass die Gleichung
 \[
 \prod_{i=0}^{i=5}(z-\psi_i^2) = 0
@@ -8524,7 +8975,7 @@ und überdies:
 Es lassen sich also in der That diese sechs Thetareihen mit den Polaren der sechs quadratischen Formen $f_0, f_1, \dots f_5$ identificiren.
 
 \begin{center}
-\S.\,14.\\[2pt]
+\S~14.\\[2pt]
 \textbf{Die Form dritten Grades.}
 \end{center}
 
@@ -8590,8 +9041,8 @@ auf bekannte Formen führen. Es ist aber
 \[
 (f,\,f) = 0, \quad (f,\,f)^2 = \Delta, \quad (f,\,f)^3 = 0,
 \]
-und demnach ist $\Delta$ reducibel, und $(ab)$ Reducent.
-% ?? uncertain: printed glyph before "reducibel" is small and could read as \pi; read here as \Delta by mathematical context with (f,f)^2=\Delta established immediately above
+und demnach ist $\pi$ reducibel, und $(ab)$ Reducent.
+% checked against the GDZ scan (27 Oct 2026): the print has a lowercase \pi here (the product \Pi of p. 168, misprinted), not \Delta; reproduced as printed
 
 \textit{Anmerkung.} Ich möchte noch bemerken, dass sich diese Darstellung der Reducibilität mit der in Nr. 124 gegebenen vollständig deckt. Wir belegten damals Klammerfactoren mit dem Namen Reducenten, sobald das Product, welches sie allein besass, sammt allen daraus durch Faltung entstehenden reducibel war. In der That sind wir hier zum gleichen Resultate gelangt, denn $(f,\,f)^2$ und $(f,\,f)^{3}$ entstehen aus $(f,\,f)$ durch Faltung.
 
@@ -8831,12 +9282,12 @@ Man erkennt, wie auf diesem Wege oft in sehr einfacher Weise Ueberschiebungen be
 
 151. \textit{Erste Anwendung: Die Discriminante der Form $f$.} Bekanntlich ist die Discriminante einer Form darstellbar als Resultante der gleich null gesetzten ersten Differentialquotienten dieser Form. (Vergl. Bd. I, Nr. 173 und 178.) In unserm Falle hier sind die beiden ersten Differentialquotienten von $f = a_x^3 = b_x^3$ zwei quadratische Formen
 \[
-f_1 = a_1 a_x^2
+f_1 = a_1 a_x^3
 \]
 \[
 f_2 = b_2 b_x^2,
 \]
-% ?? uncertain: exponent on $a_x$ in the printed formula for $f_1$ was hard to resolve against $f_2$'s $b_x^2$ — transcribed both as quadratic (degree 2) forms, consistent with "zwei quadratische Formen"
+% checked against the GDZ scan (27 Oct 2026): the print has f_1 = a_1 a_x^3 (exponent 3, a misprint: the text calls f_1, f_2 quadratic and has f_2 = b_2 b_x^2); reproduced as printed
 und die Resultante derselben ist nach Nr. 129 gleich der Discriminante ihrer Functionaldeterminante $\vartheta$, nämlich:
 \weq{1}{2A_{\vartheta\vartheta} = -R_{f_1f_2}.}
 Nun ist die Functionaldeterminante von $f_1$ und $f_2$ dargestellt durch
@@ -8914,7 +9365,7 @@ f = c\cdot\Bigg\{&\sqrt[3]{Q+\sqrt{-\frac{R}{2}}\cdot f} - \sqrt[3]{Q-\sqrt{-\fr
 \Bigg\{&\sqrt[3]{Q+\sqrt{-\frac{R}{2}}\cdot f} - \varepsilon\sqrt[3]{Q-\sqrt{-\frac{R}{2}}\cdot f}\Bigg\}\times\\
 \Bigg\{&\sqrt[3]{Q+\sqrt{-\frac{R}{2}}\cdot f} - \varepsilon^2\sqrt[3]{Q-\sqrt{-\frac{R}{2}}\cdot f}\Bigg\}.
 \end{aligned}}
-Es ist hiebei nicht nöthig, direct die dritte Wurzel aus $Q+\sqrt{-\frac{R}{2}}\cdot f$ auszuziehen; vielmehr braucht man nur die erste Polare zu bilden
+Es ist hiebei nicht nöthig, direct die dritte Wurzel aus $Q\pm\sqrt{-\frac{R}{2}}\cdot f$ auszuziehen; vielmehr braucht man nur die erste Polare zu bilden
 \[
 \begin{aligned}
 Q_x^2 Q_y + \lambda_1 f_x^2 f_y &= \alpha_x^2\alpha_y\\
@@ -9005,7 +9456,7 @@ die nun durch Ausziehen der dritten Wurzel gelöst werden kann.
 % !PRINTED 178
 \weberpage{178}
 
-Ist $R=0$, so besitzt $f$ zwei gleiche Wurzeln und ebenso $\Delta$. In diesem Falle ist natürlich die in Nr. 153 gegebene Transformation von $f$ unmöglich.$^{\ast}$ % ?? uncertain: raised mark after \textquotedbl{}unmöglich.\textquotedbl{} -- no footnote text visible in the provided bands for this page
+Ist $R=0$, so besitzt $f$ zwei gleiche Wurzeln und ebenso $\Delta$. In diesem Falle ist natürlich die in Nr. 153 gegebene Transformation von $f$ unmöglich. % checked against the GDZ scan (27 Oct 2026): the raised mark after "unmöglich." is an irregular ink blob, not a footnote sign (the footnote anchors of this book are "*)", and the page has no footnote); not reproduced
 Die Hesse'sche Form ist dann, wie schon früher erwähnt, Factor von $f$. Denn da in jedem Falle nach Nr. 152 (4)
 \[
 \begin{aligned}
@@ -9143,7 +9594,7 @@ Hiebei entsteht das symbolische Product links, wenn wir in $(b\Delta)^3b_y\Delta
 % !PRINTED 181
 \weberpage{181}
 
-wir aber diese Form nach Reihe (VIII) \S.\,7, so kommt:
+wir aber diese Form nach Reihe (VIII) \S~7, so kommt:
 
 \weq{1}{(b\Delta)^3 b_y \Delta_x = [(b\Delta)^3 b_x \Delta_x]_y + \frac{1}{2}(b\Delta)^4(yx),}
 
@@ -9191,7 +9642,7 @@ Reducenten sind.
 \[
 (ab)a_x^3 b_y^3,\ (a\Delta)^2 a_x^2 \Delta_y^2,\ (\Delta\Delta_1)\Delta_x^3\Delta_{1y}^3
 \]
-in die Reihe (VIII) \S.\,7, so findet man, dass die rechts auftretenden Elementarcovarianten sämmtlich Formen des Systems sind. Man erhält nämlich:
+in die Reihe (VIII) \S~7, so findet man, dass die rechts auftretenden Elementarcovarianten sämmtlich Formen des Systems sind. Man erhält nämlich:
 %CONT>>
 
 
@@ -9206,7 +9657,7 @@ in die Reihe (VIII) \S.\,7, so findet man, dass die rechts auftretenden Elementa
 
 \weq{3}{(\Delta\Delta_1)\Delta_x^3\Delta_{1y}^3 = \frac{1}{2}\left(j\cdot f_{y^2} - \frac{i}{2}\Delta_{y^2}\right)(xy) + \frac{1}{24} i^2 (xy)^3.}
 
-Nun kann jedes symbolische Product, das $(ab)$, oder $(a\Delta)^2$, oder $(\Delta\Delta_1)$ zum Factor hat, durch Ueberschiebung mit den Formen (1), resp. (2), (3) oder deren Polaren gewonnen werden (vergl. \S.\,3) und die Gleichungen (1), (2), (3) lehren daher:
+Nun kann jedes symbolische Product, das $(ab)$, oder $(a\Delta)^2$, oder $(\Delta\Delta_1)$ zum Factor hat, durch Ueberschiebung mit den Formen (1), resp. (2), (3) oder deren Polaren gewonnen werden (vergl. \S~3) und die Gleichungen (1), (2), (3) lehren daher:
 
 1) Alle Formen, welche $(ab)$ zum Factor haben, lassen sich reduciren auf Formen, welche an Stelle der beiden Symbole $a$ und $b$ nur mehr das eine $\Delta$ besitzen und auf Formen, die $i$ zum Factor haben.
 
@@ -9333,7 +9784,7 @@ oder
 
 167. \textit{Die vierten und fünften Ueberschiebungen.} Wir benutzen zu diesen Bildungen eine andere Ausgangsform.
 
-Gemäss der Reihenentwicklung (IX), \S.\,7 ist:
+Gemäss der Reihenentwicklung (IX), \S~7 ist:
 
 \[
 (a\Delta)\,\Delta_x^2\,a_y^3\,\Delta_y = \sum \frac{\binom{2}{k}\binom{3}{k}}{\binom{6-k+1}{k}}\,(f,\Delta)^k_{y^{3-k+1}}\,(xy)^k,
@@ -9355,7 +9806,7 @@ Nun ist aber $(f,f)^3=0$, und ebenso verschwindet die linke Seite, da sie durch 
 und ebenso
 \weq{11}{(t,\Delta)^4 = 0,}
 
-wie aus (10) direct durch den Aronhold'schen Process (vergl. auch \S.\,16) hervorgeht. Beide Resultate sind auch a priori einleuchtend. Denn diese Ueberschiebungen würden quadratische Covarianten erzeugen, die aber unmöglich durch $f, \Delta, t$ sich rational ausdrücken lassen.
+wie aus (10) direct durch den Aronhold'schen Process (vergl. auch \S~16) hervorgeht. Beide Resultate sind auch a priori einleuchtend. Denn diese Ueberschiebungen würden quadratische Covarianten erzeugen, die aber unmöglich durch $f, \Delta, t$ sich rational ausdrücken lassen.
 
 Die vierte Ueberschiebung von $t$ über sich selbst gewinnt man wiederum aus der Formel (II), Nr. 163, wenn man darin zuerst $x$ mit $y$ vertauscht, also aus:
 
@@ -9375,7 +9826,7 @@ Somit habeu wir die wichtige Relation % [sic]
 
 \weq{12}{(t,t)^4 = 0.}
 
-Durch sie wird $t$ als eine ganz specielle Form ihres Grades charakterisirt. Wir werden in \S.\,19 solche Formen eingehender studiren. Hier möge nur so viel bemerkt sein, dass gerade wegen dieser Relation $(t,t)^4=0$
+Durch sie wird $t$ als eine ganz specielle Form ihres Grades charakterisirt. Wir werden in \S~19 solche Formen eingehender studiren. Hier möge nur so viel bemerkt sein, dass gerade wegen dieser Relation $(t,t)^4=0$
 %CONT>>
 
 
@@ -9384,7 +9835,7 @@ Durch sie wird $t$ als eine ganz specielle Form ihres Grades charakterisirt. Wir
 \weberpage{186}
 
 %<<CONT
-nach den in \S.\,20 entwickelten Gesetzen das ganze Formensystem einer solchen Form $t$ sich auf die vier Formen reducirt
+nach den in \S~20 entwickelten Gesetzen das ganze Formensystem einer solchen Form $t$ sich auf die vier Formen reducirt
 
 \[
 t,\ (t,t)^2,\ ((t,t)^2,t),\ (t,t)^6.
@@ -9415,7 +9866,7 @@ Der Ausdruck rechts kann auch betrachtet werden als vierte Ueberschiebung von $\
 Wir werden alsbald sehen, dass die berechnete Grösse rechts nichts anderes ist als die Discriminante $R$ der Form $f=a_x^4$, abgesehen von einem Zahlenfactor.
 
 \begin{center}
-\S.\,16.
+\S~16.
 
 \gesperrt{Anwendung des Aronhold'schen Processes auf das Formensystem der Form vierten Grades.}
 \end{center}
@@ -9447,13 +9898,13 @@ Es ist weiter:
 
 \weq{4}{\delta t = \delta(f,\Delta) = (\delta f,\Delta)+(f,\delta\Delta) = (\Delta,\Delta)+i\cdot(f,f) = 0.}
 
-Das letzte Resultat war a priori einzusehen, da $t$ als erste Ueberschiebung von $f$ und $\Delta$ eine Combinante dieser beiden Formen ist. (Vergl. \S.\,6.) Die allgemeinste Combinante des Systemes $f, \Delta$ ist die Form
+Das letzte Resultat war a priori einzusehen, da $t$ als erste Ueberschiebung von $f$ und $\Delta$ eine Combinante dieser beiden Formen ist. (Vergl. \S~6.) Die allgemeinste Combinante des Systemes $f, \Delta$ ist die Form
 
 \[
 C = a_y^4\Delta_x^4 - a_x^4\Delta_y^4,
 \]
 
-wie wir bei Gelegenheit der Definition von Combinanten \S.\,6 erwähnt haben.
+wie wir bei Gelegenheit der Definition von Combinanten \S~6 erwähnt haben.
 
 Da aber nach Gleichung Nr. 163 (I), $t$ die einzige Elementar-
 %CONT>>
@@ -9498,7 +9949,7 @@ genügt. Ist nun $P$ irgend eine Combinante von $f=a_x^4$ und $\Delta=\Delta_x^4
 \varphi = kf + \lambda\Delta
 \]
 
-eine entsprechende Combinante $P_\varphi$, welche man erhält, wenn man in $P$ die Co\"efficienten $\bar a_i$ von $f$ durch die Co\"efficienten $k\bar a_i+\lambda\bar\Delta_i$ von $\varphi$ ersetzt. Insbesondere entspricht der einzigen Fundamentalcombinante $t=(f,\Delta)$ eine Form $t_\varphi$ von $\varphi$, aus der alle Combinanten dieser Form $\varphi$ entspringen. Die Berechnung derselben ist also zurückgeführt auf die Berechnung von $t_\varphi$. Nach den allgemeinen Entwicklungen in \S.\,6 hat man aber:
+eine entsprechende Combinante $P_\varphi$, welche man erhält, wenn man in $P$ die Co\"efficienten $\bar a_i$ von $f$ durch die Co\"efficienten $k\bar a_i+\lambda\bar\Delta_i$ von $\varphi$ ersetzt. Insbesondere entspricht der einzigen Fundamentalcombinante $t=(f,\Delta)$ eine Form $t_\varphi$ von $\varphi$, aus der alle Combinanten dieser Form $\varphi$ entspringen. Die Berechnung derselben ist also zurückgeführt auf die Berechnung von $t_\varphi$. Nach den allgemeinen Entwicklungen in \S~6 hat man aber:
 
 \weq{II}{t_\varphi = g^\varrho\cdot t.}
 
@@ -9660,7 +10111,7 @@ wobei $g = k^3 - \dfrac{ik\lambda^2}{2} - \dfrac{j}{3}\lambda^3$, und $g_1 = \df
 % !PRINTED 191
 \weberpage{191}
 \begin{center}
-\S.\,17.\\[2pt]
+\S~17.\\[2pt]
 \textbf{Die Gleichung vierten Grades.}
 \end{center}
 
@@ -9981,7 +10432,7 @@ R_{\Delta,f}=16\cdot\varrho R_{f_1,f}^2=\mu\cdot R^2,\quad\text{d.\,h.}
 % ===== pdf idx 212, printed 198.0 =====
 % !PRINTED 198
 \weberpage{198}
-\S.\,18. \textbf{Normalform von $f=a_x^4$; Transformation in die Normalform.}
+\S~18. \textbf{Normalform von $f=a_x^4$; Transformation in die Normalform.}
 
 178. \textit{Das Formensystem der Normalform.} Bei den Formen vierter Ordnung ist vorzugsweise ein Ausdruck derselben als canonische Form oder Normalform bezeichnet worden, nämlich jener, in welchem alle ungeraden Potenzen von $x$ fehlen, also
 \[
@@ -10244,16 +10695,16 @@ in (1) die Beziehung:
 Es ergeben sich sonach aus (2) drei Werthe f\"ur $\varrho$ resp. $\lambda$, und somit sechs Werthe f\"ur $k$ wegen der Beziehung $\left(k+\dfrac{1}{k}\right)^2=12\lambda$.
 
 \begin{center}
-\textbf{\S.\,19. Ueber die Formen, f\"ur welche $(f,f)^4=0$.}
+\textbf{\S~19. Ueber die Formen, f\"ur welche $(f,f)^4=0$.}
 \end{center}
 
-184. \textit{Einleitende Bemerkungen.} Wir haben gesehen, dass in dem Formensystem einer Form vierten Grades eine Covariante $t$ auftritt, sechsten Grades in den Variabeln und dritten Grades in den Coefficienten, welche zwei bemerkenswerthe Eigenschaften besitzt: einmal, dass sie in drei conjugirte quadratische Factoren zerf\"allt, also durch Wurzelziehen aufl\"osbar ist, sodann, dass ihre vierte Ueberschiebung \"uber sich selbst identisch verschwindet. Es liegt die Frage nach dem Zusammenhange dieser beiden Eigenschaften nahe, und \gesperrt{Clebsch} hatte sich die Aufgabe gestellt, zu untersuchen, ob jede Form sechsten Grades, deren vierte Ueberschiebung \"uber sich selbst verschwindet, in drei conjugirte quadratische Factoren zerf\"allt. Es zeigte sich (vgl. \gesperrt{Clebsch}, \glqq Bin\"are Formen\grqq{}, \S.\,111), dass in der That die eine Eigenschaft die andere involvirt, und somit jede derartige Gleichung sechsten Grades aufl\"osbar ist.
+184. \textit{Einleitende Bemerkungen.} Wir haben gesehen, dass in dem Formensystem einer Form vierten Grades eine Covariante $t$ auftritt, sechsten Grades in den Variabeln und dritten Grades in den Coefficienten, welche zwei bemerkenswerthe Eigenschaften besitzt: einmal, dass sie in drei conjugirte quadratische Factoren zerf\"allt, also durch Wurzelziehen aufl\"osbar ist, sodann, dass ihre vierte Ueberschiebung \"uber sich selbst identisch verschwindet. Es liegt die Frage nach dem Zusammenhange dieser beiden Eigenschaften nahe, und \gesperrt{Clebsch} hatte sich die Aufgabe gestellt, zu untersuchen, ob jede Form sechsten Grades, deren vierte Ueberschiebung \"uber sich selbst verschwindet, in drei conjugirte quadratische Factoren zerf\"allt. Es zeigte sich (vgl. \gesperrt{Clebsch}, \glqq Bin\"are Formen\grqq{}, \S~111), dass in der That die eine Eigenschaft die andere involvirt, und somit jede derartige Gleichung sechsten Grades aufl\"osbar ist.
 
 Wir stellen uns hier nach dem Vorgange von \gesperrt{Brioschi} und \gesperrt{Wedekind} die allgemeine Frage: Welche Eigenschaften besitzt eine beliebige Form $f$ $n^{\text{ten}}$ Grades, f\"ur welche $(f,f)^4$ identisch verschwindet?
 
 Hierbei muss nat\"urlich der Grad $n$ von $f>3$ sein. Die Untersuchung wird ergeben, dass der Bedingung $(f,f)^4=0$ ausser den Formen mit $(n-1)$fachem Factor nur ganz specielle Formen gen\"ugen, welche \gesperrt{Klein} mit den Namen Tetraeder, Octaeder und Ikosaeder belegt hat.
 
-Von diesen Formen haben wir bereits in \S.\,12 gesehen, wie sie sich, sobald sie in einer gewissen Normalform vorliegen, in einfacher Weise in quadratische Factoren spalten lassen.
+Von diesen Formen haben wir bereits in \S~12 gesehen, wie sie sich, sobald sie in einer gewissen Normalform vorliegen, in einfacher Weise in quadratische Factoren spalten lassen.
 
 185. \textit{Die Coefficientenrelationen, die aus $(f,f)^4=0$ hervorgehen.} Die Identit\"at $(f,f)^4=0$ liefert eine Reihe von Relationen f\"ur die
 %CONT>>
@@ -10672,7 +11123,7 @@ Für $\varrho=0$ ist der Coefficient von $C_1C_3$ die Zahl $-4$, also $C_3=0$.
 \begin{flushleft}
 \text{\textquotedbl}\quad $\varrho=1$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_4$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $-24$, \quad \text{\textquotedbl}\quad $C_4=0$\\
 \text{\textquotedbl}\quad $\varrho=2$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_5$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $-48$, \quad \text{\textquotedbl}\quad $C_5=0$\\
-\text{\textquotedbl}\quad $\varrho=3$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_6$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $0$, \quad \text{\textquotedbl}\quad $C_6\begin{smallmatrix}\leqq\\[-2pt]\geqq\end{smallmatrix}0$ % ?? uncertain: exact form of stacked leqq/geqq symbol
+\text{\textquotedbl}\quad $\varrho=3$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_6$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $0$, \quad \text{\textquotedbl}\quad $C_6\lesseqqgtr 0$ % checked against the GDZ scan (27 Oct 2026): one printed sign, < above a single double bar above > (\lesseqqgtr), not \leqq over \geqq
 \\
 \text{\textquotedbl}\quad $\varrho=4$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_7$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $168$, \quad \text{\textquotedbl}\quad $C_7=0$\\
 \text{\textquotedbl}\quad $\varrho=5$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_8$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $336$, \quad \text{\textquotedbl}\quad $C_8=0$\\
@@ -10726,7 +11177,7 @@ f &= xy(x^4+y^4)\\
 f &= x^4 \pm 2\,i\sqrt{3}\,x^2y^2+y^4
 \end{aligned}
 \]
-und die daraus durch lineare Transformation hervorgehenden Formen die einzigen sind, für welche $(f,f)^4$ identisch verschwindet. Das Formensystem dieser Formen reducirt sich nach den in \S.\,20 zu entwickelnden Gesetzen direct auf die drei Covarianten $f$, $(f,f)^2=H$, $((f,f)^2,f)=T$ und eine Invariante $A$. Da nun $T$ eine schiefe Covariante, so muss, weil sich das Quadrat derselben stets durch gerade Formen ausdrücken lässt, und aus Gründen der Homogeneität in den Variabeln für das Ikosaeder eine lineare Relation zwischen $f^5$, $H^3$, $T^2$, für das Octaeder eine ebensolche zwischen $f^4$, $H^3$, $T^2$, und für das Tetraeder eine solche zwischen $f^3$, $H^3$, $T^2$ bestehen. In allen drei Gleichungen treten natürlich noch gewisse Potenzen der Invariante $A$ auf, damit auch die Homogeneität in den Coefficienten gewahrt bleibt\footnote{Zu den regulären Körpern gelangt man auch, wenn man diese Relationen als Definitionsgleichungen auffasst. Halphen hat gezeigt (siehe \glqq Mémoire sur la réduction des équations différentielles linéaires aux formes intégrables\grqq{}, Paris 1883): Die Formen, welche der Gleichung
+und die daraus durch lineare Transformation hervorgehenden Formen die einzigen sind, für welche $(f,f)^4$ identisch verschwindet. Das Formensystem dieser Formen reducirt sich nach den in \S~20 zu entwickelnden Gesetzen direct auf die drei Covarianten $f$, $(f,f)^2=H$, $((f,f)^2,f)=T$ und eine Invariante $A$. Da nun $T$ eine schiefe Covariante, so muss, weil sich das Quadrat derselben stets durch gerade Formen ausdrücken lässt, und aus Gründen der Homogeneität in den Variabeln für das Ikosaeder eine lineare Relation zwischen $f^5$, $H^3$, $T^2$, für das Octaeder eine ebensolche zwischen $f^4$, $H^3$, $T^2$, und für das Tetraeder eine solche zwischen $f^3$, $H^3$, $T^2$ bestehen. In allen drei Gleichungen treten natürlich noch gewisse Potenzen der Invariante $A$ auf, damit auch die Homogeneität in den Coefficienten gewahrt bleibt\footnote{Zu den regulären Körpern gelangt man auch, wenn man diese Relationen als Definitionsgleichungen auffasst. Halphen hat gezeigt (siehe \glqq Mémoire sur la réduction des équations différentielles linéaires aux formes intégrables\grqq{}, Paris 1883): Die Formen, welche der Gleichung
 \[
 c_1f^{\lambda}+c_2H^{\nu}+c_3T^{\mu}=0
 \]
@@ -10830,7 +11281,7 @@ oder nach bekannten Methoden
 \weberpage{216}
 Die Tetraederirrationalität ist also schliesslich dargestellt durch:
 \[
-\xi=\frac{x}{y}=\pm\sqrt[4]{\frac{\pm\sqrt{\varepsilon^2\sqrt[3]{\varrho}-\varepsilon}\pm\sqrt{-\varepsilon\sqrt[3]{\varrho}+\varepsilon^2}}{\pm\sqrt{-\varepsilon\sqrt[3]{\varrho}+\varepsilon^2}\mp\sqrt{\varepsilon^2\sqrt[3]{\varrho}-\varepsilon}}}=\vartheta(\varrho). % ?? uncertain: exact arrangement of the four ± / ∓ signs in this nested radical is hard to resolve at this resolution; sign pattern reproduced as best read
+\xi=\frac{x}{y}=\pm\sqrt{\frac{\pm\sqrt{\varepsilon^2\sqrt[3]{\varrho}-\varepsilon}\pm\sqrt{-\varepsilon\sqrt[3]{\varrho}+\varepsilon^2}}{\pm\sqrt{-\varepsilon\sqrt[3]{\varrho}+\varepsilon^2}\mp\sqrt{\varepsilon^2\sqrt[3]{\varrho}-\varepsilon}}}=\vartheta(\varrho). % checked against the GDZ scan (27 Oct 2026): signs as printed (numerator \pm, \pm; denominator \pm, \mp); the outer radical is a plain square root without an index
 \]
 
 194. \textit{Auflösung der allgemeinen Octaedergleichung.} Es sei nun eine Form
@@ -11029,7 +11480,9 @@ wäre, die Wurzeln jeder biquadratischen Gleichung durch zweimaliges Aufschlagen
 % [divider: short centred horizontal rule at foot of page, marking end of subsection; nothing else printed below it]
 
 
-% ===== pdf idx 235, printed 220.001 =====
+% ===== pdf idx 235, printed 221.0 =====
+% !PRINTED 221
+\weberpage{221}
 % !PRINTED none
 % Part-title / section-opening page: large centred "Dritter Theil." heading, subtitle,
 % and the "\S. 20" section heading, followed directly by running numbered body text
@@ -11041,7 +11494,7 @@ wäre, die Wurzeln jeder biquadratischen Gleichung durch zweimaliges Aufschlagen
 \end{center}
 
 \begin{center}
-\S.\,20.\\
+\S~20.\\
 \gesperrt{Ueberschiebung von Systemen.}
 \end{center}
 
@@ -11090,11 +11543,11 @@ Ist umgekehrt ein Zahlensystem $\alpha_i$, $\beta_i$, $\nu$ gegeben, das diese G
 %<<CONT
 $V$ eindeutig bestimmt, und zwei solche Producte haben nur Eine Ueberschiebung vom Grade $\nu$.
 
-198. \textit{Umgrenzung der zu betrachtenden Ueberschiebungen.} Die beiden Systeme k\"onnen nat\"urlich auf diese Weise zu unz\"ahligen Ueberschiebungen Veranlassung geben. Denn die beiden Gleichungen (1) und (2) sind lineare diophantische Gleichungen mit den Unbekannten $\alpha_i$, $\beta_i$, $\nu$, und zwar solche (vgl. Bd.\ I, Nr. 187), die immer positive ganzzahlige L\"osungen besitzen. Jeder Ueberschiebung entspricht aber eine solche L\"osung, und umgekehrt sahen wir soeben, geh\"ort jeder positiven ganzzahligen L\"osung eine und nur eine Ueberschiebung zu. Von dieser unendlich grossen Anzahl von Ueberschiebungen interessiren uns aber nun jene, durch welche wesentlich neue Formen entstehen. Es werden n\"amlich wie fr\"uher bei der Systembildung einfacher Formen die Ueberschiebungen in zwei Gruppen zu theilen sein: in eine erste Gruppe von Ueberschiebungen, bei denen die Faltung des Productes $U \cdot V$ kein zerfallendes Glied liefert, und in eine zweite, welche solche Glieder enthalten. Hierbei nennen wir ein Glied $G$ ein \gesperrt{zerfallendes}, wenn man dasselbe in zwei Theile $G_1$ und $G_2$ spalten kann, von denen der eine, also auch der andere, ein Glied einer fr\"uheren, niedrigeren Ueberschiebung ist, oder auch ein Product urspr\"unglicher Formen. Die Ueberschiebungen der zweiten Gruppe aber k\"onnen keine wesentlich \gesperrt{neuen} Formen liefern, da sich ja nach den allgemeinen S\"atzen in \S.\,3 jede solche Ueberschiebung durch dieses Glied und niedrigere Ueberschiebungen, also durch Bekanntes ausdr\"ucken l\"asst. (Siehe als Beisp. etwa Nr. 211.) Wir beschr\"anken uns also auf das Studium der ersten Ueberschiebungsgruppe, deren Formen wir in diesem Paragraphen mit $C_i$ bezeichnen werden. Von diesen Formen werden wir in der Folge vier Lehrs\"atze aufstellen, mit deren Hilfe die Endlichkeit des Formensystems einer bin\"aren Form sich einfach beweisen l\"asst. Hiebei bezeichnen wir als Form $C_i$ nur ein einziges \"ubrigens willk\"urliches Glied der betreffenden Ueberschiebung, die nach unsern allgemeinen Ueberschiebungss\"atzen durch ein solches Glied vollst\"andig definirt ist.
+198. \textit{Umgrenzung der zu betrachtenden Ueberschiebungen.} Die beiden Systeme k\"onnen nat\"urlich auf diese Weise zu unz\"ahligen Ueberschiebungen Veranlassung geben. Denn die beiden Gleichungen (1) und (2) sind lineare diophantische Gleichungen mit den Unbekannten $\alpha_i$, $\beta_i$, $\nu$, und zwar solche (vgl. Bd.\ I, Nr. 187), die immer positive ganzzahlige L\"osungen besitzen. Jeder Ueberschiebung entspricht aber eine solche L\"osung, und umgekehrt sahen wir soeben, geh\"ort jeder positiven ganzzahligen L\"osung eine und nur eine Ueberschiebung zu. Von dieser unendlich grossen Anzahl von Ueberschiebungen interessiren uns aber nun jene, durch welche wesentlich neue Formen entstehen. Es werden n\"amlich wie fr\"uher bei der Systembildung einfacher Formen die Ueberschiebungen in zwei Gruppen zu theilen sein: in eine erste Gruppe von Ueberschiebungen, bei denen die Faltung des Productes $U \cdot V$ kein zerfallendes Glied liefert, und in eine zweite, welche solche Glieder enthalten. Hierbei nennen wir ein Glied $G$ ein \gesperrt{zerfallendes}, wenn man dasselbe in zwei Theile $G_1$ und $G_2$ spalten kann, von denen der eine, also auch der andere, ein Glied einer fr\"uheren, niedrigeren Ueberschiebung ist, oder auch ein Product urspr\"unglicher Formen. Die Ueberschiebungen der zweiten Gruppe aber k\"onnen keine wesentlich \gesperrt{neuen} Formen liefern, da sich ja nach den allgemeinen S\"atzen in \S~3 jede solche Ueberschiebung durch dieses Glied und niedrigere Ueberschiebungen, also durch Bekanntes ausdr\"ucken l\"asst. (Siehe als Beisp. etwa Nr. 211.) Wir beschr\"anken uns also auf das Studium der ersten Ueberschiebungsgruppe, deren Formen wir in diesem Paragraphen mit $C_i$ bezeichnen werden. Von diesen Formen werden wir in der Folge vier Lehrs\"atze aufstellen, mit deren Hilfe die Endlichkeit des Formensystems einer bin\"aren Form sich einfach beweisen l\"asst. Hiebei bezeichnen wir als Form $C_i$ nur ein einziges \"ubrigens willk\"urliches Glied der betreffenden Ueberschiebung, die nach unsern allgemeinen Ueberschiebungss\"atzen durch ein solches Glied vollst\"andig definirt ist.
 
 199. \textit{Erster Lehrsatz:} \gesperrt{\glqq Ist das System der Formen $A_i$ sowohl als auch das System der Formen $B_i$ ein endliches, so ist auch das durch Ueberschiebung entstandene System der Formen $C_i$ endlich.\grqq{}}
 
-Der Beweis wird mit Hilfe des im ersten Bande dieser Vorlesungen \S.\,15 bewiesenen Satzes erbracht, wonach ein simultanes System linearer diophantischer Gleichungen nur eine endliche Zahl einfacher L\"osungen besitzt. Wir sahen n\"amlich soeben, dass jeder
+Der Beweis wird mit Hilfe des im ersten Bande dieser Vorlesungen \S~15 bewiesenen Satzes erbracht, wonach ein simultanes System linearer diophantischer Gleichungen nur eine endliche Zahl einfacher L\"osungen besitzt. Wir sahen n\"amlich soeben, dass jeder
 %CONT>>
 
 
@@ -11193,7 +11646,7 @@ durch Faltungen der dritten Art, und kann somit als Glied der
 Ueberschiebung
 \[ (\overline U,\ \overline V)^\varrho,\quad \varrho \leqq \nu, \]
 angesehen werden. Daher lässt sich $\boldsymbol{\Psi}$ durch diese und niedrigere
-Ueberschiebungen dieser Art nach \S.\,3 Nr. 44 darstellen, d. h. es ist
+Ueberschiebungen dieser Art nach \S~3 Nr. 44 darstellen, d. h. es ist
 \[ (\Gamma,\ \Gamma')^\nu = \sum (\overline U,\ \overline V)^{\varrho_i}. \]
 Da aber $\overline U$ durch Faltung von Formen $A_i$, $\overline V$ durch Faltung
 von Formen $B_i$ entstanden ist, so kann nach Voraussetzung
@@ -11554,13 +12007,13 @@ die vollen Systeme $(\overline{A}^{(k)})$ der Formen niedrigeren Grades zum Must
 die wir als endliche Systeme voraussetzen. Die Systeme $(A^{(k)})$ von
 $k = 0$ bis $k \leqq \frac{n}{4} - 1$ genügen, wie wir in Nr. 205 gesehen, der
 Congruenz:
-\weq{1}{\overline{U}^{(k)} \equiv F(A_i^{(k)}) \bmod (ab)^{2k+2},\ (ab)^{2k+4},\ \text{etc.};}
+\weq{1}{\overline{U}^{(k)} \equiv F(A_i^{(k)}) \ \mathrm{mod.}\ (ab)^{2k+2},\ (ab)^{2k+4},\ \text{etc.};}
 die späteren Systeme $(\overline{A}^{(k)})$ aber, als endliche Systeme, der Gleichung
 \weq{2}{\overline{U}^{(k)} = F(\overline{A}_i^{(k)}).}
 207. \textit{Eigenschaft der Bildsysteme $(B^{(k)})$.} Während so die Modellsysteme
 , wenn sie nicht a priori endlich sind, der Congruenz (1) genügen
 , befriedigen sämmtliche Bildsysteme die Congruenz:
-\weq{3}{\overline{V}^{(k)} \equiv F(A_i^{(k)}) \bmod (ab)^{2k+4},\ (ab)^{2k+6} \ldots} % ?? uncertain: printed symbol at start of this equation is obscured by what looks like a handwritten correction mark over the scan; read as $\overline{V}^{(k)}$ by analogy with the parallel formula on p. 234
+\weq{3}{\overline{U}^{k} \equiv F(A_i^{(k)}) \ \mathrm{mod.}\ (ab)^{2k+4},\ (ab)^{2k+6} \ldots} % checked against the GDZ scan (27 Oct 2026): under the ink the printed symbol is \overline{U}^{k} (italic U with its rounded bowl and thin right stem, exponent k without parentheses; the printed V of p. 234 is pointed); a reader of this copy wrote V over the U and B over the A of F(A_i^{(k)}), i.e. \overline{V}^{(k)} \equiv F(B_i^{(k)}) as on p. 234; reproduced as printed
 Dies erkennt man für die Systeme $(B^{(k)})$, $k > \frac{n}{4} - 1$, unmittelbar.
 Denn ihre Modellsysteme genügen der Gleichung (2), d. h. zwischen
 %CONT>>
@@ -11578,11 +12031,11 @@ Faltung entsteht, besteht die Relation:
 Jedes Bild derselben ausgeführt an $\varphi = (f,f)^{2k+2}$ genügt alsdann
 nach Nr. 43, (3) der Relation:
 \[
-\overline{V}^{(k)} - F(B_i^{k}) \equiv 0 \bmod (ab)^{2k+4},
+\overline{V}^{(k)} - F(B_i^{k}) \equiv 0 \ \mathrm{mod.}\ (ab)^{2k+4},
 \]
 d. h. es ist:
 \[
-\overline{V}^{(k)} \equiv F(B_i^{k}) \bmod (ab)^{2k+4}.
+\overline{V}^{(k)} \equiv F(B_i^{k}) \ \mathrm{mod.}\ (ab)^{2k+4}.
 \]
 Für die übrigen Systeme $(B^{(k)})$ von $k = 0$ bis $k \leqq \frac{n}{4} - 1$ ergiebt
  sich die Richtigkeit unserer Behauptung auf folgendem Wege.
@@ -11622,13 +12075,13 @@ die mindestens den Factor $(ab)^{2k+4}$ besitzen, wie wir in Nr. 98 ausführlich
 \[
 \begin{gathered}
 \overline{V}^{(k)} - F(B_i^{(k)}) - \sum{}'(ab)^{2k+2}(aa_1)^{2k+2}\overline{W} - \sum{}'(ab)^{2k+4}(aa_1)^{2k+4}\overline{W}' \cdots \\
-\equiv 0 \bmod (ab)^{2k+4},
+\equiv 0 \ \mathrm{mod.}\ (ab)^{2k+4},
 \end{gathered}
 \]
 oder weil vom dritten Terme links incl. $ab$ alle Producte den nämlichen
  Modul $(ab)^{2k+4}$ als Factor besitzen:
 \[
-\overline{V}^{(k)} \equiv F(B_i^{(k)}) \bmod (ab)^{2k+4},\ (ab)^{2k+6}\ \text{etc.}
+\overline{V}^{(k)} \equiv F(B_i^{(k)}) \ \mathrm{mod.}\ (ab)^{2k+4},\ (ab)^{2k+6}\ \text{etc.}
 \]
 208. \textit{Rückblick.} Wir haben so die Gesammtheit aller Covarianten
 von $f$ in doppelter Weise eingetheilt: Einmal in Systeme $(A^{(k)})$ relativ
@@ -11702,7 +12155,7 @@ Es handelt sich nun zunächst darum, jene Ueberschiebungen auszuscheiden
 gehören in erster Linie alle jene, für welche $\lambda > 1$ ist, welche Werthe
 auch $\alpha > 0$, $\beta > 0$ haben mögen. Denn diese Ueberschiebungen enthalten
  Glieder mit den Klammerfactoren $(ab)^2 (ac)^2$. Solche symbolische
-Producte sind aber bereits (nach Nr. 98) $\equiv 0 \bmod (ab)^4$.
+Producte sind aber bereits (nach Nr. 98) $\equiv 0\ \mathrm{mod.}\ (ab)^4$.
 
 $\lambda$ kann also nur den Werth 1 besitzen; in diesem Falle darf aber
 wiederum $\alpha$ oder $\beta$ nicht grösser als 1 sein, da ja alsdann schon $f$
@@ -12384,7 +12837,7 @@ P &= (\tau\beta)^2 = (\delta\beta),
 welche bezw. vom 12., 16. und 20. Grade in den Co\"efficienten sind, w\"ahrend $A$, $B$, $C$ bezw. die Grade 4, 8, 12 besitzen. Wir werden die Darstellung der Formen $M$, $N$, $P$ durch die drei Fundamentalinvarianten in den folgenden Paragraphen kennen lernen.
 
 \begin{center}
-\textbf{\S.\,23.}\\
+\textbf{\S~23.}\\
 \textbf{Relationen zwischen den In- und Covarianten der Form f\"unften Grades.}
 \end{center}
 
@@ -12659,7 +13112,7 @@ $\gamma$, $\delta$ durch Formen des Systemes und durch Ueberschiebungen derselbe
 darstellen.
 
 \begin{center}
-\S.\,24.
+\S~24.
 
 \textbf{Typische Darstellung der Form fünften Grades.}
 \end{center}
@@ -12677,7 +13130,7 @@ Für Formen ungeraden Grades kann die typische Darstellung unter
 anderm auf folgendem Wege erreicht werden. Dieselben besitzen im
 allgemeinen Falle und wenn $n > 3$ stets mindestens zwei lineare
 Covarianten $\alpha_x$ und $\beta_x$ mit nicht verschwindender Determinante $(\alpha\beta)$,
-wie \gesperrt{Clebsch} (vgl. \glqq Binäre Formen\grqq{} \S.\,90, Seite 357) gezeigt hat, und
+wie \gesperrt{Clebsch} (vgl. \glqq Binäre Formen\grqq{} \S~90, Seite 357) gezeigt hat, und
 diese werden als neue Variable für die typische Darstellung benutzt.
 Erhebt man nämlich die Identität:
 \[
@@ -13687,7 +14140,7 @@ oder wegen (9)
 
 Wenn also $f$ einen Doppelfactor besitzt, so besteht zwischen $A$ und $B$ die Relation (10), d.\,h. $A^2-64B$ ist die Discriminante von $f$.
 
-243. \textit{Aufl\"osung der Gleichung f\"unften Grades.} Die Aufl\"osung der Gleichung f\"unften Grades ist bekanntlich durch algebraische Methoden allein nicht mehr m\"oglich. Die Grenze, bis zu welcher die Algebra vorgehen kann, haben wir bereits kennen gelernt: sie ist durch die Transformation der allgemeinen Gleichung in eine Form mit einem einzigen Parameter $Z$ gekennzeichnet. Dieselbe kann unter anderm stets nach Klein (vergl. \glqq Vorlesungen \"uber das Ikosaeder\grqq{} \S.\,10, Seite 252) in rationaler Weise auf die in Nr.\,192 erw\"ahnte Ikosaedergleichung $\dfrac{C_2\cdot f^3}{H^3} = \varrho$ zur\"uckgef\"uhrt werden, deren Wurzeln $\xi = \dfrac{x_1}{x_2} = \vartheta(\varrho)$ sich mit Hilfe elliptischer Modulfunctionen darstellen lassen. (Vergl. Klein: \glqq Vorlesungen \"uber das Ikosaeder\grqq{} \S.\,7, Seite 132.) Wenn wir uns also hier mit Aufl\"osung von Gleichungen f\"unften Grades besch\"aftigen, so m\"ussen wir uns auf specielle F\"alle beschr\"anken, bei welchen verm\"oge gewisser Invariantenrelationen die Aufl\"osung sich ohne transcendente Methoden bewerkstelligen l\"asst. Aus der grossen Mannigfaltigkeit der hier gegebenen M\"oglichkeiten besprechen wir hier nur einige wichtige F\"alle. Hieher geh\"oren in erster Linie die Formen $f$, f\"ur welche $R=0$, $M\gtrless 0$, $N\gtrless 0$; denn w\"ahrend f\"ur $B=0$ resp. $C=0$ nur Reductionen der Form $f$ auf gewisse, besonders interessante Normalformen eintreten und die Bedingung $A=0$ \"uberhaupt keine bemerkenswerthe Typik zur Folge hat, zerf\"allt f\"ur $R=0$ die Form $f$ rational in einen linearen und einen biquadratischen Factor. Hieher geh\"oren ferner die F\"alle:
+243. \textit{Aufl\"osung der Gleichung f\"unften Grades.} Die Aufl\"osung der Gleichung f\"unften Grades ist bekanntlich durch algebraische Methoden allein nicht mehr m\"oglich. Die Grenze, bis zu welcher die Algebra vorgehen kann, haben wir bereits kennen gelernt: sie ist durch die Transformation der allgemeinen Gleichung in eine Form mit einem einzigen Parameter $Z$ gekennzeichnet. Dieselbe kann unter anderm stets nach Klein (vergl. \glqq Vorlesungen \"uber das Ikosaeder\grqq{} \S~10, Seite 252) in rationaler Weise auf die in Nr.\,192 erw\"ahnte Ikosaedergleichung $\dfrac{C_2\cdot f^3}{H^3} = \varrho$ zur\"uckgef\"uhrt werden, deren Wurzeln $\xi = \dfrac{x_1}{x_2} = \vartheta(\varrho)$ sich mit Hilfe elliptischer Modulfunctionen darstellen lassen. (Vergl. Klein: \glqq Vorlesungen \"uber das Ikosaeder\grqq{} \S~7, Seite 132.) Wenn wir uns also hier mit Aufl\"osung von Gleichungen f\"unften Grades besch\"aftigen, so m\"ussen wir uns auf specielle F\"alle beschr\"anken, bei welchen verm\"oge gewisser Invariantenrelationen die Aufl\"osung sich ohne transcendente Methoden bewerkstelligen l\"asst. Aus der grossen Mannigfaltigkeit der hier gegebenen M\"oglichkeiten besprechen wir hier nur einige wichtige F\"alle. Hieher geh\"oren in erster Linie die Formen $f$, f\"ur welche $R=0$, $M\gtrless 0$, $N\gtrless 0$; denn w\"ahrend f\"ur $B=0$ resp. $C=0$ nur Reductionen der Form $f$ auf gewisse, besonders interessante Normalformen eintreten und die Bedingung $A=0$ \"uberhaupt keine bemerkenswerthe Typik zur Folge hat, zerf\"allt f\"ur $R=0$ die Form $f$ rational in einen linearen und einen biquadratischen Factor. Hieher geh\"oren ferner die F\"alle:
 %CONT>>
 
 
@@ -13884,7 +14337,7 @@ oder
 \[
 (f + c_1\tau j,\ \tau) = 0.
 \]
-Es m\"usste also, da $\tau = \dfrac{B}{A}\cdot i$ von null verschieden ist % ?? uncertain: possible diacritic/bar over A in this fraction, resolution insufficient to confirm
+Es m\"usste also, da $\tau = \dfrac{B}{A}\cdot i$ von null verschieden ist % checked against the GDZ scan (27 Oct 2026): no bar or accent over the A; the short stroke at its lower left is an ink speck
 und keine zwei gleichen Factoren besitzt, $f+c_1\tau j$ eine Potenz von $\tau$ sein. Dies ist aber unm\"oglich, da $f$ und $j$ ungeraden Grades. Daher bleibt nur
 \[
 f + c_1\tau j = 0,
@@ -14629,7 +15082,7 @@ der Relation [Nr. 258 (I)]
 \[
 (f, l)^2 = 2\varDelta + \tfrac{1}{3} A \cdot k
 \]
-% ?? uncertain: exact glyph of the script/italic Delta symbol, rendered here as \varDelta
+% checked against the GDZ scan (27 Oct 2026): the usual slanted capital Delta of this fount, \varDelta
 
 durch zweimalige Ueberschiebung mit $l$ die Beziehung
 
@@ -15148,7 +15601,7 @@ $(\varDelta\alpha)^4$ und $(k\alpha)^4$, so geht diese Gleichung über in:
 9\lambda^2D=(\varDelta\alpha)^4\left\{P^2-\frac{B}{6}Q^2+2QR\right\}+(k\alpha)^4\left\{\frac{C}{3}\cdot Q^2+\frac{B}{3}\cdot PQ+2PR\right\}
 \]
 oder wenn wir nun $(\varDelta\alpha)^2$, $(k\alpha)^2$, $P$, $Q$, $R$ durch ihre Werthe ersetzen
-und mit $\lambda^2$ dividiren: % ?? uncertain: faint mark over the middle equals sign a few lines above may be a printing defect rather than a notational symbol; reproduced here as a plain \textquotedbl{}=\textquotedbl{}
+und mit $\lambda^2$ dividiren: % checked against the GDZ scan (27 Oct 2026): the only mark over an equals sign on this page, a blob above the second "=" of the (\Delta k)^2 line, is an ink speck (that equality is exact, and the printed \doteq of this book has a short slanted stroke at the left); plain "="
 \[
 \begin{aligned}
 9D &= -\frac{6}{5}A\left\{B^2-\frac{8}{25}\cdot A^2B+\frac{64}{625}A^4+\frac{8}{5}AC\right\}\\
@@ -15505,7 +15958,7 @@ Die Discriminante $P$ der quadratischen Form $p$ ist also von einer Gleichung f�
 
 Da $F$ gegeben ist, $\Phi$ durch eine Gleichung fünften Grades aus $F$ sich berechnen lässt, $y$ aber willkürlich ist, so erkennt man, dass zu einer gegebenen Form $F$ stets fünf Schaaren oder lineare Systeme
 
-% ?? uncertain: printed capital glyph appears stylized (script-like), transcribed as \Psi
+% checked against the GDZ scan (27 Oct 2026): the capital Psi of this fount (arms curled outward), \Psi
 \[
 \Psi = \mu\, r_x^4 + \lambda\, s_x^4
 \]
@@ -15521,7 +15974,7 @@ gehören. Einer solchen Schaar gehören insbesondere zwei specielle Formen an, f
 Tetraeder der Schaar, welche durch die aus $i = 0$ sich ergebende quadratische Gleichung für $\dfrac{\lambda}{\mu}$ bestimmt sind. In einer Mittheilung an die Société mathématique de France (1880) hat Stephanos gezeigt, dass, wenn $f$ und $\varphi$ Formen $n^{\text{ten}}$ Grades sind, die Zahl der linearen Systeme, welche zu einer gegebenen Functionaldeterminante zweier Formen $f$ und $\varphi$ gehören, gleich der oben angeführten Zahl $N = \dfrac{(2(n-1))!}{(n-1)!\,n!}$ ist.
 
 \begin{center}
-\S.\,29.\\
+\S~29.\\
 \textbf{Typische Darstellung der Form sechsten Grades.}
 \end{center}
 
@@ -15563,7 +16016,7 @@ und somit ist die typische Darstellung (I) von $f$ in der That eine binäre.
 
 Ersetzen wir in derselben nämlich $f, \varphi, \psi$ durch die drei quadratischen Formen $l, m, n$ des Systemes von $f = a_x^6$, so geht dieselbe über in:
 
-% ?? uncertain: a small stray mark (ink speck or accent) appears above A_{mm} in this row in the print
+% checked against the GDZ scan (27 Oct 2026): the mark above the subscript of A_{mm} is an ink speck; plain A_{mm}
 \[
 \begin{vmatrix}
 A_{ll}, & A_{lm}, & A_{ln}, & l_x^2, & l_y^2 \\
@@ -15631,7 +16084,7 @@ Die in der Entwicklung rechts auftretenden quadratischen Formen
 
 sind aber, wie wir bereits gezeigt haben, lineare Functionen der Covarianten $l, m, n$. Diese Entwicklung rechts ist also eine Function dritten Grades in den Variabeln $l, m, n$, und die darin auftretenden Coefficienten sind Invarianten. Die typische Darstellung von $f$ ist also in der That durch die Gleichung (I) geleistet. Betrachtet man in ihr die Covarianten $l, m, n$ als drei Coordinaten $x_1, x_2, x_3$, so stellt die rechte Seite dieser Gleichung eine Curve dritter Ordnung dar. Da aber nach der Schlussbemerkung in Nr. 278 dieselben drei Coordinaten den Kegelschnitt
 
-% ?? uncertain: third row, first two entries print as lowercase "l_{ln}, l_{mn}" where the pattern elsewhere suggests "A_{ln}, A_{mn}"; reproduced as printed
+% checked against the GDZ scan (27 Oct 2026): the third row prints lowercase l_{ln}, l_{mn} (misprint for A_{ln}, A_{mn}); reproduced as printed
 \weq{II}{
 \begin{vmatrix}
 A_{ll} & A_{lm} & A_{ln} & x_1 \\
@@ -16029,7 +16482,7 @@ In die Relationen $(2_{\mathrm{a}})$ können wir noch die Symbole von $f$ einfü
 Multipliciren wir diesen Ausdruck mit $(\alpha\beta)^4$, und wenden auf $(ab)^4(\alpha\beta)^4$ den Identitätssatz an, so kommt:
 \[
 0=(ab)^4(\alpha\beta)^4(a\alpha)^2(b\alpha)(b\beta)\doteq(a\alpha)^2(b\alpha)(b\beta)\{(a\alpha)(b\beta)-(b\alpha)(b\beta)\}^4.
-% ?? uncertain: second bracketed term on the right of the doteq -- printed factor may read (b\alpha)(a\beta) rather than (b\alpha)(b\beta); reproduced as best read from the scan
+% checked against the GDZ scan (27 Oct 2026): the print has (b\alpha)(b\beta) in the second term (the identity would give (b\alpha)(a\beta)); reproduced as printed
 \]
 Entwickelt man die rechte Seite nach dem binomischen Lehrsatz, so findet man, dass alle Glieder bis auf das erste wegen der Relationen (3) für sich allein verschwinden. Es muss sonach das erste Glied selbst null sein, d.\,h. wir haben statt der Relationen (1) die beiden folgenden:
 \weq{4}{
@@ -16226,7 +16679,7 @@ also
 
 \[ 0 = \frac{l^2}{2} + \frac{A}{3}\, \varDelta. \]
 
-Schieben wir andererntheils $(f,\ m)^2$ zweimal über $f$, so erhalten wir % ?? uncertain: reading of \textquotedbl{}andererntheils\textquotedbl{}
+Schieben wir anderntheils $(f,\ m)^2$ zweimal über $f$, so erhalten wir % checked against the GDZ scan (27 Oct 2026): the print reads "anderntheils"
 
 \begin{align*}
 \big((f,\ m)^2,\ f\big)^2 &= \frac{1}{2}(l^2,\ f)^2 + \frac{A}{3}(\varDelta,\ f)^2\\
@@ -16482,7 +16935,7 @@ Brioschi dagegen ging von der Multiplicatorgleichung (3) aus und kam von dieser 
 in welche sich jede Gleichung sechsten Grades nach Adjunction einer Wurzel einer Gleichung fünften Grades (vgl. Nr. 273--276) linear transformiren lässt. Die Discriminante dieser Gleichungen zerfällt in zwei rationale Factoren (vgl. Math. Annalen, Bd. XX, S. 330).
 
 \begin{center}
-\S.\,31. \gesperrt{Simultanes System einer quadratischen und cubischen Form.}
+\S~31. \gesperrt{Simultanes System einer quadratischen und cubischen Form.}
 \end{center}
 
 295. \textit{Allgemeine Betrachtungen.} Die simultanen Systeme mehrerer binärer Formen spielen in vielen Problemen der Mathematik eine hervorragende Rolle. Ich erinnere nur an die Lösung der Gleichung neunten Grades, welcher die neun Wendepunkte einer Curve dritter Ordnung genügen, an die Dreitheilung elliptischer und hyperelliptischer Functionen, an die Reduction elliptischer Integrale erster Gattung auf die Normalform, an die Theorie rationaler Curven, an die Untersuchungen über apolare und involutorische Systeme etc. Es erscheint daher angezeigt, an Beispielen zu zeigen, in welcher Weise derartige Systeme aufgestellt werden. Die einfachsten und sofort allgemein zu behandelnden derartigen Systeme sind simultane Systeme von $n$ linearen Formen, die aus den $n$ Formen selbst und den $\dfrac{n(n-1)}{2}$ Determinanten $(ab)$ bestehen; ferner das simultane System von $n$ quadratischen Formen, das wir bereits früher aufgestellt haben. Es bietet auch wenig Schwierigkeiten, die Formen des vollständigen Systemes zu ermitteln, das entsteht, wenn ein bereits bekanntes volles System mit dem vollen System von $n$ linearen oder $n$ quadratischen Formen überschoben werden soll. Dagegen werden die Untersuchungen bereits complicirter, sobald es sich auch nur um das simultane System von zwei Formen handelt, von denen keine quadratisch oder linear ist. Wir werden demnach im Folgenden zwei Beispiele ins Auge fassen; in dem ersten wird eine der Grundformen eine quadratische Form sein, die andere cubisch; im zweiten werden beide Formen den dritten Grad besitzen. Wir wenden uns nun dazu, das simultane System einer quadratischen und cubischen Form zu studiren.
@@ -16738,7 +17191,7 @@ Wir fügen hinzu:
 \weq{VI}{\left.\begin{aligned}
 (qp) &= ((f,\ p),\ p) = (ap)^2 = F\\
 (rp) &= -\,((\Delta,\ p),\ p) = -\,(\Delta p)^2 = -\,L\\
-(sp) &= ((\Theta,\ p),\ p) = (\Theta p)^2 = -\,M \quad\text{\% ?? uncertain: faint mark after ``='' before ``$-\,M$''}\\
+(sp) &= ((\Theta,\ p),\ p) = (\Theta p)^2 = -\,M\\ % checked against the GDZ scan (27 Oct 2026): the round dot above the right end of the "=" before -M is an ink speck; plain "=" (the old note sat inside \text and was printed)
 (qr) &= ((f,\ p),\ (p,\ \Delta)) = (-(f,\ \Delta),\ p^2)^2 = -\,(\Theta p)^2 = +\,M\\
 (qs) &= ((f,\ p),\ (\Theta,\ p)) = ((f,\ \Theta),\ p^2)^2 = -\tfrac{1}{2}\left\{A_{ff}L - A_{f\Delta}F\right\}\\
 (rs) &= ((\Delta,\ p),\ (\Theta,\ p)) = ((\Delta,\ \Theta),\ p^2)^2 = -\tfrac{1}{2}\left\{A_{f\Delta}L - A_{\Delta\Delta}F\right\}
@@ -17005,7 +17458,7 @@ den Coefficienten, und ihre linke Seite darf somit als Resultante von $f$
 und $\varphi$ betrachtet werden.
 
 \begin{center}
-\S.\,32. \\
+\S~32. \\
 \textbf{Das simultane System zweier cubischer Formen.}
 \end{center}
 
@@ -17016,9 +17469,9 @@ a_x^3 = f, \quad (f,f)^2 = \Delta, \quad (f,\Delta) = Q, \quad (\Delta,\Delta)^2
 \]
 Es sei $\varphi$ eine zweite cubische Form; die Formen ihres vollen
 Systemes wollen wir bezeichnen mit
-% [note: printed capital letter here is a distinct script/Gothic form, not the roman letter V; rendered as \Gamma for lack of a closer available symbol]
+% checked against the GDZ scan (27 Oct 2026): the sign is an inverted slanted Delta (thick left stroke, thin diagonal, closed top bar), the \nabla of pp. 337-340; transcribed \nabla on pp. 330-336
 \[
-\alpha_x^3 = \varphi, \quad (\varphi,\varphi)^2 = \Gamma, \quad (\varphi,\Gamma) = K, \quad (\Gamma,\Gamma)^2 = A_{\Gamma\Gamma}.
+\alpha_x^3 = \varphi, \quad (\varphi,\varphi)^2 = \nabla, \quad (\varphi,\nabla) = K, \quad (\nabla,\nabla)^2 = A_{\nabla\nabla}.
 \]
 Wir stellen uns die Aufgabe, das simultane System der beiden Formen $f$ und
 $\varphi$ zu ermitteln. Nach den allgemeinen Sätzen, § 38, erhalten wir
@@ -17027,13 +17480,13 @@ dasselbe, wenn wir die beiden Producte
 U = f^{\lambda_1}\cdot Q^{\lambda_2}\cdot \Delta^{\lambda_3}
 \]
 \[
-V = \varphi^{\mu_1}\cdot K^{\mu_2}\cdot \Gamma^{\mu_3}
+V = \varphi^{\mu_1}\cdot K^{\mu_2}\cdot \nabla^{\mu_3}
 \]
 über einander schieben, d.\,h. also mit einander multipliciren und das
 Product $U\cdot V$ auf alle möglichen Arten in bekannter Weise falten.
 Enthält eine solche Ueberschiebung
 \[
-F = (U,V)^{\varrho} = (f^{\lambda_1}\cdot Q^{\lambda_2}\cdot \Delta^{\lambda_3}, \ \varphi^{\mu_1}\cdot K^{\mu_2}\cdot \Gamma^{\mu_3})^{\varrho}
+F = (U,V)^{\varrho} = (f^{\lambda_1}\cdot Q^{\lambda_2}\cdot \Delta^{\lambda_3}, \ \varphi^{\mu_1}\cdot K^{\mu_2}\cdot \nabla^{\mu_3})^{\varrho}
 \]
 kein zerfallendes Glied, so liefert sie eine Form des Systemes.
 
@@ -17043,13 +17496,13 @@ wenige Ausnahmen leicht erkennen lässt, welche derselben auf
 Ueberschiebungen mit zerfallenden Gliedern führen.
 
 Erstens: Producte, welche höhere als die zweite Potenz von $\Delta$ resp.
-$\Gamma$ enthalten, bleiben unberücksichtigt, wegen der bekannten Relation:
+$\nabla$ enthalten, bleiben unberücksichtigt, wegen der bekannten Relation:
 \[
 \Delta^3 + 2Q^2 + A_{\Delta\Delta}f^2 = 0.
 \]
 Zweitens: Enthält $U$ eine Form $\Delta$ und gleichzeitig $V$ eine Form
-$\Gamma$, so sind höhere Faltungen als die zweite ausgeschlossen, da stets
-Glieder mit dem Factor $A_{\Delta\Gamma} = (\Delta,\Gamma)^2$ gebildet
+$\nabla$, so sind höhere Faltungen als die zweite ausgeschlossen, da stets
+Glieder mit dem Factor $A_{\Delta\nabla} = (\Delta,\nabla)^2$ gebildet
 werden können.
 
 
@@ -17066,15 +17519,15 @@ Ueberschiebungen ist aber ohnehin der Fall ausgeschlossen, dass $U$ oder
 $V$ aus mehr als aus einem Factor besteht, wenn dieser dritten Grades ist.
 
 Viertens: Ueberschiebungen einer Potenz von $f$, oder $Q$, über eine Potenz
-von $\Gamma$, bleiben unberücksichtigt, da schon $(f^2,\Gamma^2)^4$, oder
-$(Q^2,\Gamma^2)^4$ Glieder enthalten, welche Producte früherer
-Ueberschiebungen sind, nämlich: $(f,\Gamma)^2\cdot(f,\Gamma)^2$ oder
-$(Q,\Gamma)^2\cdot(Q,\Gamma)^2$.
+von $\nabla$, bleiben unberücksichtigt, da schon $(f^2,\nabla^2)^4$, oder
+$(Q^2,\nabla^2)^4$ Glieder enthalten, welche Producte früherer
+Ueberschiebungen sind, nämlich: $(f,\nabla)^2\cdot(f,\nabla)^2$ oder
+$(Q,\nabla)^2\cdot(Q,\nabla)^2$.
 
 Von allen Producten $U\cdot V$ sind also nur jene zu falten, in welchen\\
 1) sowohl $U$ als $V$ nur \gesperrt{eine} Form enthält,\\
 2) $U$ (oder $V$) eine Form, $V$ (oder $U$) eine zweite Potenz von
-$\Gamma$ (resp. $\Delta$).
+$\nabla$ (resp. $\Delta$).
 
 309. \textit{Aufstellung der einzelnen Formen.} Wir bilden nun die
 einzelnen Ueberschiebungen:
@@ -17086,21 +17539,21 @@ Ihre Ueberschiebung liefert drei Formen:
 (f,\varphi) = \vartheta, \quad (f,\varphi)^2 = \Theta, \quad (f,\varphi)^3 = J.
 \]
 \[
-2) \quad U = f, \quad V = \Gamma, \quad \text{oder} \quad U = \Delta, \quad V = \varphi.
+2) \quad U = f, \quad V = \nabla, \quad \text{oder} \quad U = \Delta, \quad V = \varphi.
 \]
 Wir erhalten sechs Formen:
 \[
 \begin{aligned}
-&(f,\Gamma), \ (f,\Gamma)^2, \ (f,\Gamma^2)^3\\
-&(\varphi,\Delta), \ (\varphi,\Delta)^2, \ (\varphi,\Gamma^2)^3.
+&(f,\nabla), \ (f,\nabla)^2, \ (f,\nabla^2)^3\\
+&(\varphi,\Delta), \ (\varphi,\Delta)^2, \ (\varphi,\nabla^2)^3.
 \end{aligned}
 \]
 \[
-3) \quad U = \Delta, \quad V = \Gamma.
+3) \quad U = \Delta, \quad V = \nabla.
 \]
 Es entstehen die zwei Formen:
 \[
-(\Delta,\Gamma) \quad \text{und} \quad (\Delta,\Gamma)^2.
+(\Delta,\nabla) \quad \text{und} \quad (\Delta,\nabla)^2.
 \]
 \[
 4) \quad U = Q \quad \text{und} \quad V
@@ -17108,7 +17561,7 @@ Es entstehen die zwei Formen:
 sei irgend eine Form des zweiten Systems. Als erste Ueberschiebungen
 treten die Formen auf:
 \[
-(Q,\varphi), \ (Q,\Gamma); \ (Q,K),
+(Q,\varphi), \ (Q,\nabla); \ (Q,K),
 \]
 und entsprechend
 \[
@@ -17120,7 +17573,7 @@ reducibel.
 Als zweite Ueberschiebungen erhält man:
 \[
 \begin{aligned}
-&(Q,\varphi)^2, \ (Q,\Gamma)^2, \ (Q,K)^2\\
+&(Q,\varphi)^2, \ (Q,\nabla)^2, \ (Q,K)^2\\
 &(K,f)^2, \ (Q,\Delta)^2.
 \end{aligned}
 \]
@@ -17132,39 +17585,39 @@ Als zweite Ueberschiebungen erhält man:
 
 Von diesen ist $(Q,K)^2$ reducibel; denn falten wir das Product
 \[
-a_x^2\Delta_x(a\Delta)\cdot \alpha_x^2\Gamma_x(\alpha\Gamma)
+a_x^2\Delta_x(a\Delta)\cdot \alpha_x^2\nabla_x(\alpha\nabla)
 \]
 zweimal, und bilden insbesondere das Glied
 \[
-G = a_x\alpha_x(a\Gamma)(\alpha\Gamma)(a\Delta)(\alpha\Delta),
+G = a_x\alpha_x(a\nabla)(\alpha\nabla)(a\Delta)(\alpha\Delta),
 \]
-% ?? uncertain: a small mark above "a" in "(a\Gamma)" in this line of the print may be ink noise rather than a diacritic; transcribed here without accent
+% checked against the GDZ scan (27 Oct 2026): the dot above the a of the first (a\nabla) is an ink speck (the same product in the next display has a plain a); no accent
 so lässt sich auf dasselbe der Productsatz unmittelbar anwenden und man
 findet
 \[
-G = \alpha_x\alpha_x(a\Gamma)(\alpha\Gamma)(a\Delta)(\alpha\Delta) % [sic]
+G = \alpha_x\alpha_x(a\nabla)(\alpha\nabla)(a\Delta)(\alpha\Delta) % [sic]
 \]
 \[
-= \frac{1}{2}a_x\alpha_x\{(\Gamma\alpha)^2(\Delta a)^2 + (\Gamma a)^2(\Delta\alpha)^2 - (\Gamma\Delta)^2(a\alpha)^2\}.
+= \frac{1}{2}a_x\alpha_x\{(\nabla\alpha)^2(\Delta a)^2 + (\nabla a)^2(\Delta\alpha)^2 - (\nabla\Delta)^2(a\alpha)^2\}.
 \]
-Das erste Glied rechts ist wegen $(\Delta a)^2$ oder $(\Gamma\alpha)^2$
-null. [Vergl. Nr. 145, (I).] Das zweite ist $(f,\Gamma)^2\cdot(\varphi,\Delta)^2$,
-das dritte $(\Gamma,\Delta)^2\cdot(f,\varphi)^2$. Es ist somit das Glied
+Das erste Glied rechts ist wegen $(\Delta a)^2$ oder $(\nabla\alpha)^2$
+null. [Vergl. Nr. 145, (I).] Das zweite ist $(f,\nabla)^2\cdot(\varphi,\Delta)^2$,
+das dritte $(\nabla,\Delta)^2\cdot(f,\varphi)^2$. Es ist somit das Glied
 $G$ reducibel, folglich $(Q,K)^2$ selbst.
 
 Als dritte Ueberschiebungen erhält man endlich:
 \[
 \begin{aligned}
 &(Q,\varphi)^3, \ (Q,f)^3, \ (Q,K)^3\\
-&(Q,\Gamma^2)^3, \ (K,\Gamma^2)^3.
+&(Q,\nabla^2)^3, \ (K,\nabla^2)^3.
 \end{aligned}
 \]
 Von diesen Ueberschiebungen sind die beiden letzten reducibel. Es ist nur
-nöthig, dies von $(K,\Delta^2)^3$ zu zeigen; für die Form $(Q,\Gamma^2)^3$
+nöthig, dies von $(K,\Delta^2)^3$ zu zeigen; für die Form $(Q,\nabla^2)^3$
 folgt die Reducibilität aus der entsprechenden Bedeutung der Formen $Q$
-und $\Gamma$. Die dritte Polare von $K$ ist:
+und $\nabla$. Die dritte Polare von $K$ ist:
 \[
-K_{y^3} = (\alpha\Gamma)\alpha_y^2\Gamma_y,
+K_{y^3} = (\alpha\nabla)\alpha_y^2\nabla_y,
 \]
 ferner die dritte Polare von $\Delta_x^4$
 \[
@@ -17172,24 +17625,24 @@ ferner die dritte Polare von $\Delta_x^4$
 \]
 Indem wir das Product
 \[
-(\alpha\Gamma)\alpha_y^2\Gamma_y\cdot \Delta_{y^2}\Delta_{1y}\Delta_{1x}
+(\alpha\nabla)\alpha_y^2\nabla_y\cdot \Delta_{y^2}\Delta_{1y}\Delta_{1x}
 \]
 auf alle möglichen Arten dreimal falten, erhalten wir die Ueberschiebung
 \[
-(K,\Delta^2)^3 = \frac{1}{3}(\alpha\Gamma)(\alpha\Delta)^2(\Gamma\Delta_1)\Delta_{1x} + \frac{2}{3}(\alpha\Gamma)(\alpha\Delta_1)(\Gamma\Delta)(\alpha\Delta).
+(K,\Delta^2)^3 = \frac{1}{3}(\alpha\nabla)(\alpha\Delta)^2(\nabla\Delta_1)\Delta_{1x} + \frac{2}{3}(\alpha\nabla)(\alpha\Delta_1)(\nabla\Delta)(\alpha\Delta).
 \]
 Die Differenz dieser beiden Glieder ist aber null, da sie den Factor
-$(\alpha\Gamma)^2$ enthält (vergl. Nr. 145), folglich sind beide einander
+$(\alpha\nabla)^2$ enthält (vergl. Nr. 145), folglich sind beide einander
 gleich, und wir erhalten:
 \[
-(K,\Delta^2)^3 = (\alpha\Gamma)(\alpha\Delta)^2(\Gamma\Delta_1)\Delta_{1x}.
+(K,\Delta^2)^3 = (\alpha\nabla)(\alpha\Delta)^2(\nabla\Delta_1)\Delta_{1x}.
 \]
 Ersetzen wir hier $\Delta_1$ durch $(ab)^2a_xb_x$, so kommt:
 \[
-(K,\Delta^2)^3 = (ab)^2(\alpha\Delta)^2(\alpha\Gamma)(\Gamma a)b_x
+(K,\Delta^2)^3 = (ab)^2(\alpha\Delta)^2(\alpha\nabla)(\nabla a)b_x
 \]
 \[
-= (\alpha\Gamma)(\Gamma a)b_x\{(b\Delta)(a\alpha) - (a\Delta)(b\alpha)\}^2.
+= (\alpha\nabla)(\nabla a)b_x\{(b\Delta)(a\alpha) - (a\Delta)(b\alpha)\}^2.
 \]
 Entwickelt man rechts nach dem binomischen Lehrsatz, so ist das erste und
 letzte Glied null wegen des Factors $(b\Delta)^2$. Es reducirt sich also:
@@ -17201,49 +17654,49 @@ letzte Glied null wegen des Factors $(b\Delta)^2$. Es reducirt sich also:
 \weberpage{333}
 
 \[
-(K, \Delta^2)^3 = -2(\alpha\Gamma)(\Gamma a)(a\alpha)(b\alpha)(a\Delta)(b\Delta)b_x
+(K, \Delta^2)^3 = -2(\alpha\nabla)(\nabla a)(a\alpha)(b\alpha)(a\Delta)(b\Delta)b_x
 \]
 \[
-= -2(\alpha\Gamma)(a\Delta)(b\Delta)(a\alpha)b_x\{(\Gamma b)(a\alpha)-(ab)(\Gamma\alpha)\}
+= -2(\alpha\nabla)(a\Delta)(b\Delta)(a\alpha)b_x\{(\nabla b)(a\alpha)-(ab)(\nabla\alpha)\}
 \]
 \[
-= -2(a\alpha)^2(\alpha\Gamma)(\Gamma b)(a\Delta)(b\Delta)b_x.
+= -2(a\alpha)^2(\alpha\nabla)(\nabla b)(a\Delta)(b\Delta)b_x.
 \]
-% ?? uncertain: the symbol here transcribed as \Gamma is a stylised capital letter paired
-% throughout this page with \Delta; the print quality does not let me distinguish it with
-% certainty from a script V, but \Gamma is consistent with its parallel role to \Delta and
-% with later occurrences on this page and the following pages.
+% checked against the GDZ scan (27 Oct 2026): the sign paired with \Delta on pp. 330-336 is an
+% inverted slanted Delta (thick left stroke, thin diagonal, closed top bar), the same sign as
+% the \nabla of pp. 337-340; the italic V of this fount (p. 234) has open top serifs and
+% no closed top. Transcribed \nabla on pp. 330-336.
 
 Da rechts der Klammerfactor $(a\alpha)^2$ auftritt, so suchen wir diesen
 Ausdruck mittelst der Reihenentwicklung
 \[
 (a\alpha)^2 a_y\alpha_x = \Theta_x\Theta_y + \frac{1}{2}J(yx)
 \]
-umzuformen. Ersetzt man nämlich in ihr $y$ durch $\Delta$, $x$ durch $\Gamma$,
+umzuformen. Ersetzt man nämlich in ihr $y$ durch $\Delta$, $x$ durch $\nabla$,
 so kommt:
 \[
-(a\alpha)^2(a\Delta)(\alpha\Gamma) = (\Theta\Gamma)(\Theta\Delta) + \frac{1}{2}J(\Delta\Gamma).
+(a\alpha)^2(a\Delta)(\alpha\nabla) = (\Theta\nabla)(\Theta\Delta) + \frac{1}{2}J(\Delta\nabla).
 \]
 
 Tragen wir dies in $(K, \Delta^2)^3$ ein, so erhalten wir:
 \[
-(K, \Delta^2)^3 = -2b_x(b\Delta)(\Gamma b)\{(\Theta\Gamma)(\Theta\Delta)+\frac{1}{2}J(\Delta\Gamma)\}
+(K, \Delta^2)^3 = -2b_x(b\Delta)(\nabla b)\{(\Theta\nabla)(\Theta\Delta)+\frac{1}{2}J(\Delta\nabla)\}
 \]
 \[
-= +2b_x(b\Delta)(\Theta\Delta)(b\Gamma)(\Theta\Gamma) + J(\Delta\Gamma)(b\Delta)(b\Gamma)b_x.
+= +2b_x(b\Delta)(\Theta\Delta)(b\nabla)(\Theta\nabla) + J(\Delta\nabla)(b\Delta)(b\nabla)b_x.
 \]
 Für das erste Glied liefert der Productsatz:
 \[
-(b\Delta)(\Theta\Delta)(b\Gamma)(\Theta\Gamma) = \frac{1}{2}\{(b\Delta)^2(\Theta\Gamma)^2+(\Theta\Delta)^2(b\Gamma)^2-(\Delta\Gamma)^2(b\Theta)^2\}.
+(b\Delta)(\Theta\Delta)(b\nabla)(\Theta\nabla) = \frac{1}{2}\{(b\Delta)^2(\Theta\nabla)^2+(\Theta\Delta)^2(b\nabla)^2-(\Delta\nabla)^2(b\Theta)^2\}.
 \]
 
 Das erste Glied in dieser Summe ist null wegen $(b\Delta)^2$. Man erhält
 also:
 \[
-(K, \Delta^2)^3 = (\Theta, \Delta)^2\cdot(f, \Gamma)^2 - (\Delta, \Gamma)^2\cdot(f, (f, \varphi))^2 + J\cdot(f, (\Delta, \Gamma))^2.
+(K, \Delta^2)^3 = (\Theta, \Delta)^2\cdot(f, \nabla)^2 - (\Delta, \nabla)^2\cdot(f, (f, \varphi))^2 + J\cdot(f, (\Delta, \nabla))^2.
 \]
 
-Die beiden Covarianten $(K\Delta^2)^3$ und $(Q\Gamma^2)^3$ sind somit
+Die beiden Covarianten $(K\Delta^2)^3$ und $(Q\nabla^2)^3$ sind somit
 reducibel und das ganze Formensystem der zwei cubischen Formen $f$ und
 $\varphi$ besteht also aus 26 Formen.
 
@@ -17254,27 +17707,27 @@ Eine biquadratische:
 
 Sechs cubische:
 \[
-f,\ \varphi,\ Q,\ K,\ (f, \Gamma),\ (\varphi, \Delta).
+f,\ \varphi,\ Q,\ K,\ (f, \nabla),\ (\varphi, \Delta).
 \]
 
 Sechs quadratische:
 \[
-\Delta,\ \Gamma,\ (f, \varphi)^2 = \Theta,\ (\Delta, \Gamma),\ (Q, \varphi)^2,\ (K, f)^2.
+\Delta,\ \nabla,\ (f, \varphi)^2 = \Theta,\ (\Delta, \nabla),\ (Q, \varphi)^2,\ (K, f)^2.
 \]
 
 Sechs lineare:
 \[
-(f, \Gamma)^2,\ (\varphi, \Delta)^2,\ (f, \Gamma^2)^3,\ (\varphi, \Delta^2)^3,\ (Q, \Gamma)^2,\ (K, \Delta)^2.
+(f, \nabla)^2,\ (\varphi, \Delta)^2,\ (f, \nabla^2)^3,\ (\varphi, \Delta^2)^3,\ (Q, \nabla)^2,\ (K, \Delta)^2.
 \]
 
 Sieben Invarianten:
 \[
-A_{\Delta\Delta},\ A_{\Gamma\Gamma},\ A_{\Delta\Gamma},\ (f, \varphi)^3 = J,\ (Q, K)^3,\ (Q, \varphi)^3,\ (Q, f)^3.
+A_{\Delta\Delta},\ A_{\nabla\nabla},\ A_{\Delta\nabla},\ (f, \varphi)^3 = J,\ (Q, K)^3,\ (Q, \varphi)^3,\ (Q, f)^3.
 \]
 Von den linearen Formen erhalten zwei eine besondere Bezeichnung.
 Wir setzen
 \[
-(f, \Gamma)^2 = (a\Gamma)^2a_x = \pi_x = \pi
+(f, \nabla)^2 = (a\nabla)^2a_x = \pi_x = \pi
 \]
 \[
 (\varphi, \Delta)^2 = (\alpha\Delta)^2\alpha_x = p_x = p.
@@ -17328,23 +17781,23 @@ Identitätssatze. Folglich ist:
 (f, p) = -(a\alpha)^2\Delta_x\{a_x(\alpha\Delta) + \alpha_x(a\Delta)\},
 \]
 oder:
-\weq{1}{(f, p) = -2\big((a\alpha)^2a_x\alpha_x, \Delta\big) = -2(\Theta, \Delta).}
-% ?? uncertain: the printed bracketing around ((a\alpha))^2 a_x\alpha_x, \Delta) is not
-% fully legible; reproduced here in the sensible reading consistent with the equation
-% being used as -2(\Theta,\Delta) two lines below and again in \S 311.
+\weq{1}{(f, p) = -2\big((a\alpha)\big)^2a_x\alpha_x, \Delta\big) = -2(\Theta, \Delta).}
+% checked against the GDZ scan (27 Oct 2026): the print has -2((a\alpha))^2 a_x\alpha_x, \Delta), with a
+% bold "(" before (a\alpha), a bold ")" carrying the exponent 2 directly after (a\alpha), and a
+% bold ")" after \Delta; reproduced as printed (meant: -2((a\alpha)^2 a_x\alpha_x, \Delta)).
 Also ebenso:
-\weq{2}{(\varphi, \pi) = -2(\Theta, \Gamma).}
+\weq{2}{(\varphi, \pi) = -2(\Theta, \nabla).}
 Es ist ferner:
 \[
-(f, \pi) = a_x^2(ab)(b\Gamma)^2.
+(f, \pi) = a_x^2(ab)(b\nabla)^2.
 \]
 Vertauscht man wegen des Factors $(ab)$ das Symbol $a$ mit $b$ und
 nimmt die halbe Summe, so kommt:
 \[
-(f, \pi) = \frac{1}{2}(ab)\{a_x^2(b\Gamma)^2 - b_x^2(a\Gamma)^2\}
+(f, \pi) = \frac{1}{2}(ab)\{a_x^2(b\nabla)^2 - b_x^2(a\nabla)^2\}
 \]
 \[
-= -\frac{1}{2}(ab)^2\Gamma_x\{a_x(b\Gamma) + b_x(a\Gamma)\},
+= -\frac{1}{2}(ab)^2\nabla_x\{a_x(b\nabla) + b_x(a\nabla)\},
 \]
 %CONT>>
 
@@ -17354,9 +17807,9 @@ nimmt die halbe Summe, so kommt:
 \weberpage{335}
 %<<CONT
 oder:
-\weq{3}{(f, \pi) = -\big((ab)^2a_xb_x, \Gamma\big) = -(\Delta, \Gamma).}
+\weq{3}{(f, \pi) = -\big((ab)^2a_xb_x, \nabla\big) = -(\Delta, \nabla).}
 Also auch:
-\weq{4}{(\varphi, p) = -(\Gamma, \Delta).}
+\weq{4}{(\varphi, p) = -(\nabla, \Delta).}
 Diese beiden Ueberschiebungen sind also bis aufs Vorzeichen einander
 gleich, und man gewinnt daher aus (3) und (4) die
 \gesperrt{Fundamentalrelation:}
@@ -17423,11 +17876,11 @@ so kommt:
 \]
 oder:
 \[
-\varrho y_1 = \frac{1}{2}a_2(a\Gamma)^2 = \frac{1}{2}\bar\pi_2.
+\varrho y_1 = \frac{1}{2}a_2(a\nabla)^2 = \frac{1}{2}\bar\pi_2.
 \]
 Ebenso:
 \[
-\varrho y_2 = -\frac{1}{2}a_1(a\Gamma)^2 = -\frac{1}{2}\bar\pi_1
+\varrho y_2 = -\frac{1}{2}a_1(a\nabla)^2 = -\frac{1}{2}\bar\pi_1
 \]
 \[
 \varrho z_1 = \frac{1}{2}\alpha_2(\alpha\Delta)^2 = \frac{1}{2}\bar p_2
@@ -17435,8 +17888,8 @@ Ebenso:
 \[
 \varrho z_2 = -\frac{1}{2}\alpha_1(\alpha\Delta)^2 = -\frac{1}{2}\bar p_1.
 \]
-% ?? uncertain: the overbars on \pi_1, \pi_2, p_1, p_2 in this determinant expansion are
-% faint in the scan; reproduced as printed to the best of my reading.
+% checked against the GDZ scan (27 Oct 2026): the overbars on \pi_2, \pi_1, p_2, p_1 are clearly printed;
+% reproduced as printed.
 
 Man erkennt, $p$ und $\pi$ sind die einzigen Werthe, für welche die
 Identität (1) besteht, und sie sind demnach durch sie vollständig

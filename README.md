@@ -10,7 +10,7 @@ typeset in LaTeX from scans of the prints, and English translations.
 | A. Clebsch and P. Gordan, *Theorie der Abelschen Functionen* (Leipzig: Teubner, 1866) | [German PDF](abelsche-functionen/pdf/Clebsch_Gordan_Abelsche_Functionen_German.pdf) | [PDF](abelsche-functionen/pdf/Clebsch_Gordan_Abelsche_Functionen_English.pdf) | complete |
 | *Ueber das Formensystem binaerer Formen* (Leipzig: Teubner, 1875) | [German PDF](formensystem/pdf/Gordan_Formensystem_German.pdf) | [PDF](formensystem/pdf/Gordan_Formensystem_English.pdf) | complete |
 | *Vorlesungen über Invariantentheorie*, ed. G. Kerschensteiner, vol. I, *Determinanten* (1885) | [German PDF](vorlesungen/pdf/Gordan_Vorlesungen_Band_I_German.pdf) | [pp. 1–28](vorlesungen/pdf/Gordan_Vorlesungen_Band_I_pp001-028_English.pdf) | German: first transcription, complete; English: pages 1–28 |
-| *Vorlesungen über Invariantentheorie*, vol. II, *Binäre Formen* (1887) | [German PDF](vorlesungen/pdf/Gordan_Vorlesungen_Band_II_German.pdf) | — | German: first transcription, complete |
+| *Vorlesungen über Invariantentheorie*, vol. II, *Binäre Formen* (1887) | [German PDF](vorlesungen/pdf/Gordan_Vorlesungen_Band_II_German.pdf) | — | German: complete; collated in part with a second transcription |
 
 The LaTeX sources are in the `tex/` folder of each work.
 
@@ -27,18 +27,29 @@ The LaTeX sources are in the `tex/` folder of each work.
   the print letter-spaces for emphasis. Expect occasional errors of this kind on other pages.
 - ***Formensystem*.** Complete in German and English; checked against the scan by AI during production. Not spot
   checked again.
-- ***Vorlesungen über Invariantentheorie*.** The German of both volumes is a complete first transcription. It marks 88
-  places where the scan could not be read with certainty (38 in volume I, 50 in volume II); these are unresolved.
-  Four figures or ornaments are replaced by short textual stand-ins. The text has not been collated a second time.
-  The English covers only pages 1–28 of volume I.
+- ***Vorlesungen über Invariantentheorie*.** The German of both volumes is complete.
+  - Volume I is a first transcription. It marks 38 places where the scan could not be read with certainty; these are
+    unresolved. It has not been collated a second time.
+  - Volume II was compared with a second, independent transcription of its pages 1–192 (on pages 26–72 that
+    transcription abridges the text and was not used). Every disagreement on pages 1–25 and 73–192 (206) and each of
+    the 50 places marked as uncertain throughout the volume was checked against the scan. This corrected 56 places:
+    misread symbols, signs, indices and exponents (among them ∇, which had been read as Γ throughout pages 330–336),
+    words, and a footnote attached to the wrong place. All 50 uncertain places are resolved. The section sign and
+    "mod." now follow the print throughout. Misprints of the print are kept and marked in the LaTeX source. Pages
+    26–72 and 193–360 have been read once, apart from the uncertain places. The edition includes the title page,
+    preface and table of contents.
+  - Four figures or ornaments are replaced by short textual stand-ins. The English covers only pages 1–28 of volume I.
 - The readers do not mark the page breaks of the prints; page references in the text refer to the prints.
 
 ## How it was made
 
 The complete German transcriptions of both volumes of the *Vorlesungen* were made by Claude (Anthropic) in August
-2026: Claude Sonnet 5 agents in Claude Code workflows, one printed page per agent. All other texts, including the German
-and English of volume I, pages 1–28, were transcribed from scans, and translated, by AI (OpenAI models in ChatGPT and
-Codex). The spot check and corrections of 27 October 2026 were made by Claude Opus 5.5 (Anthropic).
+2026: Claude Sonnet 5 agents in Claude Code workflows, one printed page per agent. The second transcription of volume
+II, pages 1–192, used for the collation, and the first draft of its front matter were made with OpenAI models in
+ChatGPT; the disagreements and the front matter were checked against the scan by Claude Opus 5.5 (Anthropic) agents on
+27 October 2026. All other texts, including the German and English of volume I, pages 1–28, were transcribed from
+scans, and translated, by AI (OpenAI models in ChatGPT and Codex). The spot check and corrections of 27 October 2026
+were made by Claude Opus 5.5 (Anthropic).
 
 ## Sources
 
