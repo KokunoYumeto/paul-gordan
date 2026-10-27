@@ -1,0 +1,66 @@
+% Physical unit 041; accepted Session 03 after fresh 400-dpi authority replay.
+\GordanUnitStart{041}{printed page 36}
+\GordanTopFolio{36}
+\begingroup\small
+\[
+=\arc\left(\cos={\cos l_0\over\sqrt{{\sin^2l_0\over\sin^2l_2}-\sin^2l_0}}\right)-\arc\left(\cos={\cos l_0\over\sqrt{{\sin^2l_0\over\sin^2l_1}-\sin^2l_0}}\right)
+\]
+\[
+=\arc(\cos=\cot l_0\tg l_2)-\arc(\cos=\cot l_0\tg l_1).
+\]
+We can reduce this equation to a more elegant form by using the well-known identity
+\[
+\left|\begin{array}{ccc}
+1&\cos x&\cos y\\
+\cos x&1&\cos(x-y)\\
+\cos y&\cos(x-y)&1
+\end{array}\right|
+\]
+in which, putting
+\[
+ x=\cot l_0\tg l_2,
+ \qquad y=\cot l_0\tg l_1,
+ \qquad x-y=\psi+\chi,
+\]
+one obtains
+\[
+\left|\begin{array}{ccc}
+1&\tg l_2\cot l_0&\tg l_1\cot l_0\\
+\tg l_2\cot l_0&1&\cos(\psi+\chi)\\
+\tg l_1\cot l_0&\cos(\psi+\chi)&1
+\end{array}\right|
+=
+\left|\begin{array}{ccc}
+\tg^2l_0&\tg l_2&\tg l_1\\
+\tg l_2&1&\cos(\psi+\chi)\\
+\tg l_1&\cos(\psi+\chi)&1
+\end{array}\right|=0,
+\]
+or:
+\[
+\text{I.}\qquad \tg^2l_0\sin^2(\psi+\chi)=\tg^2l_1+\tg^2l_2-2\tg l_1\tg l_2\cos(\psi+\chi).
+\]
+In this equation $l_0$ occurs both in \gq{$\tg^2l_0$} and in \gq{$\chi$}. But if for the moment we do not wish to define $l_0$ strictly, but rather a value $l_0'$ which is close to it, then $\chi$ may be neglected in the formula, since it contains the very small factor $e^2$.
+
+Therefore $l_0'$, defined by the formula
+\[
+\text{II.}\qquad \tg^2l_0'\sin^2\psi=\tg^2l_1+\tg^2l_2-2\tg l_1\tg l_2\cos\psi,
+\]
+differs from $l_0$ by a quantity that, compared with the eccentricity, is of the second order.
+
+To compute $l_0''$, which by its value approaches $l_0$ more closely, $\chi$ is not to be wholly thrown away, but account must be taken of the term
+\[
+ {e^2\over2}\cos l_0(\varphi_2-\varphi_1)
+\]
+of the series, progressing according to powers of the square $e^2$, into which the integral $\chi$ can be expanded. Then the value $l_0''$ defined from this equation,
+\[
+\text{III.}\quad \tg^2l_0''\sin^2\left[\psi+{e^2\over2}\cos l_0''(\varphi_2-\varphi_1)\right]
+=\tg^2l_1+\tg^2l_2-2\tg l_1\tg l_2\cos\left[\psi+{e^2\over2}\cos l_0''(\varphi_2-\varphi_1)\right],
+\]
+recedes from $l_0$ by a quantity which, compared with the eccentricity, is of the fourth order.
+
+At first sight one might think serious difficulties obstruct the computation of $l_0''$ from equation III, since $l_0''$ is contained not only in $\tg^2l_0$ but also in
+\[
+ {e^2\over2}\cos l_0''(\varphi_2-\varphi_1)
+\]
+\endgroup

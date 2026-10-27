@@ -1,0 +1,752 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,array,longtable,geometry,microtype}
+\usepackage{tikz}
+\geometry{paperwidth=6.5in,paperheight=9in,margin=0.62in}
+\pagestyle{empty}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.18em}
+\setlength{\abovedisplayskip}{0.45em}
+\setlength{\belowdisplayskip}{0.45em}
+\emergencystretch=2em
+\hbadness=10000
+\hfuzz=2pt
+\newcommand{\TeubnerMark}{\begin{center}\setlength{\fboxsep}{1pt}\fbox{\scriptsize\bfseries B\,G\,T}\end{center}}
+\begin{document}
+\small
+
+\begin{center}
+{\large Dr. Paul Gordan's Vorlesungen}\\[0.45em]
+{\scriptsize ÜBER}\\[0.65em]
+{\LARGE\bfseries INVARIANTENTHEORIE.}\\[1.6em]
+{\scriptsize HERAUSGEGEBEN}\\[0.45em]
+{\scriptsize VON}\\[0.65em]
+{\bfseries Dr. Georg Kerschensteiner.}\\[1.6em]
+{\scriptsize ERSTER BAND:}\\[0.45em]
+{\large\bfseries DETERMINANTEN.}\\[1.5em]
+\TeubnerMark
+\vfill
+{\small LEIPZIG,}\\[0.25em]
+{\scriptsize DRUCK UND VERLAG VON B. G. TEUBNER.}\\[0.25em]
+{\small 1885.}
+\end{center}
+
+\newpage
+
+\begin{center}
+{\small HERRN}\\[0.9em]
+{\Large\bfseries CHARLES HERMITE}\\[0.8em]
+{\scriptsize WIDMET}\\[0.8em]
+{\small ALS ZEICHEN SEINER VEREHRUNG}\\[0.8em]
+{\scriptsize DIESE VORLESUNG}\\[0.8em]
+{\bfseries PAUL GORDAN.}
+\end{center}
+
+\newpage
+
+\begin{center}
+{\bfseries Vorwort.}
+\end{center}
+
+Vor wenigen Jahren wurde die deutsche mathematische Litteratur durch eine Bearbeitung von Faà di Bruno's „Einleitung in die Theorie der binären Formen“ bereichert, so dass wir nunmehr im Besitze dreier Werke sind -- Salmon, Clebsch und Faà di Bruno --, deren Inhalt sich über die moderne Theorie der In- und Covarianten verbreitet. Das vorliegende Werk steht im engen Anschlusse an Clebsch, ja es ist aus jenen Ideen hervorgegangen, die schon damals, als jenes Buch erschien, Gordan in demselben niedergelegt hatte. Was aber zu dieser Zeit als coordinirte Frage auftrat, ist nunmehr zum Hauptziel dieses Werkes geworden; ich meine nämlich die grundlegenden Untersuchungen über die Endlichkeit des Formensystems und die damit eng verknüpften Fragen über die Relationen zwischen den einzelnen Formen. Das ist der fundamentale Standpunkt dieser Vorlesungen geworden, um den sich alle andern invariantentheoretischen Fragen gruppiren und von dem aus sie hier ihre Beleuchtung und Bedeutung erhalten sollen. Derselbe hat sich in jeder Richtung als sehr fruchtbar erwiesen. Durch ihn aber wurden andererseits die Grenzen bestimmt, inwieweit das vorliegende Werk eine Theorie der Invarianten werden, d.\ h. inwieweit die sich nun bereits mannigfach gliedernde Disciplin eine erschöpfende Behandlung erfahren soll.
+
+Es ist hiebei natürlich, dass bei dem unverrückten Festhalten gerade dieses Zieles sich Gordan bei all seinen Untersuchungen der von Aronhold begründeten Symbolik bediente, und diese Vorlesungen sich somit auch der Form nach an das treffliche Werk von Clebsch anschliessen. Seit dem Tode dieses Meisters ist die Invariantentheorie aber völlig selbständig geworden. Während sie sich nach ihrem Entstehen aus der Zahlentheorie zunächst an die analytische Geometrie der Ebene anschloss, ist heute ihre Bedeutung wesentlich gewachsen. Sie ist sich selbst zum Zwecke geworden, und darf somit heute als jene Disciplin angesehen werden, welche die rein formalen Gesetze der Algebra zum Ausdrucke bringt. Dies möge festgehalten werden, wenn im vorliegenden Werke die Gesetze der Invariantentheorie vorzugsweise nur auf Fragen der Lehre von den algebraischen Gleichungen Anwendung finden, insoweit nicht, wie im dritten Bande, die Theorie der ternären Formen hin und wieder zu geometrischen Interpretationen Veranlassung giebt, oder die Theorie der Primformen diese Gesetze mit der Lehre von den Differentialgleichungen in Verbindung setzt. Ihr Zusammenhang mit Problemen der Variationsrechnung und gewissen Aufgaben der Physik konnte natürlich um so weniger berührt werden, als ja auch alle die wesentlichen Dienste, welche sie der Geometrie geleistet hat, in diesen Vorlesungen keine Erörterungen erfahren.
+
+Insoweit aber die Vorlesungen sich in den so markirten Grenzen bewegen, werden sie nicht nur eine Einführung in die Theorie der Invarianten sein, sondern den Leser bis zu dem heutigen Standpunkte geleiten, zu welchem diese Disciplin durch die hervorragenden Arbeiten von Hermite und Brioschi, Cayley, Sylvester und Salmon, Aronhold, Clebsch und Gordan gefördert wurde.
+
+Von jenen Fragen aber, die hier nicht berücksichtigt werden konnten, sind die wichtigeren in Salmon's „Vorlesungen über die Algebra der linearen Transformationen“ aufgenommen, so dass beide Vorlesungen zusammen ein vollständiges Bild der Entwicklungsstufe liefern, auf welcher sich die Invariantentheorie gegenwärtig befindet.
+
+Der erste Theil dieses Werkes, der sich mit der Lehre von den Determinanten beschäftigt, möge als Vorbereitung für die beiden andern Theile angesehen werden. Die symbolischen Methoden legen das Bedürfniss nach einer vorauszuschickenden Theorie der Determinanten unabweisbar nahe, und anderntheils sind es gerade Determinantenbeziehungen, welche zum öftern zu Relationen zwischen Formen Veranlassung geben.
+
+Dieses Ziel des ersten Theiles, mit den Mitteln vertraut zu machen, die in der Theorie der Invarianten vorausgesetzt werden müssen, legte für denselben einige Beschränkung im Stoffe auf; dafür fand aber die Rechnung mit Matrices eine weit eingehendere Behandlung als in andern Determinantenwerken. Der Disposition nach steht dieser erste Theil in innigem Zusammenhange mit dem längst anerkannten gleichbenannten Werke Baltzer's. Das letztere geht jedoch in vielen Untersuchungen weiter, wie es das Ziel des Baltzer'schen Werkes, das sich allgemeinere Aufgaben stellt, erheischt.
+
+Hier werden in dem theoretischen Theile nur die Determinanten im Allgemeinen behandelt und deren Eigenschaften vollzählig entwickelt; specielle Determinanten aber, wie z.\ B. symmetrische und Kettenbruchdeterminanten, finden keine eingehende Besprechung. Ihren Abschluss findet die Theorie in der Betrachtung correspondirender Matrices, die gerade in einigen neuesten invariantentheoretischen Arbeiten eine bemerkenswerthe Rolle spielen.
+
+Auch der Anwendung der Theorie waren natürlich mit Rücksicht auf den Zweck dieses Theiles feste Grenzen gesteckt. Eine eingehende Behandlung erfährt nur die Theorie der linearen Gleichungen, die Eigenschaften der Functionaldeterminanten und der Resultanten wegen ihrer hervorragenden Bedeutung für die Invariantentheorie. Von den ursprünglich geplanten Quellencitaten musste ich im Allgemeinen absehen; es liegt auch nicht mehr das grosse Bedürfniss vor, nachdem für die Determinanten in Baltzer's und Günther's diesbezüglichen Werken und für die Invarianten in den Lehrbüchern Salmon's und der deutschen Bearbeitung Faà di Bruno's diese Quellen in ausführlicher Weise angegeben sind.
+
+Ich möchte diese einleitenden Bemerkungen damit schliessen, dass ich Herrn Professor Gordan meinen wärmsten Dank ausspreche, mich zur Herausgabe seiner Vorlesungen aufgefordert zu haben. Ich habe mich einer freien selbständigen Bearbeitung derselben mit aller Beschränkung des eigenen Ich's unterzogen und bin zufrieden, wenn es mir gelungen ist, die Ideen, welche seine Vorlesungen beherrschen, zum klaren Ausdruck zu bringen, sei es durch die Anordnungen und die Entwicklungen selbst, oder durch die zahlreichen Beispiele und Anwendungen, die ich nach meinem Bedürfniss in dieselben eingeflochten habe.
+
+\begin{flushleft}
+Nürnberg, im Juli 1885.
+\end{flushleft}
+\begin{flushright}
+Georg Kerschensteiner.
+\end{flushright}
+
+% --- Source pages 0010--0028; printed Inhaltsverzeichniss VIII--XI, blank XII, printed pages 1--14. ---
+
+\begin{center}
+{\bfseries Inhaltsverzeichniss.}\\[0.35em]
+{\bfseries Erster Theil.}\\[0.35em]
+{\bfseries Theorie der Determinanten.}
+\end{center}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{2pt}
+\begin{longtable}{>{\raggedleft\arraybackslash}p{0.55in}p{4.05in}>{\raggedleft\arraybackslash}p{0.35in}}
+{\scriptsize Absatz.} & & {\scriptsize Seite}\\
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,1. Permutation und Substitution.}\\
+1. & Permutation & 1\\
+2. & Derangement & 1\\
+3. & Abzählung der Derangements durch Theilung & 2\\
+4. & Begriff der Substitution & 3\\
+5. & Arten der Substitutionen & 5\\
+6--9. & Herstellung der verschiedenen Substitutionen durch einander & 7\\
+10--12. & Classification der verschiedenen Substitutionen & 11\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,2. Begriff der Determinanten.}\\
+13. & Verwendung der Substitutionen zur Herstellung aller Glieder einer Determinante & 15\\
+14. & Definition der Determinante & 17\\
+15. & Berechnung des Werthes einer Determinante aus ihrer Matrix & 19\\
+16. & Methode zur Aufstellung von Lehrsätzen über Determinanten & 21\\
+17. & Transposition & 21\\
+18. & Bezeichnungen einer Determinante & 23\\
+19--20. & Vertauschung von Colonnen und Zeilen & 24\\
+21--23. & Beispiele zur Vertauschung von Colonnen und Zeilen & 28\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,3. Unterdeterminanten erster Ordnung.}\\
+24. & Begriff der Unterdeterminante erster Ordnung \(A_{ik}\) & 31\\
+25--26. & Berechnung der Unterdeterminante \(A_{ik}\) & 32\\
+27. & Beispiele & 33\\
+28--29. & Entwicklung der Determinante nach Unterdeterminanten & 34\\
+30. & Beispiele & 35\\
+31--33. & Beziehungen zwischen den Minoren erster Ordnung \(A_{ik}\) & 36\\
+34. & Anwendungen dieser Beziehungen & 38\\
+35--36. & Addition von Determinanten & 40\\
+37. & Beispiele & 40\\
+38. & Multiplication der Determinante mit einem Factor \(\lambda\) & 42\\
+39. & Verbindung des Additions- und Multiplicationsgesetzes & 42\\
+40. & Anwendungen der Sätze dieses \(\S\) & 43\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,4. Partialdeterminanten höherer Ordnung.}\\
+41. & Begriff der Unterdeterminante zweiter Ordnung & 47\\
+42. & Beziehung des Minors zweiter Ordnung zum Minor erster Ordnung & 48\\
+43. & Beispiel & 49\\
+44--45. & Begriff des Minors \(p^{\mathrm{ter}}\) Ordnung & 50\\
+46--48. & Berechnung des Minors \(p^{\mathrm{ter}}\) Ordnung & 51\\
+49--51. & Correspondirende Determinante des Minors \(p^{\mathrm{ter}}\) Ordnung & 53\\
+52. & Beispiele & 57\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,5. Entwicklung der Determinante in eine Summe von Producten correspondirender Determinanten.}\\
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{(Satz von Laplace.)}\\
+53. & Entwicklung in eine Summe von Producten aus Minoren \((n-2)^{\mathrm{ter}}\) Ordnung und deren correspondirenden Unterdeterminanten & 59\\
+54. & Entwicklung in eine Summe von Producten aus Minoren \((n-3)^{\mathrm{ter}}\) Ordnung und deren correspondirenden Minoren & 61\\
+55. & Allgemeiner Fall & 61\\
+56--58. & Anwendungen des Laplace'schen Satzes zur Bildung von Relationen zwischen Minoren & 62\\
+59--61. & Berechnung von Determinanten mit Hülfe des Laplace'schen Satzes & 65\\
+62. & Entwicklung der Determinante nach Producten von Elementen zweier sich schneidender Reihen & 67\\
+63--66. & Entwicklung der Determinante nach Producten von Elementen zweier Paare sich schneidender Reihen & 68\\
+67. & Begriff der Ränderung & 72\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,6. Multiplication von Determinanten.}\\
+68--71. & Erste Art Determinanten zu multipliciren & 73\\
+72. & Zweite Art der Multiplication & 77\\
+73. & Symmetrische Determinanten & 77\\
+74. & Lineare Relationen zwischen Minoren symmetrischer Determinanten & 78\\
+75--84. & Multiplication von Matrices, welche keine Determinanten darstellen & 79\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,7. Adjungirte Determinanten und correspondirende Matrices.}\\
+85. & Definition der adjungirten Determinante & 88\\
+86. & Werth der adjungirten Determinante & 89\\
+87--88. & Werth eines Minors der adjungirten Determinante & 89\\
+89. & Beispiel & 93\\
+90. & Definition der correspondirenden Matrices & 94\\
+91--94. & Lehrsatz über correspondirende Matrices & 95\\
+95. & Beispiel & 99\\[0.35em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries Zweiter Theil.}\\
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries Anwendungen der Determinantentheorie.}\\
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,8. Systeme linearer Gleichungen und deren Auflösung.}\\
+96--97. & Auflösung eines Systemes (I) von \(n\) linearen homogenen Gleichungen mit \(n\) Unbekannten & 101\\
+98. & Begriff der Resultante homogener linearer Gleichungen & 102\\
+99--101. & Auflösung des Systemes (I), wenn dessen Resultante nebst allen Minoren \((\mu-1)^{\mathrm{ter}}\) Ordnung verschwinden & 103\\
+102. & Auflösung von \(n-1\) homogenen Gleichungen mit \(n\) Unbekannten & 106\\
+103. & Eindeutigkeit dieser Lösung & 107\\
+104. & Beispiele & 108\\
+105--110. & Auflösung von \(\mu\) homogenen Gleichungen mit \(n\) Unbekannten, wenn \(n>\mu+1\) (mit einem zweiten Beweis des Lehrsatzes über correspondirende Matrices) & 109\\
+111. & Auflösung eines Systemes von \(n\) nicht homogenen Gleichungen mit \(n\) Unbekannten & 117\\
+112. & Discussion der Lösung & 118\\
+113. & Beispiele & 118\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,9. Functionaldeterminanten.}\\
+114. & Definition der Functionaldeterminante & 120\\
+115. & Die Functionaldeterminante ist eine alternirende Function & 121\\
+116. & Darstellung eines Minors der Functionaldeterminante & 121\\
+117--118. & Productsatz für Functionaldeterminanten & 122\\
+119. & Die Functionaldeterminante als ein Product partieller Differentialquotienten & 125\\
+120. & Differentialquotienten von Minoren der Functionaldeterminante & 127\\
+121--125. & Functionaldeterminante eines Systems von Functionen, zwischen denen eine Relation besteht & 128\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,10. Der grösste gemeinsame Factor.}\\
+126--127. & Euclid'sches Verfahren für zwei ganze Zahlen \(a\) und \(b\) & 131\\
+128. & Grösster gemeinschaftlicher Theiler von \(f(x)\) und \(\varphi(x)\) & 133\\
+129. & Exposition der in diesem \(\S\) zu lösenden Aufgaben & 135\\
+130--131. & Definition und Berechnung der Resultante \(R_{f,\varphi}\) von \(f\) und \(\varphi\) & 136\\
+132--136. & Berechnung eines gemeinschaftlichen Factors \((\varrho+1)^{\mathrm{ten}}\) Grades von \(f\) und \(\varphi\) & 139\\
+137. & Beispiel & 143\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,11. Eigenschaften der Resultante \(R_{f,\varphi}\) zweier Functionen \(f(x)\) und \(\varphi(x)\).}\\
+138. & Darstellung der Methode zur Ermittlung dieser Eigenschaften & 145\\
+139. & Beweis: \(R_{f,\varphi}=(-1)^{n\cdot m}R_{\varphi,f}\) & 146\\
+140. & Beweis: \(R_{f,\varphi}=R_{x^n\varphi(1/x),\,x^mf(1/x)}\) & 146\\
+141. & Beweis: \(R_{f(\lambda x),\,\varphi(\lambda x)}=\lambda^{m\cdot n}R_{f,\varphi}\) & 147\\
+142. & Schnittpunkte zweier Curven \(m^{\mathrm{ter}}\) und \(n^{\mathrm{ter}}\) Ordnung & 148\\
+143--144. & Die Resultante als Functionaldeterminante & 148\\
+145. & Beweis: \(R_{f+\varphi\cdot\psi,\,\varphi}=R_{f,\varphi}\), wenn \(\psi\) vom Grade \(q\) in \(x\), und \(q+n\leq m\) & 150\\
+146. & Beispiel: \(R_{f+\lambda\varphi,\,\varphi}=R_{f,\varphi}\) & 149\\
+147. & Beweis: \(R_{f(x+u),\,\varphi(x+u)}=R_{f,\varphi}\) & 152\\
+148--150. & Reduction der Sylvester'schen Form von \(R_{f,\varphi}\) auf die Bézout'sche Form & 153\\
+151. & Cayley'sche Methode für diese Reduction & 158\\
+152. & Beispiel & 161\\
+153--154. & Beweis: \(R_{f,\varphi\cdot\psi}=R_{f,\varphi}\cdot R_{f,\psi}\), wenn \(q+n\leq m\) & 162\\
+155. & Beispiele & 164\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,12. Fundamentalsatz der Algebra.}\\
+156. & Transcendenter Theil des Beweises & 166\\
+157. & Gedankengang für den algebraischen Theil des Beweises & 167\\
+158. & Classification der Gleichungen nach dem Grade ihrer Auflösbarkeit & 167\\
+159--160. & Jede Gleichung besitzt einen linearen Factor, wenn sie überhaupt einen Factor hat & 168\\
+161--162. & Jede Gleichung muss einen Factor besitzen & 170\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,13. Zusammenhang der Resultante mit den Wurzeln der Gleichungen.}\\
+163--164. & Berechnung der gemeinsamen Wurzel zweier Gleichungen & 174\\
+165--166. & Zusammenhang zwischen Coefficienten und Wurzeln einer Gleichung & 176\\
+167. & Potenzsummen der Wurzeln & 178\\
+168--172. & Die Resultante \(R_{f,\varphi}\) als Product der Wurzeldifferenzen & 179\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,14. Die Discriminante.}\\
+173. & Definition der Discriminante & 185\\
+174--177. & Berechnung derselben & 186\\
+178. & Ueber das Auftreten einer mehrfachen Wurzel von \(f\) in der ersten Abgeleiteten von \(f\) & 190\\
+179--180. & Berechnung der Doppelwurzel einer Gleichung \(f=0\) & 191\\
+181. & Dritter Beweis, dass \(R_{f_1,f}=R_{f_1,f_2}\) & 193\\
+182--183. & Beispiele & 194\\[0.25em]
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{\bfseries \S\,15. Simultanes System homogener linearer diophantischer Gleichungen.}\\
+\multicolumn{3}{>{\centering\arraybackslash}p{5.0in}}{(Anhang zu \(\S\,8\).)}\\
+184. & Aufsuchung ganzzahliger Lösungen Einer Gleichung & 196\\
+185. & Beispiel & 198\\
+186. & Auflösung mehrerer simultaner diophantischer Gleichungen & 198\\
+187--189. & Ganzzahlige positive Lösungen & 199
+\end{longtable}
+\endgroup
+
+\newpage
+
+\begin{center}
+{\bfseries Erster Theil.}\\[0.35em]
+{\bfseries Theorie der Determinanten.}\\[0.6em]
+{\bfseries \S\,1. Permutation und Substitution.}
+\end{center}
+
+1. \emph{Permutation.} Wenn man in einer Gruppe von \(n\) Elementen -- wir wollen sie mit \(a,b,c\ldots h\) bezeichnen -- alle möglichen Vertauschungen dieser Elemente vornimmt, so entsteht eine Reihe neuer Gruppen oder Complexionen, die sich nur durch die Anordnung ihrer Elemente unterscheiden, und die man bekanntlich Permutationen nennt. Die Anzahl dieser Permutationen ist
+\[
+N=n(n-1)\ldots3\cdot2\cdot1=n!,
+\]
+wie sich leicht erkennen lässt, wenn man bedenkt, dass jede Permutation von \(n\) Elementen erhalten wird, indem man jedes der \(n\) Elemente mit den sämmtlichen Permutationen von den übrigen \((n-1)\) Elementen verbindet. Dabei sieht man auch, dass von diesen \(N\) Permutationen \((n-1)!\) mit \(a\), ebenso viele mit \(b,c\) u. s. w. beginnen, und wir wollen dahin übereinkommen, dass wir jede Permutation, die mit dem nämlichen Element beginnt, auch zur nämlichen Klasse rechnen, so dass wir dadurch die sämmtlichen Permutationen in \(n\) Klassen getheilt haben.
+
+2. \emph{Derangement.} Anstatt die Elemente einer Permutation mit \(a,b,c\ldots h\) zu bezeichnen, zieht man es vor, die Ausdrücke \(a_1,a_2,a_3\ldots a_n\) einzuführen, oder noch einfacher die dem Buchstaben \(a\) angehängten Zahlen \(1,2,3\ldots n\), welche Indices oder Suffixe genannt werden. Wir nennen dann eine Permutation, in welcher kein höherer Index links vor einem niedern steht, gut geordnet. Wenn dagegen in einer Permutation ein höherer Index links vor einem niedrigeren sich befindet, so sagt man, dieselbe enthält eine Inversion oder ein Derangement, und zwar ist die Zahl dieser Derangements so gross, als die Zahl, welche angiebt, wie oft rechts von einem höhern Index sich niedrigere befinden. So sind z. B. die Permutationen
+\[
+(pqrs),\qquad (1\ 2\ 3\ 4\ 5)
+\]
+gut geordnet; dagegen enthält die Permutation
+\[
+(7\ 4\ 1\ 2\ 3\ 6\ 5)\quad\text{Derangements: }6+3+1=10,
+\]
+nämlich 6, von dem Index 7 herrührend, 3 in Folge der Stellung von 4, und 1 in Folge der Stellung des Index 6. Ebenso enthält die Permutation \((3\ 5\ 4\ 1\ 2)\) die Derangements \(31,32,54,51,52,41\) und \(42\), also im Ganzen 7 an der Zahl.
+
+3. \emph{Abzählung der Derangements in einer Permutation durch Theilung.} Um in einer Permutation die Zahl der Derangements rasch zu bestimmen, kann man sich manchmal mit Vortheil folgender Methode bedienen, besonders wenn die Permutation viele Elemente enthält.
+
+Wir theilen die Permutation in 2 beliebige Theile:
+\[
+\begin{array}{r@{\ }l}
+\text{die erste Gruppe enthalte der Reihe nach die Indices} & i_1\,i_2\ldots i_\mu,\\
+\text{die zweite Gruppe enthalte der Reihe nach die Indices} & k_1\,k_2\ldots k_\nu
+\end{array}
+\quad\Big\}\quad \nu+\mu=n.
+\]
+Dann bildet sich die Zahl sämmtlicher Derangements
+
+1) aus jenen, welche von der Gruppe der \(i\) allein herrühren,
+
+2) aus jenen, welche von der Gruppe der \(k\) allein herrühren,
+
+3) aus jenen, welche die Elemente \(i\) in Bezug auf die \(k\) bilden.
+
+Für die Anzahl der Derangements dritter Gattung lässt sich nun eine einfache Formel angeben; addiert man hiezu sodann die Anzahl der Inversionen erster und zweiter Gattung, die, weil sie die betreffenden Gruppen weniger Elemente enthalten, leichter sich finden lassen, als die der ganzen Permutation, so erhält man die Gesammtzahl. Diese Summenformel liefert aber der Satz:
+\begin{quote}
+„Die Anzahl der Derangements dritter Gattung ist gleich der Summe aller Indices der Gruppe der \(i\) weniger der Summe der natürlichen Zahlen von 1 bis \(\mu\), wo \(\mu\) die Anzahl der Elemente der ersten Gruppe bedeutet.“
+\end{quote}
+
+\emph{Beweis:} Die Anzahl dieser Derangements dritter Gattung ändert sich nicht, wenn ich zunächst die Gruppe der \(i\) und die Gruppe der \(k\) unter sich gut ordne. Die erste Gruppe sei dann \((J_1\,J_2\ldots J_\mu)\), die zweite \((K_1\,K_2\ldots K_\nu)\), also die Permutation gleich:
+\[
+(J_1\ J_2\ldots J_\mu\mid K_1\ K_2\ldots K_\nu)\qquad(\nu+\mu=n).
+\]
+Diese neue Permutation hat einerseits in den \(J_\varrho\), andererseits in den \(K_\varrho\) keine Derangements; dagegen noch alle Derangements dritter Gattung. Die Zahl derselben zerfällt in solche die von \(J_1\), in solche die von \(J_2\) u. s. w., bis in solche die von \(J_\mu\) herrühren. Der erste Theil ist offenbar gleich \(J_1-1\), da \(J_1\) mit \emph{allen} kleineren Indices Inversionen bildet; der zweite Theil gleich \(J_2-2\), da \(J_2\) Inversionen bildet mit allen kleineren Indices, ausgenommen mit dem vorhergehenden \(J_1\); ebenso endlich der \(\mu^{\mathrm{te}}\) Theil gleich \(J_\mu-\mu\); die Gesammtzahl wird also:
+\[
+\begin{aligned}
+Z&=J_1+J_2+J_3\ldots+J_\mu-(1+2+\cdots+\mu)\\
+&=i_1+i_2+i_3\ldots+i_\mu-\frac{\mu(\mu+1)}{2}.
+\end{aligned}
+\]
+
+Beispiele: \(\alpha)\) Sei gegeben die Permutation
+\[
+(3\ 7\ 9\ 8\ 1\ 5\ 2\ 6\ 4).
+\]
+Wir theilen sie beliebig durch einen Verticalstrich in zwei Gruppen:
+\[
+(3\ 7\ 9\ 8\mid1\ 5\ 2\ 6\ 4)=(i_1\ i_2\ i_3\ i_4\mid k_1\ k_2\ k_3\ k_4\ k_5)
+\]
+und machen jede derselben gut geordnet:
+\[
+(3\ 7\ 8\ 9\mid1\ 2\ 4\ 5\ 6)=(J_1\ J_2\ J_3\ J_4\mid K_1\ K_2\ K_3\ K_4\ K_5).
+\]
+Nun ist
+\[
+i_1+i_2+i_3+i_4=3+7+8+9=27,\qquad
+\frac{\mu(\mu+1)}{2}=\frac{4\cdot5}{2}=10,
+\]
+also die Zahl der Inversionen \(Z=27-10=17\), wie man auch durch directes Abzählen findet. Zählt man hierzu die eine Inversion in der Gruppe der \(i\), die drei in der Gruppe der \(k\), so ist die Gesammtzahl \(=21\).
+
+\(\beta)\) Sei gegeben die Permutation:
+\[
+(7\ 3\ 6\ 2\ 4\ 1\ 5);
+\]
+wir theilen sie in zwei Theile:
+\[
+(7\ 3\ 6\mid2\ 4\ 1\ 5),
+\]
+dann ist die Summe \(7+3+6=16\), die Zahl der Elemente \(=3\). Also die Zahl der Derangements dritter Gattung gleich:
+\[
+16-\frac{3\cdot4}{2}=10.
+\]
+In der That, wenn wir gut ordnen, so erhalten wir:
+\[
+(3\ 6\ 7\mid1\ 2\ 4\ 5),
+\]
+also 2 Derangements von 3 herrührend, 4 von 6 herrührend und \(7-3=4\) von 7 herrührend, in Summa 10. Hierzu addirt die Derangements der \(i=2\), die der \(k=2\), liefert die Gesammtsumme 14.
+
+4. \emph{Begriff der Substitution.} Die Ueberführung von einer Permutation in eine andere geschieht durch eine Operation, die man \emph{Substitution} nennt. Soll z. B. die Permutation \((5\ 1\ 2\ 4\ 3)\) übergeführt werden in \((4\ 5\ 1\ 3\ 2)\), so geschieht dies durch eine Operation, die wir bezeichnen mit:
+\[
+S=\begin{pmatrix}5&1&2&4&3\\4&5&1&3&2\end{pmatrix},
+\]
+welche die Wirkung hat, dass das Element 5 durch 4, das Element 1 durch 5, 2 durch 1, 4 durch 3 und 3 durch 2 ersetzt wird. Sie ist von der Permutation, auf welche sie angewendet wird, vollständig unabhängig, und die nämliche Substitution \(S\), die wir oben mit
+\[
+\begin{pmatrix}5&1&2&4&3\\4&5&1&3&2\end{pmatrix}
+\]
+bezeichneten, wird genau ebenso zum Ausdruck gebracht durch
+\[
+\begin{pmatrix}1&2&3&4&5\\5&1&2&3&4\end{pmatrix}
+\quad\text{oder}\quad
+\begin{pmatrix}3&2&1&4&5\\2&1&5&3&4\end{pmatrix}
+\quad\text{u. s. w.}
+\]
+Daraus erkennt man, dass die verschiedenen Ausdrücke ein und derselben Substitution das eine Gemeinsame besitzen, dass die \emph{unter} einander stehenden Zahlenpaare ungeändert bleiben.
+
+Das Zeichen
+\[
+S=
+\begin{pmatrix}5&1&2&4&3\\4&5&1&3&2\end{pmatrix}
+=
+\begin{pmatrix}1&2&3&4&5\\5&1&2&3&4\end{pmatrix}
+=
+\begin{pmatrix}3&2&1&4&5\\2&1&5&3&4\end{pmatrix}
+\]
+ist also so zu nehmen, dass, welche Permutation wir auch anschreiben, über denselben Zahlen immer wieder die einmal festgesetzten Zahlen stehen.
+
+Man kann die Substitutionen insbesondere auf zwei Arten anschreiben, indem man entweder die obere oder aber auch die untere Permutation in dem Ausdrucke \(S\) gut ordnet, also z. B.
+\[
+\begin{pmatrix}1&2&3&4&5\\5&1&2&3&4\end{pmatrix}
+\quad\text{oder}\quad
+\begin{pmatrix}2&3&4&5&1\\1&2&3&4&5\end{pmatrix}.
+\]
+Rechnet man die specielle Substitution
+\[
+\begin{pmatrix}1&2&3&4&5\\1&2&3&4&5\end{pmatrix},
+\]
+wobei alles ungeändert bleibt, mit, so erkennt man, \emph{dass es bei \(n\) Elementen ebenso viele Substitutionen als Permutationen von \(n\) Elementen giebt}; denn ordnet man irgend einer Permutation eine andere zu, so kann diese Zuordnung als Ausdruck einer Substitution angesehen werden. Den \(n\) oben erwähnten Klassen von Permutationen entsprechen also auch ebenso viele Klassen von Substitutionen; doch werden wir von dieser Eintheilung wenig Gebrauch machen.
+
+Das wichtigste Eintheilungsprincip für die Substitutionen liefert in der Lehre von den Determinanten das Differenzenproduct:
+\[
+\begin{aligned}
+&(a_1-a_2)(a_1-a_3)(a_1-a_4)\ldots(a_1-a_n)\times\\
+&(a_2-a_3)(a_2-a_4)\ldots(a_2-a_n)\times\\
+&(a_3-a_4)\ldots(a_3-a_n)\times\\
+&\hspace{3em}\ldots\\
+&(a_{n-2}-a_{n-1})(a_{n-2}-a_n)\times\\
+&(a_{n-1}-a_n).
+\end{aligned}
+\]
+Da nämlich dasselbe durch Vertauschung irgend zweier oder mehrerer seiner Elemente entweder sich gar nicht ändert oder nur sein Vorzeichen, so können wir alle Substitutionen in \emph{zwei Hauptklassen} theilen. In die erste Klasse kommen jene Substitutionen, welche dasselbe nicht ändern, in die zweite Klasse jene, welche es ändern.
+
+5. \emph{Arten der Substitutionen.} Die Substitutionen sind entweder uneigentliche oder eigentliche. Die ersteren werden so genannt, weil sie abhängig sind von der speciellen Permutation, auf welche sie angewendet werden, während die eigentlichen, wie schon früher erwähnt, es nicht sind. Zu den uneigentlichen Substitutionen gehört
+
+\(\alpha)\) \emph{die einfache Vertauschung}, d. h. die Vertauschung zweier neben einander stehender Elemente einer bestimmten Permutation. So wird die Permutation \((4\ 5\ 1\ 2\ 6\ 3)\) in \((4\ 5\ 1\ 6\ 2\ 3)\) übergeführt durch die einfache Vertauschung \((2\ 6)\), wobei diese Vertauschung speciell nur für die vorliegende Permutation zu denken ist. Ebenso gehen die Permutationen \((7\ 3\ 2\ 5)\), \((6\ 1\ 4\ 9)\) durch die einfachen Vertauschungen \((3\ 2)\), \((4\ 9)\) in die Permutationen \((7\ 2\ 3\ 5)\), \((6\ 1\ 9\ 4)\) über.
+
+\(\beta)\) \emph{der einfache Cyclus}, der entweder vorschreitend oder rückschreitend sein kann. Vertauscht man nämlich \(k\) \emph{neben einander} stehende Elemente einer bestimmten Permutation in der Weise, dass an Stelle des ersten Elementes das zweite, an Stelle des zweiten das dritte u. s. w., an Stelle des letzten wieder das erste tritt, dann bilden diese Vertauschungen einen vorschreitenden Cyclus; rückt dagegen das vorletzte Element an Stelle des letzten, das zweitvorletzte an Stelle des vorletzten u. s. w. und das letzte an die erste Stelle, so hat man einen rückschreitenden Cyclus vor sich. So stellen z. B. die Ausdrücke
+\[
+\begin{pmatrix}2&4&3&5\\4&3&5&2\end{pmatrix},\qquad
+\begin{pmatrix}1&7&6&4&8&3\\7&6&4&8&3&1\end{pmatrix}
+\]
+vorschreitende, die Ausdrücke
+\[
+\begin{pmatrix}2&4&3&5\\5&2&4&3\end{pmatrix},\qquad
+\begin{pmatrix}1&7&6&4&8&3\\3&1&7&6&4&8\end{pmatrix}
+\]
+rückschreitende Cyclen dar, welche z. B. die speciellen Permutationen \((1\ 2\ 4\ 3\ 5\ 6)\), \((9\ 2\ 0\ 5\ 1\ 7\ 6\ 4\ 8\ 3)\) überführen im ersten Falle in \((1\ 4\ 3\ 5\ 2\ 6)\), \((9\ 2\ 0\ 5\ 7\ 6\ 4\ 8\ 3\ 1)\), im zweiten Falle in \((1\ 5\ 2\ 4\ 3\ 6)\), \((9\ 2\ 0\ 5\ 3\ 1\ 7\ 6\ 4\ 8)\).
+
+Man kann sich einen \emph{einfachen} Cyclus am besten in der Weise klar machen, dass man sich etwa die sechs Elemente \(1\,7\,6\,4\,8\,3\) symmetrisch auf zwei concentrische Kreisringe in nebenstehender Weise angeordnet denkt.
+\[
+\begin{tikzpicture}[scale=0.38,baseline=-0.5ex]
+\draw (0,0) circle (2.3);
+\draw (0,0) circle (1.55);
+\foreach \a in {30,90,150,210,270,330}{\draw[dotted] (0,0)--(\a:1.55);}
+\node at (90:2.75) {\scriptsize 1};
+\node at (30:2.75) {\scriptsize 3};
+\node at (-30:2.75) {\scriptsize 8};
+\node at (-90:2.75) {\scriptsize 4};
+\node at (-150:2.75) {\scriptsize 6};
+\node at (150:2.75) {\scriptsize 7};
+\node at (90:1.2) {\scriptsize 1};
+\node at (30:1.2) {\scriptsize 3};
+\node at (-30:1.2) {\scriptsize 8};
+\node at (-90:1.2) {\scriptsize 4};
+\node at (-150:1.2) {\scriptsize 6};
+\node at (150:1.2) {\scriptsize 7};
+\end{tikzpicture}
+\]
+Dreht man den inneren Ring (oder auch den äusseren) um \(60^\circ\) nach links, so charakterisirt die neue Lage beider Ringe einen vorschreitenden, bei einer gleichen Drehung nach rechts einen rückschreitenden einfachen Cyclus.
+
+Zu den eigentlichen Substitutionen gehört:
+
+\(\alpha)\) \emph{die gewöhnliche allgemeine Vertauschung} beliebig zweier Elemente einer Permutation von \(n\) Elementen (eigentliche Substitution im engern Sinne). Ihr Ausdruck ist der bereits früher erwähnte. Solche allgemeine Vertauschungen sind z. B. gegeben durch
+\[
+S_1=\begin{pmatrix}1&5&2&6&3&4\\1&2&5&6&3&4\end{pmatrix},\qquad
+S_2=\begin{pmatrix}3&4&6&7&5&1&2\\3&1&6&7&5&4&2\end{pmatrix}
+\]
+und man kann die nämlichen Substitutionen \(S_1\) und \(S_2\) durch eine ganze Reihe anderer Ausdrücke darstellen, z. B.
+\[
+S_1=\begin{pmatrix}4&5&6&3&2&1\\4&2&6&3&5&1\end{pmatrix},\qquad
+S_2=\begin{pmatrix}3&4&1&6&7&5&2\\3&1&4&6&7&5&2\end{pmatrix},
+\]
+worauf wir schon früher aufmerksam gemacht haben.
+
+\(\beta)\) \emph{Der allgemeine Cyclus}, durch welchen \(k\) beliebige Elemente einer Permutation in der Weise wie beim einfachen Cyclus ihre Plätze ändern. Ist z. B. die Permutation \((3\ 5\ 6\ 2\ 1\ 4)\) von 6 Elementen gegeben, so schreiben wir zunächst, um den Ausdruck eines allgemeinen Cyclus zu erhalten, einen einfachen an, etwa
+\[
+\begin{pmatrix}2&4&1&3\\4&1&3&2\end{pmatrix}.
+\]
+Wenden wir dann diese Substitutionen auf die obige Permutation an, so erhalten wir den allgemeinen Cyclus
+\[
+\begin{pmatrix}3&5&6&2&1&4\\2&5&6&4&3&1\end{pmatrix}
+=
+\begin{pmatrix}6&3&4&5&1&2\\6&2&1&5&3&4\end{pmatrix}
+=\text{ u. s. w.}
+\]
+
+\emph{Anmerkung 1.} Einfacher Cyclus sowohl als einfache Vertauschung erhalten den allgemeinen Charakter der eigentlichen Substitutionen, sobald wir die Beschränkung fallen lassen, dass sie nur für eine bestimmte Permutation gelten sollen.
+
+So werden wir unter \((3\ 5)\) eine einfache Vertauschung, angewendet etwa auf \((4\ 2\ 3\ 5\ 1)\), verstehen, dagegen die allgemeine darstellen durch
+\[
+\begin{pmatrix}4&2&3&5&1\\4&2&5&3&1\end{pmatrix}
+=
+\begin{pmatrix}3&4&1&5&2\\5&4&1&3&2\end{pmatrix}
+=\text{ u. s. w.}
+\]
+So wird auch
+\[
+\begin{pmatrix}6&1&4&3\\1&4&3&6\end{pmatrix}
+\]
+den einfachen Cyclus bedeuten, der auf die Permutation \((5\ 2\ 6\ 1\ 4\ 3)\) anzuwenden ist, während der allgemeine charakterisirt ist durch
+\[
+\begin{pmatrix}5&2&6&1&4&3\\5&2&1&4&3&6\end{pmatrix}
+=
+\begin{pmatrix}1&6&4&5&2&3\\4&1&3&5&2&6\end{pmatrix}
+=
+\begin{pmatrix}2&1&6&5&3&4\\2&4&1&5&6&3\end{pmatrix}
+=\text{ u. s. w.}
+\]
+
+\emph{Anmerkung 2.} Eine beliebige Substitution \(S\) verlangt, abgesehen von der einen
+\[
+S=\begin{pmatrix}1&2&3&\cdots&n\\1&2&3&\cdots&n\end{pmatrix},
+\]
+die Alles ungeändert lässt, allgemeine gewöhnliche, oder auch, wie wir gleich sehen werden, allgemeine cyclische Vertauschungen.
+
+6. \emph{Herstellung der uneigentlichen Substitutionen durch einander.} Der einfache Cyclus lässt sich herstellen durch einfache Vertauschungen.
+
+Beispiel 1. Sei gegeben der einfache Cyclus
+\[
+\begin{pmatrix}2&5&3&1\\5&3&1&2\end{pmatrix}.
+\]
+Lassen wir nun das Element 2 successive nach rechts wandern, dann entsteht aus \((2\ 5\ 3\ 1)\) durch die einfache Vertauschung \((2\ 5)\) zuerst \((5\ 2\ 3\ 1)\), die nächste einfache Vertauschung \((2\ 3)\) führt zu \((5\ 3\ 2\ 1)\), endlich die letzte \((2\ 1)\) zum gesuchten Resultat \((5\ 3\ 1\ 2)\); also lässt sich ein einfacher Cyclus von 4 Elementen durch 3 einfache Vertauschungen ersetzen.
+
+Beispiel 2. Der einfache Cyclus sei
+\[
+\begin{pmatrix}4&6&5&8&7&3\\6&5&8&7&3&4\end{pmatrix}.
+\]
+Wir lassen wieder das erste Element 4 der Permutation wandern.
+\[
+\begin{array}{c@{\qquad}c}
+\text{Einfache Vertauschung.} & \text{Permutation.}\\
+(4\ 6)&645873\\
+(4\ 5)&654873\\
+(4\ 8)&658473\\
+(4\ 7)&658743\\
+(4\ 3)&658734
+\end{array}
+\]
+An Stelle des einfachen Cyclus von 6 Elementen treten somit 5 einfache Vertauschungen.
+
+Man erkennt also leicht die Richtigkeit des Satzes:
+\begin{quote}
+„Ist die Differenz der Stellenzahl des ersten und letzten Elementes eines einfachen Cyclus \(\nu\), so kann man denselben durch \(\nu\) einfache Vertauschungen ersetzen; es spielen dann \(\nu+1\) Elemente im Cyclus mit.“
+\end{quote}
+
+7. \emph{Die allgemeine Vertauschung lässt sich durch zwei einfache Cyclen herstellen.} Sei gegeben 1) die allgemeine Vertauschung
+\[
+S=\begin{pmatrix}2&4&1&5&3&6\\6&4&1&5&3&2\end{pmatrix},
+\]
+dann liefert der einfache Cyclus (gebildet aus allen 6 Elementen)
+\[
+\begin{pmatrix}2&4&1&5&3&6\\4&1&5&3&6&2\end{pmatrix}
+\]
+zunächst die Permutation \((4\ 1\ 5\ 3\ 6\ 2)\).
+
+Wendet man auf diese den einfachen Cyclus
+\[
+\begin{pmatrix}4&1&5&3&6\\6&4&1&5&3\end{pmatrix}
+\]
+an, gebildet aus fünf Elementen, so führt er zum gesuchten Resultat \((6\ 4\ 1\ 5\ 3\ 2)\).
+
+Beispiel 2. Die Substitution
+\[
+S=\begin{pmatrix}5&7&8&2&4&1&3&6\\5&4&8&2&7&1&3&6\end{pmatrix}
+\]
+lässt sich spalten in den einfachen vorschreitenden Cyclus von vier Elementen
+\[
+\begin{pmatrix}7&8&2&4\\8&2&4&7\end{pmatrix}.
+\]
+Durch ihn wird in der Permutation \((5\ 7\ 8\ 2\ 4\ 1\ 3\ 6)\) zunächst das Element 7 an die durch \(S\) angedeutete Stelle gebracht, so dass man erhält \((5\ 8\ 2\ 4\ 7\ 1\ 3\ 6)\). Wendet man hierauf den rückschreitenden einfachen Cyclus von drei Elementen \(\begin{pmatrix}8&2&4\\4&8&2\end{pmatrix}\) an, so erhält man das gewünschte Resultat \((5\ 4\ 8\ 2\ 7\ 1\ 3\ 6)\). Die weiteren Beispiele werden wohl ohne weitere Erklärung verständlich sein.
+
+3) Allgemeine Vertauschung:
+\[
+S=\begin{pmatrix}3&0&2&7&1&5&6&4\\3&0&2&5&1&7&6&4\end{pmatrix}.
+\]
+Erster Cyclus: \(\begin{pmatrix}7&1&5\\1&5&7\end{pmatrix}\); Resultat: \((3\ 0\ 2\ 1\ 5\ 7\ 6\ 4)\).
+
+Zweiter Cyclus: \(\begin{pmatrix}1&5\\5&1\end{pmatrix}\); Resultat: \((3\ 0\ 2\ 5\ 1\ 7\ 6\ 4)\).
+
+4) Allgemeine Vertauschung:
+\[
+S=\begin{pmatrix}5&3&7&8&9&1&2&4&6\\5&4&7&8&9&1&2&3&6\end{pmatrix}.
+\]
+Erster Cyclus: \(\begin{pmatrix}3&7&8&9&1&2&4\\7&8&9&1&2&4&3\end{pmatrix}\); Resultat: \((5\ 7\ 8\ 9\ 1\ 2\ 4\ 3\ 6)\).
+
+Zweiter Cyclus: \(\begin{pmatrix}7&8&9&1&2&4\\4&7&8&9&1&2\end{pmatrix}\); Resultat: \((5\ 4\ 7\ 8\ 9\ 1\ 2\ 3\ 6)\).
+
+Aus diesen vier Beispielen lässt sich leicht folgendes Gesetz abstrahiren:
+\begin{quote}
+„Ist die Differenz der Stellenzahl der beiden zu vertauschenden Elemente gleich \(\nu\), dann spielen beim ersten Cyclus \(\nu+1\) Elemente, beim zweiten \(\nu\) Elemente mit. Daher besteht nach dem vorigen Satze der erste Cyclus aus \(\nu\) einfachen Vertauschungen, der zweite Cyclus aus \(\nu-1\). Wenn man also auf \emph{diesem} Wege die allgemeine Vertauschung in einfache zerlegt, so ist Gesammtsumme der letzteren \(2\nu-1\), also eine ungerade Zahl.“
+\end{quote}
+Es sei hierbei bemerkt, dass diese Zahl \(2\nu-1\) lediglich von dem oben eingeschlagenen Wege abhängig ist. Irgend ein systematisches oder auch willkürliches anderes Verfahren, die allgemeine Vertauschung auf einfache zurückzuführen, wird im Allgemeinen auf eine andere Zahl führen.
+
+8. \emph{Herstellung des allgemeinen Cyclus aus der allgemeinen Vertauschung.} Wir bestimmen den zum allgemeinen Cyclus gehörigen einfachen Cyclus, lösen diesen in seine einfachen Vertauschungen auf, und bilden alsdann die entsprechenden allgemeinen Vertauschungen. Diese ersetzen gerade den allgemeinen Cyclus.
+
+Beispiel 1. Es sei gegeben der allgemeine Cyclus
+\[
+S=\begin{pmatrix}4&3&5&1&6&2\\1&2&5&3&6&4\end{pmatrix}.
+\]
+Der zugehörige einfache ist \(\begin{pmatrix}4&1&3&2\\1&3&2&4\end{pmatrix}\), welcher selbst in die einfachen Vertauschungen \((4\ 1)\), \((4\ 3)\), \((4\ 2)\) aufgelöst werden kann.
+
+Hierzu bilden wir der Reihe nach die zugehörigen allgemeinen Vertauschungen und erhalten so entsprechend \((4\ 1)\)
+\[
+S_1=\begin{pmatrix}4&3&5&1&6&2\\1&3&5&4&6&2\end{pmatrix},
+\]
+daraus entsprechend \((4\ 3)\)
+\[
+S_2=\begin{pmatrix}1&3&5&4&6&3\\1&4&5&3&6&2\end{pmatrix},
+\]
+daraus entsprechend \((4\ 2)\)
+\[
+S_3=\begin{pmatrix}1&4&5&3&6&2\\1&2&5&3&6&4\end{pmatrix},
+\]
+womit das gewünschte Resultat erreicht ist.
+
+Beispiel 2. Es ist der allgemeine Cyclus
+\[
+S=\begin{pmatrix}3&5&7&9&8&2&6&4&1\\7&5&8&9&6&2&1&4&3\end{pmatrix}
+\]
+in allgemeine Vertauschungen zu zerlegen. Wir bestimmen aus \(S\) den einfachen Cyclus
+\[
+\begin{pmatrix}3&7&8&6&1\\7&8&6&1&3\end{pmatrix}.
+\]
+Ihm entsprechen die einfachen Vertauschungen:
+\[
+(3\ 7),\quad(3\ 8),\quad(3\ 6),\quad(3\ 1).
+\]
+Also zerfällt \(S\) in die vier allgemeinen Vertauschungen
+\[
+S_1=\begin{pmatrix}3&5&7&9&8&2&6&4&1\\7&5&3&9&8&2&6&4&1\end{pmatrix},\quad
+S_2=\begin{pmatrix}7&5&3&9&8&2&6&4&1\\7&5&8&9&3&2&6&4&1\end{pmatrix},
+\]
+\[
+S_3=\begin{pmatrix}7&5&8&9&3&2&6&4&1\\7&5&8&9&6&2&3&4&1\end{pmatrix},\quad
+S_4=\begin{pmatrix}7&5&8&9&6&2&3&4&1\\7&5&8&9&6&2&1&4&3\end{pmatrix}.
+\]
+Man erkennt aus diesen Beispielen, dass der allgemeine Cyclus sich genau in derselben Weise in allgemeine Vertauschungen auflösen lässt, wie der einfache Cyclus in einfache Vertauschungen. Spielen daher beim allgemeinen Cyclus \(\nu+1\) Elemente mit, so kann man ihn in \(\nu\) allgemeine Vertauschungen auflösen. (Im Beispiel 1 waren die Elemente des Cyclus an Zahl 4, die allgemeinen Vertauschungen 3; im Beispiel 2 spielten 5 Elemente im Cyclus mit, also ergaben sich 4 allgemeine Vertauschungen.)
+
+9. \emph{Herstellung einer beliebigen Substitution durch allgemeine Cyclen.} Sei z. B. die gegebene Substitution
+\[
+S=\begin{pmatrix}9&0&8&4&3&5&2&1&7&6\\1&6&5&0&9&2&8&3&4&7\end{pmatrix}.
+\]
+Wir können sie uns entstanden denken dadurch, dass zunächst 9 durch 1, 1 durch 3, 3 wieder durch 9 ersetzt, d. h. dass die obere Permutation zuerst dem allgemeinen Cyclus:
+\[
+S_1=\begin{pmatrix}9&0&8&4&3&5&2&1&7&6\\1&0&8&4&9&5&2&3&7&6\end{pmatrix}
+\]
+unterworfen wurde. In dem Resultat dieser Substitution, d. h. in der untern Permutation dieses Ausdruckes \(S_1\), trat hierauf an Stelle der 0 der Index 6, an Stelle von 6 der Index 7, an Stelle von 7 der Index 4, endlich an Stelle von 4 wieder der Index Null, d. h. sie wurde einer Veränderung unterworfen, bewirkt durch den allgemeinen Cyclus:
+\[
+S_2=\begin{pmatrix}1&0&8&4&9&5&2&3&7&6\\1&6&8&0&9&5&2&3&4&7\end{pmatrix}.
+\]
+Aus der untern Permutation der Substitution \(S_2\) gelangt man endlich zur gesuchten untern Permutation im Ausdrucke \(S\), indem man 8 durch 5, 5 durch 2 und 2 wieder durch 8 ersetzt, also auf sie den allgemeinen Cyclus anwendet:
+\[
+S_3=\begin{pmatrix}1&6&8&0&9&5&2&3&4&7\\1&6&5&0&9&2&8&3&4&7\end{pmatrix}.
+\]
+Wir sehen somit, die allgemeine Substitution \(S\) lässt sich ersetzen durch die drei allgemeinen Cyclen \(S_1,S_2,S_3\).
+
+Die Anzahl der Cyclen, die für eine allgemeine Substitution eintreten können, lässt sich nicht von vornherein angeben; sie lässt sich aber rasch ermitteln, wenn man, etwa von der ersten Ziffer links ausgehend, nach der im vorstehenden Beispiele dreimal angegebenen Methode verfährt. Jedesmal wenn wir auf diese Weise zur Ausgangsziffer zurückkehren, ist der erste Cyclus geschlossen, und die Ermittelung des zweiten Cyclus kann dann mit dem nächsten Index, der nicht schon im ersten enthalten ist, begonnen werden.
+
+Es kann natürlich eintreten, dass überhaupt nur Ein Cyclus auftritt, d. h. dass die allgemeine Substitution selbst einen einzigen Cyclus darstellt, wie in dem Beispiele:
+\[
+(2)\qquad S=\begin{pmatrix}5&9&8&2&3&4&1&7&6\\9&2&5&1&4&6&3&8&7\end{pmatrix}
+\]
+oder aber auch, dass \(S\) Cyclen enthält mit einem einzigen Elemente, wie z. B. die Substitution
+\[
+(3)\qquad S=\begin{pmatrix}5&1&8&2&3&4&7&6\\2&1&5&4&3&6&8&7\end{pmatrix}.
+\]
+Sie zerfällt in den Cyclus
+\[
+\begin{pmatrix}5&2&4&6&7&8\\2&4&6&7&8&5\end{pmatrix}
+\]
+mit sechs Elementen und in die beiden eingliedrigen Cyclen \((1),(3)\).
+
+Hat man nun auf die angegebene Art die Zahl \(\nu\) der Cyclen ermittelt, welche eine allgemeine Substitution vertreten können, so erhält man die Zahl der allgemeinen Vertauschungen in folgender Weise. Sei die Zahl der Elemente des ersten Cyclus \(\alpha_1\), die des zweiten \(\alpha_2\ldots\) u. s. w., die des \(\nu^{\mathrm{ten}}\) \(\alpha_\nu\), dann ist, weil ja alle Elemente durch alle Cyclen erschöpft sein müssen,
+\[
+\sum\alpha_\varrho=\alpha_1+\alpha_2+\cdots+\alpha_\nu=n.
+\]
+Nun besteht aber nach Nr. 8 der allgemeine Cyclus von \(\alpha_\varrho\) Elementen aus \(\alpha_\varrho-1\) Vertauschungen, daher ist die Summe aller allgemeinen Vertauschungen, welche die allgemeine Substitution ersetzen können, gleich
+\[
+\sum\alpha_\varrho-(1+1+\cdots\,\nu\text{ mal})=n-\nu.
+\]
+Es mag hier nochmals erwähnt werden, dass diese Anzahl lediglich abhängig ist von der hier eingeschlagenen Methode, sie zu ermitteln.
+
+10. \emph{Bestimmung der Hauptklasse (siehe Nr. 4), der eine Substitution angehört.} Diese Aufgabe könnte am Besten am Differenzenproduct direct erledigt werden, indem man an demselben der Reihe nach die einzelnen Vertauschungen vornimmt. Doch möchte sie vielleicht unter Berücksichtigung einzelner Merkmale der Substitutionen, die wir nun besprochen haben, leichter zu lösen sein. Wir sehen nämlich Folgendes:
+
+\(\alpha)\) Da sich die einfache Vertauschung auf eine einzige bestimmte, wenn auch willkürlich gegebene Permutation bezieht, so können wir der Einfachheit halber annehmen, diese willkürlich gegebene sei die \emph{gut geordnete} Permutation. Dies vorausgesetzt, kann eine einfache Vertauschung zweier Nachbarindices \(\alpha_\varrho\) und \(\alpha_{\varrho+1}\), die also natürlich nur mehr um 1 verschieden sein können, angewendet auf das Differenzenproduct der Indices, nur das Vorzeichen der einzigen Differenz \((\alpha_\varrho-\alpha_{\varrho+1})\) ändern, da in allen übrigen Differenzen der Abstand der Indices von dem Index \(\alpha_\varrho\) bezw. \(\alpha_{\varrho+1}\) mindestens zwei Einheiten beträgt, also eine Veränderung des Minuenden oder Subtrahenden um 1 keine Vorzeichenänderung zur Folge haben kann. Demnach ändert mit diesem einzelnen Factor \((\alpha_\varrho-\alpha_{\varrho+1})\) das ganze Product sein Zeichen, d. h.: „Die einfache Vertauschung gehört der zweiten Hauptklasse an.“ Damit ist aber auch die Classification der übrigen Substitutionen gewonnen.
+
+\(\beta)\) Der einfache Cyclus von \(\nu+1\) Elementen gehört nach (6) der ersten oder zweiten Hauptklasse an, je nachdem \(\nu\) (= der Zahl seiner einfachen Vertauschungen) gerade oder ungerade ist.
+
+\(\gamma)\) Die allgemeine Vertauschung gehört immer der zweiten Hauptklasse an, da sie nach Nr. 7 aus \(2\nu-1\), also einer ungeraden Zahl einfacher Vertauschungen besteht.
+
+\(\delta)\) Der allgemeine Cyclus verhält sich wie der einfache, da ja die allgemeinen Vertauschungen, durch welche ersterer ersetzt werden kann, wie die einfachen Vertauschungen zur zweiten Hauptklasse gehören.
+
+\(\varepsilon)\) Die beliebige Substitution endlich besteht aus \(n-\nu\) allgemeinen Vertauschungen, wo \(n\) gleich der Zahl der Elemente und \(\nu\) gleich der Zahl der die Substitution ersetzenden allgemeinen Cyclen ist. Je nachdem diese Differenz also gerade oder ungerade ist, gehört die Substitution zur ersten oder zweiten Hauptklasse.
+
+11. Wir wenden diese Merkmale auf die bereits behandelten Beispiele an.
+
+\(\alpha)\) In der Permutation \((5\ 3\ 4\ 2\ 1)\) ändert die einfache Vertauschung \((2\ 1)\) das Vorzeichen des Differenzenproductes
+\[
+\begin{gathered}
+(1-2)(1-3)(1-4)(1-5)=P\\
+(2-3)(2-4)(2-5)\\
+(3-4)(3-5)\\
+(4-5)
+\end{gathered}
+\]
+denn in ihm ändert nur der erste Factor sein Zeichen, die übrigen gehen ineinander über; man erhält
+\[
+\begin{gathered}
+(2-1)(2-3)(2-4)(2-5)=-P.\\
+(1-3)(1-4)(1-5)\\
+(3-4)(3-5)\\
+(4-5).
+\end{gathered}
+\]
+
+\(\beta)\) Der erste einfache Cyclus in Nr. 6:
+\[
+\begin{pmatrix}2&5&3&1\\5&3&1&2\end{pmatrix}
+\]
+setzte sich zusammen aus drei einfachen Vertauschungen \((2\ 5),(2\ 3),(2\ 1)\), also gehört er der zweiten Klasse an, während z. B. der einfache Cyclus
+\[
+\begin{pmatrix}2&5&3&1&4\\5&3&1&4&2\end{pmatrix},
+\]
+da er aus den vier einfachen Vertauschungen \((2\ 5),(2\ 3),(2\ 1),(2\ 4)\) besteht, unter die erste Hauptklasse zu rechnen ist.
+
+\(\gamma)\) Die allgemeine Vertauschung
+\[
+S=\begin{pmatrix}2&4&1&5&3&6\\6&4&1&5&3&2\end{pmatrix}\quad \text{Nr. 7, Beispiel 1,}
+\]
+wurde ersetzt durch die beiden einfachen Cyclen
+\[
+S_1=\begin{pmatrix}2&4&1&5&3&6\\4&1&5&3&6&2\end{pmatrix}
+\quad\text{und}\quad
+S_2=\begin{pmatrix}4&1&5&3&6\\6&4&1&5&3\end{pmatrix};
+\]
+der erste besteht aus fünf, der zweite aus vier einfachen Vertauschungen. Da die Summe derselben \(=9\) ist, so gehört \(S\) zur zweiten Klasse der Substitutionen; die Behauptung lässt sich leicht direct am Differenzenproduct verificiren.
+
+\(\delta)\) Die Substitution Nr. 7, Beispiel 2,
+\[
+S=\begin{pmatrix}5&7&8&2&4&1&3&6\\5&4&8&2&7&1&3&6\end{pmatrix}
+\]
+zerfiel in die Cyclen
+\[
+S_1=\begin{pmatrix}7&8&2&4\\8&2&4&7\end{pmatrix},\qquad
+S_2=\begin{pmatrix}8&2&4\\4&8&2\end{pmatrix},
+\]
+deren erster aus den drei einfachen Vertauschungen \((7\ 8),(7\ 2),(7\ 4)\), deren zweiter aus den zwei Vertauschungen \((8\ 2),(8\ 4)\) besteht, ihre Summe ist \(=5\), also wiederum eine ungerade Zahl.
+
+\(\varepsilon)\) Der allgemeine Cyclus
+\[
+S=\begin{pmatrix}4&3&5&1&6&2\\1&2&5&3&6&4\end{pmatrix}
+\]
+in Nr. 8 wurde zerlegt in die drei allgemeinen Vertauschungen
+\[
+S_1=\begin{pmatrix}4&3&5&1&6&2\\1&3&5&4&6&2\end{pmatrix},\quad
+S_2=\begin{pmatrix}1&3&5&4&6&2\\1&4&5&3&6&2\end{pmatrix},\quad
+S_3=\begin{pmatrix}1&4&5&3&6&2\\1&2&5&3&6&4\end{pmatrix}.
+\]
+Für \(S_1\) ist die Differenz der zu vertauschenden Stellenzahlen \(\nu_1=3\), daher die zugehörige Zahl der einfachen Vertauschungen \(2\nu_1-1=5\). Ferner ist das zu \(S_2\) gehörige \(\nu_2=2\), die Zahl der einfachen Vertauschungen \(2\nu_2-1=3\), endlich das zu \(S_3\) gehörige \(\nu_3=4\), die Zahl der einfachen Vertauschungen \(2\nu_3-1=7\). Die Summe aller Vertauschungen ist also \(5+3+7=15\).
+
+Daher gehört \(S\) der zweiten Hauptklasse an. Analysiren wir auf die gleiche Weise das im nämlichen Abschnitt gegebene zweite Beispiel, so finden wir
+\[
+2\nu_1-1=3,\quad 2\nu_2-1=3,\quad 2\nu_3-1=3,\quad 2\nu_4-1=3.
+\]
+Die Summe dieser vier ungeraden Zahlen giebt eine gerade, d. h. diese Substitution gehört der ersten Hauptklasse an.
+
+\(\zeta)\) Betrachten wir endlich die beliebige Substitution
+\[
+S=\begin{pmatrix}9&0&8&4&3&5&2&1&7&6\\1&6&5&0&9&2&8&3&4&7\end{pmatrix}
+\]
+in Nr. 9. Wir zerlegten sie in die drei allgemeinen Cyclen
+\[
+S_1=\begin{pmatrix}9&0&8&4&3&5&2&1&7&6\\1&0&8&4&9&5&2&3&7&6\end{pmatrix},
+\quad
+S_2=\begin{pmatrix}1&0&8&4&9&5&2&3&7&6\\1&6&8&0&8&5&2&3&4&7\end{pmatrix},
+\]
+\[
+S_3=\begin{pmatrix}1&6&8&0&9&5&2&3&4&7\\1&6&5&0&9&2&8&3&4&7\end{pmatrix},
+\]
+deren einfache sind
+\[
+\begin{pmatrix}9&3&1\\1&9&3\end{pmatrix},\qquad
+\begin{pmatrix}0&4&7&6\\6&0&4&7\end{pmatrix},\qquad
+\begin{pmatrix}8&5&2\\5&2&8\end{pmatrix}.
+\]
+Zum ersten Cyclus gehören also zwei, zum zweiten drei, zum dritten wieder zwei allgemeine Vertauschungen. Die Anzahl derselben ist somit \(=7\), und weil jede allgemeine Vertauschung nur in eine ungerade Zahl von einfachen aufgelöst werden kann, so ist die Klasse dieser Substitution die zweite.
+
+\(\eta)\) Dagegen gehört die Substitution
+\[
+S=\begin{pmatrix}5&6&7&3&4&2\\3&4&6&2&7&5\end{pmatrix},
+\]
+welche sich in zwei allgemeine Cyclen spaltet, denen die drei einfachen
+\[
+\begin{pmatrix}5&3&2\\3&2&5\end{pmatrix}
+\quad\text{und}\quad
+\begin{pmatrix}6&4&7\\4&7&6\end{pmatrix}
+\]
+entsprechen, zur ersten Hauptklasse, weil in den zwei allgemeinen Cyclen je drei Elemente mitspielen, so dass dieselben zusammen durch \(2+2=4\), d. i. eine gerade Anzahl allgemeiner Vertauschungen ersetzt werden können.
+
+12. \emph{Classification der Substitution durch Abzählung der Derangements.} Ein weiteres Mittel die Klasse einer Substitution \(S\) zu bestimmen, liefert auch die Abzählung der Derangements in den beiden Permutationen von \(S\). Es gilt nämlich der Satz:
+\begin{quote}
+„Gehört eine Substitution der ersten Klasse an, so ist die Differenz der Derangements in der obern und untern Permutation eine gerade, gehört sie der zweiten Klasse an, eine ungerade Zahl.“
+\end{quote}
+\end{document}

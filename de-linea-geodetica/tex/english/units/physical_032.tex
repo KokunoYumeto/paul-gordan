@@ -1,0 +1,63 @@
+% Physical unit 032; accepted Session 03 after fresh 400-dpi authority replay.
+\GordanUnitStart{032}{printed page 27}
+\GordanTopFolio{27}
+\begingroup\small
+from the formulae:
+\[
+\begin{array}{rcll}
+ \sqrt{1-e^2}\,\tg B_0&=&\tg l_0, &\text{Cap. I \S\ 7}\vspace{0.2em}\\
+ {2\over\pi}{\Sigma(l_0)\over b}&=&1+o\sin^2l_0-{3\over4}o^2\sin^4l_0+{5\over4}o^3\sin^6l_0\ldots, &\text{Cap. III \S\ 2}\vspace{0.2em}\\
+ {a\over b}\left\{1-{2\over\pi}\mathcal A(l_0)\right\}&=&2p\cos l_0+\left\{1-2p+{25\over8}p^2\right\}p^2\cos^3l_0\ldots, &\text{Cap. III \S\ 4}\vspace{0.2em}\\
+ x&=&e\sin B_0, &\text{Cap. II \S\ 9}\vspace{0.2em}\\
+ x'&=&{\cos B_0\over \cos l_0}. &
+\end{array}
+\]
+
+\sect{4}
+
+It remains to compute the constants
+\[
+ q\qquad x\qquad E\qquad v.
+\]
+For this purpose it is useful to apply the following formula:
+\[
+ \sqrt{x'}={1-2q+2q^4\cdots\over 1+2q+2q^4\cdots}\qquad \text{fund. pag. 184.}
+\]
+Since $q$ is a very small quantity, which indeed, as regards the earth, never exceeds the number \gq{0,0004}, $q^4$ may be wholly neglected.
+
+Therefore there is:
+\[
+ \sqrt{x'}={1-2q\over 1+2q}
+\]
+or:
+\[
+ 2q={1-\sqrt{x'}\over 1+\sqrt{x'}}
+ ={\sqrt{\cos l_0}-\sqrt{\cos B_0}\over \sqrt{\cos l_0}+\sqrt{\cos B_0}},
+\]
+from which $q$ can easily be computed.
+
+In this matter, since $x'$ is sometimes not accurately defined, we grant that it may happen that $q$ cannot be computed to the extreme digits.
+
+In order that this may not occur, another formula must be explained.
+
+There is:
+\[
+ \sqrt{x}=2\sqrt[4]{q}\,{1+q^2\over 1+2q}
+ \qquad \text{fund. pag. 184}
+\]
+\[
+ q={x^2\over16}\left\{{1+2q\over 1+q^2}\right\}^{4}
+\]
+\[
+ \log q=\log{x^2\over16}-4\log(1+q^2)+4\log(1+2q)
+ =\log{x^2\over16}+8q-12q^2+{8\over3}q^3.
+\]
+If $q$ is to be computed more accurately, it is necessary to compute some quantity $q_1$ approaching $q$ more closely, from the formula
+\[
+ \log q_1=\log{x^2\over16}+{x^2\over2};
+\]
+after this has been done, $q$ is defined from the equation
+\[
+ \log q=\log{x^2\over16}+8q_1-12q_1^2+{8\over3}q_1^3.
+\]
+\endgroup

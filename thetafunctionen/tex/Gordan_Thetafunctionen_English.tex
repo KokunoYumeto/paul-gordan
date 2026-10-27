@@ -1,0 +1,880 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=18mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\pdfinfoomitdate=1
+\pdfsuppressptexinfo=-1
+\pdftrailerid{<474f5244414e2d54484554412d454e2d31><474f5244414e2d54484554412d454e2d31>}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.28em}
+\setlength{\abovedisplayskip}{0.45em}
+\setlength{\belowdisplayskip}{0.45em}
+\newcommand{\dd}{\partial}
+\newcommand{\sourceanchor}[1]{\hypertarget{source-#1}{}}
+\allowdisplaybreaks
+\hypersetup{pdftitle={On the Transformation of Theta Functions - English translation},pdfauthor={Paul Gordan},pdfsubject={Faithful English rendering of the 1863 German source}}
+\begin{document}
+\small
+
+% Source: Google Books page-image witnesses PA1-PA20, Gordan 1863 theta transformation.
+% Non-authorial Google watermark and PA2 library stamp/digitization debris are not translated as authorial text.
+\sourceanchor{PA01}
+\begin{center}
+{\Large ON THE TRANSFORMATION}\\[0.7em]
+{\normalsize OF}\\[0.7em]
+{\large \(\Theta\)-FUNCTIONS.}\\[1.2em]
+\includegraphics[width=0.15\linewidth]{assets/PA01_title_divider_presentation_4x.png}\\[1.4em]
+{\large INAUGURAL DISSERTATION}\\[0.7em]
+{\normalsize OF THE PHILOSOPHICAL FACULTY}\\[0.55em]
+{\normalsize OF THE}\\[0.55em]
+{\normalsize LUDWIGS-UNIVERSITY GIESSEN}\\[0.75em]
+{\large FOR OBTAINING THE VENIA LEGENDI}\\[0.75em]
+{\normalsize SUBMITTED}\\[0.55em]
+{\normalsize BY}\\[0.55em]
+{\large PAUL GORDAN,}\\[-0.15em]
+{\scriptsize Dr. phil.}\\[2.4em]
+\includegraphics[width=0.52\linewidth]{assets/PA01_title_ornament_presentation_4x.png}\\[0.8em]
+{\normalsize GIESSEN, 1863.}\\[-0.1em]
+{\normalsize PRINTED BY WILHELM KELLER.}
+\end{center}
+
+\sourceanchor{PA02}% blank/copy-specific unit; no authorial text
+\sourceanchor{PA03}
+\subsection*{\S. 1.}
+The series
+\[
+\sum_{\alpha=-\infty}^{\infty} e^{a\alpha^{2}+2ib\alpha}
+\]
+is convergent for all finite (real and imaginary) values of the variable \(b\), provided that the real part of the quantity \(a\) is essentially negative; it is called a \(\Theta\)-function and denoted by \(\Theta(a,b)\); the quantities \(a\) and \(b\), on which it depends, shall bear the names modulus and argument.
+
+\subsection*{\S. 2.}
+The most important properties of the \(\Theta\)-functions consist in the following relations, whose proof we may pass over here.
+
+If \(n\) denotes any integer, then:
+\begin{align*}
+1.\quad& \Theta(a,b+n\pi)=\Theta(a,b)\\
+2.\quad& e^{-\frac{b^{2}}{a}}\Theta(a,b)=e^{-\frac{(b+nia)^{2}}{a}}\Theta(a,b+nia)\\
+3.\quad& \Theta(a,b)=e^{n^{2}a-2nib}\Theta(a,b+nia)\\
+4.\quad& \Theta(a+2n\pi i,b)=\Theta(a,b)\\
+5.\quad& \Theta\!\left(a+n\pi i,b\pm \frac{n\pi}{2}\right)=\Theta(a,b)\\
+6.\quad& \frac{\dd^{2}\Theta(a,b)}{\dd b^{2}}+4\frac{\dd\Theta(a,b)}{\dd a}=0.
+\end{align*}
+
+\subsection*{\S. 3.}
+By equations 1) and 3) a \(\Theta\)-function is completely defined. That is: if the synectic function \(f(b)\) satisfies the relations
+\[
+f(b+n\pi)=f(b)
+\]
+\[
+f(b)=e^{n^{2}a-2ibn}f(b+nia),
+\]
+then, up to a constant factor, it is equal to \(\Theta(a,b)\).
+
+\sourceanchor{PA04}
+\begin{center}Proof.\end{center}
+The first relation teaches us that the function \(f\) can be developed in a series of the form
+\[
+f(b)=\sum_{\alpha=-\infty}^{\infty} e^{x_{\alpha}+\alpha ib};
+\]
+with the aid of the latter formula one can set up relations between the constants \(x\).
+
+Since the series
+\[
+f(b)=\sum_{\alpha=-\infty}^{\infty}e^{x_{\alpha}+2ib\alpha}
+\]
+and
+\[
+e^{an^{2}-2ibn}f(b+nia)=\sum_{\beta=-\infty}^{\infty}e^{x_{\beta}+2ib\beta+an^{2}-2ibn-2\beta an}
+\]
+are identical, the coefficients of powers of the same height of \(e^{ib}\) in the two series must agree.
+
+Putting therefore
+\[
+\beta=n+\alpha,
+\]
+one must have
+\[
+x_{\alpha}=x_{\beta}-2\beta an+an^{2}.
+\]
+This relation is always valid, whatever integers \(\alpha\) and \(n\) may be; it is therefore permitted to put \(0\) for \(\alpha\), \(\alpha\) for \(n\), and \(\alpha\) for \(\beta\); then
+\[
+x_{\alpha}=x_{0}+a\alpha^{2}
+\]
+is obtained, and if we substitute this value in our equation,
+\[
+f(b)=\sum_{\alpha=-\infty}^{\infty}e^{a\alpha^{2}+2ib\alpha+x_{0}}.
+\]
+
+\subsection*{\S. 4.}
+The theorem just derived comes from Jacobi and was proved by him in \textit{Fund.} p. 176 in a manner similar to that used here; however, it is capable of an important extension.
+
+If the synectic function \(f(b)\) satisfies the relations
+\[
+f(b+\pi)=f(b)
+\]
+\[
+f(b)=e^{c-2nib}f(b+ia),
+\]
+in which \(c\) denotes a constant and \(n\) a given number, then one can determine \(f(b)\) as a sum of \(n\) \(\Theta\)-functions, each of which has a power of \(e^{ib}\) and an arbitrary constant as factor.
+
+\begin{center}Proof.\end{center}
+The relation
+\[
+f(b+\pi)=f(b)
+\]
+teaches us again that one can develop the function \(f(b)\) in a series of the form
+\sourceanchor{PA05}
+\begin{equation*}
+ f(b)=\sum_{\alpha=-\infty}^{\infty}e^{x_{\alpha}+2ib\alpha}.
+\tag{1}
+\end{equation*}
+Meanwhile we use the formula
+\[
+f(b)=e^{c-2nib}f(b+ia)
+\]
+to set up relational equations between the constants \(x\).
+
+From the identity of the two series
+\[
+f(b)=\sum_{\alpha=-\infty}^{\infty}e^{x_{\alpha}+2ib\alpha}
+\]
+and
+\[
+e^{c-2nib}f(b+ia)=\sum_{\beta=-\infty}^{\infty}e^{x_{\beta}+2ib\beta-2ibn+c-2\beta a}
+\]
+it follows that, when one puts
+\[
+\beta=n+\alpha,
+\]
+then
+\[
+x_{\alpha}=x_{\beta}+c-2\beta a=x_{\alpha+n}+c-2an-2a\alpha.
+\]
+From this equation we see that the first \(n\) of the constants \(x\) are arbitrary, while the remaining \(x\)'s can then be calculated from them.
+
+We shall now transform the series in which we have developed \(f(b)\) into a double series, and to that end put
+\[
+\alpha=n\gamma+\delta.
+\]
+Now, in order that \(\alpha\) take all integral values from \(-\infty\) to \(+\infty\), in summing over \(\gamma\) we must put all numbers from \(-\infty\) to \(+\infty\), while at the same time we sum over the values 0 to \(n-1\) of \(\delta\).
+
+Thus the two formulae arise:
+\begin{align}
+ f(b)&=\sum_{\delta=0}^{n-1}e^{2ib\delta}\sum_{\gamma=-\infty}^{\infty}e^{x_{\gamma n+\delta}+2ibn\gamma} \tag{2}\\
+ x_{\gamma n+\delta}&=x_{(\gamma+1)n+\delta}+c-2a\delta-2an(\gamma+1). \tag{3}
+\end{align}
+If in formula (3) we let \(\gamma\) take all values from 0 to \(\gamma-1\), we obtain the following system of equations:
+\begin{align*}
+ x_{n+\delta}&=x_{\delta}-c+2a\delta+2an\\
+ x_{2n+\delta}&=x_{n+\delta}-c+2a\delta+4an\\
+ x_{3n+\delta}&=x_{2n+\delta}-c+2a\delta+6an\\
+ &\hspace{2em}\cdots\cdots\cdots\cdots\cdots\cdots\\
+ x_{\gamma n+\delta}&=x_{(\gamma-1)n+\delta}-c+2a\delta+2\gamma an.
+\end{align*}
+And if we add all these formulae,
+\[
+x_{\gamma n+\delta}=x_{\delta}-\gamma c+2\gamma a\delta+an(\gamma+1)\gamma.
+\]
+Entering this value into our double series (2), we finally obtain
+\begin{align*}
+ f(b)&=\sum_{\delta=0}^{n-1}e^{2ib\delta+x_{\delta}}\sum_{\gamma=-\infty}^{\infty}e^{an\gamma^{2}+an\gamma-\gamma c+2\gamma a\delta+2ibn\gamma}\\
+ &=\sum_{\delta=0}^{n-1}C_{\delta}e^{2ib\delta}\Theta\!\left(an,bn-\frac{ian}{2}+\frac{ic}{2}-ia\delta\right).
+\end{align*}
+
+\sourceanchor{PA06}
+\subsection*{\S. 5.}
+From formulae 1. and 3. it is easy to infer that the function
+\[
+f(b)=e^{\frac{b^{2}}{a}}\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right)
+\]
+satisfies the relations
+\[
+f(b+\pi)=f(b)
+\]
+\[
+f(b+ia)=e^{-a+2ib}f(b).
+\]
+By the theorem proved in \S. 3, therefore,
+\[
+f(b)=C\Theta(a,b)
+\]
+and hence identically
+\begin{equation*}
+\Theta(a,b)=C e^{\frac{b^{2}}{a}}\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right),
+\tag{1}
+\end{equation*}
+where in this formula \(C\) is independent of \(b\), and so denotes a function of the modulus \(a\) still to be determined.
+
+\subsection*{\S. 6.}
+The determination of \(C\) can be carried out in the following way. Substitute, in formula 6,
+\[
+\frac{\dd^{2}\Theta(a,b)}{\dd b^{2}}+4\frac{\dd\Theta(a,b)}{\dd a}=0,
+\]
+for \(\Theta(a,b)\) its value from equation (1); then one obtains
+\begin{align*}
+& C e^{\frac{b^{2}}{a}}\Biggl\{\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right)\!\left(\frac{2}{a}+\frac{4b^{2}}{a^{2}}\right)
+ +2\frac{\dd\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right)}{\dd\left(\frac{ib\pi}{a}\right)}\cdot\frac{i\pi}{a}\cdot\frac{2b}{a}
+ -\frac{\dd^{2}\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right)}{\dd\left(\frac{ib\pi}{a}\right)^{2}}\cdot\frac{4\pi^{2}}{a^{2}}\Biggr\}\\
+&\quad +4C e^{\frac{b^{2}}{a}}\Biggl\{\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right)\cdot\left(-\frac{b^{2}}{a^{2}}\right)
+-\frac{\dd\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right)}{\dd\left(\frac{ib\pi}{a}\right)}\cdot\frac{ib\pi}{a^{2}}
+-\frac{\dd\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right)}{\dd\left(\frac{\pi^{2}}{a}\right)}\cdot\frac{\pi^{2}}{a^{2}}\Biggr\}\\
+&\quad +4\frac{\dd C}{\dd a}e^{\frac{b^{2}}{a}}\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right)=0.
+\end{align*}
+Since now, by formula 6,
+\[
+\frac{\dd^{2}\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right)}{\dd\left(\frac{ib\pi}{a}\right)^{2}}+4\frac{\dd\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right)}{\dd\left(\frac{\pi^{2}}{a}\right)}=0,
+\]
+one has
+\[
+\frac{C}{a}+2\frac{\dd C}{\dd a}=0,
+\quad\text{and therefore}\quad
+C=\sqrt{\frac{c}{a}},
+\]
+where \(c\) is now independent of both \(b\) and \(a\).
+
+\sourceanchor{PA07}
+Entering for \(C\) its value just found into equation (1), there results
+\[
+\Theta(a,b)=\sqrt{\frac{c}{a}}e^{\frac{b^{2}}{a}}\Theta\!\left(\frac{\pi^{2}}{a},\frac{ib\pi}{a}\right).
+\]
+The constant \(c\) can be determined by putting \(b=0\) and \(a=-\pi\) in this formula.
+
+One then obtains
+\[
+\Theta(-\pi,0)=\sqrt{\frac{c}{-\pi}}\Theta(-\pi,0),
+\]
+and hence
+\[
+c=-\pi
+\]
+and
+\begin{equation*}
+\Theta(a,b)=\sqrt{\frac{-\pi}{a}}e^{\frac{b^{2}}{a}}\Theta\!\left(\frac{\pi^{2}}{a},\frac{bi\pi}{a}\right).
+\tag{7.}
+\end{equation*}
+
+\subsection*{\S. 7.}
+The square root in this formula must be chosen so that its real part is positive.
+
+\begin{center}Proof.\end{center}
+For \(a=-\pi\) the square root receives the value 1; for this value of \(a\), therefore, the real part of the root is positive.
+
+If now for \(a=a_{1}\) the real part of the root were negative, then a value \(a_{2}\) would have to lie between \(a_{1}\) and \(-\pi\), for which the real part of \(\sqrt{\frac{-\pi}{a_{2}}}\) vanished.
+
+This, however, is not possible, since the real part of \(a\) is always essentially negative (see \S. 1.)
+
+\subsection*{\S. 8.}
+By means of formula 7, one can recognize in what manner the function \(\Theta(a,b)\) approaches infinity when the modulus of \(a\) decreases more and more.
+
+For decreasing \(a\), namely, the value of the function
+\[
+\Theta\!\left(\frac{\pi^{2}}{a},0\right)=\sqrt{\frac{-a}{\pi}}\Theta(a,0)
+\]
+approaches unity more and more.
+
+\(\Theta(a,0)\) therefore becomes infinite like
+\[
+\sqrt{\frac{-\pi}{a}}.
+\]
+
+\subsection*{\S. 9.}
+Formula 7 is of great importance in the theory of \(\Theta\)-functions. Jacobi has given it, as Rosenhein states in his treatise \textit{sur les fonctions de deux variables et à quatre périodes}, proved in a somewhat different way; here, however, we have preferred this kind of proof because we intend to use the method applied in it in yet another way.
+
+\sourceanchor{PA08}
+In the present investigation it is namely our intention, starting from formula 7, to arrive at the most general formula by which a \(\Theta\)-function can be transformed into another \(\Theta\)-function multiplied by an exponential function.
+
+\subsection*{\S. 10.}
+If in formula 7 one puts \(a+2\lambda i\pi\) instead of \(a\), and denotes the expressions
+\[
+\frac{\pi^{2}}{a+2\lambda i\pi}\quad\text{and}\quad \frac{ib\pi}{a+2\lambda i\pi}
+\]
+by \(a_1\) and \(b_1\), then the equation is obtained:
+\[
+\Theta(a,b)=\sqrt{i\frac{b_1}{b}}\,e^{\frac{b^{2}}{a+2\lambda i\pi}}\Theta(a_1,b_1).
+\]
+In a similar way one can put
+\[
+a_2=-\frac{\pi^{2}}{a_1+2\lambda_1 i\pi},\qquad
+b_2=\frac{i b_1\pi}{a_1+2\lambda_1 i\pi},
+\]
+and then one has
+\[
+\Theta(a,b)=\sqrt{i\frac{b_2}{b_1}}\,e^{\frac{b_1^{2}}{a_1+2\lambda_1 i\pi}}\Theta(a_2,b_2).
+\]
+Continuing thus, one comes to the following system of equations:
+\begin{align*}
+a_1&=\frac{\pi^{2}}{a_0+2\lambda_0 i\pi},&
+ b_1&=\frac{i b_0\pi}{a_0+2\lambda_0 i\pi},&
+ \Theta(a_0,b_0)&=\sqrt{i\frac{b_1}{b_0}}\,e^{\frac{b_0^{2}}{a_0+2\lambda_0 i\pi}}\Theta(a_1,b_1),\\
+a_2&=\frac{\pi^{2}}{a_1+2\lambda_1 i\pi},&
+ b_2&=\frac{i b_1\pi}{a_1+2\lambda_1 i\pi},&
+ \Theta(a_1,b_1)&=\sqrt{i\frac{b_2}{b_1}}\,e^{\frac{b_1^{2}}{a_1+2\lambda_1 i\pi}}\Theta(a_2,b_2),\\
+a_3&=\frac{\pi^{2}}{a_2+2\lambda_2 i\pi},&
+ b_3&=\frac{i b_2\pi}{a_2+2\lambda_2 i\pi},&
+ \Theta(a_2,b_2)&=\sqrt{i\frac{b_3}{b_2}}\,e^{\frac{b_2^{2}}{a_2+2\lambda_2 i\pi}}\Theta(a_3,b_3),\\
+a_n&=\frac{\pi^{2}}{a_{n-1}+2\lambda_{n-1}i\pi},&
+ b_n&=\frac{i b_{n-1}\pi}{a_{n-1}+2\lambda_{n-1}i\pi},&
+ \Theta(a_{n-1},b_{n-1})&=\sqrt{i\frac{b_n}{b_{n-1}}}\,e^{\frac{b_{n-1}^{2}}{a_{n-1}+2\lambda_{n-1}i\pi}}\Theta(a_n,b_n),
+\end{align*}
+from which, as one can easily survey, the following relations result:
+\begin{align*}
+a_n&=\cfrac{\pi^{2}}{2\lambda_{n-1}i\pi+\cfrac{\pi^{2}}{2\lambda_{n-2}i\pi+\cfrac{\pi^{2}}{2\lambda_{n-3}i\pi+\cfrac{\pi^{2}}{\ddots+\cfrac{\pi^{2}}{2\lambda i\pi+a}}}}}
+    =i\pi\frac{\alpha a+\beta i\pi}{\gamma a+\delta i\pi},\\
+b_n&=b\prod_{\sigma=0}^{n-1}\left(\frac{i\pi}{a_\sigma+2\lambda_\sigma i\pi}\right)=b\varphi(a),\\
+\Theta(a,b)&=\sqrt{i^{n}\frac{b_n}{b}}\;e^{\sum_{\sigma=0}^{n-1}\frac{b_\sigma^{2}}{a_\sigma+2\lambda_\sigma i\pi}}\Theta(a_n,b_n).
+\end{align*}
+\sourceanchor{PA09}
+If in this formula we put the expressions
+\begin{align*}
+8a.\quad&\sqrt{i^{n}\frac{b_n}{b}}=\chi(a),&
+\frac{1}{b^{2}}\sum_{\sigma=0}^{n-1}\frac{b_\sigma^{2}}{a_\sigma+2\lambda_\sigma i\pi}&=\psi(a),&
+ i\pi\frac{\alpha a+\beta i\pi}{\gamma a+\delta i\pi}&=A,
+\end{align*}
+then finally our equation assumes the form
+\begin{equation*}
+\Theta(a,b)=\chi(a)e^{b^{2}\psi(a)}\Theta(A,b\varphi(a)).
+\tag{8b.}
+\end{equation*}
+And between the quantities \(\varphi(a)\) and \(\psi(a)\) there is the relation
+\begin{equation*}
+\chi^{2}(a)=\varphi'(a).
+\tag{9.}
+\end{equation*}
+
+\subsection*{\S. 11.}
+From the development of the continued fraction for \(A\), one can easily recognize that the numbers \(\alpha\ \beta\ \gamma\ \delta\) are subject to the following conditions:
+\begin{align*}
+(1)\quad&\alpha\delta-\beta\gamma=1,\\
+(2)\quad&(\alpha-\beta)(\gamma-\delta)\text{ is odd.}
+\end{align*}
+Conversely, if any four numbers \(\alpha\ \beta\ \gamma\ \delta\) satisfy these two conditions, then the fraction
+\[
+A=i\pi\frac{\alpha a+\beta i\pi}{\gamma a+\delta i\pi}
+\]
+can always be developed into a continued fraction of the above form; then an identity such as equation 8 always holds.
+
+Thus it is permitted for us to assume, in what follows, that the numbers \(\alpha\ \beta\ \gamma\ \delta\) are given; the matter now is to determine, for this case, the functions \(\varphi(a)\), \(\psi(a)\), and \(\chi(a)\).
+
+\subsection*{\S. 12.}
+To attain this purpose, we shall apply a procedure similar to that by means of which the constant \(C\) was found in \S. 5.
+
+We begin again from formula 6:
+\[
+\frac{\dd^{2}\Theta(a,b)}{\dd b^{2}}+4\frac{\dd\Theta(a,b)}{\dd a}=0
+\]
+and substitute therein, for \(\Theta(a,b)\), its value from equation 8; then the equation results:
+\begin{align*}
+&\chi(a)e^{b^{2}\psi(a)}\Biggl\{\Theta(A,b\varphi(a))\bigl(4b^{2}\psi^{2}(a)+2\psi(a)\bigr)
++\frac{\dd\Theta(A,b\varphi(a))}{\dd(b\varphi(a))}\bigl(4b\varphi(a)\psi(a)\bigr)\\
+&\qquad\qquad
++\frac{\dd^{2}\Theta(A,b\varphi(a))}{\dd(b\varphi(a))^{2}}\varphi^{2}(a)\Biggr\}\\
+&\quad+4\chi(a)e^{b^{2}\psi(a)}\Biggl\{\Theta(A,b\varphi(a))\bigl(b^{2}\psi'(a)\bigr)
++\frac{\dd\Theta(A,b\varphi(a))}{\dd(b\varphi(a))}\bigl(b\varphi'(a)\bigr)
++\frac{\dd\Theta(A,b\varphi(a))}{\dd A}\frac{dA}{da}\Biggr\}\\
+&\quad+4\chi'(a)e^{b^{2}\psi(a)}\Theta(A,b\varphi(a))=0.
+\end{align*}
+Now, however, by formula 6,
+\[
+\frac{\dd^{2}\Theta(A,b\varphi(a))}{\dd(b\varphi(a))^{2}}+4\frac{\dd\Theta(A,b\varphi(a))}{\dd A}=0,
+\]
+and hence
+\sourceanchor{PA10}
+\begin{align}
+&\Theta(A,b\varphi(a))\left\{4b^{2}\psi^{2}(a)+2\psi(a)+4b^{2}\psi'(a)+4\frac{\chi'(a)}{\chi(a)}\right\} \notag\\
+&\quad+4b\frac{\dd\Theta(A,b\varphi(a))}{\dd(b\varphi(a))}\left\{\varphi(a)\psi(a)+\varphi'(a)\right\}
++\frac{\dd\Theta(A,b\varphi(a))}{\dd A}\left\{4\frac{dA}{da}-4\varphi^{2}(a)\right\}=0. \tag{1}
+\end{align}
+This equation holds for all values of \(a\) and \(b\); one can therefore take \(b=0\). Then, however,
+\[
+\Theta(A,0)\left\{2\psi(a)+4\frac{\chi'(a)}{\chi(a)}\right\}+4\frac{\dd\Theta(A,0)}{\dd A}\left\{\frac{dA}{da}-\varphi^{2}(a)\right\}=0.
+\]
+\[
+d\log\Theta(A,0)=\frac{2\psi(a)+4\frac{\chi'(a)}{\chi(a)}}{4\varphi^{2}(a)-4\frac{dA}{da}}\,dA.
+\]
+But evidently \(\log\Theta(A,0)\) is not the integral of a rational function of \(A\); this equation can therefore be satisfied only by the numerator and denominator on the right side vanishing separately.
+
+It is therefore:
+\begin{align*}
+(2)\quad&\psi(a)+2\frac{\chi'(a)}{\chi(a)}=0,\\
+(3)\quad&\frac{dA}{da}=\varphi^{2}(a),
+\end{align*}
+and since, as one can easily convince oneself, in equation (1) both the coefficient of \(b\) and that of \(b^{2}\) must vanish,
+\begin{align*}
+(4)\quad&\psi^{2}(a)+\psi'(a)=0,\\
+(5)\quad&\varphi(a)\psi(a)+\varphi'(a)=0.
+\end{align*}
+If to these formulae one adds formula 8a,
+\[
+A=i\pi\frac{\alpha a+\beta i\pi}{\gamma a+\delta i\pi},
+\]
+then the functions \(\varphi(a)\), \(\psi(a)\), \(\chi(a)\) can easily be evaluated; one finds
+\[
+\varphi(a)=\frac{i\pi}{\gamma a+\delta i\pi},
+\qquad
+\psi(a)=\frac{\gamma}{\gamma a+\delta i\pi},
+\qquad
+\chi(a)=c\sqrt{\frac{-\pi}{\gamma a+\delta i\pi}},
+\]
+in which formula we shall always take the real part of the square root to be positive.
+
+The quantity \(c\) is independent of both \(b\) and \(a\), and hence depends only on the numbers \(\alpha\ \beta\ \gamma\ \delta\); from equation 9 we find that this constant \(c\) satisfies the equation
+\begin{equation*}
+ c^{2}=1.
+\tag{10.}
+\end{equation*}
+By substituting the values of \(\varphi(a)\), \(\psi(a)\), and \(\chi(a)\) in equation 8b, one finally obtains
+\sourceanchor{PA11}
+\begin{multline*}
+11.\quad\Theta(a,b)=c\sqrt{\frac{-\pi}{\gamma a+\delta i\pi}}\,
+ e^{\frac{\gamma b^{2}}{\gamma a+\delta i\pi}}\\
+\cdot\Theta\!\left(\frac{\alpha a+\beta i\pi}{\gamma a+\delta i\pi},\frac{bi\pi}{\gamma a+\delta i\pi}\right).
+\end{multline*}
+
+\subsection*{\S. 13.}
+This equation assumes a somewhat clearer form if we introduce the new variables \(\omega\), \(\omega_1\), and \(b_1\), which we define by the formulae
+\begin{equation*}
+\left.
+\begin{aligned}
+\omega&=\gamma a+\delta i\pi,\\
+\omega_1&=\gamma A-\alpha i\pi,\\
+b_1&=b\sqrt{\frac{\omega}{\pi}}
+\end{aligned}
+\right\}
+\tag{1}
+\end{equation*}
+By substituting these variables into formula 11, the equation results:
+\begin{equation*}
+12.\quad
+\Theta\!\left(\frac{\omega-\delta i\pi}{\gamma}, b\sqrt{\frac{\omega}{\pi}}\right)
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma}{\pi}b^{2}}
+\Theta\!\left(\frac{\omega_1+\alpha i\pi}{\gamma}, ib\sqrt{\frac{\omega_1}{\pi}}\right)
+\end{equation*}
+and from formulae (1) themselves,
+\begin{equation*}
+13.\quad \omega\omega_1=\pi^{2}.
+\end{equation*}
+There is a simple check by which one can subsequently convince oneself of the correctness of formula 12: namely, it is easily seen that the expression on the right side remains unchanged when \(b\sqrt{\frac{\omega}{\pi}}\) is increased by \(\pi\), and assumes the factor
+\[
+e^{-\frac{\omega-\delta i\pi}{\gamma}+2ib\sqrt{\frac{\omega}{\pi}}}
+\]
+when \(b\sqrt{\frac{\omega}{\pi}}\) is increased by \(i\frac{\omega-\delta i\pi}{\gamma}\).
+
+\subsection*{\S. 14.}
+We have shown above (\S. 11) that the integers \(\alpha\ \beta\ \gamma\ \delta\) are subject to the two conditions that
+\begin{align*}
+1.\quad&\alpha\delta-\beta\gamma=1,\\
+2.\quad&(\alpha-\beta)(\gamma-\delta)\quad\text{is odd.}
+\end{align*}
+These conditions can be identically fulfilled by allowing the numbers \(\alpha\ \beta\ \gamma\ \delta\) to depend on four other numbers \(\alpha_1\ \beta_1\ \gamma_1\ \delta_1\), which satisfy only the one condition
+\begin{equation*}
+14.\quad \alpha_1\delta_1-\beta_1\gamma_1=1,
+\end{equation*}
+through the following relations:
+\begin{align*}
+\alpha&=\alpha_1-\alpha_1\gamma_1,\\
+\beta&=\gamma_1\{\beta_1^{2}-\alpha_1^{2}\delta_1-\alpha_1\beta_1\delta_1\}+\alpha_1\delta_1(\alpha_1-1),\\
+\gamma&=\gamma_1,\\
+\delta&=\delta_1+\gamma_1\delta_1(\alpha_1-\beta_1)=\alpha_1\delta_1\lvert\gamma_1+\delta_1\rvert.
+\end{align*}
+Substituting these values in formula 12, the equation results:
+\begin{multline*}
+\Theta\!\left(\frac{\omega-\delta_1 i\pi-\gamma_1\delta_1(\alpha_1-\beta_1)i\pi}{\gamma_1}, b\sqrt{\frac{\omega}{\pi}}\right)\\
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma_1 b^{2}}{\pi}}
+\Theta\!\left(\frac{\omega_1+\alpha_1 i\pi-\alpha_1\gamma_1 i\pi}{\gamma_1}, ib\sqrt{\frac{\omega_1}{\pi}}\right),
+\end{multline*}
+\sourceanchor{PA12}
+which, if one drops the indices and applies formula 5, passes into the following:
+\begin{multline*}
+15.\quad
+\Theta\!\left(\frac{\omega-\delta i\pi}{\gamma}, b\sqrt{\frac{\omega}{\pi}}+\frac{\alpha\delta}{2}\pi+\frac{\beta\delta\pi}{2}\right)\\
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}}
+\Theta\!\left(\frac{\omega_1+\alpha i\pi}{\gamma}, ib\sqrt{\frac{\omega_1}{\pi}}+\frac{\alpha\pi}{2}\right).
+\end{multline*}
+Or, if one substitutes back,
+\[
+\frac{\omega-\delta i\pi}{\gamma}=a,
+\qquad b\sqrt{\frac{\omega}{\pi}}=b_1,
+\]
+\begin{multline*}
+16.\quad
+\Theta\!\left(a,b+\frac{\alpha\delta\pi}{2}+\frac{\beta\delta\pi}{2}\right)
+=c\sqrt{\frac{-\pi}{\gamma a+\delta i\pi}}\,e^{\frac{\gamma b^{2}}{\gamma a+\delta i\pi}}\\
+\cdot\Theta\!\left(i\pi\frac{\alpha a+\beta i\pi}{\gamma a+\delta i\pi},\frac{ib\pi}{\gamma a+\delta i\pi}+\frac{\alpha\pi}{2}\right).
+\end{multline*}
+
+\subsection*{\S. 15.}
+This formula is the most general one by which a \(\Theta\)-function can be transformed into another; one can use it (Jacobi, letter to Herr Crelle, vol. 30) to evaluate slowly convergent \(\Theta\)-series by quickly convergent ones.
+
+If, namely, the real part of the modulus \(a\) is numerically smaller than \(\pi\sqrt{\frac{3}{4}}\), then a modulus of the form
+\[
+i\pi\frac{\alpha a+\beta i\pi}{\gamma a+\delta i\pi}
+\qquad(\text{where }\alpha\delta-\beta\gamma=1\text{ is})
+\]
+can always be determined in such a way that its real part numerically exceeds that of \(a\).
+
+In the opposite case this is impossible.
+
+\subsection*{\S. 16.}
+Before we proceed to the evaluation of the constant \(c\), we shall bring formula 15 into a somewhat more general form.
+
+If in it one puts, instead of \(b\), the binomial \(b+\frac{\mu\pi}{\gamma}\sqrt{\frac{\omega_1}{\pi}}\), then it passes into the following:
+\begin{multline*}
+\Theta\!\left(\frac{\omega-\delta i\pi}{\gamma}, b\sqrt{\frac{\omega}{\pi}}+\frac{\alpha\delta\pi}{2}+\frac{\beta\delta\pi}{2}+\frac{\mu\pi}{\gamma}\right)\\
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma}{\pi}\left(b+\frac{\mu\pi}{\gamma}\sqrt{\frac{\omega_1}{\pi}}\right)^2}
+\Theta\!\left(\frac{\omega_1+\alpha i\pi}{\gamma}, ib\sqrt{\frac{\omega_1}{\pi}}+\frac{\alpha\pi}{2}+\frac{\mu\omega\pi}{\gamma}+\mu i\left(\frac{\omega_1+\alpha i\pi}{\gamma}\right)\right)
+\end{multline*}
+\begin{multline*}
+=c\sqrt{\frac{-\pi}{\omega}}\,
+ e^{\frac{\gamma b^2}{\pi}+2b\mu\sqrt{\frac{\omega_1}{\pi}}+\mu^{2}\frac{\omega_1}{\gamma}-\mu^{2}\left(\frac{\omega_1+\alpha i\pi}{\gamma}\right)
++2\mu i\left(ib\sqrt{\frac{\omega_1}{\pi}}+\frac{\alpha\pi}{2}+\frac{\mu\omega\pi}{\gamma}\right)}\\
+\cdot\Theta\!\left(\frac{\omega_1+\alpha i\pi}{\gamma}, ib\sqrt{\frac{\omega_1}{\pi}}+\frac{\alpha\pi}{2}+\frac{\mu\omega\pi}{\gamma}\right).
+\end{multline*}
+and hence it is:
+\begin{multline*}
+17.\quad
+\Theta\!\left(\frac{\omega-\delta i\pi}{\gamma}, b\sqrt{\frac{\omega}{\pi}}+\frac{\alpha\delta\pi}{2}+\frac{\beta\delta\pi}{2}+\frac{\mu\pi}{\gamma}\right)\\
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}+\mu^{2}\frac{\alpha i\pi}{\gamma}+\mu\alpha i\pi}
+\Theta\!\left(\frac{\omega_1+\alpha i\pi}{\gamma}, ib\sqrt{\frac{\omega_1}{\pi}}+\frac{\alpha\pi}{2}+\frac{\mu\omega\pi}{\gamma}\right).
+\end{multline*}
+
+% PA13-PA20 English continuation; PA18 is alternate final-page witness, PA19 blank, PA20 controlling full final page; formulas preserve the German-source mathematical notation.
+\sourceanchor{PA13}
+\subsection*{\S. 17.}
+After all necessary preparations have now been made, we can finally proceed to the evaluation of the constant \(c\).
+
+Here it must be distinguished whether the number \(\gamma\) is odd or even, since the methods which we shall use for determining \(c\) differ from one another in several points.
+
+We begin our investigation with the case in which:
+\[
+\gamma\quad\text{is odd}
+\]
+In order not to have to distinguish further subcases, we set:
+\[
+(1)\qquad \alpha=2p+\lambda\gamma
+\]
+then the numbers \(\alpha\) and \(\lambda\) are even and odd at the same time, and Formula 17 passes into the following:
+\begin{multline*}
+\Theta\!\left(\frac{\omega-\delta i\pi}{\gamma},
+ b\sqrt{\frac{\omega}{\pi}}+\frac{\mu\pi}{\gamma}+\frac{\lambda\delta\pi}{2}+\frac{\beta\delta\pi}{2}\right)\\
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}+2p\frac{\mu^{2}i\pi}{\gamma}+\lambda\mu^{2}i\pi+\lambda\mu i\pi}
+\Theta\!\left(\frac{\omega_{1}+2p i\pi+\lambda\gamma i\pi}{\gamma},
+ ib\sqrt{\frac{\omega_{1}}{\pi}}+\frac{\lambda\pi}{2}+2p\frac{\mu\pi}{\gamma}\right).
+\end{multline*}
+But now \(\mu^{2}+\mu\) is always even, hence
+\(e^{\lambda\mu^{2}i\pi+\lambda\mu i\pi}=1\); therefore, if Formula 5 is applied:
+\begin{multline*}
+\Theta\!\left(\frac{\omega-\delta i\pi}{\gamma},
+ b\sqrt{\frac{\omega}{\pi}}+\frac{\mu\pi}{\gamma}+\frac{\lambda\delta\pi}{2}+\frac{\beta\delta\pi}{2}\right)\\
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}+2p\mu^{2}\frac{i\pi}{\gamma}}
+\Theta\!\left(\frac{\omega_{1}+2p i\pi}{\gamma},
+ ib\sqrt{\frac{\omega_{1}}{\pi}}+2p\mu\frac{\pi}{\gamma}\right)
+\end{multline*}
+or, if instead of the \(\Theta\)-functions one substitutes the series which represent them:
+\begin{multline*}
+\sum_{u=-\infty}^{\infty}
+ e^{\frac{\omega}{\gamma}u^{2}+2biu\sqrt{\frac{\omega}{\pi}}-\frac{\delta i\pi}{\gamma}u^{2}+iu\delta\pi(\lambda+\beta)+\frac{2\mu i\pi u}{\gamma}}\\
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}}
+\sum_{t=-\infty}^{\infty}
+ e^{\frac{\omega_{1}}{\gamma}t^{2}-2bt\sqrt{\frac{\omega_{1}}{\pi}}+\frac{2p i\pi}{\gamma}t^{2}+4p\frac{\mu i\pi}{\gamma}t+\frac{2p i\pi}{\gamma}\mu^{2}}.
+\end{multline*}
+Now set, in this formula, successively for \(\mu\) the values:
+\[
+0\quad 1\quad 2\quad \ldots\quad \gamma-1
+\]
+and sum the equations arising in this way. Then there results:
+\begin{multline*}
+\sum_{u=-\infty}^{\infty}
+ e^{\frac{\omega}{\gamma}u^{2}+2biu\sqrt{\frac{\omega}{\pi}}-\frac{\delta i\pi}{\gamma}u^{2}+iu\delta\pi(\lambda+\beta)}
+\sum_{\mu=0}^{\gamma-1}e^{\frac{2\mu i\pi u}{\gamma}}\\
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}}
+\sum_{t=-\infty}^{\infty}e^{\frac{\omega_{1}}{\gamma}t^{2}-2bt\sqrt{\frac{\omega_{1}}{\pi}}}
+\sum_{\mu=0}^{\gamma-1}e^{\frac{2p i\pi}{\gamma}(\mu+t)^{2}}.
+\end{multline*}
+The sum:
+\[
+\sum_{\mu=0}^{\gamma-1}e^{\frac{2p i\pi}{\gamma}(\mu+t)^{2}}
+\]
+\sourceanchor{PA14}
+is entirely independent of \(t\); it is therefore equal to the sum:
+\[
+\sum_{\mu=0}^{\gamma-1}e^{\frac{2p i\pi}{\gamma}\mu^{2}}.
+\]
+This latter is called a Gaussian series, since Gauss was the first to investigate it thoroughly; here we shall use his notation and denote its value by \(\varphi(p,\gamma)\).
+
+On the left-hand side of our equation there occurs the sum:
+\[
+\sum_{\mu=0}^{\gamma-1}e^{\frac{2\mu i\pi}{\gamma}u}
+\]
+This assumes the value \(\gamma\) when \(u\) is a multiple of \(\gamma\), but vanishes in the other case.
+
+It is therefore permitted to put \(\gamma v\) in place of \(u\), and then, in the summation for \(v\), we must take all integral values from \(-\infty\) to \(+\infty\).
+
+In this way we arrive at the formula:
+\begin{multline*}
+\gamma\sum_{v=-\infty}^{\infty}
+ e^{\gamma\omega v^{2}+2\gamma ibv\sqrt{\frac{\omega}{\pi}}-\frac{\delta i\pi}{\gamma}\gamma^{2}v^{2}+i\gamma v\delta\pi(\lambda+\beta)}\\
+=c\varphi(p,\gamma)\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}}
+\sum_{t=-\infty}^{\infty}e^{\frac{\omega_{1}}{\gamma}t^{2}-2bt\sqrt{\frac{\omega_{1}}{\pi}}}.
+\end{multline*}
+or:
+\begin{equation*}
+\gamma\Theta\!\left(\gamma\omega-\gamma\delta i\pi,
+ \gamma b\sqrt{\frac{\omega}{\pi}}-\frac{\pi\gamma\delta}{2}(1+\lambda+\beta)\right)
+=c\varphi(p,\gamma)\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}}
+\Theta\!\left(\frac{\omega_{1}}{\gamma},ib\sqrt{\frac{\omega_{1}}{\pi}}\right)
+\end{equation*}
+and, if we set:
+\[
+\omega=-\pi,
+\qquad \omega_{1}=-\pi,
+\qquad b=0
+\]
+then:
+\[
+\gamma\Theta\!\left(-\gamma\pi,\frac{\delta\pi}{2}(1+\alpha+\beta)\right)
+=c\varphi(p,\gamma)\Theta\!\left(-\frac{\pi}{\gamma},0\right).
+\]
+But since \(\gamma\) is odd,
+\[
+\delta(\alpha+\beta+1)\quad\text{is always even} \qquad\text{(see F. 14)}
+\]
+and according to Formula 7:
+\[
+\Theta\!\left(-\frac{\pi}{\gamma},0\right)=\sqrt{\gamma}\,\Theta(-\gamma\pi,0)
+\]
+hence:
+\[
+\frac{1}{c}=\frac{\varphi(p,\gamma)}{\sqrt{\gamma}}
+=\frac{\varphi(4p,\gamma)}{\sqrt{\gamma}}
+=\frac{\varphi((2\alpha-2\lambda\gamma),\gamma)}{\sqrt{\gamma}}
+=\frac{\varphi(2\alpha,\gamma)}{\sqrt{\gamma}}.
+\]
+If we carry this value into Equation 16, then for the case in which \(\gamma\) is odd we obtain the equation:
+\begin{multline*}
+18.\quad
+\Theta\!\left(a,b+\frac{\alpha\delta\pi}{2}+\frac{\beta\delta\pi}{2}\right)
+=\frac{\sqrt{\gamma}}{\varphi(2\alpha,\beta)}
+\sqrt{\frac{-\pi}{\gamma a+\delta i\pi}}
+ e^{\frac{\gamma b^{2}}{\gamma a+\delta i\pi}}\\
+\cdot\Theta\!\left(i\pi\frac{\alpha a+\beta i\pi}{\gamma a+\delta i\pi},
+\frac{ib\pi}{\gamma a+\delta i\pi}+\frac{\alpha\pi}{2}\right).
+\end{multline*}
+
+\subsection*{\S. 18.}
+Let us now pass to the second case and assume that
+\[
+\gamma\quad\text{is even}
+\]
+\sourceanchor{PA15}
+The numbers \(\alpha\) and \(\delta\) are then odd, and Equation 17 can be brought into the following form:
+\begin{multline*}
+\Theta\!\left(\frac{\omega-\delta i\pi}{\gamma},
+ b\sqrt{\frac{\omega}{\pi}}+(\beta+1)\frac{\pi}{2}+\frac{\mu\pi}{\gamma}\right)\\
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}+\mu^{2}\frac{\alpha i\pi}{\gamma}+\mu i\pi}
+\Theta\!\left(\frac{\omega_{1}+\alpha i\pi}{\gamma},
+ ib\sqrt{\frac{\omega_{1}}{\pi}}+\frac{\pi}{2}+\frac{\alpha\mu\pi}{\gamma}\right).
+\end{multline*}
+We now proceed in a manner similar to that above.
+
+For the \(\Theta\)-functions we introduce the series represented by them; then we put for \(\mu\) all integers from 0 to \(2\gamma-1\), and sum the equations so obtained.
+
+The reason why this time we carry out the summation over \(2\gamma\) terms instead of over \(\gamma\) terms consists in the fact that otherwise we might possibly obtain identically 0 on both sides of the resulting equation, from which result no conclusions about the value of the constant \(c\) could be drawn.
+
+If we carry out the indicated operations, then we obtain the formula:
+\begin{multline*}
+\sum_{u=-\infty}^{\infty}
+ e^{u^{2}\frac{\omega}{\gamma}-u^{2}\frac{\delta i\pi}{\gamma}+2ib\sqrt{\frac{\omega}{\pi}}u+ui\pi(\beta+1)}
+\sum_{\mu=0}^{2\gamma-1}e^{\frac{2\mu i\pi}{\gamma}\left(u-\frac{\gamma}{2}\right)}\\
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}}
+\sum_{t=-\infty}^{\infty}e^{t^{2}\frac{\omega_{1}}{\gamma}-2bt\sqrt{\frac{\omega_{1}}{\pi}}+ti\pi}
+\sum_{\mu=0}^{2\gamma-1}e^{\frac{2\alpha i\pi}{2\gamma}(t+\mu)^{2}}.
+\end{multline*}
+Now:
+\[
+\sum_{\mu=0}^{2\gamma-1}e^{\frac{2\alpha i\pi}{2\gamma}(t+\mu)^{2}}=\varphi(\alpha,2\gamma)
+\]
+and the sum:
+\[
+\sum_{\mu=0}^{2\gamma-1}e^{\frac{2\mu i\pi}{\gamma}\left(u-\frac{\gamma}{2}\right)}
+\]
+is equal to \(2\gamma\) when \(u\) is of the form \(v\gamma+\frac{\gamma}{2}\); but this latter sum vanishes for every other value of \(u\).
+
+Thus here too, as in the preceding case, it is permitted to put \(v\gamma+\frac{\gamma}{2}\) for \(u\), and we must then sum over all integral values of \(v\) from \(-\infty\) to \(+\infty\). It then becomes:
+\begin{multline*}
+2\gamma\sum_{v=-\infty}^{\infty}
+ e^{\gamma\omega\left(v+\frac12\right)^{2}-\gamma\delta i\pi\left(v+\frac12\right)^{2}
+ +2\gamma ib\sqrt{\frac{\omega}{\pi}}\left(v+\frac12\right)+\gamma i\pi(\beta+1)\left(v+\frac12\right)}\\
+=c\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}}\varphi(\alpha,2\gamma)
+\sum_{t=-\infty}^{\infty}e^{\frac{\omega_{1}}{\gamma}t^{2}-2bt\sqrt{\frac{\omega_{1}}{\pi}}+ti\pi}
+\end{multline*}
+\begin{multline*}
+2\gamma\sum_{v=-\infty}^{\infty}
+ e^{\gamma v^{2}\omega+\gamma v\omega+2\gamma ib\sqrt{\frac{\omega}{\pi}}v+\frac{\gamma\omega}{4}
+ -\gamma\delta\frac{i\pi}{4}+\gamma ib\sqrt{\frac{\omega}{\pi}}
+ +\gamma i\pi\frac{\beta+1}{2}}\\
+=c\varphi(\alpha,2\gamma)\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}}
+\Theta\!\left(\frac{\omega_{1}}{\gamma}, ib\sqrt{\frac{\omega_{1}}{\pi}}+\frac{\pi}{2}\right)
+\end{multline*}
+\sourceanchor{PA16}
+\begin{multline*}
+2\gamma e^{\frac{\gamma\omega}{4}-\gamma\delta\frac{i\pi}{4}+\gamma ib\sqrt{\frac{\omega}{\pi}}+\gamma\frac{i\pi}{2}(\beta+1)}
+\Theta\!\left(\gamma\omega,\gamma b\sqrt{\frac{\omega}{\pi}}-i\gamma\frac{\omega}{2}\right)\\
+=c\varphi(\alpha,2\gamma)\sqrt{\frac{-\pi}{\omega}}\,e^{\frac{\gamma b^{2}}{\pi}}
+\Theta\!\left(\frac{\omega_{1}}{\gamma},ib\sqrt{\frac{\omega_{1}}{\pi}}+\frac{\pi}{2}\right).
+\end{multline*}
+We set here:
+\[
+\omega=-\frac{\pi}{\gamma};\qquad \omega_{1}=-\gamma\pi;
+\qquad b\sqrt{\frac{\omega}{\pi}}=\frac{i\rho}{2}=-\frac{i\pi}{2\gamma};
+\qquad b=\frac{\pm\pi}{2\sqrt{\gamma}},
+\]
+\[
+ib\sqrt{\frac{\omega_{1}}{\pi}}=\pm\frac{\pi}{2};
+\qquad \gamma\frac{b^{2}}{\pi}=\frac{\pi}{4},
+\]
+then:
+\begin{multline*}
+2\gamma e^{-\frac{\pi}{4}-\gamma\delta\frac{i\pi}{4}+\frac{\pi}{2}+\gamma\frac{i\pi}{2}(\beta+1)}
+\Theta(-\pi,0)=c\varphi(\alpha,2\gamma)e^{\frac{\pi}{4}}\\
+2\sqrt{\gamma}\,e^{\gamma\frac{i\pi}{4}(2\beta+2-\delta)}=c\varphi(\alpha,2\gamma).
+\end{multline*}
+By substitution of this value into Equation 16, for the case in which \(\gamma\) is even we obtain the formula:
+\begin{equation*}
+19.\quad
+\Theta\!\left(a,b+\frac{\alpha\delta\pi}{2}+\frac{\beta\delta\pi}{2}\right)
+=2\frac{\sqrt{\gamma}}{\varphi(\alpha,2\gamma)}
+ e^{\gamma\frac{i\pi}{4}(2\beta+2-\delta)}
+\sqrt{\frac{-\pi}{\gamma a+\delta i\pi}}
+\Theta\!\left(i\pi\frac{\alpha a+\beta i\pi}{\gamma a+\delta i\pi},
+\frac{ib\pi}{\gamma a+\delta i\pi}+\frac{\alpha\pi}{2}\right).
+\end{equation*}
+
+\subsection*{\S. 19.}
+Since the Gaussian series for all values of \(\alpha\) and \(\gamma\) have been calculated both by Gauss himself in his memoir \textit{summatio quarumdam serierum singularium}, and also by Dirichlet in several papers published in the 17th and 18th volumes of Crelle's Journal, our purpose has in fact been reached, since we have established general formulas for the transformation of \(\Theta\)-functions.
+
+Nevertheless, we believe that it will be of some interest if we evaluate the Gaussian series directly from our formulas.
+
+In order, however, not to become too prolix, we shall here determine only the sum:
+\[
+\varphi(1,\gamma)
+\]
+for the case in which \(\gamma\) is odd, since the other Gaussian series can easily be expressed from this one.
+
+\subsection*{\S. 20.}
+In order to attain our purpose, we start from Formula 18 and set in it:
+\[
+\alpha=2,
+\qquad \beta=1,
+\qquad \delta=\frac{\gamma+1}{2},
+\qquad a=-\pi,
+\qquad b=0
+\]
+then:
+\begin{equation*}
+\Theta\!\left(-\pi,\frac{\delta\pi}{2}\right)
+=\frac{\sqrt{\gamma}}{\varphi(1,\gamma)}
+\sqrt{\frac{1}{\gamma-\delta i}}
+\Theta\!\left(i\pi\frac{2-i}{\gamma-\delta i},0\right)
+\tag{1}
+\end{equation*}
+In a way similar to that in which we proceeded in \S. 10, the following system of equations can now be derived:
+\sourceanchor{PA17}
+\begin{align*}
+\Theta\!\left(i\pi\frac{2-i}{\gamma-\delta i},0\right)
+&=\sqrt{i\frac{\gamma-\delta i}{2-i}}\,
+\Theta\!\left(-i\pi\frac{\gamma-\delta i}{2-i},0\right) &&\text{(see F. 7.)}\\
+\Theta\!\left(-i\pi\frac{\gamma-\delta i}{2-i},0\right)
+&=\Theta\!\left(\frac{i\pi}{2-i},\frac{\delta\pi}{2}\right) &&\text{(see F. 5.)}\\
+\Theta\!\left(\frac{i\pi}{2-i},\frac{\delta\pi}{2}\right)
+&=\sqrt{i(2-i)}\,e^{\delta^{2}\frac{i\pi}{4}(i-2)}
+\Theta\!\left(-i\pi(2-i),\frac{\delta\pi}{2}(2-i)\right) &&\text{(see F. 7.)}\\
+\Theta\!\left(-i\pi(2-i),\frac{\delta\pi}{2}(2-i)\right)
+&=\Theta\!\left(-\pi,\frac{i\pi\delta}{2}\right) &&\text{(see F. 1 and 4.)}\\
+\Theta\!\left(-\pi,\frac{i\pi\delta}{2}\right)
+&=e^{\delta^{2}\frac{\pi}{4}}\Theta\!\left(-\pi,\frac{\delta\pi}{2}\right) &&\text{(see F. 7.)}
+\end{align*}
+If all these formulas (including F. (1)) are multiplied together, then one obtains the equation:
+\[
+1=\frac{\sqrt{\gamma}}{\varphi(1,\gamma)}
+\sqrt{\frac{1}{\gamma-\delta i}}
+\sqrt{i\frac{\gamma-\delta i}{2-i}}
+\sqrt{i(2-i)}\,e^{-\delta^{2}\frac{i\pi}{2}}
+\]
+or, since:
+\[
+-\delta^{2}=-\frac{\gamma^{2}}{4}-\frac{\gamma}{2}-\frac{1}{4}
+=\frac{\gamma^{2}}{4}-\frac{\gamma}{2}-\frac{3}{4}\quad \bmod(4),
+\]
+\begin{equation*}
+\varphi(1,\gamma)=e^{\frac{i\pi}{8}(\gamma^{2}-2\gamma-3)}
+\sqrt{\gamma}\sqrt{\frac{1}{\gamma-\delta i}}
+\sqrt{i\frac{\gamma-\delta i}{2-i}}
+\sqrt{i(2-i)}.
+\tag{20}
+\end{equation*}
+
+\subsection*{\S. 21.}
+The square roots which occur in this formula are all to be taken so that their real part is positive; the Gaussian series \(\varphi(1,\gamma)\) is therefore determined uniquely.
+
+In order, however, to bring the expression on the right-hand side of Equation 20 into a simpler form, we consider the function \(f(x)\), which we define by the equation:
+\[
+f(x)=\sqrt{\frac{1}{\gamma x-\delta i}}\sqrt{i\frac{\gamma x-\delta i}{2-i}}
+\]
+and by the condition that the real parts of the square roots are to be taken positive.
+
+The function \(f(x)\) does not change its value when the variable \(x\) traverses any real values continuously; for \(x=1\) it therefore has the same value as for \(x=\frac{\delta}{\gamma}\).
+
+It follows from this that:
+\begin{multline*}
+\sqrt{\frac{1}{\gamma-\delta i}}\sqrt{i\frac{\gamma-\delta i}{2-i}}
+=\sqrt{\frac{1}{\delta-\delta i}}\sqrt{i\frac{\delta-\delta i}{2-i}}\\
+=\sqrt{\frac{1}{\delta-\delta i}}\sqrt{\frac{i\delta}{2-i}}
+=\sqrt{\frac{i}{2-i}}\sqrt{\frac{1}{1-i}}.
+\end{multline*}
+Similarly it can be shown that:
+\[
+\sqrt{i\frac{1-i}{2-i}}\sqrt{i(2-i)}
+=\sqrt{i\frac{1-i}{1-i}}\sqrt{i(1-i)}
+=\sqrt{i}\sqrt{i(1-i)}.
+\]
+
+\sourceanchor{PA18}% alternate final-page witness
+\sourceanchor{PA19}% blank unit
+\sourceanchor{PA20}% controlling full final page
+\subsection*{\S. 22.}
+If these values for the roots are carried into Formula 20, then:
+\[
+\varphi(1,\gamma)=\sqrt{\gamma}\,e^{\frac{i\pi}{8}(\gamma^{2}-2\gamma-3)}
+\sqrt{\frac{1}{1-i}}\sqrt{i}\sqrt{i(1-i)}
+\]
+\[
+\varphi(1,\gamma)=\sqrt{\gamma}\,e^{\frac{i\pi}{8}(\gamma^{2}-2\gamma-3)}
+\sqrt{\frac{1}{\sqrt{2}e^{-\frac{i\pi}{4}}}}
+\sqrt{e^{\frac{i\pi}{2}}}
+\sqrt{\sqrt{2}e^{\frac{i\pi}{4}}}
+\]
+\[
+\varphi(1,\gamma)=\sqrt{\gamma}\,e^{\frac{i\pi}{8}(\gamma^{2}-2\gamma-3)}
+\sqrt{e^{\frac{i\pi}{4}}}\sqrt{e^{\frac{i\pi}{2}}}\sqrt{e^{\frac{i\pi}{4}}}
+\]
+But the values of the roots for which the real part is positive are:
+\[
+e^{\frac{i\pi}{8}}
+\qquad e^{\frac{i\pi}{4}}
+\qquad e^{\frac{i\pi}{8}}
+\]
+hence:
+\[
+\varphi(1,\gamma)=\sqrt{\gamma}\,e^{\frac{i\pi}{8}(\gamma-1)^{2}}
+\]
+\begin{center}
+\includegraphics[width=0.23\linewidth]{assets/PA20_final_ornament_presentation_4x.png}
+\end{center}
+
+\end{document}

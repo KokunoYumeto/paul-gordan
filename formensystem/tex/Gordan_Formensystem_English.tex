@@ -1,0 +1,1784 @@
+
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\geometry{paperwidth=6.5in,paperheight=9in,margin=0.55in}
+\pagestyle{empty}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.22em}
+\setlength{\abovedisplayskip}{0.55em}
+\setlength{\belowdisplayskip}{0.55em}
+\allowdisplaybreaks
+\emergencystretch=2em
+\newcommand{\stageord}[1]{#1^{\mathrm{th}}}
+\newcommand{\publishermark}{\begingroup\Large\bfseries\shortstack{B\\[-0.52em]G}\endgroup}
+\providecommand{\bdots}{\cdots}
+\begin{document}
+\small
+
+% Source: Paul Gordan, Ueber das Formensystem binaerer Formen, 1875. Source PDF: berdasformensys00gordgoog.pdf.
+% Scope of this file: source PDF pp. 006, 008--014; printed title page and printed pp. 1--7.
+
+\begin{center}
+{\large ON THE}\par\vspace{1.2em}
+{\LARGE\bfseries FORM SYSTEM}\par\vspace{1.4em}
+{\Large\bfseries OF BINARY FORMS.}\par\vspace{3em}
+{\small BY}\par\vspace{2.5em}
+{\large\bfseries DR. PAUL GORDAN,}\par
+{\scriptsize ORDINARY PROFESSOR OF MATHEMATICS.}\par\vspace{3.2em}
+\publishermark\par\vfill
+{\large\bfseries LEIPZIG,}\par
+{\bfseries PRINTED AND PUBLISHED BY B. G. TEUBNER.}\par
+{\large\bfseries 1875.}
+\end{center}
+
+\clearpage
+
+\begin{center}
+{\bfseries On the form system of binary forms.}
+\end{center}
+
+After one had learned to represent all formations possessing the invariant property by a uniform symbolism, the further development of invariant theory became, in large part, a task of combinatorial activity. The matter was to classify, according to surveyable principles, the intrinsically unbounded number of forms belonging to given ground forms, and to investigate them according to their mutual relations. In this respect, in volume 69 of Borchardt's Journal, I stated and proved the theorem: \emph{that to every binary form there belongs a finite system, through whose forms the unboundedly many others can be represented rationally and integrally with the mere aid of numerical factors.} But the proof at that time was complicated and obscure, and also the simplifications that I developed in a later paper (Mathematische Annalen vol. 3) (there I extended the named theorem in general to systems of binary forms) have only restricted this defect, not removed it. Thus also the presentation that \emph{Clebsch} gave of these investigations in his ``Theory of binary forms,'' despite the great care that \emph{Clebsch} applied precisely to it, is not very appealing.
+
+It has now gradually succeeded for me, through continued attempts, to improve the proof substantially in fact, so that now the same considerations through which the finiteness of the form system is inferred at the same time provide an insight into the mutual relations of the forms to be retained, into the \emph{structure} of the system formed by them. It will thereby be possible not only, as hitherto, to give in what follows the smallest complete system for the forms up to and including the sixth degree (and indeed by a much simpler path than before), but also, for the forms of the 7th and 8th degrees, if not really to write down the system, at least to delimit it closely.
+
+In this I use, in comparison with the earlier works, a better, or, if the expression is permitted, \emph{more practical} classification of the forms that occur: besides the previously applied processes of transvection, etc., I use other, more suitable ones. The usability of such determinations always depends essentially on success, and I therefore defer until the conclusion the separate highlighting of the advances that my present presentation shows over that contained in Clebsch's book. There I shall also have occasion to state once clearly the restrictions to which these considerations are always subject, and, on the other hand, to indicate how one can carry out similar considerations for forms with more variables.
+
+It is, moreover, scarcely necessary to say that I also do not regard the presentation contained in what follows as definitive. The more science advances, the more it will become possible to see directly results that otherwise can be proved only through longer intermediate considerations; and one will consider a mathematical subject settled only when this goal is reached.
+
+The course of the development followed further is this. In §. 1 I first send ahead a part of the definitions to be used later. Then, in §. 2, follow series developments such as are in part already contained in \emph{Clebsch's} book, and which are used in §. 3, 4, and further on in order to establish relations between forms. In §. 5 the consideration of the form systems begins with the distinction of special kinds of them; in §. 6, 7 the combination of different systems is investigated. The finiteness of the form system of a single binary form, and the manner in which one has to build it up, then result almost by themselves in §. 8, so that for the remaining paragraphs only the application to the forms of first, second \ldots{} up to eighth order remains.
+
+\begin{center}
+{\bfseries §. 1.\quad Definitions.\quad Folding process.\quad Stage of a form.\\ Dimension.\quad Rank.}
+\end{center}
+
+The starting point for characterizing and for treating the invariant formations, as it is chosen in what follows, is the \emph{symbolic representation}. This is meant to indicate that, for the path of development to be entered on, it gave the guideline, as in the individual case the necessary point of passage. By contrast, little use is made of actual symbolic calculation, as it is handled, for example, in \emph{Clebsch's} book, in particular of the identity theorems always used there, since the series developments already named in the introduction put in its place a more general procedure, and in the cases occurring here a more direct one.
+
+Symbolic calculation lets every invariant appear as an aggregate of symbolic products that contain factors of two kinds: linear factors $a_x$, $b_x\ldots$ and others of the shape $(ab)$, $(ac)\ldots$, which I call \emph{bracket factors}. Besides the number of symbols occurring at all (the \emph{order} of the form in the coefficients of the ground form) and the \emph{degree} in the variables, which impose themselves as unsymbolic characteristics of a form, the number and kind of the bracket factors occurring will henceforth play an essential role because the bracket factors are preserved in all processes to be applied to a formation. To them therefore also refers the most important division, maintained in what follows, of the formations arising from a ground form: the division according to the \emph{stage}.
+
+It is known (compare Clebsch's book, page 41) that one can always transform an odd power of a bracket factor into the next higher even one. One can therefore restrict oneself to the consideration of such symbolic products in which the highest occurring power of a bracket factor is even. If this is the $2\mu^{\mathrm{th}}$ or an even higher one, then I call the product \emph{a form on the $\mu^{\mathrm{th}}$ stage and denote it by $Q_\mu$.} A form on the $(\mu+1)^{\mathrm{th}}$ stage is therefore also always a $Q_\mu$. I also henceforth denote simply by $Q_\mu$ every aggregate of forms $Q_\mu$.
+
+Corresponding to the distinction between linear symbolic factors and bracket factors, one can set up the following process for deriving new forms from a symbolic product: \emph{One draws any two linear factors $a_x$, $b_x$ together into a bracket factor $(ab)$.} This operation, which at first, unsymbolically, makes no claim to any meaning, will be applied continually in what follows and is to be designated as \emph{folding}.\footnote{Hereafter forms will also occasionally be folded which are not themselves given as symbolic products but as aggregates of such products,
+\[
+\sum P_i,\quad \sum Q_k.
+\]
+By this I understand the representation of a form
+\[
+\sum(P_i Q_k),
+\]
+where the $(P_i Q_k)$ arise from the different $P_i\cdot Q_k$ by folding.}
+
+Through repeated foldings a whole series of covariants and invariants will arise from a symbolic product. One must regard them as essentially belonging together insofar as they have in common a number of bracket factors: the bracket factors of the symbolic product from which one started. Accordingly I give them a common attribute (which, moreover, could possibly be chosen better), by designating as the \emph{dimension of a form the degree (in the variables) of the initial form from which one thinks the form to have arisen by folding.} One and the same form will therefore be able to obtain very different ``dimensions.'' The highest dimension will fall to it when one derives it by folding from a power of $f=a_x^n=b_x^n\ldots$:
+\[
+f^r=a_x^n\cdot b_x^n\ldots
+\]
+the lowest when one takes it itself as initial form. ---
+
+In these stipulations it had been implicitly presupposed that the ground form $f$ contained only one series of variables $x_1$, $x_2$. If one wants to consider forms with several series $x_1$, $x_2$; $y_1$, $y_2$; $z_1$, $z_2\ldots$, then the theorem becomes of fundamental importance that all such forms can be derived from forms with only one series of variables, with the aid of the determinants $(xy)$, $(xz)\ldots$, by the polar process. Let
+\[
+f=a_x^n
+\]
+so I denote the polars
+\[
+a_x^{n-k}\cdot a_y^k,\quad a_x^{n-k-\lambda}a_y^k a_z^\lambda
+\]
+henceforth as follows:
+\[
+f_{y^k},\quad f_{y^k z^\lambda}
+\]
+and recall only that they are identical with the coefficients of $\varrho^k$ in the development of $f(x+\varrho y)$, respectively of $\varrho^k\sigma^\lambda$ in the development of $f(x+\varrho y+\varrho z)$, provided one divides the latter by
+\[
+\frac{n!}{k!(n-k)!}\quad\text{respectively by}\quad \frac{n!}{k!\lambda!(n-k-\lambda)!}.
+\]
+
+If one subjects a symbolic product $P$ to the polar process, then, generally speaking, a number of different terms will arise, each individual one of which, up to a numerical factor, arises from $P$ by writing $y$ or $z$ instead of $x$ in one series of the factors $a_x$, $b_x$, \ldots. Each such term is called a \emph{member} of the polar.
+
+Let now two ground forms be given at the same time:
+\[
+f=a_x^n,\quad \varphi=\alpha_x^m.
+\]
+The most important simultaneous formations are those which are linear in the coefficients on both sides and which accordingly are represented symbolically as follows:
+\[
+(a\alpha)^k a_x^{n-k}\alpha_x^{m-k}.
+\]
+These are called the \emph{transvections} of $f$ over $\varphi$ and are denoted as follows:
+\[
+(f,\varphi)^k;
+\]
+$k$ is called the degree of the transvection. One can conceive the transvection in one way as having arisen from the $k^{\mathrm{th}}$ polar
+\[
+f_{y^k}=a_x^{n-k}a_y^k
+\]
+by entering for $y_1$, $y_2$, respectively, the symbols $\alpha_2$, $-\alpha_1$ and then multiplying by $\alpha_x^{m-k}$, or also by applying $k$ foldings successively to the product
+\[
+f\cdot\varphi=a_x^n\cdot \alpha_x^m.
+\]
+---
+
+This process of transvection is applied in what follows especially also to such forms $P_1$, $P_2$ that are not themselves ground forms but are defined as symbolic products. Let $P_1$, with suppression of the bracket factors occurring in it, be given as follows:
+\[
+P_1=r_{1,x}r_{2,x}\cdots r_{l,x},
+\]
+where the symbols $r_i$ can also be partly identical, and analogously
+\[
+P_2=s_{1,x}s_{2,x}\cdots s_{m,x},
+\]
+then the $k^{\mathrm{th}}$ transvection of $P_1$ over $P_2$, from the product of the bracket factors of $P_1$ and $P_2$, will consist in the following sum:
+\[
+\sum \frac{(r_1s_1)\cdots(r_ks_k)r_{k+1,x}\cdots r_{l,x}s_{k+1,x}\cdots s_{m,x}}{\binom{l}{k}\binom{m}{k}},
+\]
+whose individual terms arise by folding $k$ arbitrary linear factors of $P_1$ with $k$ arbitrary linear factors of $P_2$ and dividing by the number of all terms. --- If one applies $k$ arbitrary foldings to the product $P_1\cdot P_2$, one obtains a term of a transvection of two forms $P_1'$, $P_2'$, which arise from $P_1$ respectively $P_2$ by folding. ---
+
+In the ordering of the formations which arise from a ground form, or also from several, there plays in what follows, besides the stage of a form and its dimension, still another number an important role, which I call its \emph{rank} (although it is possible that it will later seem expedient to drop dimension and rank and, instead of them, to introduce substages alongside the stage).
+
+Namely, I assign to the ground forms $f$, $\varphi$, $\psi\cdots$ any fixed numbers $\alpha_1$, $\alpha_2$, $\alpha_3\cdots$ (which need not even be integers) and then give to a form that contains $c_1$ symbols of $f$, $c_2$ symbols of $\varphi$, $c_3$ symbols of $\psi$, the rank:
+\[
+c_1\alpha_1+c_2\alpha_2+c_3\alpha_3+\cdots.
+\]
+It occurs in this connection that I endow covariants of $f$ or of other forms:
+\[
+K=k_x^r,\quad L=l_x^s,\cdots
+\]
+with special rank numbers: $\beta_1$, $\beta_2$, \ldots. If a form then contains the symbols $k$, $l$ of these covariants, then in order to obtain the rank I do not first replace them by the symbols of the ground forms $f$, $\varphi$, $\psi$, \ldots, but I count as if $K$, $L$, \ldots{} themselves were ground forms with the corresponding numbers $\beta_1$, $\beta_2$, \ldots. The product, for example,
+\[
+f^{c_1}\varphi^{c_2}\cdots K^{d_1}L^{d_2}\cdots
+\]
+has the rank $c_1\alpha_1+c_2\alpha_2+\cdots+d_1\beta_1+d_2\beta_2+\cdots$. It is then, of course, clear that the rank of a form can turn out differently according to the way in which the form is written or thought to have arisen. Rank and dimension, which share this indeterminacy with one another, are both also not regarded as permanent attributes of a form, but are used only in the setting up and combination of the systems, in order to arrange the different forms and to recognize more easily those that may subsequently be omitted.
+
+\begin{center}
+{\bfseries §. 2.\quad Developments of forms with different series\\ of variables.}
+\end{center}
+
+In this paragraph the already repeatedly mentioned developments are to be communicated, which permit forms with several series of variables to be reduced to those with only one series. As regards their derivation, I refer to the presentation in Clebsch's book, page 22, or to the development given by me in the third volume of the Mathematische Annalen.
+
+A form $F$ that contains two series of variables $x$ ($x_1$ and $x_2$) and $y$ ($y_1$ and $y_2$), and is respectively of degree $m$ and $n$ in them, can be represented symbolically in such a way that one writes:
+\[
+F=r_x^m s_y^n,
+\]
+where thus, in general, only the combinations of the $r$, $s$ acquire a real meaning, although the case is by no means excluded that $F$ decomposes into two factors $r_x^m$ and $s_y^n$. One now forms first, by folding, the so-called elementary covariants:
+\[
+r_x^m s_x^n,\quad (rs)r_x^{m-1}s_x^{n-1},\quad (rs)^2 r_x^{m-2}s_x^{n-2}\cdots,
+\]
+which may be denoted as
+\[
+(r,s)^0,\quad (r,s)^1,\quad (r,s)^2\cdots.
+\]
+Then the series development valid for $F$, using the notation stipulated above for polars, is the following:\footnote{Conversely, one can also express the polars $(r,s)^i_{y^{n-i}}$ through the elementary covariants. One finds:
+\[
+(r,s)^i_{y^{n-i}}=\sum_k\frac{\binom{m-i}{k}\binom{n-i}{k}}{\binom{m+n-2i}{k}}(rs)^{i+k}r_x^{m-i-k}s_y^{n-i-k}(xy)^k.
+\]}
+\[
+\text{(I.)}\quad F=r_x^m s_y^n=\sum_i\frac{\binom{m}{i}\binom{n}{i}}{\binom{m+n-i+1}{i}}(r,s)^i_{y^{n-i}}\cdot(xy)^i.
+\]
+
+From this series let us first derive some others. If, for $m$ and $n$, we put the numbers $(m-k)$ and $(n-k)$ and multiply by $(rs)^k$, we obtain:
+\[
+\text{(I$_a$)}\quad (rs)^k r_x^{m-k}s_y^{n-k}=\sum_i\frac{\binom{m-k}{i}\binom{n-k}{i}}{\binom{m+n-2k-i+1}{i}}(r,s)^{i+k}_{y^{n-i-k}}\cdot(xy)^i.
+\]
+If we differentiate this series $\mu$ times in succession with respect to the $x$ and replace the increments by the $y$, then it becomes:
+\[
+\begin{aligned}
+\text{(I$_b$)}\quad &(rs)^k r_x^{m-k-\mu}r_y^\mu s_y^{n-k} \\
+&\quad =\sum_i\frac{\binom{m-k-\mu}{i}\binom{n-k}{i}}{\binom{m+n-2k-i+1}{i}}\cdot (r,s)^{i+k}_{y^{n+\mu-i-k}}\cdot (xy)^i,
+\end{aligned}
+\]
+and if, conversely, we differentiate $\mu$ times with respect to the $y$ and replace the increments by the $x$:
+\[
+\begin{aligned}
+\text{(I$_c$)}\quad &(rs)^k r_x^{m-k}\cdot s_y^{n-k-\mu}\cdot s_x^\mu \\
+&\quad =\sum_i\frac{\binom{m-k}{i}\binom{n-k-\mu}{i}}{\binom{m+n-2k-i+1}{i}}\cdot (r,s)^{i+k}_{y^{n-\mu-i-k}}\cdot (xy)^i.
+\end{aligned}
+\]
+
+From these developments of a form with two series of variables one immediately ascends to developments of forms with 3 and more series of variables. Namely, if one multiplies (I) on both sides by $t_z^p$, the formula arises:
+\[
+r_x^m s_y^n t_z^p
+=\sum_i \frac{\binom{m}{i}\binom{n}{i}}{\binom{m+n-i+1}{i}}\bigl((r,s)^i\cdot t_z^p\bigr)_{y^{n-i}}\cdot(xy)^i
+\]
+and here we can now regard the expression standing on the left as the symbolic representation of a form with three series of variables. The expressions $(r,s)^i\cdot t_z^p$ are then forms with two series of variables, and by applying to them again the development (I), the ground form with its three series of variables will finally be represented by a series proceeding according to powers and products of the determinants $(xy)$, $(xz)\ldots$, endowed with coefficients which, apart from numerical factors, are equal to polars of forms that contain only $x$. It is of course understood here that one need not necessarily single out the $x$; rather, one obtains equally entitled developments when one regards the $y$ or the $z$ as the original variables.
+
+It is clear from this how the development is to be carried out when $4,5\ldots$ or in general $k$ series of variables
+\[
+x,y',y''\ldots,y^{(k-1)}
+\]
+are present. The individual terms of the development contain polars of forms
+\[
+\varphi,\quad \varphi_1,\quad \varphi_2\ldots
+\]
+with only one series of variables. \emph{The form $\varphi$ arises from the ground form by setting all variables equal to $x$; the remaining forms $\varphi_1$, $\varphi_2\ldots$ arise from $\varphi$ by suitable folding. The coefficient of the polar of $\varphi$ is always the number 1.}
+
+\begin{center}
+{\bfseries §. 3.\quad Reduction of symbolic formations to transvections.\\ Relations between the latter.}
+\end{center}
+
+From the series developments of the preceding paragraph there follows, in the simplest way, the important theorem that every symbolic formation, and indeed in very many ways, can be represented as an aggregate of transvections.
+
+Using a notation similar to that in §. 1, let two symbolic products, with omission of the bracket factors belonging to them, be defined as follows:
+\[
+\begin{aligned}
+A&=r_{1,x}r_{2,x}\cdots r_{m-r,x}r_{m-r+1,x_1}\cdots r_{m,x_r},\\
+B&=s_{1,x}s_{2,x}\cdots s_{n-r,x}s_{n-r+1,x_1}\cdots s_{n,x_r},
+\end{aligned}
+\]
+which contain the $(r+1)$ series of variables
+\[
+x,x_1,x_2\ldots x_r.
+\]
+According to the preceding, these can therefore be developed in series which proceed according to polars of forms
+\[
+\varphi,\quad \varphi_1,\quad \varphi_2\ldots;\quad \psi,\quad \psi_1,\quad \psi_2\ldots
+\]
+where
+\[
+\varphi=r_{1,x}r_{2,x}\cdots r_{m,x},\qquad
+\psi=s_{1,x}s_{2,x}\cdots s_{n,x},
+\]
+while $\varphi_1,\varphi_2\ldots$, respectively $\psi_1,\psi_2\ldots$, arise from $\varphi$, respectively $\psi$, by suitable folding.
+
+But the symbolic product
+\[
+P=r_{1,x}r_{2,x}\cdots r_{m-r,x}s_{1,x}s_{2,x}\cdots s_{n-r,x}(r_{m-r+1}s_{n-r+1})\cdots(r_ms_n)
+\]
+arises from $A$ by replacing the variables
+\[
+x_1,\ldots,x_r
+\]
+by the symbols
+\[
+s_{n-r+1},\ldots,s_n
+\]
+and adding the factor
+\[
+s_{1,x}s_{2,x}\cdots s_{n-r,x}
+\]
+--- or also in the corresponding way from $B$. If, after these changes, one applies the above series development to $A$ or $B$, then $P$ appears as an aggregate of transvections
+\[
+(\varphi_i,\psi_k)^{r-\varrho}
+\]
+of the forms $\varphi_i$, $\psi_k$, which arise from $\varphi$, $\psi$ by folding. The first term of this development is the transvection
+\[
+(\varphi,\psi)^r
+\]
+itself, which contains the symbolic product $P$ as a term. Thus one has the following theorem:
+
+\emph{If one forms, from the product of two forms $\varphi$, $\psi$, a symbolic product $P$ by joining $r$ factors of $\varphi$ with factors of $\psi$ by folding, so that $P$ is a term of the transvection}
+\[
+U=(\varphi,\psi)^r,
+\]
+\emph{then one can develop $P$ into a series of transvections}
+\[
+(\varphi_i,\psi_k)^{r-\varrho}\qquad \varrho\geq0
+\]
+\emph{of forms $\varphi_i,\psi_k$ which arise from $\varphi$ and $\psi$ by folding. The first term of this series is $U$ itself.}
+
+Now every symbolic product can be produced by applying sufficiently many foldings to a suitable power of $f$. It follows, therefore, if one treats the forms newly occurring in the series development themselves again in the corresponding way:
+
+\emph{Every symbolic product can be represented as an aggregate of forms that arise by continued transvection of $f$ over itself.}
+
+That is, one obtains forms from which all others can be rationally and integrally composed if one first transvects $f$ over itself in all ways (forms of second order), then combines $f$ with these forms by transvection (forms of third order), and so on.
+
+On the other hand, from our general theorem, by putting the transvection $U$ on the left and the product $P$ on the right side of the equation, one obtains:
+
+\emph{Every transvection $U$ can be replaced by one of its terms and lower transvections.}
+
+One can also express this, by thinking of the transvections as having arisen from the forms to be transvected and by applying the concept of dimension just introduced, as follows:
+
+\emph{Every transvection can be replaced by one of its terms and forms of lower dimension.} ---
+
+These developments, whose general production is taught by what precedes, can be carried out surveyably in the simplest cases; this is to be done here, since the resulting formulas are of the greatest importance later.
+
+Substitute in the formulas (I$_b$) and (I$_c$), for the variables $y$, the symbols $r_3$ of a form
+\[
+r_3=r_{3,x}^{n_3},
+\]
+and multiply by a corresponding power of $r_{3,x}$; at the same time, for the sake of symmetry, change $r$ and $s$, $m$ and $n$ respectively into $r_2$, $r_1$, $n_2$, $n_1$.
+
+Thus the formulas arise:
+\[
+\begin{aligned}
+\text{(II$_a$)}\quad &(r_1r_2)^k r_{2,x}^{n_2-k-\mu}\cdot(r_2r_3)^\mu(r_1r_3)^{n_1-k}r_{3,x}^{n_3-n_1-\mu+k}\\
+&=\sum_i\frac{\binom{n_2-k-\mu}{i}\binom{n_1-k}{i}}{\binom{n_1+n_2-i-2k+1}{i}}\bigl((r_1,r_2)^{i+k},r_3\bigr)^{n_1+\mu-i-k},
+\end{aligned}
+\]
+\[
+\begin{aligned}
+\text{(II$_b$)}\quad &(r_1r_2)^k\cdot r_{2,x}^{n_2-k}\cdot r_{1,x}^{\mu}(r_1r_3)^{n_1-k-\mu}\cdot r_{3,x}^{n_3-n_1+k+\mu}\\
+&=\sum_i\frac{\binom{n_2-k}{i}\binom{n_1-k-\mu}{i}}{\binom{n_1+n_2-2k-i+1}{i}}\cdot\bigl((r_1,r_2)^{i+k},r_3\bigr)^{n_1-\mu-i-k}.
+\end{aligned}
+\]
+These formulas permit every symbolic formation which contains \emph{three bracket factors and two of the other type, or also two bracket factors and three of the other type}, to be represented as an aggregate of transvections. There is no obstacle to thinking of the symbols $r_1$, $r_2$, $r_3$ as simultaneous ones, referring to a form with three series of variables
+\[
+r_{1,x}^{n_1}r_{2,y}^{n_2}r_{3,z}^{n_3}.
+\]
+The transvections standing on the right sides are then aggregates of elementary covariants of this form.
+
+But the most important application that will be made later of these formulas is that relations between transvections can be obtained from them; \emph{and this is the procedure, already mentioned in §. 1, which in the following developments takes the place of symbolic calculation.} The expressions on the left hand do not change, namely, if one replaces
+\[
+\begin{array}{ll}
+\text{in (II$_a$):} & r_2\text{ by }r_3,\quad n_2\text{ by }n_3,\quad k\text{ by }n_1-k,\\
+\text{in (II$_b$):} & r_2\text{ by }r_3,\quad n_2\text{ by }n_3,\quad k\text{ by }n_1-\mu-k,
+\end{array}
+\]
+and then multiplies by the factors
+\[
+(-1)^{n+\mu}\quad\text{respectively}\quad (-1)^{n-\mu}.
+\]
+If one makes these substitutions on the right side and equates the result to the original expressions, then two formulas arise, which can be combined into the following single one:
+\[
+\begin{aligned}
+\text{(III)}\quad
+&\sum_i\frac{\binom{n_2-\alpha_1-\alpha_3}{i}\binom{\alpha_3}{i}}{\binom{n_1+n_2-2\alpha_3-i+1}{i}}\bigl((r_1,r_2)^{\alpha_3+i},r_3\bigr)^{\alpha_1+\alpha_2-i}\\
+&=(-1)^{\alpha_1}\sum_i\frac{\binom{n_3-\alpha_1-\alpha_2}{i}\binom{\alpha_3}{i}}{\binom{n_1+n_3-2\alpha_2-i+1}{i}}\bigl((r_1,r_3)^{\alpha_2+i},r_2\bigr)^{\alpha_1+\alpha_3-i}.
+\end{aligned}
+\]
+Here in the first case one has put
+\[
+\alpha_1=\mu,\quad \alpha_2=n_1-k,\quad \alpha_3=k,
+\]
+so that
+\[
+\alpha_2+\alpha_3-n_1=0,
+\]
+and in the second case
+\[
+\alpha_1=0,\quad \alpha_2=n_1-k-\mu,\quad \alpha_3=k.
+\]
+If one of the numbers $n_2-\alpha_1-\alpha_3$ or $\alpha_2$ vanishes, the expression on the left hand passes over into its initial term: $((r_1,r_2)^{\alpha_3},r_3)^{\alpha_1+\alpha_2}$; likewise the expression on the right hand simplifies into $((r_1,r_3)^{\alpha_2},r_2)^{\alpha_1+\alpha_3}$ if either $n_3-\alpha_1-\alpha_2$ or $\alpha_3$ is equal to zero.
+
+\begin{center}
+{\bfseries §. 4.\quad On the forms of third order in the coefficients.}
+\end{center}
+
+In the investigation of the forms that spring from a ground form --- and to these we shall now restrict ourselves --- one must regard as a general goal to be striven for the specification of all relations that exist between invariant formations of equal order (compare Cayley, Phil. Transactions vol. 146). To arrive at such relations one can use the method characterized in the preceding paragraph; in particular, starting from formula (III), we shall obtain relations between the forms of third order in the coefficients,\footnote{Between the forms of second order there are as yet no such relations.} if for the forms $r_1$, $r_2$, $r_3$ we substitute the ground form $f$ (whereupon we simply write $n$ for $n_1$, $n_2$, $n_3$). But then all odd transvections of $r_1$ over $r_2$ or $r_3$ vanish identically. Therefore, if $\varepsilon_2$ and $\varepsilon_3$ denote respectively 0 or 1 according as $\alpha_2$ respectively $\alpha_3$ is even or odd, one can set $i$ on the one hand equal to $2k+\varepsilon_2$ and on the other hand equal to $2k+\varepsilon_3$, and obtains the formula:
+\[
+\begin{aligned}
+\text{(IV)}\quad
+&\sum_k\frac{\binom{n-\alpha_1-\alpha_3}{2k+\varepsilon_3}\binom{\alpha_3}{2k+\varepsilon_3}}{\binom{2n-2\alpha_3-2k-\varepsilon_3+1}{2k+\varepsilon_3}}\bigl((f,f)^{\alpha_3+2k+\varepsilon_3},f\bigr)^{\alpha_1+\alpha_2-2k-\varepsilon_3}\\
+&=(-1)^{\alpha_1}\sum_k\frac{\binom{n-\alpha_1-\alpha_2}{2k+\varepsilon_2}\binom{\alpha_2}{2k+\varepsilon_2}}{\binom{2n-2\alpha_2-2k-\varepsilon_2+1}{2k+\varepsilon_2}}\bigl((f,f)^{\alpha_2+2k+\varepsilon_2},f\bigr)^{\alpha_1+\alpha_3-2k-\varepsilon_2},
+\end{aligned}
+\]
+where
+\[
+\alpha_1(n-\alpha_2-\alpha_3)=0
+\]
+and moreover, self-evidently,
+\[
+\alpha_2+\alpha_3\leq n,\quad \alpha_3+\alpha_1\leq n,\quad \alpha_1+\alpha_2\leq n.
+\]
+This formula is very important for the proofs to be conducted later. Namely, if one sets $\alpha_3+\varepsilon_3=2\mu$ and assumes $\alpha_2>\alpha_3$, then by means of it, in a large number of cases (which are now to be enumerated), it is possible to express \emph{the first term on the left hand},
+\[
+U=((f,f)^{2\mu},f)^{\alpha_1+\alpha_2-\varepsilon_3},
+\]
+which we shall also denote by
+\[
+U=(k,f)^\varrho,\quad k=(f,f)^{2\mu},\quad \varrho=\alpha_1+\alpha_2-\varepsilon_3,
+\]
+through forms of the $(\mu+1)$st stage $(Q_{\mu+1})$; and this, with regard to the later intended stratification of the form system, is a very essential theorem.
+
+For the proof I distinguish four cases:
+\[
+\begin{array}{ll}
+1) & \varepsilon_3=0,\\
+2) & \varepsilon_3=1\ \text{ and }\ \alpha_2>2\mu,\\
+3) & \varepsilon_3=1,\quad \alpha_2=2\mu,\quad \alpha_2+\alpha_3=n,\\
+4) & \varepsilon_3=1,\quad \alpha_2=2\mu,\quad \alpha_2+\alpha_3<n.
+\end{array}
+\]
+In the \emph{first case} one has $\alpha_2+\varepsilon_2>2\mu$, $n\geq \alpha_2+\alpha_3>(2\alpha_3=4\mu)$, $\varrho=\alpha_1+\alpha_2>2\mu$, and $U$ is an aggregate of forms $Q_{\mu+1}$.
+
+In the \emph{second case} one has: $\alpha_2+\varepsilon_2>2\mu$, $n\geq\alpha_2+\alpha_3>4\mu-1$, $\varrho=\alpha_1+\alpha_2-1>2\mu-1$, $n\geq\alpha_1+\alpha_2>\varrho$, and $U$ is an aggregate of forms $Q_{\mu+1}$.
+
+In the \emph{third case} one has: $n=\alpha_2+\alpha_3=4\mu-1$, $\varrho=\alpha_1+2\mu-1$. The transvection $U$ occurs on both sides; on the left it has the factor
+\[
+\frac{\alpha_2(n-\alpha_1-\alpha_3)}{2n-2\alpha_3}=\frac12(\mu-\alpha_1-\alpha_3)=\frac{n-\varrho}{2},
+\]
+on the right it is $(-1)^{\alpha_1}$; and if these factors are unequal, that is, if $n-\varrho\gtreqless 2$, then our formula gives a reduction of $U$ to forms $Q_{\mu+1}$.
+
+In the \emph{fourth case} one has: $\alpha_1=0$, $n>4\mu-1$, $\varrho=\alpha_1+\alpha_2-1=\alpha_1+2\mu-1=2\mu-1$. $U$ occurs on both sides; on the left it has the factor
+\[
+\frac{\alpha_3(n-\alpha_1-\alpha_3)}{2n-2\alpha_3}=\frac{\alpha_2}{2}=\mu,
+\]
+on the right the factor 1; only when $\mu>1$ does our formula give a reduction of $U$ to forms $Q_{\mu+1}$.
+
+Combining, we have the following theorem: \emph{By means of our formula the transvection}
+\[
+U=(k,f)^\varrho,\quad (k=(f,f)^{2\mu})
+\]
+\emph{is expressible through forms $Q_{\mu+1}$, if:}
+\[
+\begin{array}{ll}
+1) & n>4\mu\ \text{ and }\ \varrho>2\mu,\\
+2) & n>4\mu-1\ \text{ and }\ n>\varrho>2\mu-1,\\
+3) & n=4\mu-1,\quad \varrho\geq2\mu-1\ \text{ and }\ \varrho\gtreqless n-2,\\
+4) & n>4\mu-1,\quad \varrho=2\mu-1,\quad \mu>1.
+\end{array}
+\]
+Let this still be emphasized as a special application of our formula. If one sets
+\[
+\alpha_1=2\mu-1,
+\quad \alpha_2=2\mu,
+\quad \alpha_3=2\mu-1,
+\quad n=4\mu-1,
+\]
+then $\varepsilon_2=0$, $\varepsilon_3=1$, and one obtains:
+\[
+\frac12\bigl((f,f)^{2\mu},f\bigr)^{n-1}=-\bigl((f,f)^{2\mu},f\bigr)^{n-1}
+\]
+and therefore:
+\[
+\bigl((f,f)^{2\mu},f\bigr)^{n-1}=0.
+\]
+If, for example, $f=a_x^3$ or $=a_x^7$, then:
+\[
+((f,f)^2,f)^2=0\quad\text{respectively}\quad ((f,f)^4,f)^6=0.
+\]
+
+\begin{center}
+{\bfseries §. 5.\quad A property of forms of second order.}
+\end{center}
+
+In connection with the preceding, a property of the forms of second order may be proved here, which likewise later comes into use in setting up the full systems.
+
+Let, as above,
+\[
+(f,f)^{2\mu}=k=k_x^{2r}\quad (2\mu+r=n).
+\]
+Then in the series which one obtains by formula (I) for the symbolic product
+\[
+(ab)^{2\mu}a_x^r b_y^r,
+\]
+namely
+\[
+\sum_i\frac{\binom{r}{2i}\binom{r}{2i}}{\binom{2r-2i+1}{2i}}(f,f)^{2\mu+2i}_{y^{r-2i}}(xy)^{2i},
+\]
+the first term is
+\[
+=k_x^r k_y^r,
+\]
+while the remaining ones are $Q_{\mu+1}$. Hence it follows \emph{that, always, insofar as one disregards forms of the $(\mu+1)$st stage, one may replace $k_x^r k_y^r$ by $(ab)^{2\mu}a_x^r b_y^r$:}
+\[
+k_x^r k_y^r=(ab)^{2\mu}a_x^r b_y^r+Q_{\mu+1}.
+\]
+If one polarizes this, introducing new variables $x_1\cdots x_{r-1}$, $y_1\cdots y_{r-1}$, $r-1$ times each with respect to the $x$ and $y$, one obtains:
+\[
+\begin{aligned}
+&k_xk_{x_1}\cdots k_{x_{r-1}}\,k_yk_{y_1}\cdots k_{y_{r-1}}\\
+&\qquad =(ab)^{2\mu}a_xa_{x_1}\cdots a_{x_{r-1}}b_yb_{y_1}\cdots b_{y_{r-1}}+Q_{\mu+1}.
+\end{aligned}
+\]
+The variables here may have whatever meaning they will. Thus one obtains the following theorems:
+
+\emph{If one regards forms as equivalent when they differ only by $Q_{\mu+1}$, then in every symbolic product which contains the symbols $k$ one may make the following change: replace $r$ of the symbols $k$ by $a$, the remaining $r$ by $b$, and multiply by $(ab)^{2\mu}$.} If the product arising in this way is called $P_1$, and the original one $P$, then therefore:
+\[
+P_1=P+Q_{\mu+1}.
+\]
+Furthermore: \emph{If a symbolic product $P$ arises by folding from the product}
+\[
+k_x^{2r}\cdot k_{1,x}^{2r}\cdots
+\]
+\emph{and a symbolic product $(P)$ by corresponding folding from the product}
+\[
+(ab)^{2\mu}a_x^r b_x^r\cdot(cd)^{2\mu}c_x^r d_x^r\cdots,
+\]
+\emph{then the relation holds:}
+\[
+P=(P)+Q_{\mu+1}.
+\]
+
+\begin{center}
+{\bfseries §. 6.\quad Form systems.}
+\end{center}
+
+The purpose of all the preliminary investigations with which we are occupied is the setting up of the complete system belonging to a ground form. But this will be carried out later in such a way that first certain form systems will be set up which possess only a \emph{relative} completeness. Their forms
+\[
+A_1,A_2,\ldots,A_r
+\]
+are so constituted that \emph{every form $W$ which arises from the products and powers of $A$ by folding can be expressed rationally and integrally through the $A$ with the aid of certain forms $P$ to be adjoined in advance:}
+\[
+W=F(A,P).
+\]
+If these $P$ are not necessary at all, the system of the $A$ is called \emph{complete}. An example of a complete system is given by the totality of the invariants and covariants of a ground form. On the other hand, it is clear that, through the $A$ which form a complete system, all invariants and covariants of $f$ can be expressed rationally and integrally, provided $f$ is found among the $A$. For all arise from powers of $f$ by folding. But it is by no means necessary that a complete system which contains covariants of $f$ also comprises the full system of $f$. If, for example, $f=a_x^3$, then
+\[
+\tau=(ab)^2a_xb_x
+\]
+and
+\[
+R=(ab)^2(cd)^2(ac)(bd)
+\]
+by themselves form a complete system. --- In accord with the purpose that the setting up of complete systems has, I regard in a complete system every form as superfluous which can be represented rationally and integrally through the others. The other forms will in themselves form a complete system.
+
+Of non-complete systems two kinds will be considered below, which I denote as systems $A_\mu$ and $(A_\mu)$.
+
+The definition of the $A_\mu$ is the following: \emph{A system}
+\[
+A_1,A_2,\ldots,A_r
+\]
+\emph{of invariants and covariants of a ground form $f$, in which $f$ itself is found, is called a system $A_\mu$ if all $W$ can be represented in the form}
+\[
+W=F(A)+Q_{\mu+1},
+\]
+so that all forms $Q_{\mu+1}$ appear adjoined to them. Since every invariant and covariant of $f$ arises from a power of $f$ by folding, one will have the representation
+\[
+I=F(A)+Q_{\mu+1},
+\]
+and it is therefore understandable that the $A_\mu$, when $\mu$ runs from 0 up to the highest value permitted to it, form as many substages of the full system of $f$. --- In a system $A_\mu$ one will be able, without changing its character, to omit every $A$ which, up to additively occurring $Q_{\mu+1}$, can be rationally and integrally expressed through the remaining $A$.
+
+For example, the totality of the forms belonging to $f$ forms an $A_g$, where $g$ is the greatest integer contained in $\frac n2$; for a bracket factor cannot occur at all in higher than the $2g$th power. --- On the other hand, $f$ by itself forms a system $A_0$. For every symbolic product that is not a power of $f$ is at least a $Q_1$.
+
+At first glance the definition of the $(A_\mu)$ is less transparent. In them a series of different kinds of forms is adjoined, all of which must be regarded, in the sense of the ordering principles introduced above, as forms of lower character. In particular, the concept of \emph{rank} is used with them, and to the same extent that the latter depends on arbitrary stipulations, it will depend on special agreements whether a system is an $(A_\mu)$ or not. We define:
+
+\emph{The system of the $A$ is called an $(A_\mu)$ if every $W$ can be represented in the following way:}
+\[
+W=F(A)+G+H+Q_{\mu+1},
+\]
+where
+\[
+\begin{array}{l}
+F(A)\ \text{means a rational integral function of the }A\text{ which has no higher}\\
+\quad\text{rank or lower stage than }W,\\[0.15em]
+G\ \text{is a form which has an invariant as factor, respectively an}\\
+\quad\text{aggregate of such forms},\\[0.15em]
+H\ \text{is a form of lower rank, or also an aggregate of such forms.}
+\end{array}
+\]
+It is justified to single out the forms $G$ in this stipulation in that a form $G$ retains its character under arbitrary foldings.
+
+With respect to such systems $(A_\mu)$ the following theorems first hold:
+
+A system $(A_\mu)$ retains its character if, instead of a form $A_r$ occurring in it, one writes:
+\[
+A_r+F(A)+G+H+Q_{\mu+1},
+\]
+where $G$, $H$, $Q$ have the meaning just indicated, and $F(A)$ is a rational integral function of the remaining $A$ which has neither higher rank nor lower stage than $A_r$.
+
+If a system $(A_\mu)$ contains a form $A_r$ which can be represented in the shape
+\[
+F(A)+G+H+Q_{\mu+1},
+\]
+then this form is superfluous; the remaining $A$ then by themselves form an $(A_\mu)$. ---
+
+We shall later always make the assumption that the covariant
+\[
+K=(f,f)^{2\mu}=k_x^{2r}\cdots
+\]
+is endowed with rank 1, which is also assigned to the ground form $f$. But then all $Q_\mu$ are reducible to forms of lower rank, for according to §. 4 it is permitted, insofar as one wishes to disregard $Q_{\mu+1}$, in every $Q_\mu$, after suppressing the factor $(ab)^\mu$, to replace the $a$, $b$ by the symbol $k$, whereby the rank is reduced by one unit. \emph{In consequence of this, every system $A_{\mu-1}$ is then a system $(A_\mu)$:} For with $A_{\mu-1}$ the $Q_\mu$ are adjoined, and these are now replaced by forms of lower rank and $Q_{\mu+1}$.
+
+I further assert:
+
+\emph{If an $(A_\mu)$ contains all principal forms decisive for determining the rank,}
+\[
+k_1,k_2,\ldots,k_\varrho,
+\]
+\emph{among which in any case $f$ is contained, then it is an $A_\mu$.}
+
+For the sake of generality, suppose first that $(A_\mu)$ contains only the principal forms
+\[
+k_1,k_2,\ldots,k_r,
+\]
+but not
+\[
+k_{r+1},\ldots,k_\varrho.
+\]
+Those symbolic products which contain only symbols of the first class of principal forms may be called $P$, and those which also contain symbols of the second class may be called $(P)$. The $P$ are then all forms $W$, because every form containing only symbols of $k_1\cdots k_r$ arises from products of powers of these forms by folding, and therefore, according to the definition of the $(A_\mu)$, one has:
+\[
+P=F(A)+F+\sum P_i+\sum(P_i)+Q_{\mu+1},
+\]
+where the $P_i$ and $(P_i)$ are of lower rank than $P$. But the $P_i$ are themselves forms $W$, and by making the same ansatz for them one finally arrives at the formula:
+\[
+P=F(A)+G+\sum(P)+Q_{\mu+1}.
+\]
+If now $f$ is present in the system $(A_\mu)$, then one will also be able to omit the $G$ on the right hand. For each $G$ will itself be a $W$, because every covariant or invariant arises from a power of $f$ by folding. Finally, if one assumes that all principal forms are present in $(A_\mu)$, the $(P)$ disappear altogether, and one has:
+\[
+P=F(A)+Q_{\mu+1},
+\]
+the $(A_\mu)$ is an $A_\mu$, as was to be proved. We would have come to the same conclusion if we had assumed that in $(A_\mu)$ only such principal forms are lacking which themselves are of higher than the $\mu$th stage. For then the $(P)$ are simply $Q_{\mu+1}$.
+
+\begin{center}
+{\bfseries §. 7.\quad Transvections of two form systems.}
+\end{center}
+
+Let two form systems
+\[
+\begin{array}{ccccc}
+A&A_1&A_2&\ldots&A_r\\
+B&B_1&B_2&\ldots&B_s
+\end{array}
+\]
+be combined in such a way that one transvects the products $P$ of powers of the $A$ over all products $Q$ of powers of the $B$. Among the forms $(P,Q)^r$ arising in this way I choose only those which cannot be rationally and integrally composed from already selected forms. I therefore set aside all those transvections which contain a decomposing term; for they can be represented by this term and lower transvections. The forms retained, together with the $A$ and $B$, are to be denoted as forms $C$; their totality
+\[
+C_1,C_2,\ldots,C_\varrho
+\]
+shall be called $\Gamma$.
+
+In this connection it is first essential to form a judgment about which transvections $(P,Q)^r$ in any case have decomposing terms and therefore are not to be counted among the $C$.
+
+If $P$ is a product of several factors $P_1\cdot P_2\cdots$ and the degree of one of the factors, say that of $P_1$, is not less than $r$, then decomposing terms will always occur in $(P,Q)^r$. For if $R$ is a term of the transvection $(P_1,Q)^r$, then among the terms of $(P,Q)^r$ there is in particular also this one: $R\cdot P_2\cdots$. --- This case always occurs when $P_2$ is an invariant. Thus in forming the products $P,Q$ to be transvected one need not take into account at all the invariants occurring among $A,B$.
+
+But in general let
+\[
+P=A_1^{\alpha_1}A_2^{\alpha_2}\cdots A_r^{\alpha_r},\quad
+Q=B_1^{\beta_1}B_2^{\beta_2}\cdots B_s^{\beta_s},
+\]
+and let respectively
+\[
+l_1,l_2\ldots l_r,\quad m_1,m_2\ldots m_s
+\]
+denote the degree of the $A$ and $B$. If one then denotes by
+\[
+\lambda\quad\text{and}\quad \mu
+\]
+the number of factors containing $x$ in $(P,Q)^r$ which respectively come from $P$ and from $Q$, then one has the two relations:
+\[
+\alpha_1l_1+\alpha_2l_2+\cdots+\alpha_rl_r=\lambda+r,
+\]
+\[
+\beta_1m_1+\beta_2m_2+\cdots+\beta_sm_s=\mu+r.
+\]
+Conversely, to every system of integral solutions of these two equations there will correspond a transvection $(P,Q)^r$. But every solution $L$ of such equations can be additively composed from a certain finite number of smallest solutions $L_1,L_2,\ldots$ (compare an essay of mine in the fifth volume of the Mathematische Annalen), that is, the $l,m,\lambda,\mu,r$ corresponding to $L$ are to be obtained from the corresponding numbers of the solutions $L_1,L_2\ldots$ by multiplying by the same factors and adding:
+\[
+L=a_1L_1+a_2L_2+\cdots.
+\]
+And now one easily convinces oneself that every transvection corresponding to such a composite solution contains decomposing terms. For if the solutions $L_1$ and $L_2$ correspond respectively to the transvections $(P_1,Q_1)^{r_1}$, $(P_2,Q_2)^{r_2}$, then the solution $L_1+L_2$ corresponds to the transvection $(P_1P_2,Q_1Q_2)^{r_1+r_2}$, and this contains all terms which arise from terms of $(P_1,Q_1)^{r_1}$ and terms of $(P_2,Q_2)^{r_2}$ by multiplication.
+
+By this consideration the number of $C$ to be set up is considerably decreased (even if in the cases of practical application below one will never use this general method for delimiting the $C$, since better rules arise in the individual case), and in particular one has the theorem:
+
+\emph{By transvection of finite systems $A$ and $B$, only a finite number of $C$ arises.}
+
+Further on, in setting up the full system of $f$, it will always be systems that have the character of the $(A_\mu)$ which must be combined by transvection. In this respect the following theorem will then be of the greatest importance.
+
+\emph{If the $A,B$ are systems $(A_\mu)$, then the $C$ also form an $(A_\mu)$.}
+
+In the proof it will be advantageous to bring into application the concept, defined in §. 1, of the dimension of a form. One easily recognizes, however, that its entire role consists in replacing a less transparent direct procedure by a recurrent procedure.
+
+Consider the forms $S$ that arise from the $C$ (as well as their products and powers) by folding. They can be represented as aggregates of transvections
+\[
+S=\sum(L,M)^r
+\]
+of forms $L,M$ which arise by folding respectively from the products $P$ of the $A$ and $Q$ of the $B$. If now the $A$ and $B$ are systems $(A_\mu)$, then one has the representations:
+\[
+\begin{aligned}
+L&=\sum P_i+G+L'+Q_{\mu+1},\\
+M&=\sum Q_k+G+M'+Q_{\mu+1},
+\end{aligned}
+\]
+where the $P_i$ and $Q_k$ are products of the $A$, respectively $B$, of no higher rank than $L,M$, the $G$ denote forms that have invariants as factors, and the $L'$, $M'$ any forms whatever of lower rank. Thus one obtains:
+\[
+S=\sum(P_i,Q_k)^r+G+\Sigma+Q_{\mu+1},
+\]
+where the $\Sigma$ are of lower rank than $S$. Those transvections $(P_i,Q_k)^r$ which possess a decomposing term can be expressed through it and lower transvections, hence replaced by a product of forms of lower order and an aggregate of forms of lower dimension, which we shall together denote by $S'$. The remaining ones are forms $C$. Thus $S$ becomes an integral function of forms $C$, forms $G$ which have invariants as factors, forms $\Sigma$ of lower rank, and forms $S'$ which possess lower order or lower dimension. If one expresses the $S'$, which, like the $S$, arise from the $C$ by folding, in a similar way and continues thus, then finally, because the order or dimension of the forms to be brought to aid continually decreases and therefore at last diminishes to zero, one obtains:
+\[
+S=F(C)+G+\Sigma+Q_{\mu+1},
+\]
+whereby the proof is supplied that the $C$ form a system $(A_\mu)$.
+
+In a similar, only simpler way one could prove the theorem:
+
+\emph{If the systems $A,B$ to be joined by transvection are complete systems, then the $C$ also form a complete system.}
+
+\begin{center}
+{\bfseries §. 8.\quad Reducibility with the $(A_\mu)$.\quad Reducing factors.}
+\end{center}
+
+If a system of the $C$ of the character of the $(A_\mu)$ has arisen by transvection of two $(A_\mu)$, then one imagines its forms ordered: according to the stage, the order in the coefficients, and further according to rank and dimension. An $(A_\mu)$ so ordered will not lose its character if one replaces one of its forms $C$ by
+\[
+C+G+C'+C''+\cdots+F(C)+Q_{\mu+1},
+\]
+where $F(C)$ is an integral function, of no higher rank or lower stage, of the remaining $C$, and $C'$, $C''$ are forms of lower rank or lower dimension or higher stage than $C$. Forms $C$ that can be represented in the form
+\[
+G+C'+C''+\cdots+F(C)+Q_{\mu+1}
+\]
+may therefore simply be omitted without the system of the $C$ ceasing to be an $(A_\mu)$. \emph{Such forms I call reducible here and in what follows.}
+
+Since a transvection $C$ can be expressed by each of its terms, for example $T$, and forms of lower dimension, one can replace $C$ by $T$, and therefore both are reducible simultaneously.
+
+Since one is not in a position to state generally when a form $C$, respectively one of its terms, is reducible, it is important to indicate at least some cases in which the reducibility is evident. Some of these have already occurred, under a less general point of view, in the preceding discussions. Thus in §. 4 there resulted the reducibility of certain transvections $(k,f)^\varrho$ to $Q_{\mu+1}$, or in §. 6 the reducibility of all $Q_\mu$ to forms of lower rank. We remark here first:
+
+\emph{The functional determinant $((\varphi,\psi),\vartheta)$ of a form $\vartheta$ with the functional determinant of two forms $\varphi$, $\psi$ is reducible to forms of lower order and no higher rank, provided $\varphi$, $\psi$, $\vartheta$ are each of higher than first degree.}
+
+One proves this theorem, known in essence, in the simplest way if one sets $\varphi=\varphi_x^\lambda$, $\psi=\psi_x^\mu$, $\vartheta=\vartheta_x^\nu$ and develops the products $\varphi\cdot(\psi,\vartheta)^2$ and $\psi\cdot(\varphi,\vartheta)^2$ in series:
+\[
+\begin{aligned}
+\varphi\cdot(\psi,\vartheta)^2
+&=\varphi_x^\lambda\cdot(\psi\vartheta)^2\psi_x^{\mu-2}\vartheta_x^{\nu-2}\\
+&=\sum_i\frac{\binom{2}{i}\binom{\lambda}{i}}{\binom{\lambda+\mu-i+1}{i}}\bigl((\varphi,\psi)^i,\vartheta\bigr)^{2-i},\\[0.25em]
+\psi\cdot(\varphi,\vartheta)^2
+&=\psi_x^\mu\cdot(\varphi\vartheta)^2\varphi_x^{\lambda-2}\vartheta_x^{\nu-2}\\
+&=\sum_i\frac{\binom{2}{i}\binom{\mu}{i}}{\binom{\lambda+\mu-i+1}{i}}\bigl((\psi,\varphi)^i,\vartheta\bigr)^{2-i}.
+\end{aligned}
+\]
+and therefore:
+\[
+\varphi\cdot(\psi,\vartheta)^2-\psi\cdot(\varphi,\vartheta)^2
+=2((\varphi,\psi),\vartheta)+\frac{\binom{\lambda}{2}-\binom{\mu}{2}}{\binom{\lambda+\mu-1}{2}}\vartheta\cdot(\varphi,\psi)^2
+\]
+or
+\[
+((\varphi,\psi),\vartheta)=\frac{\varphi}{2}(\psi,\vartheta)^2-\frac{\psi}{2}(\varphi,\vartheta)^2-\frac12\frac{\binom{\lambda}{2}-\binom{\mu}{2}}{\binom{\lambda+\mu-1}{2}}\vartheta\cdot(\varphi,\psi)^2,
+\]
+which expresses the theorem to be proved.
+
+But now we introduce the following definition: \emph{If $\Phi$ is a non-decomposing but reducible product, and if all covariants $\Phi_1$, $\Phi_2$, $\ldots$, $\Phi_\varrho$ arising from $\Phi$ by folding are reducible, then the product of the bracket factors of $\Phi$ is called a reducing factor.} One convinces oneself, namely, that every symbolic product which contains this factor, provided it is not, say, one of the invariants
+\[
+j\cdot j_1\cdots
+\]
+arising from $\Phi$ by folding, is reducible. Such a product is namely either immediately one of the forms $\Phi$, $\Phi_i$, $j_i$ themselves, or arises from a product $\Phi\cdot\Psi$ (where $\Psi$ denotes any added form) by folding. In the latter case it is equal to an aggregate of the form:
+\[
+\sum(\Phi_i,\Psi_i)^r+\sum j_i\Psi_i,
+\]
+and here all terms are reducible: the $(\Phi_i,\Psi_i)^r$ because the $\Phi_i$ are so, the $j_i\Psi_i$ because they have invariants as factors.
+
+If a symbolic product has two reducing factors, one will be able to reduce it to two different form aggregates $P_1$ and $P_2$; the formula
+\[
+P_1=P_2
+\]
+then gives important relations in very many cases.
+
+The setting up of these reducing factors is, in what follows, where the delimitation of the system of the $C$ is concerned, the task that causes the most trouble. All the more important is the theorem \emph{that in many cases one can derive a series of others from one reducing factor.}
+
+Let us first consider two forms
+\[
+\varphi=\varphi_x^m,\quad \psi=\psi_x^n,
+\]
+where $(\varphi\psi)^r$ is to be a reducing factor. Then the following transvections:
+\[
+\begin{array}{rcl}
+U_1&=&((\varphi,\varphi)^{3+2\lambda},\psi)^{r-1+\varrho},\\[0.25em]
+U_2&=&((\varphi,\varphi)^{2+r},\psi)^n,\qquad 2r+1<m,\\[0.25em]
+U_3&=&((\varphi,\varphi)^{2+2\lambda},\psi)^{r-1+\varrho},\qquad
+\left\{\begin{array}{l}2\lambda+r+1\leq n,\\ \varrho+r-2<n,
+\end{array}\right.
+\end{array}
+\]
+are reducible.
+
+The transvections $U_1$ vanish identically; the $U_2$ have terms with the reducing factor $(\varphi\psi)^r$; as for $U_3$, develop the symbolic product
+\[
+\begin{aligned}
+&(\varphi\psi)^{r+\sigma}(\varphi_1\psi)^{\varrho-\sigma}(\varphi\varphi_1)^{2\lambda+1}\varphi_x^{m-2\lambda-1-r-\sigma}\cdot\varphi_{1,x}^{m-2\lambda-1-\varrho+\sigma}\cdot\psi_x^{n-\varrho-r},
+\end{aligned}
+\]
+which has the reducing factor $(\varphi\psi)^r$ $(\varphi_{1,x}^m=\varphi_x^m)$, into series III. The first term is $U_3$, the remaining ones are of lower dimension; hence $U_3$ too is reducible.
+
+Now I assert:
+
+\emph{If $(\varphi\psi)^r$ is reducing and}
+\[
+V=((\varphi,\psi)^{m-r+1},\psi)^n
+\]
+\emph{is an invariant or reducible, then $(\varphi\varphi_1)^2(\varphi\psi)^{r-1}$ is also a reducing factor.} For the symbolic product
+\[
+(\varphi\varphi_1)^2(\varphi\psi)^{r-1}\varphi_x^{m-r-1}\varphi_{1,x}^{m-r+1}\psi_x^{n-r+1}
+\]
+and all forms arising from it by folding are aggregates of the transvections $U_1$, $U_2$, $U_3$. --- Here it should be noted that $V$ is an invariant if $2r-2=n$, and that it vanishes identically if $2r-2<n$. ---
+
+Whether a factor acts as reducing or not depends, like the whole determination of rank, on the choice of the principal forms. If the latter can in itself occur quite arbitrarily, then in what follows, with regard to the goals to be achieved, the following rule is observed, which at least is to be communicated here: If a form $\varphi$ is reducible (or also identically zero), and if many forms arising from it by folding are likewise reducible, then choose as principal forms those arising from $\varphi$ by folding which otherwise would not be reducible. Thereby the product of the bracket factors of $\varphi$ becomes a reducing factor. --- That this choice is in fact expedient follows from the fact that one is henceforth spared the distinction between the reducible and non-reducible forms arising from $\varphi$ by folding.
+
+\begin{center}
+{\bfseries §. 9.\quad Formation of the system of $f$.}
+\end{center}
+
+After these preparations the setting up of a full system of a ground form $f$, which then, to be sure, generally speaking, will still contain many superfluous forms, is a comparatively simple matter. From the actual setting up of the system its finiteness then follows of itself. The basic idea, however, that we pursue in setting it up is this. It was already mentioned above that the system of $f$ will be obtained if one sets up in order the systems $A_0$, $A_1$, $\cdots$, $A_g$. Suppose therefore that we have already obtained a system $A_\mu$. Then one will arrive at $A_{\mu+1}$ as follows. Besides $f$, assign rank 1 to all forms of second order
+\[
+K_\mu=(ab)^{2\mu}a_x^{n-2\mu}b_x^{n-2\mu}
+\]
+\[
+K_{\mu+1}=(ab)^{2\mu+2}a_x^{n-2\mu-2}b_x^{n-2\mu-2}.
+\]
+Then the system $A_\mu$ will be an $(A_{\mu+1})$, according to a remark made above. We place opposite it another $(A_{\mu+1})$ which contains $K_{\mu+1}$. Thus, by transvection of the two $(A_{\mu+1})$, a new $(A_{\mu+1})$ will arise which contains $K_{\mu+1}$ and, because the earlier $A$ arose in the same way, also contains $f$, $K_1$, $K_2\cdots K_{\mu+1}$; that is, it contains in general all principal forms which can come into consideration for forms of no higher than the $(\mu+1)$st stage. The $(A_{\mu+1})$ is therefore an $A_{\mu+1}$, which is what was to be achieved.
+
+The main task will therefore be to set up an $(A_{\mu+1})$ which contains $K_{\mu+1}$. I carry out this task in different ways according as $\mu+1\leq\frac n2$ or $>\frac n2$. In the latter case $K$ is of lower degree than $f$, and I take as $(A_{\mu+1})$ its full system, whose constructibility I postulate for $K$, precisely insofar as it is of lower degree than $f$. But I regard this method, as I wish explicitly to emphasize, as much more imperfect than the method I use for the other $K$, and which is now first to be explained for $K_1$, where it takes a somewhat different shape than for the following $K$.
+
+Let $f=a_x^n$, $n\geq4$. The system $A_0$ is formed on $f$ itself, and if we introduce
+\[
+K_1=(f,f)^2=(ab)^2a_x^{n-2}b_x^{n-2}
+\]
+
+% ---- Current completion slice appended: source PDF pages 032--059; pages 060--062 are scan witnesses only. ----
+
+% Current English slice: source PDF pp. 032--059, printed pp. 25--52; pp. 060--062 are non-authorial/blank/back-cover witnesses only.
+% Translation keyed to the German TeX transcription and checked against scan-visible mathematics.
+
+introduce it as a principal form with rank 1, then $f$ by itself also forms a system $(A_1)$. I now assert \textit{that $K_1$ by itself likewise forms a system $(A_1)$}, so that therefore only $f^\alpha$ and $K_1^\beta$ would have to be joined by transvection in all ways in order to arrive at $A_1$.
+
+For, by §. 3 the covariants $(f,K_1)^{2+r}$ can be represented by forms $Q_2$, with only the form $(f,K)^4$ to be excepted,\footnote{The symbols of $K_1$ are simply called $K$, which surely gives occasion for no misunderstanding.} when $n=4$. It is an invariant and is to be denoted by $j$. Accordingly the factor $(ak)^2$, and therefore also $(ab)^2(ak)$, is reducing, and the transvections $((f,f)^{2+\lambda},K)^{\varrho+1}$ are expressible by forms $G$ and $Q_2$. Among them belong in particular also the forms $(K,K)^{\varrho+1}$, and hence $(kk_1)$ is a reducing factor; and all symbolic products composed from the symbols of $K$ are reducible to forms $G$ and $Q_2$. Thus $K_1$ by itself forms a system $(A_1)$, and one obtains a system $A_1$ by combining the systems
+\[
+\begin{array}{cc}
+A&f\\
+B&K_1
+\end{array}
+\]
+by transvection.
+
+Before we proceed further from the $A_1$ obtained in this way, we shall state which systems $(A_\mu)$, containing $K_\mu=(f,f)^{2\mu}$, are to be used later, as long as $\mu\leq\frac n4$. \textit{Namely, for $K_\mu$, regarded for a moment as a ground form, construct the $A_{\mu-2}$.} In order to have in its forms only the symbols of the ground form, one may make the alteration discussed in §. 5, that is, replace each symbol $k$ occurring $2r$ times ($r=n-2\mu$), $r$ times by $a$ and $r$ times by $b$, and adjoin the factor $(ab)^{2\mu}$. ---
+
+This requirement will always be executable at first, insofar as we are led to it only when we have already established $A_{\mu-1}$ for the ground form and therefore know all the more how to obtain, for every form, an $A_{\mu-2}$. But that this $A_{\mu-2}$, both in itself and after the modification made in it, is an $(A_\mu)$ of the ground form, is proved as follows, quite similarly to the case of $(A_1)$ above, except that then one took not the $A_{\mu-2}$ of $K_\mu$, which did not exist, but the $A_{\mu-1}$.
+
+The transvections $(f,K_\mu)^{2\mu-1+\varrho}$ can, by §. 4, all be represented by forms $Q_{\mu+1}$, except for the single invariant $(f,K_\mu)^n$, which may occur when $\mu=\frac n4$. Accordingly the factor $(ak)^{2\mu-1}$, and therefore also $(ab)^2(ak)^{2\mu-2}$, is reducing, and the transvections
+\[
+((f,f)^{2+2\mu},K_\mu)^{\varrho+2\mu-2}
+\]
+are reducible. Since among them there also belongs every form $(K_\mu,K_\mu)^{\varrho+2\mu-2}$, the factor $(kk)^{2\mu-2}$ is reducing. But the forms of the $A_{\mu-2}$ belonging to $K_\mu$:
+\[
+B_1,B_2,\bdots,B_s
+\]
+have, by the definition of the $A_{\mu-2}$, the property that every form arising from them by folding (provided that one thinks the $B$ written with the symbols $K$) can be represented in this way:
+\[
+F(B)+Q_{\mu-1},
+\]
+where $Q_{\mu-1}$ denotes forms which contain at least one bracket factor $(kk)^{2\mu-2}$ and hence are reducible. If one now introduces into the $B$ the symbols of the ground form and folds with respect to them, the last theorem of §. 5 applies, \textit{and therefore the system $B$:}
+\[
+B_1,B_2,\bdots,B_s
+\]
+\textit{is an $(A_\mu)$.}
+
+It is now clear how one must proceed, for $n\geq8$, in order to rise from the already obtained $A_1$ to the $A_2$ of $f$. Assign to the form
+\[
+K_2=(f,f)^4
+\]
+rank 1. Then $A_1$ is at the same time an $(A_2)$, and with it one combines by transvection the system $B$ which arises from the $A_0$ belonging to $K_2$ by the mentioned modification. Since this $A_0$ consists only of $K_2$, and the modification in question has no effect on $K_2$, the system $B$ therefore consists in this case only of $K_2$. Since $B$ is itself an $(A_2)$, a new $(A_2)$ arises by transvection of the two systems; and because it contains all principal forms that come into consideration, this is an $A_2$.
+
+One continues in this way when $n\geq12$, in order to obtain $A_3$, and so on, and in all cases one comes as far as that $A_\mu$ in which $\mu$ is the greatest number not greater than $\frac n4$.
+
+In order to arrive at the full system of $f$, one still has to set up those $A_\mu$ for which $\mu>\frac n4$ and $\leq\frac n2$. Or rather, one has only to construct those $(A_\mu)$ which contain the corresponding $K_\mu=(f,f)^{2\mu}$. For how they are to be used is clear from what precedes. Here, as already indicated above, I take as $(A_\mu)$ the full system of $K_\mu$, regarded as a ground form:
+\[
+B:B_1,B_2,\bdots,B_s,
+\]
+which may be regarded as known, because $K_\mu$ is of lower degree than $f$. That this is in fact an $(A_\mu)$ is proved just as above, only still more simply. ---
+
+Proceeding in this way, one finally reaches $A_g$ of $f$, where $g$ is the greatest integer contained in $\frac n2$, and thus the full system of $f$. \textit{But because all systems to be combined were finite, and the transvection of finite systems gives something finite, the system of $f$ is finite.}
+
+\begin{center}
+{\bfseries §. 10.\quad Closer investigation of the system set up.}
+\end{center}
+
+The system $A_0$ consists of $f$ alone. Let us investigate how many forms the system $A_1$ comprises, which arises by transvection of $A_0$ with the system $B$:
+\[
+B:
+\qquad K_1=(f,f)^2.
+\]
+Of the transvections
+\[
+U=(f^\rho,K^\beta)^r
+\]
+those for which $r\leq1$ and one of the numbers $\rho$ or $\beta$ is greater than 1 have decomposing terms, and therefore do not belong to $A_1$. But those $U$ for which $r>1$ have terms with the reducing factor $(ak)^2$ and are therefore reducible---apart from the one case occurring for $n=4$, where one has formed the invariant $(f,K)^4=j$. The system $A_1$ consequently consists ($n$ being from the outset assumed $\geq4$) of the forms
+\[
+A_1:
+\qquad f,
+\quad (f,f)^2,
+\quad ((f,f)^2,f),
+\]
+to which, in the case $n=4$, the invariant
+\[
+j=((f,f)^2,f)^4
+\]
+is still to be added.
+
+Let us investigate which forms $A_2$ comprises for $n\geq8$. For this purpose we have to connect the $A_1$ just set up with the $A_0$ of the covariant
+\[
+K_2=(f,f)^4,
+\]
+that is, with the system
+\[
+B:
+\qquad K_2=(f,f)^4
+\]
+by transvection.
+
+But of the transvections
+\[
+U=(P,Q)^r
+\]
+of products of powers of the forms of $A_1$ over powers of $K_2$, all those have decomposing terms for which $r\leq2$ and either $P$ or $Q$ possesses more than one factor. Those for which either $r>2$, or $r>1$ and $Q$ is one of the last two forms of $A_1$, have terms with the reducing factors $(ak)^3$ respectively $(ab)^2(ak)^2$; hence they are all reducible, apart from the single invariant $(f,K)^8$ occurring in the case $n=8$. Of the $U$, therefore, only
+\[
+(f,K_2),\qquad (f,K_2)^2,\qquad ((f,f)^2,K_2)
+\]
+are to be considered, and the system $A_2$ consists of the forms
+\[
+\begin{gathered}
+A_2:
+\quad f,
+\quad (f,f)^2,
+\quad ((f,f)^2,f),
+\quad (f,f)^4=K_2,
+\quad (f,K_2),\quad (f,K_2)^2,
+\quad ((f,f)^2,K_2),
+\end{gathered}
+\]
+to which, in the case $n=8$, the invariant
+\[
+(f,K)^8
+\]
+is still to be added. ---
+
+We shall not go here into the general investigation of the further $A_\mu$, and in particular of those for which $\mu>\frac n4$. We merely call attention to the following circumstance. If $n$ is an even number, then for the highest possible $\mu$ one has $A_\mu=A_g$, $g=\frac n2$. It arises by connecting $A_{\frac n2-1}$ with the full system of the form $(f,f)^n$ by transvection. But the latter is an invariant; hence the transvection consists simply in adjoining the invariant $(f,f)^n$ to $A_{\frac n2-1}$. Thus, for example, for
+\[
+f=a_x^2,
+\qquad f=a_x^4,
+\qquad f=a_x^6,
+\qquad f=a_x^8
+\]
+one has respectively to form only the systems
+\[
+A_0,
+\qquad A_1,
+\qquad A_2,
+\qquad A_3
+\]
+and the full system arises by adjoining to them the invariants
+\[
+(f,f)^2,
+\qquad (f,f)^4,
+\qquad (f,f)^6,
+\qquad (f,f)^8.
+\]
+
+\begin{center}
+{\bfseries Applications.}
+\end{center}
+
+\begin{center}
+{\bfseries §. 11.\quad The system of $f=a_x$.\quad Transvections of it\\with other systems.}
+\end{center}
+
+For $n=1$ one has $g=0$, and the system of $f$ consists of the single form contained in $A_0$, namely of $f$ alone.
+
+With a view to the immediately following considerations for forms of the fifth and seventh orders, let us investigate what arises when we connect this system by transvection with an arbitrary system of other forms
+\[
+A_1,A_2,\bdots,A_r.
+\]
+If $P$ is an arbitrary product of powers of the $A$, one therefore forms all transvections
+\[
+(P,f^\rho)^r.
+\]
+These can be divided into three classes, according as $\rho>r$, or $\rho=r$ and $P$ contains more than one factor, or finally $\rho=r$ and $P$ is one of the forms $A$. The first two classes contain transvections with decomposing terms; only the last class gives forms to be retained, namely finally the following:
+\[
+f,
+\qquad A_i,
+\qquad (A_i,f^\rho)^\rho.
+\]
+
+\begin{center}
+{\bfseries §. 12.\quad Corresponding investigation for quadratic forms.}
+\end{center}
+
+If $f=a_x^2$, then by §. 10 the full system consists of $A_0$ and $(f,f)^2$, thus
+\[
+A_1:
+\qquad f,(f,f)^2.
+\]
+We again investigate which non-reducible forms arise when we connect this with another system
+\[
+A_1,A_2,\bdots,A_r
+\]
+by transvections. For this purpose, among the transvections
+\[
+U=(P,f^\rho)^r\qquad \{r\leq 2\rho\}
+\]
+we may at once omit those for which $r<2\rho-1$. But also those for which $r\geq2\rho-1$ and $P$ either has a factor of even degree, or, if $r$ is less than the degree of $P$, has more than one factor at all, give decomposing terms. Only the two cases remain:
+\[
+\begin{array}{ll}
+1.& r\geq2\rho-1\quad\text{and }P\text{ one of the forms }A;\\
+2.& r=2\rho\quad\text{and equal to the degree of }P,
+\end{array}
+\]
+where $P$ is the product $A_iA_k$ of two forms $A$ of odd degree. (Only invariants belong to this category.)
+
+But even among these forms a number of reducible ones can still be separated, if one introduces distinctions according as the $A$ are functional determinants or not.
+
+First consider the transvections of the first class:
+\[
+U_1=(A_i,f^\rho)^{2\rho-1}
+\quad\text{and}\quad
+U_2=(A_i,f^\rho)^{2\rho}.
+\]
+Of the $U_1$, as I shall show immediately, those are reducible to forms of lower order and forms of lower dimension for which $A_i$ is a functional determinant of two other, non-linear $A$:
+\[
+A_i=(A_lA_m)
+\]
+and the number $2\rho+2$ can be decomposed into two parts $2\sigma$ and $2\tau$ which are not greater than the degrees of the forms $A_l$ and $A_m$: a case which occurs both when the degree of $A_l$ is greater than $2\rho$, and also when this degree is equal to $2\rho$ and $A_l$ and $A_m$ are of even degree. I prove this as follows. Let
+\[
+(A_l,f^{\rho-1})^{2\sigma-2}=\varphi_x^2,
+\qquad
+(A_m,f^{2\tau-1})^{2\tau-2}=\psi_x^\mu,
+\]
+where, by hypothesis, $\lambda$ and $\mu>1$. Then the symbolic product
+\[
+\Pi=\varphi_x^{\lambda-2}\psi_x^{\mu-1}a_x(\varphi\psi)(\varphi a)
+\]
+is a term of the transvection
+\[
+U_1'=((A_l,A_m),f^\rho)^{2\rho-1}.
+\]
+Now
+\[
+\varphi_x^2(a\psi)^2=\bigl(a_x(\varphi\psi)-\psi_x(\varphi a)\bigr)^2,
+\]
+therefore
+\[
+\begin{aligned}
+\Pi
+&=\frac12\varphi_x^{\lambda-2}\psi_x^{\mu-2}\{a_x^2(\varphi\psi)^2+\psi_x^2(\varphi a)^2-\varphi_x^2(a\psi)^2\}\\
+&=\frac12 f\cdot(\varphi,\psi)^2+\frac12\psi(\varphi,f)^2-
+\frac12\varphi(f,\psi)^2.
+\end{aligned}
+\]
+Thus $\Pi$ is reducible to forms of lower order, and hence $U_1$ is reducible to forms of lower order and lower dimension.
+
+Among the forms of the second class, too, reducible ones can still be separated off. The forms of the second class have the shape $(A_iA_k,f^
+ho)^{2
+ho}$, where $A_i$, $A_k$ are two forms of odd degree whose degrees, added, give $2
+ho$. Of them, as I shall now show, those are reducible to forms of lower order or lower dimension for which
+
+\[
+A_i=(\varphi,\psi),
+\qquad
+A_k=(\Phi,\Psi)
+\]
+are functional determinants of non-linear forms which themselves belong to the system. Namely, if the forms $\varphi$, $\psi$, $\Phi$, $\Psi$ are denoted by $\varphi_x^\lambda$, $\psi_x^\mu$, $\Phi_x^\Lambda$, $\Psi_x^M$, then $A_i$, $A_k$ are respectively equal to the determinants
+\[
+\varphi_x^{\lambda-2}\psi_x^{\mu-2}
+\begin{vmatrix}
+\varphi_1^2&\varphi_1\varphi_2&\varphi_2^2\\
+\psi_1^2&\psi_1\psi_2&\psi_2^2\\
+x_2^2&-x_1x_2&x_1^2
+\end{vmatrix},
+\qquad
+\Phi_x^{\Lambda-2}\Psi_x^{M-2}
+\begin{vmatrix}
+\Phi_1^2&\Phi_1\Phi_2&\Phi_2^2\\
+\Psi_1^2&\Psi_1\Psi_2&\Psi_2^2\\
+x_2^2&-x_1x_2&x_1^2
+\end{vmatrix},
+\]
+and therefore
+\[
+A_iA_k=\frac12
+\begin{vmatrix}
+(\varphi,\Phi)^2&(\varphi,\Psi)^2&\varphi\\
+(\psi,\Phi)^2&(\psi,\Psi)^2&\psi\\
+\Phi&\Psi&0
+\end{vmatrix},
+\]
+an integral function of forms of lower order. If this value is inserted in the transvection $U=((A_iA_k),f^\rho)^{2\rho}$, then $U$ receives a series of decomposing terms and is therefore reducible to forms of lower order and lower dimension.
+
+After these separations, the following forms therefore still remain:
+\begin{enumerate}
+\item $f$, $(f,f)^2$, and the $A_i$ themselves.
+\item The transvections $(A_i,f^\rho)^{2\rho}$.
+\item Among the transvections $(A_i,f^\rho)^{2\rho-1}$, those for which $A_i$ is\\
+a) not a functional determinant,\\
+b) a functional determinant of degree $2\rho-1$,\\
+c) a functional determinant of two forms of odd degree and has degree $2\rho$.
+\item Among the transvections $(A_iA_k,f^\rho)^{2\rho}$, those for which the degrees of $A_i$ and $A_k$ are odd numbers which together amount to $2\rho$, and for which $A_i$ and $A_k$ are not simultaneously functional determinants.
+\end{enumerate}
+
+\begin{center}
+{\bfseries §. 13.\quad The system of $f=a_x^3$ and some relations between its\\forms.}
+\end{center}
+
+For $n=3$ one has $g=1$, and $A_1$ is the system of $f$. It arises from $A_0$ (which consists of $f$ alone) by transvection with the full system of the covariant $\tau=(f,f)^2$:
+\[
+B:
+\qquad \tau,
+\qquad (\tau,\tau')^2.
+\]
+But among the forms arising by transvections of $A_0$ with $B$, by the preceding paragraph only the following are to be retained:
+\[
+f,
+\qquad \tau,
+\qquad (\tau,\tau')^2,
+\qquad (f,\tau),
+\qquad (f,\tau)^2,
+\qquad (f,\tau^2)^3,
+\qquad (f^2,\tau^3)^6.
+\]
+Of these, $(f,\tau)^2$ vanishes identically by a remark made at the end of §. 4. Therefore every form which has the factor $(a\tau)^2$ also vanishes, and only the following forms remain:
+\[
+f,
+\qquad \tau,
+\qquad (\tau\tau')^2,
+\qquad (f\tau).
+\]
+\textit{They form the $A_1$, the system of $f$.}
+
+We shall here derive still a series of relations between these forms and an arbitrary form $\varphi=\varphi_x^m$, which will be useful later. They follow from formula (III) of §. 3 if in it one successively substitutes, for the forms $r_1$, $r_2$, $r_3$ and the numbers $\alpha_1$, $\alpha_2$, $\alpha_3$, respectively the following:
+\[
+\begin{array}{ccccccccc}
+f,f,f&f,\tau,f&f,\tau,\varphi&f,\tau,\varphi&\tau,f,\varphi&f,f,\varphi&f,f,\tau&(f,\tau),f,\varphi\\
+0,2,0&1,2,1&0,1+\rho,1&\rho-3,3,0&0,\rho,0&1,2,1&0,1,1&\rho+1,2,1
+\end{array}
+\]
+Then one obtains:
+\begin{align*}
+1.\quad &\sum_i\frac{\binom{3}{2i}\binom{2}{2i}}{\binom{7-2i}{2i}}\bigl((f,f)^{2i}\cdot f\bigr)^{2-2i}=((f,f)^2,f)^0,\\
+2.\quad &((f\tau),f)^3=-((f,f)^2,\tau)^2,\\
+3.\quad &\sum_i\frac{\binom{1}{i}\binom{1+\rho}{i}}{\binom{4-i}{i}}\bigl((f,\tau)^{1+i},\varphi\bigr)^{1+\rho-i}\\
+&\qquad=\sum_i\frac{\binom{m-1-\rho}{i}\binom{1}{i}}{\binom{m+2-2\rho-i}{i}}\bigl((f,\varphi)^{1+\rho+i},\tau\bigr)^{1-i},\\
+4.\quad &\sum_i\frac{\binom{5-\rho}{i}\binom{3}{i}}{\binom{6-i}{i}}\bigl((f,\tau)^i,\varphi\bigr)^{\rho-i}=(-1)^{\rho-3}\bigl((f,\varphi)^3,\tau\bigr)^{\rho-3}\quad(\rho\geq 3),\\
+5.\quad &\sum_i\frac{\binom{2}{i}\binom{\rho}{i}}{\binom{6-i}{i}}\bigl((f,\tau)^i,\varphi\bigr)^{\rho-i}=\tau\cdot(f,\varphi)^\rho,\\
+6.\quad &\sum_i\frac{\binom{3}{i}\binom{\rho}{i}}{\binom{6-i}{i}}\bigl((\tau,f)^i,\varphi\bigr)^{\rho-i}=f\cdot(\tau,\varphi)^\rho\quad(\rho\leq 2),\\
+7.\quad &\sum_i\frac{\binom{2}{2i+1}\binom{1}{2i+1}}{\binom{4-2i}{2i+1}}\bigl((f,f)^{2i+2},\varphi\bigr)^{2-2i}\\
+&\qquad=-\sum_i\frac{\binom{m-3}{i}\binom{1}{i}}{\binom{m-i}{i}}\bigl((f,\varphi)^{2+i},f\bigr)^{2-i},\\
+8.\quad &\sum_i\frac{\binom{2}{i}\binom{1}{i}}{\binom{5-i}{i}}\bigl((f,f)^{i+1},\tau\bigr)^{1-i}
+=\sum_i\frac{\binom{1}{i}\binom{1}{i}}{\binom{4-i}{i}}\bigl((f,\tau)^{1+i},f\bigr)^{1-i},\\
+9.\quad &\sum_i\frac{\binom{1-\rho}{i}\binom{2}{i}}{\binom{5-i}{i}}\bigl(((f,\tau),f)^{1+i},\varphi\bigr)^{3+\rho-i}\\
+&\qquad=(-1)^{\rho+1}\sum_i\frac{\binom{m-\rho-3}{i}\binom{1}{i}}{\binom{m-i}{i}}\bigl(((f,\tau),\varphi)^{2+i},f\bigr)^{\rho+2-i}.
+\end{align*}
+And from this one can derive the following formulas:
+\begin{align*}
+1.\quad &(f^2,f)^2=\frac7{10}\,f\cdot\tau,\\
+2.\quad &(f\tau,(f,\tau))^3=\frac25\tau(\tau,\tau)^2,\\
+3.\quad &(f\tau,\varphi)^\rho=(\tau,(f,\varphi)^3)^{\rho-3}-\frac35(5-\rho)((f,\tau),\varphi)^{\rho-1}\quad(\rho>2),\\
+4.\quad &(f\tau,\varphi)^\rho=\frac{3\tau}{5}(f,\varphi)^\rho+\frac25 f(\tau,\varphi)^\rho\quad(\rho\leq 2),\\
+5.\quad &(\varphi,\tau)^2=-2\sum_i\frac{\binom{m-3}{i}\binom{1}{i}}{\binom{m-i}{i}}\bigl((f,\varphi)^{2+i},f\bigr)^{2-i},\\
+6.\quad &((f,\tau),f)=\frac{\tau^2}{2},\\
+7.\quad &(\varphi,\tau^2)^{3+\rho}=2\sum_i\frac{\binom{m-\rho-3}{i}\binom{1}{i}}{\binom{m-i}{i}}\bigl(((f,\tau),\varphi)^{2+i},f\bigr)^{2+\rho-i}.
+\end{align*}
+
+\begin{center}
+{\bfseries §. 14.\quad The system of $f=a_x^4$.}
+\end{center}
+
+Here, by §. 10, the system $A_1$ consists of the forms
+\[
+A_1:
+\qquad f,(f,f)^2,((f,f)^2,f),((f,f)^2,f)^4.
+\]
+If one adds to it the invariant
+\[
+(f,f)^4
+\]
+then, by §. 10, one has $A_2$, the system of $f$.
+
+\begin{center}
+{\bfseries §. 15.\quad The system of $f=a_x^5$.}
+\end{center}
+
+The system $A_1$ here consists of the forms
+\[
+f,(f,f)^2,((f,f)^2,f).
+\]
+With it one must connect the full system of the quadratic covariant
+\[
+i=(f,f)^4;
+\qquad
+B:
+\quad i,(ii')^2
+\]
+in order to obtain $A_2$, the system of $f$. But by §. 12, of the transvections of the powers of $i$ over products of the forms belonging to $A_1$, only the following are to be retained:
+\[
+(f,i^\rho)^{2\rho},\quad ((f,f)^2,i^\rho)^{2\rho},\quad (((f,f)^2,f),i^\rho)^{2\rho},
+\]
+\[
+(f,i^\rho)^{2\rho-1},\quad ((f,f)^2,i^\rho)^{2\rho-1},
+\]
+\[
+(((f,f)^2,f),i^5)^9,
+\quad (f^2,i^5)^{10},
+\quad \bigl(f\cdot((f,f)^2,f),i^7\bigr)^{14}.
+\]
+Among them no further reducible forms are found, and therefore $A_2$, the system of $f$, consists of the following 23 forms:
+\[
+f,(f,f)^2,((f,f)^2,f),i,(i,i)^2.
+\]
+\[
+(f,i),(f,i)^2,(f,i^2)^3,(f,i^2)^4,(f,i^3)^5,
+\]
+\[
+((f,f)^2,i),((f,f)^2,i)^2,((f,f)^2,i^2)^3,((f,f)^2,i^2)^4,((f,f)^2,i^3)^5,((f,f)^2,i^3)^6,
+\]
+\[
+(((f,f)^2,f),i)^2,(((f,f)^2,f),i^2)^4,(((f,f)^2,f),i^3)^6,(((f,f)^2,f),i^4)^8,
+\]
+\[
+(((f,f)^2,f),i^5)^9,(f^2,i^5)^{10},\bigl(f\cdot((f,f)^2,f),i^7\bigr)^{14}.
+\]
+
+\begin{center}
+{\bfseries §. 16.\quad The system of $f=a_x^6$.}
+\end{center}
+
+The system $A_1$ again consists of the forms
+\[
+A_1:
+\qquad f,(f,f)^2,((f,f)^2,f).
+\]
+The covariant $K_2=(f,f)^4$ is biquadratic; its full system, which is to be connected with $A_1$, consists of the forms
+\[
+B:
+\quad K,
+\quad (K,K)^2=V,
+\quad ((K,K)^2,K),
+\quad (K,K)^4=i,
+\quad ((K,K)^2,K)^2=j.
+\]
+It is advantageous here, besides $f$ and $K$, which as always receive rank 1, to introduce, for the purpose of more easily recognizing reducible forms, the transvection
+\[
+(f,K)^4=l
+\]
+as a new principal form with rank $1\frac12$. One thereby attains (compare the general discussion at the end of §. 8) that $(ak)^3$ becomes a reducing factor. Namely, consider the symbolic product $(bc)(ac)^3(ab)^3b_x^2c_x^2$. It changes its sign when $b$ is interchanged with $c$, and hence vanishes identically. But by formula (II) it can be developed in the series
+\[
+\sum_i\frac{\binom{1}{i}\binom{3}{i}}{\binom{7-i}{i}}
+\bigl((f,f)^{3+i},f\bigr)^{4-i}
+=\frac12(K,f)^3.
+\]
+\textit{Consequently $(K,f)^3$ vanishes.} All forms, therefore, which have $(ak)^3$ as a factor either vanish in themselves or are reducible to forms containing $(ak)^4$, and these are reducible to forms of lower rank by introduction of the symbols $l$. \textit{Thus $(ak)^3$ is a reducing factor.}
+
+Let us seek further reducing factors. \textit{That $(ab)^3$ is such a factor} is self-evident. For every form which contains $(ab)^3$ also contains $(ab)^4$, and is therefore reducible to lower rank by introducing the symbols of $K=(f,f)^4$. On the other hand, \textit{from the rule in §. 8 there result from the one reducing factor $(ak)^3$ the following further ones:}
+\[
+(ab)^2(ak)^2,
+\qquad (ak)^2(kk')^2,
+\qquad (ab)^2(ak)(kk')^2.
+\]
+If, furthermore, in formula (III) one replaces the forms, respectively numbers $r_1$, $r_2$, $r_3$ by $\alpha_1$, $\alpha_2$, $\alpha_3$
+\[
+\begin{array}{ccc}
+f,f,K&f,f,l&f,K,l\\
+0,3,3&0,2,4&0,2,4
+\end{array}
+\]
+then
+\begin{align*}
+&\sum_i\frac{\binom{3}{2i+1}\binom{3}{2i+1}}{\binom{6-2i}{2i+1}}\bigl((f,f)^{2i+4},K\bigr)^{2-2i}
+=\sum_i\frac{\binom{1}{i}\binom{3}{i}}{\binom{5-i}{i}}\bigl((f,K)^{3+i},f\bigr)^{3-i},\\
+&\sum_i\frac{\binom{2}{2i}\binom{2}{2i}}{\binom{5-2i}{2i}}\bigl((f,f)^{2i+4},l\bigr)^{2-2i}=\bigl((f,l)^2,f\bigr)^4,\\
+&((f,K)^4,l)^2=((f,l)^2,K)^4.
+\end{align*}
+Thus
+\[
+\frac32(K,K)^2+Q_3=\frac34(f,l)^2,
+\]
+\[
+(K,l)^2+Q_3=2((K,K)^2,f)^4,
+\]
+\[
+(l,l)^2=2((K,K)^2,K)^4+Q_3,
+\]
+\[
+\begin{aligned}
+(K,l^2)^4&=2((f,l)^2,(K,K)^2)^4+Q_3\\
+&=4((K,K)^2,(K,K)^2)^4+Q_3.
+\end{aligned}
+\]
+Consequently the forms
+\[
+(f,l)^2,
+\qquad (l,l)^2,
+\qquad (K,l^2)^4
+\]
+are reducible; hence $(al)^2$ is a reducing factor and therefore, by §. 8, so is $(ab)^2(al)$.
+
+We shall carry out the combination of the systems $A_1$ and $B$ in the following way. We first connect the system
+\[
+\Gamma:
+\qquad l,
+\]
+formed by $l$ alone, with $A_1$. Since $(l,l)^2$ is reducible, $\Gamma$ forms an $(A_2)$, and hence the result $\Delta$ of its transvection with $A_1$ is again an $(A_2)$. Only with $\Delta$ do we then connect $B$.
+
+This course is justified in any case, since it must give the same result as the direct transvection of $A_1$ with $B$. For, in the transvection of $\Delta$ with $B$, no less can arise than in the transvection of $A_1$ with $B$---because $\Delta$ contains $A_1$ within it---nor can more arise, because the transvection of $A_1$ over $B$ already gives everything. The advantage I obtain by this procedure is, moreover, not considerable; only the actual execution of the calculations becomes somewhat simpler.
+
+Let us therefore first investigate the transvections
+\[
+U=(P,l^\rho)^r
+\]
+of products $P$ of the forms of $A_1$ over powers of $l$. Those for which $r>1$ have terms with the reducing factors $(al)^2$ and are therefore to be omitted. Only those for which $r=1$ remain, and among them, as the only ones containing no decomposing term, just these:
+\[
+(f,l),
+\qquad ((f,f)^2,l),
+\qquad (((f,f)^2,f),l).
+\]
+But the last two are reducible because of the occurrence of the reducing factor $(ab)^2(al)$, so that finally the system $\Delta$ consists only of the following forms:
+\[
+\Delta:
+\quad f,
+\quad (f,f)^2,
+\quad ((f,f)^2,f),
+\quad l,
+\quad (f,l).
+\]
+This $\Delta$ is now to be connected with
+\[
+B:
+\quad K,
+\quad (K,K)^2=V,
+\quad (K,V),
+\quad (K,V)^4=j,
+\quad (K,K)^4=i.
+\]
+I divide the transvections
+\[
+U=(P,Q)^r
+\]
+of products $P$ of the forms of $\Delta$ over products $Q$ of the first three forms of $B$ into three classes:
+\begin{enumerate}
+\item[I.] The transvections $U_1$ in which $P$ contains at least one of the factors $(f,f)^2$ or $((f,f)^2,f)$.
+\item[II.] The transvections $U_2$ in which $P$ contains none of these forms, but at least one of the forms $f$ or $(f,l)$.
+\item[III.] The transvections $U_3$ in which $P$ is only a power of $l$.
+\end{enumerate}
+
+\begin{center}
+{\bfseries I.\quad The transvections $U_1$.}
+\end{center}
+
+We divide the forms $U_1$ into the following five subclasses:
+\begin{enumerate}
+\item Those for which $r=1$ and $P$ or $Q$ has more than one factor.
+\item Those for which one of the forms $V$ or $(K,V)$ is a factor of $Q$.
+\item Those for which $r>1$ and $Q$ is a power of $K$.
+\item The form $(((f,f)^2,f),k)$.
+\item The form $((f,f)^2,k)$.
+\end{enumerate}
+The forms of the first subclass have decomposing terms; those of the second and third subclasses are reducible because they possess the factors $(ab)^2(aV)=(ab)^2(ak_1)(kk_1)^2$ and $(ab)^2(ak)^2$. The transvection of the fourth class is a functional determinant of functional determinants, and hence only the form $((f,f)^2,K)$ of the fifth class is to be considered.
+
+\begin{center}
+{\bfseries II.\quad The transvections $U_2$.}
+\end{center}
+
+The forms $U_2$ can be divided into the following subclasses:
+\begin{enumerate}
+\item Those for which $r\leq2$ and $P$ or $Q$ has more than one factor.
+\item Those for which $r>1$ and $V$ or $(K,V)$ is a factor of $Q$.
+\item Those for which $r>2$ and $Q$ is a power of $K$.
+\item Those for which $r=1$ and $P=(f,l)$ or $Q=(K,V)$.
+\item The transvections $(f,K)$, $(f,K)^2$, $((f,l),K)^2$, $(f,V)$.
+\end{enumerate}
+The forms of the first four subclasses may again be omitted. For the forms 1 have decomposing terms. The forms 2, 3 have terms with the reducing factors
+\[
+(aV)^3=(kk_1)^2(ak)^2(ak_1)
+\]
+and $(ak)^3$; the forms 4 are functional determinants of functional determinants.
+
+\begin{center}
+{\bfseries III.\quad The transvections $U_3$.}
+\end{center}
+
+Of the transvections
+\[
+U_3=(l^\rho,Q)^r
+\]
+only the following are to be retained, by earlier investigations (§. 12):
+\[
+(K,l^\rho)^{2\rho},
+\qquad (V,l^\rho)^{2\rho},
+\qquad ((K,V),l^\rho)^{2\rho},
+\]
+\[
+(K,l^\rho)^{2\rho-1},
+\qquad (V,l^\rho)^{2\rho-1}.
+\]
+Of them one more, namely $(k,l^2)^4$, is here to be separated off as reducible.
+
+Thus finally the $A_2$ consists of the following 25 forms:
+\[
+f,(f,f)^2,((f,f)^2,f),(f,l),l,K,V,(KV),i,j,
+\]
+\[
+((f,f)^2,K),(f,K),(f,K)^2,((f,l),K)^2,(f,V),
+\]
+\[
+(K,l)^2,(V,l)^2,((K,V),l)^2,(V,l^2)^4,((K,V),l^2)^4,((K,V),l^3)^6,
+\]
+\[
+(K,l),(V,l),(K,l^2)^3,(V,l^2)^3.
+\]
+If the invariant $(f,f)^6$ is added, then one has the full system of $f$.
+
+\begin{center}
+{\bfseries §. 17.\quad The system of $f=a_x^7$.}
+\end{center}
+
+For forms of seventh order,\footnote{Investigations on the system of forms of seventh order, although not carried out as far as those in the text, have recently been published by Mr. Krey (Göttingen, dissertation).} similarly as just now for those of the sixth, beside $f$ and the forms $K$ of second order, still other principal forms are to be introduced for determining the rank. They are the following:
+\[
+(f,K_2)^5=r=r_x^3,
+\]
+\[
+((K_2,K_2)^4,r)^3=\alpha=\alpha_x.
+\]
+They are to receive respectively the ranks $1\frac7{15}$ and $3\frac13$, while $f$, $K_1$, $K_2=(f,f)^4$ retain rank 1.\footnote{$K_2$ is in what follows always denoted simply by $K$.}
+
+The $A_1$ of $f$ is known; it comprises the forms
+\[
+f,(f,f)^2,((f,f)^2,f).
+\]
+In order to obtain $A_2$, it is to be connected with the full system of the covariant of sixth degree
+\[
+K_2=(f,f)^4,
+\]
+which can be set up according to the preceding paragraph. For this purpose we first seek reducing factors.
+
+Introducing also the notation $p=(K,K)^4$, $\varphi=$ arbitrary function, I assert:
+
+\textit{that the following 10 forms are reducible:}
+\[
+\begin{gathered}
+(K,K)^6,
+\quad (f,p),
+\quad (K,p)^2,
+\quad (K,p)^4,
+\quad (p,p)^2,
+\quad (p,p)^4,
+\quad ((p,p)^2,p),\\
+(K,\alpha),
+\quad ((K,\varphi),\alpha),
+\quad ((K,\varphi)^2,\alpha),
+\end{gathered}
+\]
+\textit{and further that the following 11 factors act reducingly:}
+\[
+\begin{gathered}
+(ak)^3,
+\quad (ab)^2(ak)^2,
+\quad (ak)^2(kk_1)^2,
+\quad (kr)^3,
+\quad (kr)^2(kk_1)^2,
+\quad (kk_1)^2(kr)(rr_1)^2,\\
+(ar),
+\quad (a\alpha),
+\quad (p\alpha)^2,
+\quad (r\alpha)^3,
+\quad (kr)(kr_1)(r_1r_2)^2.
+\end{gathered}
+\]
+
+\begin{center}
+{\bfseries Proof.}
+\end{center}
+
+Substitute in formula (III), for the forms $r_1$, $r_2$, $r_3$ respectively the quantities $\alpha_1$, $\alpha_2$, $\alpha_3$ in succession:
+\[
+\begin{array}{ccccccccccc}
+fKf&fKf&fKf&fKf&KfK&KfK&fr\varphi&frf&pr\varphi&KKp&K\varphi\alpha\\
+033&043&143&343&014&023&0\rho2&043&022&224&01\rho
+\end{array}
+\]
+Then the formulas arise:
+\begin{align*}
+&\sum_i\frac{\binom{3}{i}\binom{3}{i}}{\binom{8-i}{i}}\bigl((f,K)^{3+i},f\bigr)^{3-i}
+=\sum_i\frac{\binom{4}{2i+1}\binom{3}{2i+1}}{\binom{8-2i}{2i+1}}\bigl((f,f)^{2i+4},K\bigr)^{2-2i},\\
+&\sum_i\frac{\binom{3}{i}\binom{4}{i}}{\binom{8-i}{i}}\bigl((f,K)^{3+i},f\bigr)^{4-i}
+=\sum_i\frac{\binom{3}{2i}\binom{3}{2i}}{\binom{7-2i}{2i}}\bigl((f,f)^{2i+4},K\bigr)^{3-2i},\\
+&\sum_i\frac{\binom{2}{i}\binom{4}{i}}{\binom{8-i}{i}}\bigl((f,K)^{3+i},f\bigr)^{5-i}
+=-\sum_i\frac{\binom{2}{2i}\binom{3}{2i}}{\binom{7-2i}{2i}}\bigl((f,f)^{2i+4},K\bigr)^{4-2i},\\
+&((f,K)^3,f)^7=-((f,f)^4,K)^6,\\
+&\sum_i\frac{\binom{3}{i}\binom{1}{i}}{\binom{6-i}{i}}\bigl((K,f)^{4+i},K\bigr)^{2-i}
+=\sum_i\frac{\binom{5}{2i+1}\binom{4}{2i+1}}{\binom{10-2i}{2i+1}}\bigl((K,K)^{2+2i},f\bigr)^{3-2i},\\
+&\sum_i\frac{\binom{4}{i}\binom{2}{i}}{\binom{8-i}{i}}\bigl((K,f)^{3+i},K\bigr)^{2-i}
+=\sum_i\frac{\binom{4}{2i}\binom{3}{2i}}{\binom{9-2i}{2i}}\bigl((K,K)^{2+2i},f\bigr)^{3-2i},\\
+&\sum_i\frac{\binom{1}{i}\binom{\rho}{i}}{\binom{7-i}{i}}\bigl((f,r)^{2+i},\varphi\bigr)^{\rho-i}
+=\sum_i\frac{\binom{m-\rho}{i}\binom{2}{i}}{\binom{m+8-2\rho-i}{i}}\bigl((f,\varphi)^{\rho+i},r\bigr)^{2-i},\\
+&((f,r)^3,f)^4=\sum_i\frac{\binom{3}{2i}\binom{3}{2i}}{\binom{7-2i}{2i}}\bigl((f,f)^{2i+4},r\bigr)^{3-2i},\\
+&\sum_i\frac{\binom{1}{i}\binom{2}{i}}{\binom{4-i}{i}}\bigl((p,r)^{2+i},\varphi\bigr)^{2-i}
+=\sum_i\frac{\binom{m-2}{i}\binom{2}{i}}{\binom{m-i+1}{i}}\bigl((p,\varphi)^{2+i},r\bigr)^{2-i},\\
+&((k,k)^4,p)^4=((k,p)^2,k)^6,\\
+&\sum_i\frac{\binom{m-\rho}{i}\binom{1}{i}}{\binom{m+7-2\rho-i}{i}}\bigl((K,\varphi)^{\rho+i},\alpha\bigr)^{1-i}=((K,\alpha),\varphi)^\rho,
+\end{align*}
+which we shall combine with the following from §. 13:
+\[
+(r^2,r)^2=\frac7{10}r\cdot\tau;
+\qquad (r\cdot\tau,(r,\tau))^3=\frac25\tau\cdot(\tau,\tau)^2;
+\]
+\[
+((r,\tau),\varphi)^{\rho+2}=-\frac5{3(2-\rho)}(r\cdot\tau,\varphi)^{\rho+3}+\frac5{3(2-\rho)}(\tau,(r,\varphi)^3)^\rho,
+\]
+\[
+(r\cdot\tau,\varphi)^\rho=\frac35\tau\cdot(r,\varphi)^\rho+\frac25r\cdot(\tau,\varphi)^\rho;
+\]
+\[
+(\varphi,\tau)^2=2\bigl(r,(r,\varphi)^2\bigr)^2+2\frac{m-3}{m-1}\bigl((r,(\varphi,r)^3)\bigr),
+\]
+\[
+(\varphi,\tau^2)^{3+\rho}=2\sum_i\frac{\binom{m-\rho-3}{i}\binom{1}{i}}{\binom{m-i}{i}}\cdot\bigl(((r,\tau),\varphi)^{2+i},r\bigr)^{2+\rho-i}.
+\]
+One obtains in this way the following formulas:
+\begin{align*}
+1.\quad &(f,r)=\frac32(K,K)^2+Q_3,\\
+2.\quad &(f,r)^2=Q_3,\\
+3.\quad &(f,r)^3=\frac52p+Q_3,\\
+4.\quad &(K,K)^6=Q_3,\\
+5.\quad &(p,f)=-\frac{Kr}{5}+Q_3,\\
+6.\quad &(p,f)^2=\frac45(K,r)+Q_3,\\
+7.\quad &(p,f)^3=\frac35(K,r)^2+Q_3,\\
+8.\quad &(p,f)^4=Q_3,\\
+9.\quad &(K,r)^3=Q_3,\\
+10.\quad &(p,K)^2=\frac4{25}r^2+Q_3,\\
+11.\quad &(p,K)^3=Q_3,\\
+12.\quad &(p,K)^4=\frac{12}{25}\tau+Q_3,\\
+13.\quad &(p,r)^2=Q_3,\\
+14.\quad &(p,p)^2=-\frac{12}{25}((K,r)^2,r)^2+Q_3,\\
+15.\quad &(p,p)^4=Q_3,\\
+16.\quad &(f,\alpha)=-\frac65\bigl((K,r),r\bigr)^2-\frac97\bigl((K,r)^2,r\bigr)+Q_3,\\
+17.\quad &(K,\alpha)=-\frac35r\cdot\tau+Q_3,\\
+18.\quad &(p,\tau)^2=-\frac25(r,\alpha)+Q_3,\\
+19.\quad &((r,\tau),K)^2=\frac{25}{36}p\cdot\alpha+Q_3,\\
+20.\quad &((r,\tau),K)^3=\frac{25}{9}(p,\alpha)+Q_3,\\
+21.\quad &(K,\tau^2)^{\rho+3}=2\bigl(((r,\tau),K)^2,r\bigr)^{\rho+2}+\frac25(3-\rho)\bigl(((r,\tau),K)^3,r\bigr)^{\rho+1},\\
+22.\quad &(p,\alpha^2)^2=G+Q_3,\\
+23.\quad &(r,\alpha^3)^3=G+Q_3,\\
+24.\quad &((K,\varphi),\alpha)+\frac{m-1}{m+4}\alpha(K,\varphi)^2=-\frac9{25}\tau\cdot(r,\varphi)+\frac6{25}r\cdot(\tau,\varphi)+Q_3,\\
+25.\quad &((K,\varphi)^2,\alpha)+\frac{m-2}{m+2}\alpha(K,\varphi)^3=-\frac9{25}\tau\cdot(r\varphi)^2+\frac6{25}r\cdot(\tau,\varphi)^2+Q_3.
+\end{align*}
+From them the correctness of the assertion placed in front follows. The reducibility of the listed forms is immediately clear. The reducing action of the individual factors follows from the following considerations. That $(ak)^3$ is a reducing factor follows from the reducibility of $(f,k)^{3+r}$; from $(ak)^3$ one derives $(ab)^2(ak)^2$, $(ak)^2(kk')^2$ as further reducing factors by the rule of §. 8. Analogously, the corresponding facts for the factors $(kr)^3$, $(kk_1)^2(kr)^2$, $(kk_1)^2(kr)(rr_1)^2$ follow from the reducibility of $(K,r)^3$ and $((K,K)^4,r)^3$, and for the factors $(ar)$, $(a\alpha)$, and $(p\alpha)^2$ from the reducibility of $(f,r)^r$ and $(f,\alpha)$, $(p,\alpha^2)^2$. Finally, that $(kr)(kr_1)(r_1r_2)^2$ is a reducing factor is inferred as follows. The symbolic product
+\[
+(kr)(kr_1)(r_1r_2)^2k_x^4r_x^2r_{2,x}
+\]
+and all forms arising from it by folding can be developed in series which proceed according to the transvections
+\[
+U=(K,(r,\tau)^\rho)^r.
+\]
+But these $U$ are all reducible. Namely, if $\rho=0$, $r\leq3$, they have decomposing terms; otherwise they vanish identically or have terms with the reducing factor $(kr)^3$. Moreover $(K,(r,\tau))$ is a functional determinant of functional determinants; the transvections $(K,(r,\tau))^2$ and $(K,(r,\tau))^3$ are reducible by formulas 19 and 20; the transvections $(k,(r,\tau)^2)^r$ vanish together with $(r,\tau)^2$.
+
+It also follows from our formulas that the forms
+\[
+((K,K)^2,K),
+\qquad ((K,K)^2,p)
+\]
+can be reduced to functional determinants of functional determinants, and therefore can be represented by forms of lower order. In the final system they may therefore be omitted, just like the reducible forms established above. But as long as one is occupied with setting up the $(A_\mu)$, this is not permitted. For the integral function of forms of lower order which can be put in place of the named forms possesses higher rank.
+
+After this preliminary investigation we first transvect the full system of the cubic form $r$ (which as such is also an $(A_2)$):
+\[
+B_1:
+\quad r,
+\quad (r,r)^2=\tau,
+\quad (r,\tau),
+\quad (\tau,\tau)^2
+\]
+(the last form is an invariant) over the $A_1$:
+\[
+A_1:
+\quad f,
+\quad (f,f)^2,
+\quad ((f,f)^2,f).
+\]
+In this way a system $B_2$ arises, which again will be an $(A_2)$. But all transvections of products of forms $A_1$ over such forms of $B_1$ have terms with the reducing factor $(ar)$, and are therefore reducible. The system $B_2$ therefore consists only of the forms $A_1$ and $B_1$:
+\[
+B_2:
+\quad f,(f,f)^2,((f,f)^2,f),r,\tau,(r,\tau),(\tau,\tau)^2.
+\]
+With $B_2$ one would now first have to combine the full system of the covariant of sixth degree $K=(ab)^4a_x^3b_x^3$, which may be set up according to the preceding paragraph. But among its forms a large number are reducible. First reducible are those forms which correspond to the covariants $(f,K)^2$, $l$, $V$ considered in the preceding paragraph, and to the invariants $(f,f)^6$ and $i$: namely $(K,p)^2$, $(K,p)^4$, $(p,p)^2$, $(K,K)^6$, $(p,p)^4$. Likewise reducible forms correspond to all transvections of powers of $l$ over powers of $V$. Consequently only the following forms remain irreducible:
+\[
+B':
+\quad K,(K,K)^2,((K,K)^2,K),p,(K,p),((K,K)^2,p).
+\]
+I denote their system, which in any case is again an $(A_2)$, by $B'$, and now first form, by transvection of $B_2$ and $B'$, a new $(A_2)$, which may be called $B_3$.
+
+The transvections $(P,Q)^r$ to be investigated here, of products $P$ of the forms of $B_2$ with products $Q$ of the forms of $B'$, shall be divided into the following four classes:
+\begin{enumerate}
+\item[I.] $r>2$.
+\item[II.] $r\leq2$ and $P$ or $Q$ contains more than one factor.
+\item[III.] $r=1$ and $P$ and $Q$ are forms of $B_2$ and $B'$.
+\item[IV.] $r=2$ and $P$ and $Q$ are forms of $B_2$ and $B'$.
+\end{enumerate}
+The forms of the first class have terms with the reducing factors
+\[
+(ak)^3,
+\quad (ak)^2(kk_1)^2,
+\quad (rk)^3,
+\quad (rk)^2(kk_1)^2,
+\quad (kr)(kr_1)(rr_1)^2.
+\]
+The forms of the second class have decomposing terms. Of the forms of the third class, those for which $P$ is equal to $((f,f)^2,f)$ or $(r,\tau)$ and $Q$ is equal to $((K,K)^2,K)$ or $(K,p)$ or $((K,K)^2,p)$ are functional determinants of functional determinants. Further, the transvections in which $Q$ denotes the form $(K,K)^2$ can, by means of the formula $\frac32(K,K)^2=(f,r)+Q_3$, be reduced to functional determinants of functional determinants. The transvection $(f,p)$ is reducible; the transvection $(p,\tau)$ has a term with the reducing factor $(kk_1)^2(kr)(rr_1)^2$. Thus, in the third class, only the following transvections remain irreducible:
+\[
+(f,K),
+\quad ((f,f)^2,K),
+\quad (r,K),
+\quad (\tau,K),
+\quad (r,p).
+\]
+Of the transvections of the fourth class, first those for which $Q$ is one of the last five forms of $B'$ have terms with the reducing factors
+\[
+(ak)^2(ak_1)^2,
+\quad (rk)^2(kk_1)^2,
+\quad (rk)(kk_1)^2(rr_1)^2.
+\]
+The transvections
+\[
+((f,f)^2,K)^2,
+\qquad (((f,f)^2,f),K)^2
+\]
+have terms with the reducing factor
+\[
+(ab)^2(ak)^2.
+\]
+The form $((r,\tau),K)$ is reducible. Thus only the following remain irreducible:
+\[
+(f,K)^2,
+\quad (r,K)^2,
+\quad (\tau,K)^2.
+\]
+\textit{The system $B_3$ is therefore formed from the following 20 forms:}
+\[
+\begin{gathered}
+B_3:
+\quad f,(f,f)^2,((f,f)^2,f),r,\tau,(r,\tau),(\tau,\tau)^2,K,(K,K)^2,((K,K)^2,K),\\
+p,(K,p),((K,K)^2,p),(f,K),(f,K)^2,((f,f)^2,K),(r,K),\\
+(r,K)^2,(\tau,K),(\tau,K)^2,(r,p).
+\end{gathered}
+\]
+With it we now combine the system $B_4$ of the linear form $\alpha$, which consists of it alone. Thus there arises a new system $(A_2)$, which first comprises the forms of $B_3$ and $B_4$ and the irreducible transvections
+\[
+U=(P,\alpha^r)^r
+\]
+of forms $P$ and $B_3$ over powers of $\alpha$. \textit{But the $(A_2)$ so obtained is then an $A_2$, because it comprises all principal forms, and therefore in it the forms expressible by forms of lower order,}
+\[
+((K,K)^2,K)
+\quad\text{and}\quad
+((K,K)^2,p)
+\]
+\textit{may now also be omitted.}
+
+Let us investigate the transvections $(P,\alpha^r)^r$ more closely. Among them the following are reducible:
+\begin{enumerate}
+\item those for which $P$ is one of the forms: $f$, $(f,f)^2$, $((f,f)^2,f)$, $(f,K)$, $(f,K)^2$, $((f,f)^2,K)$; for they have terms with the reducing factor $(a\alpha)$;
+\item those for which $P$ is one of the forms: $K$, $(K,K)^2$, $(K,\varphi)$, $(K,r)$, $(K,r)^2$, $(K,\tau)$, $(K,\tau)^2$, $((K,K)^2,K)$, $((K,K)^2,p)$ (compare formulas 17, 24, 25);
+\item those for which $r>1$ and $P$ is one of the forms $p$, $(p,r)$. For they have terms with the reducing factor $(p\alpha)^2$;
+\item $(r,\alpha^3)^3$.
+\end{enumerate}
+\textit{The system $A_2$ consequently consists of the following 29 forms:}
+\[
+\begin{gathered}
+A_2:
+\quad f;(f,f)^2;((f,f)^2,f);r;\tau;(r,\tau);(\tau,\tau)^2;K;(K,K)^2;p;(K,p);\\
+(f,K);(f,K)^2;((f,f)^2,K);(r,K);(r,K)^2;(\tau,K);(\tau,K)^2;\\
+(r,p);\alpha;(r,\alpha);(r,\alpha^2)^2;(\tau,\alpha);(\tau,\alpha^2)^2;((r,\tau),\alpha);((r,\tau),\alpha^2)^2;\\
+((r,\tau),\alpha^3)^3;(p,\alpha);((r,p),\alpha).
+\end{gathered}
+\]
+With it the system
+\[
+B:
+\quad l,(l,l)^2
+\]
+of the quadratic covariant $l=(f,f)^6$ is to be connected, in order to reach an $A_3$ and hence \textit{the full system of $f$}. According to the discussions given in §. 12, apart from the forms of $\Gamma$ and $B$, it can comprise only the following transvections:
+\begin{enumerate}
+\item[I.] $(P,l^\rho)^{2\rho}$, where $P$ is one of the forms of $\Gamma$ itself;
+\item[II.] $(P,l^\rho)^{2\rho-1}$, where $P$ is a form of $\Gamma$ which is either not a functional determinant, or is a functional determinant of degree $2\rho-1$ respectively $2\rho$, or finally a functional determinant of two forms of odd degree;
+\item[III.] $(P_1P_2,l^\rho)^{2\rho}$, where $P_1$ and $P_2$ are two forms of $\Gamma$ which are not simultaneously functional determinants and whose degrees, added, give $2\rho$.
+\end{enumerate}
+Among these forms there are certainly still very many superfluous ones. But I have not yet carried out the corresponding investigation.
+
+\begin{center}
+{\bfseries §. 18.\quad The system of $f=a_x^8$.}
+\end{center}
+
+For forms of eighth order I content myself with again emphasizing what follows for them from the preceding general considerations. For them one knows the $(A_2)$ (compare §. 10):
+\[
+f,(f,f)^2,((f,f)^2,f),K=(f,f)^4,(f,K),((f,f)^2,K),(f,K)^2,(f,K)^8.
+\]
+It must be connected with the full system of the biquadratic form $L=(f,f)^6$, which consists of the following five forms:
+\[
+B:
+\quad L,(L,L)^2,((L,L)^2,L),((L,L)^2,L),(L,L)^4,
+\]
+in order to obtain $A_3$. The system $A_4$, \textit{the full system of $f$}, is then obtained simply by adjoining the invariant $(f,f)^8$.
+
+\begin{center}
+{\bfseries §. 19.\quad Concluding remarks.}
+\end{center}
+
+In conclusion let it be permitted briefly to characterize the scope of the preceding investigations and to show the progress which they exhibit over earlier work.
+
+It should first be observed that these investigations refer only to \textit{general}, here binary, forms. Indeed the theorem on the symbolic representability of all invariant formations, which necessarily underlies them, rests precisely on this assumption. For in its proof the coefficients of the ground form are thought of as varying without restriction; whereas, when one is speaking of special forms, one can let them run only through those systems of values which belong precisely to special forms. For special forms the theorem is then also not correct. They possess invariants (covariants) which are integral functions of their coefficients without being representable as symbolic products. In the examples known up to now these can be represented as \textit{quotients} of symbolic products,\footnote{If, for example, a biquadratic form $f$ is the square of a quadratic one, then $\frac{H}{f}$, where $H$ denotes the Hessian form, is an invariant, etc.} but nothing general is yet known about this, even though one may suppose that an analogous behavior occurs in all cases. For the present one can state only the self-evident assertion that all invariants of general forms are also invariants of special forms.
+
+One may wish the preceding investigations to be carried further in still another direction. It has nowhere been shown that the form systems set up do not perhaps contain further reducible forms. In this respect I must confine myself to saying that, for the form systems written out completely, I have in fact convinced myself of the impossibility of restricting them further; but I possess no general method for carrying out such proofs except in special cases.
+
+One will naturally try to transfer the preceding considerations from binary forms to forms with arbitrarily many variables. But here a significant difficulty immediately appears, because with more than three variables one no longer surveys from the outset the totality of possible symbolic formations in the way one does for binary forms, and also still for ternary forms. An example will elucidate this: a Plücker linear complex can be represented symbolically by
+\[
+(abu)=0
+\]
+(where only the subdeterminants $(ab)$ have real meaning). If, for example, one wishes to represent in point coordinates the hyperboloid common to three linear complexes, it becomes necessary to separate the symbols $a$, $b$ and place them in different determinant factors (to resolve the symbolic stems $(ab)$ into their branches $a$, $b$). These determinant factors are then, however, no longer independent of one another. One certainly knows that their aggregate must vanish when one sets $a=b$, but without a preceding special investigation (which I have carried out for forms with 4 and 5 variables) one no longer surveys the totality of possibilities permitted for them. One therefore can no longer, as with binary forms or even with ternary forms, write down all occurring formations schematically without further ado.
+
+On the other hand one can transfer to forms with more variables the next most important auxiliary means used above: I mean the \textit{series developments} which allow forms with several series of binary variables to be composed, with the aid of the identical covariants $(xy)$ etc., from \textit{polars} of forms with only one series of variables.
+
+For this purpose we have to form a generalized conception of what, for binary forms, one calls a polar, while the conception that the polar arises from a form with only one series of variables by certain processes recedes relatively into the background: \textit{A polar is a form with several series of variables $x,y,z,\bdots$ which satisfies certain differential relations with respect to them.} One obtains these by replacing, in the determinants $(xy)$, $(xz),\bdots$, the variables by the differential quotients to be taken with respect to them,\footnote{More correctly one would say that one replaces $x_1$, $x_2$ by $-\frac{d}{dx_2}$, $\frac{d}{dx_1}$; but for the result the procedure indicated in the text accomplishes the same thing. A similar remark applies later.} contracting, in the evaluation of the determinant, the aggregates $\frac d{dx}\cdot\frac d{dy}$, etc., into second differential quotients, and setting the result equal to zero. Thus the following conditions are obtained:
+\[
+\frac{d^2}{dx_1\,dy_2}-\frac{d^2}{dx_2\,dy_1}=0,
+\qquad
+\frac{d^2}{dx_1\,dz_2}-\frac{d^2}{dx_2\,dz_1}=0
+\quad\text{etc.}\bdots
+\]
+If one now calls every form satisfying these relations a normal form (and it is easy to show that, for binary forms, every normal form is a polar of a form with only one series of variables), then the theorem on series development may be stated, somewhat indefinitely, as follows:
+
+\textit{Every binary form with several series of variables can be developed into a series whose terms are products of identical covariants $(xy)$, $(xz),\bdots$ with normal forms.}
+
+We now pass to ternary forms. A ternary form may contain an arbitrary series of point coordinates $x,y,z,\bdots$ as well as line coordinates $u,v,w,\bdots$. It will be called a normal form if it satisfies certain differential relations, which in turn arise from the determinant $(xyz)$ or also from the determinant $(uvw)$, though now, corresponding to the different interpretations that may be attached to such a determinant, they are of many forms.
+
+First regard the $z$ as arbitrary quantities $\gamma$, replace the $x$ and $y$ by the differential quotients taken with respect to them, and require that the differential operation
+\[
+\begin{vmatrix}
+\dfrac d{dx_1}&\dfrac d{dx_2}&\dfrac d{dx_3}\\[0.2em]
+\dfrac d{dy_1}&\dfrac d{dy_2}&\dfrac d{dy_3}\\[0.2em]
+\gamma_1&\gamma_2&\gamma_3
+\end{vmatrix}
+\]
+(where, in evaluating the determinant, one again writes $\frac d{dx}\cdot\frac d{dy}$ as $\frac{d^2}{dx\,dy}$), when applied to the normal form, shall give zero, whichever occurring series of point coordinates $x,y$ one has chosen. Likewise, if by $x,y,z$ one understands any three series of point coordinates, the result of the operation
+\[
+\left(\frac d{dx}\quad\frac d{dy}\quad\frac d{dz}\right)
+\]
+shall be zero (in evaluating the determinant, each $\frac d{dx}\cdot\frac d{dy}\cdot\frac d{dz}$ is to be contracted to $\frac{d^3}{dx\,dy\,dz}$). The analogous requirements will be imposed on the occurring series $u,v,w,\bdots$ of line coordinates. --- Finally, however, from the determinant $(xyz)$, by setting the line coordinates $(yz)$ equal to $u$, or also from the determinant $(uvw)$, by writing the point coordinates $x$ for $(vw)$, one obtains the expression $u_x$, and from it, by replacing the $u$ by $\frac d{du}$ and the $x$ by $\frac d{dx}$, the differential operation
+\[
+\frac{d^2}{dx_1\,du_1}+\frac{d^2}{dx_2\,du_2}+\frac{d^2}{dx_3\,du_3}.
+\]
+If a form is to be called a normal form, this operation too, applied to it, must give zero, whichever of the occurring series of point and line coordinates may be denoted by $x$ and $u$ respectively.
+
+The normal forms so defined are, as one easily finds, \textit{polars of normal forms with only one series of point coordinates $x$ and only one series of line coordinates $u$} (or also, if one throws everything onto point coordinates, polars of forms with only two series of point coordinates $x$ and $y$, of which the latter occurs only in the combination $(xy)$). \textit{An arbitrary form with any point coordinates $x,y,z,\bdots$ and line coordinates $u,v,w,\bdots$ can always be developed into a series whose individual term is the product of a normal form with identical covariants $u_x$, $(xyz)$, etc.}
+
+The following historical remarks may here find their place. The differential relation
+\[
+\frac{d^2}{dx_1\,du_1}+\cdots=0
+\]
+I first used in an article on combinants (Mathemat. Annalen Bd. 3), and showed that every form containing $x$ and $u$ can be put together, with the aid of $u_x$, from forms satisfying this relation.\footnote{For geometry it is important that, from every form which has the factor $u_x$, one can remove this factor by means of this method while preserving the invariant form for the quotient.} Clebsch then, in his work ``Ueber eine Fundamentalaufgabe der Invariantentheorie'' (Göttinger Abhandlungen Bd. 19), showed, with reference to the question presently at issue, that every ternary form can be built up with the aid of identical covariants from polars of such forms as contain only one series of $x$ and $u$. He further introduced into the science those figures which are represented geometrically by the vanishing of such a form, under the name Connexe, and in particular called them normal Connexe when they satisfy the relation in question.
+
+If, therefore, the results just established for ternary forms are contained, if not in the same shape then at least in essence, in the named paper of Clebsch, one can carry the investigation essentially further for forms with more variables. Whereas, for example, in quaternary forms he derives all other forms by polar formation from such forms as contain only one series of point coordinates $x$, one of line coordinates $p_{ik}$, and one of plane coordinates $u$, and which satisfy the differential relations
+\[
+\frac{d^2}{dx_1\,du_1}+\cdots+\frac{d^2}{dy_4\,du_4}=0,
+\]
+\[
+\frac{d^2}{dp_{12}\,dp_{34}}+
+\frac{d^2}{dp_{13}\,dp_{42}}+
+\frac{d^2}{dp_{14}\,dp_{23}}=0,
+\]
+which can be derived from the complete determinant $(xyzt)$ by different kinds of grouping in the manner indicated above, --- I replace these ground forms by simpler ones, which also satisfy such conditions as arise for example from the determinant $(xyzt)$ when one regards the $t$ as arbitrary quantities, combines the $(yz)$ into line coordinates $p_{ik}$, replaces the $x$ by the $\frac d{dx}$ and the $p$ by the $\frac d{dp}$, and finally, in the calculation, contracts $\frac d{dx}\cdot\frac d{dp}$ to $\frac{d^2}{dx\,dp}$. Such a normal form, as I state without proof, can always be replaced by a form which contains three series of point coordinates $x,y,z$, and of these the latter only in the combinations $(xy)$, $(xyz)$.
+
+So much for these series developments. It is self-evident that a large part of the processes and concepts otherwise used above carries over to forms with arbitrarily many variables: the folding process, the transvection process, the doctrine of the transvection of systems and its connection with certain Diophantine equations, the theory of reducing factors, etc. The difficulty is only that, in view of the great number of formations which occur and the awkwardness just discussed in decomposing the symbolic stems into their branches, one obtains no survey of the whole. A proof of finiteness has therefore succeeded for me up to now only in individual cases. I published such a proof for cubic ternary forms (Math. Annalen Bd. I); I am also in a position to give a proof for biquadratic ternary forms. That the combination of finite systems yields something finite I succeeded in showing for ternary and quaternary forms; the full form system of two simultaneous quadratic ternary forms will find its place in the forthcoming geometrical lectures of Clebsch edited by Herr Lindemann. ---
+
+Finally, if we ask in what respect the presentation given above differs from that given by me on an earlier occasion, and especially from that contained in Clebsch's book, the following points may be the chief ones.
+
+The forms arising from a ground form $f$ of the $n^{\mathrm{th}}$ degree were then first divided into two great classes, according as they contain, for every occurring symbol $a,b,c,\cdots$, a linear factor $a_x,b_x,c_x,\cdots$, or not. The former may be regarded as taken over from forms of the $(n-1)^{\mathrm{th}}$ degree and therefore form by themselves a complete system, provided that the theorem of finiteness to be proved is already regarded as proved for $n-1$. I then showed that every form can be decomposed into two parts: into one which contains symbolic products with the bracket factor $(ab)^\lambda$ $(\lambda>\frac n2)$, and into forms $W$ taken over (forms taken over which contain a linear factor in a power $>\frac n2$). This theorem, remarkable in itself,\footnote{Cf. Cayley. Math. Annalen Bd. 5. pag. 625.} is no longer used in setting up the system; the forms $W$ have been replaced by the first half of the systems $A$:
+\[
+A_0,A_1,\bdots A_\mu
+\left\{
+\begin{array}{l}
+\mu\leq\dfrac n4,\\
+\mu+1>\dfrac n4
+\end{array}
+\right.
+\]
+\textit{The progress lying herein is that what was formerly implicitly taken from the theory of forms of order $n-1$ is now stated directly as a general property of a form of order $n$.} (One can indeed prove that the forms which constitute the $A$ now used are, in the sense of the older theory, forms $W$.) In this respect I can only regret that, for the higher $A$, I still now use the full systems of forms of lower degree.
+
+Through the introduction of the $A$ of the first category an irregularity of the earlier proof has disappeared, which occurred when $n$ was divisible by 4. Namely, one had to form and combine with one another the complete systems of the different covariants
+\[
+(ab)^{\lambda+2}a_x^{n-\lambda-2}b_x^{n-\lambda-2}
+\]
+(where $\lambda$ has the meaning just indicated). Now if $n$ is divisible by 4, one of these covariants is a form $K$ of the same degree as $f$, whose full system is therefore still unknown. But there one could prove that this full system is not needed, that it suffices to select from among its forms an in any case finite system $B$, such as in the present presentation is to be formed for all covariants of second order in the coefficients whose degree is $\geq n$. And in fact the method then applied only in a particular case contains the germ of the one now adopted, in which the covariant $K$ in question is counted among the covariants of higher degree.
+
+Among other advances I mention first the introduction of the \textit{Diophantine equations} in the combination of the systems: the transvections to be retained are now defined outright by the Diophantine equations.
+
+I mention further the introduction of the \textit{folding process} beside the transvection process formerly used alone. The exclusive use of the latter brought with it that new symbols were introduced for every covariant. This now happens only in individual cases, so that it was possible to introduce a new principle of classification, the \textit{rank} of a form.
+
+In this way it was possible to outline the form system not only for forms of the first six degrees, but also for forms of the seventh and eighth degrees. It was the example of forms of the seventh degree on which I developed the present general method, just as the earlier presentation had grown essentially from the study of forms of the fifth and sixth degrees. But the general theory, which for the first five degrees achieves in simplicity everything one could wish, is not yet satisfactory in its application to forms of the sixth and seventh degrees. It is probable that, as already indicated above on occasion, one would do well to introduce substages beside the stages $Q_\mu$, referring to the bracket factors occurring subsequently; then the principles of division, rank and dimension, which even now play only an incidental role, might perhaps disappear.
+
+A method as direct as possible for setting up the full systems, first of binary forms and then also for forms with more variables, would indeed be a great advance for algebra. I mention only this: with knowledge of the full system, for carrying out any problem concerning a form one immediately possesses a given procedure; one knows in advance the forms from which the final result must be composed and the way in which they can occur combined; one then has only still to determine the numerical factors with which the individual form-aggregates are endowed.
+
+\begin{flushleft}
+Erlangen, 20 March 1875.
+\end{flushleft}
+\begin{flushright}
+Gordan.
+\end{flushright}
+
+\end{document}

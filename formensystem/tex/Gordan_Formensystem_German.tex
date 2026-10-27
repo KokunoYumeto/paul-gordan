@@ -1,0 +1,1772 @@
+
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\geometry{paperwidth=6.5in,paperheight=9in,margin=0.55in}
+\pagestyle{empty}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.22em}
+\setlength{\abovedisplayskip}{0.55em}
+\setlength{\belowdisplayskip}{0.55em}
+\allowdisplaybreaks
+\emergencystretch=2em
+\newcommand{\stufe}[1]{#1^{\mathrm{ten}}}
+\newcommand{\publishermark}{\begingroup\Large\bfseries\shortstack{B\\[-0.52em]G}\endgroup}
+\providecommand{\bdots}{\cdots}
+\begin{document}
+\small
+
+% Source: Paul Gordan, Ueber das Formensystem binaerer Formen, 1875. Source PDF: berdasformensys00gordgoog.pdf.
+% Scope of this file: source PDF pp. 006, 008--014; printed title page and printed pp. 1--7.
+
+\begin{center}
+{\large UEBER DAS}\par\vspace{1.2em}
+{\LARGE\bfseries FORMENSYSTEM}\par\vspace{1.4em}
+{\Large\bfseries BINAERER FORMEN.}\par\vspace{3em}
+{\small VON}\par\vspace{2.5em}
+{\large\bfseries DR. PAUL GORDAN,}\par
+{\scriptsize ORDENTLICHEM PROFESSOR DER MATHEMATIK.}\par\vspace{3.2em}
+\publishermark\par\vfill
+{\large\bfseries LEIPZIG,}\par
+{\bfseries DRUCK UND VERLAG VON B. G. TEUBNER.}\par
+{\large\bfseries 1875.}
+\end{center}
+
+\clearpage
+
+\begin{center}
+{\bfseries Ueber das Formensystem binärer Formen.}
+\end{center}
+
+Nachdem man gelernt hatte, alle Bildungen, welche Invarianteneigenschaft besitzen, durch eine gleichförmige Symbolik darzustellen, wurde die Weiterführung der Invariantentheorie zum grossen Theile eine Aufgabe combinatorischer Thätigkeit. Es handelte sich darum, die an und für sich unbegränzte Zahl von Formen, die zu gegebenen Grundformen gehören, nach übersichtlichen Principien zu classificiren und nach ihren gegenseitigen Beziehungen zu erforschen. Ich habe in dieser Hinsicht im 69. Bande des Borchardt'schen Journals den Satz aufgestellt und bewiesen: \emph{dass zu jeder binären Form ein endliches System gehört, durch dessen Formen sich die unbegränzt vielen anderen rational und ganz mit blosser Hülfe numerischer Factoren darstellen lassen.} Aber der damalige Beweis war complicirt und undurchsichtig, und auch die Vereinfachungen, welche ich in einer späteren Abhandlung (Mathematische Annalen Bd. 3) entwickelte (ich dehnte dort das genannte Theorem überhaupt auf Systeme von binären Formen aus), haben diesen Uebelstand nur eingeschränkt, nicht beseitigt. So ist denn auch die Darstellung, wie sie \emph{Clebsch} von diesen Untersuchungen in seiner „Theorie der binären Formen`` gegeben hat, trotz der vielen Sorgfalt, welche \emph{Clebsch} gerade auf sie verwandt hat, eine wenig ansprechende.
+
+Es ist mir nun durch fortgesetzte Versuche allmählich gelungen, den Beweis in der That bedeutend zu verbessern, so dass jetzt dieselben Betrachtungen, durch welche die Endlichkeit des Formensystems erschlossen wird, zugleich einen Einblick gewähren in die gegenseitigen Beziehungen der beizubehaltenden Formen, in die \emph{Structur} des von ihnen gebildeten Systems. Es wird dadurch möglich sein, nicht nur, wie bisher, für die Formen bis incl. zum sechsten Grade das kleinste vollständige System im Folgenden anzugeben (und zwar auf viel einfacherem Wege als früher), sondern auch für die Formen des 7\textsuperscript{ten} und 8\textsuperscript{ten} Grades wo nicht das System wirklich hinzuschreiben, so doch dasselbe eng zu umgränzen.
+
+Ich benutze dabei, im Vergleiche mit den früheren Arbeiten, eine bessere, oder, wenn der Ausdruck gestattet ist, \emph{practischere} Classification der auftretenden Formen: ich gebrauche neben den früher angewendeten Processen der Ueberschiebung etc. andere, zweckmässigere. Die Brauchbarkeit solcher Festsetzungen hängt immer wesentlich vom Erfolge ab, und ich verspare es daher auch bis zum Schlusse, die Fortschritte einzeln hervorzuheben, welche meine nunmehrige Darstellung gegenüber der in Clebsch's Buche enthaltenen aufweist. Ich werde dort auch Gelegenheit haben, die Beschränkungen einmal deutlich zu bezeichnen, denen diese Betrachtungen immer unterworfen sind, sowie andererseits anzudeuten, wie man ähnliche Betrachtungen bei Formen mit mehr Variabeln durchführen kann.
+
+Es ist übrigens wohl kaum nöthig, auszusprechen, dass ich die im Folgenden eingehaltene Darstellung auch nicht als die definitive betrachte. Je mehr die Wissenschaft fortschreitet, um so mehr wird es möglich, die Resultate, welche sich sonst nur durch längere Zwischenbetrachtungen beweisen liessen, unmittelbar einzusehen: und man wird einen mathematischen Gegenstand erst dann als erledigt betrachten, wenn dieses Ziel erreicht ist.
+
+Der weiterhin befolgte Gang der Entwickelung ist dieser. In §. 1 schicke ich zunächst einen Theil der später zu verwerthenden Definitionen voraus. Sodann folgen in §. 2 Reihenentwickelungen, wie sie zum Theil schon in \emph{Clebsch's} Buche enthalten sind, und die in §. 3, 4 und weiterhin benutzt werden, um Relationen zwischen Formen herzustellen. In §. 5 beginnt die Betrachtung der Formensysteme mit der Unterscheidung besonderer Arten derselben; in §. 6, 7 wird die Combination verschiedener Systeme untersucht. Die Endlichkeit des Formensystems einer einzelnen binären Form und die Art, wie man dasselbe aufzubauen hat, ergeben sich dann in §. 8 nahezu von selbst, so dass für die übrigen Paragraphen nur noch die Anwendung auf die Formen erster, zweiter \ldots{} bis achter Ordnung bleibt.
+
+\begin{center}
+{\bfseries §. 1.\quad Definitionen.\quad Faltungs-Process.\quad Stufe einer Form.\\ Dimension.\quad Rang.}
+\end{center}
+
+Der Ausgangspunkt zur Charakterisirung und zur Behandlung der invarianten Bildungen, wie er in Folgendem gewählt ist, ist die \emph{symbolische Darstellung}. Es soll damit angedeutet sein, dass dieselbe für den einzuschlagenden Gang der Entwickelung die Richtschnur abgab, wie im einzelnen Falle den nothwendigen Durchgangspunkt. Dagegen ist von dem eigentlichen symbolischen Rechnen, wie dasselbe z. B. in \emph{Clebsch's} Buche gehandhabt wird, insbesondere von den dort immer benutzten Identitätssätzen wenig Anwendung gemacht, indem die schon in der Einleitung genannten Reihenentwickelungen an seine Stelle ein allgemeineres, in den hier vorkommenden Fällen directeres Verfahren setzen.
+
+Die symbolische Rechnung lässt jede Invariante als ein Aggregat symbolischer Producte erscheinen, welche Factoren von zweierlei Typus enthalten: lineare Factoren $a_x$, $b_x\ldots$ und andere von der Gestalt $(ab)$, $(ac)\ldots$, die ich als \emph{Klammerfactoren} bezeichne. Neben der Zahl der überhaupt vorkommenden Symbole (der \emph{Ordnung} der Form in den Coëfficienten der Grundform) und dem \emph{Grade} in den Variabeln, die sich als unsymbolische Charakteristika einer Form von selbst aufdrängen, wird weiterhin die Zahl und Art der vorkommenden Klammerfactoren desshalb eine wesentliche Rolle spielen, weil die Klammerfactoren bei allen auf eine Bildung anzuwendenden Processen erhalten bleiben. Auf sie bezieht sich daher auch die wichtigste im Folgenden eingehaltene Eintheilung der aus einer Grundform hervorgehenden Bildungen: die Eintheilung nach der \emph{Stufe}.
+
+Es ist bekannt (vergl. Clebsch's Buch Seite 41), dass man eine ungerade Potenz eines Klammerfactors immer in die nächst höhere gerade verwandeln kann. Man kann sich daher auf die Betrachtung solcher symbolischer Producte beschränken, in welchen die höchste vorkommende Potenz eines Klammerfactors gerade ist. Ist nun dieselbe die $2\mu^{\mathrm{te}}$ oder eine noch höhere, so nenne ich das Product \emph{eine Form auf der $\mu^{\mathrm{ten}}$ Stufe und bezeichne es als $Q_\mu$.} Eine Form auf der $\mu+1^{\mathrm{ten}}$ Stufe ist also auch immer ein $Q_\mu$. Auch bezeichne ich weiterhin mit $Q_\mu$ einfach jedes Aggregat von Formen $Q_\mu$.
+
+Entsprechend der Unterscheidung zwischen linearen symbolischen Factoren und Klammerfactoren kann man folgenden Process zur Ableitung neuer Formen aus einem symbolischen Producte aufstellen: \emph{Man ziehe irgend zwei lineare Factoren $a_x$, $b_x$ zu einem Klammerfactor $(ab)$ zusammen.} Diese Operation, die zunächst unsymbolisch auf keinerlei Bedeutung Anspruch macht, wird des Weiteren fortwährend angewandt und soll als \emph{Faltung} bezeichnet sein.\footnote{Es werden weiterhin gelegentlich auch Formen gefaltet werden, welche nicht selbst als symbolische Producte, sondern als Aggregate von solchen
+\[
+\sum P_i,\quad \sum Q_k
+\]
+gegeben sind. Ich verstehe darunter die Darstellung einer Form
+\[
+\sum(P_i Q_k),
+\]
+wo die $(P_i Q_k)$ aus den verschiedenen $P_i\cdot Q_k$ durch Faltung entstehn.}
+
+Durch wiederholte Faltungen werden aus einem symbolischen Producte eine ganze Reihe von Covarianten und Invarianten entstehen. Man muss dieselben als wesentlich zusammengehörig betrachten, insofern sie eine Zahl von Klammerfactoren gemeinsam haben: die Klammerfactoren desjenigen symbolischen Productes, von dem man ausging. Dementsprechend belege ich sie mit einem gemeinsamen Attribute (welches übrigens möglicherweise besser gewählt werden kann), indem ich als \emph{Dimension einer Form den Grad (in den Variabeln) der Ausgangsform bezeichne, aus welcher man die Form durch Faltung entstanden denkt.} Ein und dieselbe Form wird sonach sehr verschiedene „Dimensionen`` erhalten können. Die höchste Dimension wird ihr zu Theil werden, wenn man sie aus einer Potenz von $f=a_x^n=b_x^n\ldots$:
+\[
+f^r=a_x^n\cdot b_x^n\ldots
+\]
+durch Faltung ableitet, die niederste, wenn man sie selbst als Ausgangsform annimmt. ---
+
+Bei diesen Festsetzungen war implicite vorausgesetzt, dass die Grundform $f$ nur eine Reihe von Variabeln $x_1$, $x_2$ enthielt. Will man Formen mit mehreren Reihen $x_1$, $x_2$; $y_1$, $y_2$; $z_1$, $z_2\ldots$ betrachten, so wird der Satz von fundamentaler Wichtigkeit, dass man alle solche Formen mit Hülfe der Determinanten $(xy)$, $(xz)\ldots$ aus Formen mit nur einer Reihe von Variabeln durch den \emph{Polarenprocess} ableiten kann. Sei
+\[
+f=a_x^n
+\]
+so bezeichne ich die Polaren
+\[
+a_x^{n-k}\cdot a_y^k,\quad a_x^{n-k-\lambda}a_y^k a_z^\lambda
+\]
+weiterhin folgendermassen:
+\[
+f_{y^k},\quad f_{y^k z^\lambda}
+\]
+und erinnere nur daran, dass dieselben identisch sind mit den Coëfficienten von $\varrho^k$ in der Entwickelung von $f(x+\varrho y)$, bez. von $\varrho^k\sigma^\lambda$ in der Entwickelung von $f(x+\varrho y+\varrho z)$, sofern man die letzteren durch
+\[
+\frac{n!}{k!(n-k)!}\quad\text{bez. durch}\quad \frac{n!}{k!\lambda!(n-k-\lambda)!}
+\]
+dividirt.
+
+Unterwirft man ein symbolisches Product $P$ dem Polarenprocesse, so werden, allgemein zu reden, eine Anzahl verschiedener Terme entstehen, deren jeder einzelne, bis auf einen Zahlenfactor, aus $P$ hervorgeht, indem man in einer Reihe der Factoren $a_x$, $b_x$, \ldots{} statt $x$, $y$ oder $z$ schreibt. Jeder solche Term heisse ein \emph{Glied} der Polare.
+
+Es seien jetzt gleichzeitig \emph{zwei} Grundformen gegeben:
+\[
+f=a_x^n,\quad \varphi=\alpha_x^m.
+\]
+Die wichtigsten simultanen Bildungen sind diejenigen, welche linear in den beiderseitigen Coëfficienten sind und welche sich also symbolisch folgendermassen darstellen:
+\[
+(a\alpha)^k a_x^{n-k}\alpha_x^{m-k}.
+\]
+Dieselben werden die \emph{Ueberschiebungen} von $f$ über $\varphi$ genannt und folgendermassen bezeichnet:
+\[
+(f,\varphi)^k;
+\]
+$k$ heisst der Grad der Ueberschiebung. Man kann die Ueberschiebung einmal so auffassen, als sei sie aus der $k^{\mathrm{ten}}$ Polare
+\[
+f_{y^k}=a_x^{n-k}a_y^k
+\]
+entstanden, indem man für $y_1$, $y_2$ bez. die Symbole $\alpha_2$, $-\alpha_1$ eintrug und dann mit $\alpha_x^{m-k}$ multiplicirte, oder auch, indem man auf das Product
+\[
+f\cdot\varphi=a_x^n\cdot \alpha_x^m
+\]
+nach einander $k$ Faltungen anwandte. ---
+
+Dieser Ueberschiebungsprocess wird im Folgenden namentlich auch auf solche Formen $P_1$, $P_2$ angewandt, die nicht selbst Grundformen sind, sondern als symbolische Producte definirt sind. Sei $P_1$ mit Unterdrückung der in demselben vorkommenden Klammerfactoren, folgendermassen gegeben:
+\[
+P_1=r_{1,x}r_{2,x}\cdots r_{l,x},
+\]
+wo die Symbole $r_i$ auch zum Theil identisch sein können, und analog
+\[
+P_2=s_{1,x}s_{2,x}\cdots s_{m,x},
+\]
+so wird die $k^{\mathrm{te}}$ Ueberschiebung von $P_1$ über $P_2$ aus dem Producte der Klammerfactoren von $P_1$ und $P_2$ in folgende Summe bestehen:
+\[
+\sum \frac{(r_1s_1)\cdots(r_ks_k)r_{k+1,x}\cdots r_{l,x}s_{k+1,x}\cdots s_{m,x}}{\binom{l}{k}\binom{m}{k}},
+\]
+deren einzelne Glieder entstehen, indem man $k$ beliebige Linearfactoren von $P_1$ mit $k$ beliebigen Linearfactoren von $P_2$ faltet und durch die Anzahl aller Glieder dividirt. --- Bringt man an dem Producte $P_1\cdot P_2$ $k$ beliebige Faltungen an, so erhält man ein Glied einer Ueberschiebung zweier Formen $P_1'$, $P_2'$, die aus $P_1$ bez. $P_2$ durch Faltung entstehen. ---
+
+Bei der Anordnung der Bildungen, welche aus einer Grundform oder auch aus mehreren entstehen, spielt im Folgenden neben der Stufe einer Form und ihrer Dimension noch eine andere Zahl eine wichtige Rolle, die ich als ihren \emph{Rang} bezeichne (obwohl es möglich ist, dass es später zweckmässig scheint, Dimension und Rang fallen zu lassen und statt ihrer neben der Stufe Unterstufen einzuführen).
+
+Ich ertheile nämlich den Grundformen $f$, $\varphi$, $\psi\cdots$ irgendwelche feste Zahlen $\alpha_1$, $\alpha_2$, $\alpha_3\cdots$ (die nicht einmal ganz zu sein brauchen) und gebe dann einer Form, die $c_1$ Symbole von $f$, $c_2$ Symbole von $\varphi$, $c_3$ Symbole von $\psi$ enthält, den Rang:
+\[
+c_1\alpha_1+c_2\alpha_2+c_3\alpha_3+\cdots.
+\]
+Dabei kommt es vor, dass ich Covarianten von $f$ oder von anderen Formen:
+\[
+K=k_x^r,\quad L=l_x^s,\cdots
+\]
+mit besonderen Rangzahlen: $\beta_1$, $\beta_2$, \ldots{} behaftete. Enthält dann eine Form die Symbole $k$, $l$ dieser Covarianten, so ersetze ich dieselben, um den Rang zu erhalten, nicht erst durch die Symbole der Grundformen $f$, $\varphi$, $\psi$, \ldots, sondern ich zähle so, als wenn $K$, $L$, \ldots{} selbst Grundformen mit den zugehörigen Zahlen $\beta_1$, $\beta_2$, \ldots{} wären. Das Product z. B.
+\[
+f^{c_1}\varphi^{c_2}\cdots K^{d_1}L^{d_2}\cdots
+\]
+hat den Rang $c_1\alpha_1+c_2\alpha_2+\cdots+d_1\beta_1+d_2\beta_2+\cdots$. Dabei ist denn freilich deutlich, dass der Rang einer Form verschieden ausfallen kann, je nach der Weise, in der die Form geschrieben oder entstanden gedacht wird. Rang und Dimension, die mit einander diese Unbestimmtheit theilen, gelten beide auch nicht als bleibende Attribute einer Form, sondern werden nur bei der Aufstellung und Combination der Systeme gebraucht, um die verschiedenen Formen anzuordnen und diejenigen, die weiterhin weggelassen werden dürfen, leichter zu erkennen.
+
+\begin{center}
+{\bfseries §. 2.\quad Entwickelungen von Formen mit verschiedenen Reihen\\ von Variabeln.}
+\end{center}
+
+In diesem Paragraphen sollen die schon wiederholt erwähnten Entwickelungen mitgetheilt werden, welche Formen mit mehreren Reihen Variabler auf solche mit nur einer Reihe zurückzuführen gestatten. Was ihre Herleitung betrifft, so verweise ich auf die Darstellung in Clebsch's Buche Seite 22 oder auf die von mir im dritten Bande der mathematischen Annalen gegebene Entwickelung.
+
+Eine Form $F$, die zwei Reihen Variabler $x$ ($x_1$ und $x_2$) und $y$ ($y_1$ und $y_2$) enthält und in ihnen bez. vom Grade $m$ und $n$ ist, lässt sich symbolisch in der Weise darstellen, dass man schreibt:
+\[
+F=r_x^m s_y^n,
+\]
+wo also im Allgemeinen erst die Verbindungen der $r$, $s$ eine reale Bedeutung bekommen, obwohl der Fall durchaus nicht ausgeschlossen ist, dass $F$ in zwei Factoren $r_x^m$ und $s_y^n$ zerfällt. Man bilde nun zunächst durch Faltung die sogenannten Elementar-Covarianten:
+\[
+r_x^m s_x^n,\quad (rs)r_x^{m-1}s_x^{n-1},\quad (rs)^2 r_x^{m-2}s_x^{n-2}\cdots,
+\]
+die als
+\[
+(r,s)^0,\quad (r,s)^1,\quad (r,s)^2\cdots.
+\]
+bezeichnet sein mögen. Dann ist die für $F$ geltende Reihenentwickelung, unter Anwendung der oben für Polaren verabredeten Bezeichnung, die folgende:\footnote{Umgekehrt kann man auch die Polaren $(r,s)^i_{y^{n-i}}$ durch die Elementar-Covarianten ausdrücken. Man findet:
+\[
+(r,s)^i_{y^{n-i}}=\sum_k\frac{\binom{m-i}{k}\binom{n-i}{k}}{\binom{m+n-2i}{k}}(rs)^{i+k}r_x^{m-i-k}s_y^{n-i-k}(xy)^k.
+\]}
+\[
+\text{(I.)}\quad F=r_x^m s_y^n=\sum_i\frac{\binom{m}{i}\binom{n}{i}}{\binom{m+n-i+1}{i}}(r,s)^i_{y^{n-i}}\cdot(xy)^i.
+\]
+
+Aus dieser Reihe mögen wir zunächst einige andere ableiten. Setzen wir für $m$ und $n$ die Zahlen $(m-k)$ und $(n-k)$ und multipliciren mit $(rs)^k$, so erhalten wir:
+\[
+\text{(I$_a$)}\quad (rs)^k r_x^{m-k}s_y^{n-k}=\sum_i\frac{\binom{m-k}{i}\binom{n-k}{i}}{\binom{m+n-2k-i+1}{i}}(r,s)^{i+k}_{y^{n-i-k}}\cdot(xy)^i.
+\]
+Differentiiren wir diese Reihe $\mu$mal hintereinander nach den $x$ und ersetzen die Incremente durch die $y$, so wird:
+\[
+\begin{aligned}
+\text{(I$_b$)}\quad &(rs)^k r_x^{m-k-\mu}r_y^\mu s_y^{n-k} \\
+&\quad =\sum_i\frac{\binom{m-k-\mu}{i}\binom{n-k}{i}}{\binom{m+n-2k-i+1}{i}}\cdot (r,s)^{i+k}_{y^{n+\mu-i-k}}\cdot (xy)^i,
+\end{aligned}
+\]
+und wenn wir umgekehrt $\mu$mal nach den $y$ differentiiren und die Incremente durch die $x$ ersetzen:
+\[
+\begin{aligned}
+\text{(I$_c$)}\quad &(rs)^k r_x^{m-k}\cdot s_y^{n-k-\mu}\cdot s_x^\mu \\
+&\quad =\sum_i\frac{\binom{m-k}{i}\binom{n-k-\mu}{i}}{\binom{m+n-2k-i+1}{i}}\cdot (r,s)^{i+k}_{y^{n-\mu-i-k}}\cdot (xy)^i.
+\end{aligned}
+\]
+
+Von diesen Entwickelungen einer Form mit zwei Reihen Variabler steigt man sofort zu Entwickelungen von Formen mit 3 und mehr Reihen Veränderlicher auf. Multiplicirt man nämlich in (I) beiderseits mit $t_z^p$, so entsteht die Formel:
+\[
+r_x^m s_y^n t_z^p
+=\sum_i \frac{\binom{m}{i}\binom{n}{i}}{\binom{m+n-i+1}{i}}\bigl((r,s)^i\cdot t_z^p\bigr)_{y^{n-i}}\cdot(xy)^i
+\]
+und hier können wir nun den links stehenden Ausdruck als symbolische Darstellung einer Form mit drei Reihen Veränderlicher auffassen. Die Ausdrücke $(r,s)^i\cdot t_z^p$ sind dann Formen mit zwei Reihen Veränderlicher, und indem wir auf sie eben wieder die Entwickelung (I) anwenden, wird schliesslich die Grundform mit ihren drei Reihen Variabler dargestellt sein durch eine Reihe, welche nach Potenzen und Producten der Determinanten $(xy)$, $(xz)\ldots$ fortschreitet, die mit Coëfficienten behaftet sind, welche, abgesehen von numerischen Factoren, gleich sind Polaren von Formen, die nur $x$ enthalten. Dabei ist selbstverständlich, dass man nicht nothwendigerweise die $x$ auszuzeichnen braucht, dass man vielmehr gleich berechtigte Entwickelungen erhält, wenn man die $y$ oder die $z$ als die ursprünglichen Variabeln betrachtet.
+
+Wie hiernach die Entwickelung zu leisten ist, wenn $4,5\ldots$ oder allgemein $k$ Reihen Variabler
+\[
+x,y',y''\ldots,y^{(k-1)}
+\]
+vorhanden sind, ist deutlich. Es enthalten die einzelnen Glieder der Entwickelung Polaren von Formen
+\[
+\varphi,\quad \varphi_1,\quad \varphi_2\ldots
+\]
+mit nur einer Reihe von Variabeln. \emph{Die Form $\varphi$ entsteht aus der Grundform dadurch, dass man alle Variabeln gleich $x$ setzt; die übrigen Formen $\varphi_1$, $\varphi_2\ldots$ entstehen aus $\varphi$ durch geeignete Faltung. Der Coëfficient der Polare von $\varphi$ ist immer die Zahl 1.}
+
+\begin{center}
+{\bfseries §. 3.\quad Zurückführung symbolischer Bildungen auf Ueberschiebungen.\\ Relationen zwischen letzteren.}
+\end{center}
+
+Aus den Reihenentwickelungen des vorigen Paragraphen ergibt sich in einfachster Weise der wichtige Satz, dass jede symbolische Bildung, und noch in sehr mannigfacher Weise, als Aggregat von Ueberschiebungen dargestellt werden kann.
+
+Indem wir von einer ähnlichen Bezeichnung, wie in §. 1. Gebrauch machen, seien zwei symbolische Producte, unter Weglassung der ihnen zukommenden Klammerfactoren, folgendermassen definirt:
+\[
+\begin{aligned}
+A&=r_{1,x}r_{2,x}\cdots r_{m-r,x}r_{m-r+1,x_1}\cdots r_{m,x_r},\\
+B&=s_{1,x}s_{2,x}\cdots s_{n-r,x}s_{n-r+1,x_1}\cdots s_{n,x_r},
+\end{aligned}
+\]
+die $(r+1)$ Reihen Veränderlicher
+\[
+x,x_1,x_2\ldots x_r
+\]
+enthalten. Dieselben lassen sich also, nach dem Vorstehenden, in Reihen entwickeln, welche nach Polaren von Formen
+\[
+\varphi,\quad \varphi_1,\quad \varphi_2\ldots;\quad \psi,\quad \psi_1,\quad \psi_2\ldots
+\]
+fortschreiten, wo
+\[
+\varphi=r_{1,x}r_{2,x}\cdots r_{m,x},\qquad
+\psi=s_{1,x}s_{2,x}\cdots s_{n,x},
+\]
+während $\varphi_1,\varphi_2\ldots$ bez. $\psi_1,\psi_2\ldots$ aus $\varphi$ und bez. $\psi$ durch geeignete Faltung entstehen.
+
+Aber das symbolische Product:
+\[
+P=r_{1,x}r_{2,x}\cdots r_{m-r,x}s_{1,x}s_{2,x}\cdots s_{n-r,x}(r_{m-r+1}s_{n-r+1})\cdots(r_ms_n)
+\]
+entsteht aus $A$, indem man die Veränderlichen
+\[
+x_1,\ldots,x_r
+\]
+durch die Symbole
+\[
+s_{n-r+1},\ldots,s_n
+\]
+ersetzt und den Factor
+\[
+s_{1,x}s_{2,x}\cdots s_{n-r,x}
+\]
+zufügt --- oder auch in entsprechender Weise aus $B$. Wendet man auf $A$ oder $B$ nach diesen Aenderungen die obige Reihenentwickelung an, so erscheint $P$ als ein Aggregat von Ueberschiebungen
+\[
+(\varphi_i,\psi_k)^{r-\varrho}
+\]
+der Formen $\varphi_i$, $\psi_k$, welche aus den $\varphi$, $\psi$ durch Faltung entstehen. Das erste Glied dieser Entwickelung ist die Ueberschiebung
+\[
+(\varphi,\psi)^r
+\]
+selbst, welche das symbolische Product $P$ als ein Glied enthält. Somit hat man folgenden Satz:
+
+\emph{Bildet man aus dem Producte zweier Formen $\varphi$, $\psi$ dadurch ein symbolisches Product $P$, dass man $r$ Factoren von $\varphi$ mit Factoren von $\psi$ durch Faltung vereinigt, so dass $P$ ein Glied der Ueberschiebung}
+\[
+U=(\varphi,\psi)^r
+\]
+\emph{ist, so kann man $P$ in eine Reihe von Ueberschiebungen}
+\[
+(\varphi_i,\psi_k)^{r-\varrho}\qquad \varrho\geq0
+\]
+\emph{entwickeln von Formen $\varphi_i,\psi_k$, die aus $\varphi$ und $\psi$ durch Faltung entstehen. Das erste Glied dieser Reihe ist $U$ selbst.}
+
+Nun ist jedes symbolische Product dadurch herstellbar, dass man auf eine geeignete Potenz von $f$ hinlänglich viele Faltungen anwendet. Es folgt also, indem man die bei der Reihenentwickelung neu auftretenden Formen selbst wieder in entsprechender Weise behandelt:
+
+\emph{Jedes symbolische Product kann dargestellt werden als Aggregat von Formen, die durch fortgesetzte Ueberschiebung von $f$ über sich selbst entstehen.}
+
+Das heisst, man erhält Formen, aus denen sich alle anderen rational und ganz zusammensetzen lassen, wenn man zunächst $f$ in allen Weisen über sich selbst schiebt (Formen zweiter Ordnung), dann $f$ mit diesen Formen durch Ueberschiebung verbindet (Formen dritter Ordnung) u. s. f.
+
+Andererseits erhält man aus unserem allgemeinen Satze, indem man die Ueberschiebung $U$ auf die linke, das Product $P$ auf die rechte Seite der Gleichung stellt:
+
+\emph{Jede Ueberschiebung $U$ kann ersetzt werden durch eins ihrer Glieder und niedere Ueberschiebungen.}
+
+Man kann dies, indem man die Ueberschiebungen eben aus den überzuschiebenden Formen entstanden denkt, unter Anwendung des eben eingeführten Begriffes der Dimension, auch folgendermassen aussprechen:
+
+\emph{Jede Ueberschiebung kann ersetzt werden durch eins ihrer Glieder und Formen niederer Dimension.} ---
+
+Diese Entwickelungen, deren allgemeine Herstellung durch das Vorhergehende gelehrt wird, lassen sich in den einfachsten Fällen übersichtlich ausführen, was hier geschehen soll, da die entstehenden Formeln in der Folge von der grössten Wichtigkeit sind.
+
+Man substituire in den Formeln (I$_b$) und (I$_c$) für die Variabeln $y$ die Symbole $r_3$ einer Form
+\[
+r_3=r_{3,x}^{n_3},
+\]
+und multiplicire mit einer entsprechenden Potenz von $r_{3,x}$; gleichzeitig ändere man, der Symmetrie wegen, $r$ und $s$, $m$ und $n$ bez. in $r_2$, $r_1$, $n_2$, $n_1$.
+
+So entstehen die Formeln:
+\[
+\begin{aligned}
+\text{(II$_a$)}\quad &(r_1r_2)^k r_{2,x}^{n_2-k-\mu}\cdot(r_2r_3)^\mu(r_1r_3)^{n_1-k}r_{3,x}^{n_3-n_1-\mu+k}\\
+&=\sum_i\frac{\binom{n_2-k-\mu}{i}\binom{n_1-k}{i}}{\binom{n_1+n_2-i-2k+1}{i}}\bigl((r_1,r_2)^{i+k},r_3\bigr)^{n_1+\mu-i-k},
+\end{aligned}
+\]
+\[
+\begin{aligned}
+\text{(II$_b$)}\quad &(r_1r_2)^k\cdot r_{2,x}^{n_2-k}\cdot r_{1,x}^{\mu}(r_1r_3)^{n_1-k-\mu}\cdot r_{3,x}^{n_3-n_1+k+\mu}\\
+&=\sum_i\frac{\binom{n_2-k}{i}\binom{n_1-k-\mu}{i}}{\binom{n_1+n_2-2k-i+1}{i}}\cdot\bigl((r_1,r_2)^{i+k},r_3\bigr)^{n_1-\mu-i-k}.
+\end{aligned}
+\]
+Diese Formeln gestatten, jede symbolische Bildung, die \emph{drei Klammerfactoren und zwei des anderen Typus, oder auch zwei Klammerfactoren und drei vom anderen Typus} enthält, als Aggregat von Ueberschiebungen darzustellen. Es ist dabei unbenommen, die Symbole $r_1$, $r_2$, $r_3$ als simultane zu denken, welche sich auf eine Form mit drei Reihen Variabler
+\[
+r_{1,x}^{n_1}r_{2,y}^{n_2}r_{3,z}^{n_3}
+\]
+beziehen. Die auf den rechten Seiten stehenden Ueberschiebungen sind dann Aggregate von Elementar-Covarianten dieser Form.
+
+Aber die wichtigste Anwendung, welche weiterhin von diesen Formeln gemacht wird, ist die, dass man aus ihnen Relationen zwischen Ueberschiebungen entnehmen kann, \emph{und es ist dies dasjenige Verfahren, von dem bereits in §. 1. die Rede war, welches in den folgenden Entwickelungen die Stelle der symbolischen Rechnung vertritt.} Die Ausdrücke linker Hand ändern sich nämlich nicht, wenn man
+\[
+\begin{array}{ll}
+\text{in (II$_a$):} & r_2\text{ durch }r_3,\quad n_2\text{ durch }n_3,\quad k\text{ durch }n_1-k,\\
+\text{in (II$_b$):} & r_2\text{ durch }r_3,\quad n_2\text{ durch }n_3,\quad k\text{ durch }n_1-\mu-k
+\end{array}
+\]
+ersetzt und sodann mit den Factoren
+\[
+(-1)^{n+\mu}\quad\text{bez.}\quad (-1)^{n-\mu}
+\]
+multiplicirt. Macht man diese Substitutionen auf der rechten Seite und setzt das Resultat den ursprünglichen Ausdrücken gleich, so kommen zwei Formeln, die sich in folgende eine zusammenfassen lassen,
+\[
+\begin{aligned}
+\text{(III)}\quad
+&\sum_i\frac{\binom{n_2-\alpha_1-\alpha_3}{i}\binom{\alpha_3}{i}}{\binom{n_1+n_2-2\alpha_3-i+1}{i}}\bigl((r_1,r_2)^{\alpha_3+i},r_3\bigr)^{\alpha_1+\alpha_2-i}\\
+&=(-1)^{\alpha_1}\sum_i\frac{\binom{n_3-\alpha_1-\alpha_2}{i}\binom{\alpha_3}{i}}{\binom{n_1+n_3-2\alpha_2-i+1}{i}}\bigl((r_1,r_3)^{\alpha_2+i},r_2\bigr)^{\alpha_1+\alpha_3-i}.
+\end{aligned}
+\]
+Hier ist im ersten Falle gesetzt:
+\[
+\alpha_1=\mu,\quad \alpha_2=n_1-k,\quad \alpha_3=k,
+\]
+so dass
+\[
+\alpha_2+\alpha_3-n_1=0,
+\]
+und im zweiten Falle
+\[
+\alpha_1=0,\quad \alpha_2=n_1-k-\mu,\quad \alpha_3=k.
+\]
+Verschwindet von den Zahlen $n_2-\alpha_1-\alpha_3$ oder $\alpha_2$ die eine, so geht der Ausdruck linker Hand in sein Anfangsglied über: $((r_1,r_2)^{\alpha_3},r_3)^{\alpha_1+\alpha_2}$; ebenso vereinfacht sich der Ausdruck rechter Hand in $((r_1,r_3)^{\alpha_2},r_2)^{\alpha_1+\alpha_3}$, wenn entweder $n_3-\alpha_1-\alpha_2$ oder $\alpha_3$ gleich Null ist.
+
+\begin{center}
+{\bfseries §. 4.\quad Von den Formen dritter Ordnung in den Coëfficienten.}
+\end{center}
+
+Man hat es, bei Untersuchung der Formen, die aus einer Grundform entspringen --- und auf solche werden wir uns jetzt beschränken --- als ein allgemein anzustrebendes Ziel zu betrachten, alle Relationen, welche zwischen den invarianten Bildungen gleicher Ordnung bestehen, anzugeben (vergl. Cayley, Phil. Transactions vol. 146). Um zu solchen Beziehungen zu gelangen, kann man sich der im vorigen Paragraphen gekennzeichneten Methode bedienen, und insbesondere werden wir, von der Formel (III) ausgehend, Relationen zwischen den Formen dritter Ordnung in den Coëfficienten bekommen,\footnote{Zwischen den Formen zweiter Ordnung bestehen noch keine solche Beziehungen.} wenn wir für die Formen $r_1$, $r_2$, $r_3$ die Grundform $f$ substituiren (wobei wir dann für $n_1$, $n_2$, $n_3$ einfach $n$ schreiben). Aber dabei verschwinden alle ungeraden Ueberschiebungen von $r_1$ über $r_2$ oder $r_3$ identisch. Bedeuten daher $\varepsilon_2$ und $\varepsilon_3$ bez. 0 oder 1, je nachdem $\alpha_2$ bez. $\alpha_3$ gerade oder ungerade ist, so kann man $i$ einerseits $=2k+\varepsilon_2$, andererseits $=2k+\varepsilon_3$ setzen und erhält so die Formel:
+\[
+\begin{aligned}
+\text{(IV)}\quad
+&\sum_k\frac{\binom{n-\alpha_1-\alpha_3}{2k+\varepsilon_3}\binom{\alpha_3}{2k+\varepsilon_3}}{\binom{2n-2\alpha_3-2k-\varepsilon_3+1}{2k+\varepsilon_3}}\bigl((f,f)^{\alpha_3+2k+\varepsilon_3},f\bigr)^{\alpha_1+\alpha_2-2k-\varepsilon_3}\\
+&=(-1)^{\alpha_1}\sum_k\frac{\binom{n-\alpha_1-\alpha_2}{2k+\varepsilon_2}\binom{\alpha_2}{2k+\varepsilon_2}}{\binom{2n-2\alpha_2-2k-\varepsilon_2+1}{2k+\varepsilon_2}}\bigl((f,f)^{\alpha_2+2k+\varepsilon_2},f\bigr)^{\alpha_1+\alpha_3-2k-\varepsilon_2},
+\end{aligned}
+\]
+wo
+\[
+\alpha_1(n-\alpha_2-\alpha_3)=0
+\]
+und überdiess selbstverständlicherweise:
+\[
+\alpha_2+\alpha_3\leq n,\\ \alpha_3+\alpha_1\leq n,\qquad \alpha_1+\alpha_2\leq n.
+\]
+Diese Formel ist für die später zu führenden Beweise sehr wichtig. Setzt man nämlich $\alpha_3+\varepsilon_3=2\mu$ und nimmt $\alpha_2>\alpha_3$ an, so gelingt es vermöge derselben in einer grossen Zahl von Fällen (die nun aufgezählt werden sollen), \emph{das erste Glied linker Hand}:
+\[
+U=((f,f)^{2\mu},f)^{\alpha_1+\alpha_2-\varepsilon_3},
+\]
+das wir auch so bezeichnen werden
+\[
+U=(k,f)^\varrho,\quad k=(f,f)^{2\mu},\quad \varrho=\alpha_1+\alpha_2-\varepsilon_3,
+\]
+durch Formen $(\mu+1)^{\mathrm{ter}}$ Stufe $(Q_{\mu+1})$ auszudrücken, und das ist mit Rücksicht auf die später beabsichtigte Gliederung des Formensystems ein sehr wesentlicher Satz.
+
+Zum Beweise unterscheide ich vier Fälle:
+\[
+\begin{array}{ll}
+1) & \varepsilon_3=0,\\
+2) & \varepsilon_3=1\ \text{ und }\ \alpha_2>2\mu,\\
+3) & \varepsilon_3=1,\quad \alpha_2=2\mu,\quad \alpha_2+\alpha_3=n,\\
+4) & \varepsilon_3=1,\quad \alpha_2=2\mu,\quad \alpha_2+\alpha_3<n.
+\end{array}
+\]
+Im \emph{ersten Falle} ist $\alpha_2+\varepsilon_2>2\mu$, $n\geq \alpha_2+\alpha_3>(2\alpha_3=4\mu)$, $\varrho=\alpha_1+\alpha_2>2\mu$ und $U$ ist ein Aggregat von Formen $Q_{\mu+1}$.
+
+Im \emph{zweiten Falle} ist: $\alpha_2+\varepsilon_2>2\mu$, $n\geq\alpha_2+\alpha_3>4\mu-1$, $\varrho=\alpha_1+\alpha_2-1>2\mu-1$, $n\geq\alpha_1+\alpha_2>\varrho$ und $U$ ist ein Aggregat von Formen $Q_{\mu+1}$.
+
+Im \emph{dritten Falle} ist: $n=\alpha_2+\alpha_3=4\mu-1$, $\varrho=\alpha_1+2\mu-1$. Die Ueberschiebung $U$ kommt auf beiden Seiten vor; links hat sie den Factor
+\[
+\frac{\alpha_2(n-\alpha_1-\alpha_3)}{2n-2\alpha_3}=\frac12(\mu-\alpha_1-\alpha_3)=\frac{n-\varrho}{2},
+\]
+rechts ist er $(-1)^{\alpha_1}$, und wenn diese Factoren ungleich sind, wenn also $n-\varrho\gtreqless 2$, so liefert unsere Formel eine Reduction von $U$ auf Formen $Q_{\mu+1}$.
+
+Im \emph{vierten Falle} ist: $\alpha_1=0$, $n>4\mu-1$, $\varrho=\alpha_1+\alpha_2-1=\alpha_1+2\mu-1=2\mu-1$. $U$ kommt auf beiden Seiten vor; links hat es den Factor
+\[
+\frac{\alpha_3(n-\alpha_1-\alpha_3)}{2n-2\alpha_3}=\frac{\alpha_2}{2}=\mu,
+\]
+rechts den Factor 1; nur wenn $\mu>1$ ergiebt unsere Formel eine Reduction von $U$ auf Formen $Q_{\mu+1}$.
+
+Fassen wir zusammen, so haben wir folgenden Satz: \emph{Mittelst unserer Formel ist die Ueberschiebung:}
+\[
+U=(k,f)^\varrho,\quad (k=(f,f)^{2\mu})
+\]
+\emph{durch Formen $Q_{\mu+1}$ ausdrückbar, wenn:}
+\[
+\begin{array}{ll}
+1) & n>4\mu\ \text{ und }\ \varrho>2\mu,\\
+2) & n>4\mu-1\ \text{ und }\ n>\varrho>2\mu-1,\\
+3) & n=4\mu-1,\quad \varrho\geq2\mu-1\ \text{ und }\ \varrho\gtreqless n-2,\\
+4) & n>4\mu-1,\quad \varrho=2\mu-1,\quad \mu>1.
+\end{array}
+\]
+Noch sei, als besondere Anwendung unserer Formel, dies hervorgehoben. Setzt man
+\[
+\alpha_1=2\mu-1,
+\quad \alpha_2=2\mu,
+\quad \alpha_3=2\mu-1,
+\quad n=4\mu-1,
+\]
+so wird $\varepsilon_2=0$, $\varepsilon_3=1$ und es kommt:
+\[
+\frac12\bigl((f,f)^{2\mu},f\bigr)^{n-1}=-\bigl((f,f)^{2\mu},f\bigr)^{n-1}
+\]
+und also:
+\[
+\bigl((f,f)^{2\mu},f\bigr)^{n-1}=0.
+\]
+Ist z. B. $f=a_x^3$ oder $=a_x^7$, so ist:
+\[
+((f,f)^2,f)^2=0\quad\text{resp.}\quad ((f,f)^4,f)^6=0.
+\]
+
+\begin{center}
+{\bfseries §. 5.\quad Eine Eigenschaft der Formen zweiter Ordnung.}
+\end{center}
+
+Im Anschlusse an das Vorhergehende mag hier eine Eigenschaft der Formen zweiter Ordnung bewiesen werden, die ebenfalls später bei der Aufstellung der vollen Systeme zur Verwerthung kommt.
+
+Es sei, wie oben
+\[
+(f,f)^{2\mu}=k=k_x^{2r}\quad (2\mu+r=n).
+\]
+Dann ist in der Reihe, welche man nach Formel (I) für das symbolische Product
+\[
+(ab)^{2\mu}a_x^r b_y^r
+\]
+erhält, nämlich
+\[
+\sum_i\frac{\binom{r}{2i}\binom{r}{2i}}{\binom{2r-2i+1}{2i}}(f,f)^{2\mu+2i}_{y^{r-2i}}(xy)^{2i}
+\]
+das erste Glied
+\[
+=k_x^r k_y^r,
+\]
+während die übrigen $Q_{\mu+1}$ sind. Hieraus folgt, \emph{dass man immer, sofern man von Formen der $(\mu+1)^{\mathrm{ten}}$ Stufe absieht, $k_x^r k_y^r$ durch $(ab)^{2\mu}a_x^r b_y^r$ ersetzen darf:}
+\[
+k_x^r k_y^r=(ab)^{2\mu}a_x^r b_y^r+Q_{\mu+1}.
+\]
+Polarisirt man dieselbe, unter Einführung neuer Variabler $x_1\cdots x_{r-1}$, $y_1\cdots y_{r-1}$ je $r-1$mal hinsichtlich der $x$ und $y$, so kommt:
+\[
+\begin{aligned}
+&k_xk_{x_1}\cdots k_{x_{r-1}}\,k_yk_{y_1}\cdots k_{y_{r-1}}\\
+&\qquad =(ab)^{2\mu}a_xa_{x_1}\cdots a_{x_{r-1}}b_yb_{y_1}\cdots b_{y_{r-1}}+Q_{\mu+1}.
+\end{aligned}
+\]
+Die Veränderlichen können hier eine Bedeutung haben, welche sie wollen. Man gewinnt also folgende Sätze:
+
+\emph{Sieht man Formen als gleichbedeutend an, wenn sie sich nur um $Q_{\mu+1}$ unterscheiden, so darf man in jedem symbolischen Producte, welches die Symbole $k$ enthält, folgende Aenderung machen: $r$ der Symbole $k$ ersetze man durch $a$, die $r$ übrigen durch $b$ und multiplicire mit $(ab)^{2\mu}$.} Heisst das so entstehende Product $P_1$, das ursprüngliche $P$, so ist also:
+\[
+P_1=P+Q_{\mu+1}.
+\]
+Ferner: \emph{Entsteht ein symbolisches Product $P$ durch Faltung aus dem Producte}
+\[
+k_x^{2r}\cdot k_{1,x}^{2r}\cdots
+\]
+\emph{und ein symbolisches Product $(P)$ durch entsprechende Faltung aus dem Producte}
+\[
+(ab)^{2\mu}a_x^r b_x^r\cdot(cd)^{2\mu}c_x^r d_x^r\cdots,
+\]
+\emph{so besteht die Relation:}
+\[
+P=(P)+Q_{\mu+1}.
+\]
+
+\begin{center}
+{\bfseries §. 6.\quad Formensysteme.}
+\end{center}
+
+Der Zweck aller der vorläufigen Untersuchungen, mit denen wir uns beschäftigen, ist die Aufstellung des zu einer Grundform gehörigen vollständigen Systems. Aber dieselbe wird sich weiterhin so vollziehen, dass zunächst gewisse Formensysteme aufgestellt werden, welche nur eine \emph{relative} Vollständigkeit besitzen. Ihre Formen
+\[
+A_1,A_2,\ldots,A_r
+\]
+sind so beschaffen, dass \emph{jede Form $W$, die aus den Producten und Potenzen von $A$ durch Faltung entsteht, sich rational und ganz durch die $A$ ausdrücken lässt unter Zuhülfenahme gewisser von Vornherein zu adjungirender Formen $P$:}
+\[
+W=F(A,P).
+\]
+Sind diese $P$ überhaupt nicht nöthig, so heisst das System der $A$ \emph{vollständig}. Ein Beispiel für ein vollständiges System gibt die Gesammtheit der Invarianten und Covarianten einer Grundform. Andererseits ist klar, dass durch die $A$, welche ein vollständiges System bilden, alle Invarianten und Covarianten von $f$ sich rational und ganz ausdrücken lassen werden, sofern $f$ sich mit unter den $A$ befindet. Denn alle entstehen aus Potenzen von $f$ durch Faltung. Es ist aber durchaus nicht nothwendig, dass ein vollständiges System, welches Covarianten von $f$ enthält, zugleich das volle System von $f$ umfasst. Ist z. B. $f=a_x^3$, so bilden
+\[
+\tau=(ab)^2a_xb_x
+\]
+und
+\[
+R=(ab)^2(cd)^2(ac)(bd)
+\]
+für sich ein vollständiges System. --- Dem Zwecke entsprechend, den die Aufstellung vollständiger Systeme hat, betrachte ich in einem vollständigen Systeme jede Form als überflüssig, welche sich durch die anderen rational und ganz darstellen lässt. Die anderen Formen werden an sich ein vollständiges System bilden.
+
+Von nicht vollständigen Systemen werden weiterhin zwei Arten betrachtet, die ich als Systeme $A_\mu$ und $(A_\mu)$ bezeichne.
+
+Die Definition der $A_\mu$ ist die folgende: \emph{Ein System}
+\[
+A_1,A_2,\ldots,A_r
+\]
+\emph{von Invarianten und Covarianten einer Grundform $f$, in welchem sich $f$ selbst befindet, heisst ein System $A_\mu$, wenn sich alle $W$ in der Form darstellen lassen:}
+\[
+W=F(A)+Q_{\mu+1},
+\]
+so dass also bei ihnen alle Formen $Q_{\mu+1}$ adjungirt erscheinen. Da jede Invariante und Covariante von $f$ aus einer Potenz von $f$ durch Faltung hervorgeht, so wird man die Darstellung haben:
+\[
+I=F(A)+Q_{\mu+1},
+\]
+und es ist hiernach verständlich, dass die $A_\mu$, wenn $\mu$ von 0 anfangend bis zu dem höchsten ihm gestatteten Werthe läuft, ebensoviele Unterstufen zu dem vollen Systeme von $f$ bilden. --- Bei einem Systeme $A_\mu$ wird man, ohne seinen Charakter zu ändern, jedes $A$ weglassen können, welches sich, bis auf additiv zutretende $Q_{\mu+1}$, durch die übrigen $A$ rational und ganz ausdrücken lässt.
+
+Beispielsweise bildet die Gesammtheit der zu $f$ gehörigen Formen ein $A_g$, wo $g$ die grösste in $\frac n2$ enthaltene ganze Zahl ist: denn ein Klammerfactor kann ja überhaupt nicht in höherer als der $2g^{\mathrm{ten}}$ Potenz vorkommen. --- Andererseits bildet $f$ für sich ein System $A_0$. Denn jedes symbolische Product, welches nicht eine Potenz von $f$ ist, ist zum Mindesten ein $Q_1$.
+
+Weniger übersichtlich ist auf den ersten Blick die Definition der $(A_\mu)$. Bei ihnen wird eine Reihe verschiedenartiger Formen adjungirt, welche alle im Sinne der oben eingeführten Anordnungsprincipien als Formen niederen Charakters betrachtet werden müssen. Insbesondere kommt bei ihnen der Begriff des \emph{Ranges} zur Verwerthung, und in demselben Masse, als der letztere von willkürlichen Festsetzungen abhängt, wird es von besonderen Verabredungen abhängen, ob ein System ein $(A_\mu)$ ist oder nicht. Wir definiren:
+
+\emph{Das System der $A$ heisst ein $(A_\mu)$, wenn sich jedes $W$ in folgender Weise darstellen lässt:}
+\[
+W=F(A)+G+H+Q_{\mu+1},
+\]
+wo
+\[
+\begin{array}{l}
+F(A)\ \text{eine rationale, ganze Function der }A\text{ bedeutet, die nicht höheren}\\
+\quad\text{Rang oder niedere Stufe als }W\text{ besitzt},\\[0.15em]
+G\ \text{eine Form ist, welche eine Invariante zum Factor hat, resp. ein}\\
+\quad\text{Aggregat solcher Formen},\\[0.15em]
+H\ \text{eine Form niederen Ranges, oder auch ein Aggregat solcher Formen.}
+\end{array}
+\]
+Die Formen $G$ bei dieser Festsetzung besonders auszuzeichnen, ist insofern begründet, als eine Form $G$ ihren Charakter bei beliebigen Faltungen beibehält.
+
+Hinsichtlich solcher Systeme $(A_\mu)$ gelten dann zunächst die Sätze:
+
+Ein System $(A_\mu)$ behält seinen Charakter, wenn man statt einer in ihm vorkommenden Form $A_r$ schreibt:
+\[
+A_r+F(A)+G+H+Q_{\mu+1}
+\]
+wo $G$, $H$, $Q$ die eben angegebene Bedeutung haben und $F(A)$ eine rationale ganze Function der übrigen $A$ ist, die weder höheren Rang noch niedrigere Stufe als $A_r$ besitzt.
+
+Enthält ein System $(A_\mu)$ eine Form $A_r$, die in der Gestalt
+\[
+F(A)+G+H+Q_{\mu+1}
+\]
+darstellbar ist, so ist dieselbe überflüssig; die übrigen $A$ bilden dann für sich ein $(A_\mu)$. ---
+
+Wir werden später immer die Voraussetzung machen, dass die Covariante
+\[
+K=(f,f)^{2\mu}=k_x^{2r}\cdots
+\]
+mit dem Range 1 behaftet werde, der auch der Grundform $f$ ertheilt wird. Aber dann sind alle $Q_\mu$ auf Formen niederen Ranges reducirbar, denn es ist nach §. 4 gestattet, sofern man von $Q_{\mu+1}$ absehen will, in jedem $Q_\mu$ nach Unterdrückung des Factors $(ab)^\mu$ die $a$, $b$ durch das Symbol $k$ zu ersetzen, wodurch also der Rang um eine Einheit reducirt wird. \emph{In Folge dessen ist dann jedes System $A_{\mu-1}$ ein System $(A_\mu)$:} Denn bei $A_{\mu-1}$ werden die $Q_\mu$ adjungirt und diese sind jetzt durch Formen niederen Ranges und $Q_{\mu+1}$ ersetzt.
+
+Ich behaupte ferner:
+
+\emph{Enthält ein $(A_\mu)$ alle bei der Rangbestimmung massgebenden Hauptformen}
+\[
+k_1,k_2,\ldots,k_\varrho,
+\]
+\emph{unter denen jedenfalls $f$ enthalten ist, so ist es ein $A_\mu$.}
+
+Setzen wir, der Allgemeinheit wegen, zunächst voraus, dass $(A_\mu)$ nur die Hauptformen
+\[
+k_1,k_2,\ldots,k_r,
+\]
+nicht aber
+\[
+k_{r+1},\ldots,k_\varrho
+\]
+enthalte. Diejenigen symbolischen Producte, welche nur Symbole der ersten Classe von Hauptformen enthalten, mögen $P$, diejenigen, welche auch Symbole der zweiten Classe enthalten, $(P)$ genannt werden. Die $P$ sind dann alle Formen $W$, weil jede Form, die nur Symbole von $k_1\cdots k_r$ enthält, aus Producten von Potenzen dieser Formen durch Faltung entsteht, und man hat also, nach der Definition des $(A_\mu)$:
+\[
+P=F(A)+F+\sum P_i+\sum(P_i)+Q_{\mu+1},
+\]
+wo die $P_i$ und $(P_i)$ niederen Ranges als $P$ sind. Aber die $P_i$ sind selbst Formen $W$, und indem man für sie denselben Ansatz macht, gelangt man schliesslich zu der Formel:
+\[
+P=F(A)+G+\sum(P)+Q_{\mu+1}.
+\]
+Ist nun $f$ im Systeme $(A_\mu)$ vorhanden, so wird man rechter Hand auch noch das $G$ weglassen können. Denn jedes $G$ wird dann selbst ein $W$ sein, weil jede Covariante oder Invariante aus einer Potenz von $f$ durch Faltung hervorgeht. Endlich, nimmt man an, dass alle Hauptformen in $(A_\mu)$ vorhanden sind, so kommen die $(P)$ überhaupt in Wegfall, und man hat:
+\[
+P=F(A)+Q_{\mu+1},
+\]
+das $(A_\mu)$ ist ein $A_\mu$, w. z. b. Zu demselben Schlusse wären wir gekommen, wenn wir angenommen hätten, dass in $(A_\mu)$ nur solche Hauptformen fehlen, welche selbst von höherer als der $\mu^{\mathrm{ten}}$ Stufe sind. Denn dann sind die $(P)$ einfach $Q_{\mu+1}$.
+
+\begin{center}
+{\bfseries §. 7.\quad Ueberschiebungen zweier Formensysteme.}
+\end{center}
+
+Es mögen zwei Formensysteme
+\[
+\begin{array}{ccccc}
+A&A_1&A_2&\ldots&A_r\\
+B&B_1&B_2&\ldots&B_s
+\end{array}
+\]
+in der Weise combinirt werden, dass man die Producte $P$ von Potenzen der $A$ über alle Producte $Q$ von Potenzen der $B$ schiebt. Unter den so entstehenden Formen $(P,Q)^r$ wähle ich nur diejenigen aus, die sich nicht aus bereits ausgewählten Formen rational und ganz zusammensetzen lassen. Ich lasse daher alle diejenigen Ueberschiebungen bei Seite, welche ein zerfallendes Glied enthalten: denn sie sind durch dieses Glied und niedere Ueberschiebungen darstellbar. Die beibehaltenen Formen sollen zusammen mit den $A$ und $B$ als Formen $C$ bezeichnet sein; ihre Gesammtheit
+\[
+C_1,C_2,\ldots,C_\varrho
+\]
+heisse $\Gamma$.
+
+Dabei ist es zunächst wesentlich, sich ein Urtheil darüber zu bilden, welche Ueberschiebungen $(P,Q)^r$ jedenfalls zerfallende Glieder haben und daher nicht den $C$ zuzuzählen sind.
+
+Ist $P$ ein Product mehrerer Factoren $P_1\cdot P_2\cdots$ und der Grad eines der Factoren, etwa der von $P_1$, nicht kleiner als $r$, so werden immer zerfallende Glieder in $(P,Q)^r$ auftreten. Ist nämlich $R$ ein Glied der Ueberschiebung $(P_1,Q)^r$, so findet sich unter den Gliedern von $(P,Q)^r$ insbesondere auch dieses: $R\cdot P_2\cdots$. --- Dieser Fall tritt stets ein, wenn $P_2$ eine Invariante ist. Man hat also bei der Bildung der überzuschiebenden Producte $P,Q$ die unter den $A,B$ vorkommenden Invarianten überhaupt nicht zu berücksichtigen.
+
+Aber sei allgemein
+\[
+P=A_1^{\alpha_1}A_2^{\alpha_2}\cdots A_r^{\alpha_r},\quad
+Q=B_1^{\beta_1}B_2^{\beta_2}\cdots B_s^{\beta_s},
+\]
+und es mögen bez.
+\[
+l_1,l_2\ldots l_r,\quad m_1,m_2\ldots m_s
+\]
+den Grad der $A$ und $B$ angeben. Bezeichnet man dann mit
+\[
+\lambda\quad\text{und}\quad \mu
+\]
+die Anzahl der $x$ enthaltenden Factoren in $(P,Q)^r$, welche bez. von dem $P$ und dem $Q$ herrühren, so hat man die beiden Relationen:
+\[
+\alpha_1l_1+\alpha_2l_2+\cdots+\alpha_rl_r=\lambda+r,
+\]
+\[
+\beta_1m_1+\beta_2m_2+\cdots+\beta_sm_s=\mu+r.
+\]
+Umgekehrt wird jedem Systeme ganzzahliger Lösungen dieser beiden Gleichungen eine Ueberschiebung $(P,Q)^r$ entsprechen. Aber man kann jede Lösung $L$ solcher Gleichungen aus einer gewissen, endlichen Anzahl (kleinster) Lösungen $L_1,L_2,\ldots$ additiv zusammensetzen (vergl. einen Aufsatz von mir im fünften Bande der math. Annalen), d. h. die $l,m,\lambda,\mu,r$, welche $L$ entsprechen, sind aus den betr. Zahlen der Lösungen $L_1,L_2\ldots$ durch Multipliciren mit denselben Factoren und Addiren zu gewinnen:
+\[
+L=a_1L_1+a_2L_2+\cdots.
+\]
+Und nun überzeugt man sich leicht, dass jede Ueberschiebung, die einer so zusammengesetzten Lösung entspricht, zerfallende Glieder enthält. Entsprechen nämlich den Lösungen $L_1$ und $L_2$ bez. die Ueberschiebungen $(P_1,Q_1)^{r_1}$, $(P_2,Q_2)^{r_2}$, so entspricht der Lösung $L_1+L_2$ die Ueberschiebung $(P_1P_2,Q_1Q_2)^{r_1+r_2}$ und diese enthält alle Glieder, welche aus Gliedern von $(P_1,Q_1)^{r_1}$ und Gliedern von $(P_2,Q_2)^{r_2}$ durch Multiplication entstehen.
+
+Durch diese Betrachtung wird die Zahl der aufzustellenden $C$ beträchtlich verringert, (wenn man auch in den unten folgenden Fällen practischer Anwendung niemals diese allgemeine Methode zur Umgränzung der $C$ verwenden wird, da sich im einzelnen Falle bessere Regeln ergeben) und man hat insbesondere den Satz:
+
+\emph{Durch Ueberschiebung endlicher Systeme $A$ und $B$ entsteht nur eine endliche Zahl von $C$.}
+
+Es werden weiterhin, bei Aufstellung des vollen Systems von $f$, immer solche Systeme durch Ueberschiebung zu verbinden sein, welche den Charakter der $(A_\mu)$ haben. In dieser Hinsicht wird dann der Satz von grösster Wichtigkeit.
+
+\emph{Sind die $A,B$ Systeme $(A_\mu)$, so bilden auch die $C$ ein $(A_\mu)$.}
+
+Beim Beweise wird es vortheilhaft, den in §. 1 definirten Begriff der Dimension einer Form in Anwendung zu bringen. Man erkennt aber leicht, dass seine ganze Rolle darin besteht, ein minder durchsichtiges directes Verfahren durch ein recurrirendes Verfahren zu ersetzen.
+
+Betrachten wir die Formen $S$, die aus den $C$ (sowie ihren Producten und Potenzen) durch Faltung entstehen. Dieselben werden sich als Aggregate von Ueberschiebungen
+\[
+S=\sum(L,M)^r
+\]
+darstellen lassen von Formen $L,M$, die aus den Producten $P$ der $A$ und $Q$ der $B$ bez. durch Faltung entstehen. Sind nun die $A$ und $B$ Systeme $(A_\mu)$, so hat man die Darstellungen:
+\[
+\begin{aligned}
+L&=\sum P_i+G+L'+Q_{\mu+1},\\
+M&=\sum Q_k+G+M'+Q_{\mu+1},
+\end{aligned}
+\]
+wo die $P_i$ und $Q_k$ Producte der $A$ resp. $B$ von nicht höherem Range als $L,M$ sind, die $G$ Formen bedeuten, die Invarianten zu Factoren haben, und die $L'$, $M'$ irgend welche Formen von niederem Range. Somit erhält man:
+\[
+S=\sum(P_i,Q_k)^r+G+\Sigma+Q_{\mu+1},
+\]
+wo die $\Sigma$ von niederem Range als $S$ sind. Diejenigen Ueberschiebungen $(P_i,Q_k)^r$, welche ein zerfallendes Glied besitzen, lassen sich durch dieses und niedrigere Ueberschiebungen ausdrücken, also ersetzen durch ein Product von Formen niederer Ordnung und ein Aggregat von Formen niederer Dimension, die wir zusammen durch $S'$ bezeichnen wollen. Die übrigen sind Formen $C$. Somit wird $S$ eine ganze Function von Formen $C$, Formen $G$, welche Invarianten zu Factoren haben, Formen $\Sigma$ niederen Ranges und Formen $S'$, welche niedere Ordnung oder niedere Dimension besitzen. Drückt man die $S'$, welche, wie die $S$, aus den $C$ durch Faltung entstehen, in ähnlicher Weise aus und fährt so fort, so erhält man schliesslich, weil Ordnung oder Dimension der zu Hülfe zu nehmenden Formen immer mehr sinkt und also zuletzt zu Null abnimmt:
+\[
+S=F(C)+G+\Sigma+Q_{\mu+1},
+\]
+womit der Beweis erbracht ist, dass die $C$ ein System $(A_\mu)$ bilden.
+
+In ähnlicher, nur einfacherer Art könnte man den Satz beweisen:
+
+\emph{Sind die durch Ueberschiebung zu verbindenden Systeme $A,B$ vollständige Systeme, so bilden die $C$ ebenfalls ein vollständiges System.}
+
+\begin{center}
+{\bfseries §. 8.\quad Reducibilität bei den $(A_\mu)$.\quad Reducirende Factoren.}
+\end{center}
+
+Ist ein System der $C$ vom Charakter der $(A_\mu)$ durch Ueberschiebung zweier $(A_\mu)$ entstanden, so denke man sich seine Formen geordnet: nach der Stufe, der Ordnung in den Coëfficienten und weiter nach dem Range und der Dimension. Ein so geordnetes $(A_\mu)$ wird seinen Charakter nicht verlieren, wenn man eine seiner Formen $C$ ersetzt durch
+\[
+C+G+C'+C''+\cdots+F(C)+Q_{\mu+1},
+\]
+wo $F(C)$ eine ganze Function nicht höheren Ranges oder niederer Stufe der übrigen $C$ ist, und $C'$, $C''$ Formen niederen Ranges oder niederer Dimension oder höherer Stufe als $C$ sind. Formen $C$, die in der Gestalt
+\[
+G+C'+C''+\cdots+F(C)+Q_{\mu+1}
+\]
+darstellbar sind, dürfen also einfach weggelassen werden, ohne dass das System der $C$ aufhört, ein $(A_\mu)$ zu sein. \emph{Solche Formen nenne ich hier und im Folgenden reducibel.}
+
+Da eine Ueberschiebung $C$ durch jedes ihrer Glieder, z. B. $T$, und Formen niederer Dimension ausdrückbar ist, so kann man $C$ durch $T$ ersetzen und es sind daher beide gleichzeitig reducibel.
+
+Da man nicht in der Lage ist, allgemein anzugeben, wann eine Form $C$, resp. eins ihrer Glieder reducibel ist, so wird es wichtig, wenigstens einige Fälle anzugeben, in denen die Reducibilität evident ist. Einige derselben sind, unter minder allgemeinem Gesichtspunkte, bereits in den voranstehenden Erörterungen vorgekommen. So ergab sich in §. 4 die Reducibilität gewisser Ueberschiebungen $(k,f)^\varrho$ auf $Q_{\mu+1}$, oder in §. 6 die Zurückführbarkeit aller $Q_\mu$ auf Formen niederen Ranges. Wir bemerken hier zunächst:
+
+\emph{Die Functionaldeterminante $((\varphi,\psi),\vartheta)$ einer Form $\vartheta$ mit der Functionaldeterminante zweier Formen $\varphi$, $\psi$ ist auf Formen niederer Ordnung und nicht höheren Ranges reducibel; sofern $\varphi$, $\psi$, $\vartheta$ je von höherem als dem ersten Grade sind.}
+
+Man beweist diesen dem Wesen nach bekannten Satz in einfachster Weise, wenn man $\varphi=\varphi_x^\lambda$, $\psi=\psi_x^\mu$, $\vartheta=\vartheta_x^\nu$ setzt und die Producte $\varphi\cdot(\psi,\vartheta)^2$ und $\psi\cdot(\varphi,\vartheta)^2$ in Reihen entwickelt:
+\[
+\begin{aligned}
+\varphi\cdot(\psi,\vartheta)^2
+&=\varphi_x^\lambda\cdot(\psi\vartheta)^2\psi_x^{\mu-2}\vartheta_x^{\nu-2}\\
+&=\sum_i\frac{\binom{2}{i}\binom{\lambda}{i}}{\binom{\lambda+\mu-i+1}{i}}\bigl((\varphi,\psi)^i,\vartheta\bigr)^{2-i},\\[0.25em]
+\psi\cdot(\varphi,\vartheta)^2
+&=\psi_x^\mu\cdot(\varphi\vartheta)^2\varphi_x^{\lambda-2}\vartheta_x^{\nu-2}\\
+&=\sum_i\frac{\binom{2}{i}\binom{\mu}{i}}{\binom{\lambda+\mu-i+1}{i}}\bigl((\psi,\varphi)^i,\vartheta\bigr)^{2-i}.
+\end{aligned}
+\]
+und also:
+\[
+\varphi\cdot(\psi,\vartheta)^2-\psi\cdot(\varphi,\vartheta)^2
+=2((\varphi,\psi),\vartheta)+\frac{\binom{\lambda}{2}-\binom{\mu}{2}}{\binom{\lambda+\mu-1}{2}}\vartheta\cdot(\varphi,\psi)^2
+\]
+oder
+\[
+((\varphi,\psi),\vartheta)=\frac{\varphi}{2}(\psi,\vartheta)^2-\frac{\psi}{2}(\varphi,\vartheta)^2-\frac12\frac{\binom{\lambda}{2}-\binom{\mu}{2}}{\binom{\lambda+\mu-1}{2}}\vartheta\cdot(\varphi,\psi)^2,
+\]
+womit der zu beweisende Satz ausgesprochen ist.
+
+Dann aber führen wir folgende Definition ein: \emph{Ist $\Phi$ ein nicht zerfallendes aber reducibeles Product und sind alle aus $\Phi$ durch Faltung entstehende Covarianten $\Phi_1$, $\Phi_2$, $\ldots$, $\Phi_\varrho$ reducibel, so heisst das Product der Klammerfactoren von $\Phi$ ein reducirender Factor.} Man überzeugt sich nämlich, dass jedes symbolische Product, welches diesen Factor enthält, sofern es nicht etwa eine der Invarianten
+\[
+j\cdot j_1\cdots
+\]
+ist, die aus $\Phi$ durch Faltung entstehen, reducibel ist. Ein solches Product ist nämlich entweder unmittelbar eine der Formen $\Phi$, $\Phi_i$, $j_i$ selbst oder entsteht aus einem Producte $\Phi\cdot\Psi$ (wo $\Psi$ irgend welche zutretende Form bedeutet) durch Faltung. Im letzteren Falle ist es gleich einem Aggregat der Gestalt:
+\[
+\sum(\Phi_i,\Psi_i)^r+\sum j_i\Psi_i
+\]
+und hier sind alle Glieder reducibel: die $(\Phi_i,\Psi_i)^r$, weil die $\Phi_i$ es sind, die $j_i\Psi_i$, weil sie Invarianten zu Factoren haben.
+
+Hat ein symbolisches Product zwei reducirende Factoren, so wird man es auf zwei verschiedene Formenaggregate $P_1$ und $P_2$ reduciren können; die Formel
+\[
+P_1=P_2
+\]
+gibt dann in sehr vielen Fällen wichtige Relationen.
+
+Die Aufstellung dieser reducirenden Factoren ist in der Folge, wo es sich um Abgränzung des Systems der $C$ handelt, diejenige Aufgabe, welche am meisten Mühe verursacht. Um so wichtiger ist der Satz, \emph{dass man in vielen Fällen aus einem reducirenden Factor eine Reihe anderer ableiten kann.}
+
+Betrachten wir zunächst zwei Formen
+\[
+\varphi=\varphi_x^m,\quad \psi=\psi_x^n,
+\]
+wo $(\varphi\psi)^r$ ein reducirender Factor sein soll. Dann sind die folgenden Ueberschiebungen:
+\[
+\begin{array}{rcl}
+U_1&=&((\varphi,\varphi)^{3+2\lambda},\psi)^{r-1+\varrho},\\[0.25em]
+U_2&=&((\varphi,\varphi)^{2+r},\psi)^n,\qquad 2r+1<m,\\[0.25em]
+U_3&=&((\varphi,\varphi)^{2+2\lambda},\psi)^{r-1+\varrho},\qquad
+\left\{\begin{array}{l}2\lambda+r+1\leq n,\\ \varrho+r-2<n,
+\end{array}\right.
+\end{array}
+\]
+reducibel.
+
+Die Ueberschiebungen $U_1$ nämlich verschwinden identisch; die $U_2$ haben Glieder mit dem reducirenden Factor $(\varphi\psi)^r$; was die $U_3$ angeht, so entwickele man das symbolische Product
+\[
+\begin{aligned}
+&(\varphi\psi)^{r+\sigma}(\varphi_1\psi)^{\varrho-\sigma}(\varphi\varphi_1)^{2\lambda+1}\varphi_x^{m-2\lambda-1-r-\sigma}\cdot\varphi_{1,x}^{m-2\lambda-1-\varrho+\sigma}\cdot\psi_x^{n-\varrho-r},
+\end{aligned}
+\]
+welches den reducirenden Factor $(\varphi\psi)^r$ hat $(\varphi_{1,x}^m=\varphi_x^m)$, in die Reihe III. Das erste Glied ist $U_3$, die übrigen sind von niederer Dimension; mithin ist auch $U_3$ reducibel.
+
+Jetzt behaupte ich:
+
+\emph{Ist $(\varphi\psi)^r$ reducirend und}
+\[
+V=((\varphi,\psi)^{m-r+1},\psi)^n
+\]
+\emph{eine Invariante oder reducibel, so ist auch $(\varphi\varphi_1)^2(\varphi\psi)^{r-1}$ ein reducirender Factor.} Denn das symbolische Product:
+\[
+(\varphi\varphi_1)^2(\varphi\psi)^{r-1}\varphi_x^{m-r-1}\varphi_{1,x}^{m-r+1}\psi_x^{n-r+1}
+\]
+und alle aus ihm durch Faltung entstehenden Formen sind Aggregate der Ueberschiebungen $U_1$, $U_2$, $U_3$. --- Dabei sei bemerkt, dass $V$ eine Invariante ist, wenn $2r-2=n$, und dass es identisch verschwindet, wenn $2r-2<n$. ---
+
+Ob ein Factor reducirend wirkt oder nicht, hängt, wie die ganze Rangbestimmung, von der Wahl der Hauptformen ab. Wenn letztere an und für sich völlig willkürlich geschehen kann, so wird im Folgenden, mit Rücksicht auf die zu erreichenden Zwecke, folgende Regel eingehalten, die hier wenigstens mitgetheilt sein soll: Ist eine Form $\varphi$ reducibel (oder auch identisch Null) und sind viele aus ihr durch Faltung entstehende Formen ebenfalls reducibel, so wähle man zu Hauptformen diejenigen aus $\varphi$ durch Faltung hervorgehenden, welche sonst nicht reducibel wären. Dadurch wird dann das Product der Klammerfactoren von $\varphi$ ein reducirender Factor. --- Dass diese Wahl in der That zweckmässig ist, ergibt sich daraus, dass man weiterhin der Unterscheidung überhoben ist zwischen den durch Faltung aus $\varphi$ entstehenden reducibelen und nicht reducibelen Formen.
+
+\begin{center}
+{\bfseries §. 9.\quad Bildung des Systems von $f$.}
+\end{center}
+
+Nach diesen Vorbereitungen ist die Aufstellung eines vollen Systems einer Grundform $f$, welches dann freilich, allgemein zu reden, noch viele überflüssige Formen enthalten wird, eine verhältnissmässig einfache Sache. Aus der wirklichen Aufstellung des Systems folgt dann seine Endlichkeit von selbst. Der Grundgedanke aber, den wir bei der Aufstellung verfolgen, ist dieser. Es wurde schon oben erwähnt, dass man das System von $f$ erhalten wird, wenn man der Reihe nach Systeme $A_0$, $A_1$, $\cdots$, $A_g$ aufstellt. Gesetzt also, wir hätten bereits ein System $A_\mu$ gewonnen. Dann wird man zu $A_{\mu+1}$ folgendermassen gelangen. Man ertheile ausser $f$ allen Formen zweiter Ordnung
+\[
+K_\mu=(ab)^{2\mu}a_x^{n-2\mu}b_x^{n-2\mu}
+\]
+\[
+K_{\mu+1}=(ab)^{2\mu+2}a_x^{n-2\mu-2}b_x^{n-2\mu-2}
+\]
+den Rang 1. Dann wird das System $A_\mu$ ein $(A_{\mu+1})$ sein, nach einer oben gemachten Bemerkung. Ihm stellen wir ein anderes $(A_{\mu+1})$ gegenüber, welches das $K_{\mu+1}$ enthält. So wird durch Ueberschiebung der beiden $(A_{\mu+1})$ ein neues $(A_{\mu+1})$ entstehen, welches das $K_{\mu+1}$, und, weil die früheren $A$ in gleicher Weise entstanden sind, auch $f$, $K_1$, $K_2\cdots K_{\mu+1}$ enthält, d. h. überhaupt alle Hauptformen enthält, welche bei Formen von nicht höherer als der $\mu+1^{\mathrm{ten}}$ Stufe in Betracht kommen können. Das $(A_{\mu+1})$ ist daher ein $A_{\mu+1}$, was erreicht werden sollte.
+
+Die Hauptaufgabe wird hiernach sein, ein $(A_{\mu+1})$ aufzustellen, welches das $K_{\mu+1}$ enthält. Diese Aufgabe erledige ich in verschiedener Weise, je nachdem $\mu+1\leq\frac n2$ oder $>\frac n2$. In letzterem Falle ist $K$ von niederem Grade als $f$ und ich nehme als $(A_{\mu+1})$ sein volles System, dessen Aufstellbarkeit ich für $K$ postulire, eben insofern es von niederem Grade ist, als $f$. Ich betrachte aber diese Methode, wie ich ausdrücklich hervorheben will, als sehr viel unvollkommener als diejenige Methode, die ich bei den anderen $K$ einschlage, und die nun zunächst bei $K_1$ auseinandergesetzt werden soll, wo sie sich etwas anders gestaltet als bei den folgenden $K$.
+
+Es sei $f=a_x^n$, $n\geq4$. Das System $A_0$ wird auf $f$ selbst gebildet, und wenn wir
+\[
+K_1=(f,f)^2=(ab)^2a_x^{n-2}b_x^{n-2}
+\]
+
+% ---- Current completion slice appended: source PDF pages 032--059; pages 060--062 are scan witnesses only. ----
+
+% Current slice: source PDF pp. 032--059, printed pp. 25--52; pp. 060--062 are non-authorial/blank/back-cover witnesses only.
+% Hand-normalized TeX transcription against scan-visible source, with OCR scaffold used only as comparator.
+
+als Hauptform mit dem Range 1 einführen, so bildet $f$ für sich auch ein System $(A_1)$. Ich behaupte nun, \textit{dass $K_1$ für sich ebenfalls ein System $(A_1)$ bildet}, so dass also nur $f^\alpha$ und $K_1^\beta$ durch Ueberschiebung in allen Weisen zu verbinden wäre, um zu $A_1$ zu gelangen.
+
+Nach §. 3 sind nämlich die Covarianten $(f,K_1)^{2+r}$ durch Formen $Q_2$ darstellbar, wobei nur die Form $(f,K)^4$ auszunehmen ist,\footnote{Die Symbole von $K_1$ sind einfach $K$ genannt, was ja wohl zu keinem Missverständnisse Anlass gibt.} wenn $n=4$. Sie ist eine Invariante, die als $j$ bezeichnet werden soll. Demnach ist der Factor $(ak)^2$ und also auch $(ab)^2(ak)$ reducirend, und die Ueberschiebungen $((f,f)^{2+\lambda},K)^{\varrho+1}$ sind durch Formen $G$ und $Q_2$ ausdrückbar. Zu ihnen gehören aber namentlich auch die Formen $(K,K)^{\varrho+1}$ und also ist $(kk_1)$ ein reducirender Factor, und alle aus den Symbolen von $K$ zusammengesetzten symbolischen Producte sind reducibel auf Formen $G$ und $Q_2$. Also bildet $K_1$ für sich ein System $(A_1)$, und man wird ein System $A_1$ erhalten, wenn man die Systeme
+\[
+\begin{array}{cc}
+A&f\\
+B&K_1
+\end{array}
+\]
+durch Ueberschiebung combinirt.
+
+Ehe wir nun von dem so gewonnenen $A_1$ weiterschreiten, wollen wir angeben, welche Systeme $(A_\mu)$, die $K_\mu=(f,f)^{2\mu}$ enthalten, weiterhin zu benutzen sind, so lange $\mu\leq\frac n4$. \textit{Man stelle nämlich für das einen Augenblick als Grundform betrachtete $K_\mu$ das $A_{\mu-2}$ auf.} Um in seinen Formen nur die Symbole der Grundform zu haben, kann man die in §. 5 discutirte Aenderung anbringen, d. h. man ersetze jedes $2r$ mal vorkommende Symbol $k$ ($r=n-2\mu$) $r$mal durch $a$, $r$mal durch $b$ und füge den Factor $(ab)^{2\mu}$ hinzu. ---
+
+Zunächst ausführbar wird diese Forderung immer sein, insofern wir zu ihr erst geführt werden, wenn wir für die Grundform bereits das $A_{\mu-1}$ aufgestellt haben und also um so mehr wissen, wie man für jede Form ein $A_{\mu-2}$ gewinnt. Dass aber dieses $A_{\mu-2}$ an sich und auch nach der an ihm angebrachten Modification ein $(A_\mu)$ der Grundform ist, beweist sich folgendermassen, ganz ähnlich, wie oben bei dem $(A_1)$, nur dass damals nicht das $A_{\mu-2}$ von $K_\mu$, welches nicht existirte, sondern das $A_{\mu-1}$ genommen war.
+
+Die Ueberschiebungen $(f,K_\mu)^{2\mu-1+\varrho}$ sind nach §. 4 alle durch Formen $Q_{\mu+1}$ darstellbar, bis auf die eine Invariante $(f,K_\mu)^n$, welche für $\mu=\frac n4$ auftreten kann. Demnach ist der Factor $(ak)^{2\mu-1}$ und also auch $(ab)^2(ak)^{2\mu-2}$ reducirend und die Ueberschiebungen
+\[
+((f,f)^{2+2\mu},K_\mu)^{\varrho+2\mu-2}
+\]
+sind reducibel. Da zu ihnen auch jede Form $(K_\mu,K_\mu)^{\varrho+2\mu-2}$ gehört, so ist $(kk)^{2\mu-2}$ ein reducirender Factor. Aber die Formen des zu $K_\mu$ gehörigen $A_{\mu-2}$:
+\[
+B_1,B_2,\bdots,B_s
+\]
+haben nach der Definition der $A_{\mu-2}$ die Eigenschaft, dass jede aus ihnen durch Faltung hervorgehende Form (vorausgesetzt, dass man die $B$ mit den Symbolen $K$ geschrieben denkt) in dieser Weise darstellbar ist
+\[
+F(B)+Q_{\mu-1},
+\]
+wo $Q_{\mu-1}$ Formen bezeichnet, die zum Mindesten einen Klammerfactor $(kk)^{2\mu-2}$ enthalten, also reducibel sind. Führt man jetzt in die $B$ die Symbole der Grundform ein und faltet mit Bezug auf sie, so kommt der letzte Satz des §. 5 zur Anwendung, \textit{und also ist das System $B$:}
+\[
+B_1,B_2,\bdots,B_s
+\]
+\textit{ein $(A_\mu)$.}
+
+Wie man sich nunmehr für $n\geq 8$ zu verhalten hat, um von dem bereits gewonnenen $A_1$ zu dem $A_2$ von $f$ aufzusteigen, ist deutlich. Man ertheile der Form
+\[
+K_2=(f,f)^4
+\]
+den Rang 1. Dann ist das $A_1$ zugleich ein $(A_2)$ und mit ihm combinire man durch Ueberschiebung das System $B$, welches sich aus dem zu $K_2$ gehörigen $A_0$ durch die erwähnte Modification ergibt. Da dies $A_0$ nur aus $K_2$ besteht und auf $K_2$ die betr. Modification ohne Einfluss ist, so besteht also $B$ in diesem Falle nur aus $K_2$. Da $B$ selbst ein $(A_2)$, so entsteht durch die Ueberschiebung der beiden Systeme ein neues $(A_2)$ und dieses ist, weil es alle in Betracht kommenden Hauptformen enthält, ein $A_2$.
+
+So fährt man fort, wenn $n\geq 12$, um $A_3$ zu erhalten etc. und kommt so in allen Fällen bis zu demjenigen $A_\mu$, in welchem $\mu$ die grösste Zahl ist, die nicht grösser ist als $\frac n4$.
+
+Um zum vollen Systeme von $f$ zu gelangen, hat man noch diejenigen $A_\mu$ aufzustellen, für welche $\mu>\frac n4$ und $\leq\frac n2$. Oder vielmehr, man hat nur diejenigen $(A_\mu)$ zu construiren, welche das jedesmalige $K_\mu=(f,f)^{2\mu}$ enthalten. Denn wie sie zu verwerthen sind, ist nach dem Vorstehenden deutlich. Hier nehme ich dann, wie schon oben angedeutet, als $(A_\mu)$ das volle System des als Grundform betrachteten $K_\mu$:
+\[
+B:B_1,B_2,\bdots,B_s,
+\]
+welches als bekannt betrachtet werden kann, weil $K_\mu$ von niederem Grade von $f$ ist. Dass dasselbe in der That ein $(A_\mu)$ ist, beweist sich gerade so, wie oben, nur noch einfacher. ---
+
+Auf diese Weise fortschreitend, kommt man schliesslich zu $A_g$ von $f$, wo $g$ die grösste in $\frac n2$ enthaltene ganze Zahl ist, und somit zum vollen Systeme von $f$. \textit{Weil aber alle zu combinirenden Systeme endlich waren und die Ueberschiebung endlicher Systeme Endliches ergibt, so ist das System von $f$ endlich.}
+
+\begin{center}
+{\bfseries §. 10.\quad Nähere Untersuchung des aufgestellten Systems.}
+\end{center}
+
+Das System $A_0$ besteht aus $f$ allein. Untersuchen wir, wie viele Formen das System $A_1$ umfasst, welches durch Ueberschiebung des $A_0$ mit dem Systeme $B$ entsteht:
+\[
+B:
+\qquad K_1=(f,f)^2.
+\]
+Von den Ueberschiebungen
+\[
+U=(f^\rho,K^\beta)^r
+\]
+haben diejenigen, für welche $r\leq 1$ und eine der Zahlen $\rho$ oder $\beta$ grösser als 1 ist, zerfallende Glieder, gehören also nicht zu $A_1$. Die $U$ aber, bei denen $r>1$, haben Glieder mit dem reducirenden Factor $(ak)^2$ und sind also reducibel --- ausser in dem einen Falle, der bei $n=4$ eintritt, dass man die Invariante $(f,K)^4=j$ gebildet hat. Das System $A_1$ besteht mithin ($n$ ist von Vorneherein $\geq 4$ vorausgesetzt) aus den Formen:
+\[
+A_1:
+\qquad f,
+\quad (f,f)^2,
+\quad ((f,f)^2,f),
+\]
+denen im Falle $n=4$ noch die Invariante
+\[
+j=((f,f)^2,f)^4
+\]
+zuzufügen ist.
+
+Untersuchen wir, welche Formen für $n\geq 8$ das $A_2$ umfasst. Zu dem Zwecke haben wir das eben aufgestellte $A_1$ mit dem $A_0$ der Covariante
+\[
+K_2=(f,f)^4,
+\]
+d. h. mit dem Systeme:
+\[
+B:
+\qquad K_2=(f,f)^4
+\]
+durch Ueberschiebung zu verbinden.
+
+Aber von den Ueberschiebungen
+\[
+U=(P,Q)^r
+\]
+von Producten der Potenzen der Formen von $A_1$ über Potenzen von $K_2$ haben alle diejenigen zerfallende Glieder, bei denen $r\leq 2$ ist und entweder $P$ oder $Q$ mehr als einen Factor besitzt. Diejenigen, bei denen entweder $r>2$ oder $r>1$ und $Q$ eine der beiden letzten Formen von $A_1$ ist, haben Glieder mit den reducirenden Factoren $(ak)^3$ bez. $(ab)^2(ak)^2$; sie sind also alle reducibel, abgesehen von der einen, im Falle $n=8$ auftretenden Invariante $(f,K)^8$. Es sind daher von den $U$ nur
+\[
+(f,K_2),\qquad (f,K_2)^2,\qquad ((f,f)^2,K_2)
+\]
+zu berücksichtigen und das System $A_2$ besteht aus den Formen:
+\[
+\begin{gathered}
+A_2:
+\quad f,
+\quad (f,f)^2,
+\quad ((f,f)^2,f),
+\quad (f,f)^4=K_2,
+\quad (f,K_2),\quad (f,K_2)^2,
+\quad ((f,f)^2,K_2),
+\end{gathered}
+\]
+denen im Falle $n=8$ noch die Invariante
+\[
+(f,K)^8
+\]
+zuzufügen ist. ---
+
+Auf die allgemeine Untersuchung der weiteren $A_\mu$ und insbesondere derjenigen, für welche $\mu>\frac n4$, wollen wir hier nicht eingehen. Nur auf folgenden Umstand wollen wir noch aufmerksam machen. Wenn $n$ eine gerade Zahl, so ist für das höchste mögliche $\mu$ $A_\mu=A_g$, $g=\frac n2$. Dasselbe entsteht, indem man $A_{\frac n2-1}$ mit dem vollen Systeme der Form $(f,f)^n$ durch Ueberschiebung verbindet. Aber letztere ist eine Invariante, und die Ueberschiebung geschieht also, indem man dem $A_{\frac n2-1}$ einfach die Invariante $(f,f)^n$ zufügt. Es werden also z. B. bei
+\[
+f=a_x^2,
+\qquad f=a_x^4,
+\qquad f=a_x^6,
+\qquad f=a_x^8
+\]
+nur bez. die Systeme
+\[
+A_0,
+\qquad A_1,
+\qquad A_2,
+\qquad A_3
+\]
+zu bilden sein; das volle System entsteht, indem man ihnen die Invarianten
+\[
+(f,f)^2,
+\qquad (f,f)^4,
+\qquad (f,f)^6,
+\qquad (f,f)^8
+\]
+beifügt.
+
+\begin{center}
+{\bfseries Anwendungen.}
+\end{center}
+
+\begin{center}
+{\bfseries §. 11.\quad Das System von $f=a_x$.\quad Ueberschiebungen desselben\\mit anderen Systemen.}
+\end{center}
+
+Für $n=1$ ist $g=0$ und das System von $f$ besteht aus der einzigen Form, die $A_0$ enthält, aus $f$ allein.
+
+Untersuchen wir, mit Rücksicht auf die sogleich folgenden Betrachtungen bei Formen $5$ und $7^{\mathrm{ter}}$ Ordnung, was entsteht, wenn wir dasselbe mit einem beliebigen Systeme anderweitiger Formen:
+\[
+A_1,A_2,\bdots A_r
+\]
+durch Ueberschiebung verbinden. Ist $P$ ein beliebiges Product von Potenzen der $A$, so bilde man also alle Ueberschiebungen
+\[
+(P,f^\rho)^r.
+\]
+Dieselben kann man in drei Classen theilen, je nachdem $\rho>r$ ist, oder $\rho=r$, und $P$ mehr als einen Factor enthält, oder endlich $\rho=r$ und $P$ eine der Formen $A$ ist. Die ersten beiden Classen enthalten Ueberschiebungen mit zerfallenden Gliedern; nur die letzte Classe liefert beizubehaltende Formen, die also schliesslich die folgenden sind:
+\[
+f,
+\qquad A_i,
+\qquad (A_i,f^\rho)^\rho.
+\]
+
+\begin{center}
+{\bfseries §. 12.\quad Entsprechende Untersuchung bei quadratischen Formen.}
+\end{center}
+
+Ist $f=a_x^2$, so besteht das volle System nach §. 10 aus $A_0$ und $(f,f)^2$, also:
+\[
+A_1:
+\qquad f,(f,f)^2.
+\]
+Untersuchen wir wieder, welche nicht reducibele Formen entstehen, wenn wir dasselbe mit einem sonstigen Systeme
+\[
+A_1,A_2,\bdots A_r
+\]
+durch Ueberschiebungen verbinden. Wir werden zu dem Zwecke unter den Ueberschiebungen
+\[
+U=(P,f^\rho)^r\qquad \{r\leq 2\rho\}
+\]
+sofort diejenigen fortlassen können, für welche $r<2\rho-1$. Aber auch diejenigen, bei welchen $r\geq 2\rho-1$ und $P$ entweder einen Factor von geradem Grade oder, falls $r<$ als der Grad von $P$ überhaupt mehr als einen Factor besitzt, ergeben zerfallende Glieder. Es bleiben nur die beiden Fälle:
+\[
+\begin{array}{ll}
+1.& r\geq 2\rho-1\quad\text{und }P\text{ eine der Formen }A;\\
+2.& r=2\rho\quad\text{und gleich dem Grade von }P,
+\end{array}
+\]
+wo $P$ das Product $A_iA_k$ zweier Formen $A$ ungeraden Grades ist. (In diese Kategorie gehören nur Invarianten.)
+
+Aber auch unter diesen Formen sind noch eine Reihe reducibeler, sofern man Unterscheidungen einführt, je nachdem die $A$ Functionaldeterminanten sind oder nicht.
+
+Betrachten wir zunächst die Ueberschiebungen der ersten Classe:
+\[
+U_1=(A_i,f^\rho)^{2\rho-1}\quad\text{und}\quad U_2=(A_i,f^\rho)^{2\rho}.
+\]
+Von den $U_1$ sind, wie ich sofort zeigen werde, diejenigen auf Formen niederer Ordnung und Formen niederer Dimension reducibel, bei denen $A_i$ eine Functionaldeterminante zweier anderer, nicht linearer $A$ ist: $A_i=(A_lA_m)$ und sich die Zahl $2\rho+2$ in zwei Theile $2\sigma$ und $2\tau$ zerlegen lässt, welche nicht grösser sind als der Grad der Formen $A_l$ und $A_m$: ein Fall, der sowohl eintrifft, wenn der Grad von $A_l$ grösser als $2\rho$ ist, als auch dann, wenn dieser Grad gleich $2\rho$ ist und $A_l$ und $A_m$ von geradem Grade sind. Ich beweise dies folgendermassen: Es sei
+\[
+(A_l,f^{\sigma-1})^{2\sigma-2}=\varphi_x^\lambda,
+\qquad
+(A_m,f^{2\tau-1})^{2\tau-2}=\psi_x^\mu,
+\]
+wo, nach Voraussetzung, $\lambda$ und $\mu>1$. Dann ist das symbolische Product:
+\[
+\Pi=\varphi_x^{\lambda-2}\psi_x^{\mu-1}a_x(\varphi\psi)(\varphi a)
+\]
+ein Glied der Ueberschiebung $U_1=((A_l,A_m),f^\rho)^{2\rho-1}$. Nun ist
+\[
+\varphi_x^2(a\psi)^2=(a_x(\varphi\psi)-\psi_x(\varphi a))^2,
+\]
+mithin:
+\[
+\begin{aligned}
+\Pi&=\frac12\varphi_x^{\lambda-2}\psi_x^{\mu-2}
+\{a_x^2(\varphi\psi)^2+\psi_x^2(\varphi a)^2-\varphi_x^2(a\psi)^2\}\\
+&=\frac12 f\cdot(\varphi,\psi)^2+\frac12\psi(\varphi,f)^2-
+\frac12\varphi(f,\psi)^2.
+\end{aligned}
+\]
+Es ist also $\Pi$ auf Formen niederer Ordnung und somit $U_1$ auf Formen niederer Ordnung und niederer Dimension reducibel.
+
+Auch unter den Formen zweiter Classe lassen sich noch reducibele ausscheiden. Die Formen zweiter Classe haben die Gestalt $(A_iA_k,f^\rho)^{2\rho}$, wo $A_i$, $A_k$ zwei Formen ungeraden Grades sind, deren Grade addirt $2\rho$ ergeben. Von ihnen sind, wie ich jetzt zeigen werde, diejenigen auf Formen niedrigerer Ordnung oder niedrigerer Dimension reducibel, bei denen
+\[
+A_i=(\varphi,\psi),
+\qquad
+A_k=(\Phi,\Psi)
+\]
+Functionaldeterminanten nicht linearer Formen sind, die selbst dem System angehören. Bezeichnet man nämlich die Formen $\varphi$, $\psi$, $\Phi$, $\Psi$ durch $\varphi_x^\lambda$, $\psi_x^\mu$, $\Phi_x^\Lambda$, $\Psi_x^M$, so sind die $A_i$, $A_k$ bez. gleich den Determinanten
+\[
+\varphi_x^{\lambda-2}\psi_x^{\mu-2}
+\begin{vmatrix}
+\varphi_1^2&\varphi_1\varphi_2&\varphi_2^2\\
+\psi_1^2&\psi_1\psi_2&\psi_2^2\\
+x_2^2&-x_1x_2&x_1^2
+\end{vmatrix},
+\qquad
+\Phi_x^{\Lambda-2}\Psi_x^{M-2}
+\begin{vmatrix}
+\Phi_1^2&\Phi_1\Phi_2&\Phi_2^2\\
+\Psi_1^2&\Psi_1\Psi_2&\Psi_2^2\\
+x_2^2&-x_1x_2&x_1^2
+\end{vmatrix},
+\]
+und daher
+\[
+A_iA_k=\frac12
+\begin{vmatrix}
+(\varphi,\Phi)^2&(\varphi,\Psi)^2&\varphi\\
+(\psi,\Phi)^2&(\psi,\Psi)^2&\psi\\
+\Phi&\Psi&0
+\end{vmatrix},
+\]
+eine ganze Function von Formen niederer Ordnung. Trägt man diesen Werth in die Ueberschiebung $U=((A_iA_k),f^\rho)^{2\rho}$ ein, so erhält $U$ eine Reihe zerfallender Glieder und ist also auf Formen niederer Ordnung und niederer Dimension reducibel.
+
+Nach diesen Ausscheidungen verbleiben also noch folgende Formen:
+\begin{enumerate}
+\item $f$, $(f,f)^2$ und die $A_i$ selbst.
+\item Die Ueberschiebungen $(A_i,f^\rho)^{2\rho}$.
+\item Von den Ueberschiebungen $(A_i,f^\rho)^{2\rho-1}$ diejenigen, bei denen $A_i$\\
+a) keine Functionaldeterminante\\
+b) eine Functionaldeterminante vom Grade $2\rho-1$\\
+c) eine Functionaldeterminante von zwei Formen ungeraden Grades ist und den Grad $2\rho$ hat.
+\item Von den Ueberschiebungen $(A_iA_k,f^\rho)^{2\rho}$ diejenigen, bei denen die Grade von $A_i$ und $A_k$ ungerade Zahlen sind, die zusammen $2\rho$ betragen, und bei denen $A_i$ und $A_k$ nicht gleichzeitig Functionaldeterminanten sind.
+\end{enumerate}
+
+\begin{center}
+{\bfseries §. 13.\quad Das System von $f=a_x^3$ und einige Relationen zwischen seinen\\Formen.}
+\end{center}
+
+Für $n=3$ ist $g=1$ und $A_1$ das System von $f$. Dasselbe entsteht aus $A_0$ (welches aus $f$ allein besteht) durch Ueberschiebung mit dem vollen Systeme der Covariante $\tau=(f,f)^2$:
+\[
+B:
+\qquad \tau,
+\qquad (\tau,\tau')^2.
+\]
+Aber von den Formen, die durch Ueberschiebungen von $A_0$ mit $B$ entstehen, sind nach dem vorigen Paragraphen nur beizubehalten:
+\[
+f,
+\qquad \tau,
+\qquad (\tau,\tau')^2,
+\qquad (f,\tau),
+\qquad (f,\tau)^2,
+\qquad (f,\tau^2)^3,
+\qquad (f^2,\tau^3)^6.
+\]
+Von ihnen verschwindet $(f,\tau)^2$ nach einer am Schlusse von §. 4 gemachten Bemerkung identisch. Es verschwindet also auch jede Form, welche den Factor $(a\tau)^2$ hat, und somit bleiben nur folgende Formen:
+\[
+f,
+\qquad \tau,
+\qquad (\tau\tau')^2,
+\qquad (f\tau).
+\]
+\textit{Sie bilden das $A_1$, das System von $f$.}
+
+Wir wollen hier noch eine Reihe Relationen zwischen diesen Formen und einer beliebigen Form $\varphi=\varphi_x^m$ ableiten, welche später nützlich werden. Dieselben ergeben sich aus der Formel (III) des §. 3, wenn man in dieselbe der Reihe nach setzt: für die Formen $r_1$, $r_2$, $r_3$ und die Zahlen $\alpha_1$, $\alpha_2$, $\alpha_3$ bez. die folgenden:
+\[
+\begin{array}{ccccccccc}
+f,f,f&f,\tau,f&f,\tau,\varphi&f,\tau,\varphi&\tau,f,\varphi&f,f,\varphi&f,f,\tau&(f,\tau),f,\varphi\\
+0,2,0&1,2,1&0,1+\rho,1&\rho-3,3,0&0,\rho,0&1,2,1&0,1,1&\rho+1,2,1
+\end{array}
+\]
+Es wird dann:
+\begin{align*}
+1.\quad &\sum_i\frac{\binom{3}{2i}\binom{2}{2i}}{\binom{7-2i}{2i}}\bigl((f,f)^{2i}\cdot f\bigr)^{2-2i}=((f,f)^2,f)^0,\\
+2.\quad &((f\tau),f)^3=-((f,f)^2,\tau)^2,\\
+3.\quad &\sum_i\frac{\binom{1}{i}\binom{1+\rho}{i}}{\binom{4-i}{i}}\bigl((f,\tau)^{1+i},\varphi\bigr)^{1+\rho-i}\\
+&\qquad=\sum_i\frac{\binom{m-1-\rho}{i}\binom{1}{i}}{\binom{m+2-2\rho-i}{i}}\bigl((f,\varphi)^{1+\rho+i},\tau\bigr)^{1-i},\\
+4.\quad &\sum_i\frac{\binom{5-\rho}{i}\binom{3}{i}}{\binom{6-i}{i}}\bigl((f,\tau)^i,\varphi\bigr)^{\rho-i}=(-1)^{\rho-3}\bigl((f,\varphi)^3,\tau\bigr)^{\rho-3}\quad(\rho\geq 3),\\
+5.\quad &\sum_i\frac{\binom{2}{i}\binom{\rho}{i}}{\binom{6-i}{i}}\bigl((f,\tau)^i,\varphi\bigr)^{\rho-i}=\tau\cdot(f,\varphi)^\rho,\\
+6.\quad &\sum_i\frac{\binom{3}{i}\binom{\rho}{i}}{\binom{6-i}{i}}\bigl((\tau,f)^i,\varphi\bigr)^{\rho-i}=f\cdot(\tau,\varphi)^\rho\quad(\rho\leq 2),\\
+7.\quad &\sum_i\frac{\binom{2}{2i+1}\binom{1}{2i+1}}{\binom{4-2i}{2i+1}}\bigl((f,f)^{2i+2},\varphi\bigr)^{2-2i}\\
+&\qquad=-\sum_i\frac{\binom{m-3}{i}\binom{1}{i}}{\binom{m-i}{i}}\bigl((f,\varphi)^{2+i},f\bigr)^{2-i},\\
+8.\quad &\sum_i\frac{\binom{2}{i}\binom{1}{i}}{\binom{5-i}{i}}\bigl((f,f)^{i+1},\tau\bigr)^{1-i}
+=\sum_i\frac{\binom{1}{i}\binom{1}{i}}{\binom{4-i}{i}}\bigl((f,\tau)^{1+i},f\bigr)^{1-i},\\
+9.\quad &\sum_i\frac{\binom{1-\rho}{i}\binom{2}{i}}{\binom{5-i}{i}}\bigl(((f,\tau),f)^{1+i},\varphi\bigr)^{3+\rho-i}\\
+&\qquad=(-1)^{\rho+1}\sum_i\frac{\binom{m-\rho-3}{i}\binom{1}{i}}{\binom{m-i}{i}}\bigl(((f,\tau),\varphi)^{2+i},f\bigr)^{\rho+2-i}.
+\end{align*}
+und hieraus kann man folgende Formeln ableiten:
+\begin{align*}
+1.\quad &(f^2,f)^2=\frac7{10}\,f\cdot\tau,\\
+2.\quad &(f\tau,(f,\tau))^3=\frac25\tau(\tau,\tau)^2,\\
+3.\quad &(f\tau,\varphi)^\rho=(\tau,(f,\varphi)^3)^{\rho-3}-\frac35(5-\rho)((f,\tau),\varphi)^{\rho-1}\quad(\rho>2),\\
+4.\quad &(f\tau,\varphi)^\rho=\frac{3\tau}{5}(f,\varphi)^\rho+\frac25 f(\tau,\varphi)^\rho\quad(\rho\leq 2),\\
+5.\quad &(\varphi,\tau)^2=-2\sum_i\frac{\binom{m-3}{i}\binom{1}{i}}{\binom{m-i}{i}}\bigl((f,\varphi)^{2+i},f\bigr)^{2-i},\\
+6.\quad &((f,\tau),f)=\frac{\tau^2}{2},\\
+7.\quad &(\varphi,\tau^2)^{3+\rho}=2\sum_i\frac{\binom{m-\rho-3}{i}\binom{1}{i}}{\binom{m-i}{i}}\bigl(((f,\tau),\varphi)^{2+i},f\bigr)^{2+\rho-i}.
+\end{align*}
+
+\begin{center}
+{\bfseries §. 14.\quad Das System von $f=a_x^4$.}
+\end{center}
+
+Das System $A_1$ besteht hier, nach §. 10, aus den Formen
+\[
+A_1:
+\qquad f,(f,f)^2,((f,f)^2,f),((f,f)^2,f)^4.
+\]
+Fügt man ihm noch die Invariante
+\[
+(f,f)^4
+\]
+hinzu, so hat man nach §. 10 das $A_2$, das System von $f$.
+
+\begin{center}
+{\bfseries §. 15.\quad Das System von $f=a_x^5$.}
+\end{center}
+
+Das System $A_1$ besteht hier aus den Formen:
+\[
+f,(f,f)^2,((f,f)^2,f).
+\]
+Mit demselben ist das volle System der quadratischen Covariante
+\[
+i=(f,f)^4;
+\qquad
+B:
+\quad i,(ii')^2
+\]
+zu verbinden, um $A_2$, das System von $f$, zu erhalten. Aber nach §. 12. sind von den Ueberschiebungen der Potenzen von $i$ über Producte der $A_1$ angehörigen Formen nur folgende beizuhalten:
+\[
+(f,i^\rho)^{2\rho},\quad ((f,f)^2,i^\rho)^{2\rho},\quad (((f,f)^2,f),i^\rho)^{2\rho},
+\]
+\[
+(f,i^\rho)^{2\rho-1},\quad ((f,f)^2,i^\rho)^{2\rho-1},
+\]
+\[
+(((f,f)^2,f),i^5)^9,
+\quad (f^2,i^5)^{10},
+\quad \bigl(f\cdot((f,f)^2,f),i^7\bigr)^{14}.
+\]
+Unter ihnen finden sich keine weiteren reducibelen und es besteht also $A_2$, das System von $f$, aus folgenden 23 Formen:
+\[
+f,(f,f)^2,((f,f)^2,f),i,(i,i)^2.
+\]
+\[
+(f,i),(f,i)^2,(f,i^2)^3,(f,i^2)^4,(f,i^3)^5,
+\]
+\[
+((f,f)^2,i),((f,f)^2,i)^2,((f,f)^2,i^2)^3,((f,f)^2,i^2)^4,((f,f)^2,i^3)^5,((f,f)^2,i^3)^6,
+\]
+\[
+(((f,f)^2,f),i)^2,(((f,f)^2,f),i^2)^4,(((f,f)^2,f),i^3)^6,(((f,f)^2,f),i^4)^8,
+\]
+\[
+(((f,f)^2,f),i^5)^9,(f^2,i^5)^{10},\bigl(f\cdot((f,f)^2,f),i^7\bigr)^{14}.
+\]
+
+\begin{center}
+{\bfseries §. 16.\quad Das System von $f=a_x^6$.}
+\end{center}
+
+Das System $A_1$ besteht wieder aus den Formen:
+\[
+A_1:
+\qquad f,(f,f)^2,((f,f)^2,f).
+\]
+Die Covariante $K_2=(f,f)^4$ ist biquadratisch, ihr volles System, welches mit $A_1$ zu verbinden ist, besteht aus den Formen:
+\[
+B:
+\quad K,
+\quad (K,K)^2=V,
+\quad ((K,K)^2,K),
+\quad (K,K)^4=i,
+\quad ((K,K)^2,K)^2=j.
+\]
+Hier wird es nun vortheilhaft, neben $f$ und $K$, welche, wie immer, den Rang 1 bekommen, zum Zwecke der leichteren Erkennung der reducibelen Formen, die Ueberschiebung:
+\[
+(f,K)^4=l
+\]
+als neue Hauptform mit dem Range $1\frac12$ einzuführen. Man erreicht dadurch (vergl. die allgemeine Auseinandersetzung am Schlusse von §. 8), dass $(ak)^3$ ein reducirender Factor wird. Man betrachtet nämlich das symbolische Product $(bc)(ac)^3(ab)^3b_x^2c_x^2$. Dasselbe ändert sein Vorzeichen, wenn man $b$ mit $c$ vertauscht, und verschwindet also identisch. Aber nach Formel (II) lässt es sich in die Reihe entwickeln:
+\[
+\sum_i\frac{\binom{1}{i}\binom{3}{i}}{\binom{7-i}{i}}
+\bigl((f,f)^{3+i},f\bigr)^{4-i}
+=\frac12(K,f)^3.
+\]
+\textit{Mithin verschwindet $(K,f)^3$.} Alle Formen also, welche $(ak)^3$ zum Factor haben, werden entweder an sich verschwinden oder auf Formen reducirbar sein, die $(ak)^4$ enthalten, und diese sind durch Einführung der Symbole $l$ auf Formen niederen Ranges reducibel. \textit{Also ist $(ak)^3$ reducirender Factor.}
+
+Suchen wir weitere reducirende Factoren. \textit{Dass $(ab)^3$ ein solcher ist,} ist selbstverständlich. Denn jede Form, welche $(ab)^3$ enthält, enthält auch $(ab)^4$ und ist also durch Einführung der Symbole von $K=(f,f)^4$ auf niederen Rang reducibel. Andererseits \textit{ergeben sich aus der Regel in §. 8 aus dem einen reducirenden Factor $(ak)^3$ folgende weiteren:}
+\[
+(ab)^2(ak)^2,
+\qquad (ak)^2(kk')^2,
+\qquad (ab)^2(ak)(kk')^2.
+\]
+Ersetzt man ferner in Formel (III) die Formen, resp. Zahlen $r_1$, $r_2$, $r_3$ durch $\alpha_1$, $\alpha_2$, $\alpha_3$
+\[
+\begin{array}{ccc}
+f,f,K&f,f,l&f,K,l\\
+0,3,3&0,2,4&0,2,4
+\end{array}
+\]
+so wird
+\begin{align*}
+&\sum_i\frac{\binom{3}{2i+1}\binom{3}{2i+1}}{\binom{6-2i}{2i+1}}\bigl((f,f)^{2i+4},K\bigr)^{2-2i}
+=\sum_i\frac{\binom{1}{i}\binom{3}{i}}{\binom{5-i}{i}}\bigl((f,K)^{3+i},f\bigr)^{3-i},\\
+&\sum_i\frac{\binom{2}{2i}\binom{2}{2i}}{\binom{5-2i}{2i}}\bigl((f,f)^{2i+4},l\bigr)^{2-2i}=\bigl((f,l)^2,f\bigr)^4,\\
+&((f,K)^4,l)^2=((f,l)^2,K)^4.
+\end{align*}
+Also ist
+\[
+\frac32(K,K)^2+Q_3=\frac34(f,l)^2,
+\]
+\[
+(K,l)^2+Q_3=2((K,K)^2,f)^4,
+\]
+\[
+(l,l)^2=2((K,K)^2,K)^4+Q_3,
+\]
+\[
+\begin{aligned}
+(K,l^2)^4&=2((f,l)^2,(K,K)^2)^4+Q_3\\
+&=4((K,K)^2,(K,K)^2)^4+Q_3.
+\end{aligned}
+\]
+Mithin sind die Formen
+\[
+(f,l)^2,
+\qquad (l,l)^2,
+\qquad (K,l^2)^4
+\]
+reducibel, daher $(al)^2$ ein reducirender Factor und also nach §. 8 auch $(ab)^2(al)$.
+
+Die Combination der Systeme $A_1$ und $B$ werden wir nun in folgender Weise ausführen. Wir verbinden zunächst das System
+\[
+\Gamma:
+\qquad l,
+\]
+welches von $l$ allein gebildet wird, mit dem $A_1$. Da $(l,l)^2$ reducibel ist, so bildet $\Gamma$ ein $(A_2)$ und also ist das Resultat $\Delta$ seiner Ueberschiebung mit $A_1$ wieder ein $(A_2)$. Mit $\Delta$ erst verbinden wir das $B$.
+
+Berechtigt ist dieser Weg jedenfalls, da er dasselbe Resultat liefern muss wie die directe Ueberschiebung von $A_1$ mit $B$. Denn bei Ueberschiebung von $\Delta$ mit $B$ kann nicht weniger entstehen, als bei Ueberschiebung von $A_1$ mit $B$ --- weil ja $\Delta$ das $A_1$ in sich enthält --- noch auch mehr, weil die Ueberschiebung von $A_1$ über $B$ bereits Alles ergibt. Es ist übrigens der Vortheil, den ich durch das gemeinte Verfahren erziele, kein bedeutender, nur die wirkliche Durchführung der Rechnungen gestaltet sich etwas einfacher.
+
+Untersuchen wir also zunächst die Ueberschiebungen
+\[
+U=(P,l^\rho)^r
+\]
+von Producten $P$ der Formen von $A_1$ über Potenzen von $l$. Diejenigen, bei welchen $r>1$, haben Glieder mit den reducirenden Factoren $(al)^2$ und sind also wegzulassen. Es bleiben nur diejenigen, für welche $r=1$, und unter ihnen, als die einzigen, die kein zerfallendes Glied enthalten, nur diese:
+\[
+(f,l),
+\qquad ((f,f)^2,l),
+\qquad (((f,f)^2,f),l).
+\]
+Aber die beiden letzteren sind wegen des Auftretens des reducirenden Factors $(ab)^2(al)$ reducibel, so dass schliesslich das System $\Delta$ nur aus folgenden Formen besteht:
+\[
+\Delta:
+\quad f,
+\quad (f,f)^2,
+\quad ((f,f)^2,f),
+\quad l,
+\quad (f,l).
+\]
+Dieses $\Delta$ ist jetzt mit dem
+\[
+B:
+\quad K,
+\quad (K,K)^2=V,
+\quad (K,V),
+\quad (K,V)^4=j,
+\quad (K,K)^4=i
+\]
+zu verbinden. Die Ueberschiebungen
+\[
+U=(P,Q)^r
+\]
+von Producten $P$ der Formen von $\Delta$ über Producte $Q$ der ersten drei Formen von $B$ zerlege ich in drei Classen:
+\begin{enumerate}
+\item[I.] Die Ueberschiebungen $U_1$, bei denen $P$ mindestens einen der Factoren $(f,f)^2$ oder $((f,f)^2,f)$ enthält.
+\item[II.] Die Ueberschiebungen $U_2$, bei denen $P$ keine dieser Formen enthält, aber mindestens eine der Formen $f$ oder $(f,l)$.
+\item[III.] Die Ueberschiebungen $U_3$, bei denen $P$ nur eine Potenz von $l$ ist.
+\end{enumerate}
+
+\begin{center}
+{\bfseries I.\quad Die Ueberschiebungen $U_1$.}
+\end{center}
+
+Die Formen $U_1$ theilen wir in die folgenden fünf Unterclassen:
+\begin{enumerate}
+\item Diejenigen, bei denen $r=1$ und $P$ oder $Q$ mehr als einen Factor besitzt.
+\item Diejenigen, bei denen eine der Formen $V$ oder $(K,V)$ Factor von $Q$ ist.
+\item Diejenigen, bei denen $r>1$ und $Q$ eine Potenz von $K$.
+\item Die Form $(((f,f)^2,f),k)$.
+\item Die Form $((f,f)^2,k)$.
+\end{enumerate}
+Die Formen der ersten Unterclasse haben zerfallende Glieder; die der zweiten und dritten Unterclasse sind reducibel, weil sie die Factoren $(ab)^2(aV)=(ab)^2(ak_1)(kk_1)^2$ und $(ab)^2(ak)^2$ besitzen. Die Ueberschiebung der vierten Classe ist eine Functionaldeterminante von Functionaldeterminanten, und also ist nur die Form $((f,f)^2,K)$ der fünften Classe zu berücksichtigen.
+
+\begin{center}
+{\bfseries II.\quad Die Ueberschiebungen $U_2$.}
+\end{center}
+
+Die Formen $U_2$ lassen sich in folgende Unterclassen theilen:
+\begin{enumerate}
+\item Diejenigen, bei denen $r\leq 2$ ist und $P$ oder $Q$ mehr als einen Factor besitzt.
+\item Diejenigen, bei denen $r>1$ und $V$ oder $(K,V)$ Factor von $Q$.
+\item Diejenigen, bei denen $r>2$ und $Q$ eine Potenz von $K$.
+\item Diejenigen, bei denen $r=1$ und $P=(f,l)$ oder $Q=(K,V)$.
+\item Die Ueberschiebungen $(f,K)$, $(f,K)^2$, $((f,l),K)^2$, $(f,V)$.
+\end{enumerate}
+Die Formen der vier ersten Unterclassen dürfen wiederum weggelassen werden. Denn die Formen 1 haben zerfallende Glieder. Die Formen 2, 3 haben Glieder mit den reducirenden Factoren
+\[
+(aV)^3=(kk_1)^2(ak)^2(ak_1)
+\]
+und $(ak)^3$, die Formen 4 sind Functionaldeterminanten von Functionaldeterminanten.
+
+\begin{center}
+{\bfseries III.\quad Die Ueberschiebungen $U_3$.}
+\end{center}
+
+Von den Ueberschiebungen
+\[
+U_3=(l^\rho,Q)^r
+\]
+werden nach früheren Untersuchungen (§. 12) nur folgende beizubehalten sein:
+\[
+(K,l^\rho)^{2\rho},
+\qquad (V,l^\rho)^{2\rho},
+\qquad ((K,V),l^\rho)^{2\rho},
+\]
+\[
+(K,l^\rho)^{2\rho-1},
+\qquad (V,l^\rho)^{2\rho-1}.
+\]
+Von ihnen ist hier noch eine, nämlich $(k,l^2)^4$ als reducibel auszuscheiden.
+
+Somit besteht schliesslich das $A_2$ aus folgenden 25 Formen:
+\[
+f,(f,f)^2,((f,f)^2,f),(f,l),l,K,V,(KV),i,j,
+\]
+\[
+((f,f)^2,K),(f,K),(f,K)^2,((f,l),K)^2,(f,V),
+\]
+\[
+(K,l)^2,(V,l)^2,((K,V),l)^2,(V,l^2)^4,((K,V),l^2)^4,((K,V),l^3)^6,
+\]
+\[
+(K,l),(V,l),(K,l^2)^3,(V,l^2)^3.
+\]
+Fügt man die Invariante $(f,f)^6$ hinzu, so hat man das volle System von $f$.
+
+\begin{center}
+{\bfseries §. 17.\quad Das System von $f=a_x^7$.}
+\end{center}
+
+Bei den Formen siebenter Ordnung\footnote{Untersuchungen über das System der Formen siebenter Ordnung, die indess nicht so weit durchgeführt sind, wie die im Texte, hat neuerdings Hr. Krey publicirt (Göttingen, Dissertation).} sollen, ähnlich wie soeben bei denen der sechsten, neben $f$ und den Formen zweiter Ordnung $K$ noch andere Hauptformen für die Rangbestimmung einführen. Es sind dies die folgenden
+\[
+(f,K_2)^5=r=r_x^3,
+\]
+\[
+((K_2,K_2)^4,r)^3=\alpha=\alpha_x.
+\]
+Sie sollen bez. den Rang $1\frac7{15}$ und $3\frac13$ erhalten, während $f$, $K_1$, $K_2=(f,f)^4$ den Rang 1 behalten.\footnote{$K_2$ ist weiterhin immer einfach als $K$ bezeichnet.}
+
+Das $A_1$ von $f$ ist bekannt, es umfasst die Formen
+\[
+f,(f,f)^2,((f,f)^2,f).
+\]
+Dasselbe ist, um $A_2$ zu erhalten, mit dem vollen Systeme der Covariante sechsten Grades
+\[
+K_2=(f,f)^4,
+\]
+welches man nach dem vorigen Paragraphen aufstellen kann, zu verbinden. Zu diesem Zwecke suchen wir zunächst reducirende Factoren.
+
+Indem ich noch die Bezeichnungen einführe $p=(K,K)^4$, $\varphi=$ beliebige Function, behaupte ich:
+
+\textit{dass folgende 10 Formen reducibel sind:}
+\[
+\begin{gathered}
+(K,K)^6,
+\quad (f,p),
+\quad (K,p)^2,
+\quad (K,p)^4,
+\quad (p,p)^2,
+\quad (p,p)^4,
+\quad ((p,p)^2,p),\\
+(K,\alpha),
+\quad ((K,\varphi),\alpha),
+\quad ((K,\varphi)^2,\alpha),
+\end{gathered}
+\]
+\textit{dass ferner folgende 11 Factoren reducirend wirken:}
+\[
+\begin{gathered}
+(ak)^3,
+\quad (ab)^2(ak)^2,
+\quad (ak)^2(kk_1)^2,
+\quad (kr)^3,
+\quad (kr)^2(kk_1)^2,
+\quad (kk_1)^2(kr)(rr_1)^2,\\
+(ar),
+\quad (a\alpha),
+\quad (p\alpha)^2,
+\quad (r\alpha)^3,
+\quad (kr)(kr_1)(r_1r_2)^2.
+\end{gathered}
+\]
+
+\begin{center}
+{\bfseries Beweis.}
+\end{center}
+
+Man substituire in die Formel (III) für die Formen $r_1$, $r_2$, $r_3$ bez. die Grössen $\alpha_1$, $\alpha_2$, $\alpha_3$ der Reihe nach:
+\[
+\begin{array}{ccccccccccc}
+fKf&fKf&fKf&fKf&KfK&KfK&fr\varphi&frf&pr\varphi&KKp&K\varphi\alpha\\
+033&043&143&343&014&023&0\rho2&043&022&224&01\rho
+\end{array}
+\]
+so entstehen die Formeln:
+\begin{align*}
+&\sum_i\frac{\binom{3}{i}\binom{3}{i}}{\binom{8-i}{i}}\bigl((f,K)^{3+i},f\bigr)^{3-i}
+=\sum_i\frac{\binom{4}{2i+1}\binom{3}{2i+1}}{\binom{8-2i}{2i+1}}\bigl((f,f)^{2i+4},K\bigr)^{2-2i},\\
+&\sum_i\frac{\binom{3}{i}\binom{4}{i}}{\binom{8-i}{i}}\bigl((f,K)^{3+i},f\bigr)^{4-i}
+=\sum_i\frac{\binom{3}{2i}\binom{3}{2i}}{\binom{7-2i}{2i}}\bigl((f,f)^{2i+4},K\bigr)^{3-2i},\\
+&\sum_i\frac{\binom{2}{i}\binom{4}{i}}{\binom{8-i}{i}}\bigl((f,K)^{3+i},f\bigr)^{5-i}
+=-\sum_i\frac{\binom{2}{2i}\binom{3}{2i}}{\binom{7-2i}{2i}}\bigl((f,f)^{2i+4},K\bigr)^{4-2i},\\
+&((f,K)^3,f)^7=-((f,f)^4,K)^6,\\
+&\sum_i\frac{\binom{3}{i}\binom{1}{i}}{\binom{6-i}{i}}\bigl((K,f)^{4+i},K\bigr)^{2-i}
+=\sum_i\frac{\binom{5}{2i+1}\binom{4}{2i+1}}{\binom{10-2i}{2i+1}}\bigl((K,K)^{2+2i},f\bigr)^{3-2i},\\
+&\sum_i\frac{\binom{4}{i}\binom{2}{i}}{\binom{8-i}{i}}\bigl((K,f)^{3+i},K\bigr)^{2-i}
+=\sum_i\frac{\binom{4}{2i}\binom{3}{2i}}{\binom{9-2i}{2i}}\bigl((K,K)^{2+2i},f\bigr)^{3-2i},\\
+&\sum_i\frac{\binom{1}{i}\binom{\rho}{i}}{\binom{7-i}{i}}\bigl((f,r)^{2+i},\varphi\bigr)^{\rho-i}
+=\sum_i\frac{\binom{m-\rho}{i}\binom{2}{i}}{\binom{m+8-2\rho-i}{i}}\bigl((f,\varphi)^{\rho+i},r\bigr)^{2-i},\\
+&((f,r)^3,f)^4=\sum_i\frac{\binom{3}{2i}\binom{3}{2i}}{\binom{7-2i}{2i}}\bigl((f,f)^{2i+4},r\bigr)^{3-2i},\\
+&\sum_i\frac{\binom{1}{i}\binom{2}{i}}{\binom{4-i}{i}}\bigl((p,r)^{2+i},\varphi\bigr)^{2-i}
+=\sum_i\frac{\binom{m-2}{i}\binom{2}{i}}{\binom{m-i+1}{i}}\bigl((p,\varphi)^{2+i},r\bigr)^{2-i},\\
+&((k,k)^4,p)^4=((k,p)^2,k)^6,\\
+&\sum_i\frac{\binom{m-\rho}{i}\binom{1}{i}}{\binom{m+7-2\rho-i}{i}}\bigl((K,\varphi)^{\rho+i},\alpha\bigr)^{1-i}=((K,\alpha),\varphi)^\rho,
+\end{align*}
+welche wir mit den folgenden aus §. 13 verbinden wollen
+\[
+(r^2,r)^2=\frac7{10}r\cdot\tau;
+\qquad (r\cdot\tau,(r,\tau))^3=\frac25\tau\cdot(\tau,\tau)^2;
+\]
+\[
+((r,\tau),\varphi)^{\rho+2}=-\frac5{3(2-\rho)}(r\cdot\tau,\varphi)^{\rho+3}+\frac5{3(2-\rho)}(\tau,(r,\varphi)^3)^\rho,
+\]
+\[
+(r\cdot\tau,\varphi)^\rho=\frac35\tau\cdot(r,\varphi)^\rho+\frac25r\cdot(\tau,\varphi)^\rho;
+\]
+\[
+(\varphi,\tau)^2=2\bigl(r,(r,\varphi)^2\bigr)^2+2\frac{m-3}{m-1}\bigl((r,(\varphi,r)^3)\bigr),
+\]
+\[
+(\varphi,\tau^2)^{3+\rho}=2\sum_i\frac{\binom{m-\rho-3}{i}\binom{1}{i}}{\binom{m-i}{i}}\cdot\bigl(((r,\tau),\varphi)^{2+i},r\bigr)^{2+\rho-i}.
+\]
+Man gelangt so zu folgenden Formeln:
+\begin{align*}
+1.\quad &(f,r)=\frac32(K,K)^2+Q_3,\\
+2.\quad &(f,r)^2=Q_3,\\
+3.\quad &(f,r)^3=\frac52p+Q_3,\\
+4.\quad &(K,K)^6=Q_3,\\
+5.\quad &(p,f)=-\frac{Kr}{5}+Q_3,\\
+6.\quad &(p,f)^2=\frac45(K,r)+Q_3,\\
+7.\quad &(p,f)^3=\frac35(K,r)^2+Q_3,\\
+8.\quad &(p,f)^4=Q_3,\\
+9.\quad &(K,r)^3=Q_3,\\
+10.\quad &(p,K)^2=\frac4{25}r^2+Q_3,\\
+11.\quad &(p,K)^3=Q_3,\\
+12.\quad &(p,K)^4=\frac{12}{25}\tau+Q_3,\\
+13.\quad &(p,r)^2=Q_3,\\
+14.\quad &(p,p)^2=-\frac{12}{25}((K,r)^2,r)^2+Q_3,\\
+15.\quad &(p,p)^4=Q_3,\\
+16.\quad &(f,\alpha)=-\frac65\bigl((K,r),r\bigr)^2-\frac97\bigl((K,r)^2,r\bigr)+Q_3,\\
+17.\quad &(K,\alpha)=-\frac35r\cdot\tau+Q_3,\\
+18.\quad &(p,\tau)^2=-\frac25(r,\alpha)+Q_3,\\
+19.\quad &((r,\tau),K)^2=\frac{25}{36}p\cdot\alpha+Q_3,\\
+20.\quad &((r,\tau),K)^3=\frac{25}{9}(p,\alpha)+Q_3,\\
+21.\quad &(K,\tau^2)^{\rho+3}=2\bigl(((r,\tau),K)^2,r\bigr)^{\rho+2}+\frac25(3-\rho)\bigl(((r,\tau),K)^3,r\bigr)^{\rho+1},\\
+22.\quad &(p,\alpha^2)^2=G+Q_3,\\
+23.\quad &(r,\alpha^3)^3=G+Q_3,\\
+24.\quad &((K,\varphi),\alpha)+\frac{m-1}{m+4}\alpha(K,\varphi)^2=-\frac9{25}\tau\cdot(r,\varphi)+\frac6{25}r\cdot(\tau,\varphi)+Q_3,\\
+25.\quad &((K,\varphi)^2,\alpha)+\frac{m-2}{m+2}\alpha(K,\varphi)^3=-\frac9{25}\tau\cdot(r\varphi)^2+\frac6{25}r\cdot(\tau,\varphi)^2+Q_3.
+\end{align*}
+Aus ihnen aber geht die Richtigkeit der vorangeschickten Behauptung hervor. Unmittelbar klar ist die Reducibilität der aufgeführten Formen. Die reducirende Wirkung der einzelnen Factoren ergibt sich durch folgende Ueberlegungen. Dass $(ak)^3$ reducirender Factor ist, folgt aus der Reducibilität von $(f,k)^{3+r}$; aus $(ak)^3$ leiten sich $(ab)^2(ak)^2$, $(ak)^2(kk')^2$ nach der Regel des §. 8 als weitere reducirende Factoren ab. Analog folgt das Entsprechende für die Factoren $(kr)^3$, $(kk_1)^2(kr)^2$, $(kk_1)^2(kr)(rr_1)^2$ aus der Reducibilität von $(K,r)^3$ und $((K,K)^4,r)^3$, für die Factoren $(ar)$, $(a\alpha)$ und $(p\alpha)^2$ aus der Reducibilität von $(f,r)^r$ und $(f,\alpha)$, $(p,\alpha^2)^2$. Dass endlich $(kr)(kr_1)(r_1r_2)^2$ ein reducirender Factor ist, erschliesst man folgendermassen. Das symbolische Product
+\[
+(kr)(kr_1)(r_1r_2)^2k_x^4r_x^2r_{2,x}
+\]
+und alle durch Faltung aus ihm entstehende Formen lassen sich in Reihen entwickeln, welche nach den Ueberschiebungen
+\[
+U=(K,(r,\tau)^\rho)^r
+\]
+fortschreiten. Diese $U$ sind aber alle reducibel. Sie haben nämlich, wenn $\rho=0$, $r\leq 3$, zerfallende Glieder; anderenfalls verschwinden sie identisch oder haben Glieder mit dem reducirenden Factor $(kr)^3$. Ferner ist $(K,(r,\tau))$ Functionaldeterminante von Functionaldeterminanten; die Ueberschiebungen $(K,(r,\tau))^2$ und $(K,(r,\tau))^3$ sind nach Formel 19 und 20 reducibel; die Ueberschiebungen $(k,(r,\tau)^2)^r$ verschwinden mit $(r,\tau)^2$.
+
+Es zeigt sich aus unseren Formeln auch noch, dass die Formen:
+\[
+((K,K)^2,K),
+\qquad ((K,K)^2,p)
+\]
+auf Functionaldeterminanten von Functionaldeterminanten zurückgeführt, also durch Formen niederer Ordnung dargestellt werden können. Sie werden daher im schliesslichen Systeme ebenso, wie die vorhin aufgestellten reducibelen Formen, weggelassen werden dürfen. Aber so lange man mit der Aufstellung des $(A_\mu)$ zu thun hat, ist dies nicht gestattet. Denn die ganze Function von Formen niederer Ordnung, welche man an Stelle der genannten setzen kann, besitzt höheren Rang.
+
+Nach dieser vorläufigen Untersuchung schieben wir zunächst das volle System der cubischen Form $r$ (welches als solches auch ein $(A_2)$ ist):
+\[
+B_1:
+\quad r,
+\quad (r,r)^2=\tau,
+\quad (r,\tau),
+\quad (\tau,\tau)^2
+\]
+(die letzte Form ist eine Invariante) über das $A_1$:
+\[
+A_1:
+\quad f,
+\quad (f,f)^2,
+\quad ((f,f)^2,f).
+\]
+So entsteht ein System $B_2$, welches wieder ein $(A_2)$ sein wird. Aber alle Ueberschiebungen von Producten von Formen $A_1$ über solche von Formen $B_1$ haben Glieder mit dem reducirenden Factor $(ar)$ und sind also reducibel. Das System $B_2$ besteht daher nur aus den Formen $A_1$ und $B_1$:
+\[
+B_2:
+\quad f,(f,f)^2,((f,f)^2,f),r,\tau,(r,\tau),(\tau,\tau)^2.
+\]
+Mit dem $B_2$ hätte man nun zunächst das volle System der Covariante sechsten Grades $K=(ab)^4a_x^3b_x^3$ zu combiniren, welches man nach Anleitung des vorigen Paragraphen aufstellen kann. Aber unter seinen Formen sind eine grosse Zahl reducibeler. Zunächst sind reducibel diejenigen Formen, welche den im vorigen Paragraphen betrachteten Covarianten $(f,K)^2$, $l$, $V$ und den Invarianten $(f,f)^6$ und $i$ entsprechen: nämlich $(K,p)^2$, $(K,p)^4$, $(p,p)^2$, $(K,K)^6$, $(p,p)^4$. Dessgleichen entsprechen allen Ueberschiebungen von Potenzen von $l$ über Potenzen von $V$ reducibele Formen. Mithin bleiben nur noch folgende Formen irreducibel:
+\[
+B':
+\quad K,(K,K)^2,((K,K)^2,K),p,(K,p),((K,K)^2,p).
+\]
+Ich bezeichne ihr System, welches jedenfalls wieder ein $(A_2)$ ist, mit $B'$ und bilde nun zunächst durch Ueberschiebung von $B_2$ und $B'$ ein neues $(A_2)$, welches $B_3$ heissen mag.
+
+Die dabei zu untersuchenden Ueberschiebungen $(P,Q)^r$ von Producten $P$ der Formen von $B_2$ mit Producten $Q$ der Formen von $B'$ mögen in folgende vier Classen getheilt werden:
+\begin{enumerate}
+\item[I.] $r>2$.
+\item[II.] $r\leq 2$ und $P$ oder $Q$ enthalte mehr als einen Factor.
+\item[III.] $r=1$ und $P$ und $Q$ seien Formen von $B_2$ und $B'$.
+\item[IV.] $r=2$ und $P$ und $Q$ Formen von $B_2$ und $B'$.
+\end{enumerate}
+Die Formen der ersten Classe haben Glieder mit den reducirenden Factoren
+\[
+(ak)^3,
+\quad (ak)^2(kk_1)^2,
+\quad (rk)^3,
+\quad (rk)^2(kk_1)^2,
+\quad (kr)(kr_1)(rr_1)^2.
+\]
+Die Formen der zweiten Classe haben zerfallende Glieder. Von den Formen der dritten Classe sind diejenigen, bei denen $P$ gleich $((f,f)^2,f)$ oder $(r,\tau)$ und $Q$ gleich $((K,K)^2,K)$ oder $(K,p)$ oder $((K,K)^2,p)$ ist, Functionaldeterminanten von Functionaldeterminanten. Ferner lassen sich die Ueberschiebungen, bei denen $Q$ die Form $(K,K)^2$ bedeutet, mittelst der Formel $\frac32(K,K)^2=(f,r)+Q_3$ auf Functionaldeterminanten von Functionaldeterminanten zurückführen. Die Ueberschiebung $(f,p)$ ist reducibel, die Ueberschiebung $(p,\tau)$ hat ein Glied mit dem reducirenden Factor $(kk_1)^2(kr)(rr_1)^2$. So bleiben als irreducibele Ueberschiebungen in der dritten Classe nur
+\[
+(f,K),
+\quad ((f,f)^2,K),
+\quad (r,K),
+\quad (\tau,K),
+\quad (r,p).
+\]
+Von den Ueberschiebungen der vierten Classe haben zunächst diejenigen, bei denen $Q$ eine der fünf letzten Formen von $B'$ ist, Glieder mit den reducirenden Factoren
+\[
+(ak)^2(ak_1)^2,
+\quad (rk)^2(kk_1)^2,
+\quad (rk)(kk_1)^2(rr_1)^2.
+\]
+Die Ueberschiebungen
+\[
+((f,f)^2,K)^2,
+\qquad (((f,f)^2,f),K)^2
+\]
+haben Glieder mit dem reducirenden Factor
+\[
+(ab)^2(ak)^2.
+\]
+Die Form $((r,\tau),K)$ ist reducibel. So bleiben nur als irreducibele:
+\[
+(f,K)^2,
+\quad (r,K)^2,
+\quad (\tau,K)^2.
+\]
+\textit{Das System $B_3$ wird also aus folgenden 20 Formen gebildet:}
+\[
+\begin{gathered}
+B_3:
+\quad f,(f,f)^2,((f,f)^2,f),r,\tau,(r,\tau),(\tau,\tau)^2,K,(K,K)^2,((K,K)^2,K),\\
+p,(K,p),((K,K)^2,p),(f,K),(f,K)^2,((f,f)^2,K),(r,K),\\
+(r,K)^2,(\tau,K),(\tau,K)^2,(r,p).
+\end{gathered}
+\]
+Mit ihm combiniren wir nunmehr das System $B_4$ der linearen Form $\alpha$, welches aus ihr allein besteht. So entsteht ein neues System $(A_2)$, welches zunächst die Formen von $B_3$ und $B_4$ und die irreducibelen Ueberschiebungen
+\[
+U=(P,\alpha^r)^r
+\]
+von Formen $P$ und $B_3$ über Potenzen von $\alpha$ umfasst. \textit{Aber das so gewonnene $(A_2)$ ist dann ein $A_2$, weil es alle Hauptformen umfasst, und also dürfen nunmehr bei ihm auch die durch Formen niederer Ordnung ausdrückbaren}
+\[
+((K,K)^2,K)
+\quad\text{und}\quad
+((K,K)^2,p)
+\]
+\textit{weggelassen werden.}
+
+Untersuchen wir die Ueberschiebungen $(P,\alpha^r)^r$ genauer. Von ihnen sind reducibel:
+\begin{enumerate}
+\item diejenigen, bei denen $P$ eine der Formen ist: $f$, $(f,f)^2$, $((f,f)^2,f)$, $(f,K)$, $(f,K)^2$, $((f,f)^2,K)$; denn sie haben Glieder mit dem reducirenden Factor $(a\alpha)$;
+\item diejenigen, bei denen $P$ eine der Formen ist: $K$, $(K,K)^2$, $(K,\varphi)$, $(K,r)$, $(K,r)^2$, $(K,\tau)$, $(K,\tau)^2$, $((K,K)^2,K)$, $((K,K)^2,p)$ (vergl. Formel 17, 24, 25);
+\item diejenigen, bei denen $r>1$ und $P$ eine der Formen $p$, $(p,r)$. Denn sie haben Glieder mit dem reducirenden Factor $(p\alpha)^2$;
+\item $(r,\alpha^3)^3$.
+\end{enumerate}
+\textit{Das System $A_2$ besteht sonach aus folgenden 29 Formen:}
+\[
+\begin{gathered}
+A_2:
+\quad f;(f,f)^2;((f,f)^2,f);r;\tau;(r,\tau);(\tau,\tau)^2;K;(K,K)^2;p;(K,p);\\
+(f,K);(f,K)^2;((f,f)^2,K);(r,K);(r,K)^2;(\tau,K);(\tau,K)^2;\\
+(r,p);\alpha;(r,\alpha);(r,\alpha^2)^2;(\tau,\alpha);(\tau,\alpha^2)^2;((r,\tau),\alpha);((r,\tau),\alpha^2)^2;\\
+((r,\tau),\alpha^3)^3;(p,\alpha);((r,p),\alpha).
+\end{gathered}
+\]
+Mit ihm ist das System
+\[
+B:
+\quad l,(l,l)^2
+\]
+der quadratischen Covariante $l=(f,f)^6$ zu verbinden, um ein $A_3$ und damit \textit{das volle System von $f$} zu erreichen. Dasselbe kann, nach den §. 12 gegebenen Erörterungen, ausser den Formen von $\Gamma$ und $B$ nur noch folgende Ueberschiebungen umfassen:
+\begin{enumerate}
+\item[I.] $(P,l^\rho)^{2\rho}$, wo $P$ eine der Formen von $\Gamma$ selbst ist;
+\item[II.] $(P,l^\rho)^{2\rho-1}$, wo $P$ eine Form von $\Gamma$, die entweder keine Functionaldeterminante ist oder eine Functionaldeterminante vom Grade $2\rho-1$ resp. $2\rho$ oder endlich eine Functionaldeterminante zweier Formen ungeraden Grades;
+\item[III.] $(P_1P_2,l^\rho)^{2\rho}$, wo $P_1$ und $P_2$ zwei Formen von $\Gamma$ sind, welche nicht gleichzeitig Functionaldeterminanten sind und deren Grade addirt $2\rho$ ergeben.
+\end{enumerate}
+Unter diesen Formen sind jedenfalls noch sehr viele überflüssig. Aber ich habe die bez. Untersuchung noch nicht durchgeführt.
+
+\begin{center}
+{\bfseries §. 18.\quad Das System von $f=a_x^8$.}
+\end{center}
+
+Bei den Formen achter Ordnung begnüge ich mich, noch einmal hervorzuheben, was für sie aus den vorausgeschickten allgemeinen Betrachtungen folgt. Man kennt bei ihnen das $(A_2)$ (vergl. §. 10):
+\[
+f,(f,f)^2,((f,f)^2,f),K=(f,f)^4,(f,K),((f,f)^2,K),(f,K)^2,(f,K)^8.
+\]
+Dasselbe hat man mit dem vollen System der biquadratischen Form $L=(f,f)^6$, das aus folgenden fünf Formen besteht:
+\[
+B:
+\quad L,(L,L)^2,((L,L)^2,L),((L,L)^2,L),(L,L)^4,
+\]
+zu verbinden, um $A_3$ zu erhalten. Das System $A_4$, \textit{das volle System von $f$}, erhält man dann einfach, indem man die Invariante $(f,f)^8$ zufügt.
+
+\begin{center}
+{\bfseries §. 19.\quad Schlussbemerkungen.}
+\end{center}
+
+Zum Schlusse sei es gestattet, noch kurz die Tragweite der vorangehenden Untersuchungen zu charakterisiren und den Fortschritt zu zeigen, den sie gegenüber Früherem aufweisen.
+
+Es sei zunächst bemerkt, dass sich diese Untersuchungen nur auf \textit{allgemeine,} hier binäre Formen beziehen. In der That ruht der Satz von der symbolischen Darstellbarkeit aller invarianten Bildungen, der ihnen mit Nothwendigkeit zu Grunde liegt, eben auf dieser Voraussetzung. Denn bei seinem Beweise werden die Coëfficienten der Grundform unbeschränkt variabel gedacht, während man sie doch, wenn von speciellen Formen die Rede sein soll, nur solche Werthsysteme durchlaufen lassen kann, die eben zu speciellen Formen gehören. Es ist dann auch der Satz für specielle Formen nicht richtig. Sie besitzen Invarianten (Covarianten), die ganze Functionen ihrer Coëfficienten sind, ohne als symbolische Producte darstellbar zu sein. Bei den bis jetzt bekannten Beispielen lassen sich dieselben als \textit{Quotienten} symbolischer Producte repräsentiren,\footnote{Wenn z. B. eine biquadratische Form $f$ das Quadrat einer quadratischen ist, so ist $\frac{H}{f}$, unter $H$ die Hesse'sche Form verstanden, eine Invariante etc.} aber Allgemeines ist darüber bis jetzt nicht bekannt, wenn man auch vermuthen darf, dass in allen Fällen ein analoges Verhalten eintritt. Man kann vorerst nur die selbstverständliche Behauptung hinstellen, dass alle Invarianten allgemeiner Formen eben auch Invarianten specieller Formen sind.
+
+Nach noch einer anderen Seite mag man die vorstehenden Untersuchungen weiter durchgeführt wünschen. Es ist nirgendwo gezeigt, dass die aufgestellten Formensysteme nicht noch möglicherweise weitere reducibele Formen enthalten. Ich muss mich in dieser Beziehung auf die Angabe beschränken, dass ich mich bei den fertig hingeschriebenen Formensystemen in der That von der Unmöglichkeit, sie weiter einzuschränken, überzeugt habe; aber ich besitze keine allgemeine Methode, um derartige Beweise anders, als in speciellen Fällen zu führen.
+
+Man wird naturgemäss versuchen, die vorstehenden Betrachtungen von binären Formen auf Formen mit beliebig vielen Veränderlichen zu übertragen. Dabei tritt aber ohne Weiteres eine bedeutende Schwierigkeit auf, weil man bei mehr als drei Veränderlichen nicht mehr von vorneherein die Gesammtheit der möglichen symbolischen Bildungen in der Weise übersieht, wie bei binären und auch noch bei ternären Formen. Ein Beispiel wird das erläutern: Ein Plücker'scher linearer Complex kann symbolisch durch
+\[
+(abu)=0
+\]
+dargestellt werden (wo erst die Unterdeterminanten $(ab)$ eine reale Bedeutung haben). Wenn man nun z. B. das drei linearen Complexen gemeinsame Hyperboloid in Punkt-Coordinaten darstellen will, so wird es nöthig, die Symbole $a$, $b$ zu trennen und in verschiedene Determinantenfactoren unterzubringen (die Symbolstämme $(ab)$ in ihre Zweige $a$, $b$ aufzulösen). Diese Determinantenfactoren sind dann aber nicht mehr von einander unabhängig. Man weiss gewiss, dass ihr Aggregat verschwinden muss, wenn man $a=b$ setzt, aber man übersieht nicht mehr, ohne vorhergehende specielle Untersuchung (die ich für Formen mit 4 und 5 Veränderlichen durchgeführt habe), die Gesammtheit der bei ihnen gestatteten Möglichkeiten. Man kann also nicht mehr, wie bei binären oder auch bei ternären Formen, alle vorkommenden Bildungen ohne Weiteres schematisch hinschreiben.
+
+Dagegen kann man das nächstwichtige im Vorhergehenden benutzte Hülfsmittel auf Formen mit mehr Veränderlichen übertragen: ich meine die \textit{Reihenentwicklungen,} welche Formen mit mehreren Reihen binärer Variabler mit Hülfe der identischen Covarianten $(xy)$ etc. zusammensetzen lassen aus \textit{Polaren} von Formen mit nur einer Reihe Veränderlicher.
+
+Zu dem Zwecke haben wir uns eine verallgemeinerte Auffassung dessen zu bilden, was man, bei binären Formen, eine Polare nennt, wobei die Auffassung, dass die Polare aus einer Form mit nur einer Reihe Veränderlicher durch gewisse Processe entsteht, verhältnissmässig zurücktritt: \textit{Eine Polare ist eine Form mit mehreren Reihen Variabler $x,y,z\bdots$, die in Bezug auf dieselben gewissen Differentialrelationen genügt.} Man erhält die letzteren, indem man in den Determinanten $(xy)$, $(xz)\bdots$ die Variabeln durch die nach ihnen zu rechnenden Differentialquotienten ersetzt,\footnote{Correcter wäre es, zu sagen, man ersetze $x_1$, $x_2$ durch $-\frac{d}{dx_2}$, $\frac{d}{dx_1}$; aber für das Resultat leistet das im Texte angegebene Verfahren dasselbe. Eine ähnliche Bemerkung gilt spätern.} bei der Ausrechnung der Determinante die Aggregate $\frac d{dx}\cdot\frac d{dy}$ etc. zu zweiten Differentialquotienten zusammenzieht und das Resultat gleich Null setzt; es sind also folgende Bedingungen:
+\[
+\frac{d^2}{dx_1\,dy_2}-\frac{d^2}{dx_2\,dy_1}=0,
+\qquad
+\frac{d^2}{dx_1\,dz_2}-\frac{d^2}{dx_2\,dz_1}=0
+\quad\text{etc.}\bdots
+\]
+Bezeichnet man nun jede Form, die diesen Relationen genügt, als eine Normalform (und es ist leicht zu zeigen, dass bei binären Formen jede Normalform Polare einer Form mit nur einer Reihe von Veränderlichen ist), so kann man den Satz von der Reihenentwicklung, etwas unbestimmt, so aussprechen:
+
+\textit{Jede binäre Form mit mehreren Reihen Variabeln kann in eine Reihe entwickelt werden, deren Glieder Producte identischer Covarianten $(xy)$, $(xz)\bdots$ mit Normalformen sind.}
+
+Gehen wir nun zu ternären Formen. Eine ternäre Form wird eine beliebige Reihe von Punkt-Coordinaten $x,y,z,\bdots$ sowie von Linien-Coordinaten $u,v,w,\bdots$ enthalten können. Als Normalform wird man sie bezeichnen, wenn sie gewissen Differentialrelationen genügt, die wiederum aus der Determinante $(xyz)$ oder auch aus der Determinante $(uvw)$ entspringen, die nunmehr freilich, entsprechend den verschiedenen Auffassungen, welche man an eine solche Determinante knüpfen kann, vielgestaltiger sind.
+
+Man betrachte nämlich zunächst die $z$ als willkürliche Grössen $\gamma$, die $x$ und $y$ ersetze man durch die nach ihnen genommenen Differentialquotienten, und verlange, dass die Differentialoperation
+\[
+\begin{vmatrix}
+\dfrac d{dx_1}&\dfrac d{dx_2}&\dfrac d{dx_3}\\[0.2em]
+\dfrac d{dy_1}&\dfrac d{dy_2}&\dfrac d{dy_3}\\[0.2em]
+\gamma_1&\gamma_2&\gamma_3
+\end{vmatrix}
+\]
+(bei der Ausrechnung der Determinante setze man statt $\frac d{dx}\cdot\frac d{dy}$ wieder $\frac{d^2}{dx\,dy}$), angewandt auf die Normalform, Null ergebe, welche vorkommende Reihen von Punkt-Coordinaten $x,y$ man auch gewählt hat. Ebenso soll, unter $x,y,z$ irgend drei Reihen Punkt-Coordinaten verstanden, das Resultat der Operation
+\[
+\left(\frac d{dx}\quad\frac d{dy}\quad\frac d{dz}\right)
+\]
+Null sein (bei der Ausrechnung der Determinante ist jedesmal $\frac d{dx}\cdot\frac d{dy}\cdot\frac d{dz}$ zu $\frac{d^3}{dx\,dy\,dz}$ zusammenzuziehen). Die analogen Forderungen wird man für die vorkommenden Reihen $u,v,w\bdots$ von Linien-Coordinaten stellen. --- Endlich aber wird man aus der Determinante $(xyz)$, indem man die $(yz)$ Linien-Coordinaten $u$ gleichsetzt, oder auch aus der Determinante $(uvw)$, indem man für die $(vw)$ Punkt-Coordinaten $x$ schreibt, den Ausdruck $u_x$ und aus ihm, indem man die $u$ durch die $\frac d{du}$, die $x$ durch die $\frac d{dx}$ ersetzt, die Differentialoperation:
+\[
+\frac{d^2}{dx_1\,du_1}+\frac{d^2}{dx_2\,du_2}+\frac{d^2}{dx_3\,du_3}
+\]
+ableiten. Soll eine Form eine Normalform heissen, so muss auch diese Operation, auf sie angewandt, Null geben, welche der vorkommenden Reihen von Punkt- und Linien-Coordinaten auch mit $x$ bez. $u$ bezeichnet sein mögen.
+
+Die so definirten Normalformen sind, wie man leicht findet, \textit{Polaren von Normalformen mit nur einer Reihe von Punkt-Coordinaten $x$ und nur einer Reihe von Linien-Coordinaten $u$} (oder auch, indem man Alles auf Punkt-Coordinaten wirft, Polaren von Formen mit nur zwei Reihen von Punkt-Coordinaten $x$ und $y$, von denen die letzteren allein in der Verbindung $(xy)$ vorkommen). \textit{Eine beliebige Form mit irgendwelchen Punkt-Coordinaten $x,y,z\bdots$ und Linien-Coordinaten $u,v,w,\bdots$ kann immer entwickelt werden in eine Reihe, deren einzelnes Glied Product einer Normalform in identische Covarianten $u_x$, $(xyz)$ etc. ist.}
+
+Folgende historische Bemerkungen mögen dabei ihren Platz finden. Die Differentialrelation
+\[
+\frac{d^2}{dx_1\,du_1}+\cdots=0
+\]
+benutzte ich zuerst in einem Aufsatze über Combinanten (Mathemat. Annalen Bd. 3) und zeigte, dass man jede Form, die $x$ und $u$ enthält, mit Hülfe von $u_x$ zusammensetzen kann aus Formen, die dieser Relation genügen.\footnote{Mann kann, was für Geometrie wichtig ist, aus jeder Form, die den Factor $u_x$ hat, denselben vermöge dieser Methode so entfernen, dass dem Quotienten die invariante Form erhalten bleibt.} Es hat dann Clebsch in seiner Arbeit: Ueber eine Fundamentalaufgabe der Invariantentheorie (Göttinger Abhandlungen Bd. 19) mit Bezug auf die hier zunächst vorliegende Fragestellung gezeigt, dass man jede ternäre Form mit Hülfe identischer Covarianten aufbauen kann aus Polaren solcher Formen, die nur eine Reihe von $x$ und $u$ enthalten. Er hat ferner diejenigen Gebilde, welche geometrisch dargestellt werden durch das Verschwinden einer solchen Form, als Connexe in die Wissenschaft eingeführt und sie insbesondere als Normal-Connexe bezeichnet, wenn sie der bewussten Relation genügen.
+
+Wenn also die Resultate, wie sie soeben für ternäre Formen aufgestellt wurden, wo nicht unter derselben Gestalt, so doch dem Wesen nach in der genannten Abhandlung von Clebsch enthalten sind, so kann man bei Formen mit mehr Veränderlichen seine Untersuchung wesentlich weiter führen. Während er z. B. bei quaternären Formen alle anderen Formen aus solchen durch Polarenbildung ableitet, die nur eine Reihe von Punkt-Coordinaten $x$, eine von Linien-Coordinaten $p_{ik}$ und eine von Ebenen-Coordinaten $u$ enthalten, und die dabei den Differentialrelationen genügen:
+\[
+\frac{d^2}{dx_1\,du_1}+\cdots+\frac{d^2}{dy_4\,du_4}=0,
+\]
+\[
+\frac{d^2}{dp_{12}\,dp_{34}}+
+\frac{d^2}{dp_{13}\,dp_{42}}+
+\frac{d^2}{dp_{14}\,dp_{23}}=0,
+\]
+die aus der vollständigen Determinante $(xyzt)$ durch verschiedenartige Zusammenfassung in oben angedeuteter Weise abgeleitet werden können, --- ersetze ich diese Grundformen durch einfachere, die auch noch solchen Bedingungen genügen, wie sie z. B. aus Determinante $(xyzt)$ hervorgehen, wenn man die $t$ als willkürliche Grössen betrachtet, die $(yz)$ zu Linien-Coordinaten $p_{ik}$ zusammenfasst, die $x$ durch die $\frac d{dx}$, die $p$ durch die $\frac d{dp}$ ersetzt und endlich, bei der Ausrechnung, $\frac d{dx}\cdot\frac d{dp}$ zu $\frac{d^2}{dx\,dp}$ zusammenzieht. Eine derartige Normalform kann, wie ich ohne Beweis anführe, immer durch eine Form ersetzt werden, welche drei Reihen von Punkt-Coordinaten $x,y,z$ und von ihnen die letzteren nur in den Verbindungen $(xy)$, $(xyz)$ enthält.
+
+Soweit von diesen Reihenentwickelungen. Dass sich ein grosser Theil der sonst im Vorhergehenden benutzten Processe und Begriffe auf Formen mit beliebig vielen Veränderlichen überträgt: der Faltungsprocess, der Ueberschiebungsprocess, die Lehre von der Ueberschiebung der Systeme und ihr Zusammenhang mit gewissen diophantischen Gleichungen, die Theorie der reducirenden Factoren etc., ist selbstverständlich. Die Schwierigkeit ist nur die, dass man, bei der grossen Menge der auftretenden Bildungen und der eben zur Sprache gebrachten Misslichkeit bei der Zerlegung der Symbolstämme in ihre Zweige, keine Uebersicht über das Ganze gewinnt. Ein Nachweis der Endlichkeit ist mir daher auch nur in einzelnen Fällen bis jetzt gelungen. Ich veröffentlichte einen solchen für die cubischen ternären Formen (Math. Annalen Bd. I); ich bin auch in der Lage, für biquadratische ternäre Formen einen Beweis zu erbringen. Dass die Combination endlicher Systeme Endliches liefert, gelang mir, bei ternären und quaternären Formen zu zeigen; das volle Formensystem zweier simultaner quadratischer ternärer Formen wird in den von Herrn Lindemann herausgegebenen demnächst erscheinenden geometrischen Vorlesungen von Clebsch seine Stelle finden. ---
+
+Fragen wir schliesslich noch, inwiefern sich die im Vorstehenden gegebene Darstellung von der von mir bei früherer Gelegenheit gegebenen unterscheidet, und insbesondere sich unterscheidet von der in Clebsch's Buche enthaltenen, so dürften folgende Punkte die hauptsächlichsten sein.
+
+Die aus einer Grundform $f$ vom $n^{\mathrm{ten}}$ Grade entspringenden Formen wurden damals zunächst in zwei grosse Classen getheilt, je nachdem sie für jedes vorkommende Symbol $a,b,c,\cdots$ einen Linearfactor $a_x,b_x,c_x,\cdots$ enthalten oder nicht. Die ersteren können gelten als von den Formen des $(n-1)^{\mathrm{ten}}$ Grades herübergenommene und bilden demnach für sich ein vollständiges System, sofern man den zu beweisenden Satz von der Endlichkeit für $n-1$ bereits als erwiesen ansieht. Ich zeigte dann, dass man jede Form in zwei Theile zerlegen kann; in einen solchen, der symbolische Producte mit dem Klammerfactor $(ab)^\lambda$ enthält $(\lambda>\frac n2)$, und in herübergenommene Formen $W$ (herübergenommene Formen, die einen Linearfactor in einer Potenz, die $>\frac n2$, enthalten). Dieser an und für sich\footnote{Cf. Cayley. Math. Annalen Bd. 5. pag. 625.} bemerkenswerthe Satz ist jetzt bei der Aufstellung des Systems nicht mehr benutzt, die Formen $W$ sind durch die erste Hälfte der Systeme $A$:
+\[
+A_0,A_1,\bdots A_\mu
+\left\{
+\begin{array}{l}
+\mu\leq\dfrac n4,\\
+\mu+1>\dfrac n4
+\end{array}
+\right.
+\]
+ersetzt worden. \textit{Der hierin liegende Fortschritt ist der, dass jetzt direct als allgemeine Eigenschaft einer Form der $n^{\mathrm{ten}}$ Ordnung hingestellt wird, was früher implicite der Theorie der Formen $n-1^{\mathrm{ter}}$ Ordnung entnommen wurde.} (Man kann in der That beweisen, dass die Formen, welche die nunmehr benutzten $A$ constituiren, im Sinne der älteren Theorie Formen $W$ sind.) Ich kann in dieser Beziehung nur bedauern, dass ich bei den höheren $A$ auch jetzt noch die vollen Systeme von Formen niederen Grades gebrauche.
+
+Durch die Einführung der $A$ erster Kategorie ist eine Ungleichmässigkeit des früheren Beweisganges in Wegfall gekommen, die eintrat, wenn $n$ durch 4 theilbar war. Man hatte nämlich die vollständigen Systeme der verschiedenen Covarianten
+\[
+(ab)^{\lambda+2}a_x^{n-\lambda-2}b_x^{n-\lambda-2}
+\]
+zu bilden und mit einander zu combiniren (wo $\lambda$ die eben angegebene Bedeutung hat). Wenn nun $n$ durch 4 theilbar, ist eine dieser Covarianten eine Form $K$ von gleichem Grade wie $f$, deren volles System also noch unbekannt ist. Aber da konnte man beweisen, dass man dieses volle System auch nicht braucht, dass es genügt, unter seinen Formen ein jedenfalls endliches System $B$ auszusuchen, wie es bei der nunmehrigen Darstellung bei allen Covarianten zweiter Ordnung in den Coëfficienten, deren Grad $\geq n$ ist, zu bilden ist. Und in der That liegt in der damals particulär angewandten Methode der Keim zu der jetzt eingeschlagenen, bei der die fragliche Covariante $K$ mit zu den Covarianten höheren Grades gerechnet wird.
+
+Von sonstigen Fortschritten erwähne ich einmal die Einführung der \textit{diophantischen Gleichungen} bei der Combination der Systeme: die beizubehaltenden Ueberschiebungen sind jetzt geradezu durch die diophantischen Gleichungen definirt.
+
+Ich erwähne ferner die Einführung des \textit{Faltungsprocesses} neben dem früher allein benutzten Ueberschiebungsprocesse. Die ausschliessliche Benutzung des letzteren brachte es mit sich, dass man für jede Covariante neue Symbole einführte. Letzteres geschieht jetzt nur in einzelnen Fällen, so dass es möglich war, ein neues Classificationsprincip, den \textit{Rang} einer Form, einzuführen.
+
+Auf diese Weise gelang es, das Formensystem nicht nur für Formen der ersten sechs Grade, sondern auch für Formen des siebenten und achten Grades zu entwerfen. Es ist das Beispiel der Formen siebenten Grades gewesen, an welchem ich die jetzige allgemeine Methode ausgebildet habe, so wie die frühere Darstellung wesentlich aus dem Studium der Formen fünften und sechsten Grades erwachsen war. Aber befriedigend ist die allgemeine Theorie, die für die fünf ersten Grade an Einfachheit alles Wünschenswerthe leistet, in ihrer Anwendung auf Formen sechsten und siebenten Grades noch nicht. Es ist wahrscheinlich, dass man, wie schon oben gelegentlich angedeutet, gut thun wird, neben den Stufen $Q_\mu$ Unterstufen einzuführen, die sich auf die weiterhin vorkommenden Klammerfactoren beziehen, wobei dann die Eintheilungsprincipien: Rang und Dimension, die auch jetzt eine nur beiläufige Rolle spielen, möglicherweise in Wegfall kommen.
+
+Eine möglichst directe Methode zur Aufstellung der vollen Systeme, zunächst der binären Formen, dann auch für Formen mit mehr Variabeln, wäre für die Algebra in der That ein grosser Fortschritt. Ich erwähne nur dies, dass man, bei Kenntniss des vollen Systems, zur Durchführung jeder eine Form betreffenden Aufgabe sofort ein gegebenes Verfahren besitzt: man kennt von vornherein die Formen, aus denen sich das schliessliche Resultat zusammensetzen muss, und die Art, in der sie vereinigt vorkommen können; man hat also nur noch die Zahlenfactoren zu bestimmen, mit denen die einzelnen Formenaggregate behaftet sind.
+
+\begin{flushleft}
+Erlangen, 20. März 1875.
+\end{flushleft}
+\begin{flushright}
+Gordan.
+\end{flushright}
+
+\end{document}

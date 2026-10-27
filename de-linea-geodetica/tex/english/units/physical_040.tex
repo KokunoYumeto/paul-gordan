@@ -1,0 +1,43 @@
+% Physical unit 040; accepted Session 03 after fresh 400-dpi authority replay.
+\GordanUnitStart{040}{printed page 35}
+\GordanTopFolio{35}
+\begingroup\small
+Although from the two latter equations $\cos\varphi_1$ and $\cos\varphi_2$ can be determined, nevertheless, because of the periodicity of the trigonometric functions, the angles $\varphi_1$ and $\varphi_2$ themselves are not determinable.
+
+It is therefore necessary that limits be defined, both those that contain $\varphi_1$ and those that contain $\varphi_2$. For this reason we assume (which is allowed, since every point of conversion of the geodetic line can be taken as its starting point), first, that between the starting point and point $A$ (taking $l_2>l_1$) no point of conversion is interposed, and then that between points $A$ and $B$ the starting point is not situated.
+
+It follows that (cf. Chap. II \S\ 8) $\varphi_1$ is contained between the limits $0$ and $\pi$; that $\varphi_2$, since $\varphi_2-\varphi_1<\pi$ (cf. Chap. V \S\ 7), is contained either between the limits $\pi$ and $2\pi$, or between $0$ and $\pi$, according as the point of conversion is situated between the points $A$ and $B$, or is not; that is, according as
+\[
+ \psi >\text{ or }<\int_{l_1}^{l_2} dl\,{\cos l_0\over\cos l}{\sqrt{1-e^2\cos^2l}\over \sqrt{\sin^2l_0-\sin^2l}}
+\]
+holds, whose integral, in value, does not depart far from the sum
+\[
+ \arc(\cos=\tg l_1\cot l_0)-{e^2\over2}\cos l_0\,\arc\left(\cos={\sin l_1\over\sin l_0}\right).
+\]
+But, to return to the point from which we turned aside, let us compute $l_0$. Put
+\[
+ \chi=\int_{\varphi_1}^{\varphi_2} d\varphi\,\cos l_0\,{1-\sqrt{1-e^2+e^2\sin^2l_0\cos^2\varphi}\over 1-\sin^2l_0\cos^2\varphi}.
+\]
+Our equation passes into
+\[
+ \psi+\chi=\int_{\varphi_1}^{\varphi_2}{\cos l_0\,d\varphi\over1-\sin^2l_0\cos^2\varphi}
+ =\arc\left(\tg={\tg\varphi_2\over\cos l_0}\right)-\arc\left(\tg={\tg\varphi_1\over\cos l_0}\right)
+\]
+or, since
+\[
+ \arc(\tg=x)=\arc\left(\cos={1\over\sqrt{1+x^2}}\right),
+\]
+\[
+ \psi+\chi=\arc\left(\cos={\cos l_0\over\sqrt{\tg^2\varphi_2+\cos^2l_0}}\right)-\arc\left(\cos={\cos l_0\over\sqrt{\tg^2\varphi_1+\cos^2l_0}}\right)
+\]
+or, since
+\[
+ \arc(\tg=x)=\arc\left(\cos={1\over\sqrt{1+x^2}}\right),
+\]
+\[
+ \psi+\chi=\arc\left(\cos={\cos l_0\over\sqrt{\tg^2\varphi_2+\cos^2l_0}}\right)-\arc\left(\cos={\cos l_0\over\sqrt{\tg^2\varphi_1+\cos^2l_0}}\right)
+\]
+\[
+=\arc\left(\cos={\cos l_0\over\sqrt{{1\over\cos^2\varphi_2}-\sin^2l_0}}\right)-\arc\left(\cos={\cos l_0\over\sqrt{{1\over\cos^2\varphi_1}-\sin^2l_0}}\right)
+\]
+\endgroup

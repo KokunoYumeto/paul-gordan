@@ -1,0 +1,51 @@
+% Physical unit 030; accepted Session 03 after fresh 400-dpi authority replay.
+\GordanUnitStart{030}{printed page 25}
+\GordanTopFolio{25}
+\begingroup\small
+\begin{center}
+Solution nouvelle d'un problème de Géodésie
+\end{center}
+differs a little from that which he proposed in the \emph{Fundamenta}.
+
+Although this discrepancy is so small that, by following the former in our investigation, we introduce nothing artificial.
+
+Accordingly we use a new constant $v$, defined by the formula
+\[
+ v=\int_0^{\frac{\pi}{2}-l}{d\varphi\over \sqrt{1-x'^2\sin^2\varphi}}
+\]
+or by these formulae:
+\[
+ S(v,x')=\cos l_0;\qquad C(v,x')=\sin l_0;\qquad \Delta(v,x')=\sin B_0.
+\]
+When these values have been carried into our equations, and after using the formulae proposed in the \emph{Fundamenta}, p. 34, there results:
+{\small
+\[
+\begin{aligned}
+\psi&={S(v,x')\over C(v,x')\Delta(v,x')}
+  \int_0^u {\Delta^2u\,du\over S^2u+{S^2(v,x')\over C^2(v,x')}}\\
+&=-i{Siv\,Civ\over \Delta iv}\int_0^u{\Delta^2u\,du\over S^2u-S^2iv}\\
+&=i{\Delta(iv-iK')S(iv-iK')\over C(iv-iK')}
+  \int_0^u {\Delta^2u\,du\over 1-x^2S^2u\,S^2(iv-iK')}\\
+&=iu{\Delta(iv-iK')S(iv-iK')\over C(iv-iK')}
+  -iuZ(iv-iK')-{i\over2}\log{\Theta(u-iv+iK')\over\Theta(u+iv-iK')}\qquad \text{cf. fund. p. 146.}\\
+&=iu{Civ\over Siv\,\Delta iv}-iu\left({i\pi\over2K}+{Civ\,\Delta iv\over Siv}+Ziv\right)
+ -{i\over2}\log{-i.e.^{{\pi(K'-2iu-2v)\over4K}}H(u-iv)\over i.e.^{{\pi(K'+2iu-2v)\over4K}}H(u+iv)}\\
+&\hfill \text{cf. p. 163; cf. f. p. 164.}\\
+&=iux^2{Siv\,Civ\over\Delta iv}+{\pi u\over2K}-iuZiv
+ -{i\over2}\left\{\pi{K'-2iu-2v\over4K}-\pi{K'+2iu-2v\over4K}\right\}\\
+&\qquad{}-{i\over2}\log{H(iv-u)\over H(iv+u)}
+=-iuZ(iv+K)+{i\over2}\log{H(iv+u)\over H(iv-u)}.
+\end{aligned}
+\]
+}
+Putting $u=K$, one has $\psi=\mathcal A(l_0)$; therefore
+\[
+ \mathcal A(l_0)=-iKZ(iv+K)+{\pi\over2},
+\]
+and, referring this to the former form,
+\[
+ \psi={u\over K}\left\{\mathcal A(l_0)-{\pi\over2}\right\}
+ +{i\over2}\log{H(iv+u)\over H(iv-u)}
+ ={u\mathcal A(l_0)\over K}+{i\over2}\log{\Theta(iv-iK'+u)\over \Theta(iv-iK'-u)}.
+\]
+\endgroup
