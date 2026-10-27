@@ -58,7 +58,7 @@ The transcriptions, translations and typesetting are dedicated to the public dom
 ## Earlier versions
 
 Earlier versions were published on Zenodo, [doi:10.5281/zenodo.20616260](https://doi.org/10.5281/zenodo.20616260).
-That record is no longer updated.
+Zenodo has blocked access to our account, so please use this repository from now on.
 
 ---
 
