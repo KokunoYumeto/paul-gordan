@@ -35,8 +35,10 @@ The LaTeX sources are in the `tex/` folder of each work.
 
 ## How it was made
 
-All texts were transcribed from scans, and translated, by AI (OpenAI models in ChatGPT and Codex). The spot check and
-corrections of 27 October 2026 were made by Claude Opus 5.5 (Anthropic).
+The complete German transcriptions of both volumes of the *Vorlesungen* were made by Claude (Anthropic) in August
+2026: Claude Sonnet 5 agents in Claude Code workflows, one printed page per agent. All other texts, including the German
+and English of volume I, pages 1–28, were transcribed from scans, and translated, by AI (OpenAI models in ChatGPT and
+Codex). The spot check and corrections of 27 October 2026 were made by Claude Opus 5.5 (Anthropic).
 
 ## Sources
 
