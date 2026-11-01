@@ -1,0 +1,1210 @@
+% !PRINTED 89
+\weberpage{89}
+\S.\,7. Adjungirte Determinanten und correspondirende Matrices.
+
+auf: 1) Welches ist der Werth der Determinante selbst, 2) welches sind die Werthe der Unterdeterminanten sowohl der ersten als auch der übrigen Ordnungen?
+
+86. \textit{Berechnung des Werthes der adjungirten Determinante.} Zur Beantwortung der ersten Frage bilden wir das Product der beiden Determinanten $D$ und $\Delta$. Wir erhalten:
+\[
+\begin{vmatrix}
+a_{11}A_{11}+a_{12}A_{12}+\cdot a_{1n}A_{1n}, & a_{11}A_{21}+a_{12}A_{22}+\cdots+a_{1n}A_{2n}, & \cdot\cdot, & a_{11}A_{n1}\cdots+a_{1n}A_{nn} \\
+a_{21}A_{11}+a_{22}A_{12}\cdots+a_{2n}A_{1n}, & a_{21}A_{21}+a_{22}A_{22}\cdots+a_{2n}A_{2n}, & \cdot\cdot, & a_{21}A_{n1}\cdots+a_{2n}A_{nn} \\
+a_{31}A_{11}+\cdots+a_{3n}A_{1n}, & \cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot, & \cdot\cdot, & \cdot\;\cdot\;\cdot\;\cdot \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot & & & \\
+a_{n1}A_{11}\cdots+a_{nn}A_{1n}, & a_{n1}A_{21}+a_{n2}A_{22}\cdots+a_{nn}A_{1n}, & \cdot\cdot, & a_{n1}A_{n1}+a_{nn}A_{nn}
+\end{vmatrix}
+\]
+% ?? uncertain: row 1 above prints an abbreviated "+\cdot a_{1n}" between the second and third terms, unlike the "+\cdots+" ellipsis used in the other rows; reproduced as printed
+\[
+= D\cdot\Delta.
+\]
+In dieser Determinante verschwinden aber wegen der Relationen $(C)$ Nr. 32 alle ausserhalb der Diagonale stehenden Elemente, während die $n$ in ihr befindlichen Elemente den Werth $\Delta$ besitzen; sie reducirt sich also auf ihr Diagonalglied, so dass die Beziehung entsteht
+\weq{1}{D\cdot\Delta=\Delta^n,}
+oder
+\[
+D=\Delta^{n-1}.
+\]
+
+87. \textit{Berechnung eines Minors beliebiger Ordnung der adjungirten Determinante.} Auch die zweite Frage lässt sich mit Hilfe des Productsatzes für Determinanten erledigen. Wir erweitern zu diesem Zwecke nur zuerst die Matrix der Unterdeterminante $(n-\varrho)^{\text{ter}}$ Ordnung zu einer Matrix von $n^2$ Elementen, wozu ja der Satz von Laplace in einfacher Weise die Mittel liefert. Sei in erster Linie die gegebene Unterdeterminante von $D$ dargestellt durch
+\[
+D^{(n-\varrho)}=
+\begin{vmatrix}
+A_{11} & A_{12} & A_{13} & \ldots & A_{1\varrho} \\
+A_{21} & A_{22} & \ldots & \ldots & A_{2\varrho} \\
+A_{31} & \cdot & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+A_{\varrho 1} & A_{\varrho 2} & \ldots & \ldots & A_{\varrho\varrho}
+\end{vmatrix},
+\]
+so bildet man die Erweiterung dieser Matrix dadurch, dass man zunächst in der Richtung der Diagonale noch $(n-\varrho)$ Elemente vom Werthe $1$ anfügt; die übrigen Stellen unterhalb der $\varrho^{\text{ten}}$ Zeile füllt man mit dem Elemente $0$ aus, während in die rechts der $\varrho^{\text{ten}}$ Colonne befindlichen Stellen diejenigen Elemente $A_{ik}$ einrücken, welche bereits in der ursprünglichen Determinante $D$ dieselben innehaben. Dadurch wird die Matrix von $D^{(n-\varrho)}$:
+%CONT>>
+
+
+% ===== pdf idx 104, printed 90.0 =====
+% !PRINTED 90
+\weberpage{90}
+Erster Theil. Theorie der Determinanten.
+
+%<<CONT
+\weq{2}{D^{(n-\varrho)}=
+\begin{vmatrix}
+A_{11}\;A_{12}\;\ldots\;A_{1\varrho}\;A_{1,\varrho+1}\;\ldots\;A_{1n} \\
+A_{21}\;A_{22}\;\ldots\;A_{2\varrho}\;A_{2,\varrho+1}\;\ldots\;A_{2n} \\
+\vdots\;\vdots\;\ \ \vdots\;\vdots\;\ \ \vdots \\
+A_{\varrho 1}\;A_{\varrho 2}\;\ldots\;A_{\varrho\varrho}\;A_{\varrho,\varrho+1}\;\ldots\;A_{\varrho n} \\
+0\;0\;\ldots\;0\;1\;0\;\ldots\;0 \\
+0\;0\;\ldots\;0\;0\;1\;\ldots\;0 \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+0\;0\;\ldots\;0\;0\;0\;\ldots\;1
+\end{vmatrix}.}
+Die so erhaltene Determinante multipliciren wir nun wieder mit der Determinante $\Delta$.
+
+Das Product ist dargestellt durch:
+\[
+\Delta\cdot D^{(n-\varrho)}=
+\begin{vmatrix}
+a_{11}\;a_{12}\;a_{13}\;\ldots\;a_{1n} \\
+a_{21}\;a_{22}\;a_{23}\;\ldots\;a_{2n} \\
+a_{31}\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;a_{3n} \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+a_{\varrho 1}\;a_{\varrho 2}\;a_{\varrho 3}\;\ldots\;a_{\varrho n} \\
+a_{\varrho+1,1}\;\ldots\;\ldots\;\ldots\;a_{\varrho+1,n} \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+a_{n1}\;a_{n2}\;\ldots\;\ldots\;a_{nn}
+\end{vmatrix}
+\cdot
+\begin{vmatrix}
+A_{11}\;A_{12}\;\ldots\;A_{1\varrho}\;A_{1,\varrho+1}\;\ldots\;A_{1n} \\
+A_{21}\;A_{22}\;\ldots\;A_{2\varrho}\;A_{2,\varrho+1}\;\ldots\;A_{2n} \\
+A_{31}\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+A_{\varrho 1}\;A_{\varrho 2}\;\ldots\;A_{\varrho\varrho}\;A_{\varrho,\varrho+1}\;\ldots\;A_{\varrho n} \\
+0\;0\;\ldots\;0\;1\;0\;\ldots\;0 \\
+0\;0\;\ldots\;0\;0\;1\;\ldots\;0 \\
+0\;0\;\ldots\;0\;0\;0\;\ldots\;1
+\end{vmatrix}
+\]
+\[
+=
+\begin{vmatrix}
+a_{11}A_{11}\cdots+a_{1n}A_{1n},\ \ldots,\ a_{11}A_{\varrho1}\cdots+a_{1n}A_{\varrho n},\ a_{1,\varrho+1},\ a_{1,\varrho+2},\ \cdots,\ a_{1n} \\
+a_{21}A_{11}\cdots+a_{2n}A_{1n},\ \ldots,\ a_{21}A_{\varrho1}\cdots+a_{2n}A_{\varrho n},\ a_{2,\varrho+1},\ a_{2,\varrho+2},\ \cdots,\ a_{2n} \\
+a_{31}A_{11}\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ ,\ a_{3,\varrho+1},\ \cdots,\ \cdots,\ a_{3n} \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+a_{\varrho1}A_{11}\cdots+a_{\varrho n}A_{1n},\ \ldots,\ a_{\varrho1}A_{\varrho,1}\cdots+a_{\varrho n}A_{\varrho n},\ a_{\varrho,\varrho+1},\ a_{\varrho,\varrho+2},\ \cdots,\ a_{\varrho n} \\
+a_{\varrho+1,1}A_{11}\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ a_{\varrho+1,\varrho+1}\ \cdot\ \cdot\ \cdot\ ,\ a_{\varrho+1,n} \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+a_{n1}A_{11}\cdots+a_{nn}A_{1n},\ \ldots,\ a_{n1}A_{\varrho1}\cdots+a_{nn}A_{\varrho n},\ a_{n,\varrho+1},\ a_{n,\varrho+2},\ \cdots,\ a_{nn}
+\end{vmatrix}
+\]
+% ?? uncertain: the penultimate entry of the fifth row above ("$a_{\varrho,\varrho+2}$") is faint in the scan and could alternatively read "$a_{\varrho,\varrho-2}$"; reproduced here consistent with the pattern of the surrounding rows
+\[
+=
+\begin{vmatrix}
+\Delta\;0\;0\;\ldots\;0,\ a_{1,\varrho+1},\ a_{1,\varrho+2},\ \ldots,\ a_{1n} \\
+0\;\Delta\;0\;\ldots\;0,\ a_{2,\varrho+1},\ a_{2,\varrho+2},\ \ldots,\ a_{2n} \\
+0\;0\;\Delta\;\ldots\;0,\ a_{3,\varrho+1},\ \cdot\ \cdot\ \cdot\ ,\ \cdot \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+0\;0\;0\;\ldots\;\Delta,\ a_{\varrho,\varrho+1},\ \cdot\ \cdot\ \cdot\ ,\ a_{\varrho n} \\
+0\;0\;0\;\ldots\;0,\ a_{\varrho+1,\varrho+1},\ \cdot\ \cdot\ \cdot\ ,\ a_{\varrho+1,n} \\
+\cdot\ \cdot\ \cdot\ \cdot\ 0\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \\
+0\;0\;0\;\ldots\;0,\ a_{n,\varrho+1},\ \cdot\ \cdot\ \cdot\ \cdot\ ,\ a_{nn}
+\end{vmatrix}.
+\]
+
+
+% ===== pdf idx 105, printed 91.0 =====
+% !PRINTED 91
+\weberpage{91}
+\S.\,7. Adjungirte Determinanten und correspondirende Matrices.
+
+Die zuletzt erhaltene Determinante reducirt sich nach Laplace auf das Product $\Delta^\varrho\cdot A^{12\ldots\varrho}_{12\ldots\varrho}$, so dass wir erhalten:
+\weq{3}{\Delta\cdot D^{(n-\varrho)}=\Delta\cdot
+\begin{vmatrix}
+A_{11}\;A_{12}\;\ldots\;A_{1\varrho} \\
+A_{21}\;A_{22}\;\ldots\;A_{2\varrho} \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+A_{\varrho 1}\;A_{\varrho 2}\;\ldots\;A_{\varrho\varrho}
+\end{vmatrix}
+=\Delta^\varrho\cdot
+\begin{vmatrix}
+a_{\varrho+1,\varrho+1}\;a_{\varrho+1,\varrho+2}\;\ldots\;a_{\varrho+1,n} \\
+a_{\varrho+2,\varrho+1}\;a_{\varrho+2,\varrho+2}\;\ldots\;a_{\varrho+2,n} \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+a_{n,\varrho+1}\;a_{n,\varrho+2}\;\ldots\;a_{nn}
+\end{vmatrix}}
+oder nach Division mit $\Delta$:
+\weq{4}{D^{(n-\varrho)}=A^{12\ldots\varrho}_{12\ldots\varrho}\cdot\Delta^{\varrho-1}.}
+Die Determinante $A^{12\ldots\varrho}_{12\ldots\varrho}$ entsteht aber aus $\Delta$ durch Unterdrückung derjenigen Zeilen und Colonnen, welche sich in den Elementen der Matrix
+\[
+\begin{vmatrix}
+a_{11}\;a_{12}\;\ldots\;a_{1\varrho} \\
+a_{21}\;a_{22}\;\ldots\;a_{2\varrho} \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+a_{\varrho 1}\;a_{\varrho 2}\;\ldots\;a_{\varrho\varrho}
+\end{vmatrix}
+\]
+schneiden, d.\,h. in jenen Elementen von $\Delta$, deren Minoren erster Ordnung gerade die Elemente des Minors $D^{(n-\varrho)}$ bilden.
+
+88. \textit{Besprechung des allgemeinen Falles.} Die Relation (4) gilt zunächst für den speciellen Minor $(n-\varrho)^{\text{ter}}$ Ordnung,* dessen Elemente die $\varrho^2$ ersten Plätze in $D$ einnehmen.
+% ?? uncertain: footnote marker "*" after "Ordnung," on this page — no footnote text is visible within the captured top/mid/bot bands
+Ist der Minor beliebig gewählt, etwa
+\[
+D^{(n-\varrho)}=
+\begin{vmatrix}
+A_{i_1k_1}\;A_{i_1k_2}\;\ldots\;A_{i_1k_\varrho} \\
+A_{i_2k_1}\;A_{i_2k_2}\;\ldots\;A_{i_2k_\varrho} \\
+A_{i_3k_1}\;\cdot\;\cdot\;\cdot\;\cdot \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+A_{i_\varrho k_1}\;A_{i_\varrho k_2}\;\ldots\;A_{i_\varrho k_\varrho}
+\end{vmatrix},
+\]
+dann können wir auf ganz analogem Wege seinen Werth berechnen. Wir erweitern wieder die Matrix dieses Minors in der unter. Nr. 87 % [sic]
+%CONT>>
+
+
+% ===== pdf idx 106, printed 92.0 =====
+% !PRINTED 92
+\weberpage{92}
+Erster Theil. Theorie der Determinanten.
+
+%<<CONT
+geschilderten Weise zu einer Matrix von $n^2$ Elementen, indem wir zunächst jene $(n-\varrho)$ Colonnen anfügen, durch deren Unterdrückung die Colonnen des Minors entstanden sind, natürlich möglichst gut geordnet unter Beachtung der Anordnung ihrer Elemente nach Zeilen, welche jenen des Minors entsprechen. Sodann erweitern wir die Anzahl der Zeilen der so erhaltenen Matrix gerade so wie im speciellen Falle. Die Determinante $D^{(n-\varrho)}$ ist alsdann inclusive Vorzeichen durch die Matrix dargestellt:
+\[
+\begin{vmatrix}
+A_{i_1k_1}\;A_{i_1k_2}\;A_{i_1k_3}\;\ldots\;A_{i_1k_\varrho}\;A_{i_1k_{\varrho+1}}\;A_{i_1k_{\varrho+2}}\;\ldots\;A_{i_1k_n} \\
+A_{i_2k_1}\;A_{i_2k_2}\;\ldots\;\ldots\;A_{i_2k_\varrho}\;A_{i_2k_{\varrho+1}}\;\ldots\;\ldots\;\ldots\;A_{i_2k_n} \\
+A_{i_3k_1}\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+A_{i_\varrho k_1}\;A_{i_\varrho k_2}\;\ldots\;\ldots\;\ldots\;A_{i_\varrho k_\varrho}\;A_{i_\varrho k_{\varrho+1}}\;A_{i_\varrho k_{\varrho+2}}\;\ldots\;A_{i_\varrho k_n} \\
+0\;0\;\ldots\;0\;1\;0\;\ldots\;0 \\
+0\;0\;\ldots\;0\;0\;1\;\ldots\;0 \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+0\;0\;\ldots\;0\;0\;0\;\ldots\;1
+\end{vmatrix}.
+\]
+Bringen wir nun auch in der Determinante $\Delta$ die den Elementen $A_{i_\mu k_\mu}$ des Minors $D^{(n-\varrho)}$ entsprechenden Elemente $a_{i_\mu k_\mu}$ durch cyklische Vertauschung an die $\varrho^2$ ersten Plätze, dann hat gemäss den Entwicklungen in Nr. 48 die so erhaltene Matrix den Werth
+\[
+\begin{vmatrix}
+a_{i_1k_1}\;a_{i_1k_2}\;\ldots\;a_{i_1k_\varrho}\;a_{i_1k_{\varrho+1}}\;\ldots\;a_{i_1k_n} \\
+a_{i_2k_1}\;a_{i_2k_2}\;\ldots\;a_{i_2k_\varrho}\;a_{i_2k_{\varrho+1}}\;\ldots\;a_{i_2k_n} \\
+a_{i_3k_1}\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot \\
+a_{i_nk_1}\;a_{i_nk_2}\;\ldots\;a_{i_nk_\varrho}\;a_{i_nk_{\varrho+1}}\;\ldots\;a_{i_nk_n}
+\end{vmatrix}
+=(-1)^\nu\cdot\Delta,
+\]
+wo $\nu=(i_1\,i_2\,i_3\,\ldots\,i_\varrho)+(k_1\,k_2\,\ldots\,k_\varrho)+\displaystyle\sum_{\sigma=1}^{\sigma=\varrho}i_\sigma+\sum_{\sigma=1}^{\sigma=\varrho}k_\sigma.$
+
+Bildet man jetzt das Product der beiden Determinanten $D^{(n-\varrho)}$ und $(-1)^\nu\Delta$, indem man die so umgestalteten Matrices derselben zu Grunde legt, so erhält man durch Multiplication der Elemente nach ihren Zeilen
+%CONT>>
+
+
+% ===== pdf idx 107, printed 93.0 =====
+% !PRINTED 93
+\weberpage{93}
+\S.\,7. Adjungirte Determinanten und correspondirende Matrices.
+
+\[
+(-1)^{\nu}\cdot \Delta \cdot D^{(n-\varrho)} =
+\begin{vmatrix}
+\Delta & 0 & 0 & \cdots & 0 & a_{i_1 k_{\varrho+1}} & a_{i_1 k_{\varrho+2}} & \cdots & a_{i_1 k_n} \\
+0 & \Delta & 0 & \cdots & 0 & a_{i_2 k_{\varrho+1}} & a_{i_2 k_{\varrho+2}} & \cdots & a_{i_2 k_n} \\
+0 & 0 & \Delta & \cdots & 0 & a_{i_3 k_{\varrho+1}} & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & 0 & \cdots & \Delta & a_{i_\varrho k_{\varrho+1}} & a_{i_\varrho k_{\varrho+2}} & \cdots & a_{i_\varrho k_n} \\
+0 & 0 & 0 & \cdots & 0 & a_{i_{\varrho+1} k_{\varrho+1}} & a_{i_{\varrho+1} k_{\varrho+2}} & \cdots & a_{i_{\varrho+1} k_n} \\
+0 & \cdot & \cdot & \cdot & 0 & a_{i_{\varrho+2} k_{\varrho+1}} & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & 0 & \cdots & 0 & a_{i_n k_{\varrho+1}} & a_{i_n k_{\varrho+2}} & \cdots & a_{i_n k_n}
+\end{vmatrix}\, .
+\]
+
+Diese Determinante spaltet sich nach dem Satze von Laplace wieder in das Product zweier anderer, so dass wir erhalten:
+
+\begin{equation*}
+(-1)^{\nu}\cdot \Delta \cdot D^{(n-\varrho)} = \Delta^{\varrho}\cdot
+\begin{vmatrix}
+a_{i_{\varrho+1} k_{\varrho+1}} & a_{i_{\varrho+1} k_{\varrho+2}} & \cdots & a_{i_{\varrho+1} k_n} \\
+a_{i_{\varrho+2} k_{\varrho+1}} & a_{i_{\varrho+2} k_{\varrho+2}} & \cdots & a_{i_{\varrho+2} k_n} \\
+a_{i_{\varrho+3} k_{\varrho+1}} & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot \\
+a_{i_n k_{\varrho+1}} & a_{i_n k_{\varrho+2}} & \cdots & a_{i_n k_n}
+\end{vmatrix}
+\tag{$A$}
+\end{equation*}
+
+Die Matrix rechts stellt aber mit $(-1)^{\nu}$ multiplicirt gerade den Minor $A_{\substack{i_1 i_2 \ldots i_\varrho\\k_1 k_2 \ldots k_\varrho}}$ dar, d.\,h. die correspondirende Determinante zu jener Unterdeterminante von $\Delta$, deren Elemente den Elementen des Minors $D^{(n-\varrho)}$ entsprechen. Multipliciren wir also die Gleichung (A) mit $(-1)^{\nu}$, und dividiren wir sie mit $\Delta$, so kommt
+
+\[
+D^{(n-\varrho)} = \Delta^{\varrho-1}\cdot A_{\substack{i_1 i_2 \ldots i_\varrho\\k_1 k_2 \ldots k_\varrho}}\, .
+\]
+
+Wir können daher den Satz aufstellen:
+
+\glqq Ein Minor $\varrho^{\mathrm{ten}}$ Grades der zu $\Delta$ adjungirten Determinante $D$ ist gleich dem Producte der $(\varrho-1)^{\mathrm{ten}}$ Potenz von $\Delta$ in die correspondirende Determinante jenes Minors von $\Delta$, dessen Elemente $a_{ik}$ den Elementen $A_{ik}$ des Minors von $D$ entsprechen.\grqq{}
+
+89. \textit{Beispiel.} Es seien
+
+\[
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & \cdots & a_{15} \\
+a_{21} & a_{22} & \cdot & \cdot & a_{25} \\
+a_{31} & \cdot & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{51} & \cdot & \cdot & \cdot & a_{55}
+\end{vmatrix}
+\quad\text{und}\quad
+\begin{vmatrix}
+A_{11} & A_{12} & \cdots & A_{15} \\
+A_{21} & \cdot & \cdot & A_{25} \\
+\cdot & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot \\
+A_{51} & A_{52} & \cdots & A_{55}
+\end{vmatrix}\, .
+\]
+%CONT>>
+
+
+% ===== pdf idx 108, printed 94.0 =====
+% !PRINTED 94
+\weberpage{94}
+Erster Theil. Theorie der Determinanten.
+
+%<<CONT
+die Determinante $\Delta$ und ihre adjungirte $D$; der Werth des Minors
+
+\[
+D^{(3)} =
+\begin{vmatrix}
+A_{31} & A_{32} \\
+A_{41} & A_{42}
+\end{vmatrix}
+\]
+
+bestimmt sich dann aus dem Producte
+
+\begin{align*}
+(-1)^{\nu}\, \Delta \cdot D^{(3)} &=
+\begin{vmatrix}
+a_{31} & a_{32} & a_{33} & a_{34} & a_{35} \\
+a_{41} & a_{42} & a_{43} & a_{44} & a_{45} \\
+a_{11} & a_{12} & a_{13} & a_{14} & a_{15} \\
+a_{21} & a_{22} & a_{23} & a_{24} & a_{25} \\
+a_{51} & a_{52} & a_{53} & a_{54} & a_{55}
+\end{vmatrix}
+\cdot
+\begin{vmatrix}
+A_{31} & A_{32} & A_{33} & A_{34} & A_{35} \\
+A_{41} & A_{42} & A_{43} & A_{44} & A_{45} \\
+0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 1
+\end{vmatrix} \\
+&=
+\begin{vmatrix}
+\Delta & 0 & a_{33} & a_{34} & a_{35} \\
+0 & \Delta & a_{43} & a_{44} & a_{45} \\
+0 & 0 & a_{13} & a_{14} & a_{15} \\
+0 & 0 & a_{23} & a_{24} & a_{25} \\
+0 & 0 & a_{53} & a_{54} & a_{55}
+\end{vmatrix}
+=
+\Delta^2
+\begin{vmatrix}
+a_{13} & a_{14} & a_{15} \\
+a_{23} & a_{24} & a_{25} \\
+a_{53} & a_{54} & a_{55}
+\end{vmatrix}\, ,
+\end{align*}
+
+\[
+\nu = (34) + (12) + (3+4) + (1+2) = 10. % ?? uncertain: "12" printed with a damaged first digit resembling a dagger mark
+\]
+
+Daher: $D^{(3)} = \Delta \cdot A_{\substack{34\\12}}$, oder:
+
+\[
+\begin{vmatrix}
+A_{31} & A_{32} \\
+A_{41} & A_{42}
+\end{vmatrix}
+=
+\begin{vmatrix}
+a_{11} & a_{12} & \cdots & a_{15} \\
+a_{21} & a_{22} & \cdots & a_{25} \\
+a_{31} & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot \\
+a_{51} & \cdot & \cdot & a_{55}
+\end{vmatrix}
+\cdot
+\begin{vmatrix}
+a_{13} & a_{14} & a_{15} \\
+a_{23} & a_{24} & a_{25} \\
+a_{53} & a_{54} & a_{55}
+\end{vmatrix}\, .
+\]
+
+90. \textit{Definition der correspondirenden Matrices.} Ehe wir zu den Anwendungen der Determinantentheorie übergehen, wollen wir noch einen Satz beweisen, der die Determinanten zweier solcher Matrices in Beziehung setzt, zwischen deren Elementen gewisse Relationen bestehen. Seien die beiden Matrices, deren eine $n$ Colonnen und $\mu$ Zeilen, deren andere $n$ Colonnen und $\nu$ Zeilen besitzen, dargestellt durch
+
+\[
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdot & \cdot & a_{2n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{\mu 1} & a_{\mu 2} & \cdot & \cdot & a_{\mu n}
+\end{vmatrix}
+\quad\text{und}\quad
+\begin{vmatrix}
+b_{11} & b_{12} & b_{13} & \cdots & b_{1n} \\
+b_{21} & b_{22} & \cdot & \cdot & b_{2n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+b_{\nu 1} & b_{\nu 2} & \cdot & \cdot & b_{\nu n}
+\end{vmatrix}\, ,
+\]
+
+wobei $\mu + \nu = n$ vorausgesetzt ist, dann können wir aus ihnen nach der Methode der Multiplication für Determinantenmatrices eine neue Matrix bilden, indem wir die Elemente jeder Zeile der ersten mit dem ent-
+%CONT>>
+
+
+% ===== pdf idx 109, printed 95.0 =====
+% !PRINTED 95
+\weberpage{95}
+\S.\,8. Adjungirte Determinanten und correspondirende Matrices.
+
+%<<CONT
+entsprechenden jeder Zeile der zweiten multipliciren. Diese neue Matrix enthält in $\mu$ Colonnen und $\nu$ Zeilen $\mu\cdot\nu$ Elemente von der Form:
+
+\weq{1}{a_{\varrho 1}\, b_{\sigma 1} + a_{\varrho 2}\, b_{\sigma 2} + a_{\varrho 3}\, b_{\sigma 3} + \cdots + a_{\varrho n}\, b_{\sigma n}}
+
+\[
+\varrho = 1, 2, \cdots \mu; \quad \sigma = 1, 2, \cdots \nu.
+\]
+
+Wir setzen nun im Folgenden fest, dass die Elemente $a_{ik}$, $b_{ik}$ solche Werthe besitzen, dass jede Summe, wie sie in (1) dargestellt ist, den Werth Null habe. Die Zahl der Relationen, die hierdurch zwischen den Elementen $a_{ik}$ und $b_{ik}$ bestehen soll, ist $\mu\cdot\nu$. Nun können wir aber die beiden gegebenen Matrices zu einer einzigen Matrix zusammenfügen, welche, da $\mu+\nu=n$, eine Determinante $\Delta$ repräsentirt. Jeder ihrer Unterdeterminanten von der Ordnung $\mu=n-\nu$, die nur Elemente $a_{ik}$ enthält, entspricht eine correspondirende Unterdeterminante $\nu^{\mathrm{ter}}$ Ordnung, die nur Elemente $b_{ik}$ besitzt. Wir werden demgemäss je eine Determinante der ersten und je eine der zweiten Matrix correspondirende (complementäre) nennen, wenn die Determinante der Elemente $b_{ik}$ durch Colonnen gebildet ist mit solchen Indices, die bei Bildung der ersten Determinante der Elemente $a_{ik}$ nicht verwendet werden. Beide Matrices werden überdies selbst als \textit{correspondirende} bezeichnet, wenn zwischen ihren Elementen die $\mu\cdot\nu$ Relationen bestehen:
+
+\[
+a_{\varrho 1}\, b_{\sigma 1} + a_{\varrho 2}\, b_{\sigma 2} + \cdots a_{\varrho n}\, b_{\sigma n} = 0.
+\]
+
+91. \textit{Lehrsatz über correspondirende Matrices.} Der oben erwähnte Satz lautet nun:
+
+\glqq Die correspondirenden Determinanten zweier correspondirender Matrices sind einander proportional.\grqq{}
+
+Wir geben zunächst von dem Satze einen ersten Beweis; ein zweiter Beweis wird sich später (vgl. Nr. 106) darbieten.
+
+Die Matrix der Elemente $a_{ik}$ ergänzen wir durch Anfügung von $\nu$ Zeilen willkürlicher Elemente $a_{ik}$ zur Matrix einer Determinante $\Delta$, ebenso erweitern wir die zweite Matrix durch $\mu$ Zeilen willkürlicher Elemente $b_{ik}$ zur Matrix der Determinante $D$, so dass wir erhalten:
+
+\[
+\Delta =
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdot & \cdot & a_{2n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{\mu 1} & a_{\mu 2} & \cdot & \cdot & a_{\mu n} \\
+a_{\mu+1,1} & a_{\mu+1,2} & \cdot & \cdot & a_{\mu+1,n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{n1} & \cdot & \cdot & \cdot & a_{nn}
+\end{vmatrix}
+\quad\text{und } D=
+\begin{vmatrix}
+b_{11} & b_{12} & b_{13} & \cdots & b_{1n} \\
+b_{21} & b_{22} & \cdot & \cdot & b_{2n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+b_{\nu 1} & b_{\nu 2} & \cdot & \cdot & b_{\nu n} \\
+b_{\nu+1,1} & b_{\nu+1,2} & \cdot & \cdot & b_{\nu+1,n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+b_{n1} & \cdot & \cdot & \cdot & b_{nn}
+\end{vmatrix}\, .
+\]
+
+
+% ===== pdf idx 110, printed 96.0 =====
+% !PRINTED 96
+\weberpage{96}
+Erster Theil. Theorie der Determinanten.
+
+Das Product beider Determinanten — wir wollen es durch Multiplication von Zeilen mit Zeilen entstehen lassen — enthält Elemente von der Form
+
+\[
+c_{\varrho\sigma} = a_{\varrho 1}\, b_{\sigma 1} + a_{\varrho 2}\, b_{\sigma 2} \ldots + a_{\varrho n}\, b_{\sigma n}\, .
+\]
+
+Diese sind null, wenn sowohl $\varrho\leqq\mu$ als auch $\sigma\leqq\nu$ ist; die Matrix des Productes enthält somit als einen Theil die schon Eingangs erwähnte Matrix von $\mu\nu$ Elementen, welche verschwinden. Sie ist nämlich dargestellt durch:
+
+\[
+\Delta\cdot D =
+\begin{vmatrix}
+0 & 0 & 0 & \cdots & 0, & c_{1,\mu+1} & c_{1,\mu+2} & \cdots & c_{1n} \\
+0 & 0 & \cdot & \cdots & 0, & c_{2,\mu+1} & c_{2,\mu+2} & \cdots & c_{2n} \\
+0 & \cdot & \cdot & \cdot & \cdot & c_{3,\mu+1} & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & 0 & \cdots & 0, & c_{\nu,\mu+1} & \cdot & \cdot & c_{\nu n} \\
+c_{\nu+1,1} & c_{\nu+1,2} & \cdots & c_{\nu+1,\mu}, & c_{\nu+1,\mu+1} & \cdot & \cdot & \cdot & c_{\nu+1,n} \\
+c_{\nu+2,1} & c_{\nu+2,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & c_{\nu+2,n} \\
+c_{\nu+3,1} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+c_{n1} & c_{n2} & \cdots & c_{n\mu}, & c_{n,\mu+1} & \cdot & \cdot & \cdot & c_{nn}
+\end{vmatrix}\, .
+\]
+
+92. Daher zerfällt sie nach dem Satze von Laplace in das Product der beiden Determinanten
+
+\[
+B =
+\begin{vmatrix}
+c_{1,\mu+1}, & c_{1,\mu+2} & \cdots & c_{1n} \\
+c_{2,\mu+1}, & c_{2,\mu+2} & \cdots & c_{2n} \\
+c_{3,\mu+1} & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot \\
+c_{\nu,\mu+1}, & c_{\nu,\mu+2} & \cdots & c_{\nu n}
+\end{vmatrix}
+\]
+
+und
+
+\[
+A =
+\begin{vmatrix}
+c_{\nu+1,1}, & c_{\nu+1,2} & \cdots & c_{\nu+1,\mu} \\
+c_{\nu+2,1}, & c_{\nu+2,2} & \cdots & c_{\nu+2,\mu} \\
+c_{\nu+3,1}, & c_{\nu+3,2} & \cdots & c_{\nu+3,\mu} \\
+\cdot & \cdot & \cdot & \cdot \\
+c_{n1}, & c_{n2} & \cdots & c_{n\mu}
+\end{vmatrix}\, .
+\]
+
+Die Determinante $A$ besitzt $\mu^2$ Elemente
+
+\[
+c_{\varrho\sigma} = a_{\varrho 1}\, b_{\nu+\sigma,1} + a_{\varrho 2}\, b_{\nu+\sigma,2} \cdots + a_{\varrho n}\, b_{\nu+\sigma,n}
+\begin{cases}
+\varrho = 1 \text{ bis } \mu \\
+\nu + \sigma = \nu \text{ bis } n.
+\end{cases}
+\]
+
+Die Determinante $B$ enthält $\nu^2$ Elemente
+
+\[
+c_{\varrho\sigma} = a_{\mu+\varrho,1}\, b_{\sigma 1} + a_{\mu+\varrho,2}\, b_{\sigma 2} \ldots + a_{\mu+\varrho,n}\, b_{\sigma n}
+\begin{cases}
+\mu + \varrho = \mu \text{ bis } n \\
+\sigma = 1 \text{ bis } \nu.
+\end{cases}
+\]
+
+
+% ===== pdf idx 111, printed 97.0 =====
+% !PRINTED 97
+\weberpage{97}
+Wir erhalten somit als Product von $D \cdot \varDelta$ den Werth
+
+\weq{2}{\varDelta \cdot D = (-1)^{\bar v} A \cdot B.}
+
+Der Exponent $\bar v$ bestimmt sich dabei nach Nr. 52 aus der Relation
+
+\[
+\bar v = \sum_{\varrho=1}^{\varrho=v}(\mu+\varrho) + \sum_{1}^{v}\varrho = v\cdot\mu + v(v+1),
+\]
+
+oder auch aus
+
+\[
+\bar v = \sum_{1}^{\mu}\varrho + \sum_{\varrho=1}^{\varrho=\mu}(v+\varrho) = \mu(\mu+1) + v\mu.
+\]
+
+Da sowohl $v(v+1)$ als $\mu(\mu+1)$ eine gerade Zahl, so kann der Exponent $\bar v = \mu\cdot v$ gesetzt werden. Die Relation (2) wird also:
+
+\weq{3}{\varDelta \cdot D = (-1)^{\mu\cdot v} A \cdot B}
+
+oder
+
+\weq{4}{\frac{\varDelta}{B} = (-1)^{\mu\cdot v}\,\frac{A}{D}\,.}
+
+93. Nun enth\"alt aber die linke Seite dieser Gleichung weder im Nenner noch im Z\"ahler die willk\"urlich sp\"ater zugef\"ugten Elemente $b_{v+\sigma,i}$. Setzen wir also diesen Bruch gleich $\lambda$, so ist $\lambda$ unabh\"angig von diesen Elementen; die Gleichung (4) aber wird:
+
+\weq{5}{\lambda = (-1)^{\mu\cdot v}\cdot\frac{A}{D}\,,\ \text{oder}\ (-1)^{\mu\cdot v} A = \lambda\cdot D,}
+
+worin nun $A$ und $D$ Functionen der willk\"urlichen Elemente $b_{v+\sigma,i}$ sind, \"uber die wir nun passend verf\"ugen k\"onnen. W\"ahlen wir n\"amlich die Elemente $b_{v+1,i_1}$, $b_{v+2,i_2}\ \ldots b_{v+\mu,i_\mu}$ gleich 1, alle \"ubrigen aber gleich null, dann reducirt sich durch Unterdr\"uckung der Zeilen und Colonnen, welche das Element 1 enthalten, die Determinante
+
+\[
+D =
+\begin{vmatrix}
+b_{11} & b_{12} & b_{13} & \cdots & b_{1n} \\
+b_{21} & b_{22} & \cdot & \cdot & b_{2n} \\
+b_{31} & \cdot & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+b_{n1} & b_{n2} & b_{n3} & \cdots & b_{nn}
+\end{vmatrix}
+\]
+
+auf eine Determinante von $v^2$ Elementen der zweiten correspondirenden Matrix, n\"amlich auf:
+
+\[
+D' = B_{\substack{v+1,\,v+2,\,\ldots\,v+\mu\\i_1\ i_2\ \ldots i_\mu}} = (-1)^{v_1}
+\begin{vmatrix}
+b_{1i_{\mu+1}}, & b_{1i_{\mu+2}} & \cdots & b_{1i_{\mu+v}} \\
+b_{2i_{\mu+1}}, & b_{2i_{\mu+2}} & \cdots & b_{2i_{\mu+v}} \\
+\cdot & \cdot & \cdots & \cdot \\
+b_{vi_{\mu+1}}, & b_{vi_{\mu+2}} & \cdots & b_{vi_{\mu+v}}
+\end{vmatrix},
+\]
+
+wobei:
+%CONT>>
+
+
+% ===== pdf idx 112, printed 98.0 =====
+% !PRINTED 98
+\weberpage{98}
+%<<CONT
+\[
+v_1 = (v+1,\ v+2,\ \ldots v+\mu) + (i_1 i_2 \ldots i_\mu) + \sum_{\sigma=1}^{\sigma=\mu}(v+\sigma) + \sum_{\sigma=1}^{\sigma=\mu} i_\sigma\,,
+\]
+
+oder, weil die Indices $v+1$, $v+2$, $\ldots v+\mu$ a priori gut geordnet sind, und die Reihenfolge der Indices $i_1 i_2 \ldots i_\mu$ stets als gut geordnet vorausgesetzt werden kann:
+
+\[
+v_1 = \sum_{\sigma=1}^{\sigma=\mu}(v+\sigma) + \sum_{\sigma=1}^{\sigma=\mu} i_\sigma = \mu\cdot v + \frac{\mu(\mu+1)}{2} + \sum_{\sigma=1}^{\sigma=\mu} i_\sigma = \mu v + k.
+\]
+
+wobei
+
+\[
+k = \frac{\mu(\mu+1)}{2} + \sum_{1}^{\mu} i_\sigma\ \text{ist.}
+\]
+
+94. Nun ist anderntheils die Determinante $A$ dargestellt durch die Matrix:
+
+\[
+A =
+\begin{vmatrix}
+a_{11}b_{v+1,1}+\cdots a_{1n}b_{v+1,n}, & a_{11}b_{v+2,1}+\cdots a_{1n}b_{v+2,n}, & \cdots, & a_{11}b_{n1}+\cdots a_{1n}b_{nn} \\
+a_{21}b_{v+1,1}+\cdots a_{2n}b_{v+1,n}, & a_{21}b_{v+2,1}+\cdots a_{2n}b_{v+2,n}, & \cdots, & a_{21}b_{n1}+\cdots a_{2n}b_{nn} \\
+a_{31}b_{v+1,1}+\cdots a_{3n}b_{v+1,n}, & a_{32}b_{v+2,1}+\cdots a_{3n}b_{v+2,n}, & \cdots, & a_{31}b_{n1}+\cdots a_{3n}b_{nn} \\% [sic]
+\cdot & \cdot & \cdots & \cdot \\
+a_{\mu 1}b_{v+1,1}\cdots a_{\mu n}b_{v+1,n}, & a_{\mu 1}b_{v+2,1}\cdots a_{\mu n}b_{v+2,n}, & \cdots, & a_{\mu 1}b_{n1}+\cdots a_{\mu n}b_{nn}
+\end{vmatrix}.
+\]
+
+Setzen wir in ihr alle Elemente $b_{v+\sigma,\varrho}$, ausgenommen die oben erw\"ahnten, gleich null, so reducirt sie sich auf
+
+\[
+A' =
+\begin{vmatrix}
+a_{1i_1}\cdot b_{v+1,i_1}, & a_{1i_2}\cdot b_{v+2,i_2}, & a_{1i_3}\cdot b_{v+3,i_3} & \cdots a_{1i_\mu}\cdot b_{v+\mu,i_\mu} \\
+a_{2i_1}\cdot b_{v+1,i_1}, & a_{2i_2}\cdot b_{v+2,i_2}, & \cdot & \cdots a_{2i_\mu}\cdot b_{v+\mu,i_\mu} \\
+a_{3i_1}\cdot b_{v+1,i_1}, & a_{3i_2}\cdot b_{v+2,i_2} & \cdot & \cdots a_{3i_\mu}\cdot b_{v+\mu,i_\mu} \\
+\cdot & \cdot & \cdot & \cdots \\
+a_{\mu i_1}\cdot\cdot b_{v+1,i_1}, & a_{\mu i_2}\cdot b_{v+2,i_2} & \cdot & \cdots a_{\mu i_\mu}\cdot b_{v+\mu,i_\mu}
+\end{vmatrix},
+\]
+
+und weil die darin noch auftretenden Factoren $b$ durchgehends gleich 1 sind, so wird endlich
+
+\[
+A' =
+\begin{vmatrix}
+a_{1i_1}, & a_{1i_2}, & a_{1i_3} & \cdots a_{1i_\mu} \\
+a_{2i_1}, & a_{2i_2} & \cdot & \cdots a_{2i_\mu} \\
+\cdot & \cdot & \cdot & \cdots \\
+a_{\mu i_1}, & a_{\mu i_2} & \cdot & \cdots a_{\mu i_\mu}
+\end{vmatrix},
+\]
+
+d. h. $A$ reducirt sich auf eine Determinante der ersten correspondirenden Matrix, und zwar auf diejenige, deren Colonnen Indices f\"uhren, welche gerade bei Bildung der Determinante aus der zweiten Matrix nicht
+%CONT>>
+
+
+% ===== pdf idx 113, printed 99.0 =====
+% !PRINTED 99
+\weberpage{99}
+%<<CONT
+benutzt werden. Tragen wir also die so berechneten Werthe f\"ur $D$ und $A$ in die Gleichung (5) ein, so erhalten wir:
+
+\weq{6}{(-1)^{\mu v}
+\begin{vmatrix}
+a_{1i_1} & a_{1i_2} & a_{1i_3} & \cdots & a_{1i_\mu} \\
+a_{2i_1} & a_{2i_2} & a_{2i_3} & \cdots & a_{2i_\mu} \\
+a_{3i_1} & \cdot & \cdot & \cdot & \cdot \\
+\vdots & \cdot & \cdot & \cdot & \cdot \\
+a_{\mu i_1} & a_{\mu i_2} & \cdot & \cdot & a_{\mu i_\mu}
+\end{vmatrix}
+= (-1)^{\mu v + k}\cdot\lambda
+\begin{vmatrix}
+b_{1 i_{\mu+1}} & b_{1 i_{\mu+2}} & b_{1 i_{\mu+3}} & \cdots & b_{1 i_{\mu+v}} \\
+b_{2 i_{\mu+1}} & b_{2 i_{\mu+2}} & \cdot & \cdot & b_{2 i_{\mu+v}} \\
+b_{3 i_{\mu+1}} & \cdot & \cdot & \cdot & \cdot \\
+\vdots & \cdot & \cdot & \cdot & \cdot \\
+b_{v i_{\mu+1}} & b_{v i_{\mu+2}} & \cdot & \cdot & b_{v i_{\mu+v}}
+\end{vmatrix},}
+
+oder nach Division mit dem Factor $(-1)^{\mu v}$:
+
+\weq{7}{(a_{1i_1}\ a_{2i_2} \cdots a_{\mu i_\mu}) = (-1)^k\cdot\lambda\cdot(b_{1i_{\mu+1}}\ b_{2i_{\mu+2}} \cdots b_{vi_{\mu+v}}),}
+
+wobei
+
+\[
+k = \frac{\mu(\mu+1)}{2} + \sum_{1}^{\mu} i_\sigma\,,
+\]
+
+das ist gleich der Summe aller Doppelindices des Diagonalgliedes in $(a_{1i_1}\ a_{2i_2}\ \ldots a_{\mu i_\mu})$. Dadurch ist der aufgestellte Satz bewiesen; der Proportionalit\"atsfactor $\lambda$ ist nat\"urlich unbestimmt.
+
+95. \textit{Beispiel.} Seien gegeben die beiden Matrices, f\"ur welche $\mu = v = 2$ ist,
+
+\[
+\begin{vmatrix}
+x_1 & x_2 & x_3 & x_4 \\
+y_1 & y_2 & y_3 & y_4
+\end{vmatrix}
+\ \text{und}\
+\begin{vmatrix}
+u_1 & u_2 & u_3 & u_4 \\
+v_1 & v_2 & v_3 & v_4
+\end{vmatrix}.
+\]
+
+Zwischen den Elementen derselben sollen die vier Relationen
+
+\[
+u_x = 0\,,\quad u_y = 0\,,\quad v_x = 0\,,\quad v_y = 0
+\]
+
+bestehen, wobei
+
+\[
+u_x = u_1 x_1 + u_2 x_2 + u_3 x_3 + u_4 x_4
+\]
+
+zu setzen ist, und
+
+\[
+u_y,\ v_x\ \text{und}\ v_y,
+\]
+
+Symbole analoger Ausdr\"ucke sind.
+
+Dann ist nach dem vorigen Satze:
+
+\[
+\begin{vmatrix}
+x_1 & x_2 \\
+y_1 & y_2
+\end{vmatrix}
+= +\lambda
+\begin{vmatrix}
+u_3 & u_4 \\
+v_3 & v_4
+\end{vmatrix},\quad
+\begin{vmatrix}
+x_1 & x_3 \\
+y_1 & y_3
+\end{vmatrix}
+= -\lambda
+\begin{vmatrix}
+u_2 & u_4 \\
+v_2 & v_4
+\end{vmatrix},\ \text{u.\,s.\,w.,}
+\]
+
+
+% ===== pdf idx 114, printed 100.0 =====
+% !PRINTED 100
+\weberpage{100}
+oder wenn wir der K\"urze halber setzen
+
+\[
+p_{ik} = (x_i y_k - y_i x_k)\,,
+\]
+
+und
+
+\[
+q_{ik} = (u_i v_k - v_i u_k)\,,
+\]
+
+so bestehen die sechs Relationen:
+
+\[
+1)\quad p_{12} = \lambda q_{34}\,,\quad p_{13} = \lambda q_{42}\,,\quad p_{14} = \lambda q_{23}\,,
+\]
+\[
+2)\quad p_{23} = \lambda q_{14}\,,\quad p_{42} = \lambda q_{13}\,,\quad p_{34} = \lambda q_{12}\,.
+\]
+
+Man kann die Gr\"ossen $p_{ik}$, resp. $q_{ik}$ als Coordinaten der geraden Linie auffassen, welche als Schnitt der beiden Ebenen
+
+\[
+u_x = 0\,,\quad v_x = 0
+\]
+
+auftritt, und erkennt somit den Satz: Die Strahlencoordinaten $p_{ik}$ sind proportional den Axencoordinaten $q_{ik}$.
+
+
+% ===== pdf idx 115, printed 100.001 =====
+% !PRINTED none
+\gesperrt{Zweiter Theil.}
+
+\gesperrt{Anwendungen der Determinantentheorie.}
+
+§ 8. \gesperrt{Systeme linearer Gleichungen und deren Auflösung.}
+
+96. \textit{Auflösung eines Systemes von $n$ linearen homogenen Gleichungen
+mit $n$ Unbekannten.} Die Aufgabe, ein lineares System von Gleichungen
+mit mehreren Unbekannten aufzulösen, war es zunächst, welche Leibnitz
+und Cramer auf die Determinantenrechnung führten. Betrachtet man
+nämlich das folgende System linearer homogener Gleichungen
+
+\weq{I}{\left\{\begin{array}{l}
+a_{11}x_1+a_{12}x_2+a_{13}x_3\cdots+a_{1n}x_n=0\\
+a_{21}x_1+a_{22}x_2+a_{23}x_3\cdots+a_{2n}x_n=0\\
+a_{31}x_1+a_{32}x_2+a_{33}x_3\cdots+a_{3n}x_n=0\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+a_{n1}x_1+a_{n2}x_2+a_{n3}x_3\cdots+a_{nn}x_n=0,
+\end{array}\right.}
+
+so erkennt man, dass in demselben gerade $n^2$ willkürliche Grössen $a_{ik}$
+auftreten, die wir zur Matrix einer Determinante zusammensetzen können.
+Wir wollen sie die Determinante $\Delta$ des simultanen Systemes (I)
+nennen. Fragen wir uns nun nach denjenigen Werthen der Unbekannten
+$x_1x_2\cdots x_n$, welche dieses System befriedigen, so sehen wir zunächst
+unmittelbar, dass durch das System von Lösungen
+
+\[
+x_1=x_2=x_3= \text{u.\,s.\,w.} =x_n=0,
+\]
+
+das System der Gleichungen (I) in der That erfüllt wird. Wir nennen diese
+Lösung eine identische, und sehen von ihr, da sie kein weiteres Interesse
+erweckt, in den folgenden Betrachtungen ab.
+
+97. \textit{Aufsuchung anderweitiger Lösungen.} Indem wir uns nun die
+Aufgabe stellen, andere Lösungen des Systemes (I) zu finden, können wir
+auf irgend einem elementaren Wege der gewöhnlichen Eliminationsmethoden
+vorgehen. Am besten nach der Methode von Bézout, indem wir die
+Gleichungen des Systemes (I) mit solchen Factoren $\lambda_1\lambda_2\cdots\lambda_n$
+%CONT>>
+
+
+% ===== pdf idx 116, printed 102.0 =====
+% !PRINTED 102
+\weberpage{102}
+%<<CONT
+multipliciren, dass nach Addition der so erhaltenen Producte die
+Coefficienten aller Unbekannten, mit Ausnahme desjenigen von $x_\mu$,
+verschwinden. Solche Factoren sind gerade die Unterdeterminanten
+
+\[
+A_{1\mu},\quad A_{2\mu},\quad A_{3\mu}\cdots A_{n\mu}
+\]
+
+der Elemente der $\mu^{\text{ten}}$ Colonne in der Determinante
+
+\[
+\Delta=
+\left|
+\begin{array}{cccccc}
+a_{11} & a_{12} & \cdots & a_{1\mu} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2\mu} & \cdots & a_{2n}\\
+a_{31} & \cdot & \cdot & \cdot & \cdot & a_{3n}\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+a_{n1} & a_{n2} & \cdots & a_{n\mu} & \cdots & a_{nn}
+\end{array}
+\right|.
+\]
+
+Multipliciren wir also die Gleichungen des Systemes (I) der Reihe nach
+mit den erwähnten Unterdeterminanten und addiren, so erhalten wir:
+
+\[
+\begin{aligned}
+&x_1(a_{11}A_{1\mu}+a_{21}A_{2\mu}\cdots a_{n1}A_{n\mu})+x_2(a_{12}A_{1\mu}+a_{22}A_{2\mu}+\cdots a_{n2}A_{n\mu})\\
+&\qquad+\cdots+x_\mu(a_{1\mu}A_{1\mu}+a_{2\mu}A_{2\mu}+\cdots a_{n\mu}A_{n\mu})+\cdots\\
+&\qquad+x_n(a_{1n}A_{1\mu}+a_{2n}A_{2\mu}+\cdots a_{nn}A_{n\mu})=0.
+\end{aligned}
+\]
+
+Gemäss den Relationen $(C)$ in Nr.\,32 reducirt sich diese Gleichung auf
+
+\weq{II}{x_\mu\cdot\Delta = x_\mu(a_{1\mu}A_{1\mu}+a_{2\mu}A_{2\mu}+\cdots a_{n\mu}A_{n\mu})=0.}
+
+Ist hier die Determinante $\Delta$ von Null verschieden, so wird diese
+Gleichung nur befriedigt für $x_\mu=0$, d.\,h. die Gleichungen des
+Systemes (I) haben, wenn $\Delta \gtrless 0$, keine andere Lösung als
+die identische. Verschwindet dagegen die Determinante $\Delta$, so kann
+dem Systeme (I) ein System von Werthen der Unbekannten genügen, und
+die Aufgabe ist, unter dieser Bedingung dasselbe zu ermitteln.
+
+98. \textit{Resultante des Systemes} (I). Man nennt die Determinante
+$\Delta$ die Resultante des Systemes der linearen Gleichungen und aus
+dem eben Erwähnten folgt eine erste Eigenschaft derselben, dass sie
+nämlich verschwinden muss, sobald die Gleichungen (I) eine
+gemeinschaftliche Lösung haben. Umgekehrt werden wir sogleich auch
+eine zweite Eigenschaft derselben erkennen, dass, wenn sie verschwindet,
+ein gemeinschaftliches Lösungssystem wirklich vorhanden ist.
+
+\textit{Anmerkung.} Doch ist die Resultante durch diese beiden
+Eigenschaften nicht eindeutig definirt. Denn einerseits erkennt man aus
+Gleichung (II), dass wenn $x_\mu \gtrless 0$, d.\,h. wenn eine Lösung
+vorhanden, nicht nur $\Delta$, sondern auch $\Delta\cdot\varphi$
+verschwindet, wo $\varphi$ eine beliebige ganze Function der
+Coefficienten $a_{ik}$, so dass man also nicht be-
+%CONT>>
+
+
+% ===== pdf idx 117, printed 103.0 =====
+% !PRINTED 103
+\weberpage{103}
+%<<CONT
+haupten kann: Jene ganze Function der Coefficienten, die beim
+Vorhandensein einer gemeinschaftlichen Lösung des Systemes (I)
+verschwindet, ist die Resultante des Systemes. Andrerseits kann man
+zwar nicht behaupten, dass mit $\Delta\cdot\varphi=0$ ein
+Lösungssystem existirt, so lange $\varphi$ eine Function der
+Coefficienten $a_{ik}$, die von $\Delta$ selbst verschieden ist. Wenn
+aber
+
+\[
+\varphi=c, \quad \text{oder} \quad \varphi=c\cdot\Delta^{\varrho},
+\]
+
+d.\,h. also eine von Null verschiedene Constante oder eine Potenz von
+$\Delta$ multiplicirt mit einer solchen Constanten, dann haben die
+Gleichungen (I) auch eine gemeinschaftliche Lösung, wenn
+
+\[
+c\cdot\Delta^{\varrho}=0.
+\]
+
+Mit andern Worten: Beide Eigenschaften selbst zusammengenommen
+definiren nicht bloss $\Delta$, sondern $c\cdot\Delta$, resp.
+$c\cdot\Delta^{\varrho}$. Es ist aber $c\cdot\Delta^{\varrho}$
+Resultante jedes Gleichungssystemes, das aus (I) hervorgeht, wenn wir
+die Coefficienten dieses Systemes irgendwie linear transformiren. Eine
+also definirte Resultante ist daher keine bestimmte lineare Function
+der Coefficienten speciell dieser Gleichungen.
+
+99. \textit{Die gemeinschaftlichen Lösungen des Systemes (I), wenn die
+Resultante verschwindet.} Wir nehmen nun im Folgenden an, dass
+
+\[
+\Delta=
+\left|
+\begin{array}{cccc}
+a_{11} & a_{12} & a_{13} & \cdots a_{1n}\\
+a_{21} & a_{22} & \cdot & \cdots a_{2n}\\
+a_{31} & \cdot & \cdot & \cdots\cdots\\
+\cdot & \cdot & \cdot & \cdot\\
+a_{n1} & \cdot & \cdots & a_{nn}
+\end{array}
+\right|=0,
+\]
+
+und überdies der Allgemeinheit halber, dass sämmtliche Minoren dieser
+%CONT>>
+
+
+% ===== pdf idx 118, printed 104.0 =====
+% !PRINTED 104
+\weberpage{104}
+% [column spec widened array 7->8] a row carried more cells than the spec declared,
+% which is a fatal alignment error. The spec was widened rather than a cell
+% deleted, so no transcribed content is lost; whether Weber's grid really has
+% that many columns is a question for a pass with the scan open.
+%<<CONT
+und überdies der Allgemeinheit halber, dass sämmtliche Minoren dieser
+Determinante von der ersten bis zur $(\mu-1)^{\text{ten}}$ Ordnung
+ebenfalls verschwinden. Dagegen soll von den Minoren der
+$\mu^{\text{ten}}$ Ordnung wenigstens einer von Null verschieden sein.
+
+Dieser nicht verschwindende Minor $\mu^{\text{ter}}$ Ordnung sei etwa
+
+\[
+D^{(\mu+1)}=
+\left|
+\begin{array}{cccc}
+a_{\mu+1,\mu+1} & a_{\mu+1,\mu+2} & \cdots & a_{\mu+1,n}\\
+a_{\mu+2,\mu+1} & a_{\mu+2,\mu+2} & \cdots & a_{\mu+2,n}\\
+\cdot & \cdot & \cdot & \cdot\\
+a_{n,\mu+1}, & a_{n,\mu+2} & \cdots & a_{nn}
+\end{array}
+\right|.
+\]
+
+Wir betrachten dann zunächst das System der $(n-\mu+1)$ letzten
+Gleichungen des Systemes (I) in Nr.\,96
+
+\weq{III}{\left\{\begin{array}{l}
+a_{\mu1}x_1+a_{\mu2}x_2+\cdots a_{\mu,\mu}x_\mu+a_{\mu,\mu+1}x_{\mu+1}\cdots\cdots+a_{\mu n}x_n=0\\
+a_{\mu+1,1}x_1+a_{\mu+1,2}x_2+\cdots a_{\mu+1,\mu}x_\mu+a_{\mu+1,\mu+1}x_{\mu+1}\cdots+a_{\mu+1,n}x_n=0\\
+a_{\mu+2,1}x_1+a_{\mu+2,2}x_2+\cdots a_{\mu+2,\mu}x_\mu+a_{\mu+2,\mu+1}x_{\mu+1}\cdots+a_{\mu+2,n}x_n=0\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+a_{n1}x_1+a_{n2}x_2+\cdots a_{n\mu}x_\mu+a_{n\mu+1}x_{\mu+1}\cdots+a_{nn}x_n=0
+\end{array}\right.}
+
+Die Matrix der Coefficienten dieses Systemes ist dargestellt durch
+
+\weq{A}{
+\left|
+\begin{array}{cccccccc}
+a_{\mu1} & a_{\mu2} & a_{\mu3} & \cdots & a_{\mu\mu} & a_{\mu\mu+1} & \cdots & a_{\mu n}\\
+a_{\mu+1,1} & a_{\mu+1,2} & \cdots & \cdots & a_{\mu+1,\mu} & a_{\mu+1,\mu+1} & \cdots & a_{\mu+1,n}\\
+a_{\mu+2,1} & \cdots & \cdots & \cdots & a_{\mu+2,\mu} & a_{\mu+2,\mu+1} & \cdots & a_{\mu+2,n}\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+a_{n1} & a_{n2} & a_{n3} & \cdots & a_{n\mu} & a_{n,\mu+1} & \cdots & a_{nn}
+\end{array}
+\right|
+}
+
+und die sämmtlichen Determinanten dieser Matrix sind nach Voraussetzung
+identisch null, unter ihnen insbesondere die Determinante
+
+\[
+D^{(\mu)}=
+\left|
+\begin{array}{cccc}
+a_{\mu\mu} & a_{\mu,\mu+1} & \cdots & a_{\mu n}\\
+a_{\mu+1,\mu} & a_{\mu+1,\mu+1} & \cdots & a_{\mu+1,n}\\
+a_{\mu+2,\mu} & a_{\mu+2,\mu+1} & \cdots & a_{\mu+2,n}\\
+\cdot & \cdot & \cdot & \cdot\\
+a_{n\mu} & a_{n,\mu+1} & \cdots & a_{nn}
+\end{array}
+\right|=0.
+\]
+
+Von ihren Unterdeterminanten ist wie oben vorausgesetzt, die zum
+Elemente $a_{\mu\mu}$ gehörige
+
+\[
+A_{\mu\mu}=D^{(\mu+1)}
+\]
+
+von null verschieden, während alle übrigen, also auch die den Elementen
+der ersten Colonne entsprechenden
+
+\[
+A_{\mu+1,\mu},\quad A_{\mu+2,\mu},\quad A_{\mu+3,\mu}\cdots A_{n\mu}
+\]
+
+beliebige Werthe, null nicht ausgeschlossen, besitzen können.
+
+100. \textit{Erste Folgerung aus diesen Voraussetzungen: mindestens
+eine Gleichung ist eine Folge der übrigen.} Multipliciren wir nun das
+System der Gleichungen (III) der Reihe nach durch die
+Unterdeterminanten der ersten Colonne von $D^{(\mu)}$
+
+\[
+A_{\mu\mu},\quad A_{\mu+1,\mu},\quad A_{\mu+2,\mu}\cdots A_{n\mu},
+\]
+
+und addiren dieselben, so erhalten wir die Gleichung
+
+\weq{IV}{
+\begin{aligned}
+&(a_{\mu\mu}A_{\mu\mu}+a_{\mu+1,\mu}A_{\mu+1,\mu}\cdots+a_{n\mu}A_{n\mu})x_1\\
+&\qquad+(a_{\mu,\mu+1}A_{\mu\mu}\cdots+a_{n,\mu+1}A_{n\mu})x_2+\cdots\\
+&\qquad+(a_{\mu n}A_{\mu\mu}+a_{\mu+1,n}A_{\mu+1,\mu}\cdots+a_{nn}A_{n\mu})x_n=0.
+\end{aligned}
+}
+
+
+% ===== pdf idx 119, printed 105.0 =====
+% !PRINTED 105
+\weberpage{105}
+
+% running head: \S.\,8. Systeme linearer Gleichungen und deren Aufl\"osung.
+
+Hierin ist der Co\"efficient von $x_1$ gem\"ass der Voraussetzung null, alle
+\"ubrigen Co\"efficienten verschwinden identisch, gem\"ass den Relationen
+($C$) Nr. 32. Gleichung (IV) ist also eine Identit\"at; wir k\"onnen sie
+auch, wenn wir die Gleichungen des Systemes (III) einen Augenblick mit
+\[
+f_\mu, \quad f_{\mu+1} \cdots f_n
+\]
+bezeichnen, in der Form schreiben
+\weq{V}{A_{\mu\mu} f_\mu + A_{\mu+1,\mu} f_{\mu+1} \cdots A_{n\mu} f_n = 0.}
+% ?? uncertain: a faint mark appears above the plus sign between
+% $A_{\mu+1,\mu}$ and $f_{\mu+1}$ in the print; it does not resolve into
+% legible characters and is not transcribed.
+Aus dieser Identit\"at schliesst man aber, dass eine der Gleichungen
+$f_{\mu+i}$ eine Folge aller \"ubrigen sein muss, und zwar etwa gerade die
+erste des Systemes (II) $(\overline{\mathrm{III}})$
+% ?? uncertain: the printed parenthetical after "des Systemes" shows (II)
+% overstruck/cancelled, followed by (III) set with an overline; the exact
+% typographic intent of this correction mark is not fully legible.
+\[
+f_\mu = a_{\mu 1} x_1 + a_{\mu 2} x_2 \cdots + a_{\mu n} x_n = 0,
+\]
+da sie mit einem Factor multiplicirt auftritt, von dem wir voraus-
+%CONT>>
+
+
+% ===== pdf idx 120, printed 106.0 =====
+% !PRINTED 106
+\weberpage{106}
+
+% running head: 106 \quad Zweiter Theil. Anwendungen der Determinantentheorie.
+
+%<<CONT
+gesetzt haben, dass er von Null verschieden sei.
+
+101. \textit{Zweite Folgerung: $\mu$ Gleichungen sind eine Folge der
+$n - \mu$ \"ubrigen.} Ersetzen wir in dem Systeme (III) die Gleichung
+$f_\mu$ durch irgend eine der vorhergehenden Gleichungen $f_i$, dann ist
+die Matrix dieses Systemes dargestellt durch
+\weq{B}{
+\begin{vmatrix}
+a_{i1} & a_{i2} & a_{i3} & \cdots & a_{i\mu} & a_{i,\mu+1} & \cdots & a_{in} \\
+a_{\mu+1,1} & a_{\mu+1,2} & \cdots & \cdots & a_{\mu+1,\mu} & a_{\mu+1,\mu+1} & \cdots & a_{\mu+1,n} \\
+a_{\mu+2,1} & \cdots & \cdots & \cdots & \cdots & a_{\mu+2,\mu} & \cdots & a_{\mu+2,n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{n1} & \cdots & \cdots & \cdots & \cdots & a_{n\mu} & a_{n,\mu+1} & \cdots a_{nn}
+\end{vmatrix}.
+}
+Ihre Determinanten sind noch immer nach Voraussetzung null, w\"ahrend die
+Unterdeterminanten derselben nicht durchwegs verschwinden; insbesondere
+ist noch immer der Minor
+\[
+A_{\mu\mu}
+\]
+von Null verschieden, und daher schliessen wir ganz auf dieselbe Weise
+wie vorhin, dass auch $f_i$ eine Folge der letzten $n - \mu$ Gleichungen
+sein muss.
+
+Wir sind daher berechtigt, ganz allgemein den Satz aufzustellen:
+\glqq Sind in einem Systeme homogener linearer Gleichungen sowohl die
+Determinante des Systemes selbst, als auch alle Unterdeterminanten bis
+zur $(\mu - 1)^{\mathrm{ten}}$ Ordnung inclus. gleich Null, aber nicht
+alle der n\"achsth\"oheren Ordnung, so sind $\mu$ Gleichungen die Folge
+der \"ubrigen richtig gew\"ahlten $n - \mu$ Gleichungen.\grqq{}
+Aus diesen $n - \mu$ Gleichungen lassen sich aber die Werthe von
+$n - \mu$ Variabeln $x_i$ in Function der \"ubrigen $\mu$ Variabeln
+berechnen, wie wir sogleich sehen werden.
+
+102. \textit{Aufl\"osung eines Gleichungssystemes, in welchem die Zahl
+$\mu$ der Gleichungen kleiner ist als die Zahl $n$ der Unbekannten. Erster
+Fall.} Wenn wir uns nun damit befassen, Werthsysteme $x_\mu$ aufzufinden,
+welche diese $n - \mu$ Gleichungen mit $\mu$ Unbekannten befriedigen, so
+d\"urfen wir zun\"achst die Annahme machen, dass nicht s\"ammtliche
+Determinanten der Matrix dieses Systemes von $n - \mu$ Gleichungen
+verschwinden. Denn w\"urde dies eintreten, dann w\"are nach dem eben
+Erw\"ahnten mindestens eine derselben eine Folge der \"ubrigen, und die
+Zahl der selbstst\"andigen Gleichungen w\"urde sich eben nur noch weiter
+reduciren.
+
+\textit{Wir beginnen mit dem ersten Falle $\mu = n - 1$.} Das System der
+$n - 1$ Gleichungen mit $n$ Unbekannten k\"onnen wir dann in der Form
+aufstellen:
+\weq{VI}{
+\left\{
+\begin{aligned}
+a_{21} x_1 &+ a_{22} x_2 + a_{23} x_3 + \cdots a_{2n} x_n = 0 \\
+a_{31} x_1 &+ a_{32} x_2 + a_{33} x_3 + \cdots a_{3n} x_n = 0 \\
+a_{41} x_1 &\cdot \, \cdot \, \cdot \, \cdot \, \cdot \, \cdot \, \cdot \, \cdot \, \cdot \, a_{4n} x_n = 0 \\
+&\cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \\
+a_{n1} x_1 &+ a_{n2} x_2 + a_{n3} x_3 + \cdots a_{nn} x_n = 0.
+\end{aligned}
+\right.
+}
+Vergleichen wir alsdann dieses System von Gleichungen mit dem in Nr. 34
+aufgestellten System von Identit\"aten
+\weq{D}{
+\left\{
+\begin{aligned}
+a_{21} p_1 &+ a_{22} p_2 + a_{23} p_3 \cdots a_{2n} p_n = 0 \\
+a_{31} p_1 &+ a_{32} p_2 \cdots \cdots \cdots a_{3n} p_n = 0 \\
+a_{41} p_1 &\cdot \, \cdot \, \cdot \, \cdot \, \cdot \, \cdot \, \cdot \, \cdot \, \cdot = 0 \\
+&\cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \\
+a_{n1} p_1 &+ a_{n2} p_2 + a_{n3} p_3 \cdots a_{nn} p_n = 0,
+\end{aligned}
+\right.
+}
+wo die Gr\"ossen $p_1 p_2 \ldots p_n$ nichts anderes sind als die mit
+wechselndem Vorzeichen genommenen Determinanten der Matrix:
+\weq{A}{
+\begin{vmatrix}
+a_{21} & a_{22} & a_{23} & \cdots & a_{2n} \\
+a_{31} & a_{32} & a_{33} & \cdots & a_{3n} \\
+a_{41} & a_{42} & \cdot & \cdots & a_{4n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{n1} & a_{n2} & a_{n3} & \cdot & a_{nn}
+\end{vmatrix},
+}
+so erkennt man, dass das Gleichungssystem (VI) befriedigt wird durch
+\[
+x_i = \frac{1}{\varrho} \cdot p_i,
+\]
+%CONT>>
+
+
+% ===== pdf idx 121, printed 107.0 =====
+% !PRINTED 107
+\weberpage{107}
+wo $\dfrac{1}{\varrho}$ ein beliebiger Factor und
+\[ p_i = (-1)^{i-1}(a_{21}a_{32}\ldots a_{i,i-1}a_{i+1,i+1}\ldots a_{nn}) \text{ ist.} \]
+
+103. \textit{Eindeutigkeit der erhaltenen Lösung.} Dass diese Lösung die einzige ist, welche das System (VI) zulässt, kann man durch directe Berechnung derselben erweisen. Bezeichnet man nämlich die ersten Unterdeterminanten der Determinante
+\[
+p_n = (-1)^{n-1}
+\begin{vmatrix}
+a_{21} & a_{22} & a_{23} & \ldots & a_{2,n-1} \\
+a_{31} & a_{32} & a_{33} & \ldots & a_{3,n-1} \\
+a_{41} & \cdot & \cdot & \cdot & \cdot \\
+ & \cdot & \cdot & \cdot & \cdot \\
+a_{n1} & a_{n2} & \ldots & \ldots & a_{n,n-1}
+\end{vmatrix}
+\]
+mit $A_{ik}$, wo $i>1$, und $k<n$, dann können wir zunächst die Gleichungen (VI) mit den Minoren ihrer ersten Colonne der Reihe nach multipliciren und addiren; dies liefert, da die Coefficienten der Unbekannten $x_2$ bis $x_{n-1}$ verschwinden, und da einestheils
+\[ (a_{21}A_{21}+a_{31}A_{31}\cdots a_{n1}A_{n1}) = (-1)^{n-1}p_n, \]
+und anderntheils
+\[ (a_{2\,n}A_{21}+a_{3\,n}A_{31}\cdots+a_{n\,n}A_{n1}) = (-1)^{n-2}p_1, \]
+die Gleichung
+\weq{1}{p_n x_1 - p_1 x_n = 0.}
+Ganz ebenso liefern die Multiplicationen mit den Minoren der zweiten, dritten $\ldots(n-1)^{\text{ten}}$ Colonne von $p_n$ und die daraufolgende Addition der Reihe nach die Gleichungen.
+\weq{2}{p_n x_2 - p_2 x_n = 0,}
+\weq{3}{p_n x_3 - p_3 x_n = 0,}
+\[ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \]
+\weq{(n)}{p_n x_{n-1} - p_{n-1} x_n = 0.}
+Aus diesen ($n$) Gleichungen folgt zunächst, dass $x_n$ proportional $p_n$ ist, so dass man hat:
+\[ \varrho x_n = p_n. \]
+Setzt man diesen Werth in die erhaltenen Gleichungen ein, so folgt der Reihe nach (wobei die geeigneten Vorzeichen bereits im Symbol $p_i$ mit inbegriffen)
+\[ \varrho x_1 = p_1, \quad \varrho x_2 = p_2, \quad \varrho x_3 = p_3 \cdots \text{u.\,s.\,w.,} \]
+also gerade die schon oben angeführten Werthe der Unbekannten. Aus
+%CONT>>
+
+
+% ===== pdf idx 122, printed 108.0 =====
+% !PRINTED 108
+\weberpage{108}
+%<<CONT
+diesem direct durch Berechnung erhaltenen Resultate folgt aber, dass die gewonnene Lösung die einzig mögliche ist. — Man kann daher den Satz aufstellen:
+
+\glqq Ein System von $(n-1)$ homogenen linearen Gleichungen mit $n$ Unbekannten hat, wenn die Determinanten der Matrix des Systemes nicht durchwegs verschwinden, als einziges System von Lösungen die durch die continuirliche Proportion
+\[ x_1:x_2:x_3\cdots:x_n = A_{11}:A_{12}:A_{13}\cdots:A_{1n} \]
+gegebenen Werthe von $x$, wenn $A_{1i}$ die mit wechselndem Vorzeichen genommenen Determinanten der Matrix des Systemes sind.\grqq{}
+
+104. \textit{Anwendungen. Beispiel} 1. Seien gegeben die beiden Gleichungen:
+\weq{1}{u_1x_1+u_2x_2+u_3x_3=0,}
+\weq{2}{v_1x_1+v_2x_2+v_3x_3=0,}
+dann ist nach dem erhaltenen Satze das System von Lösungen gegeben durch:
+\[ x_1:x_2:x_3 = (u_2v_3-v_2u_3):-(u_1v_3-v_1u_3):(u_1v_2-u_2v_1) \]
+\[ = (u_2v_3):(u_3v_1):(u_1v_2), \]
+was man unmittelbar durch die gewöhnlichen Methoden der Elimination verificiren kann. Deutet man die Gleichungen 1) und 2) geometrisch, so stellen sie zwei Gerade vor, und die Aufgabe ist, ihren Schnittpunkt suchen. Man erhält die Lösung: die Coordinaten des Schnittpunktes sind proportional den Determinanten der Liniencoordinaten beider Geraden, oder (vergleiche auch den Satz über correspondirende Matrices und Beispiel Nr. 95) die Determinanten der Matrix
+\[
+\begin{vmatrix} u_1 & u_2 & u_3 \\ v_1 & v_2 & v_3 \end{vmatrix}
+\]
+sind proportional den correspondirenden Determinanten der Matrix
+\[ \begin{vmatrix} x_1, & x_2, & x_3 \end{vmatrix}. \]
+
+\textit{Beispiel} 2. Seien ferner gegeben die drei Gleichungen
+\weq{1}{u_1x_1+u_2x_2+u_3x_3+u_4x_4=0,}
+\weq{2}{v_1x_1+v_2x_2+v_3x_3+v_4x_4=0,}
+\weq{3}{w_1x_1+w_2x_2+w_3x_3+w_4x_4=0.}
+Das gemeinschaftliche System der Lösungen ist dargestellt durch die Determinanten der Matrix
+%CONT>>
+
+
+% ===== pdf idx 123, printed 109.0 =====

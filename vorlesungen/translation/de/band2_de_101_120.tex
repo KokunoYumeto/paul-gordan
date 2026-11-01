@@ -1,0 +1,901 @@
+% !PRINTED 101
+\weberpage{101}
+%<<CONT
+\[
+-(p_1\Delta)(p\alpha_1)(p\Delta)(p_1\alpha_1) = \frac{3}{2}(B\alpha_1)(B\Delta)(Bp_1)(p_1\Delta) - \frac{1}{2}(p\alpha_1)^2(p_1\Delta)^2,
+\]
+oder, wenn wir für den zweiten Term rechts seinen Werth aus (12)
+substituiren:
+\weq{13}{(p\alpha_1)(p_1\alpha_1)(p\Delta)(p_1\Delta) = -\frac{9}{4}(B\alpha_1)(B\Delta)(Bp_1)(p_1\Delta).}
+Die rechte Seite dieser Gleichung erhält man aus der Reihenentwicklung
+\[
+\alpha_{1x}p_{1x}p_{1y} = \{\alpha_{1x}p_{1x}^2\}_y + \frac{1}{2}\{(\alpha_1p_1)p_{1x}\}(xy),
+\]
+wenn man darin $x$ durch $B$, $y$ durch $\Delta$ ersetzt und mit $(B\Delta)$ multiplicirt. Berücksichtigt man noch, dass $p_{1x}^2\alpha_{1x} = C_x^3 = \varphi$, so ergiebt sich:
+\[
+(B\alpha_1)(Bp_1)(p_1\Delta)(B\Delta) = (BC)^2(B\Delta)(C\Delta) - \frac{1}{2}(B\Delta)^2(\alpha_1p_1)(p_1B).
+\]
+Hierbei verschwindet wieder der zweite Term rechts wegen $(B\Delta)^2$; substituirt man den sich so für die linke Seite ergebenden Werth $(BC)^2(B\Delta)(C\Delta)$, der nichts anderes ist als $(\Delta,\Delta)^2$, in (13), so kommt als zweite Relation:
+\weq{14}{(p\alpha_1)(p_1\alpha_1)(p\Delta)(p_1\Delta) = -\frac{9}{4}(\Delta,\Delta)^2,}
+also wegen (12):
+\[
+(p\Delta)^2(p_1\alpha_1)^2 = -\frac{3}{2}(\Delta,\Delta)^2,
+\]
+und demnach wegen (11):
+\weq{15}{R = +\frac{27}{2}(\Delta,\Delta)^2 = (\alpha_1\alpha_2)^2(\alpha_1\alpha_3)^2(\alpha_2\alpha_3)^2,}
+womit unsere Aufgabe erledigt ist.
+
+95. \textit{Allgemeiner Fall.} Schon dieses einfache Beispiel zeigt, dass die Aufgabe, eine in symmetrischen Functionen der Wurzeldifferenzen gegebene Covariante direct in ein symbolisches Product umzuformen, complicirter Natur ist. Noch ungleich schwieriger gestalten sich die Verhältnisse in allgemeineren Fällen. Indess wollen wir doch --- theoretisch wenigstens --- diese Frage erledigen, die auch anderweitig von Interesse ist. Es sei:
+\[
+Q = \sum{}' \overline{Q}
+\]
+die gegebene Covariante der Form $(n+1)^{\text{ten}}$ Grades in $x$
+\[
+\varphi = \alpha_{1x}\cdot\alpha_{2x}\cdot\alpha_{3x}\cdots\alpha_{n+1,x} = A_x^{n+1} = B_x^{n+1} = \text{etc.}
+\]
+Dabei ist jedes Glied $\overline{Q}$ der Summe rechts ein Product von der Gestalt
+\[
+\overline{Q} = (\alpha_i\alpha_k)^{\lambda_1}(\alpha_i\alpha_\mu)^{\lambda_2}\cdots\alpha_{ix}^{\lambda_1}\alpha_{kx}^{\lambda_2}\alpha_{\mu x}^{\lambda_3}\cdots,
+\]
+wo jede Wurzel $\alpha_i$ in demselben Grad auftritt. Irgend eines der Glieder
+%CONT>>
+
+
+% ===== pdf idx 116, printed 102.0 =====
+% !PRINTED 102
+\weberpage{102}
+%<<CONT
+$\overline{Q}$ wollen wir als Repräsentant herausgreifen, an dem die Umformung gezeigt werden soll. Die Aufgabe ist alsdann, in $\overline{Q}$ successive durch Einführung von immer mehr und mehr Symbolen $A, B, C\ldots$ die Grössen $\alpha_i$ zu verdrängen. Hiezu benutzen wir wie im Beispiel die Hilfsform $n^{\text{ten}}$ Grades
+\[
+p = \alpha_{2x}\alpha_{3x}\alpha_{4x}\cdots\alpha_{n+1,x} = a_x^n = b_x^n = \text{etc.},
+\]
+welche sich von $\varphi$ nur um den Factor $\alpha_{1x}$ unterscheidet. Denken wir uns nun einen Augenblick in $Q = \sum{}' \overline{Q}$ die Wurzel $\alpha_1$ durch $y$ ersetzt, so ist die entstehende Form jedenfalls Covariante von $p$, und wir können annehmen, dass wir die Aufgabe, die wir für Formen $(n+1)^{\text{ten}}$ Grades lösen wollen, für Formen $n^{\text{ten}}$ Grades bereits erledigt haben, dass es uns also möglich ist, alle in symmetrischen Functionen der Wurzeln gegebenen Covarianten der Form niedrigeren Grades $p = p_x^n$ durch die Symbole $a, b, c\cdots$ von $p$ darzustellen. Ersetzen wir alsdann wiederum $y$ durch $\alpha_1$, so ist nunmehr $Q = \sum{}' \overline{Q}$ ausgedrückt in $\alpha_1$ und Symbolen $a, b, c$, d.\,h. $Q$ ist dargestellt als simultane Covariante der Formen $\alpha_{1x}$ und $p_x^n$. Die eben gemachte Annahme ist erlaubt, denn für Formen ersten Grades können wir sie jederzeit sofort realisiren.
+
+96. Es handelt sich nun darum, vermöge der Identität
+\weq{1}{A_x^{n+1} = a_x^n \cdot \alpha_{1x}}
+die Symbole $a, b, c$ durch Symbole $A$ zu ersetzen und damit die Grösse $\alpha_1$ von selbst successive zu eliminiren. Zu dem Zwecke stellen wir zunächst nach dem in Nr.\,46 gegebenen Satze den Repräsentanten $\overline{Q}$ durch eine Summe von Ueberschiebungen dar
+\weq{2}{\overline{Q} = \sum{}' (L,\,M)^\nu,}
+wobei die Formen $L$ nur $\alpha_1$ und das Symbol $a$ enthalten, also die Gestalt
+\weq{3}{L = (a\alpha_1)^k a_x^{n-k} \alpha_{1x}^\varrho}
+besitzen, während die Formen $M$ irgend welche Covarianten von $p$ mit den Symbolen $b, c, d,\ldots$ bedeuten. Besitzt nun $L$ wirklich Factoren erster Art $\alpha_{1x}$, ist also $\varrho > 0$, so ergiebt sich durch $k$ malige successive Ueberschiebung von (1) über $\alpha_{1x}$:
+\weq{4}{(n-k+1)(a\alpha_1)^k a_x^{n-k} \alpha_{1x} = (n+1)(A\alpha_1)^k A_x^{n-k+1},}
+oder, wenn wir mit $\alpha_{1x}^{\varrho-1}$ multipliciren und mit (3) compariren:
+\[
+L = \frac{n+1}{n-k+1}(A\alpha_1)^k A_x^{n-k+1}\alpha_{1x}^{\varrho-1}.
+\]
+%CONT>>
+
+
+% ===== pdf idx 117, printed 103.0 =====
+% !PRINTED 103
+\weberpage{103}
+Dies ist eine erste Reductionsformel für alle jene Glieder der Gleichung (2), welche durch Ueberschiebung von Formen $L$ entstehen, die Factoren erster Art $\alpha_{1x}$ besitzen. Durch sie wird der Exponent von $\alpha_{1x}^\varrho$ um 1 vermindert und gleichzeitig das Symbol $A$ an Stelle von $a$ eingeführt. Besitzt dagegen eine solche Form $L$ keine Factoren erster Art $\alpha_{1x}$, in welchem Falle wir sie einstweilen \gesperrt{normirte Formen} $L$ nennen wollen, so kann für sie die Formel (4) nicht Reductionsformel sein; wir werden diese normirten Formen $L$ später reduciren. Alle Glieder $G_i$ der Summe (2) dagegen, welche durch Formel (4) reducirbar waren, können wir nun wieder nach dem schon einmal citirten Satze in Nr.\,46 darstellen in der Gestalt:
+\[
+G_i = \sum{}' (\overline{Q}_1,\, A_x^{n+1}),
+\]
+wobei nun mit $\overline{Q}_1$ wieder simultane Covarianten vom Typus $\overline{Q}$ bezeichnet sind, deren $L$ jedoch einen Factor $\alpha_{1x}$ weniger enthalten und auch niedrigeren Grades in den Coefficienten von $p$ sind. Diese Formen $\overline{Q}_1$ reduciren wir alsdann in der gleichen Weise wie die $\overline{Q}$ und indem wir diesen Process immer von Neuem wiederholen, werden dabei in die bezeichneten Glieder immer und mehr Symbole $A, B, C,\ldots$ eingeführt, während gleichzeitig ihr Grad sich successive reducirt, bis schliesslich überhaupt keine Factoren erster Art $\alpha_{1x}$ in den sich immer neuerdings ergebenden Formen $L$ auftreten.
+
+97. Die weitere Reduction fällt alsdann zusammen mit der Reduction jener Glieder in (2), die aus normirten Formen $L$ durch Ueberschiebung gebildet werden können. Für diese ergiebt sich die Reduction auf folgende Weise. Wir stellen zunächst den Repräsentanten $\overline{Q}$, wenn in ihm bereits Symbole $A, B, C\ldots$ auftreten sollten, als Summe von Ueberschiebungen dar, gebildet von Formen $\overline{Q}_1$, welche nur $\alpha_1$ und Symbole $a, b, c\ldots$ enthalten, über Covarianten von $\varphi = A_x^{n+1}$. In den Formen $\overline{Q}_1$ trennen wir alsdann wieder $\alpha_1$ und die Symbole $a, b, c, \ldots$ in zwei Gruppen: eine erste, welche $\alpha_1$ und die Symbole $a$ und $b$ umfasst, eine zweite für die noch übrigen Symbole $c, d, e,\ldots$. Dann lässt sich $\overline{Q}_1$ in der Gestalt darstellen:
+\[
+\overline{Q}_1 = \sum{}' (N,\, R)^\nu,
+\]
+wo nun die Formen $N$ vom Typus
+\[
+N = (ab)^\mu (a\alpha_1)^k a_x^{n-k-\mu} b^{n-\mu}, \quad k > 1
+\]
+sind, während die Formen $R$ irgend welche Covarianten von $p$ bedeuten. Wie wir nun oben eine Reductionsformel für die Formen $L$ gegeben haben, so entwickeln wir jetzt eine solche für $N$. Die Form $N$
+%CONT>>
+
+
+% ===== pdf idx 118, printed 104.0 =====
+% !PRINTED 104
+\weberpage{104}
+%<<CONT
+geht nämlich bis auf den Factor $(-1)^{\mu+1}$ aus $b_y\alpha_{1y}b_x^{n-\mu}$ hervor, wenn wir darin $y$ durch $a$ ersetzen und mit $(a\alpha_1)^{k-1}a_x^{n-k-\mu}$ multipliciren. Nun ist aber nach (VIII) Nr.\,81
+\[
+b_y^\mu \alpha_{1y} b_x^{n-\mu} = \{b_x^n \alpha_{1x}\}_{y^{\mu+1}} + \frac{n-\mu}{n+1}(b\alpha_1)(xy)b_x^{n-\mu-1}b_y^\mu.
+\]
+Ersetzen wir darin die erste Elementarcovariante durch ihr Symbol $A_x^{n+1}$ nach (1) Nr.\,96 und führen die Substitution aus, so kommt:
+\[
+\begin{aligned}
+(-1)^{\mu+1} N &= (Aa)^{\mu+1}(a\alpha_1)^{k-1} A_x^{n-\mu} a_x^{n-k-\mu} \\
+&\quad - \frac{n-\mu}{n+1}(b\alpha_1)(a\alpha_1)^{k-1}(ba)^\mu b_x^{n-\mu-1} a_x^{n-k-\mu+1}.
+\end{aligned}
+\]
+Das erste Glied rechts besitzt einen Factor $(a\alpha_1)$ weniger als $N$ und statt des Symboles $b$ das Symbol $A$, ist also reducirt gegenüber der Form $N$. Nicht aber das zweite Glied rechts, das eher complicirter genannt werden muss. Indess geht dieses zweite Glied, das wir, vom Factor $-\frac{n-\mu}{n+1}$ abgesehen, mit $N_1$ bezeichnen wollen, aus $(a\alpha)^{k-1} a_y^\mu a_x^{n-k-\mu+1}\alpha_y$ hervor, wenn wir darin $y$ durch $b$ ersetzen und mit $b_x^{n-\mu-1}$ multipliciren. Es ist aber nach (VIII) Nr.\,81
+\[
+(a\alpha_1)^{k-1} a_y^\mu \alpha_{1y} a_x^{n-k-\mu+1} = \{(a\alpha_1)^{k-1} a_x^{n-k+1} \alpha_{1x}\}_{y^{\mu+1}} + \frac{n-k-\mu+1}{n-k+3}(a\alpha_1)^k a_y^\mu a_x^{n-k-\mu}(xy).
+\]
+Ersetzen wir darin die erste Elementarcovariante vermöge der Gleichung (4) durch $\frac{n+1}{n-k}(A\alpha_1)^{k-1}A_x^{n-k}$ und führen alsdann die Substitution aus, so geht die linke Seite über in $N_1$ und das zweite Glied rechts in $N$. Schaffen wir dieses Glied auf die linke Seite, so kommt:
+\weq{1}{(-1)^{\mu+1} N_1 - \frac{n-k-\mu+1}{n-k+3} N = \frac{n+1}{n-k}(A\alpha_1)^{k-1}(Ab)^{\mu+1} b_x^{n-\mu-1} A_x^{n-k-\mu}.}
+Hiezu hatten wir:
+\weq{2}{(-1)^{\mu+1} N - \frac{n-\mu}{n+1} N_1 = (Ab)^{\mu+1}(b\alpha_1)^{k-1} A_x^{n-\mu} b_x^{n-k-\mu},}
+und diese beiden Gleichungen zusammen liefern in der That eine Reduction für die Formen $N$ und $N_1$. Durch fortgesetzte Wiederholung dieses Verfahrens wird hierdurch successive nicht nur die Anzahl der Klammerfactoren, welche $\alpha_1$ enthalten, vermindert, sondern auch die Anzahl der Symbole $a, b, c,\ldots$.
+
+Diese beiden Reductionsformeln (1) und (2) führen so endlich neben Gliedern, die bereits völlig in den Symbolen $A, B, C,\ldots$ dargestellt sind, auf Glieder, die ausser den Symbolen $A, B, C,\ldots$
+%CONT>>
+
+
+% ===== pdf idx 119, printed 105.0 =====
+% !PRINTED 105
+\weberpage{105}
+%<<CONT
+nur mehr ein Symbol $a$ und einmal die Wurzel $\alpha_1$ enthalten, die
+also entstanden gedacht werden können durch Ueberschiebung von
+Formen
+\weq{3}{L = (a\alpha_1)\,a_x^{n-1}}
+mit symbolischen Producten in den Symbolen $A, B, C, \dots$ Auf sie
+lassen sich Gleichungen (1) und (2) nicht mehr anwenden, da dieselben
+die gleichzeitige Anwesenheit von mindestens zwei Symbolen
+$a$ und $b$ voraussetzen. Allein diese Glieder verschwinden (vergl.
+auch das Beispiel) identisch. Um dies theoretisch einzusehen, denke man
+sich nur auch die übrigen Glieder $\bar Q$ in derselben Weise wie den
+Repräsentanten $\bar Q$ behandelt. Dann scheidet sich schliesslich die
+Covariante
+\[
+Q = \sum \bar Q
+\]
+in zwei Theile, deren erster nur mehr symbolische Producte in $A, B, C$
+enthält und also für sich symmetrisch in den Wurzeln $\alpha_i$, und deren
+zweiter Theil alle Ueberschiebungen mit den Formen $L$ vom Typus
+(3) enthält. Da aber $Q$ selbst symmetrisch ist, so muss dieser Theil
+ebenfalls für sich symmetrisch in den Wurzeln $\alpha_i$ sein, und kann also
+seinen Werth nicht ändern bei Vertauschungen zweier Wurzeln. Ersetzen
+wir nun in diesem Theile
+\[
+\sum (L, M)^\nu = \sum \big((a\alpha_1)\,a_x^{n-1}, M\big)^\nu
+\]
+$a_x^n$ durch seinen Wert $\alpha_{2x}\,\alpha_{3x}\,\alpha_{4x}\cdots\alpha_{n+1\,x}$, so kommt:
+\[
+\sum (L, M)^\nu = \sum \Big( \sum (\alpha_2\alpha_1)\,\alpha_{3x}\,\alpha_{4x}\cdots, M \Big)^\nu.
+\]
+Die rechte Seite ändert aber ihren Werth, wenn man $\alpha_2$ mit $\alpha_1$
+vertauscht, d.\,h. sie kann nur eine verschwindende symmetrische
+Function sein. Wir werden im dritten Bande eine Erweiterung der hier
+gegebenen Entwicklungen auf ternäre Formen kennen lernen.
+
+98. \textit{Ueber Covarianten dritten Grades in den Coefficienten einer
+Form $f = a_x^n$.} Schon in dem ersten Paragraphen dieser Vorlesungen
+haben wir gezeigt, dass ein symbolisches Product, dessen zumeist
+auftretender Klammerfactor $(ab)^{2\mu-1}$ ist, sich stets durch eine Summe
+anderer Producte darstellen lässt, die den Factor $(ab)^{2\mu}$ besitzen. Es
+ist nun aber sehr bemerkenswerth, dass es auch eine Reihe symbolischer
+Producte mit dem Factor $(ab)^{2\mu}$ giebt, welche in eine Summe
+von andern Producten entwickelt werden können, die durchwegs
+mindestens $(ab)^{2\mu+2}$ als Factor enthalten. Zu diesen gehören unter
+andern alle geraden Ueberschiebungen:
+\[
+U = \big((f,f)^{2\mu}, f\big)^{2\mu+\varrho} = \big((ab)^{2\mu}\,a_x^{n-2\mu}\,b_x^{n-2\mu},\, c_x^n\big)^{2\mu+\varrho}, % the mark above this = in the print is a slanted stray streak over its left end, not a dot
+\]
+%CONT>>
+
+
+% ===== pdf idx 120, printed 106.0 =====
+% !PRINTED 106
+\weberpage{106}
+%<<CONT
+wenn $\varrho \geqq 0$, $\mu \leqq \dfrac{n}{4}$ ist. Nur in einem besondern Falle, wenn
+nämlich $n = 4\mu$ und $\varrho = 2\mu$ ist, wird diese Entwicklung unmöglich. Die
+Ueberschiebung $U$ ist dann eine Invariante $j = (ab)^{2\mu}(ac)^{2\mu}(bc)^{2\mu}$.
+Indem wir nun die Möglichkeit der erwähnten Entwicklungen von $U$
+im allgemeinen Falle darthun, ergiebt sich alsdann der etwas allgemeinere
+Satz:
+
+\glqq Symbolische Producte mit dem Factor $(ab)^{2\mu}(ac)^{2\mu}$ lassen
+sich stets — von etwaigen Gliedern mit dem Factor
+\[
+j = (ab)^{2\mu}(ac)^{2\mu}(bc)^{2\mu}
+\]
+abgesehen — in eine Summe anderer Producte entwickeln,
+welche mindestens den Factor $(ab)^{2\mu+2}$ besitzen.\grqq{}
+
+Der Beweis lässt sich folgendermassen durch Reihenentwicklung
+führen. Das erste Glied der Ueberschiebung $U$ ist
+\[
+G_0 = (ab)^{2\mu}(ac)^{2\mu+\varrho}\,a_x^{n-4\mu-\varrho}\,b_x^{n-2\mu}\,c_x^{n-2\mu-\varrho}.
+\]
+Es entsteht aus dem Polarengliede: $(ab)^{2\mu}\,a_y^{2\mu+\varrho}\,a_x^{n-4\mu-\varrho}\,b_x^{n-2\mu}$
+durch die Substitution $y_1 = c_2$, $y_2 = -c_1$; entwickeln wir aber
+dasselbe in Reihe (VIII), so kommt:
+\[
+\begin{aligned}
+\bar G_0 &= (ab)^{2\mu}\,a_y^{2\mu+\varrho}\,a_x^{n-4\mu-\varrho}\,b_x^{n-2\mu} \\
+&= (f,f)^{2\mu}_{y^{2\mu+\varrho}} + \text{Const.}\times (f,f)^{2\mu+1}_{y^{2\mu+\varrho-1}}(yx) + \cdots,
+\end{aligned}
+\]
+oder, weil rechts alle ungeraden Elementarcovarianten verschwinden:
+\[
+\bar G_0 = (f,f)^{2\mu}_{y^{2\mu+\varrho}} + \text{Const.}\times (f,f)^{2\mu+2}_{y^{2\mu+\varrho-2}}(yx)^2 + \cdots
+\]
+Jedes Glied rechts, vom ersten abgesehen, enthält den Factor
+$(ab)^{2\mu+2}$, der auch erhalten bleibt, wenn wir nun $y_1$ durch $+c_2$ und
+$y_2$ durch $-c_1$ ersetzen und mit $c_x^{n-2\mu-\varrho}$ multipliciren. Mit Rücksicht
+auf den in Nr.\,43 erläuterten Modulbegriff können wir daher nach
+ausgeführter Substitution diese letzte Gleichung schreiben:
+\[
+(ab)^{2\mu}(ac)^{2\mu+\varrho}\,a_x^{n-4\mu-\varrho}\,b_x^{n-2\mu}\,c_x^{n-2\mu-\varrho}
+\equiv \text{Const.}\times \big((f,f)^{2\mu}, f\big)^{2\mu+\varrho} \bmod. (ab)^{2\mu+2}.
+\]
+Ist nun $\varrho > 0$, also mindestens gleich 1, so enthält nach dem in
+Nr.\,11 gegebenen Satze auch das Glied links den Factor $(ab)^{2\mu+2}$, und
+wir haben demnach als erstes Resultat:
+\weq{I}{\big((f,f)^{2\mu}, f\big)^{2\mu+\varrho} \equiv 0 \bmod. (ab)^{2\mu+2}, \quad \mu < \dfrac{n}{4}, \quad \varrho > 0.}
+Diese Gleichung gilt aber auch noch, wenn $\varrho = 0$, so lange nur
+$n > 4\mu$, etwa $n = 4\mu + \lambda$. Zum Beweise gehen wir alsdann vom
+symbolischen Producte $(ab)^{2\mu-1}\,a_y^{n-2\mu+1}\,b_x^{n-2\mu+1} = (ab)^{2\mu-1}\,a_y^{2\mu+\lambda+1}\,b_x^{2\mu+\lambda+1}$
+%CONT>>
+
+
+% ===== pdf idx 121, printed 107.0 =====
+% !PRINTED 107
+\weberpage{107}
+%<<CONT
+aus, und entwickeln dasselbe in Reihe (VIII). Dabei verschwinden
+rechts wiederum alle ungeraden Ueberschiebungen, während die Elementarcovarianten
+$(f,f)^{2\mu+2k}$, $k > 0$, von 0 verschieden sind.
+Ersetzen wir alsdann wiederum $y_1$ durch $c_2$, $y_2$ durch $-c_1$ und multipliciren
+mit $c_x^{n-2\mu-1}$, so kommt:
+\[
+(ab)^{2\mu-1}(ac)^{2\mu+\lambda+1}\,b_x^{2\mu+\lambda+1}\,c_x^{n-2\mu-1}
+\quad \text{Const.}\times \big((f,f)^{2\mu}, f\big)^{2\mu} \bmod. (ab)^{2\mu+2}, % [sic] no relation sign is printed before Const. (blank gap, only a speck at the height of the top bar of an \equiv); \equiv intended, cf. p. 106
+\]
+oder, weil das Glied links wegen $(ac)^{2\mu+1}$ selbst $\equiv \bmod. (ab)^{2\mu+2}$, so ist:
+\weq{II}{\big((f,f)^{2\mu}, f\big)^{2\mu} \equiv 0 \bmod. (ab)^{2\mu+2}, \quad \mu < \dfrac{n}{4}.}
+Diese Gleichung gilt auch, wenn $n = 4\mu$, also $\lambda = 0$ ist. Es
+fragt sich jetzt nur noch, besteht auch Gleichung (I) für $n = 4\mu$.
+In diesem Falle tritt alsdann kein Factor $(ac)^{2\mu+\varrho}$ neben $(ab)^{2\mu}$ auf,
+und wir können, um dies zu entscheiden, nicht mehr von dem dort
+benutzten Gliede $\overline{\overline{G}}_0$ ausgehen. Wir benutzen vielmehr nun das symbolische
+Product:
+\[
+P = (ab)^{2\mu-1}(ac)^{2\mu+1}(bc)^\varrho\,b_x^{2\mu-1-\varrho}\,c_x^{2\mu-1-\varrho},
+\]
+welches aus dem Polarengliede $\overline{\overline{G}}_0 = (ab)^{2\mu-1}\,a_y^{2\mu+1}\,b_y^\varrho\,b_x^{2\mu+1-\varrho}$ für $y_1 = c_2$,
+$y_2 = -c_1$ hervorgeht. Die Reihenentwicklung liefert:
+\[
+\begin{aligned}
+\overline{\overline{G}}_0 &= (f,f)^{2\mu-1}_{y^{2\mu+\varrho+1}} + \text{Const.}\,(f,f)^{2\mu}_{y^{2\mu+\varrho}}(yx) \\
+&\qquad + \text{Const.}\times (f,f)^{2\mu+1}_{y^{2\mu+\varrho-1}}(yx)^2 + \cdots
+\end{aligned}
+\]
+Hieraus entsteht nach ausgeführter Substitution:
+\[
+(ab)^{2\mu-1}(ac)^{2\mu+1}(bc)^\varrho\,b_x^{2\mu-1-\varrho}\,c_x^{2\mu-1-\varrho}
+\equiv \text{C.}\,\big((f,f)^{2\mu}, f\big)^{2\mu+\varrho} \bmod. (ab)^{2\mu+2}.
+\]
+Diese Gleichung besteht, so lange $\varrho \leqq 2\mu - 1$ und demnach hat
+man unter dieser Bedingung immer:
+\weq{III}{\big((f,f)^{2\mu}, f\big)^{2\mu+\varrho} \equiv 0 \bmod. (ab)^{2\mu+2}, \quad n = 4\mu.}
+Ist aber $\varrho = 2\mu$, so existirt kein symbolisches Product $P$, in
+diesem Falle ist aber $\big((f,f)^{2\mu}, f\big)^{4\mu}$ die Invariante $j$, die sich somit
+in kein anderes symbolisches Product umformen lässt. Nehmen wir
+nun diese Invariante aber mit unter die Moduln auf, so können wir
+die drei Gleichungen (I), (II), (III) in eine zusammenfassen:
+\weq{IV}{U = \big((f,f)^{2\mu}, f\big)^{2\mu+\varrho} \equiv 0 \bmod. (ab)^{2\mu+2}, \; j,}
+wobei nun $n \geqq 4\mu$, und $\varrho \leqq 2\mu$ sein kann.
+
+Nun besitzt jede Ueberschiebung $U$ ein Glied
+\[
+G = (ab)^{2\mu}(ac)^{2\mu}\cdot Q,
+\]
+wo $Q$ die übrigen symbolischen Factoren enthält. Anderntheils ist
+nach Nr.\,44 jedes Glied von $U$ durch $U$ selbst und Ueberschiebungen
+%CONT>>
+
+
+% ===== pdf idx 122, printed 108.0 =====
+% !PRINTED 108
+\weberpage{108}
+%<<CONT
+von Formen darstellbar, die aus $(f,f)^{2\mu} = (ab)^{2\mu}\,a_x^{n-2\mu}\,b_x^{n-2\mu}$, oder
+$f = c_x^n$ durch Faltung entstehen. Die Faltung von $c_x^n$ liefert aber 0,
+die von $(f,f)^{2\mu}$ einen weitern Klammerfactor $(ab)$. Demnach ist:
+\[
+G - \dot U \equiv 0 \bmod. (ab)^{2\mu+2}, % checked against the GDZ scan (27 Oct 2026): a round dot is printed over the U; kept as printed
+\]
+oder, weil $U$ selbst $\equiv 0 \bmod. (ab)^{2\mu+2}$, $j$,
+\[
+G \equiv 0 \bmod. (ab)^{2\mu+2}, \; j.
+\]
+Alle symbolischen Producte aber mit dem Factor $(ab)^{2\mu}(ac)^{2\mu}$ kann
+man sich aus $G$ durch Faltung mit anderen Formen entstanden denken.
+Daher können wir schliesslich behaupten:
+\[
+(ab)^{2\mu}(ac)^{2\mu}\cdot R \equiv 0 \bmod. (ab)^{2\mu+2}, \; j,
+\]
+wo nun $R$ ein Product von irgend welchen symbolischen Factoren ist.
+Der Eingangs aufgestellte Satz ist sonach bewiesen. Symbolische
+Producte $G$ dieser Art liefern insbesondere die Ueberschiebungen
+$\big((f,f)^{2\mu}, (f,f)^{2\mu}\big)^{2\mu}$; und demnach ist:
+\[
+U_1 = \big((f,f)^{2\mu}, (f,f)^{2\mu}\big)^{2\mu} \equiv 0 \bmod. (ab)^{2\mu+2}, \; j, % checked against the GDZ scan (27 Oct 2026): only a faint piece (about 4pt) of the lowest bar of the sign printed, at the height of the lowest bar of the \equiv in G - \dot U \equiv 0 above; read as \equiv
+\]
+da wie vorhin so auch hier $G - U_1 \quad 0 \bmod. (ab)^{2\mu+2}$ ist. % checked against the GDZ scan (27 Oct 2026): no relation sign is printed between U_1 and 0 (blank gap); \equiv intended, as in the formula above
+
+99. \textit{Ueber die Cayley'sche respective Bézout'sche Methode der
+Discriminantenbildung.} Die Discriminante einer Form $n^{\text{ten}}$ Grades ist
+bekanntlich (vergl. auch Bd. I Nr.\,173) bis auf einen Zahlenfactor gleich
+der Resultante der beiden ersten Differentialquotienten der Form.
+Anstatt aber die Resultante aus diesen beiden Formen $(n-1)^{\text{ten}}$ Grades
+direct zu bilden, wie dies Sylvester gethan hat, reducirten Bézout und
+Cayley die zwei Gleichungen $(n-1)^{\text{ten}}$ Grades auf $(n-1)$ Gleichungen
+$(n-2)^{\text{ten}}$ Grades und erniedrigten so wesentlich den Grad der Eliminationsdeterminante.
+(Vergl. Bd. I Nr.\,150--152.) Wir wollen nun auch auf
+symbolischem Wege diese Reduction vornehmen, um später bei der
+Discriminantenbildung von Formen vierten, fünften und sechsten
+Grades davon Gebrauch zu machen.
+
+Angenommen die gegebene Form $f = a_x^n$ habe die Doppelwurzel
+$\alpha$, dann verschwindet sowohl $f$, als auch $f_1$ und $f_2$ für $x = \alpha$, d.\,h.
+es ist:
+\weq{1}{(a\alpha)^n = 0}
+\weq{2}{(a\alpha)^{n-1}\,a_x = 0.}
+Aus der zweiten dieser Gleichungen folgt noch die dritte:
+\weq{3}{(a\alpha)^{n-2}\,a_x^2 = \lambda \alpha^2.}
+Denn bildet man die Functionaldeterminante dieser quadratischen
+Form $(a\alpha)^{n-1}\,a_x^2 = c_x^2$ mit der linearen Form $\alpha_x$, so kommt:
+\[
+(c_x^2, \alpha_x) = \big((a\alpha)^{n-2}\,a_x^2, \alpha_x\big) = (a\alpha)^{n-1}\,\alpha_x = 0,
+\]
+%CONT>>
+
+
+% ===== pdf idx 123, printed 109.0 =====
+% !PRINTED 109
+\weberpage{109}
+%<<CONT
+d. h. diese Functionaldeterminante verschwindet identisch. Aus dieser
+Identität $(c\alpha)c_x = 0$ ergiebt sich unmittelbar durch Co\"efficientenvergleichung
+:
+\[
+\bar{c}_0\alpha_2 - \bar{c}_1\alpha_1 = 0 \quad \text{und} \quad \bar{c}_1\alpha_2 - \bar{c}_2\alpha_1 = 0,
+\]
+oder:
+\[
+\frac{c_1}{c_0} = \frac{\alpha_2}{\alpha_1}, \quad \frac{c_2}{c_0} = \frac{\alpha_2^2}{\alpha_1^2},
+\]
+und damit die in (3) ausgesprochene Thatsache, dass die quadratische
+Form $c_x^2$ proportional ist dem Quadrat der linearen Form $\alpha_x$.
+
+Irgend zwei der drei Gleichungen (1), (2), (3) liefern also die
+Bedingungen, dass $\alpha$ eine Doppelwurzel von $f$ ist; insbesondere gehen
+aus der Identität (2) zwei Gleichungen $(n-1)^{\text{ten}}$ Grades in $\alpha$ hervor,
+die wir nunmehr nach dem Vorgange von \gesperrt{Cayley} und \gesperrt{B\'ezout} auf
+$(n-1)$ Gleichungen $(n-2)^{\text{ten}}$ Grades reduciren wollen. Zu dem Zwecke
+ersetzen wir in (2) $x$ durch $b$, $\alpha$ durch $y$, multipliciren alsdann mit
+$b_x^{n-1}$ und entwickeln die so entstehende Form in die Reihe (VIII).
+Da in ihr alle ungeraden Ueberschiebungen verschwinden, so kommt:
+\[
+(ab)\,a_y^{n-1}b_x^{n-1} = \frac{n-1}{2}(f,f)^2_{y^{n-2}}(yx) + \frac{\left(\dfrac{n-1}{3}\right)^2}{\dbinom{2n-4}{3}}(f,f)^4_{y^{n-4}}(yx)^3 + \cdots
+\]
+
+Ersetzen wir hierin wiederum $y$ durch $\alpha$, so verschwindet wegen
+(2) die linke Seite dieser Gleichung. Wir dividiren alsdann dieselbe
+durch $\alpha_x$ und ersetzen die erste der rechts auftretenden Ueberschiebungen
+durch ihr erstes Glied, indem wir uns die Ueberschiebung nach diesem
+Glied und niedrigeren Ueberschiebungen entwickelt denken. Die letzteren
+vereinigen wir mit den nämlichen ohnehin bereits auf der rechten
+Seite vorhandenen entsprechenden Ueberschiebungen, während wir das
+erste Glied von $((f,f)^2, \alpha_x^{n-2})^{n-2}$ auf die linke Seite schaffen; so erhalten
+ wir:
+\[
+(ab)^2(a\alpha)^{n-2}b_x^{n-2} = c_0\left((f,f)^4,\alpha_x^{n-4}\right)^{n-4}\alpha_x^2 + c_1\left((f,f)^\sigma,\alpha_x^{n-6}\right)^{n-6}\cdot\alpha_x^4 + \cdots,
+\]
+wo nun $c_0, c_1, \ldots$ von den obigen Constanten verschieden sind. Diese
+letzte Identität repräsentirt aber $(n-1)$ Gleichungen $(n-2)^{\text{ten}}$ Grades
+in $\alpha$, und damit ist die gewünschte Reduction bewerkstelligt. Die
+Determinante dieser $(n-1)$ homogenen Gleichungen für die $(n-1)$
+Unbekannten $\alpha^{n-2}, \alpha^{n-3}, \ldots \alpha^2, \alpha, 1$ verschwindet identisch, und
+da sie vom Grade $2(n-1)$ in den Co\"efficienten ist, so kann sie von
+der Discriminante nur um einen numerischen Factor verschieden sein.
+
+
+% ===== pdf idx 124, printed 110.0 =====
+% !PRINTED 110
+\weberpage{110}
+\S~9. \textbf{Beweis, dass jede In- und Covariante durch ein symbolisches
+Product darstellbar ist.}
+
+100. \textit{Formulirung der Aufgabe für eine binäre Form.} Dass jedes
+symbolische Product, sobald es nur die Symbole in geeigneter Zahl
+enthält, eine simultane Invariante respective Covariante mehrerer gegebener
+ Formen darstellt, haben wir bereits in \S~1 dieses Bandes erkannt
+. Dies genügte für die bisherigen Untersuchungen. Die nun
+folgenden Untersuchungen erheischen aber die Existenz des umgekehrten
+ Satzes: Jede Invariante und Covariante einer Form oder eines
+simultanen Systemes von Formen ist durch ein symbolisches Product
+darstellbar; diesen Satz wollen wir nunmehr auf zwei verschiedenen
+Wegen beweisen und nicht nur für binäre Formen, sondern auch für
+Formen mit beliebig vielen Veränderlichen. Dabei können wir uns
+im Beweise auf Invarianten einer einzigen Form beschränken. Denn
+es wird sich einestheils zeigen, dass die Voraussetzung einer simultanen
+Invariante mehrerer Formen den Beweis nur quantitativ und nicht
+qualitativ ändern würde, und was anderntheils den entsprechenden Beweis
+ für Covarianten betrifft, so geht derselbe wegen der Cogredienz
+der Symbolreihen $a_2, -a_1; b_2, -b_1;$ etc., mit der Variabelnreihe $x_1,
+x_2$ (vergl. Nr. 4) unmittelbar aus dem für Invarianten hervor. Ist
+nämlich $\Phi$ eine simultane Covariante $m^{\text{ten}}$ Grades in $x$ der Formen
+$f, \varphi, \psi, \chi \ldots$, und $g = g_1x_1 + g_2x_2$ irgend eine lineare Form, so ist
+die Ueberschiebung $(\Phi, g^m)^m$ eine Invariante. Lässt sich nun diese Invariante
+ durch ein symbolisches Product darstellen, so hat auch die
+Covariante, die ja aus ihr durch die Substitution $x_1 = -g_2, x_2 = g_1$
+wiederum hervorgeht, das analoge symbolische Product zum Repräsentanten
+.
+
+Es sei nun $i$ eine Invariante $\mu^{\text{ten}}$ Grades in den Co\"efficienten der
+Form
+\[
+f = \bar{a}_0x_1^n + \binom{n}{1}\bar{a}_1x_1^{n-1}x_2 + \binom{n}{2}\bar{a}_2x_1^{n-2}x_2^2 + \cdots + \bar{a}_nx_2^n
+\]
+\[
+= a_x^n = b_x^n = c_x^n = \ldots \text{etc.}
+\]
+Durch die Transformation
+\[
+x_1 = \xi_1y_1 + \eta_1y_2, \quad x_2 = \xi_2y_1 + \eta_2y_2
+\]
+vom Modul
+\[
+\Delta = (\xi\eta)
+\]
+geht diese Form $f$ über in die Form
+\[
+F = \bar{A}_0y_1^n + \binom{n}{1}\bar{A}_1y_1^{n-1}y_2 + \binom{n}{2}\bar{A}_2y_1^{n-2}y_2 + \cdots + \bar{A}_ny_2^n
+% checked against the GDZ scan (27 Oct 2026): the term with \bar{A}_2 is printed y_1^{n-2}y_2, without an exponent on y_2 (misprint for y_2^2; cf. f above)
+\]
+\[
+= (a_\xi y_1 + a_\eta y_2)^n = (b_\xi y_1 + b_\eta y_2)^n = \ldots \text{etc.},
+\]
+%CONT>>
+
+
+% ===== pdf idx 125, printed 111.0 =====
+% !PRINTED 111
+\weberpage{111}
+%<<CONT
+und wir wissen (vergl. Nr. 3), dass zwischen den transformirten wirklichen
+ und symbolischen Co\"efficienten die analoge Beziehung:
+\[
+\bar{A}_k = a_\xi^{n-k}a_\eta^k
+\]
+besteht, wie zwischen den Co\"efficienten der ursprünglichen Form:
+\[
+\bar{a}_k = a_1^{n-k}a_2^k.
+\]
+Besitzt nun die Invariante der ursprünglichen Form $f$ den Ausdruck:
+\[
+i = \chi(\bar{a}),
+\]
+so muss gemäss der Definition einer Invariante der aus den Co\"efficienten
+ $\bar{A}$ von $F$ gebildete Ausdruck
+\[
+J = \chi(\bar{A})
+\]
+bis auf eine Potenz des Transformationsmoduls dem ursprünglichen
+gleich sein, d. h. die Bedingung, dass $i$ Invariante, stellt sich dar
+durch die Gleichung
+\weq{I}{J = i\cdot\Delta^\varrho = i\cdot(\xi\eta)^\varrho.}
+Wir stellen nun die Behauptung auf: \glqq Die so definirte Function
+\[
+i = \chi(a)
+\]
+ist durch ein symbolisches Product oder eine Summe solcher Producte
+darstellbar.\grqq{}
+
+101. \textit{Umformung der Definitionsgleichung (I) einer Invariante.} Zunächst
+ folgt aus der Identität (I), dass $i$ in den Co\"efficienten $\bar{a}$ homogen
+und isobar vom Gewichte $\varrho$ sein muss. (Vergl. Nr. 8.) Führt man
+daher in diese ganze homogene Function $i$ der Co\"efficienten $\bar{a}$ die
+symbolischen Co\"efficienten
+\[
+\bar{a}_k = a_1^{n-k}a_2^k = b_1^{n-k}b_2^k = c_1^{n-k}c_2^k \ldots
+\]
+ein, so setzt sich $i$ aus einer Summe von Gliedern $G_k$ zusammen,
+deren jedes die Form besitzt:
+\[
+G_k = \lambda_k \cdot a_1^{n-k}a_2^k \cdot b_1^{n-k}b_2^k \cdots r_1^{n-\pi}r_2^\pi \cdot t_1^{n-\pi}t_2^\pi \cdots s_1^{n-\nu}s_2^\nu \cdots \text{etc.}
+\]
+Hierbei ist $\lambda_k$ ein bestimmter Zahlenco\"efficient. Ersetzen wir hierin
+nun $a_1, b_1, r_1, t_1 \ldots$ etc. durch $a_\xi, b_\xi, r_\xi t_\xi \ldots$ etc. und ebenso $a_2,
+b_2, r_2, t_2 \ldots$ etc. durch $a_\eta, b_\eta, r_\eta, t_\eta \ldots$ etc., so erhalten wir das entsprechende
+ Glied
+\weq{1}{\bar{G}_k = \lambda_k a_\xi^{n-k}a_\eta^k \cdot b_\xi^{n-k}b_\eta^k \cdots r_\xi^{n-\pi}r_\eta^\pi \cdot t_\xi^{n-\pi}t_\eta^\pi \cdots s_\xi^{n-\nu}s_\eta \cdots \text{etc.}}
+% checked against the GDZ scan (27 Oct 2026): the second s of the last factor of (1) has no exponent; its subscript is a small triangular ink blot, read as \eta by analogy with the r- and t-terms
+der Invariante $J$. Es enthält $\varrho$ Factoren, die linear in $\xi$ und ebenso
+viele, die linear in $\eta$ sind; daher können wir dasselbe kürzer bezeichnen
+ mit
+\[
+\bar{G}_k = m^\varrho_{k,\xi}\,n^\varrho_{k,\eta}.
+\]
+
+
+% ===== pdf idx 126, printed 112.0 =====
+% !PRINTED 112
+\weberpage{112}
+Die Invariante $J$ selbst ist dann dargestellt durch
+\weq{2}{J = \sum_1^s \lambda_k m^\varrho_{k,\xi}\cdot n^\varrho_{k,\eta}.}
+Die Summe rechts ist eine homogene Function mit zwei Reihen
+variabler Parameter $\xi$ und $\eta$, und wir können sie stets symbolisch
+durch
+\weq{2a}{p^\varrho_\xi q^\varrho_\eta = (\mu_1m_\xi^{(1)} + \mu_2m_\xi^{(2)} + \cdots + \mu_sm_\xi^{(s)})^\varrho(\nu_1n_\eta^{(1)} + \nu_2n_\eta^{(2)} \cdots \nu_sn_\eta^{(s)})^\varrho}
+% [sic] second bracket lacks a "+" before the last term, unlike the first bracket
+repräsentiren, wenn wir nur die rechts auftretenden numerischen Grössen
+$\mu_i$ und $\nu_i$ in Verbindung mit den sich ergebenden Polynomialco\"efficienten
+ so bestimmen, dass ihre jeweiligen Producte mit den in (2) vorhandenen
+ numerischen Grössen $\lambda_k$ übereinstimmen.
+
+Führt man diesen Ausdruck $p^\varrho q^\varrho$ für $J$ in die Identität (I) Nr. 100
+ein, so erhält man:
+\weq{II}{p^\varrho_\xi q^\varrho_\eta = i\cdot(\xi\eta)^\varrho.}
+An der so umgeformten Identität können wir nun in zweierlei
+Weise den gewünschten Beweis erbringen. Einmal indem wir auf die
+linke Seite (II) die Reihenentwicklung anwenden, das andere Mal
+durch Anwendung des $\Omega$-Processes. Der erste Beweis lässt sich nicht
+weiter verallgemeinern, ist aber insofern lehrreicher, als er zeigt, wie
+sich direct durch die Reihenentwicklung die symbolische Darstellung
+einer Invariante ergiebt. Der zweite Beweis ist dagegen der Erweiterung
+ auf ein Gebiet mit beliebig vielen Variabeln fähig.
+
+102. \textit{Erster Beweis.} Wir hatten in Nr. 81 für eine Form $F$ mit
+zwei Reihen cogredienter Variabeln die Reihenentwicklung
+\[
+F = r_x^m s_y^n = \sum C_{0k}(\overline{rs})^k_{y^{n-k}}(xy)^k
+\]
+erhalten. Wenden wir dieselbe auf die linke Seite der Identität (II)
+an, so kommt:
+\weq{III}{p^\varrho_\xi q^\varrho_\eta = \sum_{k=0}^{k=\varrho} \frac{\binom{\varrho}{k}\binom{\varrho}{k}}{\binom{2\varrho-k+1}{k}}(\overline{pq})^k_{\eta^{\varrho-k}}(\xi\eta)^k.}
+Diese Reihe ist eindeutig; wenn wir daher den Werth von $p^\varrho_\xi q^\varrho_\eta$
+aus (III) in (II) eintragen, so müssen beide Seiten Glied um Glied
+übereinstimmen. Da aber rechts alle $\varrho-1$ ersten Glieder verschwinden
+, so folgt aus
+\[
+\sum \frac{\binom{\varrho}{k}\binom{\varrho}{k}}{\binom{2\varrho-k+1}{k}}\cdot(\overline{pq})^k_{\eta^{\varrho-k}}(\xi\eta)^k = i\cdot(\xi\eta)^\varrho
+\]
+direct:
+%CONT>>
+
+
+% ===== pdf idx 127, printed 113.0 =====
+% !PRINTED 113
+\weberpage{113}
+\[
+\frac{\binom{\varrho}{\varrho}\binom{\varrho}{\varrho}}{\binom{\varrho+1}{\varrho}}\,\overline{(p\,q)}^\varrho\,(\xi\,\eta)^\varrho = i\,(\xi\,\eta)^\varrho,
+\]
+oder
+\[
+\frac{1}{\varrho+1}(pq)^\varrho = i.
+\]
+
+Die Invariante $i$ stellt sich also zunächst als das symbolische Product $(pq)^\varrho$ dar. Nun ist aber gemäss der Gleichung (2a) Nr. 101:
+\[
+\begin{aligned}
+p_1 &= \mu_1 m_1^{(1)} + \mu_2 m_1^{(2)} + \cdots + \mu_s m_1^{(s)}\\
+p_2 &= \mu_1 m_2^{(1)} + \mu_2 m_2^{(2)} + \cdots + \mu_s m_2^{(s)}\\
+q_1 &= \nu_1 n_1^{(1)} + \nu_2 n_1^{(2)} + \cdots + \nu_s n_1^{(s)}\\
+q_2 &= \nu_1 n_2^{(1)} + \nu_2 n_2^{(2)} + \cdots + \nu_s n_2^{(s)}.
+\end{aligned}
+\]
+Ersetzt man daher in $(pq)$ die Grössen $p_1\,p_2\,q_1\,q_2$ durch diese ihre Werthe in $m^{(k)}$ und $n^{(k)}$, so geht $(pq)$ über in $\sum \mu_k \nu_\lambda (mn)$ und demnach wird:
+\[
+(pq)^\varrho = \left\{\sum \mu_k \nu_\lambda (mn)\right\}^\varrho = \sum c_i \cdot (m_{k_1} n_{\lambda_1})^{\varrho_1} (m_{k_2} n_{\lambda_2})^{\varrho_2} \cdots -, % checked against the GDZ scan (27 Oct 2026): the dot is a round ink blot above the factor (m_{k_2} n_{\lambda_2}), well above the line and not over a summation sign; not part of the text
+\]
+wobei $\varrho_1 + \varrho_2 + \varrho_3 + \cdots = \varrho$.
+
+Jedes Product in der Summe rechts repräsentirt eine $\varrho^{\text{te}}$ Ueberschiebung je eines Productes von $\varrho$ linearen Factoren $a_\xi, b_\xi \ldots$, mit einem Product von $\varrho$ linearen Factoren $a_\eta, b_\eta\ldots$ Eine solche Ueberschiebung ist aber nach Nr. 38 (I) durch Aggregate von symbolischen Producten darstellbar, und damit auch die Form $(pq)^\varrho = (\varrho + 1) \cdot i$.
+
+\textit{Anmerkung.} Wir haben diesen Beweis geführt für den Fall, dass $i$ eine Invariante von $f$ allein ist. Man erkennt aber, dass die Annahme, $i$ sei simultane Invariante von $f$, $\varphi$, $\psi$ etc., die ganze Beweisführung keineswegs ändern kann, da dieselbe lediglich eine Vermehrung in der Anzahl der Symbole bewirkt, von der der gegebene Beweis aber unabhängig ist. Daher ist auch jede simultane Invariante durch ein symbolisches Product darstellbar.
+
+103. \textit{Zweiter Beweis.} Die Form $p_\xi^\varrho q_\eta^\varrho$ ist ebenso wie die Determinante $(\xi\eta)$ eine Form mit zwei Reihen binärer variabler Parameter. Wenden wir nun auf die Identität (II) Nr. 101 den Process
+\[
+\Omega(f) = \frac{\partial^2 f}{\partial \xi_1 \partial \eta_2} - \frac{\partial^2 f}{\partial \eta_1 \partial \xi_2}
+\]
+an, so erhalten wir gemäss der in Nr. 79 entwickelten Gleichung (II), insofern wir die rechte Seite differentiiren:
+\[
+\varrho^2 i \Omega(\xi\eta)^\varrho = i \varrho (\varrho + 1) (\xi\eta)^{\varrho - 1},
+\]
+%CONT>>
+
+
+% ===== pdf idx 128, printed 114.0 =====
+% !PRINTED 114
+\weberpage{114}
+%<<CONT
+und insofern wir die linke Seite dem gleichen Processe unterwerfen:
+\[
+\begin{aligned}
+\varrho^2 \cdot \Omega(p_\xi^\varrho q_\eta^\varrho) &= \varrho^2 p_1 q_2 \cdot p_\xi^{\varrho-1} q_\eta^{\varrho-1} - \varrho^2 p_2 q_1 \cdot p_\xi^{\varrho-1} q_\eta^{\varrho-1}\\
+&= \varrho^2 (pq) p_\xi^{\varrho-1} q_\eta^{\varrho-1}.
+\end{aligned}
+\]
+Die Identität (II) geht also über in:
+\[
+(\varrho + 1) \varrho \cdot (\xi\eta)^{\varrho-1} i = \varrho^2 (pq) p_\xi^{\varrho-1} q_\eta^{\varrho-1}.
+\]
+Unterwirft man diese neue Identität wiederholt dem gleichen Processe, so kommt:
+\[
+(\varrho + 1) \varrho \cdot \varrho (\varrho - 1) \cdot (\xi\eta)^{\varrho-2} \cdot i = \varrho^2 \cdot (\varrho - 1)^2 (pq)^2 p_\xi^{\varrho-2} q_\eta^{\varrho-2}
+\]
+\[
+(\varrho + 1) \varrho (\varrho - 1) \cdot \varrho (\varrho - 1) (\varrho - 2) \cdot (\xi\eta)^{\varrho-3} \cdot i = \varrho^2 (\varrho - 1)^2 (\varrho - 2)^2 (pq)^3 p_\xi^{\varrho-3} q_\eta^{\varrho-3}
+\]
+\[
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot
+\]
+und schliesslich nach $\varrho$ maliger Ausführung des $\Omega$-Processes
+\[
+(\varrho + 1)!\, \varrho!\, i = (\varrho!)^2 \cdot (pq)^2,
+\]
+oder
+\[
+i = \frac{1}{\varrho + 1} (p\varrho)^\varrho, % [sic] printed as (p\varrho)^\varrho, not (pq)^\varrho as the context requires -- reproduced as printed
+\]
+ein Resultat, das mit dem im vorausgehenden Beweise gewonnenen übereinstimmt.
+
+104. \textit{Verallgemeinerung des zweiten Beweises; vorbereitende Untersuchungen.} Wie schon erwähnt, lässt sich der zweite Beweis auf ein Gebiet von beliebig vielen Variabeln ausdehnen. Es wird genügen, denselben auf quinäres Gebiet zu erweitern, da Gedankengang und Rechnung, die sich in engster Weise an den ebengeführten Beweis für binäre Formen anschliessen, ganz ebenso im allgemeinen Falle sich gestalten. Sei also
+\[
+f = a_x^n = (a_1 x_1 + a_2 x_2 + a_3 x_3 + a_4 x_4 + a_5 x_5)^n = b_x^n = = \text{etc.} % [sic] double equals sign printed before \textquotedbl{}etc.\textquotedbl{}
+\]
+der symbolische Ausdruck einer ganzen homogenen Form mit fünf Variabeln, und $i = \chi(\bar a)$ sei irgend eine Invariante derselben, dargestellt in den unsymbolischen Coefficienten $\bar a$ von $f$.
+
+Wenden wir auf $f$ die Substitutionen an
+\weq{I}{
+\left.\begin{aligned}
+x_1 &= \xi_1 y_1 + \eta_1 y_2 + \zeta_1 y_3 + \lambda_1 y_4 + \tau_1 y_5\\
+x_2 &= \xi_2 y_1 + \eta_2 y_2 + \zeta_2 y_3 + \lambda_2 y_4 + \tau_2 y_5\\
+&\quad\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+x_5 &= \xi_5 y_1 + \eta_5 y_2 + \zeta_5 y_3 + \lambda_5 y_4 + \tau_5 y_5
+\end{aligned}\right\},
+}
+so geht die ursprüngliche Function $f$ über in die Form
+\[
+\begin{aligned}
+F &= (y_1 a_\xi + y_2 a_\eta + y_3 a_\zeta + y_4 a_\lambda + y_5 a_\tau) = A_y^n\\
+&= B_y^n = C_y^n = = \text{etc.} % [sic] double equals sign printed before \textquotedbl{}etc.\textquotedbl{}
+\end{aligned}
+\]
+Waren demnach in $f$ die nicht symbolischen Coefficienten $\bar a$ dargestellt durch
+%CONT>>
+
+
+% ===== pdf idx 129, printed 115.0 =====
+% !PRINTED 115
+\weberpage{115}
+%<<CONT
+\[
+a_{k\varrho\mu\nu\sigma} = a_1^{n-k} a_2^\varrho a_3^\mu a_4^\nu a_5^\sigma, \quad k = \varrho + \mu + \nu + \sigma,
+\]
+so ist in der transformirten Form $F$ der entsprechende Coefficient
+\[
+A_{k\varrho\mu\nu\sigma} = a_\xi^{n-k} a_\eta^\varrho a_\zeta^\mu a_\lambda^\nu a_\tau^\sigma.
+\]
+Da ferner der Transformationsmodul durch die fünfreihige Determinante
+\[
+(\xi\eta\zeta\lambda\tau) =
+\begin{vmatrix}
+\xi_1 & \xi_2 & \xi_3 & \xi_4 & \xi_5\\
+\eta_1 & \eta_2 & \eta_3 & \cdot\ \ \cdot & \cdot\\
+\zeta_1 & \cdot\ \ \cdot & \cdot & \cdot\ \ \cdot & \cdot\\
+\cdot & \cdot\ \ \cdot & \cdot & \cdot & \cdot\\
+\tau_1 & \tau_2 & \tau_3 & \cdot\ \ \cdot & \tau_5
+\end{vmatrix}
+= \Delta % checked against the GDZ scan (27 Oct 2026): the omitted entries are dots on a grid finer than the columns: three dots after eta_3, six after zeta_1, six in the fourth row (none between the 4th and 5th columns), two between tau_3 and tau_5; a cell with two dots holds the dot of the column and the one after it
+\]
+dargestellt ist, so wird im quinären Gebiete der analytische Ausdruck für die Definition einer Invariante:
+\weq{I}{J = i (\xi\eta\zeta\lambda\tau)^\varrho.}
+Dabei ist also $i$ genau dieselbe homogene Function in den Symbolreihen $a_1 a_2 \ldots a_5$; $b_1 b_2 \ldots b_5$; $\ldots$ etc., welche $J$ in den Symbolreihen $a_\xi a_\eta a_\zeta a_\lambda a_\tau$; $b_\xi b_\eta b_\zeta b_\lambda b_\tau$; $\ldots$ etc. ist. Jedes einzelne Glied $\overline{G}_k$ von $J$ ist homogen von der $\varrho^{\text{ten}}$ Dimension jeder der fünf Variabeln $\xi\eta\zeta\lambda\tau$, und wir können es daher wie früher symbolisch darstellen durch
+\[
+\overline{G}_k = \lambda_k\, r_\xi^\varrho\, s_\eta^\varrho\, t_\zeta^\varrho\, u_\lambda^\varrho\, v_\tau^\varrho,
+\]
+wo $\lambda_k$ ein Zahlencoefficient.
+
+Daher lässt sich auch die Summe aller dieser Glieder, d. h. die Invariante zunächst durch den symbolischen Ausdruck
+\[
+J = p_\xi^\varrho\, q_\eta^\varrho\, m_\zeta^\varrho\, n_\lambda^\varrho\, k_\tau^\varrho
+\]
+wiedergeben. Die Identität (I) kann also auch in der Form geschrieben werden:
+\weq{II}{p_\xi^\varrho\, q_\eta^\varrho\, m_\zeta^\varrho\, n_\lambda^\varrho\, k_\tau^\varrho = i (\xi\eta\zeta\lambda\tau)^\varrho.}
+105. \textit{Der $\Omega$-Process für eine Form mit beliebig vielen Variabeln.} Auf die zuletzt erhaltene Identität wenden wir nunmehr den $\Omega$-Process an. Derselbe lässt sich, von einem Zahlenfactor abgesehen, für fünf Reihen quinärer Variabler symbolisch durch die Determinante
+\[
+\Omega(f) =
+\begin{vmatrix}
+\dfrac{\partial f}{\partial \xi_1} & \dfrac{\partial f}{\partial \xi_2} & \dfrac{\partial f}{\partial \xi_3} & \dfrac{\partial f}{\partial \xi_4} & \dfrac{\partial f}{\partial \xi_5}\\[6pt]
+\dfrac{\partial f}{\partial \eta_1} & \dfrac{\partial f}{\partial \eta_2} & \cdot & \cdot & \cdot\\[6pt]
+\cdot & \cdot & \cdot & \cdot & \cdot\\[6pt]
+\cdot & \cdot & \cdot & \cdot & \cdot\\[6pt]
+\dfrac{\partial f}{\partial \tau_1} & \dfrac{\partial f}{\partial \tau_2} & \dfrac{\partial f}{\partial \tau_3} & \cdot & \dfrac{\partial f}{\partial \tau_5}
+\end{vmatrix}
+\]
+%CONT>>
+
+
+% ===== pdf idx 130, printed 116.0 =====
+% !PRINTED 116
+\weberpage{116}
+%<<CONT
+darstellen, analog wie wir ihn für Formen mit zwei Reihen binärer Variabler durch
+\[
+\Omega(f) =
+\begin{vmatrix}
+\dfrac{\partial f}{\partial \xi_1} & \dfrac{\partial f}{\partial \xi_2}\\[6pt]
+\dfrac{\partial f}{\partial \eta_1} & \dfrac{\partial f}{\partial \eta_2}
+\end{vmatrix}
+\]
+charakterisiren konnten. Dabei ist wie hier ein Determinantenglied nicht als Product von fünf ersten Differentialquotienten aufzufassen, sondern als ein einziger fünfter partieller Differentialquotient. Es fragt sich nun, in welcher Weise verändert sich die Identität (II), wenn wir die beiden Seiten derselben dem so definirten Processe $\Omega$ unterwerfen. Wir erledigen die Frage schrittweise. Zu dem Zwecke unterwerfen wir die Identität (II) zunächst den Operationen $\dfrac{\partial^2}{\partial \xi_1 \partial \eta_2}$ und $\dfrac{\partial^2}{\partial \xi_2 \partial \eta_1}$, indem wir uns alle übrigen Variabeln constant denken.
+
+Aus der linken Seite erhalten wir durch die erste Operation:
+\weq{1}{\frac{\partial^2}{\partial \xi_1 \partial \eta_2} (J_{\xi\eta}) = \varrho^2 \cdot p_\xi^{\varrho-1} q_\eta^{\varrho-1}\, m_\zeta^\varrho n_\lambda^\varrho k_\tau^\varrho \cdot p_1 q_2;}
+die rechte Seite aber geht, abgesehen vom Factor $i$, über in
+\[
+\frac{\partial^2}{\partial \xi_1 \partial \eta_2} (\xi\eta\zeta\lambda\tau)^\varrho = \frac{\partial\left[\varrho \cdot \Delta^{\varrho-1} \cdot \dfrac{\partial \Delta}{\partial \xi_1}\right]}{\partial \eta_2},
+\]
+also
+\weq{2}{\frac{\partial^2 (\Delta^\varrho)}{\partial \xi_1 \partial \eta_2} = \varrho \cdot (\varrho - 1) \cdot \Delta^{\varrho-2} \cdot \frac{\partial \Delta}{\partial \xi_1} \cdot \frac{\partial \Delta}{\partial \eta_2} + \varphi \cdot \Delta^{\varrho-1} \cdot \frac{\partial^2 \Delta}{\partial \xi_1 \partial \eta_2}. % [sic] coefficient of the second term reads \varphi in print, inconsistent with the parallel \varrho in eq. (3) below; reproduced as printed
+}
+Ganz ebenso liefert die Differentiation
+\weq{3}{\frac{\partial^2 (\Delta^\varrho)}{\partial \xi_2 \partial \eta_1} = \varrho (\varrho - 1) \Delta^{\varrho-2} \cdot \frac{\partial \Delta}{\partial \xi_2} \cdot \frac{\partial \Delta}{\partial \eta_1} + \varrho \cdot \Delta^{\varrho-1} \cdot \frac{\partial^2 \Delta}{\partial \xi_2 \partial \eta_1},}
+während die gleiche Operation auf der linken Seite ausgeführt, das Resultat:
+\weq{4}{\frac{\partial^2 (J_{\xi\eta})}{\partial \xi_2 \partial \eta_1} = \varrho^2 \cdot p_\xi^{\varrho-1} \cdot q_\eta^{\varrho-1}\, m_\zeta^\varrho n_\lambda^\varrho k_\tau^\varrho \cdot p_2 q_1}
+ergiebt. Subtrahirt man nun die vierte von der ersten Gleichung, so erhält man:
+\weq{5}{\Omega(J_{\xi\eta}) = \varrho^2 p_\xi^{\varrho-1} q_\eta^{\varrho-1} m_\zeta^\varrho n_\lambda^\varrho k_\tau^\varrho (p_1 q_2 - q_1 p_2).}
+Subtrahirt man ebenso die dritte Gleichung von der zweiten, so kommt
+\weq{6}{\Omega(\Delta^\varrho) = \varrho (\varrho - 1) \Delta^{\varrho-2} \cdot \left\{\frac{\partial \Delta}{\partial \xi_1} \cdot \frac{\partial \Delta}{\partial \eta_2} - \frac{\partial \Delta}{\partial \xi_2} \cdot \frac{\partial \Delta}{\partial \eta_1}\right\} + \varrho \cdot \Delta^{\varrho-1} \left\{\frac{\partial^2 \Delta}{\partial \xi_1 \partial \eta_2} - \frac{\partial^2 \Delta}{\partial \xi_2 \partial \eta_1}\right\}.}
+
+
+% ===== pdf idx 131, printed 117.0 =====
+% !PRINTED 117
+\weberpage{117}
+Nun sind aber $\dfrac{\partial \Delta}{\partial \xi_i}$, $\dfrac{\partial \Delta}{\partial \eta_i}$, $\dfrac{\partial^2 \Delta}{\partial \xi_i\, \partial \eta_k}$ nichts anderes als Minoren erster, bezw. zweiter Ordnung von $\Delta$, welche zum Elemente $\xi_i$, $\eta_i$, bezw. zum Producte $\xi_i \eta_k$ geh\"oren, und man weiss aus der Lehre von den Determinanten einmal, dass
+\[
+\frac{\partial^2 \Delta}{\partial \xi_2\, \partial \eta_1} = -\, \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2}
+\]
+% checked against the GDZ scan (27 Oct 2026): plain eta_2; the short mark above it is the right end of the bar of the right-hand fraction, the rest of which did not print, and the speck at the foot of the subscript 2 is a type blemish
+und ebenso, dass $\dfrac{\partial \Delta}{\partial \xi_1} \cdot \dfrac{\partial \Delta}{\partial \eta_2} - \dfrac{\partial \Delta}{\partial \xi_2} \cdot \dfrac{\partial \Delta}{\partial \eta_1}$ nichts anderes ist als der Minor $n - 2 = 3^{\text{ter}}$ Ordnung der zu $\Delta$ adjungirten Determinante, dass also der Werth dieses Ausdruckes dargestellt ist durch (vgl. Nr. 88, Bd. I)
+\[
+\Delta \cdot \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2}\,.
+\]
+Tr\"agt man also die so erhaltenen Werthe in (6), so reducirt sich der Ausdruck auf:
+\[
+\Omega(\Delta^{\varrho}) = \varrho(\varrho - 1)\cdot \Delta^{\varrho-1}\cdot \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2} + 2\varrho \cdot \Delta^{\varrho-1}\cdot \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2}\,,
+\]
+oder:
+\weq{7}{\Omega(\Delta^{\varrho}) = \varrho(\varrho + 1)\cdot \Delta^{\varrho-1}\cdot \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2}\,.}
+Durch Comparation der mit $i$ multiplicirten Gleichung (7) mit der Gleichung (5) erh\"alt man sonach
+\weq{I}{\varrho^2\, p_{\xi}^{\varrho-1} \cdot q_{\eta}^{\varrho-1} m_{\zeta}^{\varrho} n_{\lambda}^{\varrho} k_{\tau}^{\varrho} \cdot (pq) = i \cdot \varrho\, (\varrho + 1)\, \Delta^{\varrho-1}\cdot \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2}\,.}
+
+106. \textit{Wir untersuchen nun weiter die Wirkung des $\Omega$-Processes, wenn auch noch die Variable $\zeta$ mit hereingezogen wird, so dass nur mehr $\eta$ und $\tau$ als constant betrachtet werden.} Zu dem Zwecke differentiiren wir die Gleichungen (I) von Nr. 105 partiell nach $\zeta_3$ und erhalten auf der linken Seite:
+\weq{8}{\varrho^3 \cdot p_{\xi}^{\varrho-1}\, q_{\eta}^{\varrho-1}\, m_{\zeta}^{\varrho-1}\, n_{\lambda}^{\varrho}\, k_{\tau}^{\varrho}\, (p_1 q_2 - q_1 p_2) \cdot m_3\,,}
+auf der rechten Seite dagegen:
+\weq{9}{i \cdot \varrho \cdot (\varrho + 1)(\varrho - 1) \cdot \Delta^{\varrho-2} \cdot \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2} \cdot \frac{\partial \Delta}{\partial \zeta_3} + i \cdot \varrho \cdot (\varrho + 1) \cdot \Delta^{\varrho-1} \cdot \frac{\partial^3 \Delta}{\partial \xi_1\, \partial \eta_2\, \partial \zeta_3}\,.}
+Hieraus entsteht durch cyklische Vertauschung der Zahlen 1, 2, 3 zun\"achst aus dem Producte (8)
+\weq{10}{\varrho^3 \cdot p_{\xi}^{\varrho-1}\, q_{\eta}^{\varrho-1}\, m_{\zeta}^{\varrho-1}\, n_{\lambda}^{\varrho}\, k_{\tau}^{\varrho}\, (p_2 q_3 - q_2 p_3)\, m_1\,,}
+und
+\weq{11}{\varrho^3 \cdot p_{\xi}^{\varrho-1}\, q_{\eta}^{\varrho-1}\, m_{\zeta}^{\varrho-1}\, n_{\lambda}^{\varrho}\, k_{\tau}^{\varrho}\, (p_3 q_1 - q_3 p_1)\, m_2\,.}
+Im Ausdrucke (9) bleibt bei dieser Vertauschung der zweite Term seinem Werte nach unver\"andert, da $\dfrac{\partial^3 \Delta}{\partial \xi_1\, \partial \eta_2\, \partial \zeta_3}$, $\dfrac{\partial^3 \Delta}{\partial \xi_2\, \partial \eta_3\, \partial \zeta_1}$, $\dfrac{\partial^3 \Delta}{\partial \xi_3\, \partial \eta_1\, \partial \zeta_2}$ die n\"amlichen Unterdeterminanten inclusive Vorzeichen repr\"asentiren.
+% checked against the GDZ scan (27 Oct 2026): a round ink blot (about 4pt) stands left of the numerator of the third fraction, above its bar; not a symbol
+
+
+% ===== pdf idx 132, printed 118.0 =====
+% !PRINTED 118
+\weberpage{118}
+In dem ersten Term ersetze ich vor der cyklischen Vertauschung das Product
+\[
+\Delta \cdot \frac{\partial^2 \Delta}{\partial \xi_1\, \partial \eta_2} \cdot \frac{\partial \Delta}{\partial \zeta_3}
+\]
+gem\"ass den Gesetzen \"uber die Minoren adjungirter Determinanten (vgl. Bd. I, § 7 Nr. 87 und 88) durch:
+\weq{12}{\left(\frac{\partial \Delta}{\partial \xi_1} \cdot \frac{\partial \Delta}{\partial \eta_2} - \frac{\partial \Delta}{\partial \xi_2} \cdot \frac{\partial \Delta}{\partial \eta_1}\right) \cdot \frac{\partial \Delta}{\partial \zeta_3}\,,}
+woraus durch cyklische Vertauschung die Ausdr\"ucke entstehen:
+\weq{13}{\left(\frac{\partial \Delta}{\partial \xi_2} \cdot \frac{\partial \Delta}{\partial \eta_3} - \frac{\partial \Delta}{\partial \xi_3} \cdot \frac{\partial \Delta}{\partial \eta_2}\right) \cdot \frac{\partial \Delta}{\partial \zeta_1}}
+\weq{14}{\left(\frac{\partial \Delta}{\partial \xi_3} \cdot \frac{\partial \Delta}{\partial \eta_1} - \frac{\partial \Delta}{\partial \xi_1} \cdot \frac{\partial \Delta}{\partial \eta_3}\right) \cdot \frac{\partial \Delta}{\partial \zeta_2}\,.}
+Addirt man nun die durch cyklische Vertauschung f\"ur die linke Seite erhaltenen Resultate (8), (10), (11), so erh\"alt man:
+\[
+\Omega(J_{\xi\eta\zeta}) = \varrho^3 \cdot p_{\xi}^{\varrho-1}\, q_{\eta}^{\varrho-1}\, m_{\zeta}^{\varrho-1}\, n_{\lambda}^{\varrho}\, k_{\tau}^{\varrho} \cdot
+\begin{vmatrix}
+p_1 & p_2 & p_3\\
+q_1 & q_2 & q_3\\
+m_1 & m_2 & m_3
+\end{vmatrix}\,.
+\]
+Auf der rechten Seite findet sich nach vollzogener Addition einmal das dreifache des zweiten Terms von (9), sodann aber als Factor von $i \cdot \varrho \cdot (\varrho+1)(\varrho-1)\, \Delta^{\varrho-3}$ die Determinante
+\[
+\begin{vmatrix}
+\dfrac{\partial \Delta}{\partial \xi_1} & \dfrac{\partial \Delta}{\partial \xi_2} & \dfrac{\partial \Delta}{\partial \xi_3}\\[6pt]
+\dfrac{\partial \Delta}{\partial \eta_1} & \dfrac{\partial \Delta}{\partial \eta_2} & \dfrac{\partial \Delta}{\partial \eta_3}\\[6pt]
+\dfrac{\partial \Delta}{\partial \zeta_1} & \dfrac{\partial \Delta}{\partial \zeta_2} & \dfrac{\partial \Delta}{\partial \zeta_3}
+\end{vmatrix}\,,
+\]
+welche als Minor zweiter Ordnung der zu $\Delta$ adjungirten Determinante den Werth besitzt
+\[
+\Delta^2 \cdot \frac{\partial^3 \Delta}{\partial \xi_1\, \partial \eta_2\, \partial \zeta_3}\,.
+\]
+Substituirt man also diesen Werth und setzt die beiden Seiten einander gleich, so erh\"alt man endlich:
+\[
+\begin{aligned}
+\Omega(J_{\xi\eta\zeta}) &= \varrho^3 \cdot p_{\xi}^{\varrho-1}\, q_{\eta}^{\varrho-1}\, m_{\zeta}^{\varrho-1}\, n_{\lambda}^{\varrho}\, k_{\tau}^{\varrho} \cdot (pqm)\\
+&= i \cdot \varrho \cdot (\varrho + 1)(\varrho - 1)\, \Delta^{\varrho-1} \cdot \frac{\partial^3 \Delta}{\partial \xi_1\, \partial \eta_2\, \partial \zeta_3}\\
+&\quad + i \cdot \varrho \cdot (\varrho + 1) \cdot 3\, \Delta^{\varrho-1} \cdot \frac{\partial^3 \Delta}{\partial \xi_1\, \partial \eta_2\, \partial \zeta_3}
+\end{aligned}
+\]
+oder:
+% checked against the GDZ scan (27 Oct 2026): a round ink blot stands after "oder:" and a small dot at the start of the formula line below; neither is a symbol
+\weq{II}{\varrho^3 \cdot p_{\xi}^{\varrho-1}\, q_{\eta}^{\varrho-1}\, m_{\zeta}^{\varrho-1}\, n_{\lambda}^{\varrho}\, k_{\tau}^{\varrho}\, (pqm) = i \cdot \varrho \cdot (\varrho + 1)(\varrho + 2) \cdot \Delta^{\varrho-1} \cdot \frac{\partial^3 \Delta}{\partial \xi_1\, \partial \eta_2\, \partial \zeta_3}}
+
+
+% ===== pdf idx 133, printed 119.0 =====
+% !PRINTED 119
+\weberpage{119}
+Aus dem Resultate (I) Nr. 105 und dem soeben erhaltenen (II) geht nun das Gesetz der Wirkung des $\Omega$-Processes auf eine Form mit beliebig vielen Variabeln hinreichend klar hervor. Man erkennt, dass dasselbe, ausgedehnt auf alle f\"unf Variablen, durch den Ausdruck gegeben ist:
+\weq{III}{\varrho^5 \cdot p_{\xi}^{\varrho-1}\, q_{\eta}^{\varrho-1}\, m_{\zeta}^{\varrho-1}\, n_{\lambda}^{\varrho-1}\, k_{\tau}^{\varrho-1}\, (pqmnk) = i \cdot \varrho\, (\varrho + 1)(\varrho + 2)(\varrho + 3)(\varrho + 4)\, (\xi\eta\zeta\lambda\tau)^{\varrho-1}\,.}
+Unterwirft man nun (III) abermals dem $\Omega$-Process, so kommt:
+\[
+\varrho^5 \cdot (\varrho - 1)^5 \cdot p_{\xi}^{\varrho-2}\, q_{\eta}^{\varrho-2}\, m_{\zeta}^{\varrho-2}\, n_{\lambda}^{\varrho-2}\, k_{\tau}^{\varrho-2}\, (pqmnk)^2 = i \cdot \varrho \cdot (\varrho - 1) \cdot (\varrho + 1) \cdot \varrho \cdot (\varrho + 2)(\varrho + 1) \dots (\xi\eta\zeta\lambda\tau)^{\varrho-2}\,.
+\]
+Wiederholt man daher den Process $\varrho$ mal, so ergiebt sich endlich die Identit\"at:
+\[
+(\varrho\,!)^5 \cdot (pqmnk)^{\varrho} = \varrho\, ! \, \frac{(\varrho+1)!}{1!}\, \frac{(\varrho+2)!}{2!}\, \frac{(\varrho+3)!}{3!}\, \frac{(\varrho+4)!}{4!}\, i
+\]
+oder ganz allgemein f\"ur $m$ beliebige Variable
+\weq{IV}{(\varrho\,!)^m\, (pqmnk\dots)^{\varrho} = \varrho\, ! \, \frac{(\varrho+1)!}{1!}\, \frac{(\varrho+2)!}{2!} \dots \frac{(\varrho+m-1)!}{(m-1)!}\, i\,.}
+Dadurch ist der Beweis erbracht, dass die Invariante $i$ einer Function von beliebig vielen Variabeln sich symbolisch durch ein Product von Klammerfactoren oder eine Summe solcher Producte darstellen l\"asst. Der Beweis gilt auch noch, wenn $i$ simultane Invariante mehrerer Formen mit beliebig vielen Variabeln ist.
+
+\begin{center}
+\textbf{§\,10. Partielle Differentialgleichungen f\"ur Co- und Invarianten.}
+\end{center}
+
+107. \textit{Aufstellung der Differentialgleichungen, denen eine Invariante $i$ einer einzigen Form $f = a_x^n$ gen\"ugt.} Wir hatten im § 1 als Definitionsgleichung einer Invariante die Gleichung aufgestellt:
+\weq{I}{J = (\xi\eta)^{\varrho} \cdot i\,.}
+Hiebei war $\varrho$ das Gewicht der Form $i$, und $J$ genau dieselbe ganze und homogene Function in den Coefficienten
+\[
+\overline{A}_k = a_{\xi}^{n-k} a_{\eta}^k
+\]
+der linear transformirten Form $F = A_y^n$, welche $i$ in den Coefficienten
+\[
+\overline{a}_k = a_1^{n-k} a_2^k
+\]
+der urspr\"unglichen Form $f = a_x^n$ war. Diese Definitionsgleichung (I)
+%CONT>>
+
+
+% ===== pdf idx 134, printed 120.0 =====
+% !PRINTED 120
+\weberpage{120}
+%<<CONT
+muss demnach die Quelle f\"ur die zu ermittelnden Differentialgleichungen bilden. Ihre rechte Seite giebt auch zugleich den Weg an, den wir hiebei einzuschlagen haben. Denn w\"ahrend $i$ von den vier willk\"urlichen Transformationsparametern $\xi_1\, \xi_2\, \eta_1\, \eta_2$ v\"ollig unabh\"angig ist, ist der andere Factor $\Delta^{\varrho} = (\xi\eta)^{\varrho}$ eine vollst\"andig bekannte Function derselben, f\"ur welche wir sehr leicht Differentialgleichungen aufstellen k\"onnen. Man hat n\"amlich, wie man unmittelbar erkennt:
+\[
+\left.
+\begin{aligned}
+\frac{\partial \Delta}{\partial \xi_1}\, \xi_1 + \frac{\partial \Delta}{\partial \xi_2}\, \xi_2 &= \Delta\\
+\frac{\partial \Delta}{\partial \xi_1}\, \eta_1 + \frac{\partial \Delta}{\partial \xi_2}\, \eta_2 &= 0\\
+\frac{\partial \Delta}{\partial \eta_1}\, \xi_1 + \frac{\partial \Delta}{\partial \eta_2}\, \xi_2 &= 0\\
+\frac{\partial \Delta}{\partial \eta_1}\, \eta_1 + \frac{\partial \Delta}{\partial \eta_2}\, \eta_2 &= \Delta
+\end{aligned}
+\right\}\quad \text{(A)}
+\]
+Und diese vier Gleichungen zeigen uns nun, wie erw\"ahnt, die Richtung an, nach welcher wir behufs Aufstellung unserer Differentialgleichung zu gehen haben. Denn indem wir nun die Definitionsgleichung (I) den durch diese vier Gleichungen definirten Processen unterwerfen, erhalten wir unter Benutzung der unter (A) gewonnenen Resultate:
+\[
+\left.
+\begin{aligned}
+\frac{\partial J}{\partial \xi_1}\, \xi_1 + \frac{\partial J}{\partial \xi_2}\, \xi_2 &= \varrho \cdot J\\
+\frac{\partial J}{\partial \xi_1}\, \eta_1 + \frac{\partial J}{\partial \xi_2}\, \eta_2 &= 0\\
+\frac{\partial J}{\partial \eta_1}\, \xi_1 + \frac{\partial J}{\partial \eta_2}\, \xi_2 &= 0\\
+\frac{\partial J}{\partial \eta_1}\, \eta_1 + \frac{\partial J}{\partial \eta_2}\, \eta_2 &= \varrho \cdot J
+\end{aligned}
+\right\}\quad \text{(I)}
+\]
+Nun enth\"alt aber $J$ die Gr\"ossen $\xi$ und $\eta$ nur in den festen Verbindungen:
+\[
+\left.
+\begin{aligned}
+\overline{A}_0 &= a_{\xi}^n\\
+\overline{A}_1 &= a_{\xi}^{n-1} a_{\eta}\\
+\overline{A}_2 &= a_{\xi}^{n-2} a_{\eta}^2\\
+&\cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+\overline{A}_k &= a_{\xi}^{n-k} a_{\eta}^k\\
+&\cdot\ \cdot\ \cdot\ \cdot\ \cdot
+\end{aligned}
+\right\}\quad \text{(B)}
+\]
+und demnach sind in dem Gleichungssystem (I) die Differentiationen zun\"achst nach den Gr\"ossen $A_k$ auszuf\"uhren, so dass dieses System auch in der Form geschrieben werden kann:
+%CONT>>
+
+
+% ===== pdf idx 135, printed 121.0 =====

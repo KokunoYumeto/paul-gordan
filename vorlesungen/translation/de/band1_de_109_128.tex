@@ -1,0 +1,1105 @@
+% !PRINTED 109
+\weberpage{109}
+%<<CONT
+\[
+\begin{vmatrix}
+u_1 & u_2 & u_3 & u_4 \\
+v_1 & v_2 & v_3 & v_4 \\
+w_1 & w_2 & w_3 & w_4
+\end{vmatrix},
+\]
+die wir bezeichnen mit
+\[ A_{11}=(u_2v_3w_4), \quad A_{12}=-(u_1v_3w_4), \quad A_{13}=(u_1v_2w_4), \]
+\[ A_{14}=-(u_1v_2w_3); \]
+daher sind die Coordinaten des Schnittpunktes der drei Ebenen 1), 2), 3) dargestellt durch
+\[ x_1:x_2:x_3:x_4:=A_{11}:A_{12}:A_{13}:A_{14}, \]
+wodurch abermals der Satz über correspondirende Matrices verificirt ist.
+
+105. \textit{Zweiter Fall. Die Zahl $\mu$ der Gleichungen ist um mehr als 1 kleiner als die Zahl $n$ der Unbekannten.} Gehen wir nun zum allgemeinen Falle über, in welchem
+\[ n > \mu + 1, \]
+so treten uns sofort zwei Fragen entgegen; nämlich: 1) Wie findet man Lösungen überhaupt? 2) Welches ist die allgemeinste Lösung eines solchen Systemes von homogenen Gleichungen? Wir beantworten zunächst die erste Frage, und nehmen dabei an, dass das System von Gleichungen die Form habe
+\[
+\text{(I)}\quad
+\left\{
+\begin{aligned}
+&a_{11}x_1+a_{12}x_2+a_{13}x_3+\cdots a_{1n}x_n=0 \\
+&a_{21}x_1+a_{22}x_2+a_{23}x_3+\cdots a_{2n}x_n=0 \\
+&a_{31}x_1+a_{32}x_2\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ a_{3n}x_n=0 \\
+&\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \\
+&a_{\mu1}x_1+a_{\mu2}x_2+a_{\mu3}x_3+\cdots a_{\mu n}x_n=0,
+\end{aligned}
+\right.
+\]
+\[ \mu+1<n, \ \text{oder} \]
+\[ n-\mu=\nu>1. \]
+Man kann nun eine Reihe von Lösungen dadurch finden, dass man eine Anzahl der Variabeln von vornherein gleich null setzt, etwa so viele, dass in den $\mu$ Gleichungen noch $\mu+1$ Unbekannte auftreten. Löst man dieselben hierauf nach der in Nr. 102 und 103 gegebenen Methode auf, so erhält man in Verbindung mit den Variabeln, deren Werthe null sind, ein erstes Werthsystem, das die Gleichungen (I) befriedigt. Setzt man nun andere $n-(\mu+1)$ Unbekannte gleich null, so erhält man auf dieselbe Weise ein zweites System von Werthen, das vom ersten im Allgemeinen verschieden ist. Wir
+%CONT>>
+
+
+% ===== pdf idx 124, printed 110.0 =====
+% !PRINTED 110
+\weberpage{110}
+%<<CONT
+können uns so eine ganze Reihe von Werthsystemen verschaffen, und nehmen an, wir hätten $\nu$ von einander unabhängige Lösungen bereits gefunden, welche der Reihe nach durch die $\nu$ Zeilen der folgenden Matrix
+\[
+\text{(1)}\quad
+\begin{vmatrix}
+b_{11} & b_{12} & b_{13} & b_{14} & \ldots & b_{1n} \\
+b_{21} & b_{22} & b_{23} & b_{24} & \ldots & b_{2n} \\
+b_{31} & \cdot & \cdot & \cdot & \cdot & b_{3n} \\
+ & \cdot & \cdot & \cdot & \cdot & \cdot \\
+b_{\nu1} & b_{\nu2} & b_{\nu3} & \ldots & \ldots & b_{\nu n}
+\end{vmatrix}
+\]
+dargestellt sein sollen. Tragen wir der Reihe nach diese $\nu$ Werthsysteme in (I) ein, so erhalten wir $\mu\cdot\nu$ Identitäten von der Form
+\[
+\text{(II)}\quad c_{ik}=a_{i1}b_{k1}+a_{i2}b_{k2}+a_{i3}b_{k3}\cdots+a_{in}b_{kn}=0,
+\]
+wo $i$ die Werthe von 1 bis $\mu$, und $k$ die Werthe von 1 bis $\nu$ annehmen kann. Vermöge dieser Gleichungen (II) sind die Elemente der Matrix (2) mit denen der Matrix des Systemes (I)
+\[
+\text{(2)}\quad
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & a_{14} & \ldots & a_{1n} \\
+a_{21} & a_{22} & a_{23} & a_{24} & \ldots & a_{2n} \\
+a_{31} & \cdot & \cdot & \cdot & \cdot & a_{3n} \\
+ & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{\mu1} & a_{\mu2} & a_{\mu3} & a_{\mu4} & \ldots & a_{\mu n}
+\end{vmatrix}
+\]
+in eine Beziehung gesetzt, welche die beiden Matrices (1) und (2) als correspondirende erscheinen lässt. (Vergleiche Nr. 94.)
+
+106. \textit{Zweiter Beweis des Satzes über correspondirende Matrices.} Wenn wir nun im Gleichungssystem (I) Nr. 105 setzen:
+\[ x_\mu = lx_\mu, \quad x_{\mu+1}=lx_{\mu+1}, \quad x_{\mu+2}=lx_{\mu+2}\cdots x_n=lx_n, \]
+wo $l$ den Werth 1 besitzt, dann erhalten wir
+\[
+\begin{aligned}
+&a_{11}x_1+a_{12}x_2+\cdots a_{1,\mu-1}x_{\mu-1}+l(a_{1\mu}x_\mu+a_{1,\mu+1}x_{\mu+1}+\cdots a_{1n}x_n)=0 \\
+&a_{21}x_1+a_{22}x_2+\cdots a_{2,\mu-1}x_{\mu-1}+l(a_{2\mu}x_\mu+\cdots\cdots a_{2n}x_n)=0 \\
+&a_{31}x_1+a_{32}x_2+\cdots\cdots+l(a_{3\mu}x_\mu+\cdots\cdots a_{3n}x_n)=0 \\
+&\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \\
+&a_{\mu1}x_1+a_{\mu2}x_2+\cdots\cdots+l(a_{\mu\mu}x_\mu+\cdots\cdots a_{\mu n}x_n)=0.
+\end{aligned}
+\]
+Diese Gleichungen, $\mu$ an der Zahl, sind homogen in den $\mu$ Variabeln
+\[ x_1x_2x_3\cdots x_{\mu-1},\ l; \]
+%CONT>>
+
+
+% ===== pdf idx 125, printed 111.0 =====
+% !PRINTED 111
+\weberpage{111}
+\noindent \S.\,8. Systeme linearer Gleichungen und deren Aufl\"osung.
+
+%<<CONT
+sollen sie also ein gemeinschaftliches System von L\"osungen besitzen, so muss ihre Resultante verschwinden, d. h. es muss sein:
+
+\weq{III}{
+\begin{vmatrix}
+a_{11}\ a_{12}\cdots a_{1,\mu-1}, & a_{1\mu}x_\mu + a_{1,\mu+1}x_{\mu+1}+\cdots a_{1n}x_n \\
+a_{21}\ a_{22}\cdots a_{2,\mu-1}, & a_{2\mu}x_\mu + a_{2,\mu+1}x_{\mu+1}+\cdots a_{2n}x_n \\
+a_{31}\ a_{32}\cdots a_{3,\mu-1}, & \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \\
+& \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \\
+a_{\mu 1}\ a_{\mu 2}\cdots a_{\mu,\mu-1}, & a_{\mu\mu}x_\mu + a_{\mu,\mu+1}x_{\mu+1}+\cdots a_{\mu n}x_n
+\end{vmatrix}=0.
+}
+% ?? uncertain: printed scan shows a faint caret/strike mark over the $x_n$ in row 2, likely a foxing or pencil mark on the exemplar rather than typeset text; transcribed as printed letterform $a_{2n}x_n$.
+
+Da in dieser Resultante die letzte Colonne eine Summe von $n-\mu+1$ Gliedern ist, so k\"onnen wir dieselbe nach dem Additionsgesetze (vergl. Nr. 35 und 36) f\"ur Determinanten in die Summe zerlegen:
+
+\[
+\sum_{k=0}^{k=n-\mu}
+\begin{vmatrix}
+a_{11}\ a_{12}\cdots a_{1,\mu-1} & a_{1,\mu+k}\cdot x_{\mu+k} \\
+a_{21}\ a_{22}\cdots a_{2,\mu-1} & a_{2,\mu+k}\cdot x_{\mu+k} \\
+a_{31}\ a_{32}\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot & \\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot & \\
+a_{\mu 1}\ a_{\mu 2}\cdots a_{\mu,\mu-1} & a_{\mu,\mu+k}\cdot x_{\mu+k}
+\end{vmatrix}=0.
+\]
+
+Weil aber die letzte Colonne jeder Determinante dieser Summe mit $x_{\mu+k}$ multiplicirt ist, so k\"onnen wir diese Entwicklung der Resultante unter Einf\"uhrung der Bezeichnung
+
+\[
+A_{\mu+k}=
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & \cdots & a_{1,\mu-1}, & a_{1,\mu+k} \\
+a_{21} & a_{22} & \cdot & \cdots & a_{2,\mu-1}, & a_{2,\mu+k} \\
+a_{31} & a_{32} & \cdot & \cdots & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdots & \cdot & \cdot \\
+a_{\mu 1} & a_{\mu 2} & \cdot & \cdots & a_{\mu,\mu-1}, & a_{\mu,\mu+k}
+\end{vmatrix}
+\]
+
+auch darstellen in der Form:
+
+\weq{$\mathrm{III}_a$}{
+\sum_{k=0}^{k=n-\mu} A_{\mu+k}x_{\mu+k} = A_\mu x_\mu + A_{\mu+1}x_{\mu+1} + A_{\mu+2}x_{\mu+2} + \cdots + A_n x_n = 0.
+}
+
+Diese Gleichung ($\mathrm{III_a}$) muss wie das System von Gleichungen (I) f\"ur die $\nu$ Werthsysteme bestehen, welche durch die Zeilen der Matrix (1) repr\"asentirt sind. Es folgen daher aus ($\mathrm{III_a}$) die $\nu$ Relationen:
+
+\[
+\begin{aligned}
+A_\mu b_{1\mu} + A_{\mu+1} b_{1\mu+1} + \cdots A_n b_{1n} &= 0 \\
+A_\mu b_{2\mu} + A_{\mu+1} b_{2\mu+1} + \cdots A_n b_{2n} &= 0 \\
+A_\mu b_{3\mu} + A_{\mu+1} b_{3\mu+1} + \cdots A_n b_{3n} &= 0 \\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \\
+A_\mu b_{\nu\mu} + A_{\mu+1} b_{\nu\mu+1} + \cdots A_n b_{\nu n} &= 0.
+\end{aligned}
+\]
+
+
+% ===== pdf idx 126, printed 112.0 =====
+% !PRINTED 112
+\weberpage{112}
+\noindent 112 \quad Zweiter Theil. Anwendungen der Determinantentheorie.
+
+Betrachtet man in diesen Relationen die $\nu+1$ Gr\"ossen
+
+\[
+A_\mu,\quad A_{\mu+1},\ \cdots A_n
+\]
+
+als Unbekannte und eliminirt dieselben, so erh\"alt man nach Nr. 103:
+
+\weq{A}{
+\begin{aligned}
+\varrho A_\mu &= B_\mu \\
+\varrho A_{\mu+1} &= B_{\mu+1} \\
+\varrho A_{\mu+2} &= B_{\mu+2} \\
+\cdot\ \cdot\ \cdot\ \cdot \\
+\varrho A_n &= B_n.
+\end{aligned}
+}
+
+Dabei sind die Gr\"ossen $B_{\mu+k}$ (inclus. Vorzeichen) Determinanten der Matrix (1), und zwar ist $B_{\mu+k}$ dadurch entstanden, dass man die $n-1$ ersten und \"uberdies die $n+k^{\text{te}}$ Colonne in derselben unterdr\"uckt hat, w\"ahrend die Gr\"osse $A_{\mu+k}$ aus Matrix (2) gerade durch die hier unterdr\"uckten Colonnen gebildet ist. Die Colonnen entsprechender Gr\"ossen $A$ und $B$ bilden also gerade eine Permutation der Zahlen
+
+\[
+1,\ 2,\ 3\ \cdots n;
+\]
+
+ihr Vorzeichen entspricht der Anzahl der Derangements dieser Permutation, wie man aus den Beziehungen ($A$) erkennt, in denen die Determinanten $A_{\mu+i}$ stets positiv, die Determinanten $B_{\mu+i}$ aber mit wechselndem Vorzeichen der Reihe nach zu nehmen sind. Die Determinanten
+
+\[
+A_{\mu+k}\quad \text{und}\quad B_{\mu+k}
+\]
+
+sind also correspondirende Determinanten gem\"ass unserer Definition in Nr. 90.
+
+H\"atte man statt der $\nu+1$ Unbekannten
+
+\[
+x_\mu,\ x_{\mu+1}\ \cdots x_n
+\]
+
+andere des Systems (I) mit dem Factor $l$ multiplicirt und die \"ubrigen auf die angegebene Weise eliminirt, so w\"are man geradeso auf eine zweite Reihe von Relationen ($A$) gekommen, so dass man erkennt: Alle correspondirenden Determinanten beider correspondirender Matrices sind einander proportional, wie wir auch fr\"uher bereits bewiesen haben.
+
+107. \textit{Allgemeinste L\"osung des Systemes (I) homogener linearer Gleichungen.} Nehmen wir nun an, die allgemeinste L\"osung des Systemes (I) in Nr. 105 sei gefunden, und zwar soll das Werthsystem der $n$ Variabeln dargestellt sein durch Werthe:
+
+\[
+b_1,\ b_2,\ b_3\ \cdots b_n.
+\]
+
+Tragen wir diese Werthe in die Gleichungen (II) Nr. 105 ein, so m\"ussen dieselben befriedigt werden. Es ist also auch die Matrix
+%CONT>>
+
+
+% ===== pdf idx 127, printed 113.0 =====
+% !PRINTED 113
+\weberpage{113}
+\noindent \S.\,8. Systeme linearer Gleichungen und deren Aufl\"osung.
+
+%<<CONT
+\weq{3}{
+\begin{vmatrix}
+b_{11} & b_{12} & b_{13} & \cdots & b_{1n} \\
+b_{21} & b_{22} & b_{23} & \cdots & b_{2n} \\
+b_{31} & \cdot & \cdot & \cdots & b_{3n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+b_1 & b_2 & b_3 & \cdots & b_n
+\end{vmatrix},
+}
+
+die aus der Matrix (1) hervorgeht, indem man in ihr die letzte Zeile ersetzt durch die Elemente
+
+\[
+b_1\ b_2\ \cdots b_n,
+\]
+
+eine correspondirende Matrix mit Matrix (2), und ihre Determinanten sind proportional den correspondirenden der Matrix (2). Daher sind sie auch proportional den entsprechenden, d. h. den aus gleichen Colonnen gebildeten Determinanten der Matrix (1).
+
+108. Erweitern wir also diese Matrix (1) durch Anf\"ugung der Zeile
+
+\[
+b_1\ b_2\ b_2\ \cdots b_n
+\]
+% [sic] printed "$b_1\ b_2\ b_2\ \cdots b_n$"; expected third entry $b_3$.
+
+zur Matrix
+
+\weq{4}{
+\begin{vmatrix}
+b_{11} & b_{12} & b_{13} & \cdots & b_{1n} \\
+b_{21} & b_{22} & b_{23} & \cdots & b_{2n} \\
+b_{31} & \cdot & \cdot & \cdots & b_{3n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+b_{\nu 1} & b_{\nu 2} & b_{\nu 3} & \cdots & b_{\nu n} \\
+b_1 & b_2 & b_3 & \cdots & b_n
+\end{vmatrix}
+}
+
+und entnehmen aus dieser Matrix irgend eine Determinante, etwa
+
+\[
+D=
+\begin{vmatrix}
+b_{11} & b_{12} & \cdots & b_{1,\nu+1} \\
+b_{21} & b_{22} & \cdot & b_{2,\nu+1} \\
+\cdot & \cdot & \cdot & \cdot \\
+b_{\nu 1} & b_{\nu 2} & \cdot & b_{\nu,\nu+1} \\
+b_1 & b_2 & \cdots & b_{\nu+1}
+\end{vmatrix},
+\]
+
+so sind in dieser Determinante die Minoren der $\nu^{\text{ten}}$ Zeile proportional den entsprechenden Minoren der $\nu+1^{\text{ten}}$ Zeile. Es verh\"alt sich:
+
+\[
+B_{\nu 1}:B_{\nu 2}:B_{\nu 3}\ \cdots B_{\nu,\nu+1} = B_{\nu+1,1}:B_{\nu+1,2}:B_{\nu+1,3}\ \cdots B_{\nu+1,\nu+1}.
+\]
+
+Folglich ist:
+
+\[
+B_{\nu+1,i}B_{\nu k} - B_{\nu+1,k}B_{\nu i} = 0.
+\]
+
+Nach den Lehrs\"atzen \"uber adjungirte Determinanten und deren Minoren ist aber (vergl. Nr. 88)
+%CONT>>
+
+
+% ===== pdf idx 128, printed 114.0 =====
+% !PRINTED 114
+\weberpage{114}
+\noindent 114 \quad Zweiter Theil. Anwendungen der Determinantentheorie.
+
+%<<CONT
+\[
+\begin{vmatrix} B_{\nu i} & B_{\nu k} \\ B_{\nu+1,i} & B_{\nu+1,k} \end{vmatrix}
+= D\cdot \underset{i}{\overset{}{B}}{}^{\nu,\nu+1}_{\phantom{\nu,\nu+1}k} = 0,\quad
+\begin{cases} i=1\cdots n-1 \\ k=2\cdots n \end{cases},
+\]
+
+wo
+
+\[
+\underset{i}{\overset{}{B}}{}^{\nu,\nu+1}_{\phantom{\nu,\nu+1}k}
+\]
+
+jede Determinante sein kann, die sich aus den $\nu-1$ ersten Zeilen von $D$ bilden l\"asst. Nehmen wir nun auch an
+
+\[
+\underset{i}{\overset{}{B}}{}^{\nu,\nu+1}_{\phantom{\nu,\nu+1}k} = 0,
+\]
+
+so folgt immer auch $D=0$, da eine Determinante verschwinden muss, wenn alle ihre Minoren zweiter Ordnung verschwinden, nach welchen sie man ja h\"atte entwickeln k\"onnen. In derselben Weise aber, wie wir gefunden haben $D=0$, k\"onnen wir auch schliessen, dass \"uberhaupt jede Determinante der Matrix (4) verschwinden muss. Daraus folgt, dass es immer Werthe $\lambda_i$ giebt, so beschaffen, dass
+
+\[
+\begin{aligned}
+b_1 &= \lambda_1 b_{11} + \lambda_2 b_{21} + \lambda_3 b_{31}\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \lambda_\nu b_{\nu 1} \\
+b_2 &= \lambda_1 b_{12} + \lambda_2 b_{22} + \ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \lambda_\nu b_{\nu 2} \\
+b_3 &= \lambda_1 b_{13} + \lambda_2 b_{23} + \ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \lambda_\nu b_{\nu 3} \\
+&\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \\
+b_n &= \lambda_1 b_{1n} + \lambda_2 b_{2n} + \lambda_3 b_{3n} + \cdots \lambda_\nu b_{\nu n}.
+\end{aligned}
+\]
+
+Denn tragen wir diese Werthe f\"ur $b_i$ in irgend eine der Determinanten $D$ ein, so ist dieselbe Null, gem\"ass den S\"atzen in Nr. 35 bis 39.
+
+Wir haben also den Satz gewonnen: \glqq Sind die Zeilen der Matrix (2) $\nu$ beliebige von einander linear unabh\"angige L\"osungen, so ist die allgemeinste L\"osung des Systemes von Gleichungen (I) eine lineare Function derselben.\grqq{}
+
+109. \textit{Beispiel.} Es seien gegeben zwei Gleichungen mit vier Unbekannten, also
+
+\[
+n=4,\quad \mu=2,\quad \nu=2,
+\]
+
+etwa das System
+
+\weq{I}{
+\begin{aligned}
+u_1 x_1 + u_2 x_2 + u_3 x_3 + u_4 x_4 &= 0 \\
+v_1 x_1 + v_2 x_2 + v_3 x_3 + v_4 x_4 &= 0.
+\end{aligned}
+}
+
+Wir nehmen an, dass sie befriedigt werden einmal durch das System von speciellen Werthen
+
+\[
+x_1\ x_2\ x_3\ x_4,
+\]
+
+dann aber auch durch das System von Werthen
+
+\[
+y_1\ y_2\ y_3\ y_4.
+\]
+
+
+% ===== pdf idx 129, printed 115.0 =====
+% !PRINTED 115
+\weberpage{115}
+
+Während also die Matrix der Co\"efficienten des gegebenen Gleichungssystemes dargestellt ist durch
+
+\weq{1}{\left| \begin{array}{cccc} u_1 & u_2 & u_3 & u_4 \\ v_1 & v_2 & v_3 & v_4 \end{array} \right|,}
+
+ist die Matrix der beiden speciellen Werthsysteme, für welche die Gleichungen (I) bestehen sollen, gegeben durch
+
+\weq{2}{\left| \begin{array}{cccc} x_1 & x_2 & x_3 & x_4 \\ y_1 & y_2 & y_3 & y_4 \end{array} \right|,}
+
+sodass ausser den Relationen (I) auch noch die Relationen
+
+\weq{II}{\begin{aligned} u_1y_1+u_2y_2+u_3y_3+u_4y_4&=0\\ v_1y_1+v_2y_2+v_3y_3+v_4y_4&=0 \end{aligned}}
+
+vorhanden sind. Setzen wir dann im System (I)
+
+\[ x_2=lx_2,\quad x_3=lx_3,\quad x_4=lx_4,\quad \text{wo } l=1, \]
+
+so erhält man:
+
+\[ \begin{aligned} u_1x_1+l(u_2x_2+u_3x_3+u_4x_4)&=0\\ v_1x_1+l(v_2x_2+v_3x_3+v_4x_4)&=0. \end{aligned} \]
+
+Die Resultante dieser Gleichung muss verschwinden, wenn Werthe $x_1$ und $l$ vorhanden sein sollen, für welche sie bestehen; d.\,h. es muss sein:
+
+\weq{III}{\left| \begin{array}{cc} u_1 & u_2x_2+u_3x_3+u_4x_4 \\ v_1 & v_2x_2+v_3x_3+v_4x_4 \end{array} \right| = 0.}
+
+Bezeichnet man die Determinanten der Matrix (1) mit $q_{ik}$, so dass
+
+\[ q_{ik} = u_iv_k - v_iu_k, \]
+
+und setzt man ebenso die Determinanten der Matrix (2)
+
+\[ p_{ik} = x_iy_k - y_ix_k, \]
+
+so liefert die Gleichung (III) nach den Unbekannten geordnet:
+
+\weq{IIIa}{x_2q_{12}+x_3q_{13}+x_4q_{14}=0,}
+
+und ebenso folgt
+
+\[ y_1q_{11}+y_3q_{13}+y_4q_{14}=0, \] % [sic] printed q_{11}; pattern of (IIIa) suggests q_{12}, but reproduced as printed
+
+wenn wir mit dem System (II) ebenso verfahren, wie mit (I). Löst man diese Gleichungen nach den Determinanten $q_{ik}$ auf, so kommt:
+
+\[ \begin{aligned} \varrho\cdot q_{12} &= p_{34}\\ \varrho\cdot q_{13} &= p_{42}\\ \varrho\cdot q_{14} &= p_{23}. \end{aligned} \]
+
+
+% ===== pdf idx 130, printed 116.0 =====
+% !PRINTED 116
+\weberpage{116}
+
+%<<CONT
+Ganz ebenso folgt aber, indem wir etwa $x_1=lx_1,\ x_3=lx_3,\ x_4=lx_4$ setzen, und entsprechend die Unbekannten $y_1=ly_1$ u.\,s.\,w.,
+
+\[ \varrho\cdot q_{23}=p_{14},\quad \varrho\cdot q_{42}=p_{13},\quad \varrho\cdot q_{34}=p_{14}. \]
+
+Dadurch ist zunächst die Proportionalität correspondirender Determinanten der beiden Matrices (1) und (2) nachgewiesen, wie wir sie schon in Nr.\,95 erkannt haben.
+
+110. Suchen wir nun die allgemeinste Lösung der beiden Gleichungen (I); sie sei gegeben durch
+
+\[ z_1\ z_2\ z_3\ z_4. \]
+
+Wir bilden die Matrix
+
+\weq{3}{\left| \begin{array}{cccc} x_1 & x_2 & x_3 & x_4 \\ z_1 & z_2 & z_3 & z_4 \end{array} \right|,}
+
+deren Determinanten dargestellt sein mögen durch
+
+\[ \bar p_{ik} = x_iz_k - z_ix_k. \]
+
+Dann bestehen auch die Gleichungen:
+
+\[ \begin{aligned}
+&\sigma\cdot q_{12}=\bar p_{34},\quad \sigma\cdot q_{13}=\bar p_{42},\quad \sigma\cdot q_{14}=\bar p_{23}\\
+&\sigma\cdot q_{23}=\bar p_{14},\quad \sigma\cdot q_{42}=\bar p_{13},\quad \sigma\cdot q_{34}=\bar p_{14},
+\end{aligned} \]
+
+und folglich wenn wir setzen $\dfrac{\sigma}{\varrho}=\tau$:
+
+\[ \tau\cdot p_{ik} = \bar p_{ik}. \]
+
+Betrachten wir daher die Matrix
+
+\weq{4}{\left| \begin{array}{cccc} x_1 & x_2 & x_3 & x_4 \\ y_1 & y_2 & y_3 & y_4 \\ z_1 & z_2 & z_3 & z_4 \end{array} \right|}
+
+und in dieser wiederum die Determinante
+
+\[ D = \left| \begin{array}{ccc} x_1 & x_2 & x_3 \\ y_1 & y_2 & y_3 \\ z_1 & z_2 & z_3 \end{array} \right|, \]
+
+dann ist
+
+\[ \tau\cdot p_{12}=\bar p_{12},\quad \tau\cdot p_{13}=\bar p_{13},\quad \tau\cdot p_{23}=\bar p_{23} \]
+
+oder
+
+\[ \tau\cdot \left|\begin{array}{cc} x_1&x_2\\ y_1&y_2\end{array}\right| = \left|\begin{array}{cc} x_1&x_2\\ z_1&z_2\end{array}\right|,\quad
+\tau\cdot \left|\begin{array}{cc} x_1&x_3\\ y_1&y_3\end{array}\right| = \left|\begin{array}{cc} x_1&x_3\\ z_1&z_3\end{array}\right|,\quad
+\tau\cdot \left|\begin{array}{cc} x_2&x_3\\ y_2&y_3\end{array}\right| = \left|\begin{array}{cc} x_2&x_3\\ z_2&z_3\end{array}\right|, \]
+
+und folglich:
+
+\[ x_1D=0,\quad x_2D=0,\quad x_3D=0, \]
+
+d.\,h. $D=0$. Das Nämliche folgt für die drei andern Determinanten
+%CONT>>
+
+
+% ===== pdf idx 131, printed 117.0 =====
+% !PRINTED 117
+\weberpage{117}
+
+%<<CONT
+der Matrix (4). Folglich giebt es Werthe $\lambda$ und $\mu$, so dass die allgemeinste Lösung des Gleichungssystems (I) dargestellt ist durch:
+
+\weq{B}{\begin{aligned} z_1&=\lambda x_1+\mu y_1,\quad z_2=\lambda x_2+\mu y_2\\ z_3&=\lambda x_3+\mu y_3,\quad z_4=\lambda x_4+\mu y_4. \end{aligned}}
+
+Betrachtet man die Gleichungen (I) als die Gleichungen zweier Ebenen, und sind $(x_i)$ und $(y_i)$ zwei Punkte, welche in beiden gleichzeitig liegen, so liegt jeder andere Punkt der beiden Ebenen gemeinschaftlich auf der Verbindungslinie der beiden Punkte, eine Gerade, die in der That durch die vier Gleichungen ($B$) dargestellt ist.
+
+111. \textit{Auflösung eines Systems nicht homogener linearer Gleichungen.} Die Aufgabe, ein System von Gleichungen zu lösen, die nicht homogen sind, lässt sich auf die Auflösung eines Systems von homogenen Gleichungen zurückführen. Wir behandeln daher nur den Fall, der zunächst von Interesse ist, nämlich die Auflösung von $n$ nicht homogenen Gleichungen mit $n$ Unbekannten. Sie seien:
+
+\[ \begin{aligned}
+a_{11}y_1+a_{12}y_2+a_{13}y_3+\cdots a_{1n}y_n+a_{1,n+1}&=0\\
+a_{21}y_1+a_{22}y_2+a_{23}y_3+\cdots a_{2n}y_n+a_{2,n+1}&=0\\
+a_{31}y_1+a_{32}y_2+a_{33}y_3+\cdots a_{3n}y_n+a_{3,n+1}&=0\\
+&\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+a_{n1}y_1+a_{n2}y_2+a_{n3}y_3+\cdots a_{nn}y_n+a_{n,n+1}&=0.
+\end{aligned} \]
+
+Wir können dieselben in zweierlei Weise homogen machen, entweder, indem wir setzen
+
+\[ y_k = \frac{x_k}{x_{n+1}}, \]
+
+und mit $x_{n+1}$ jede Gleichung multipliciren, oder, indem wir den Co\"efficienten 1 der Absolutglieder als $n+1^{\text{te}}$ Unbekannte $x_{n+1}$ betrachten. Beide Male erhalten wir $n$ homogene Gleichungen mit $n+1$ Unbekannten. Da die Matrix des gegebenen Gleichungssystems dargestellt ist durch
+
+\[ \left| \begin{array}{cccccc}
+a_{11} & a_{12} & a_{13} & \cdots & a_{1n} & a_{1,n+1}\\
+a_{21} & a_{22} & a_{23} & \cdots & a_{2n} & a_{2,n+1}\\
+a_{31} & \cdot & \cdot & \cdot & \cdot & a_{3,n-1}\\ % [sic] printed a_{3,n-1}; pattern of the two rows above suggests a_{3,n+1}
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+a_{n1} & a_{n2} & a_{n3} & \cdots & \cdot & a_{nn+1} % [sic] printed without comma, as a_{nn+1}
+\end{array} \right|,\]
+
+so erhalten wir als einziges Werthsystem, das die Gleichungen befriedigt, gemäss den Entwicklungen in Nr.\,103
+
+\[ p_{n+1}x_1=p_1x_{n+1},\quad p_{n+1}x_2=p_2x_{n+1},\quad \cdots p_{n+1}x_n=p_nx_{n+1}, \]
+%CONT>>
+
+
+% ===== pdf idx 132, printed 118.0 =====
+% !PRINTED 118
+\weberpage{118}
+
+%<<CONT
+oder weil
+
+\[ \frac{x_k}{x_{n+1}} = y, \]
+
+\[ y_1=\frac{p_1}{p_{n+1}},\quad y_2=\frac{p_2}{p_{n+1}},\quad \cdots y_n=\frac{p_n}{p_{n+1}}, \]
+
+wobei die Grössen $p_i$ die mit wechselndem Zeichen genommenen Determinanten der Matrix sind, welche man erhält, indem man in dieser Matrix die $i^{\text{te}}$ Colonne unterdrückt.
+
+112. \textit{Discussion der Lösung.} Ist die Determinante $p_{n+1}\gtrless 0$, so besitzen die Unbekannten $y_1\,y_2\,\ldots\,y_n$ endliche und bestimmte Werthe, für welche die Gleichungen zusammen bestehen können. Ist dagegen $p_{n+1}=0$, ohne dass sämmtliche übrige Determinanten verschwinden, so ergeben sich die Lösungen durchweg in der Form
+
+\[ 0\cdot y_i = p_i\,; \]
+
+da es aber keinen endlichen Werth von $y_i$ giebt, der diese Relation befriedigen kann, so müssen die Gleichungen unvereinbar sein. Sind endlich ausser $p_{n+1}$ auch die übrigen Grössen $p_i=0$, dann erscheinen die Werthe der Unbekannten in der unbestimmten Form
+
+\[ 0\cdot y = 0. \]
+
+Nun sahen wir aber in Nr.\,100, dass in diesem Falle, wo sämmtliche Determinanten der Matrix verschwinden, zum mindesten eine Gleichung eine Folge der $n-1$ übrigen ist.
+
+Es giebt dann unendlich viele Werthsysteme $y_i$, welche zwar alle $n$ Gleichungen befriedigen, die aber schon durch die $n-1$ übrigen Gleichungen bestimmt sind.
+
+113. \textit{Beispiel 1.} In den Gleichungen:
+
+\[ \begin{aligned} 3x+7y-26&=0\\ 2x-y-6&=0, \end{aligned} \]
+
+deren Matrix dargestellt ist durch
+
+\[ \left| \begin{array}{ccc} 3 & 7 & -26 \\ 2 & -1 & -6 \end{array} \right|, \]
+
+ist die Determinante
+
+\[ p_1 = \left| \begin{array}{cc} 7 & -26\\ -1 & -6 \end{array} \right| = -68 \]
+
+\[ p_2 = -\left| \begin{array}{cc} 3 & -26\\ 2 & -6 \end{array} \right| = -34 \]
+
+\[ p_3 = \left| \begin{array}{cc} 3 & 7\\ 2 & -1 \end{array} \right| = -17, \]
+
+also:
+
+\[ x=\frac{p_1}{p_3}=4;\quad y=\frac{p_2}{p_3}=+2. \]
+
+
+% ===== pdf idx 133, printed 119.0 =====
+% !PRINTED 119
+\weberpage{119}
+
+2. Die drei Gleichungen:
+\[
+\begin{aligned}
+4z-3y-2x-7&=0\\
+7x-4y-1&=0\\
+4z-9x-1&=0
+\end{aligned}
+\]
+haben als Matrix
+\[
+\begin{vmatrix}
+4 & -3 & -2 & -7\\
+0 & -4 & +7 & -1\\
+4 & 0 & -9 & -1
+\end{vmatrix}.
+\]
+Deren Determinanten besitzen die Werthe:
+\[
+p_1=\begin{vmatrix} -3 & -2 & -7\\ -4 & 7 & -1\\ 0 & -9 & -1 \end{vmatrix},
+\quad
+p_2=-\begin{vmatrix} 4 & -2 & -7\\ 0 & 7 & -1\\ 4 & -9 & -1 \end{vmatrix},
+\]
+\[
+p_3=\begin{vmatrix} 4 & -3 & -7\\ 0 & -4 & -1\\ 4 & 0 & -1 \end{vmatrix},
+\quad
+p_4=-\begin{vmatrix} 4 & -3 & -2\\ 0 & -4 & -7\\ 4 & 0 & -9 \end{vmatrix},
+\]
+also:
+\[
+p_1=-196,\quad p_2=-140,\quad p_3=-84,\quad p_4=-28.
+\]
+Daher:
+\[
+z=7,\quad y=5,\quad x=3.
+\]
+
+3. In den beiden folgenden Gleichungen
+\[
+\begin{aligned}
+6x-15y-7&=0\\
+-14x+35y+3&=0,
+\end{aligned}
+\]
+deren Matrix
+\[
+\begin{vmatrix}
+6 & -15 & -7\\
+-14 & 35 & 3
+\end{vmatrix}
+\]
+ist, wird $p_3=0$, während $p_1=200$ und $p_2=-80$ ist; die Unbekannten stellen sich also in der Form $0\cdot x=200$, $0\cdot y=80$, es sind also beide Gleichungen unvereinbar. In der That, dividirt man die erste Gleichung mit 3, die zweite mit $-7$, so kommt
+\[
+\begin{aligned}
+2x-5y&=\frac{7}{3}\\
+2x-5y&=\frac{3}{7},
+\end{aligned}
+\]
+woraus man erkennt, dass beide Gleichungen sich widersprechen.
+
+4. Dagegen ist in dem System von Gleichungen
+\[
+\begin{aligned}
+3x_3-4x_1-2&=0\\
+4x_2+5x_3-1&=0\\
+20x_1+12x_2-7&=0,
+\end{aligned}
+\]
+%CONT>>
+
+
+% ===== pdf idx 134, printed 120.0 =====
+% !PRINTED 120
+\weberpage{120}
+%<<CONT
+deren Matrix
+\[
+\begin{vmatrix}
+-4 & 0 & 3 & -2\\
+0 & 4 & 5 & -1\\
+20 & 12 & 0 & -7
+\end{vmatrix}
+\]
+ist,
+\[
+p_4=-\begin{vmatrix} 20 & 12 & 0\\ 0 & 4 & 5\\ -4 & 0 & 3 \end{vmatrix}=0,
+\]
+ebenso
+\[
+p_1=p_2=p_3=0.
+\]
+Es ist also eine der drei Gleichungen eine Folge der zwei andern, etwa die dritte eine Folge der beiden ersten. Daher wird das Werthsystem, das alle drei Gleichungen befriedigt, bereits durch Auflösung der beiden ersten Gleichungen gefunden, indem wir die Gleichungen zuerst mit $x_4$ homogen machen, und dann nach dem bereits in Nr.\ 109 gegebenen Beispiele verfahren.
+
+\begin{center}
+\S.\,9.
+
+\textbf{Functionaldeterminanten.}
+\end{center}
+
+114. \textit{Definition der Functionaldeterminante.} Eine zweite Reihe von Anwendungen der Lehre von den Determinanten eröffnet sich beim Studium der Eigenschaften gewisser Determinanten, die bereits von \gesperrt{Jacobi} aufgestellt und in einer Abhandlung \glqq de determinantibus functionalibus\grqq{} untersucht wurden. Bei der grossen Bedeutung derselben auf allen Gebieten der Algebra wurden sie bis in die neueste Zeit herein zum Gegenstand zahlreicher Forschungen gemacht, von denen wir im Folgenden die wichtigsten Resultate besprechen werden. Insbesondere aber werden wir uns damit beschäftigen, gewisse Aehnlichkeiten derselben mit Brüchen eingehender zu untersuchen.
+
+Es seien gegeben $n$ Functionen
+\[
+y_1\;y_2\cdots y_n,
+\]
+deren jede von $n$ Variabeln
+\[
+x_1\;x_2\cdots x_n
+\]
+abhängig ist; etwa
+\[
+y_1=f_1(x_1x_2\ldots x_n),\quad y_2=f_2(x_1x_2\ldots x_n),\quad\cdots,\quad y_n=f_n(x_1x_2\ldots x_n).
+\]
+Man nennt alsdann die Grössen $x_i$ die unabhängigen Veränderlichen, im Gegensatz zu den abhängigen Grössen $y_i$.
+
+Aus den sämmtlichen $n^2$ ersten partiellen Differentialquotienten dieser Functionen $y_i$ nach den $n$ unabhängigen Veränderlichen $x_i$ können wir eine Determinante
+%CONT>>
+
+
+% ===== pdf idx 135, printed 121.0 =====
+% !PRINTED 121
+\weberpage{121}
+%<<CONT
+\[
+R=\begin{vmatrix}
+\dfrac{\partial y_1}{\partial x_1} & \dfrac{\partial y_1}{\partial x_2} & \dfrac{\partial y_1}{\partial x_3} & \cdots & \dfrac{\partial y_1}{\partial x_n}\\[2ex]
+\dfrac{\partial y_2}{\partial x_1} & \dfrac{\partial y_2}{\partial x_2} & \dfrac{\partial y_2}{\partial x_3} & \cdots & \dfrac{\partial y_2}{\partial x_n}\\[1.5ex]
+\cdot & \cdot & \cdot & \cdot & \cdot\\[1ex]
+\dfrac{\partial y_n}{\partial x_1} & \dfrac{\partial y_n}{\partial x_2} & \dfrac{\partial y_n}{\partial x_3} & \cdots & \dfrac{\partial y_n}{\partial x_n}
+\end{vmatrix}
+\]
+bilden, und diese Determinante bezeichnet man nach \gesperrt{Jacobi} mit dem Namen: Functionaldeterminante des Systems der Functionen. Wir werden uns im Folgenden einer kürzeren Schreibweise derselben bedienen, indem wir setzen
+\[
+R=\begin{pmatrix} y_1 & y_2 & y_3 & \cdots & y_n\\ x_1 & x_2 & x_3 & \cdots & x_n \end{pmatrix},
+\]
+wobei also die untere Reihe stets jene Veränderlichen enthält, nach welchen jede Grösse der oberen Reihe als partiell differenzirt gedacht werden muss. Späterhin werden wir öfters die obere Reihe als Zähler, die untere Reihe als Nenner von $R$ bezeichnen.
+
+115. \textit{Die Functionaldeterminante ist eine alternirende Function.} Aus der Definition der Functionaldeterminante erkennt man unmittelbar einmal, dass dieselbe ihr Zeichen ändert, sobald man $y_i$ mit $y_k$ vertauscht, dann aber auch, dass sie ihr Zeichen ändert bei Vertauschung zweier Veränderlicher $x_i$ und $x_k$. Denn dadurch gehen nur zwei Zeilen, resp. zwei Colonnen in einander über. In unserer abgekürzten Bezeichnungsweise ist also z.\,B.
+\[
+\begin{pmatrix} y_1 & y_2 & y_3 & y_4\\ x_1 & x_2 & x_3 & x_4 \end{pmatrix}
+=-\begin{pmatrix} y_2 & y_1 & y_3 & y_4\\ x_1 & x_2 & x_3 & x_4 \end{pmatrix}
+=-\begin{pmatrix} y_1 & y_2 & y_3 & y_4\\ x_1 & x_4 & x_3 & x_2 \end{pmatrix}.
+\]
+
+116. \textit{Darstellung der Minoren der Functionaldeterminante.} Wir wissen (vgl.\ Nr.\ 21 und 26), dass der Minor des Elementes $a_{ik}$ einer Determinante gegeben ist durch
+\[
+A_{ik}=(-1)^{i+k}(a_{11}a_{22}\ldots a_{i-1,i-1}a_{i+1,i}a_{i+2,i+1}\ldots a_{k,k-1}a_{k+1,k+1}\ldots a_{nn}).
+\]
+Daher ist der Minor des Elementes
+\[
+\frac{\partial y_i}{\partial x_k}
+\]
+hier symbolisch dargestellt durch
+\weq{1}{A_{ik}=(-1)^{i+k}\begin{pmatrix} y_1 & y_2 & \cdots & y_{i-1}, & y_{i+1} & \cdots & y_n\\ x_1 & x_2 & \cdots & x_{k-1}, & x_{k+1} & \cdots & x_n \end{pmatrix},}
+in welchem einmal alle partiellen Differentialquotienten nach $x_k$, dann
+%CONT>>
+
+
+% ===== pdf idx 136, printed 122.0 =====
+% !PRINTED 122
+\weberpage{122}
+%<<CONT
+aber auch jene von $y_i$ nach $x_1x_2\ldots x_n$ fehlen. Wir können indess diesen Minor auch in folgender Form schreiben:
+\weq{2}{A_{ik}=(-1)^{i+k}\begin{pmatrix} y_1 & y_2 & \cdots & y_{i-1} & x_k & y_{i+1} & \cdots & y_n\\ x_1 & x_2 & \cdots & x_{k-1} & x_k & x_{k+1} & \cdots & x_n \end{pmatrix}.}
+Denn in dieser Functionaldeterminante treten auch die partiellen Differentialquotienten von $x_k$ nach $x_1,x_2\ldots x_n$ genommen auf, die aber alle bis auf
+\[
+\frac{\partial x_k}{\partial x_k}=1
+\]
+verschwinden. Es sind also in derselben alle Elemente der $i^{\text{ten}}$ Colonne bis auf das $k^{\text{te}}$ Element, das den Werth 1 besitzt, null, so dass sich die in (2) dargestellte Determinante auf $A_{ik}$ reducirt.
+
+Ganz ebenso kann man einen Minor zweiter Ordnung von $R$ etwa bezeichnen durch
+\[
+A_{\substack{ir\\ks}}=(-1)^v\begin{pmatrix} y_1 & y_2 & \cdots & y_{i-1} & x_k & y_{i+1} & \cdots & y_{r-1} & x_s & y_{r+1} & \cdots & y_n\\ x_1 & x_2 & \cdots & x_{k-1} & x_k & x_{k+1} & \cdots & x_{s-1} & x_s & x_{s+1} & \cdots & x_n \end{pmatrix},
+\]
+wo
+\[
+v=i+k+r+s,
+\]
+und analog den Minor $\varrho^{\text{ter}}$ Ordnung von $R$. Bei der Art unserer Bezeichnungsweise für eine Functionaldeterminante können wir also sagen:
+
+\glqq Lässt man in dem Symbole
+\[
+R=\begin{pmatrix} y_1 & y_2 & \cdots & y_n\\ x_1 & x_2 & \cdots & x_n \end{pmatrix}
+\]
+zwei übereinanderstehende Grössen weg, so stellt der Rest einen Minor erster Ordnung von $R$ dar, und ferner: Sind in einer Functionaldeterminante zwei übereinanderstehende Grössen gleich, so kann man sie auch weglassen.\grqq{}
+
+117. \textit{Productsatz für Functionaldeterminanten.} Stellen wir uns nun vor, dass auch $n$ Grössen $z_i$ gegeben seien, deren jede wiederum von allen Grössen $y_i$ abhängig ist, etwa:
+\[
+z_1=\varphi_1(y_1y_2\ldots y_n),\quad z_2=\varphi_2(y_1y_2\ldots y_n),\quad\cdots\quad z_n=\varphi_n(y_1y_2\ldots y_n).
+\]
+Diese $n$ Functionen $z_i$ besitzen eine Functionaldeterminante
+\[
+R'=\begin{vmatrix}
+\dfrac{\partial z_1}{\partial y_1} & \dfrac{\partial z_1}{\partial y_2} & \dfrac{\partial z_1}{\partial y_3} & \cdots & \dfrac{\partial z_1}{\partial y_n}\\[2ex]
+\dfrac{\partial z_2}{\partial y_1} & \dfrac{\partial z_2}{\partial y_2} & \dfrac{\partial z_2}{\partial y_3} & \cdots & \dfrac{\partial z_2}{\partial y_n}\\[1.5ex]
+\cdot & \cdot & \cdot & \cdot & \cdot\\[1ex]
+\dfrac{\partial z_n}{\partial y_1} & \dfrac{\partial z_n}{\partial y_2} & \dfrac{\partial z_n}{\partial y_3} & \cdots & \dfrac{\partial z_n}{\partial y_n}
+\end{vmatrix}
+=\begin{pmatrix} z_1 & z_2 & z_3 & \cdots & z_n\\ y_1 & y_2 & y_3 & \cdots & y_n \end{pmatrix}.
+\]
+
+
+% ===== pdf idx 137, printed 123.0 =====
+% !PRINTED 123
+\weberpage{123}
+
+Denken wir uns nun aber in diese Functionen $z_i = \boldsymbol{\varphi}_i(y)$ die Werthe
+von $y_k = f_k(x)$ eingetragen, so können wir auch noch eine zweite
+Functionaldeterminante der Functionen $z_i$
+
+\[
+R'' = \left|
+\begin{array}{cccc}
+\dfrac{\partial z_1}{\partial x_1} & \dfrac{\partial z_1}{\partial x_2} & \dfrac{\partial z_1}{\partial x_3} \cdots & \dfrac{\partial z_1}{\partial x_n} \\[2ex]
+\dfrac{\partial z_2}{\partial x_1} & \dfrac{\partial z_2}{\partial x_2} & \cdots\cdots & \dfrac{\partial z_2}{\partial x_n} \\[2ex]
+\cdot & \cdot & \cdot\ \cdot\ \cdot\ \cdot\ \cdot & \cdot \\[2ex]
+\dfrac{\partial z_n}{\partial x_1} & \dfrac{\partial z_n}{\partial x_2} & \cdots\cdots & \dfrac{\partial z_n}{\partial x_n}
+\end{array}
+\right|
+=
+\begin{pmatrix} z_1 & z_2 & z_3 & \ldots & z_n \\ x_1 & x_2 & x_3 & \ldots & x_n \end{pmatrix}
+\]
+
+bilden, und man kann leicht zeigen: Die Functionaldeterminante des
+Systems der Grössen $z_i$ als Functionen von $x$ gedacht, ist gleich dem
+Producte der Functionaldeterminante, welche zu den Systemen
+
+\[
+y_i = f_i(x)
+\]
+
+und
+
+\[
+z_i = \boldsymbol{\varphi}_i(y)
+\]
+
+gehören; oder symbolisch
+
+\weq{1}{
+\begin{pmatrix} y_1 & y_2 & y_3 & \ldots & y_n \\ x_1 & x_2 & x_3 & \ldots & x_n \end{pmatrix}
+\begin{pmatrix} z_1 & z_2 & \ldots & z_n \\ y_1 & y_2 & \ldots & y_n \end{pmatrix}
+=
+\begin{pmatrix} z_1 & z_2 & z_3 & \ldots & z_n \\ x_1 & x_2 & x_3 & \ldots & x_n \end{pmatrix}.
+}
+
+In der That, bildet man das Product der beiden Determinanten $R$
+und $R'$, so erhält man (wenn man vorher noch die Determinante $R$
+transponirt)
+
+\[
+\left|
+\begin{array}{cccc}
+\dfrac{\partial z_1}{\partial y_1} & \dfrac{\partial z_1}{\partial y_2} & \cdots & \dfrac{\partial z_1}{\partial y_n} \\[2ex]
+\dfrac{\partial z_2}{\partial y_1} & \dfrac{\partial z_2}{\partial y_2} & \cdots & \dfrac{\partial z_2}{\partial y_n} \\[2ex]
+\cdot & \cdot & \cdots & \cdot \\[2ex]
+\dfrac{\partial z_n}{\partial y_1} & \cdots\cdots & & \dfrac{\partial z_n}{\partial y_n}
+\end{array}
+\right|
+\cdot
+\left|
+\begin{array}{cccc}
+\dfrac{\partial y_1}{\partial x_1} & \dfrac{\partial y_2}{\partial x_1} & \dfrac{\partial y_3}{\partial x_1} \cdots & \dfrac{\partial y_n}{\partial x_1} \\[2ex]
+\dfrac{\partial y_1}{\partial x_2} & \dfrac{\partial y_2}{\partial x_2} & \cdots\cdots & \dfrac{\partial y_n}{\partial x_2} \\[2ex]
+\cdot & \cdot & \cdot\ \cdot\ \cdot\ \cdot & \cdot \\[2ex]
+\dfrac{\partial y_1}{\partial x_n} & \dfrac{\partial y_2}{\partial x_n} & \cdots\cdots & \dfrac{\partial y_n}{\partial x_n}
+\end{array}
+\right|
+\]
+
+\[
+=
+\left|
+\begin{array}{lll}
+\dfrac{\partial z_1}{\partial y_1}\dfrac{\partial y_1}{\partial x_1}+\dfrac{\partial z_1}{\partial y_2}\dfrac{\partial y_2}{\partial x_1}+\dfrac{\partial z_1}{\partial y_3}\dfrac{\partial y_3}{\partial x_1}+\cdots\dfrac{\partial z_1}{\partial y_n}\dfrac{\partial y_n}{\partial x_1}, & \cdots, & \dfrac{\partial z_1}{\partial y_1}\dfrac{\partial y_1}{\partial x_n}+\dfrac{\partial z_1}{\partial y_2}\dfrac{\partial y_2}{\partial x_n}+\cdots\dfrac{\partial z_1}{\partial y_n}\dfrac{\partial y_n}{\partial x_n} \\[2ex]
+\dfrac{\partial z_2}{\partial y_1}\dfrac{\partial y_1}{\partial x_1}+\dfrac{\partial z_2}{\partial y_2}\dfrac{\partial y_2}{\partial x_1}+\cdots+\dfrac{\partial z_2}{\partial y^n}\dfrac{\partial y_n}{\partial x_1}, & \cdots, & \dfrac{\partial z_2}{\partial y_1}\dfrac{\partial y_1}{\partial x_n}+\cdots\cdots\dfrac{\partial z_2}{\partial y_n}\dfrac{\partial y_n}{\partial x_n} \\[2ex]
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot, & & \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \\[2ex]
+\dfrac{\partial z_n}{\partial y_1}\dfrac{\partial y_1}{\partial x_1}+\dfrac{\partial z_n}{\partial y_2}\dfrac{\partial y_2}{\partial x_1}+\cdots+\dfrac{\partial z_n}{\partial y_n}\dfrac{\partial y_n}{\partial x_1}, & \cdots, & \dfrac{\partial z_n}{\partial y_1}\dfrac{\partial y_1}{\partial x_n}+\dfrac{\partial z_n}{\partial y_2}\dfrac{\partial y_2}{\partial x_n}+\cdots\dfrac{\partial z_n}{\partial y_n}\dfrac{\partial y_n}{\partial x_n}
+\end{array}
+\right|.
+\]
+% ?? uncertain: printed exponent "y^n" on ∂z_2/∂y^n in the second row of the multiplied-out determinant (row 1 of expansion) reproduced as printed; may be a printing slip for ∂z_2/∂y_n
+
+Die Elemente der Determinante rechts sind aber nichts anderes als
+die partiellen Differentialquotienten der Function $z_i$, wenn man sich
+%CONT>>
+
+
+% ===== pdf idx 138, printed 124.0 =====
+% !PRINTED 124
+\weberpage{124}
+%<<CONT
+in denselben die Veränderlichen $y_i$ durch ihre Functionen $f_1(x)$ ersetzt
+denkt; denn nach den Regeln der Differentialrechnung ist
+
+\weq{2}{
+\dfrac{\partial z_k}{\partial x_i} = \dfrac{\partial z_k}{\partial y_1}\cdot\dfrac{\partial y_1}{\partial x_i} + \dfrac{\partial z_k}{\partial y_2}\cdot\dfrac{\partial y_2}{\partial x_i} + \dfrac{\partial z_k}{\partial y_3}\cdot\dfrac{\partial y_3}{\partial x_i} + \cdots \dfrac{\partial z_k}{\partial y_n}\cdot\dfrac{\partial y_n}{\partial x_i}.
+}
+
+Damit ist aber der aufgestellte Satz bewiesen.
+
+118. \textit{Specieller Fall $z_i = x_i$.} Sind die Functionen $z_i$ nichts
+anderes als die inversen Functionen von $y_i = f_i(x_1\, x_2\, x_3 \ldots x_n)$, also
+$z_i = \varphi(y_1\, y_2 \ldots y_n)$ mit $x_i$ übereinstimmend, dann ist
+
+\[
+\dfrac{\partial z_k}{\partial x_k} = \dfrac{\partial x_k}{\partial x_k} = 1, \quad \text{und} \quad \dfrac{\partial z_i}{\partial x_k} = \dfrac{\partial x_i}{\partial x_k} = 0 \quad (i \gtrless k),
+\]
+
+demnach auch die Functionaldeterminante
+
+\[
+\begin{pmatrix} z_1 & z_2 & z_3 & \ldots & z_n \\ x_1 & x_2 & x_3 & \ldots & x_n \end{pmatrix}
+=
+\begin{pmatrix} x_1 & x_2 & x_3 & \ldots & x_n \\ x_1 & x_2 & x_3 & \ldots & x_n \end{pmatrix}
+= 1.
+\]
+
+Die Relation (1) in Nr. 117 geht alsdann über in
+
+\[
+\begin{pmatrix} y_1 & y_2 & y_3 & \ldots & y_n \\ x_1 & x_2 & x_3 & \ldots & x_n \end{pmatrix}
+\begin{pmatrix} x_1 & x_2 & x_3 & \ldots & x_n \\ y_1 & y_2 & y_3 & \ldots & y_n \end{pmatrix}
+= 1.
+\]
+
+119. \textit{Berechnung der Differentialquotienten $\dfrac{\partial x_i}{\partial y_k}$.} In dem zweiten
+Factor der letzten Gleichung treten die Differentialquotienten $\dfrac{\partial x_i}{\partial y_k}$ auf,
+deren Werthe wir uns auf zwei verschiedenen Wegen verschaffen
+können. Einmal, indem wir uns in der inversen Function $x_i = \varphi_i(y)$
+die Veränderlichen $y$ durch die Functionen in $x_k$ ersetzt denken, und
+diese inverse Function nach $x_k$ differentiiren. Wir erhalten dann die
+$n^2$ Relationen
+
+\[
+(1) \quad\cdot\quad \dfrac{\partial x_i}{\partial x_k} = \dfrac{\partial x_i}{\partial y_1}\cdot\dfrac{\partial y_1}{\partial x_k} + \dfrac{\partial x_i}{\partial y_2}\cdot\dfrac{\partial y_2}{\partial x_k} + \cdots \dfrac{\partial x_i}{\partial y_n}\cdot\dfrac{\partial y_n}{\partial x_k} = 1 \text{ oder } 0,
+\]
+
+je nachdem $i = k$, oder $i$ von $k$ verschieden ist. Aus diesen kann
+man $n$ Gleichungen herausgreifen und für die $n$ Unbekannten $\dfrac{\partial x_i}{\partial y_k}$ die
+Werthe aus ihnen berechnen. Rascher gelangen wir aber auf folgen-
+dem Wege zum Ziele. Wir können $\dfrac{\partial x_i}{\partial y_k}$ darstellen durch die Functional-
+determinante
+
+\[
+\dfrac{\partial x_i}{\partial y_k} = \begin{pmatrix} y_1 & y_2 & \ldots & y_{k-1} & x_i & y_{k+1} & \ldots & y_n \\ y_1 & y_2 & \ldots & y_{k-1} & y_k & y_{k+1} & \ldots & y_n \end{pmatrix},
+\]
+
+gemäss den vorhin in Nr. 116 gemachten Bemerkungen. Multipliciren
+wir aber dieselbe nun mit der Functionaldeterminante
+%CONT>>
+
+
+% ===== pdf idx 139, printed 125.0 =====
+% !PRINTED 125
+\weberpage{125}
+%<<CONT
+\[
+R = \begin{pmatrix} y_1 & y_2 & y_3 & \ldots & y_n \\ x_1 & x_2 & x_3 & \ldots & x_n \end{pmatrix},
+\]
+
+so erhalten wir gemäss unserm Satze über das Product zweier Functional-
+determinanten Nr. 117 (1)
+
+\weq{2}{
+\begin{pmatrix} y_1 & y_2 & y_3 & \ldots & y_n \\ x_1 & x_2 & x_3 & \ldots & x_n \end{pmatrix}
+\begin{pmatrix} y_1 & y_2 & \ldots & y_{k-1} & x_i & y_{k+1} & \ldots & y_n \\ y_1 & y_2 & \ldots & y_{k-1} & y_k & y_{k+1} & \ldots & y_n \end{pmatrix}
+=
+\begin{pmatrix} y_1 & y_2 & \ldots & y_{k-1} & x_i & y_{k+1} & \ldots & y_n \\ x_1 & x_2 & \ldots & x_{k-1} & x_k & x_{k+1} & \ldots & x_n \end{pmatrix}.
+}
+
+Die Determinante rechts ist aber nichts anderes als der Minor des
+Elementes $\dfrac{\partial y_k}{\partial x_i}$ in der Determinante $R$ [vgl. Nr. 116 (2)]. Wir haben
+somit für den partiellen Differentialquotienten
+
+\weq{3}{
+R \cdot \dfrac{\partial x_i}{\partial y_k} = \dfrac{\partial R}{\partial\!\left(\dfrac{\partial y_k}{\partial x_i}\right)} = A_{ik},
+}
+
+oder
+
+\[
+\dfrac{\partial x_i}{\partial y_k} = \dfrac{A_{ki}}{R}.
+\]
+
+119. \textit{Die Functionaldeterminante als ein Product partieller Differential-
+quotienten.} % [sic] repeated section number "119." — the preceding heading in Nr. 118/119 on the previous page was also numbered 119.
+Wenn $n$ Veränderliche $y$ gegeben sind, deren jede abhängig
+ist von $n$ Veränderlichen $x$, so steht es uns frei, irgend $n$ von diesen
+$2n$ Grössen als Function der übrigen zu betrachten. Nehmen wir
+der Einfachheit halber zunächst drei Functionen $y_i$ abhängig von drei
+Grössen $x_i$, etwa
+
+\[
+(1) \quad y_1 = f_1(x_1\, x_2\, x_3), \quad y_2 = f_2(x_1\, x_2\, x_3), \quad y_3 = f_3(x_1\, x_2\, x_3),
+\]
+
+so können wir festsetzen, $y_1$ als abhängig zu betrachten von $x_1\, x_2\, x_3$;
+dagegen $y_2$ als Function von $y_1\, x_2\, x_3$, $y_3$ als Function von $y_1\, y_2$ und $x_3$,
+etwa als Functionen:
+
+\[
+(2) \quad y_1 = f(x_1\, x_2\, x_3), \quad y_2 = \varphi(y_1\, x_2\, x_3), \quad y_3 = \psi(y_1\, y_2\, x_3).
+\]
+
+Bilden wir nun die Functionaldeterminante des gegebenen Systems (1),
+so ist dieselbe
+
+\[
+R = \begin{pmatrix} y_1 & y_2 & y_3 \\ x_1 & x_2 & x_3 \end{pmatrix}.
+\]
+
+Bilden wir andererseits die partiellen Differentialquotienten von $y_1$
+nach $x_1$, $y_2$ nach $x_2$, $y_3$ nach $x_3$, indem wir die durch das System (2)
+ausgedrückte Abhängigkeit zu Grunde legen, so können wir dieselben
+gemäss unserer Uebereinkunft betreffs der abgekürzten Schreibweise
+(vgl. Nr. 116) darstellen durch
+%CONT>>
+
+
+% ===== pdf idx 140, printed 126.0 =====
+% !PRINTED 126
+\weberpage{126}
+%<<CONT
+\[
+(\mathrm{I}) \quad \dfrac{\partial y_1}{\partial x_1} = \begin{pmatrix} y_1 & x_2 & x_3 \\ x_1 & x_2 & x_3 \end{pmatrix}, \quad
+\dfrac{\partial y_2}{\partial x_2} = \begin{pmatrix} y_1 & y_2 & x_3 \\ y_1 & x_2 & x_3 \end{pmatrix}, \quad
+\dfrac{\partial y_3}{\partial x_3} = \begin{pmatrix} y_1 & y_2 & y_3 \\ x_1 & x_2 & x_3 \end{pmatrix},
+\]
+% ?? uncertain: faint marks above $x_1\, x_2$ in the denominator of the third fraction in (I); read as plain $x_1\, x_2\, x_3$
+
+wonach die Variabeln des Zählers als Functionen der Grössen im
+Nenner stets nach denen des Nenners zu differenziren sind, und je zwei
+übereinanderstehende gleiche unterdrückt werden können. Nun ist
+aber [nach Nr. 117 (1)]
+
+\[
+(a) \quad \begin{pmatrix} y_1 & y_2 & y_3 \\ y_1 & y_2 & x_3 \end{pmatrix} \begin{pmatrix} y_1 & y_2 & x_3 \\ y_1 & x_2 & x_3 \end{pmatrix} = \begin{pmatrix} y_1 & y_2 & y_3 \\ y_1 & x_2 & x_3 \end{pmatrix} = D;
+\]
+
+und ebenso
+
+\[
+(b) \quad \begin{pmatrix} y_1 & y_2 & y_3 \\ y_1 & x_2 & x_3 \end{pmatrix} \begin{pmatrix} y_1 & x_2 & x_3 \\ x_1 & x_2 & x_3 \end{pmatrix} = \begin{pmatrix} y_1 & y_2 & y_3 \\ x_1 & x_2 & x_3 \end{pmatrix} = R.
+\]
+
+Substituiren wir also den Werth von $D$ in die Relation (b), so kommt
+
+\weq{3}{
+\begin{pmatrix} y_1 & y_2 & y_3 \\ x_1 & x_2 & x_3 \end{pmatrix}
+=
+\begin{pmatrix} y_1 & y_2 & y_3 \\ y_1 & y_2 & x_3 \end{pmatrix}
+\begin{pmatrix} y_1 & y_2 & x_3 \\ y_1 & x_2 & x_3 \end{pmatrix}
+\begin{pmatrix} y_1 & x_2 & x_3 \\ x_1 & x_2 & x_3 \end{pmatrix}
+}
+
+oder
+
+\[
+R = \dfrac{\partial y_1}{\partial x_1} \cdot \dfrac{\partial y_2}{\partial x_2} \cdot \dfrac{\partial y_3}{\partial x_3}, \tag{II}
+\]
+
+wobei also jeder der drei Differentialquotienten der rechten Seite in
+anderem Sinne zu nehmen ist, nämlich in jenem, der durch die Vor-
+stellung
+
+\[
+y_1 = f(x_1\, x_2\, x_3), \quad y_2 = \varphi(y_1\, x_2\, x_3), \quad y_3 = \psi(y_1\, y_2\, x_3)
+\]
+
+bestimmt ist.
+
+Von dieser Beziehung (II) wird bei der Transformation dreifacher
+Integrale Gebrauch gemacht. Um nämlich in dem dreifachen Integrale
+
+\[
+\int F(y_1\, y_2\, y_3)\,dy_1\,dy_2\,dy_3
+\]
+
+an Stelle der Veränderlichen $y_i$ drei neue Veränderliche $x_i$ einzuführen,
+welche mit den alten durch die Relation (1) verbunden sind, kann
+man sich zunächst, indem man etwa die Integration nach $y_3$ zuerst
+auszuführen gedenkt, $y_3$ als Function $\psi(y_1\, y_2\, x_3)$ vorstellen. In diesem
+Falle darf man alsdann das Differential $dy_3$ ersetzen durch $\dfrac{\partial \psi}{\partial x_3}\,dx_3$.
+In dem neuen dreifachen Integral kann man die Integration mit $y_2$
+beginnen; stellt man sich daher $y_2$ als Function von $\varphi(y_1\, x_2\, x_3)$ vor,
+so darf man $dy_2$ ersetzen durch $\dfrac{\partial \varphi}{\partial x_2}\,dx_2$. So kann man endlich an
+Stelle von $dy_1$ auch $\dfrac{\partial f_1}{\partial x_1}\,dx_1$ einführen und erhält zum Schlusse:
+
+\[
+\int F(y_1\, y_2\, y_3)\,dy_1\,dy_2\,dy_3 = \int F(f_1(x_1\, x_2\, x_3)\cdots)\dfrac{\partial f_1}{\partial x_1}\cdot\dfrac{\partial \varphi}{\partial x_2}\cdot\dfrac{\partial \psi}{\partial x_3}\,dx_1\,dx_2\,dx_3
+\]
+\[
+= \int \Phi(x_1\, x_2\, x_3)\cdot R \cdot dx_1\,dx_2\,dx_3.
+\]
+
+
+% ===== pdf idx 141, printed 127.0 =====
+% !PRINTED 127
+\weberpage{127}
+
+Allgemein ist, wenn $y_1 y_2 \ldots y_n$ Functionen der Grössen $x_1 x_2 \ldots x_n$ sind, die in (3) gegebene Relation dargestellt durch
+\begin{gather*}
+R = \begin{pmatrix} y_1 & y_2 & y_3 & \cdots & y_n \\ x_1 & x_2 & x_3 & \cdots & x_n \end{pmatrix}
+= \begin{pmatrix} y_1 & y_2 & \cdots & y_n \\ y_1 & y_2 & \cdots & x_n \end{pmatrix}
+\begin{pmatrix} y_1 & y_2 & \cdots & y_{n-1} & x_n \\ y_1 & y_2 & \cdots & x_{n-1} & x_n \end{pmatrix} \cdots \\
+\cdots \begin{pmatrix} y_1 & y_2 & \cdots & y_{n-2} & x_{n-1} & x_n \\ y_1 & y_2 & \cdots & x_{n-2} & x_{n-1} & x_n \end{pmatrix}
+\begin{pmatrix} y_1 & x_2 & x_3 & \cdots & x_{n-1} & x_n \\ x_1 & x_2 & x_3 & \cdots & \cdots & x_n \end{pmatrix}.
+\end{gather*}
+
+120. \textit{Differentialquotienten von Minoren der Functionaldeterminante.} Bezeichnen wir die Minoren erster Ordnung von $R$ mit $A_{11} A_{12} \ldots A_{nn}$, dann sind die Minoren der Elemente, welche sich in der $k^{\mathrm{ten}}$ Zeile befinden, dargestellt durch
+\[
+A_{k1} = \pm \dfrac{\partial R}{\partial\left(\dfrac{\partial y_k}{\partial x_1}\right)}, \quad
+A_{k2} = \mp \dfrac{\partial R}{\partial\left(\dfrac{\partial y_k}{\partial x_2}\right)}, \quad \ldots, \quad
+A_{kn} = \pm \dfrac{\partial R}{\partial\left(\dfrac{\partial y_k}{\partial x_n}\right)}.
+\]
+Bildet man nun für jeden solchen Minor $A_{ki}$ den dem Index $i$ entsprechenden Differentialquotienten nach $x_i$: $\dfrac{\partial A_{ki}}{\partial x_i}$, so existirt der Satz:
+
+\glqq Die Summe der partiellen Differentialquotienten
+\[
+\frac{\partial A_{ki}}{\partial x_i}, \quad i = 1, 2 \ldots n,
+\]
+ist identisch Null.\grqq{} Der Beweis lässt sich einfach rechnerisch führen\footnote{In der Invariantentheorie würde dieser Satz selbstverständlich erscheinen. Denn da dort die Functionaldeterminante symbolisch dargestellt ist durch
+\[
+R = (abc \ldots q)\, a_x^{n-1} b_x^{m-1} \cdots q_x^{s-1},
+\]
+so würde die Summe der entsprechenden Differentialquotienten aller Minoren einer Zeile nur den Ausdruck ergeben
+\[
+\sum \left[ (abc \ldots a)\, a_x^{n-2} b_x^{n-1} \cdots \right],
+\]
+von dem man aus den Klammerfactoren unmittelbar erkennt, dass er verschwindet. Ist z.\,B. $R = (abc)\, a_x^6 b_x^6 c_x^6$, so ist die Summe der Differentialquotienten aller Minoren der Elemente in der zweiten Zeile (immer von Zahlenfactoren abgesehen)
+\[
+- \frac{\partial(a_2 c_3)\, a_x^6 c_x^6}{\partial x_1} + \frac{\partial(a_1 c_3)\, a_x^6 c_x^6}{\partial x_2} - \frac{\partial(a_1 c_2)\, a_x^6 c_x^6}{\partial x_3}
+= -(a_1 a_2 c_3)\, a_x^5 c_x^6 - (c_1 a_2 c_3)\, a_x^6 c_x^5.
+\]
+In dem Ausdruck rechts ist aber jedes Glied Null, da die Determinanten $(a_1 a_2 c_3)$, $(c_1 a_2 c_3)$ gleiche Zeilen enthalten.}. Der Minor $A_{ik}$ ist eine Determinante von $(n-1)$ Colonnen und $(n-1)$ Zeilen, und in jedem Elemente $\dfrac{\partial y_l}{\partial x_m}$ derselben tritt im All-
+%CONT>>
+
+
+% ===== pdf idx 142, printed 128.0 =====
+% !PRINTED 128
+\weberpage{128}
+
+%<<CONT
+gemeinen noch $x_i$ auf. Wir differenziren also die Determinante $A_{ki}$ nach jedem ihrer Elemente und multipliciren jedesmal mit dem Differentialquotienten dieses Elementes nach $x_i$. Das Resultat ist dargestellt durch
+\[
+\frac{\partial A_{ki}}{\partial x_i} = \sum_{l,m} \frac{\partial A_{ki}}{\partial\left(\dfrac{\partial y_l}{\partial x_m}\right)} \cdot \frac{\partial^2 y_l}{\partial x_i \partial x_m} = \sum_{l,m} A_{\substack{k\,l\\ i\,m}} \cdot \frac{\partial^2 y_l}{\partial x_i \partial x_m}.
+\]
+Geben wir nun dem Index $i$ alle Werthe von 1 bis $n$ und addiren die so erhaltenen Relationen, so gelangen wir zur Gleichung
+\[
+\sum_{i=1}^{i=n} \frac{\partial A_{ki}}{\partial x_i} = \sum_{i,l,m} A_{\substack{k\,l\\ i\,m}} \frac{\partial^2 y_l}{\partial x_i \partial x_m}.
+\]
+Je zwei Glieder der Summe rechts sind aber bekanntlich gleich und entgegengesetzt; denn es ist $A_{\substack{k\,l\\ i\,m}} = -A_{\substack{k\,l\\ m\,i}}$ (vgl. Nr. 49); die rechte Seite verschwindet demnach; also auch die linke Seite dieser Gleichung.
+
+121. \textit{Die Functionaldeterminante eines Systemes von Functionen $y$, zwischen denen eine Relation besteht, verschwindet.} Wenn $n$ Functionen $y_i$ von $n$ unabhängigen Variabeln $x_i$ gegeben sind, so kann man sich die Aufgabe stellen, $(n-1)$ der Grössen $x_i$ der Reihe nach zu eliminiren, etwa $x_1$ bis $x_{n-1}$, d.\,h. also eine der Functionen, etwa $y_1$, durch die übrigen $y_2 y_3 \ldots y_n$ und die Veränderliche $x_n$ darzustellen. Dabei kann der Fall eintreten, dass bei diesem Eliminationsprocess sich zugleich die $n^{\mathrm{te}}$ Veränderliche $x_n$ mit hinweghebt, d.\,h. dass sich $y_1$ darstellen lässt in Function der übrigen Grössen $y_2 y_3 \ldots y_n$ allein, etwa in der Form
+\weq{1}{y_1 = F(y_i).}
+
+
+% ===== pdf idx 143, printed 129.0 =====

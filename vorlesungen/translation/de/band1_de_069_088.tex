@@ -1,0 +1,1202 @@
+% !PRINTED 69
+\weberpage{69}
+
+Zerlegung einer Determinante nach der Methode von Laplace können wir auch diese Frage erledigen.
+
+Wir können zunächst nach Laplace die Determinante entwickeln nach den zweigliedrigen Determinanten der Matrix
+\[
+\left|\begin{array}{ccccc}
+a_{11} & a_{12} & a_{13} & \cdots & a_{1n}\\
+a_{21} & a_{22} & a_{23} & \cdots & a_{2n}
+\end{array}\right|.
+\]
+Sondern wir hier von vornherein in dieser Summe die Producte
+\[
+\left|\begin{array}{cc} a_{11} & a_{12}\\ a_{21} & a_{22}\end{array}\right|\cdot A_{\substack{12\\12}},\quad
+\sum\left|\begin{array}{cc} a_{11} & a_{1i}\\ a_{21} & a_{2i}\end{array}\right|\cdot A_{\substack{12\\1i}},\quad
+\sum\left|\begin{array}{cc} a_{12} & a_{1i}\\ a_{22} & a_{2i}\end{array}\right|\cdot A_{\substack{12\\2i}}
+\]
+ab, dann sind die übrigen nur Producte von Determinanten der Matrix
+\[
+(B)\qquad \left|\begin{array}{cccc} a_{13} & a_{14} & \cdots & a_{1n}\\ a_{23} & a_{24} & \cdots & a_{2n}\end{array}\right|
+\]
+in die entsprechenden correspondirenden Determinanten
+\[
+A_{\substack{12\\ik}} = (-1)^{\nu}\,(a_{3\varrho_1} a_{4\varrho_2} a_{5\varrho_3} \cdots a_{n\varrho_{n-2}}),
+\]
+wobei
+\[
+\begin{aligned}
+&\text{1)}\quad \nu = 1+2+i+k,\\
+&\text{2)}\quad k>i>2,\\
+&\text{3)}\quad \varrho_1<\varrho_2<\varrho_3\cdots<\varrho_{n-2},
+\end{aligned}
+\]
+und alle $\varrho_n$ von $k$ und $i$ verschieden sind.
+
+Wir haben somit als erstes Resultat:
+\weq{1}{
+\begin{aligned}
+\Delta = {}& \left|\begin{array}{cc} a_{11} & a_{12}\\ a_{21} & a_{22}\end{array}\right|\cdot A_{\substack{12\\12}}
++ \sum_{i=3}^{i=n}\left|\begin{array}{cc} a_{11} & a_{1i}\\ a_{21} & a_{2i}\end{array}\right|\cdot A_{\substack{12\\1i}}\\
+&+ \sum_{i=3}^{i=n}\left|\begin{array}{cc} a_{12} & a_{1i}\\ a_{22} & a_{2i}\end{array}\right|\cdot A_{\substack{12\\2i}}
++ \sum_{\substack{i=3\\k=4}}^{\substack{k=n\\i=n-1}}\left|\begin{array}{cc} a_{1i} & a_{1k}\\ a_{2i} & a_{2k}\end{array}\right|\cdot A_{\substack{12\\ik}},\quad k>i>2.
+\end{aligned}
+}
+
+Jeder der in der letzten Form dieser Entwicklung auftretenden Minoren zweiter Ordnung lässt sich nun aber wieder in eine Summe von Producten entwickeln, deren einer Factor eine Determinante der Matrix
+\[
+(C)\qquad \left|\begin{array}{cc}
+a_{31} & a_{32}\\
+a_{41} & a_{42}\\
+a_{51} & a_{52}\\
+\hdotsfor{2}\\
+a_{n1} & a_{n2}
+\end{array}\right|
+\]
+ist, während der andere von der entsprechenden correspondirenden
+%CONT>>
+
+
+% ===== pdf idx 84, printed 70.0 =====
+% !PRINTED 70
+\weberpage{70}
+%<<CONT
+Determinante, einem Minor vierter Ordnung von $\Delta$, gebildet wird. Diese Minoren vierter Ordnung sind also der Determinante entnommen
+\[
+A_{\substack{12\\12}} = \left|\begin{array}{cccc}
+a_{33} & a_{34} & \cdots & a_{3n}\\
+a_{43} & a_{44} & \cdots & a_{4n}\\
+a_{53} & a_{54} & \cdots & a_{5n}\\
+\hdotsfor{4}\\
+a_{n3} & a_{n4} & \cdots & a_{nn}
+\end{array}\right|;
+\]
+sie sind die sämmtlichen Unterdeterminanten zweiter Ordnung von $A_{\substack{12\\12}}$. Trägt man nun diese Entwicklungen der Minoren $A_{\substack{12\\ik}}$ in den vierten Term der Gleichung (1) ein, so erhalten wir:
+\[
+\begin{aligned}
+\Delta = {}& \left|\begin{array}{cc} a_{11} & a_{12}\\ a_{21} & a_{22}\end{array}\right|\cdot A_{\substack{12\\12}}
++ \sum_{i=3}^{i=n}\left|\begin{array}{cc} a_{11} & a_{1i}\\ a_{21} & a_{2i}\end{array}\right|\cdot A_{\substack{12\\1i}}
++ \sum_{i=3}^{i=n}\left|\begin{array}{cc} a_{12} & a_{1i}\\ a_{22} & a_{2i}\end{array}\right|\cdot A_{\substack{12\\2i}}\\
+&+ \sum \left|\begin{array}{cc} a_{1i} & a_{1k}\\ a_{2i} & a_{2k}\end{array}\right|\cdot \left|\begin{array}{cc} a_{\varrho1} & a_{\varrho2}\\ a_{\sigma1} & a_{\sigma2}\end{array}\right|\cdot A_{\substack{12\varrho\sigma\\ik12}},
+\end{aligned}
+\]
+wo
+\[
+\begin{aligned}
+&\sigma>\varrho,\\
+&k>i,
+\end{aligned}
+\]
+und $i\varrho$ einestheils, $k\sigma$ anderntheils alle Werthe von 3, resp. 4 bis $n-1$, resp. $n$ annimmt.
+
+Der letzte Term enthält die gesuchte Entwicklung. Er entsteht, indem man einmal alle Determinanten der Matrix (B), und dann alle Determinanten der Matrix (C) bildet, jedesmal also
+\[
+\binom{n-2}{2} = \frac{(n-2)(n-3)}{2}
+\]
+an der Zahl. Jede Determinante des einen Systems multiplicire man mit jeder des andern Systems und füge zum Product noch als dritten Factor jene Unterdeterminante vierter Ordnung von $\Delta$, deren Matrix entsteht, wenn man im Minor $A_{\substack{12\\12}}$ die beiden Zeilen und Colonnen streicht, denen die beiden vorhergehenden Factoren entnommen sind. Die Summe aller Producte liefert das gewünschte Resultat.
+
+64. \textit{Specielle F\"alle.} Man wird sich natürlich im Allgemeinen nicht der in 62 und 63 klargelegten Methoden bedienen, um eine Determinante zu berechnen, sondern die bereits früher gegebenen, bequemeren vorziehen. Am interessantesten sind diese Entwicklungen, sobald jene Elemente verschwinden, in welchen sich die betreffenden Zeilen und Colonnen, nach denen zu entwickeln ist, schneiden; also im
+%CONT>>
+
+
+% ===== pdf idx 85, printed 71.0 =====
+% !PRINTED 71
+\weberpage{71}
+%<<CONT
+ersten Falle, wenn $a_{11}=0$, im zweiten, wenn $a_{11}=a_{12}=a_{21}=a_{22}=0$. Diese Fälle treten in der That bei manchen Problemen der analytischen Geometrie auf. Ist $a_{11}=0$, so reducirt sich die Entwicklung in Nr. 62 (5) auf
+\[
+\Delta = -\sum a_{1i}\,a_{k1}\cdot A_{\substack{1k\\1i}},
+\]
+und im zweiten Falle, sind $a_{11}=a_{12}=a_{21}=a_{22}=0$, so wird
+\[
+\Delta = \sum \left|\begin{array}{cc} a_{1i} & a_{1k}\\ a_{2i} & a_{2k}\end{array}\right|\cdot \left|\begin{array}{cc} a_{\varrho1} & a_{\varrho2}\\ a_{\sigma1} & a_{\sigma2}\end{array}\right|\cdot A_{\substack{12\varrho\sigma\\ik12}},
+\]
+da ja die zweigliederigen Determinanten in den vorausgehenden Formen stets eine Colonne von verschwindenden Elementen besitzen.
+
+65. \textit{Beispiel} 1. Die bereits in Nr. 52 als Beispiel verwendete Determinante
+\[
+\Delta = \left|\begin{array}{cccc}
+a_{11} & a_{12} & a_{13} & x_1\\
+a_{21} & a_{22} & a_{23} & x_2\\
+a_{31} & a_{32} & a_{33} & x_3\\
+x_1 & x_2 & x_3 & 0
+\end{array}\right|
+\]
+wollen wir direct nach den Variabeln $x_1\,x_2\,x_3$, also nach den Elementen der letzten Zeile und Colonne, gleichzeitig entwickeln. Die Entwicklungsformel ist gegeben durch:
+\[
+\Delta = a_{44}\,A_{\substack{44\\44}} - \sum a_{i4}\,a_{4k}\,A_{\substack{4i\\4k}},
+\]
+oder weil hier $a_{44}=0$
+\[
+\Delta = -\sum a_{i4}\,a_{4k}\,A_{\substack{4i\\4k}},\quad i \text{ und } k<4.
+\]
+Wir erhalten sonach, wenn wir die Summe entsprechend $x_i^2$ und $x_i x_k$ in zwei Theile trennen,
+\[
+\Delta = -\sum_{i=3}^{i=1} a_{i4}\,a_{4i}\,A_{\substack{4i\\4i}} - \sum_{i\gtrless k}^{\substack{i=1\,2\,3\\k=1\,2\,3}} a_{i4}\,a_{4k}\,A_{\substack{4k\\4i}}.
+\]
+Hierin ist:
+\[
+A_{\substack{41\\41}} = (-1)^{\nu_1}(a_{22}a_{33}),\quad \nu_1=(41)+(41)+2(4+1)=12,
+\]
+\[
+A_{\substack{42\\42}} = (-1)^{\nu_2}(a_{11}a_{33}),\quad \nu_2=(42)+(42)+2(4+2)=14,
+\]
+\[
+A_{\substack{43\\43}} = (-1)^{\nu_3}(a_{11}a_{22}),\quad \nu_3=(43)+(43)+2(4+3)=16,
+\]
+\[
+A_{\substack{41\\42}} = (-1)^{\nu_4}(a_{21}a_{33}-a_{31}a_{23}),\quad \nu_4=13,\qquad
+A_{\substack{42\\43}} = (-1)^{\nu_7}(a_{11}a_{32}-a_{31}a_{12}),\quad \nu_7=15,
+\]
+\[
+A_{\substack{41\\43}} = (1-)^{\nu_5}(a_{21}a_{32}-a_{31}a_{22}),\quad \nu_5=14,
+\] % [sic] printed "(1-)" where "(-1)" is meant
+\[
+A_{\substack{43\\41}} = (-1)^{\nu_8}(a_{12}a_{23}-a_{13}a_{22}),\quad \nu_8=14,
+\]
+\[
+A_{\substack{42\\41}} = (-1)^{\nu_6}(a_{12}a_{33}-a_{13}a_{32}),\quad \nu_6=13,\qquad
+A_{\substack{43\\42}} = (-1)^{\nu_9}(a_{11}a_{23}-a_{13}a_{21}),\quad \nu_9=15,
+\]
+also
+%CONT>>
+
+
+% ===== pdf idx 86, printed 72.0 =====
+% !PRINTED 72
+\weberpage{72}
+%<<CONT
+\[
+\begin{aligned}
+\Delta ={}& -\{x_1^{2}(a_{22}a_{33}-a_{23}a_{32})+x_2^{2}(a_{11}a_{33}-a_{31}a_{13})+x_3^{2}(a_{11}a_{22}-a_{21}a_{12})\}\\
+&+\{x_1x_2(a_{21}a_{33}-a_{31}a_{23}+a_{12}a_{33}-a_{32}a_{13})-x_1x_3(a_{21}a_{32}-a_{31}a_{22}\\
+&\quad +a_{12}a_{23}-a_{22}a_{13})+x_2x_3(a_{11}a_{32}-a_{31}a_{12}+a_{11}a_{23}-a_{21}a_{13})\}.
+\end{aligned}
+\]
+66. \textit{Beispiel} 2. Für die Determinante
+\[
+\Delta = \left|\begin{array}{ccccc}
+a_1 & a_2 & a_3 & x_1 & y_1\\
+b_1 & b_2 & b_3 & x_2 & y_2\\
+c_1 & c_2 & c_3 & x_3 & y_3\\
+x_1 & x_2 & x_3 & 0 & 0\\
+y_1 & y_2 & y_3 & 0 & 0
+\end{array}\right|
+\]
+liefert die Entwicklung
+\[
+\Delta = \sum \left|\begin{array}{cc} a_{4i} & a_{4k}\\ a_{5i} & a_{5k}\end{array}\right|\cdot \left|\begin{array}{cc} a_{\varrho4} & a_{\varrho5}\\ a_{\sigma4} & a_{\sigma5}\end{array}\right|\cdot A_{\substack{45\varrho\sigma\\ik45}},\quad \left\{\begin{array}{l}\varrho<\sigma<4\\ i<k<4\end{array}\right.
+\]
+folgenden Werth:
+\[
+\begin{aligned}
+\Delta = {}& (-1)^{\nu_1}\left|\begin{array}{cc} x_1 & y_1\\ x_2 & y_2\end{array}\right|^2 c_3
++ (-1)^{\nu_2}\left|\begin{array}{cc} x_1 & y_1\\ x_3 & y_3\end{array}\right|^2 b_2
++ (-1)^{\nu_3}\left|\begin{array}{cc} x_2 & y_2\\ x_3 & y_3\end{array}\right|^2 a_1\\
+&+ \left|\begin{array}{cc} x_1 & y_2\\ x_2 & y_2\end{array}\right|\left\{(-1)^{\nu_4}\left|\begin{array}{cc} x_1 & y_2\\ x_3 & y_3\end{array}\right| b_3 + (-1)^{\nu_5}\left|\begin{array}{cc} x_2 & y_2\\ x_3 & y_3\end{array}\right| a_3\right\}\\
+&+ \left|\begin{array}{cc} x_1 & y_1\\ x_3 & y_3\end{array}\right|\left\{(-1)^{\nu_6}\left|\begin{array}{cc} x_1 & y_1\\ x_2 & y_2\end{array}\right| c_2 + (-1)^{\nu_7}\left|\begin{array}{cc} x_2 & y_2\\ x_3 & y_3\end{array}\right| a_2\right\}\\
+&+ \left|\begin{array}{cc} x_2 & y_2\\ x_3 & y_3\end{array}\right|\left\{(-1)^{\nu_8}\left|\begin{array}{cc} x_1 & y_1\\ x_2 & y_2\end{array}\right| c_1 + (-1)^{\nu_9}\left|\begin{array}{cc} x_1 & y_1\\ x_3 & y_3\end{array}\right| b_1\right\};
+\end{aligned}
+\]
+\[
+\nu_1=(4512)+(1245)+24=4+0+24=28,\quad \nu_2=30,\quad \nu_3=32
+\]
+\[
+\nu_4=(4513)+(1245)+25=4+0+25=29,\quad \nu_5=30
+\]
+\[
+\nu_6=(4512)+(1345)+25=4+0+25=29,\quad \nu_7=31
+\]
+\[
+\nu_8=(4512)+(2345)+26=4+0+26=30,\quad \nu_9=31,
+\]
+\[
+\Delta = c_3(x_1y_2)^2 + b_2(x_1y_3)^2 + a_1(x_2y_3)^2 - (b_3+c_2)(x_1y_2)(x_1y_3)
++ (a_3+c_1)(x_1y_2)(x_2y_3) - (a_2+b_1)(x_2y_3)(x_1y_3).
+\]
+
+67. \textit{Begriff der R\"anderung einer Determinante.} Die in Beispiel 1 und 2 aufgestellten Determinanten bezeichnet man als \textit{geränderte} Determinanten. Die Ränderung besteht darin, dass man eine Matrix von $n^2$ Elementen durch eine Zeile und Colonne von $n$ Elementen erweitert und in den Schnittpunkt der beiden Reihen Null setzt. Dabei ist es nicht nothwendig, dass, wie in den beiden Beispielen, die zugefügte Zeile und Colonne dieselben Elemente enthalten. Die Ränderung kann wie in Beispiel (2) mehr als einmal vollzogen werden; man spricht dann von einem zwei- und dreifachen Saum der Determinante, deren
+%CONT>>
+
+
+% ===== pdf idx 87, printed 73.0 =====
+% !PRINTED 73
+\weberpage{73}
+%<<CONT
+sämmtliche Elemente in den Schnittpunkten der Saumreihen Null sind.
+Die Determinante in Beispiel 1 ist also entstanden durch Ränderung
+der Determinante
+\[
+D = \begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{vmatrix}
+\]
+mit $x_1\ x_2\ x_3$. Ebenso ist die Determinante in Beispiel 2 durch
+Ränderung der nämlichen Determinante $D$ mit $x_1\ x_2\ x_3$, $y_1\ y_2\ y_3$
+entstanden.
+
+\begin{center}
+\textbf{§ 6. Multiplication von Determinanten.}
+\end{center}
+
+68. \textit{Darstellung des Gedankenganges.} Bereits in Nr. 60 wurde ein
+Fall besprochen, in welchem eine $n$-gliederige Determinante $\Delta$ in ein
+einziges Product zweier Determinanten von $p^2$, bezw. $(n-p)^2$ Elementen
+zerfiel. Die Bedingung war, dass sämmtliche Elemente, in denen sich $p$
+Colonnen und $(n-p)$ Zeilen schneiden, verschwinden mussten. Man sieht
+leicht, dass umgekehrt das Product zweier Determinanten vom $r^{\text{ten}}$
+und $s^{\text{ten}}$ Grade immer durch eine einzige Determinante
+$(r+s)^{\text{ten}}$ Grades sich darstellen lässt, indem man etwa in der
+Matrix der ersten Determinante noch $s$ Zeilen mit verschwindenden
+Elementen an die $r^{\text{te}}$ Zeile anfügt, dagegen die Matrix der
+zweiten Determinante durch $r$ an die erste angesetzte Zeile mit
+Elementen, welche beliebig gewählt werden können, erweitert, und die
+beiden so erhaltenen Matrices von $r+s$ Zeilen und $r$ bezw. $s$ Colonnen
+zu einer einzigen Matrix mit $r+s$ Colonnen und $r+s$ Zeilen verbindet.
+Dabei kann $r\;\begin{smallmatrix}\geqq\\<\end{smallmatrix}\;s$ sein; % ?? uncertain: stacked relation symbol (greater-or-equal over less-than), reconstructed as a smallmatrix stack
+ist speciell $r=1$, also $\Delta = a_{11}$, so haben wir den bereits in Nr. 30
+Beispiel 5 erwähnten Fall vor uns: wir erweitern die Matrix der
+Determinante mit den $s^2$ Elementen um eine Colonne von $s$ Elementen
+Null und um eine Zeile von $s$ beliebigen Elementen. An die Stelle, wo
+sich Colonne und Zeile schneiden, tritt das eine Element $a_{11}$ der
+ersten Determinante $\Delta$. Ist $r=s=n$, dann sind die Erweiterungen
+einer wie der andern Matrix selbst Determinantenmatrices, und zwar die
+eine mit $n^2$ Elementen Null, die andere mit $n^2$ beliebigen Elementen.
+
+Diese Art Determinanten zu multipliciren hat aber das eine Missliche an
+sich, dass das Product eine Determinante höheren Grades ist, als die
+beiden Determinanten der Factoren, und es entsteht die Frage, ob es
+nicht gelingt, sie auf einen niedrigeren Grad zu reduciren. In der That
+zeigt sich, dass es ganz allgemein möglich ist, die Determinante des
+Productes bis auf den Grad jener Determinante zu redu-
+%CONT>>
+
+
+% ===== pdf idx 88, printed 74.0 =====
+% !PRINTED 74
+\weberpage{74}
+%<<CONT
+ciren, welche die höhere unter den beiden Factoren ist. Zum Beweise
+setzen wir zunächst voraus $r=s=n$, d. h. dass beide Determinanten von
+gleichem Grade sind, was immer erlaubt ist, da ja nach Beispiel 5 Nr. 30
+die Matrix jeder Determinante zur Matrix einer Determinante beliebig
+hohen Grades sich erweitern lässt, ohne dass der Werth der Determinante
+sich ändert.
+
+69. \textit{Aufstellung der Matrix der Productdeterminante.} Sei also
+gegeben:
+\[
+\Delta = \begin{vmatrix}
+a_{11} & a_{12} & a_{13} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & \dots & a_{2n} \\
+a_{31} & \cdot & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{n1} & a_{n2} & a_{n3} & \dots & a_{nn}
+\end{vmatrix},
+\quad
+D = \begin{vmatrix}
+b_{11} & b_{12} & b_{13} & \dots & b_{1n} \\
+b_{21} & b_{22} & \dots & \dots & b_{2n} \\
+b_{31} & \cdot & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+b_{n1} & b_{n2} & \dots & \dots & b_{nn}
+\end{vmatrix}.
+\]
+Wir transponiren zunächst die Determinante $\Delta$ und erweitern die
+Matrix von $\Delta$ um $n$ Horizontalreihen von $n^2$ Elementen Null,
+die wir an die letzte Zeile ansetzen. Sodann wählen wir die
+Determinante der $n^2$ willkürlichen Elemente, wodurch die Matrix von
+$D$ erweitert werden soll, so dass die Diagonalglieder durchgehends
+$-1$, alle übrigen null sein sollen. Die beiden so erhaltenen Matrices
+von $2n$ Zeilen und je $n$ Colonnen vereinigen wir zu einer einzigen
+\[
+J = \begin{vmatrix}
+a_{11} & a_{21} & a_{31} & a_{41} & \dots & a_{n1} & -1 & 0 & 0 & 0 & \dots & 0 \\
+a_{12} & a_{22} & a_{32} & \dots & \dots & a_{n2} & 0 & -1 & 0 & \dots & \dots & 0 \\
+a_{13} & a_{23} & \dots & \dots & \dots & \dots & 0 & 0 & -1 & \dots & \dots & 0 \\
+\vdots & & & & & & & & \vdots & & & \\
+a_{1n} & a_{2n} & \dots & \dots & \dots & a_{nn} & 0 & 0 & 0 & \dots & \dots & -1 \\
+0 & 0 & 0 & 0 & \dots & 0 & b_{11} & b_{12} & b_{13} & \dots & \dots & b_{1n} \\
+0 & 0 & 0 & \dots & \dots & 0 & b_{21} & b_{22} & b_{23} & \dots & \dots & b_{2n} \\
+0 & 0 & \dots & \dots & \dots & 0 & b_{31} & b_{32} & \dots & \dots & \dots & b_{3n} \\
+\vdots & & & & & & \vdots & & & & & \\
+0 & 0 & 0 & \dots & \dots & 0 & b_{n1} & b_{n2} & \dots & \dots & \dots & b_{nn}
+\end{vmatrix}.
+\]
+Die Determinante $J$ ist also nach dem Satze von Laplace gleich dem
+Producte $\Delta \cdot D$.
+
+70. \textit{Reduction der Productdeterminante $J$.} Um sie nun auf eine
+$n$-gliederige zu reduciren, addiren wir:
+\begin{enumerate}
+\item[1)] die mit $b_{11}, b_{12}, b_{13} \dots b_{1n}$ bezw.
+multiplicirte erste, zweite, dritte $\dots$ $n^{\text{te}}$ Zeile von
+$J$ zur $(n+1)^{\text{ten}}$ Zeile,
+\item[2)] die mit $b_{21}, b_{22}, b_{23} \dots b_{2n}$ bezw.
+multiplicirte erste, zweite, dritte $\dots$ $n^{\text{te}}$ Zeile zur
+$(n+2)^{\text{ten}}$ Zeile,
+\end{enumerate}
+%CONT>>
+
+
+% ===== pdf idx 89, printed 75.0 =====
+% !PRINTED 75
+\weberpage{75}
+%<<CONT
+\begin{enumerate}
+\item[3)] die mit $b_{31}, b_{32}, b_{33} \dots b_{3n}$ bezw.
+multiplicirte erste, zweite, dritte $\dots$ $n^{\text{te}}$ Zeile zur
+$(n+3)^{\text{ten}}$ Zeile u. s. w.,
+\item[] endlich: die mit $b_{n,1}, b_{n,2} \dots b_{nn}$ bezw.
+multiplicirte $n^{\text{te}}$ Zeile zur $2n^{\text{ten}}$ Zeile.
+\end{enumerate}
+Dadurch erhalten wir die Matrix: $J=$
+\[
+\begin{vmatrix}
+a_{11}, & a_{21}, & \dots, & a_{n,1}, & -1 & 0 & \dots & 0 \\
+a_{12}, & a_{22}, & \dots, & a_{n,2}, & 0 & -1 & \dots & 0 \\
+a_{13}, & a_{23}, & \dots, & a_{n,3}, & 0 & 0 & \dots & 0 \\
+\vdots & \vdots & & \vdots & & & & \\
+a_{1n}, & a_{2n}, & \dots, & a_{n,n}, & 0 & 0 & \dots & -1 \\
+a_{11}b_{11}+a_{12}b_{12}\cdots a_{1n}b_{1n}, & a_{21}b_{11}+a_{22}b_{12}\cdots a_{2n}b_{1n}, & \dots, & a_{n1}b_{11}+a_{n2}b_{12}\cdots a_{nn}b_{1n}, & 0 & 0 & \dots & 0 \\
+a_{11}b_{21}+a_{12}b_{22}\cdots a_{1n}b_{2n}, & a_{21}b_{21}+a_{22}b_{22}\cdots a_{2n}b_{2n}, & \dots, & a_{n1}b_{21}+a_{n2}b_{22}\cdots a_{nn}b_{2n}, & 0 & 0 & \dots & 0 \\
+a_{11}b_{31}+a_{12}b_{32}\cdots a_{1n}b_{3n}, & a_{21}b_{31}+a_{22}b_{32}\cdots a_{2n}b_{3n}, & \dots, & a_{n1}b_{31}+a_{n2}b_{32}\cdots a_{nn}b_{3n}, & 0 & 0 & \dots & 0 \\
+a_{11}b_{41}+a_{12}b_{42}\cdots a_{1n}b_{4n}, & \cdot & \cdot & \cdot & & & & \cdot \\
+\vdots & & & & & & & \\
+a_{11}b_{n1}+a_{12}b_{n2}\cdots a_{1n}b_{nn}, & a_{21}b_{n1}+\cdots a_{2n}b_{nn}, & \dots, & a_{n1}b_{n1}+\cdots a_{nn}b_{nn}, & 0 & 0 & \dots & 0
+\end{vmatrix}
+\] % ?? uncertain: in the printed row "a_{n1}b_{31}+a_{n2}b_{32}\cdots a_{nn}b_{3n}," the final subscript is smudged in the scan and reconstructed by the row's evident pattern
+Die erste Determinante reducirt sich, wie wir in Beispiel 4 Nr. 30
+gezeigt haben, auf das Diagonalglied $(-1)^n$; der Exponent $\nu$ aber
+hat den Werth
+\[
+\begin{aligned}
+\nu &= (1+2+3\dots+n)+[(n+1)+(n+2)+\dots+2n] \\
+&= n(n+1)+n^2 = 2n^2+n.
+\end{aligned}
+\]
+
+
+% ===== pdf idx 90, printed 76.0 =====
+% !PRINTED 76
+\weberpage{76}
+Es wird somit
+\[
+(-1)^{\nu}
+\begin{vmatrix}
+-1 & 0 & 0 & \dots & 0 \\
+0 & -1 & 0 & \dots & 0 \\
+0 & 0 & -1 & \dots & 0 \\
+\vdots & & & & \vdots \\
+0 & 0 & 0 & \dots & -1
+\end{vmatrix}
+= (-1)^{2n^2+n} \cdot (-1)^n = (-1)^{2(n^2+n)} = +1.
+\]
+Daher ist das Product der beiden Determinanten:
+\[
+J = \Delta \cdot D =
+\begin{vmatrix}
+a_{11}b_{11}+a_{12}b_{12}+\dots a_{1n}b_{1n}, & a_{21}b_{11}\dots+a_{2n}b_{1n}, & \dots, & a_{n1}b_{11}+\dots+a_{nn}b_{1n} \\
+a_{11}b_{21}+a_{12}b_{22}+\dots a_{1n}b_{2n}, & a_{21}b_{21}\dots+a_{2n}b_{2n}, & \dots, & a_{n1}b_{21}+\dots a_{nn}b_{2n} \\
+a_{11}b_{31}+a_{12}b_{32}+\dots a_{1n}b_{3n}, & \cdot & \cdot & \cdot \\
+\vdots & & & \\
+a_{11}b_{n1}+a_{12}b_{n2}+\dots a_{1n}b_{nn}, & a_{21}b_{n1}\dots+a_{2n}b_{nn}, & \dots, & a_{n1}b_{n1}+\dots a_{nn}b_{nn}
+\end{vmatrix}
+\]
+
+71. \textit{Beispiel 1.} Es seien gegeben die beiden Determinanten
+\[
+\Delta = \begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{vmatrix}, \quad
+D = \begin{vmatrix} \alpha_1 & \beta_1 & \gamma_1 \\ \alpha_2 & \beta_2 & \gamma_2 \\ \alpha_3 & \beta_3 & \gamma_3 \end{vmatrix},
+\]
+alsdann ist das Product der beiden Determinanten
+\[
+J = \Delta \cdot D =
+\begin{vmatrix}
+a_1\alpha_1+b_1\beta_1+c_1\gamma_1, & a_2\alpha_1+b_2\beta_1+c_2\gamma_1, & a_3\alpha_1+b_3\beta_1+c_3\gamma_1 \\
+a_1\alpha_2+b_1\beta_2+c_1\gamma_2, & a_2\alpha_2+b_2\beta_2+c_2\gamma_2, & a_3\alpha_2+b_3\beta_2+c_3\gamma_2 \\
+a_1\alpha_3+b_1\beta_3+c_1\gamma_3, & a_2\alpha_3+b_2\beta_3+c_2\gamma_3, & a_3\alpha_3+b_3\beta_3+c_3\gamma_3
+\end{vmatrix}.
+\]
+
+\textit{Beispiel 2.} Es seien gegeben die beiden Determinanten
+\[
+\Delta = \begin{vmatrix} x_1 & x_2 & x_3 & x_4 \\ y_1 & y_2 & y_3 & y_4 \\ z_1 & z_2 & z_3 & z_4 \\ u_1 & u_2 & u_3 & u_4 \end{vmatrix}
+\quad \text{und} \quad
+D = \begin{vmatrix} r_1 & r_2 \\ s_1 & s_2 \end{vmatrix}.
+\]
+Um das Product zu bilden, erweitern wir zuerst die Matrix von $D$, so
+dass
+\[
+D = D' = \begin{vmatrix} r_1 & r_2 & 0 & 0 \\ s_1 & s_2 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{vmatrix},
+\]
+sodann erhalten wir
+\[
+J = D \cdot \Delta =
+\begin{vmatrix}
+x_1 r_1 + x_2 r_2, & y_1 r_1 + y_2 r_2, & z_1 r_1 + z_2 r_2, & u_1 r_1 + u_2 r_2 \\
+x_1 s_1 + x_2 s_2, & y_1 s_1 + y_2 s_2, & z_1 s_1 + z_2 s_2, & u_1 s_1 + u_2 s_2 \\
+x_3, & y_3, & z_3, & u_3 \\
+x_4, & y_4, & z_4, & u_4
+\end{vmatrix}.
+\]
+
+
+% ===== pdf idx 91, printed 77.0 =====
+% !PRINTED 77
+\weberpage{77}
+
+72. \textit{Zweite Art, die Productdeterminante zu bilden.} Wir haben in diesen beiden Beispielen nach dem Muster der reducirten Determinante $J$ die Determinante des Productes auf eine erste Art in der Weise hergestellt, dass wir die Elemente der ersten \textit{Zeile} von $\varDelta$ der Reihe nach multiplicirten mit den entsprechenden Elementen aller $n$ \textit{Zeilen} von $D$; das lieferte die $n$ Elemente der ersten \textit{Colonne} des Productes $J$; die $n$ Elemente der zweiten Colonne in $J$ entstanden durch Multiplication der zweiten Zeile in $\varDelta$, mit den entsprechenden aller $n$ Zeilen von $D$, u.\,s.\,f., endlich die Elemente der $k^{\mathrm{ten}}$ Colonne, durch Multiplication der Elemente in der $k^{\mathrm{ten}}$ Zeile von $\varDelta$, mit den entsprechenden aller $n$ Zeilen von $D$. Wir hätten aber auch die Determinante $J$ auf eine \textit{zweite} Art erhalten, wenn wir die Elemente der ersten Colonne von $\varDelta$ mit den entsprechenden aller Colonnen von $D$ multipliciren; dadurch entstehen die Elemente der ersten \textit{Zeile} von $J$; ihre zweite Zeile entsteht dann durch Multiplication der Elemente der zweiten Colonne von $\varDelta$ mit den entsprechenden aller Colonnen von $D$ u.\,s.\,w.
+
+Die Berechtigung dazu erhalten wir unmittelbar durch das Gesetz, dass die Transposition die beiden Determinanten $D$ und $\varDelta$ nicht ändert; durch Transposition ordnen sich aber die Elemente einer bestimmten Colonne in eine Zeile, so dass die zweite Methode nur die auf die transponirten Determinanten angewendete erste ist.
+
+73. \textit{Anmerkung 1. Symmetrische Determinanten.} Bilden wir ähnlich das Quadrat einer Determinante vierten Grades, etwa indem wir Colonnen mit Colonnen multipliciren, so erhalten wir:
+
+\[
+\varDelta^2 =
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & a_{14}\\
+a_{21} & a_{22} & a_{23} & a_{24}\\
+a_{31} & a_{32} & a_{33} & a_{34}\\
+a_{41} & a_{42} & a_{43} & a_{44}
+\end{vmatrix}^{2}
+=
+\begin{vmatrix}
+\sum a_{i1}^{2}, & \sum a_{i1}a_{i2}, & \sum a_{i1}a_{i3}, & \sum a_{i1}a_{i4}\\
+\sum a_{i2}a_{i1}, & \sum a_{i2}^{2}, & \sum a_{i2}a_{i3}, & \sum a_{i2}a_{i4}\\
+\sum a_{i3}a_{i1}, & \sum a_{i3}a_{i2}, & \sum a_{i3}^{2}, & \sum a_{i3}a_{i4}\\
+\sum a_{i4}a_{i1}, & \sum a_{i4}a_{i2}, & \sum a_{i4}a_{i3}, & \sum a_{i4}^{2}
+\end{vmatrix}.
+\]
+
+Die so erhaltene Matrix hat die Eigenschaft, dass je zwei Elemente, welche zur Hauptdiagonale symmetrisch liegen, einander gleich sind.
+
+
+% ===== pdf idx 92, printed 78.0 =====
+% !PRINTED 78
+\weberpage{78}
+
+Jede Determinante, in deren Matrix also
+
+\[
+b_{ik} = b_{ki},
+\]
+
+heisst symmetrische Determinante, und das Beispiel lehrt: \glqq{}\textit{Das Quadrat einer Determinante ist eine symmetrische Determinante.}\grqq{} Ist $b_{ik} = -b_{ki}$, also $b_{ii}=0$, so nennt man die Determinante schiefsymmetrisch oder hemisymmetrisch. Es existiren über diese und ähnliche specielle Fälle von Determinanten zahlreiche Sätze, die sich hauptsächlich auf die Auswerthung derselben beziehen; vgl. \gesperrt{Salmon}: Vorlesungen über die Algebra der linearen Transformationen, fünfte Vorlesung; \gesperrt{Mansion}, Elemente der Determinantentheorie, Seite 10, 23, 26, 31, 34, 38; \gesperrt{Günther}, Determinanten Capitel III. Hier sei nur einer Eigenschaft symmetrischer Determinanten Erwähnung gethan, die in den erwähnten Werken nicht besprochen ist.
+
+74. \textit{Anmerkung 2. Lineare Relationen zwischen den Minoren von symmetrischen Determinanten.} Wir haben in Nr. 56 gesehen, wie es immer gelingt, beliebige Relationen zwischen Minoren einer Determinante herzustellen, und dies auch an drei Beispielen dargethan. So ist die in Beispiel 2 erhaltene Relation:
+
+\[
+(ab)_{12}(ab)_{14} - (ab)_{13}(ab)_{24} + (ab)_{14}(ab)_{23} = 0
+\]
+
+eine Beziehung der vier Minoren zweiter Ordnung, gebildet aus den zwei Zeilen einer Determinante:
+
+\[
+\varDelta =
+\begin{vmatrix}
+a_1 & a_2 & a_3 & a_4\\
+b_1 & b_2 & b_3 & b_4\\
+u & v & w & m\\
+x & y & z & n
+\end{vmatrix}.
+\]
+
+Während aber die Relationen, zu welchen die Minoren beliebiger Determinanten Veranlassung geben, immer von höherem als vom ersten Grade sind in den Unterdeterminanten, giebt es, wie sich leicht finden lässt (vgl. \gesperrt{Kronecker}, Monatsber. der Berl. Akad. 1882), bei \textit{symmetrischen} Determinanten auch \textit{lineare} Relationen zwischen Minoren. Wir wollen dies nur an einem einfachen Falle zeigen. Sei die symmetrische Determinante:
+
+\[
+\varDelta =
+\begin{vmatrix}
+x & a & b & c\\
+a & y & o & l\\
+b & o & z & m\\
+c & l & m & u
+\end{vmatrix};
+\]
+%CONT>>
+
+
+% ===== pdf idx 93, printed 79.0 =====
+% !PRINTED 79
+\weberpage{79}
+
+%<<CONT
+greifen wir irgend einen Minor zweiter Ordnung aus derselben heraus, der kein Diagonalglied enthält, etwa
+
+\[
+\begin{vmatrix} b & c\\ o & l\end{vmatrix},
+\]
+
+so existiren in doppelter Weise noch zwei andere Minoren, deren jeder ein und nur ein Elementenpaar desselben enthält, nämlich
+
+\[
+\begin{vmatrix} a & b\\ l & m\end{vmatrix} \text{ und } \begin{vmatrix} o & a\\ m & c\end{vmatrix}.
+\]
+
+Die Summe aller drei Determinanten giebt eine der erwähnten Relationen, nämlich:
+
+\[
+\begin{vmatrix} b & c\\ o & l\end{vmatrix} + \begin{vmatrix} a & b\\ l & m\end{vmatrix} + \begin{vmatrix} o & a\\ m & c\end{vmatrix} = 0.
+\]
+
+75. \textit{Multiplication von Matrices, welche keine Determinanten darstellen; Gedankengang.} Wenn man in der Weise, wie es der Productsatz (Nr. 71 erste Art) für zwei Matrices von je $n^2$ Elementen vorschreibt, aus den beiden Matrices
+
+\[
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & \ldots & a_{1n}\\
+a_{21} & a_{22} & . & . & a_{2n}\\
+a_{31} & . & . & . & a_{3n}\\
+. & . & . & . & .\\
+a_{\nu 1} & a_{\nu 2} & . & . & a_{\nu n}
+\end{vmatrix}
+\text{ und }
+\begin{vmatrix}
+b_{11} & b_{12} & b_{13} & \ldots & b_{1n}\\
+b_{21} & b_{22} & . & . & b_{2n}\\
+b_{31} & . & . & . & .\\
+. & . & . & . & .\\
+b_{\nu 1} & . & . & . & b_{\nu n}
+\end{vmatrix},\ \nu \gtrless n,
+\]
+
+eine neue bildet, so unterscheiden wir die beiden Fälle, dass die dadurch repräsentirte Determinante von $\nu^2$ Elementen entweder identisch Null oder von Null verschieden ist. Wir werden zunächst den Fall besprechen, in welchem dieselbe \textit{nicht} verschwindet. Zu dem Zwecke bilden wir zuerst
+%CONT>>
+
+
+% ===== pdf idx 94, printed 80.0 =====
+% !PRINTED 80
+\weberpage{80}
+
+%<<CONT
+nach der in Nr. 68 angegebenen Weise aus beiden Matrices, indem wir die erste vorher transponiren, eine Determinante $R$ von $(n+\nu)^2$ Elementen und reduciren sie nach der Methode in Nr. 70. In zweiter Linie entwickeln wir die noch nicht reducirte Determinante $R$ nach der Methode von \gesperrt{Laplace}, wodurch wir ihren Werth ausgedrückt erhalten durch eine Summe von Producten je zweier entsprechender Determinanten der beiden gegebenen Matrices. Da im Allgemeinen keine dieser Determinante $\nu^{\mathrm{ten}}$ Grades verschwindet, so ist der Werth von $R$ in der That von Null verschieden. Hierbei ist jedoch immer vorausgesetzt, dass $\nu < n$, und dass die Elemente der reducirten Productdeterminante $R$, wie wir sehen werden, gebildet sind durch Multiplication von \textit{Zeilen mit Zeilen} der beiden Matrices.
+
+76. \textit{Aufstellung der Productdeterminante $R$.} Wir setzen also voraus $\nu < n$; erweitern sodann die erste Matrix, die wir vorher in die Matrix transponiren:
+
+\[
+\begin{vmatrix}
+a_{11} & a_{21} & \ldots & a_{\nu 1}\\
+a_{12} & a_{22} & . & .\\
+a_{13} & . & . & .\\
+a_{14} & . & . & .\\
+. & . & . & .\\
+. & . & . & .\\
+a_{1n} & a_{2n} & \ldots & a_{\nu n}
+\end{vmatrix},
+\]
+
+durch $\nu$ Zeilen mit je $\nu$ verschwindenden Elementen. Die zweite Matrix der Elemente $b_{ik}$ erweitern wir durch $n$ Zeilen von je $n$ willkürlichen Elementen, die wir aber wieder so wählen, dass die Diagonalelemente den Werth $-1$ haben, alle übrigen null sind. Aus den beiden so erhaltenen Matrices bilden wir nun die Determinante
+
+\[
+R =
+\begin{vmatrix}
+a_{11} & a_{21} & a_{31} & \ldots & a_{\nu 1} & -1 & 0 & 0 & 0 & \ldots & 0\\
+a_{12} & a_{22} & \ldots & \ldots & a_{\nu 2} & 0 & -1 & 0 & \ldots & \ldots & 0\\
+a_{13} & \ldots & \ldots & \ldots & a_{\nu 3} & 0 & 0 & -1 & \ldots & \ldots & 0\\
+. & . & . & . & . & . & . & . & . & . & .\\
+a_{1n} & a_{2n} & a_{3n} & \ldots & a_{\nu n} & 0 & 0 & 0 & \ldots & \ldots & -1\\
+0 & 0 & 0 & \ldots & 0 & b_{11} & b_{12} & b_{13} & \ldots & \ldots & b_{1n}\\
+0 & 0 & \ldots & \ldots & 0 & b_{21} & b_{22} & b_{23} & \ldots & \ldots & b_{2n}\\
+0 & \ldots & \ldots & \ldots & 0 & b_{31} & b_{32} & \ldots & \ldots & \ldots & b_{3n}\\
+. & . & . & . & . & . & . & . & . & . & .\\
+. & . & . & . & . & . & . & . & . & . & .\\
+0 & 0 & 0 & \ldots & 0 & b_{\nu 1} & b_{\nu 2} & \ldots & \ldots & \ldots & b_{\nu n}
+\end{vmatrix}.
+\]
+
+77. \textit{Reduction der Determinante $R$.} Wir können nun genau wie früher die Matrix der Determinante $J$ so jetzt die der Determinante $R$ auf weniger Zeilen und Colonnen reduciren. Man addirt zu dem Zwecke wieder die mit $b_{11}, b_{12} \ldots b_{1n}$ bezw. multiplicirt gedachte erste, zweite $\ldots n^{\mathrm{te}}$ Zeile insgesammt zur $n+1^{\mathrm{ten}}$; ebenso dieselben $n$ ersten Zeilen der Reihe nach mit $b_{21}, b_{22} \ldots b_{2n}$ multiplicirt gedacht, zur $n+2^{\mathrm{ten}}$ und so weiter, endlich die mit $b_{\nu 1}, b_{\nu 2} \ldots b_{\nu n}$ multiplicirte erste bis $n^{\mathrm{te}}$ Zeile zur $n+\nu^{\mathrm{ten}}$ Zeile.
+
+Das Resultat dieser Operationen ist dann die Determinante:
+%CONT>>
+
+
+% ===== pdf idx 95, printed 81.0 =====
+% !PRINTED 81
+\weberpage{81}
+% [column spec widened array 5->6; array 4->5] a row carried more cells than the spec declared,
+% which is a fatal alignment error. The spec was widened rather than a cell
+% deleted, so no transcribed content is lost; whether Weber's grid really has
+% that many columns is a question for a pass with the scan open.
+
+{\scriptsize\setlength{\arraycolsep}{3pt}
+\[
+R=\left|\begin{array}{ccccccccc}
+a_{11} & , & a_{21} & \cdot\cdot, & a_{\nu 1} & , & -1 & 0 & 0\cdot\cdot\ 0\\
+a_{12} & , & a_{22} & \cdot\cdot, & a_{\nu 2} & , & 0 & -1 & 0\cdot\cdot\ 0\\
+a_{13} & , & a_{23} & \cdot\cdot, & a_{\nu 3} & , & 0 & 0 & -1\cdot\cdot\\
+\vdots & & \vdots & & \vdots & & \cdot & \cdot & \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+a_{1,n} & , & a_{2,n} & \cdot\cdot, & a_{\nu n} & , & 0 & 0 & 0\cdot\cdot(-1)\\
+a_{11}b_{11}+a_{12}b_{12}+\cdot\cdot a_{1n}b_{1n} & , & a_{21}b_{11}+a_{22}b_{12}\cdot\cdot+a_{2n}b_{1n} & \cdot\cdot, & a_{\nu 1}b_{11}+\cdot\cdot a_{\nu n}b_{1n} & , & 0 & 0 & 0\cdot\cdot\ 0\\
+a_{11}b_{21}+a_{12}b_{22}+\cdot\cdot a_{1n}b_{2n} & , & a_{21}b_{21}+a_{22}b_{22}\cdot\cdot\ a_{2n}b_{2n} & \cdot\cdot, & a_{\nu 1}b_{21}+\cdot\cdot a_{\nu n}b_{2n} & , & 0 & 0 & 0\cdot\cdot\ 0\\
+a_{11}b_{31}+a_{12}b_{32}\ \cdot\cdot a_{1n}b_{3n} & , & a_{21}b_{31}+\cdot\cdot\cdot\cdot+a_{2n}b_{3n} & \cdot\cdot, & a_{\nu 1}b_{31}+\cdot\cdot a_{\nu n}b_{3n} & , & 0 & 0 & \cdot\ \cdot\ \cdot\ \cdot\\
+a_{11}b_{41}\ \cdot\cdot\cdot\cdot+a_{1n}b_{4n}, & \cdot & \cdot & \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot & \cdot & \cdot & \cdot & 0 & \cdot\ \cdot\ \cdot\ 0\\
+\cdot & \cdot & \cdot & \cdot\ \cdot\ \cdot\ \cdot\ \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+a_{11}b_{\nu 1}+a_{12}b_{\nu 2}\cdot\cdot\ a_{1n}b_{\nu n} & , & a_{21}b_{11}+\cdot\cdot\cdot\cdot\ a_{2n}b_{\nu n} & \cdot\cdot, & a_{\nu 1}b_{11}+\cdot\cdot a_{\nu n}b_{\nu n} & , & 0 & 0 & 0\cdot\cdot\ 0
+\end{array}\right|.
+\]
+}
+
+Entwickelt man diese Determinante nach den letzten $n$ Colonnen, so
+zerf\"allt sie nach dem Satze von Laplace wieder in das Product zweier
+Determinanten, und zwar erh\"alt man:
+{\scriptsize\setlength{\arraycolsep}{3pt}
+\[
+R=(-1)^{\bar\nu}\cdot
+\left|\begin{array}{cccccc}
+-1 & 0 & 0\ldots & & 0\\
+& 0 & -1 & 0\ldots & 0\\
+& 0 & 0 & -1\ldots & 0\\
+& \cdot & \cdot & \cdot & \cdot & \cdot\\
+& & & & & 0\\
+& 0 & 0 & 0\ldots & -1
+\end{array}\right|
+\cdot
+\left|\begin{array}{ccccc}
+a_{11}b_{11}\cdot\cdot+a_{1n}b_{1n} & , & a_{21}b_{11}+\cdot\cdot+a_{2n}b_{1n} & \cdot\cdot, & a_{\nu 1}b_{11}+\cdot\cdot a_{\nu n}b_{1n}\\
+a_{11}b_{21}\cdot\cdot+a_{1n}b_{2n} & , & a_{21}b_{21}+\cdot\cdot+a_{2n}b_{2n} & \cdot\cdot, & a_{\nu 1}b_{21}+\cdot\cdot a_{\nu n}b_{2n}\\
+a_{11}b_{31}\ \cdot\cdot a_{1n}b_{3n} & , & a_{21}b_{31}+\cdot\cdot\cdot\cdot+a_{2n}b_{3n} & \cdot\cdot, & a_{\nu 1}b_{31}+\cdot\cdot a_{\nu n}b_{3n}\\
+a_{11}b_{41}\ \cdot\cdot\cdot\cdot+a_{1n}b_{1n}, & & \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot & &\\
+& \cdot & \cdot & \cdot & \cdot\\
+a_{11}b_{\nu 1}\cdot\cdot\ a_{1n}b_{\nu n} & , & a_{21}b_{\nu 1}\ \cdot\cdot\cdot\cdot & \cdot\cdot, & a_{\nu 1}b_{\nu 1}\ \cdot\cdot\cdot a_{\nu n}b_{\nu n}
+\end{array}\right|.
+\]
+}
+Dabei ist der Werth der Determinante mit den Diagonalgliedern $(-1)$
+gegeben durch $(-1)^n$; und anderntheils ist der Exponent $\bar\nu$ gleich der
+Summe aller ersten plus der Summe aller zweiten Indices des Diagonalgliedes
+dieser Determinante, also (vgl. Nr. 55)
+\[
+\bar\nu=[1+2+3\cdots+n]+[(\nu+1)(\nu+2)+\cdots(\nu+n)]
+\]
+\[
+=\frac{n(n+1)}{2}+n\cdot\nu+\frac{n(n+1)}{2}=n(n+1)+n\nu.
+\]
+Nun ist aber $n(n+1)$ jedenfalls eine gerade Zahl; daher k\"onnen wir setzen:
+\[
+(-1)^{\bar\nu}=(-1)^{n(n+1)+n\nu}=(-1)^{n\cdot\nu}.
+\]
+
+
+% ===== pdf idx 96, printed 82.0 =====
+% !PRINTED 82
+\weberpage{82}
+% [column spec widened array 4->7; array 4->12; array 4->6] a row carried more cells than the spec declared,
+% which is a fatal alignment error. The spec was widened rather than a cell
+% deleted, so no transcribed content is lost; whether Weber's grid really has
+% that many columns is a question for a pass with the scan open.
+
+Es wird somit
+\[
+(-1)^{\bar\nu}\cdot
+\left|\begin{array}{ccccccc}
+(-1) & 0 & 0\ \ldots & 0\\
+& 0 & (-1) & 0\ \ldots & 0\\
+& 0 & 0 & (-1)\ldots & 0\\
+& \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+& 0 & 0 & 0\ldots & (-1)
+\end{array}\right|
+=(-1)^{n\cdot\nu}\cdot(-1)^n=(-1)^{n(\nu+1)}.
+\]
+Wir erhalten also: $R=$
+{\scriptsize\setlength{\arraycolsep}{2pt}
+\[
+(-1)^{n(\nu+1)}
+\left|\begin{array}{cccccccccccc}
+a_{11}b_{11}+a_{12}b_{12}\cdot\cdot+a_{1n}b_{1n} & , & a_{21}b_{11}+\cdot\cdot+a_{2n}b_{1n} & \cdot\cdot, & a_{\nu 1}b_{11}+\cdot\cdot a_{\nu n}b_{1n}\\
+a_{11}b_{21}+a_{12}b_{22}\cdot\cdot+a_{1n}b_{2n} & , & a_{21}b_{21}+\cdot\cdot+a_{2n}b_{2n} & \cdot\cdot, & a_{\nu 1}b_{21}+\cdot\cdot a_{\nu n}b_{2n}\\
+a_{11}b_{31}+a_{12}b_{32}\cdot\cdot\ a_{1n}b_{3n} & , & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+a_{11}b_{41}+a_{12}b_{42}\cdot\cdot+a_{1n}b_{4n}, & & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+& \cdot & \cdot & \cdot & \cdot & \cdot\\
+a_{11}b_{\nu 1}+a_{12}b_{\nu 2}\cdot\cdot+a_{1n}b_{\nu n} & , & a_{21}b_{\nu 1}+\cdot\cdot & a_{2n}b_{\nu n} & \cdot\cdot, & a_{\nu 1}b_{\nu 1}+\cdot\cdot a_{\nu n}b_{\nu n}
+\end{array}\right|
+\]
+}
+
+78. \textit{Entwicklung der Determinante $R$ nach Laplace.} Wir k\"onnen
+nun aber auch die Determinante $R$, ohne sie vorher auf niedrigeren Grad zu
+reduciren, unter Anwendung der Methode von Laplace direct auf eine zweite
+Art darstellen. Entwickeln wir sie n\"amlich nach den Determinanten der $\nu$
+ersten Colonnen, so erhalten wir eine Summe von Producten je zweier
+Determinanten, deren eine aus der Matrix der $\nu$ ersten Colonnen, deren
+andere aus der Matrix der $n$ letzten Colonnen entnommen ist. Die Zahl
+dieser Producte ist gleich der Anzahl nicht verschwindender Determinanten,
+welche die Matrix der $\nu$ ersten Colonnen liefert, also gleich
+$\binom{n}{\nu}$. Wir erhalten, wenn wir die Determinanten jeder der
+beiden Matrices mit $\varDelta_\varrho^{(\nu)}$ bezw. $D_\varrho^{(n)}$ bezeichnen,
+\[
+R=\sum_{\varrho=1}^{\varrho=\binom{n}{\nu}}(-1)^\varrho\cdot\varDelta_\varrho^{(\nu)}\cdot D_\varrho^{(n)}, \tag{A}
+\]
+wobei der Factor $(-1)^\varrho$ der jeweiligen correspondirenden Determinante
+$D_\varrho^{(n)}$ entspricht. Enth\"alt $\varDelta_\varrho^{(\nu)}$ die Zeilen
+\[
+i_1,\ i_2,\ i_3\cdots i_\nu,
+\]
+ist also die Matrix dieser aus den $\nu$ ersten Colonnen entnommenen
+Determinante gegeben durch:
+\[
+\varDelta_\varrho^{(\nu)}=
+\left|\begin{array}{cccccc}
+a_{1i_1} & a_{2i_1} & a_{3i_1} & \cdots & a_{\nu i_1}\\
+a_{1i_2} & a_{2i_2} & a_{3i_2} & \cdots & a_{\nu i_2}\\
+a_{1i_2} & a_{2i_3} & a_{3i_3} & \cdots & a_{\nu i_3}\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+a_{1i_\nu} & a_{2i_\nu} & a_{3i_\nu} & \cdots & a_{\nu i_\nu}
+\end{array}\right| \tag{B}
+\]
+% [sic] dritte Zeile druckt $a_{1i_2}$ (statt $a_{1i_3}$) wie im Original
+
+
+% ===== pdf idx 97, printed 83.0 =====
+% !PRINTED 83
+\weberpage{83}
+% [column spec widened array 4->6] a row carried more cells than the spec declared,
+% which is a fatal alignment error. The spec was widened rather than a cell
+% deleted, so no transcribed content is lost; whether Weber's grid really has
+% that many columns is a question for a pass with the scan open.
+
+so ist in dem Factor $(-1)^\varrho$ der Exponent
+\[
+\varrho=(1+2\cdots\nu)+(i_1+i_2\cdots+i_\nu)
+\]
+\[
+=\frac{\nu(\nu+1)}{2}+\sum_{\varrho=1}^{\varrho=\nu}i_\varrho \tag{C}
+\]
+(vergleiche Nr. 55).
+
+79. \textit{Berechnung von $D_\varrho^{(n)}$.} Die Determinanten $D_\varrho^{(n)}$
+haben nun aber durchgehends die Eigenschaft, dass ihre $(n-\nu)$ ersten
+Zeilen:
+\[
+i_{\nu+1},\ i_{\nu+2}\cdots i_n
+\]
+nur verschwindende Elemente besitzen, abgesehen von dem in jeder Zeile
+einmal auftretenden Elemente $(-1)$, das in der Zeile $i_\varrho$ von
+einer Colonne ausgeschnitten wird, die in der urspr\"unglichen Determinante
+den Index $\nu+i_\varrho$ hat. Denkt man sich also in einer solchen
+Determinante $D_\varrho^{(n)}$ die Colonnen in der Weise vertauscht, dass
+diejenigen, in welchen sich das Element $(-1)$ befindet, die $(n-\nu)$
+ersten bilden, wobei indes die Indices der Colonnen, so weit es geht, gut
+geordnet bleiben m\"ogen, dann ist die Matrix einer solchen Determinante:
+\[
+D_\varrho^{(n)}=
+\left|\begin{array}{ccccccccc}
+-1 & 0 & 0 & \ldots & 0 & 0 & 0 & 0 & \ldots 0\\
+0 & -1 & 0 & \ldots & 0 & 0 & 0 & 0 & \ldots 0\\
+0 & 0 & -1 & \ldots & 0 & 0 & 0 & 0 & \ldots 0\\
+\vdots & \vdots & \vdots & & & & & &\\
+0 & 0 & 0 & \ldots & -1 & 0 & 0 & 0 & \ldots 0\\
+b_{1i_{\nu+1}} & b_{1i_{\nu+2}} & b_{1i_{\nu+3}} & \ldots & b_{1i_n} & b_{1i_1} & b_{1i_2} & b_{1i_2} & \ldots b_{1i_\nu}\\
+% ?? uncertain: $b_{1i_2}$ wiederholt an f\"unfter und siebter Stelle der Zeile, so gedruckt
+b_{2i_{\nu+1}} & b_{2i_{\nu+3}} & b_{2i_{\nu+3}} & \ldots & b_{2i_n} & b_{2i_1} & b_{2i_2} & \ldots & \ldots b_{2i_\nu}\\
+% ?? uncertain: $b_{2i_{\nu+3}}$ wiederholt an zweiter und dritter Stelle, so gedruckt
+\vdots & \vdots & & & & & &\\
+b_{\nu i_{\nu+1}} & b_{\nu i_{\nu+2}} & b_{\nu i_{\nu+3}} & \ldots & b_{\nu i_n} & b_{\nu i_1} & b_{\nu i_2} & \ldots & \ldots b_{\nu i_\nu}
+\end{array}\right|.
+\]
+Sie zerf\"allt nach der Entwicklung von Laplace selbst wieder in ein
+Product von zwei Determinanten, n\"amlich in das Product
+\[
+D_\varrho^{(n)}=
+\left|\begin{array}{cccccc}
+-1 & 0 & 0\ldots & 0\\
+& 0 & -1 & 0\ldots & 0\\
+& 0 & 0 & -1\ldots & 0\\
+& \cdot & \cdot & \cdot & \cdot & \cdot\\
+& 0 & 0 & 0\ldots & -1
+\end{array}\right|
+\cdot B_{\substack{1\ 2\ 3\ \ldots\ n-\nu\\i_{\nu+1},\ i_{\nu+2}\ \cdots\ i_n}}, \tag{D}
+\]
+
+
+% ===== pdf idx 98, printed 84.0 =====
+% !PRINTED 84
+\weberpage{84}
+% [column spec widened array 4->5; array 4->5; array 4->5; array 4->5] a row carried more cells than the spec declared,
+% which is a fatal alignment error. The spec was widened rather than a cell
+% deleted, so no transcribed content is lost; whether Weber's grid really has
+% that many columns is a question for a pass with the scan open.
+
+wobei die Matrix der correspondirenden Determinante
+\[
+B_{\substack{1\ 2\ 3\ \ldots\ n-\nu\\i_{\nu+1},\ i_{\nu+2}\ \cdots\ i_n}}
+=(-1)^{\bar\nu}
+\left|\begin{array}{cccc}
+b_{1i_1} & b_{1i_2} & \ldots & b_{1i_\nu}\\
+b_{2i_2} & b_{2i_2} & \ldots & b_{2i_\nu}\\
+% ?? uncertain: zweite Zeile druckt $b_{2i_2}$ zweimal statt $b_{2i_1},b_{2i_2}$, so gedruckt
+\cdot & \cdot & \cdot & \cdot\\
+b_{\nu i_1} & b_{\nu i_2} & \ldots & b_{\nu i_\nu}
+\end{array}\right|.
+\]
+Die Determinante in Gleichung (D), deren Diagonalreihe durch die $(n-\nu)$
+Elemente $(-1)$ ausgef\"ullt ist, hat den Werth
+\[
+\left|\begin{array}{ccccc}
+-1 & 0 & 0 & 0\ldots & 0\\
+0 & -1 & 0 & \ldots\ldots & 0\\
+0 & 0 & -1 & \ldots\ldots & 0\\
+\cdot & \cdot & \cdot & \cdot & \cdot\\
+0 & 0 & 0 & 0\ldots & -1
+\end{array}\right|
+=(-1)^{n-\nu}.
+\]
+Es handelt sich also nur noch, den Exponenten $\bar\nu$ des Factors
+$(-1)^{\bar\nu}$ zu ermitteln. Nach Nr. 48 \S.\,4 ist derselbe aber dargestellt
+durch:
+\[
+\bar\nu=(1\ \ 2\ \ 3\cdots\ (n-\nu))+(i_{\nu+1}\ \ i_{\nu+2}\ \ \cdots\ i_n)
+\]
+\[
++[1+2+3\cdots+(n-\nu)]+[i_{\nu+1}+i_{\nu+2}+\cdots i_n). % [sic] Klammer ungleich, so gedruckt
+\]
+Die beiden ersten Terme in dieser Summe haben den Werth Null, da in ihnen
+die Indices gut geordnet sind; also wird
+\[
+\bar\nu=[1+2+3\cdots+(n-\nu)]+[i_{\nu+1}+i_{\nu+2}\cdots+i_n]
+\]
+\[
+=\frac{(n-\nu)(n-\nu+1)}{2}+\sum_{\varrho=1}^{\varrho=n-\nu}i_{\nu+\varrho}.
+\]
+Demnach wird die Determinante $D_\varrho^{(n)}$ dargestellt durch
+\[
+D_\varrho^{(n)}=(-1)^k
+\left|\begin{array}{ccccc}
+b_{1i_1} & b_{1i_2} & \ldots & b_{1i_\nu}\\
+b_{2i_1} & b_{2i_2} & \ldots & b_{2i_\nu}\\
+\cdot & \cdot & \cdot & \cdot & \cdot\\
+b_{\nu i_1} & b_{\nu i_2} & \ldots & b_{\nu i_\nu}
+\end{array}\right|,
+\]
+wobei
+\[
+k=(n-\nu)+\frac{(n-\nu)(n-\nu+1)}{2}+\sum_{\varrho=1}^{\varrho=n-\nu}i_{\nu+\varrho}. \tag{E}
+\]
+
+80. \textit{Substitution der Werthe von $D_\varrho^{(n)}$ und $\varDelta_\varrho^{(\nu)}$ in
+die Laplace'sche Entwicklung von $R$.} Tragen wir nun diese Werthe von
+$D_\varrho^{(n)}$ und $\varDelta_\varrho^{(\nu)}$ in die Gleichung (A) ein, so
+erhalten wir:
+\[
+R=\sum{}'(-1)^\varrho\cdot(-1)^k
+\left|\begin{array}{ccccc}
+a_{1i_1} & a_{2i_1} & \ldots & a_{\nu i_1}\\
+a_{1i_2} & a_{2i_2} & \ldots & a_{\nu i_2}\\
+\vdots & \cdot & \cdot & \cdot & \cdot\\
+a_{1i_\nu} & a_{2i_\nu} & \ldots & a_{\nu i_\nu}
+\end{array}\right|
+\cdot
+\left|\begin{array}{ccccc}
+b_{1i_1} & b_{1i_2} & \ldots & b_{1i_\nu}\\
+b_{2i_2} & b_{2i_2} & \ldots & b_{2i_\nu}\\
+% ?? uncertain: $b_{2i_2}$ wiederholt statt $b_{2i_1},b_{2i_2}$, so gedruckt
+\vdots & \cdot & \cdot & \cdot & \cdot\\
+b_{\nu i_1} & b_{\nu i_2} & \ldots & b_{\nu i_\nu}
+\end{array}\right|.
+\]
+
+
+% ===== pdf idx 99, printed 85.0 =====
+% !PRINTED 85
+\weberpage{85}
+
+Es erübrigt nur noch, den Exponenten von $(-1)^{\varrho+k}$ zu vereinfachen. Wegen der Relationen $(C)$ und $(E)$ ist aber
+
+\[
+\varrho+k=\frac{\nu(\nu+1)}{2}+\sum_{\varrho=1}^{\varrho=\nu}i_\varrho+\sum_{\varrho=1}^{\varrho=n-\nu}i_{r+\varrho}+\frac{(n-\nu)(n-\nu+1)}{2}+n-\nu.
+\]
+
+Da der zweite und dritte Term rechts zusammen nichts anderes ist, als die Summe aller Indices von 1 bis $n$, so erhalten wir
+
+\[
+\begin{aligned}
+\varrho+k&=\frac{\nu(\nu+1)}{2}+\frac{n(n+1)}{2}+\frac{(n-\nu)(n-\nu+1)}{2}+n-\nu\\
+&=(\nu^2+\nu+n^2+n+n^2-2\nu n+\nu^2+n-\tfrac{1}{2})+n-\nu\\
+&=(\nu^2+n^2+n-n\cdot\nu)+n-\nu\\
+&=(\nu^2-\nu+n^2+n)+n(1-\nu).
+\end{aligned}
+\]
+
+Das erste Glied dieser Summe: $(\nu^2-\nu+n^2+n)$ ist jedenfalls eine gerade Zahl, kann also unberücksichtigt bleiben, das zweite Glied $n(1-\nu)$ gerade oder ungerade, ebenso wie $n(1+\nu)$; wir können daher $\varrho+k$ durch $n(1+\nu)$ ersetzen, so dass wir nun als Endresultat erhalten:
+
+\[
+R=(-1)^{n(\nu+1)}\sum
+\begin{vmatrix}
+a_{1i_1} & a_{2i_1} & \dots & a_{\nu i_1}\\
+a_{1i_2} & a_{2i_2} & \dots & a_{\nu i_2}\\
+\cdot & \cdot & \cdot & \cdot\\
+a_{1i_\nu} & a_{2i_\nu} & \dots & a_{\nu i_\nu}
+\end{vmatrix}
+\cdot
+\begin{vmatrix}
+b_{1i_1} & b_{1i_2} & \dots & b_{1i_\nu}\\
+b_{2i_1} & b_{2i_2} & \dots & b_{2i_\nu}\\
+\cdot & \cdot & \cdot & \cdot\\
+b_{\nu i_1} & b_{\nu i_2} & \dots & b_{\nu i_\nu}
+\end{vmatrix},
+\]
+
+oder, wenn wir noch die Matrix mit den Elementen $a_{k i_\varrho}$ transponiren
+
+\weq{F}{
+R=(-1)^{n(\nu+1)}\sum
+\begin{vmatrix}
+a_{1i_1} & a_{1i_2} & \dots & a_{1i_\nu}\\
+a_{2i_1} & a_{2i_2} & \dots & a_{2i_\nu}\\
+\cdot & \cdot & \cdot & \cdot\\
+a_{\nu i_1} & a_{\nu i_2} & \dots & a_{\nu i_\nu}
+\end{vmatrix}
+\cdot
+\begin{vmatrix}
+b_{1i_1} & b_{1i_2} & \dots & b_{1i_\nu}\\
+b_{2i_1} & b_{2i_2} & \dots & b_{2i_\nu}\\
+\cdot & \cdot & \cdot & \cdot\\
+b_{\nu i_1} & b_{\nu i_2} & \dots & b_{\nu i_\nu}
+\end{vmatrix}
+}
+
+81. \textit{Zusammenfassung der Resultate der letzten Untersuchungen.} Wir haben somit für die Determinante $R$ zwei der Form nach verschiedene Entwicklungen erhalten, die beide mit den zwei Matrices
+
+\[
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
+a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
+\cdot & \cdot & \cdot & \cdot & \cdot\\
+a_{\nu 1} & a_{\nu 2} & a_{\nu 3} & \dots & a_{\nu n}
+\end{vmatrix}
+\quad\text{und}\quad
+\begin{vmatrix}
+b_{11} & b_{12} & b_{13} & \dots & b_{1n}\\
+b_{21} & b_{22} & b_{23} & \dots & b_{2n}\\
+\cdot & \cdot & \cdot & \cdot & \cdot\\
+b_{\nu 1} & b_{\nu 2} & b_{\nu 3} & \dots & b_{\nu n}
+\end{vmatrix},
+\]
+
+wo $n>\nu$, in einer gewissen Beziehung stehen. Verbindet man nämlich die beiden Matrices einmal in der Weise, wie sie das Gesetz über
+%CONT>>
+
+
+% ===== pdf idx 100, printed 86.0 =====
+% !PRINTED 86
+\weberpage{86}
+
+%<<CONT
+Multiplication von Determinanten gebietet, so erhält man die zuerst gegebene (Nr. 77) Darstellung von $R$; multiplicirt man andrerseits je eine Determinante der ersten Matrix mit der entsprechenden, d. h. jener, die aus Colonnen mit gleichem Index gebildet ist, der andern Matrix, und summirt die so erhaltenen $\binom{n}{\nu}$ Producte, so erhält man die zweite Darstellung von $R$ (Nr. 80, $F$). In beiden Entwicklungen tritt der Factor $(-1)^{n(\nu+1)}$ auf, so dass wir also nach Division mit diesem Factor die Beziehung erhalten:
+
+\[
+\begin{vmatrix}
+a_{11}b_{11}+a_{12}b_{12}+\cdots a_{1n}b_{1n}, & a_{21}b_{11}+\cdots a_{2n}b_{1n}, & \cdots, & a_{\nu 1}b_{11}+\cdots a_{\nu n}b_{1n}\\
+a_{11}b_{21}+a_{12}b_{22}+\cdots a_{1n}b_{2n}, & a_{21}b_{21}+\cdots a_{2n}b_{2n}, & \cdots, & a_{\nu 1}b_{21}+\cdots a_{\nu n}b_{2n}\\
+a_{11}b_{31}\cdot\cdot\cdot\cdot\cdot\cdot, & a_{21}b_{31}+\cdot\cdot\cdot, & \cdots, & a_{\nu 1}b_{31}\cdot\cdot\cdot\\
+\cdot & \cdot & \cdot & \cdot\\
+a_{11}b_{\nu 1}+a_{12}b_{\nu 2}+\cdots a_{1n}b_{\nu n}, & a_{21}b_{\nu 1}\cdots a_{2n}b_{\nu n}, & \cdots, & a_{\nu 1}b_{\nu 1}+\cdots a_{\nu n}b_{\nu n}
+\end{vmatrix}
+\]
+\[
+=\sum
+\begin{vmatrix}
+a_{1i_1} & a_{2i_2} & \dots & a_{1i_\nu}\\
+a_{2i_1} & a_{2i_2} & \dots & a_{2i_\nu}\\
+\cdot & \cdot & \cdot & \cdot\\
+a_{\nu i_1} & a_{\nu i_2} & \dots & a_{\nu i_\nu}
+\end{vmatrix}
+\cdot
+\begin{vmatrix}
+b_{1i_1} & b_{1i_2} & \dots & b_{1i_\nu}\\
+b_{2i_1} & b_{2i_2} & \dots & b_{2i_\nu}\\
+\cdot & \cdot & \cdot & \cdot\\
+b_{\nu i_1} & b_{\nu i_2} & \dots & b_{\nu i_\nu}
+\end{vmatrix}
+\]
+\[
+=
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
+a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
+\cdot & \cdot & \cdot & \cdot & \cdot\\
+a_{\nu 1} & a_{\nu 2} & . & . & a_{\nu n}
+\end{vmatrix}
+\cdot
+\begin{vmatrix}
+b_{11} & b_{12} & b_{13} & \dots & b_{1n}\\
+b_{21} & b_{22} & b_{23} & \dots & b_{2n}\\
+\cdot & \cdot & \cdot & \cdot & \cdot\\
+b_{\nu 1} & b_{\nu 2} & b_{\nu 3} & \dots & b_{\nu n}
+\end{vmatrix}.
+\]
+
+Dabei hat das letzte Product, also das Product der beiden Matrices, natürlich nur symbolische Bedeutung, insofern damit die unmittelbar vorhergehende Summe von Producten je zweier entsprechender Determinanten $\nu^{\text{ten}}$ Grades der beiden Matrices ausgedrückt sein soll. So lange also $n>\nu$, liefert das Product der beiden Matrices, gebildet durch Multiplication von Zeilen mit Zeilen, eine Determinante $R$, welche im Allgemeinen nicht verschwindet.
+
+\textit{82. Besprechung des Falles, bei welchem in beiden Matrices die Zahl der Zeilen jene der Colonnen überschreitet.} Ist nun aber $n<\nu$, d. h. die Zahl der Zeilen grösser als die der Colonnen, dann führt der durch
+
+\weq{G}{
+\begin{vmatrix}
+a_{11} & a_{12} & \dots & a_{1n}\\
+a_{21} & a_{22} & \dots & a_{2n}\\
+\cdot & \cdot & \cdot & \cdot\\
+\cdot & \cdot & \cdot & \cdot\\
+a_{\nu 1} & a_{\nu 2} & \dots & a_{\nu n}
+\end{vmatrix}
+\cdot
+\begin{vmatrix}
+b_{11} & b_{12} & \dots & b_{1n}\\
+b_{21} & b_{22} & \dots & b_{2n}\\
+\cdot & \cdot & \cdot & \cdot\\
+\cdot & \cdot & \cdot & \cdot\\
+b_{\nu 1} & b_{\nu 2} & \dots & b_{\nu n}
+\end{vmatrix}
+}
+%CONT>>
+
+
+% ===== pdf idx 101, printed 87.0 =====
+% !PRINTED 87
+\weberpage{87}
+
+%<<CONT
+symbolisch angedeutete Multiplicationsprocess (wenn wir wieder die Elemente der Productdeterminante durch Multiplication von Zeilen mit Zeilen entstehen lassen) auf eine Determinante
+
+\[
+R=
+\begin{vmatrix}
+a_{11}b_{11}\cdots+a_{1n}b_{1n}, & a_{21}b_{11}\cdots+a_{2n}b_{1n}, & \cdots, & a_{\nu 1}b_{11}\cdots+a_{\nu n}b_{1n}\\
+a_{11}b_{21}\cdots+a_{1n}b_{2n}, & a_{21}b_{21}\cdots+a_{2n}b_{2n}, & \cdots, & a_{\nu 1}b_{21}\cdots+a_{\nu n}b_{2n}\\
+a_{11}b_{31}\cdots+a_{1n}b_{3n}, & \cdot & \cdot & \cdot\\
+\cdot & \cdot & \cdot & \cdot\\
+a_{11}b_{\nu 1}\cdots+a_{1n}b_{\nu n}, & a_{21}b_{\nu 1}\cdots+a_{2n}b_{\nu n}, & \cdots, & a_{\nu 1}b_{\nu 1}\cdots+a_{\nu n}b_{\nu n}
+\end{vmatrix},
+\]
+
+welche aber identisch verschwindet. Denn genau dieselbe Determinante würden wir erhalten, wenn wir vorher jede der beiden Matrices in $(G)$ durch die nöthige Zahl von Colonnen, deren sämmtliche Elemente Null sind, zu Matrices erweitern, welche Determinanten repräsentiren, und nun die beiden Determinanten in der angegebenen Weise multipliciren. Da aber hier die Factoren den Werth Null besitzen, so verschwindet auch das Product, d. h. die Determinante $R$ ist identisch Null, wenn $\nu>n$.
+
+Fassen wir also die erhaltenen Resultate zusammen, so gelangen wir zu dem Satze:
+
+\glqq Die Determinante $R$ ist gleich dem Producte zweier $n$-gliederiger Determinanten, wenn $\nu=n$; sie zerfällt in die Summe von $\binom{n}{\nu}$ Producten je zweier entsprechender $\nu$-gliederiger Determinanten, wenn $n>\nu$; sie ist endlich identisch Null, wenn $n<\nu$.\grqq{}
+
+\textit{83. Beispiel 1.}
+
+\[
+\begin{vmatrix}
+x_1 & x_2 & x_3\\
+a_1 & a_2 & a_3
+\end{vmatrix}
+\cdot
+\begin{vmatrix}
+y_1 & y_2 & y_3\\
+b_1 & b_2 & b_3
+\end{vmatrix}
+\]
+\[
+=
+\begin{vmatrix}
+x_1y_1+x_2y_2+x_3y_3, & a_1y_1+a_2y_2+a_3y_3\\
+x_1b_1+x_2b_2+x_3b_3, & a_1b_1+a_2b_2+a_3b_3
+\end{vmatrix}
+\]
+\[
+=
+\begin{vmatrix}x_1 & x_2\\ b_1 & b_2\end{vmatrix}\cdot\begin{vmatrix}y_1 & y_2\\ b_1 & b_2\end{vmatrix}
++\begin{vmatrix}x_1 & x_3\\ a_1 & a_3\end{vmatrix}\cdot\begin{vmatrix}y_1 & y_3\\ b_1 & b_3\end{vmatrix}
++\begin{vmatrix}x_2 & x_3\\ a_2 & a_3\end{vmatrix}\cdot\begin{vmatrix}y_2 & y_3\\ b_2 & b_3\end{vmatrix}.
+\]
+
+\textit{Beispiel 2.}
+
+\[
+\begin{vmatrix}u_1 & v_1\\ u_2 & v_2\\ u_3 & v_3\end{vmatrix}
+\cdot
+\begin{vmatrix}a_1 & b_1\\ a_2 & b_2\\ a_3 & b_3\end{vmatrix}
+=
+\begin{vmatrix}
+v_1a_1+v_1b_1, & u_2a_1+v_2b_1, & u_3a_1+v_3b_1\\ % [sic]
+v_1a_2+v_1b_2, & u_2a_2+v_2b_2, & u_3a_2+v_3b_2\\
+v_1a_3+v_1b_3, & u_2a_3+v_2b_3, & u_3a_3+v_3b_3
+\end{vmatrix}
+\]
+\[
+=
+\begin{vmatrix}u_1 & v_1 & 0\\ u_2 & v_2 & 0\\ u_3 & v_3 & 0\end{vmatrix}
+\cdot
+\begin{vmatrix}a_1 & b_1 & 0\\ a_2 & b_2 & 0\\ a_3 & b_3 & 0\end{vmatrix}
+=0.
+\]
+
+\textit{84. Beispiel 3.} Die Darstellung einer Determinante wie in Beispiel 1 durch eine Summe von Producten wollen wir noch verwenden,
+%CONT>>
+
+
+% ===== pdf idx 102, printed 88.0 =====
+% !PRINTED 88
+\weberpage{88}
+
+%<<CONT
+um eine Formel der analytischen Geometrie aufzustellen. Bekanntlich erfüllen die drei Richtungscosinusse einer Geraden im Raume die Relation
+
+\[
+1=\cos^2\alpha+\cos^2\beta+\cos^2\gamma,
+\]
+
+und ferner ist der Neigungswinkel dieser Geraden mit einer zweiten von den Richtungscosinussen $\cos\alpha_1$, $\cos\beta_1$, $\cos\gamma_1$ gegeben durch
+
+\[
+\cos v=\cos\alpha\cos\alpha_1+\cos\beta\cos\beta_1+\cos\gamma\cos\gamma_1.
+\]
+
+Gemäss diesen beiden Relationen kann man die Determinante
+
+\[
+\begin{vmatrix}\cos v & 1\\ 1 & \cos v\end{vmatrix}=\sin^2 v
+\]
+
+auch schreiben
+
+\[
+\begin{vmatrix}
+\cos^2\alpha+\cos^2\beta+\cos^2\gamma, & \cos\alpha\cos\alpha_1+\cos\beta\cos\beta_1+\cos\gamma+\cos\gamma_1\\
+\cos\alpha\cos\alpha_1+\cos\beta\cos\beta_1+\cos\gamma\cos\gamma_1, & \cos^2\alpha_1+\cos^2\beta_1+\cos^2\gamma_1
+\end{vmatrix}. % [sic] top-right entry prints "cos gamma + cos gamma_1" not "cos gamma cos gamma_1"
+\]
+
+Diese zerfällt aber nach Beispiel 1 in die drei Producte je zweier Determinanten, so dass man erhält
+
+\[
+\sin^2v=
+\begin{vmatrix}\cos\alpha & \cos\beta\\ \cos\alpha_1 & \cos\beta_1\end{vmatrix}^2
++\begin{vmatrix}\cos\beta & \cos\gamma\\ \cos\beta_1 & \cos\gamma_1\end{vmatrix}^2
++\begin{vmatrix}\cos\gamma & \cos\alpha\\ \cos\gamma_1 & \cos\alpha_1\end{vmatrix}^2.
+\]
+
+\begin{center}
+\S.\ 7.\\
+\gesperrt{Adjungirte Determinanten und correspondirende Matrices.}
+\end{center}
+
+\textit{85. Definition der adjungirten Determinante.} Eine Determinante von $n^2$ Elementen $a_{ik}$ besitzt auch $n^2$ Unterdeterminanten $A_{ik}$, aus welchen man, wie aus den Elementen $a_{ik}$ selbst, die Matrix einer Determinante zusammensetzen kann. Ist die Matrix der ursprünglichen Determinante
+
+\[
+\Delta=
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
+a_{21} & a_{22} & \dots & \dots & a_{2n}\\
+a_{31} & \cdot & \cdot & \cdot & \cdot\\
+\cdot & \cdot & \cdot & \cdot & \cdot\\
+a_{n1} & a_{n2} & \dots & \dots & a_{nn}
+\end{vmatrix},
+\]
+
+so ist die aus den entsprechenden Unterdeterminanten gebildete
+
+\[
+D=
+\begin{vmatrix}
+A_{11} & A_{12} & A_{13} & \dots & A_{1n}\\
+A_{21} & A_{22} & \dots & \dots & A_{2n}\\
+A_{31} & \cdot & \cdot & \cdot & \cdot\\
+\cdot & \cdot & \cdot & \cdot & \cdot\\
+A_{n1} & A_{n2} & \dots & \dots & A_{nn}
+\end{vmatrix}.
+\]
+
+Man nennt $D$ die \textit{adjungirte} Determinante zu $\Delta$. Bei der Untersuchung dieser adjungirten Determinante drängen sich zunächst zwei Fragen
+%CONT>>
+
+
+% ===== pdf idx 103, printed 89.0 =====

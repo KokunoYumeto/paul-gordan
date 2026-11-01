@@ -1,0 +1,1085 @@
+% !PRINTED 49
+\weberpage{49}
+\S.\,4. Partialdeterminanten höherer Ordnung.
+
+Nun ist aber anderntheils die Summe aller Grössen $H_{i_\varrho}$, aus denen die Grössen $H_{k_\varrho}$ gewählt sind, gerade die Determinante $A_{ik}$, und zwar der Minor zum Elemente $a_{ik}$ in der Determinante $\varDelta$. Ganz ebenso ist die Summe aller Grössen $K_{k_\varrho}$ die Determinante $A_{\substack{ir\\ks}}$, und zwar der Minor zum Elemente $a_{rs}$ in der Determinante $A_{ik}$. Wir erkennen sonach: \textit{Die Partialdeterminante $A_{\substack{ir\\ks}}$ zweiter Ordnung von $\varDelta$ ist Minor erster Ordnung von $A_{ik}$, oder allgemeiner ausgesprochen: Unterdeterminanten von Unterdeterminanten sind selbst wieder Minoren der ursprünglichen Determinante.}
+
+Es mag hierbei noch erwähnt sein, dass der Minor $A_{\substack{ir\\ks}}$ nicht nur als Unterdeterminante zum Elemente $a_{rs}$ in der Determinante $A_{ik}$ dargestellt werden kann, sondern es kann genau ebenso gezeigt werden, dass $A_{ir}$ auch Unterdeterminante zu $a_{ik}$ in der Unterdeterminante $A_{rs}$ ist\footnote{Es ist also offenbar: $A_{\substack{ir\\ks}} = \dfrac{\partial A_{ik}}{\partial a_{rs}} = \dfrac{\partial A_{rs}}{\partial a_{ik}} = \dfrac{\partial^2 \varDelta}{\partial a_{ik}\,\partial a_{rs}}$.}.
+
+43. \textit{Beispiel.} Greifen wir aus der Determinante
+\[
+\varDelta = \begin{vmatrix} p & q & r & s\\ a & b & c & d\\ t & u & v & w\\ k & x & y & z \end{vmatrix}
+\]
+jene Glieder $G_{i_\varrho}$ heraus, welche das Element $r$ enthalten, so ist die Summe aller dieser Glieder nach Nr. 26 dargestellt durch
+\[
+\sum G_{i_\varrho} = r \cdot A_{13} = (-1)^{1+3} r \begin{vmatrix} a & b & d\\ t & u & w\\ k & x & z \end{vmatrix}
+= r[auz - axw - tbz + txd + kbw - kud].
+\]
+% ?? uncertain: the printed summation sign carries a small ornamental hook/prime mark above-left throughout this page and the next; rendered here uniformly as \sum.
+
+Wählen wir nun aus diesen alle Glieder $G_{k_\varrho}$, die überdies das Element $d$ besitzen, so erhalten wir
+\[
+\sum G_{k_\varrho} = r[txd - kud] = rd[xt - ku] = rd \begin{vmatrix} x & u\\ k & t \end{vmatrix} = rd\, A_{\substack{12\\34}}.
+\]
+Ganz ebenso gelangen wir zu dieser Summe, wenn wir aus $\varDelta$ zunächst alle Glieder $\overline{G}_{i_\varrho}$ mit dem Factor $d$ entnehmen. Es ist dann:
+%CONT>>
+
+
+% ===== pdf idx 64, printed 50.0 =====
+% !PRINTED 50
+\weberpage{50}
+Erster Theil. Theorie der Determinanten.
+
+%<<CONT
+\[
+\sum \overline{G}_{i_\varrho} = d \cdot A_{24} = (-1)^{2+4} d \cdot \begin{vmatrix} p & q & r\\ t & u & v\\ k & x & y \end{vmatrix}
+= d[puy - pxv - tqy + txr + kqv - kur].
+\]
+Sondert man in der letzten Form die Glieder mit dem Factor $r$ ab, so kommt:
+\[
+\sum G_{k_\varrho} = \sum \overline{G}_{k_\varrho} = d[txr - kur] = dr(tx - ku) = dr \begin{vmatrix} x & u\\ k & t \end{vmatrix}.
+\]
+
+44. \textit{Begriff des Minors dritter Ordnung.} Die Erweiterung der vorhergehenden Entwicklung hat nun keine Schwierigkeiten mehr. Wählt man aus den $N$ Gliedern $G_\varrho$ jene aus, welche den Factor
+\[
+a_{ik}\, a_{rs}\, a_{lm}
+\]
+besitzen, wobei wieder $i, r, l$ einerseits und $k, s, m$ andrerseits von einander verschieden sein müssen, so bilden ganz wie vorhin die übrigen Factoren aller dieser Glieder selbst wieder eine Determinante, die wir analog incl. Vorzeichen mit $A_{\substack{irl\\ksm}}$ bezeichnen. Wir nennen sie Partialdeterminante oder Minor dritter Ordnung, und die Summe aller dieser Glieder mit dem Factor $a_{ik} \cdot a_{rs} \cdot a_{lm}$ ist dargestellt durch
+\[
+a_{ik} . a_{rs} . a_{lm} . A_{\substack{irl\\ksm}}.
+\]
+Wir können zu diesem Minor auf verschiedene Arten gelangen; man kann ihn auffassen als \textit{Minor erster Ordnung} zum Elemente $a_{lm}$ in der Partialdeterminante $A_{\substack{ir\\ks}}$, oder zum Elemente $a_{rs}$ im Minor $A_{\substack{il\\km}}$ oder zum Elemente $a_{ik}$ in der Unterdeterminante $A_{\substack{rl\\sm}}$. Man kann ihn aber auch deuten als \textit{Minor zweiter Ordnung} von $A_{ik}$, oder von $A_{rs}$, oder von $A_{lm}$. Wir sehen also wieder den Satz bestätigt: Unterdeterminanten von Unterdeterminanten sind selbst Minoren der ursprünglichen Determinante.
+
+45. \textit{Begriff des Minors $p^{\text{ter}}$ Ordnung.} Greift man auf diese Weise ganz allgemein aus den $N$ Gliedern $G_\varrho$ diejenigen heraus, welche $p$ gemeinschaftliche Elemente als Factoren besitzen, etwa die Elemente:
+\[
+a_{i_1k_1}\ a_{i_2k_2}\ a_{i_3k_3} \ldots a_{i_pk_p},
+\]
+so umfasst die zugehörige Partialdeterminante $p^{\text{ter}}$ Ordnung alle jene Elemente, welche die nicht gemeinschaftlichen Factoren der ausgewählten Glieder bilden. Diese Partialdeterminante $p^{\text{ter}}$ Ordnung von $\varDelta$, welche wir inclusive Vorzeichen mit
+\[
+A_{\substack{i_1 i_2 \ldots i_p\\ k_1 k_2 \ldots k_p}}
+\]
+%CONT>>
+
+
+% ===== pdf idx 65, printed 51.0 =====
+% !PRINTED 51
+\weberpage{51}
+\S.\,4. Partialdeterminanten höherer Ordnung.
+
+%<<CONT
+bezeichnen, ist Partialdeterminante $(p-1)^{\text{ter}}$ Ordnung von $A_{i_1k_1}$, $(p-2)^{\text{ter}}$ Ordnung von $A_{\substack{i_1 i_2\\k_1 k_2}}$ u.\,s.\,w., kurz sie ist Minor jeder vorhergehenden Unterdeterminante, d.\,h. jedes Minors niedrigerer Ordnung.
+
+46. \textit{Berechnung der Partialdeterminante zweiter Ordnung $A_{\substack{12\\12}}$.} Der Minor zweiter Ordnung $A_{\substack{12\\12}}$, also jener Minor, der zum Producte $a_{11}a_{22}$ gehört, kann nach den Entwicklungen in Nr. 42 aufgefasst werden als Unterdeterminante erster Ordnung des Elementes $a_{22}$ im Minor erster Ordnung $A_{11}$, dessen Matrix entsteht durch Unterdrückung der ersten Zeile und Colonne in $\varDelta$. Es muss daher $A_{\substack{12\\12}}$ genau ebenso aus $A_{11}$ erhalten werden, wie $A_{11}$ aus $\varDelta$; d.\,h. da die Unterdeterminante $A_{11}$ dargestellt ist durch
+\[
+A_{11} = \begin{vmatrix} a_{22} & a_{23} & a_{24} \ldots a_{2n}\\ a_{32} & a_{33} & a_{34} \ldots a_{3n}\\ a_{42} & . & . & . & . & . & .\\ . & . & . & . & . & . & .\\ a_{n2} & a_{n3} & a_{n4} & & & & a_{nn} \end{vmatrix},
+\]
+so erhält man daraus die Matrix von $A_{\substack{12\\12}}$ durch Unterdrückung der ersten Zeile und Colonne, d.\,i. jener beiden Reihen, die sich im Elemente $a_{22}$ schneiden. Dieselbe ist also:
+\[
+A_{\substack{12\\12}} = \begin{vmatrix} a_{33} & a_{34} & a_{35} \ldots a_{3n}\\ a_{43} & a_{44} & a_{45} \ldots a_{4n}\\ a_{53} & . & . & . & . & . & .\\ . & . & . & . & . & . & .\\ a_{n3} & a_{n4} & a_{n5} \ldots a_{nn} \end{vmatrix},
+\]
+eine Matrix, die offenbar auch aus $\varDelta$ erhalten werden kann durch Weglassung jener Zeilen und Colonnen, in deren Schnittpunkten die Elemente $a_{11}$ $a_{22}$ sich befinden.
+
+47. \textit{Berechnung des Minors $A_{\substack{ir\\ks}}$.} Ist nun im allgemeinen Falle der Minor zweiter Ordnung $A_{\substack{ir\\ks}}$ zu berechnen, so bringen wir zunächst durch cyclische Vertauschung die Elemente $a_{ik}$ und $a_{rs}$ in der Determinante $\varDelta$ an die Stellen von $a_{11}$, bezw. $a_{22}$. Denken wir uns hierauf die erhaltene neue Determinante $D$ in den Elementen $b_{ik}$ geschrieben, so dass also
+%CONT>>
+
+
+% ===== pdf idx 66, printed 52.0 =====
+% !PRINTED 52
+\weberpage{52}
+Erster Theil. Theorie der Determinanten.
+
+%<<CONT
+\[
+D = \begin{vmatrix} b_{11} & b_{12} & b_{13} \ldots b_{1n}\\ b_{21} & b_{22} & . & . & b_{2n}\\ b_{31} & . & . & . & . & . & .\\ . & . & . & . & . & . & .\\ b_{n1} & . & . & . & . & b_{nn} \end{vmatrix},
+\]
+wobei
+\[
+\text{(I)}\quad
+\begin{cases}
+b_{11} = a_{ik},\quad b_{12} = a_{is},\quad b_{13} = a_{i1}\ldots\\
+b_{21} = a_{rk},\quad b_{22} = a_{rs},\quad b_{23} = a_{r1}\ldots\\
+b_{31} = a_{1k},\ldots\ \text{u.\,s.\,w.,}
+\end{cases}
+\]
+dann stimmen noch immer, wie wir früher (Nr. 20) gesehen, beide Determinanten $D$ und $\varDelta$ in allen einzelnen Gliedern überein, abgesehen im Allgemeinen vom Vorzeichen. Letzteres hat sich nach Nr. 22 um den Factor $(-1)^\nu$, wo
+\[
+\nu = (ir) + (ks) + i + k + r + s,
+\]
+geändert, indem $D$ durch Substitution der Werthe von $b_{ik}$ aus (I) bis auf diesen Factor $(-1)^\nu$ in $\varDelta$ übergeht.
+
+Während nun aber die Summe der Glieder, welche $b_{11}\,b_{22}$ in $D$ als Factor haben, dargestellt ist durch
+\weq{1}{\sum \overline{G} = b_{11}\ b_{22} \cdot B_{\substack{12\\12}},}
+besitzen die nämlichen Glieder, entnommen aus der Determinante $\varDelta$, die Factoren $a_{ik}\ a_{rs}$, und ihre Summe ist
+\weq{2}{\sum G = a_{ik}\ a_{rs}\ A_{\substack{ir\\ks}}.}
+Nun ist aber anderntheils
+\[
+\sum G = (-1)^\nu \sum \overline{G},
+\]
+daher die Beziehung:
+\[
+a_{ik}\ a_{rs}\ A_{\substack{ir\\ks}} = (-1)^\nu\ b_{11}\ b_{22}\ B_{\substack{12\\12}},
+\]
+oder weil ja $a_{ik} = b_{11}$ und $a_{rs} = b_{22}$, so wird endlich:
+\weq{3}{A_{\substack{ir\\ks}} = (-1)^\nu\ B_{\substack{12\\12}}, \quad \nu = (ir) + (ks) + i + k + r + s.}
+Die Matrix des Minors $B_{\substack{12\\12}}$ entsteht aber nach dem Vorigen durch Unterdrückung der ersten und zweiten Zeile und Colonne; das sind aber gerade jene Zeilen, die sich in $a_{ik}$ und $a_{rs}$ schneiden. Daher der Satz:
+%CONT>>
+
+
+% ===== pdf idx 67, printed 53.0 =====
+% !PRINTED 53
+\weberpage{53}
+\S.\,4. Partialdeterminanten h\"oherer Ordnung.
+
+\glqq Die Unterdeterminante zweiter Ordnung $A_{\substack{ir\\ks}}$ zum Producte $a_{ik}\,a_{rs}$
+in der Determinante $\varDelta$ wird erhalten, wenn man in $\varDelta$ die $i^{\text{te}}$ und
+$r^{\text{te}}$ Zeile, die $k^{\text{te}}$ und $s^{\text{te}}$ Colonne unterdr\"uckt und die
+Determinante der so erhaltenen Matrix mit $(-1)^\nu$ multiplicirt, wo $\nu=(ir)+(ks)+i+k+r+s$.\grqq{}
+
+48. \textit{Berechnung des Minors $p^{\text{ter}}$ Ordnung.} Ganz auf dieselbe Weise zeigt man,
+dass die Matrix des Minors $p^{\text{ter}}$ Ordnung von $\varDelta$, welcher zum Producte
+
+\[
+a_{i_1 k_1}\, a_{i_2 k_2}\, a_{i_3 k_3} \dots a_{i_p k_p}
+\]
+
+geh\"ort, erhalten wird, indem man die $p$ Zeilen und Colonnen unterdr\"uckt, die sich in diesen
+Elementen schneiden. Die Determinante, deren Matrix sich aus den restirenden Colonnen und Zeilen
+zusammensetzt, stellt, wenn man sie noch mit $(-1)^\nu$ multiplicirt, wo nach Nr. 23
+
+\[
+\nu = (i_1\,i_2\,i_3 \cdots i_p) + (k_1\,k_2 \cdots k_p) + \sum_1^p i_\varrho + \sum_1^p k_\varrho \,,
+\]
+
+den Minor $p^{\text{ter}}$ Ordnung dar.
+
+\textit{Beispiel.} Der Minor vierter Ordnung zu dem Producte $a_{62}\,a_{53}\,a_{14}\,a_{31}$ in
+
+\[
+\varDelta = \left|
+\begin{array}{cccccc}
+a_{11} & a_{12} & a_{13} & a_{14} & a_{15} & a_{16} \\
+a_{21} & a_{22} & a_{23} & a_{24} & a_{25} & a_{26} \\
+a_{31} & a_{32} & a_{33} & a_{34} & a_{35} & a_{36} \\
+a_{41} & a_{42} & a_{43} & a_{44} & a_{45} & a_{46} \\
+a_{51} & a_{52} & a_{53} & a_{54} & a_{55} & a_{56} \\
+a_{61} & a_{62} & a_{63} & a_{64} & a_{65} & a_{66}
+\end{array}
+\right|
+\]
+
+ist dargestellt durch:
+
+\[
+A_{\substack{6513\\2341}} = (-1)^\nu \left| \begin{array}{cc} a_{25} & a_{26} \\ a_{45} & a_{46} \end{array} \right|\,,
+\]
+
+wo
+
+\[
+\begin{aligned}
+\nu &= (6513)+(2341)+(6+5+1+3)+(2+3+4+1) \\
+    &= 5+3+15+10 = 33\,,
+\end{aligned}
+\]
+
+also:
+
+\[
+A_{\substack{6513\\2341}} = -\left(a_{25}\,a_{46} - a_{45}\,a_{26}\right)\cdot
+\]
+
+49. \textit{Die correspondirende Determinante des Minors zweiter Ordnung.} Wir hatten die Matrix
+des Minors $A_{\substack{ir\\ks}}$ erhalten durch Unterdr\"uckung jenes Colonnen- und
+Zeilenpaares, das sich in den Elementen $a_{ik}$ und $a_{rs}$ schneidet. Die n\"amlichen Zeilen
+und Colonnen schneiden sich aber auch noch in zwei andern Elementen, n\"amlich in $a_{is}$ und
+$a_{rk}$. Zum
+%CONT>>
+
+
+% ===== pdf idx 68, printed 54.0 =====
+% !PRINTED 54
+\weberpage{54}
+Erster Theil. Theorie der Determinanten.
+
+%<<CONT
+Producte dieser beiden geh\"ort also ein Minor $A_{\substack{ir\\sk}}$, der die n\"amliche Matrix
+besitzt. W\"ahrend aber die Unterdeterminante $A_{\substack{ir\\ks}}$ den Factor $(-1)^\nu$, wo
+
+\[
+\nu = (ir)+(ks)+i+r+k+s\,,
+\]
+
+enth\"alt, ist der Minor $A_{\substack{ir\\sk}}$ multiplicirt mit $(-1)^{\bar\nu}$, wo
+
+\[
+\bar\nu = (ir)+(sk)+i+r+s+k\,.
+\]
+
+Die beiden Gr\"ossen $\nu$ und $\bar\nu$ sind nothwendig um eine und nur eine Einheit
+verschieden, d.\,h. es besteht die Relation
+
+\[
+\bar\nu = \nu \pm 1\,,
+\]
+
+oder
+
+\[
+(-1)^{\bar\nu} = -(-1)^\nu\cdot
+\]
+
+Daraus folgt, dass die beiden so erhaltenen Minoren nur durch das Vorzeichen sich unterscheiden,
+d.\,h. dass
+
+\[
+A_{\substack{ir\\ks}} = -A_{\substack{ir\\sk}}\,.
+\]
+
+S\"ammtliche Glieder der Determinante $\varDelta$, welche die Glieder dieser beiden durch die
+n\"amliche Matrix dargestellten Minoren zu Factoren haben, sind daher dargestellt durch den
+Ausdruck:
+
+\[
+(A)\quad a_{ik}\,a_{rs}\,A_{\substack{ir\\ks}} + a_{is}\,a_{rk}\,A_{\substack{ir\\sk}}
+= \left(a_{ik}\,a_{rs} - a_{is}\,a_{rk}\right) A_{\substack{ir\\ks}} \cdot
+\left|
+\begin{array}{ccccccccc}
+a_{11} & a_{12} & \dots & a_{1,k-1} & a_{1,k+1} & \dots & a_{1,s-1} & a_{1,s+1} & \dots\, a_{1n} \\
+a_{21} & a_{32} & \dots & a_{2,k-1} & a_{2,k+1} & \dots & a_{2,s-1} & a_{2,s+1} & \dots\, a_{2n} \\
+a_{31} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{i-1,1} & a_{i-1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{i-1,n} \\
+a_{i+1,1} & a_{i+1,1} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{i+1,n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{r-1,1} & a_{r-1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{r-1,n} \\
+a_{r+1,1} & a_{r+1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{r+1,n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{n1} & a_{n2} & a_{n3} & \cdot & \cdot & \cdot & \cdot & \cdot & a_{nn}
+\end{array}
+\right|
+\]
+% [sic] second entry of the a_{i+1,\cdot} row prints "a_{i+1,1}" a second time where the
+% pattern of the surrounding rows would give a_{i+1,2}; reproduced as printed.
+
+\[
+= (-1)^\nu \left|\begin{array}{cc} a_{ik} & a_{is} \\ a_{rk} & a_{rs} \end{array}\right| \cdot
+\left|
+\begin{array}{ccccccccc}
+a_{i-1,1} & a_{i-1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{i-1,n} \\
+a_{i+1,1} & a_{i+1,1} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{i+1,n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{r-1,1} & a_{r-1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{r-1,n} \\
+a_{r+1,1} & a_{r+1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{r+1,n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{n1} & a_{n2} & a_{n3} & \cdot & \cdot & \cdot & \cdot & \cdot & a_{nn}
+\end{array}
+\right|\,.
+\]
+% [sic] second entry of the a_{i+1,\cdot} row prints "a_{i+1,1}" a second time here as well.
+
+Ist hierbei $i<r$, $k<s$ --- eine Voraussetzung, die immer erlaubt ist und von der ich auch, wie
+man erkennt, in der zweiten Matrix der Relation $(A)$ stillschweigend Gebrauch gemacht habe ---
+so sind in beiden Matrices Reihen und Colonnen gut geordnet, in der ersten nach Voraussetzung, in
+der zweiten a priori, da sie aus der gut ge-
+%CONT>>
+
+
+% ===== pdf idx 69, printed 55.0 =====
+% !PRINTED 55
+\weberpage{55}
+\S.\,4. Partialdeterminanten h\"oherer Ordnung.
+
+%<<CONT
+ordneten Matrix von $\varDelta$ nur durch Unterdr\"uckung von zwei Zeilen und Colonnen entsteht.
+In diesem Falle reducirt sich $\nu$ auf die Summe der Indices allein, d.\,h. es ist:
+
+\[
+\nu = i+r+k+s\,,
+\]
+
+und man nennt nun die Determinante:
+
+\[
+(-1)^\nu \left|\begin{array}{cc} a_{ik} & a_{is} \\ a_{rk} & a_{rs} \end{array}\right|
+\]
+
+die \textit{correspondirende Determinante} zu der durch die Matrix von $A_{\substack{ir\\ks}}$
+dargestellten Determinante.
+
+50. \textit{Die correspondirende Determinante des Minors dritter Ordnung.} Die Matrix des Minors
+dritter Ordnung $A_{\substack{irl\\ksm}}$ ergab sich aus der Matrix von $\varDelta$ durch
+Unterdr\"uckung jener drei Zeilen und jener drei Colonnen, die sich in den Elementen $a_{ik}\,
+a_{rs}\,a_{lm}$ schneiden. Genau auf dieselbe Matrix werden wir aber gef\"uhrt, wenn wir die
+Minoren zu irgend einem der Producte bestimmen, das aus $a_{ik}\cdot a_{rs}\cdot a_{lm}$ durch
+Vertauschung der ersten oder auch der zweiten Indices entsteht, also zu den f\"unf weiteren
+Producten:
+
+\[
+a_{ik}\,a_{ls}\,a_{rm}\,,\quad a_{rk}\,a_{is}\,a_{lm}\,,\quad a_{rk}\,a_{ls}\,a_{im}\,,\quad
+a_{lk}\,a_{is}\,a_{rm}\,,\quad a_{lk}\,a_{rs}\,a_{im}\,;
+\]
+
+denn dieselben enthalten keine andern Indices als die bereits in $a_{ik}\,a_{rs}\,a_{lm}$
+auftretenden $i,\,r,\,l,\,k,\,s,\,m$, so dass bei Bildung der Matrix des jeweiligen Minors immer
+dieselben Zeilen und Colonnen aus $\varDelta$ zu streichen sind. Die Matrix zu
+$A_{\substack{irl\\ksm}}$ ist also auch Matrix f\"ur die Minoren, die aus $A_{\substack{irl\\ksm}}$
+durch Permutation etwa der ersten Indices entstehen, also zu:
+
+\[
+A_{\substack{ilr\\ksm}}\,,\quad A_{\substack{ril\\ksm}}\,,\quad A_{\substack{rli\\ksm}}\,,\quad
+A_{\substack{lir\\ksm}}\,,\quad A_{\substack{lri\\ksm}}\,.
+\]
+
+W\"ahrend nun aber der Minor $A_{\substack{irl\\ksm}}$ den Faktor $(-1)^\nu$ besitzt, wo
+
+\[
+\nu = (irl)+(ksm)+(i+r+l)+(k+s+m)\,,
+\]
+
+muss das Vorzeichen der \"ubrigen Minoren eben wegen der Permutation der Indices $(irl)$
+wechseln, d.\,h. es m\"ussen die Relationen bestehen:
+
+\[
+A_{\substack{irl\\ksm}} = -A_{\substack{ilr\\ksm}} = -A_{\substack{ril\\ksm}} =
++A_{\substack{rli\\ksm}} = +A_{\substack{lir\\ksm}} = -A_{\substack{lri\\ksm}}\,.
+\]
+
+Es ist daher die Summe aller jener Glieder, welche ein Glied irgend eines dieser sechs Minoren
+als Factor haben, dargestellt durch den Ausdruck:
+%CONT>>
+
+
+% ===== pdf idx 70, printed 56.0 =====
+% !PRINTED 56
+\weberpage{56}
+Erster Theil. Theorie der Determinanten.
+
+%<<CONT
+\[
+A_{\substack{irl\\ksm}} \cdot \bigl(
+a_{ik}\,a_{rs}\,a_{lm} - a_{ik}\,a_{ls}\,a_{rm} - a_{rk}\,a_{is}\,a_{lm} + a_{rk}\,a_{ls}\,a_{im}
++ a_{lk}\,a_{is}\,a_{rm} - a_{lk}\,a_{rs}\,a_{im}
+\bigr)
+\]
+
+\[
+\left|
+\begin{array}{ccccccccccc}
+a_{11} & a_{22} & \dots & a_{1,k-1} & a_{1,k+1} & \dots & a_{1,s-1} & a_{1,s+1} & \dots & a_{1,m-1} & a_{1,m+1} \dots\, a_{1n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{i-1,1} & a_{i-1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{i-1,n} \\
+a_{i+1,1} & a_{i+1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{i+1,n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{r-1,1} & a_{r-1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{r-1,n} \\
+a_{r+1,1} & a_{r+1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{r+1,n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{l-1,1} & a_{l-1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{l-1,n} \\
+a_{l+1,1} & a_{l+1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_{l+1,n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{n1} & a_{n2} & \cdot & \cdot & \cdot & a_{n,s-1} & a_{n,s+1} & \cdot & \cdot & \cdot & a_{nn}
+\end{array}
+\right|
+\]
+
+\[
+= (-1)^\nu \left|\begin{array}{ccc} a_{ik} & a_{is} & a_{im} \\ a_{rk} & a_{rs} & a_{rm} \\
+a_{lk} & a_{ls} & a_{lm} \end{array}\right| \cdot
+\]
+
+Ist hier wiederum $i<r<l$, und $k<s<m$, dann reducirt sich der Exponent $\nu$ auch hier auf die
+Summe der Indices, so dass
+
+\[
+\nu = i+r+l+k+s+m\,,
+\]
+
+und die Determinante
+
+\[
+(-1)^\nu \left|\begin{array}{ccc} a_{ik} & a_{is} & a_{im} \\ a_{rk} & a_{rs} & a_{rm} \\
+a_{lk} & a_{ls} & a_{lm} \end{array}\right|
+\]
+
+wird dann die \textit{correspondirende Determinante} zu der durch die Matrix von
+$A_{\substack{irl\\ksm}}$ dargestellten Determinante genannt.
+
+51. \textit{Die correspondirende Determinante des Minors $p^{\text{ter}}$ Ordnung.} Die beiden
+vorhergehenden speciellen F\"alle von correspondirenden Determinanten zeigen, dass deren Matrix
+gerade durch jene Elemente gebildet ist, in welchen sich die bei Bildung des zugeh\"origen Minors
+zweiter oder dritter Ordnung unterdr\"uckten Zeilen und Colonnen schneiden. Die Erweiterung der
+Definition einer correspondirenden Determinante ergiebt sich daher in folgender Weise. Greift man
+aus der Matrix einer Determinante $\varDelta$ irgend welche $\varrho$ Zeilen und $\varrho$
+Colonnen heraus, so erhalten wir zwei kleinere Determinanten, und zwar 1) diejenige, deren Matrix
+aus allen Elementen besteht, in welchen sich die $\varrho$ Colonnen und $\varrho$ Zeilen
+schneiden; 2) diejenige, welche sich aus den in $\varDelta$ \"ubrig bleibenden Elementen
+zusammensetzt. Die erste hat $\varrho$ Zeilen und $\varrho$ Colonnen, die zweite $\sigma$ Zeilen
+und $\sigma$ Colonnen, so
+%CONT>>
+
+
+% ===== pdf idx 71, printed 57.0 =====
+% !PRINTED 57
+\weberpage{57}
+%<<CONT
+dass $\varrho + \sigma = n$. Bildet man das Product beider Determinanten, indem man die Summe der Glieder der einen mit der Summe der Glieder der andern multiplicirt, so bietet dasselbe --- vom Vorzeichen abgesehen --- alle Glieder der ursprünglichen Determinante, welche sowohl die Glieder der ersten als die der zweiten Determinante als Factor haben. Sind nun in den beiden Determinanten Zeilen und Colonnen gut geordnet und multiplicirt man die eine von ihnen mit der entsprechenden Potenz $(-1)^{\nu}$, so dass das Product derselben die betreffenden Glieder der ursprünglichen Determinanten \textit{inclusive} Vorzeichen liefert, dann nennt man die beiden Determinanten von $\varrho^2$, bezw. $\sigma^2$ Elementen \textit{correspondirende Determinanten}. Als Exponent $\nu$ kann hierbei die Summe aller Indices, welche entweder die Diagonalelemente der einen oder die der anderen Determinante besitzen, genommen werden.
+
+Charakterisiren wir die Determinante $\Delta^{(\sigma)}$, deren Matrix nach Unterdrückung der $\varrho$ Colonnen und Zeilen sich aus den übrig bleibenden Elementen $a_{ik}$ zusammensetzt, durch die Elemente ihrer Diagonale setzen wir also
+\[
+\Delta^{(\sigma)} = + (a_{i_1 k_1}\, a_{i_2 k_2} \cdots a_{i_\sigma k_\sigma}),
+\]
+dann ist die correspondirende Determinante $\Delta^{(\varrho)}$ inclusive Vorzeichen dargestellt durch
+\[
+A_{\substack{i_1 i_2 \cdots i_\sigma \\ k_1 k_2 \cdots k_\sigma}},
+\]
+so dass also:
+\[
+\Delta^{(\varrho)} = A_{\substack{i_1 i_2 \cdots i_\sigma \\ k_1 k_2 \cdots k_\sigma}} = (-1)^{\nu} (a_{i'_1 k'_1}\, a_{i'_2 k'_2} \cdots a_{i'_\varrho k'_\varrho}),
+\]
+\[
+\nu = \sum_1^\sigma i_\mu + \sum_1^\sigma k_\mu
+\]
+und
+\[
+\varrho + \sigma = n.
+\]
+
+52. \textit{Beispiel 1.} Sei gegeben die Determinante
+\[
+\Delta = \begin{vmatrix} a_{11} & a_{12} & a_{13} & x_1 \\ a_{21} & a_{22} & a_{23} & x_2 \\ a_{31} & a_{32} & a_{33} & x_3 \\ x_1 & x_2 & x_3 & 0 \end{vmatrix}.
+\]
+Entwickelt man die Determinante in die Summe ihrer 24 Glieder, so werden Glieder mit $x_1^2$, $x_2^2$, $x_3^2$ auftreten. Interessirt es uns nur, die Co\"efficienten von $x_1^2$, $x_2^2$, $x_3^2$ kennen zu lernen, so werden sie uns rascher durch die in Nr. 49 gegebene Methode geliefert. Darnach sind die Glieder mit $x_1^2$ enthalten in
+%CONT>>
+
+
+% ===== pdf idx 72, printed 58.0 =====
+% !PRINTED 58
+\weberpage{58}
+%<<CONT
+\[
+(-1)^{\nu_1} b_{14}\, b_{41} \cdot B_{\substack{14 \\ 41}} = (-1)^{\nu_1} x_1^2 \begin{vmatrix} a_{22} & a_{23} \\ a_{32} & a_{33} \end{vmatrix},
+\]
+wo
+\[
+\nu_1 = (14) + (41) + 1 + 4 + 4 + 1 = 11,
+\]
+es ist also der Co\"efficient von $x_1^2$
+\[
+= - (a_{22} a_{33} - a_{32} a_{23});
+\]
+die Glieder, welche $x_2^2$ und $x_3^2$ enthalten, werden geliefert durch
+\[
+(-1)^{\nu_2} b_{24}\, b_{42} \cdot B_{\substack{24 \\ 42}} = (-1)^{\nu_2} x_2^2 \begin{vmatrix} a_{11} & a_{13} \\ a_{31} & a_{33} \end{vmatrix},
+\]
+\[
+\nu_2 = (24) + (42) + 2 + 4 + 4 + 2 = 13;
+\]
+\[
+(-1)^{\nu_3} b_{34}\, b_{43} \cdot B_{\substack{34 \\ 43}} = (-1)^{\nu_3} x_3^2 \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix},
+\]
+\[
+\nu_3 = (34) + (43) + 3 + 4 + 4 + 3 = 15.
+\]
+Daher ist der Co\"efficient von $x_2^2$:
+\[
+- (a_{11} a_{33} - a_{31} a_{13}),
+\]
+und der Co\"efficient von $x_3^2$:
+\[
+- (a_{11} a_{22} - a_{21} a_{12}).
+\]
+\textit{Beispiel 2.} Sei gegeben die Determinante:
+\[
+\Delta = \begin{vmatrix}
+a_1 & a_2 & a_3 & +\lambda^3 & 0 \\
+b_1 & b_2 & b_3 & -3\lambda^2 & +\lambda^3 \\
+c_1 & c_2 & c_3 & +3\lambda & -3\lambda^2 \\
+d_1 & d_2 & d_3 & -1 & +3\lambda \\
+e_1 & e_2 & e_3 & 0 & -1
+\end{vmatrix}.
+\]
+% ?? uncertain: exact column split of the staggered $\lambda$-terms in this 5x5 determinant is reconstructed from the printed row-by-row layout (each row's third-named entry followed by two signed terms); the arithmetic (binomial-type staircase $\lambda^3,-3\lambda^2,3\lambda,-1$ shifted one row per column) is consistent with what is printed.
+Wir bestimmen die correspondirenden Determinanten zu den Minoren zweiter Ordnung
+\weq{1}{
+\Delta_1^{(2)} = \begin{vmatrix} b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \\ d_1 & d_2 & d_3 \end{vmatrix} = + (bcd)
+}
+und
+\[
+\Delta_2^{(2)} = \begin{vmatrix} c_1 & c_2 & c_3 \\ d_1 & d_2 & d_3 \\ e_1 & e_2 & e_3 \end{vmatrix} = + (cde).
+\]
+Die correspondirende Determinante zu $\Delta_1^{(2)}$ ist
+\[
+A_{\substack{234 \\ 123}} = \Delta_1^{(3)} = (-1)^{\nu_1} \begin{vmatrix} \lambda^3 & 0 \\ 0 & -1 \end{vmatrix},
+\]
+\[
+= + \lambda^3
+\]
+\[
+\nu_1 = 2 + 3 + 4 + 1 + 2 + 3 = 15,
+\]
+%CONT>>
+
+
+% ===== pdf idx 73, printed 59.0 =====
+% !PRINTED 59
+\weberpage{59}
+%<<CONT
+oder auch
+\[
+\nu_1 = 1 + 5 + 4 + 5 = 15.
+\]
+Die correspondirende Determinante zu $\Delta_2^{(2)}$ ist
+\[
+A_{\substack{345 \\ 123}} = \Delta_2^{(3)} = (-1)^{\nu_2} \begin{vmatrix} \lambda^3 & 0 \\ -3\lambda^2 & +\lambda^3 \end{vmatrix},
+\]
+\[
+= \lambda^6
+\]
+\[
+\nu_2 = 3 + 4 + 5 + 1 + 2 + 3 = 18,
+\]
+oder auch
+\[
+\nu_2 = 1 + 2 + 4 + 5 = 12.
+\]
+
+\S.\,5.
+
+\gesperrt{Entwicklung der Determinante in eine Summe von Producten correspondirender Determinanten.}
+
+53. \textit{Summe aus Producten von Minoren $(n-2)^{\text{ter}}$ Ordnung und ihren correspondirenden $A_{\substack{ir \\ ks}}$.} Wir hatten in Nr. 28 und 29 bereits Entwicklungen der Determinante nach Minoren erster Ordnung gegeben und erhielten als eine derselben:
+\weq{1}{
+\Delta = a_{11} A_{11} + a_{12} A_{12} + \cdots a_{1n} A_{1n}.
+}
+Die Grössen $A_{1,k}$ sind nun aber selbst Determinanten und wir können sie wie die Determinante $\Delta$ nach ihren ersten Minoren, d. h. nach den zweiten Minoren der ursprünglichen Determinante entwickeln. Es ist dann:
+\weq{2}{
+\begin{aligned}
+A_{11} &= a_{22} A_{\substack{12\\12}} + a_{23} A_{\substack{12\\13}} + \cdots\cdots a_{2n} A_{\substack{12\\1n}} \\
+A_{12} &= a_{21} A_{\substack{12\\21}} + a_{23} A_{\substack{12\\23}} + \cdots\cdots a_{2n} A_{\substack{12\\2n}} \\
+A_{13} &= a_{21} A_{\substack{12\\31}} + a_{22} A_{\substack{12\\32}} + a_{24} A_{\substack{12\\34}} \cdots a_{2n} A_{\substack{12\\3n}} \\
+&\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots \\
+A_{1k} &= a_{21} A_{\substack{12\\k1}} + \cdots a_{2,k-1} A_{\substack{12\\k,k-1}} + a_{2,k+1} A_{\substack{12\\k,k+1}} + \cdots a_{2n} A_{\substack{12\\kn}} \ \text{u.\,s.\,w.}
+\end{aligned}
+}
+Tragen wir die so erhaltenen Entwicklungen für die Minoren $A_{1k}$ in Gleichung (1) ein, so bekommen wir:
+\weq{3}{
+\begin{aligned}
+\Delta = a_{11} a_{22} A_{\substack{12\\12}} &+ a_{11} a_{23} A_{\substack{12\\13}} + \cdots + a_{11} a_{2n} A_{\substack{12\\1n}} \\
+{}+ a_{12} a_{21} A_{\substack{12\\21}} &+ a_{12} a_{23} A_{\substack{12\\23}} + \cdots \\
+\cdots + a_{1k} a_{21} A_{\substack{12\\k1}} \cdots\cdots &+ a_{1n} a_{2n-1} A_{\substack{12\\n,n-1}}.
+\end{aligned}
+}
+
+
+% ===== pdf idx 74, printed 60.0 =====
+% !PRINTED 60
+\weberpage{60}
+Fragen wir uns, welche Elemente treten als Factoren der Minoren zweiter Ordnung in dieser Entwicklung auf, so erkennen wir, sie sind dadurch charakterisirt, dass ihre ersten Indices 1 und 2 sind, während in ihren zweiten Indices alle Amben der $n$ Zahlen $1\,2\cdots$ bis $n$ und zwar doppelt vertreten sind, einmal als Combination $(ik)$, dann als Combination $(ki)$. Fassen wir also je zwei Glieder $a_{2k}$ in der Summe
+\weq{4}{
+\Delta = \sum_{\substack{i=1\\k=1}}^{\substack{i=n\\k=n}} a_{1i}\, a_{2k}\, A_{\substack{12\\ik}},
+}
+wo
+\[
+i \geqq k,
+\]
+geeignet zusammen, nämlich solche zwei Glieder, deren eines die Elemente $a_{1i}\, a_{2k}$, und deren anderes die Elemente $a_{1k}\, a_{2i}$ als Factoren besitzt, so lässt sich die Gleichung (4) wegen
+\[
+A_{\substack{12\\ik}} = - A_{\substack{12\\ki}} \quad \text{(vgl. Nr. 49)}
+\]
+schreiben:
+\weq{5}{
+\Delta = \sum (a_{1i} a_{2k} - a_{1k} a_{2i}) A_{\substack{12\\ik}} = \sum_{\substack{i=1\\k=2}}^{\substack{k=n\\i=n-1}} \begin{vmatrix} a_{1i} & a_{2i} \\ a_{1k} & a_{2k} \end{vmatrix} \cdot A_{\substack{12\\ik}}, \quad k > i.
+}
+Diese Darstellung der Determinante $\Delta$ ist aber nichts Anderes, als eine Entwicklung derselben in eine Summe von Producten je zweier Minoren. Die erste Reihe der Minoren geht aus der Matrix hervor
+\weq{A}{
+\begin{vmatrix} a_{11} & a_{12} & \ldots & a_{1n} \\ a_{21} & a_{22} & \ldots & a_{2n} \end{vmatrix},
+}
+die zweite Reihe wird von den mit diesen Determinanten correspondirenden gebildet, deren Werth \textit{inclusive} Vorzeichen $(-1)^{\nu}$ dargestellt ist durch $A_{\substack{12\\ik}}$, so dass
+\[
+A_{\substack{12\\ik}} = (-1)^{\nu} (a_{3\varrho_1}\, a_{4\varrho_2} \cdots a_{n\varrho_{n-2}}),
+\]
+wo
+\[
+\varrho_1 < \varrho_2 \cdots < \varrho_{n-2}
+\]
+und von $i$ und $k$ verschieden,
+und
+\[
+\nu = 1 + 2 + i + k \ \text{ist}.
+\]
+Die Summe aller Producte je zweier solcher correspondirender Determinanten liefert $\Delta$.
+
+
+% ===== pdf idx 75, printed 61.0 =====
+% !PRINTED 61
+\weberpage{61}
+54. \textit{Entwicklung in eine Summe von Producten aus Minoren $(n-3)^{\text{ter}}$
+Ordnung und deren correspondirenden Determinanten.} Ganz ebenso lässt
+sich $\Delta$ in eine Summe von Producten entwickeln, deren einer Factor
+eine Determinante der dreizeiligen Matrix
+\[
+\begin{vmatrix}
+a_{11}\ a_{12}\ \ldots\ a_{1n} \\
+a_{21}\ a_{22}\ \ldots\ a_{2n} \\
+a_{31}\ a_{32}\ \ldots\ a_{3n}
+\end{vmatrix},
+\]
+und deren anderer Factor die correspondirende Determinante
+\[
+A_{\substack{1\ 2\ 3\\ i\ k\ r}} = (-1)^{v}\left(a_{4\varrho_1}\, a_{5\varrho_2}\cdots a_{n\varrho_{n-3}}\right), \quad \varrho_1 < \varrho_2 \cdots < \varrho_3
+\]
+und von $i$, $k$, $r$ verschieden,
+
+und
+\[
+v = 1+2+3+i+k+r
+\]
+ist. Wir ersetzen zu dem Zwecke in der Gleichung (3) die Minoren
+zweiter Ordnung durch ihre Entwicklung nach Minoren dritter Ord-
+nung:
+\[
+A_{\substack{1\ 2\\ i\ k}} = a_{31}A_{\substack{1\ 2\ 3\\ i\ k\ 1}} + a_{32}A_{\substack{1\ 2\ 3\\ i\ k\ 2}} + \cdots,
+\]
+dann treten in der Summe nur solche drei Elemente als Factoren der
+Minoren dritter Ordnung auf, welche 1) als erste Indices 1, 2, 3 be-
+sitzen, 2) als zweite Indices irgend welche Ternen der Zahlen $(1\,2\cdots n)$,
+und zwar ist jede solche Combination zu dreien sechs Mal vertreten,
+entsprechend der Anzahl der Permutationen, welche drei Indices bilden
+können. Fasst man wieder je sechs solche zusammengehörige Glieder
+in der Entwicklung von $\Delta$ zusammen, so kommt, unter Berück-
+sichtigung der Resultate in Nr. 50:
+\[
+\Delta = \sum_{\substack{i=1\\ k=1\\ r=1}}^{\substack{i=n\\ k=n\\ r=n}} \bigl(a_{1i}a_{2k}a_{3r} - a_{1i}a_{2r}a_{3k} - a_{1k}a_{2i}a_{3r} + a_{1k}a_{2r}a_{3i} % ?? uncertain: printed exponent-like mark over the k in this term (a_{3k}) not fully legible, read as plain a_{3k}
++ a_{1r}a_{2i}a_{3k} - a_{1r}a_{2k}a_{3i}\bigr)A_{\substack{1\ 2\ 3\\ i\ k\ r}}
+\]
+\[
+= \sum \begin{vmatrix} a_{1i}\ a_{2i}\ a_{3i} \\ a_{1k}\ a_{2k}\ a_{3k} \\ a_{1r}\ a_{2r}\ a_{3r} \end{vmatrix} \cdot A_{\substack{1\ 2\ 3\\ i\ k\ r}},
+\]
+wie oben behauptet wurde.
+
+55. \textit{Allgemeiner Fall.} So kann endlich jede Determinante $\Delta$ in
+eine Summe von Producten entwickelt werden, deren Factoren Unter-
+determinanten beliebigen Grades sind. Man nimmt eine Matrix von
+%CONT>>
+
+
+% ===== pdf idx 76, printed 62.0 =====
+% !PRINTED 62
+\weberpage{62}
+%<<CONT
+$p$ Zeilen — oder etwa auch von $p$ Colonnen —, bildet daraus die
+$\binom{n}{p}$ Determinanten $p^{\text{ten}}$ Grades
+\[
+\Delta^{(p)} = \left(a_{i_1k_1}\, a_{i_2k_2}\, a_{i_3k_3}\cdots a_{i_pk_p}\right);
+\]
+zu jeder derselben bestimmt man die correspondirende Determinante
+$(n-p)^{\text{ten}}$ Grades
+\[
+\Delta^{(n-p)} = A_{\substack{i_1\,i_2\cdots i_p\\ k_1\,k_2\cdots k_p}} = (-1)^{v}\left(a_{i_{p+1},\,k_{p+1}},\, a_{i_{p+2},\,k_{p+2}}\cdots a_{i_n,\,k_n}\right),
+\]
+wobei
+\[
+v = \sum_1^p i_\varrho + \sum_1^p k_\varrho \, .
+\]
+Die Summe aller Producte je zweier correspondirender Determinanten
+liefert die ursprüngliche Determinante $\Delta$. Man hat also:
+\[
+\Delta = \sum \left(a_{i_1k_1}\, a_{i_2k_2}\cdots a_{i_pk_p}\right) \cdot A_{\substack{i_1\,i2\cdots i_p\\ k_1\,k_2\cdots k_p}} \cdot
+\]
+
+Diese Entwicklung von $\Delta$ nach Producten ihrer Minoren hat zuerst
+Laplace gegeben. (Recherches sur le calcul intégral et sur le' système % [sic] stray mark before "système" reproduced as printed
+du monde, 1772, Seite 304.)
+
+56. \textit{Anwendungen des Laplace'schen Satzes bei Bildung von Relationen
+zwischen Unterdeterminanten.} Wir hatten in Nr 32 Relationen auf-
+gestellt, welche zwischen den Elementen einer Zeile oder Colonne und
+Unterdeterminanten $1^{\text{ter}}$ Ordnung bestehen, oder, wie wir uns jetzt auch
+ausdrücken können, zwischen Minoren $(n-1)^{\text{ter}}$ Ordnung und ihren
+correspondirenden Determinanten. Die Methode, welche wir dort be-
+nutzten, bestand darin, dass wir die Matrix $(A)$ in Nr. 28, oder eine
+ihr analoge durch eine Zeile erweiterten, die bereits in der Matrix
+auftrat, und die so erhaltene Determinante nach den Elementen dieser
+Zeile entwickelten. Der Satz von Laplace setzt uns nun in den Stand,
+auf dieselbe Weise Relationen zwischen Minoren beliebigen Grades
+herzustellen. Wir nehmen eine beliebige Matrix $(B)$ von $p$ Zeilen und
+$n$ Colonnen, erweitern sie zu einer Matrix von $n$ Zeilen und $n$ Colonnen,
+indem wir $n-p$ Zeilen hinzufügen, unter denen wenigstens eine be-
+reits in der Matrix $(B)$ selbst auftritt. Die durch diese neue Matrix
+dargestellte Determinante verschwindet wegen der gleichen Zeilen.
+Entwickelt man also dieselbe in eine Summe von Producten, deren
+Factoren etwa die $\binom{n}{n-p}$ Determinanten der hinzugefügten Matrix
+und die correspondirenden sind, so erhält man eine Relation zwischen
+%CONT>>
+
+
+% ===== pdf idx 77, printed 63.0 =====
+% !PRINTED 63
+\weberpage{63}
+%<<CONT
+Minoren $p^{\text{ter}}$ und $n-p^{\text{ter}}$ Ordnung irgend einer Determinante $\Delta$, von
+deren Matrix die oben erwähnte Matrix $(B)$ ein Theil ist.
+
+57. \textit{Beispiel 1.} Sei gegeben die fünfgliedrige Determinante:
+\[
+\Delta = \begin{vmatrix}
+\alpha_1\ \beta_1\ \gamma_1\ \delta_1\ \varepsilon_1 \\
+\alpha_2\ \beta_2\ \gamma_2\ \delta_2\ \varepsilon_2 \\
+\alpha_3\ \beta_3\ \gamma_3\ \delta_3\ \varepsilon_3 \\
+\alpha_4\ \beta_4\ \gamma_4\ \delta_4\ \varepsilon_4 \\
+\alpha_5\ \beta_5\ \gamma_5\ \delta_5\ \varepsilon_5
+\end{vmatrix} .
+\]
+Wir erhalten eine Relation zwischen Minoren zweiter und dritter Ord-
+nung derselben, wenn wir etwa die Matrix der zweiten, dritten und
+vierten Zeile durch die Matrix der ersten und zweiten Zeile zu einer
+neuen Matrix
+\[
+\Delta' = \begin{vmatrix}
+\alpha_1\ \beta_1\ \gamma_1\ \delta_1\ \varepsilon_1 \\
+\alpha_2\ \beta_2\ \gamma_2\ \delta_2\ \varepsilon_2 \\
+\alpha_2\ \beta_2\ \gamma_2\ \delta_2\ \varepsilon_2 \\
+\alpha_3\ \beta_3\ \gamma_3\ \delta_3\ \varepsilon_3 \\
+\alpha_4\ \beta_4\ \gamma_4\ \delta_4\ \varepsilon_4
+\end{vmatrix}
+\]
+erweitern; die durch sie dargestellte Determinante $\Delta'$ ist Null wegen
+der Gleichheit der zweiten und dritten Zeile. Man kann sie nun wieder
+mit der Determinante
+\[
+D = \left(b_{11}\ b_{22}\ b_{33}\ b_{44}\ b_{55}\right)
+\]
+vergleichen, letztere nach den Determinanten der beiden ersten Zeilen,
+also nach den Determinanten der Matrix
+\[
+(C) \qquad \begin{vmatrix} b_{11}\ b_{12}\ b_{13}\ b_{14}\ b_{15} \\ b_{21}\ b_{22}\ b_{23}\ b_{24}\ b_{25} \end{vmatrix}
+\]
+entwickeln, und in der Entwicklung hernach die Elemente $b_{ik}$ durch
+die entsprechenden Elemente in $\Delta'$ ersetzen. Bezeichnen wir die zehn
+Determinanten der Matrix $(C)$ mit
+\[
+(b_1b_2)_{12},\ (b_1b_2)_{13},\ (b_1b_2)_{14},\ (b_1b_2)_{15},\ (b_1b_2)_{23},\ (b_1b_2)_{24}\cdots (b_1b_2)_{45},
+\]
+dann ist die Entwicklung dargestellt durch
+\[
+D = \sum_{\substack{i=1\\ k=2}}^{\substack{k=5\\ i=4}} (b_1b_2)_{ik}\cdot B_{\substack{1\ 2\\ i\ k}};
+\]
+hier ist
+\[
+B_{\substack{1\ 2\\ i\ k}} = (-1)^{v_{ik}}\left(b_{3\varrho_1}\, b_{4\varrho_2}\, b_{5\varrho_3}\right),
+\]
+%CONT>>
+
+
+% ===== pdf idx 78, printed 64.0 =====
+% !PRINTED 64
+\weberpage{64}
+%<<CONT
+wobei
+\[
+1)\quad v_{ik} = 1+2+i+k = 3+i+k,
+\]
+\[
+2)\quad \varrho_1,\ \varrho_2,\ \varrho_3 \gtrless i \text{ oder } k,
+\]
+\[
+3)\quad \varrho_1 < \varrho_2 < \varrho_3 \, .
+\]
+Wir erhalten also:
+\[
+\begin{aligned}
+D = {}& (-1)^{3+3}(b_1b_2)_{12}(b_{33}b_{44}b_{55}) + (-1)^{3+4}(b_1b_2)_{13}(b_{32}b_{44}b_{55}) \\
+& + (-1)^{3+5}(b_1b_2)_{14}(b_{32}b_{43}b_{55}) + (-1)^{3+6}(b_1b_2)_{15}(b_{32}b_{43}b_{54}) \\
+& + (-1)^{3+5}(b_1b_2)_{23}(b_{31}b_{44}b_{55}) + (-1)^{3+6}(b_1b_2)_{24}(b_{31}b_{43}b_{55}) \\
+& + (-1)^{3+7}(b_1b_2)_{25}(b_{31}b_{43}b_{54}) + (-1)^{3+7}(b_1b_2)_{34}(b_{31}b_{42}b_{55}) \\
+& + (-1)^{3+8}(b_1b_2)_{35}(b_{31}b_{42}b_{54}) + (-1)^{3+9}(b_1b_2)_{45}(b_{31}b_{42}b_{53}) \, .
+\end{aligned}
+\]
+Ersetzt man hier die Werthe von $b_{ik}$ durch die entsprechenden Elemente
+% ?? uncertain: leading letter of this word is cropped at the page-image edge; read as "in" giving "in \Delta'"
+in $\Delta'$, so kommt:
+\[
+\begin{aligned}
+0 = {}& (\alpha_1\beta_2)(\gamma_2\delta_3\varepsilon_4) - (\alpha_1\gamma_2)(\beta_2\delta_3\varepsilon_4) + (\alpha_1\delta_2)(\beta_2\gamma_3\varepsilon_4) - (\alpha_1\varepsilon_2)(\beta_2\gamma_3\delta_4) \\
+& + (\beta_1\gamma_2)(\alpha_2\delta_3\varepsilon_4) - (\beta_1\delta_2)(\alpha_2\gamma_3\varepsilon_4) + (\beta_1\varepsilon_2)(\alpha_2\gamma_3\delta_4) \\
+& + (\gamma_1\delta_2)(\alpha_2\beta_3\varepsilon_4) - (\gamma_1\varepsilon_2)(\alpha_2\beta_3\delta_4) \\
+& + (\delta_1\varepsilon_2)(\alpha_2\beta_3\gamma_4) \, .
+\end{aligned}
+\]
+58. \textit{Beispiel 2.} Die viergliedrige Determinante
+\[
+D = \begin{vmatrix}
+b_{11}\ b_{12}\ b_{13}\ b_{14} \\
+b_{21}\ b_{22}\ b_{23}\ b_{24} \\
+b_{31}\ b_{32}\ b_{33}\ b_{34} \\
+b_{41}\ b_{42}\ b_{43}\ b_{44}
+\end{vmatrix}
+\]
+giebt nach zweigliedrigen Unterdeterminanten entwickelt:
+\[
+\begin{aligned}
+D = {}& \sum (b_1b_2)_{ik}B_{\substack{1\,2\\ i\,k}} \\
+= {}& (-1)^{3+3}(b_1b_2)_{12}(b_3b_4)_{34} + (-1)^{3+4}(b_1b_2)_{13}(b_3b_4)_{24} \\
+& + (-1)^{3+5}(b_1b_2)_{14}(b_3b_4)_{23} + (-1)^{3+5}(b_1b_2)_{23}(b_3b_4)_{14} \\
+& + (-1)^{3+6}(b_1b_2)_{24}(b_3b_4)_{13} + (-1)^{3+7}(b_1b_2)_{34}(b_3b_4)_{12} \, .
+\end{aligned}
+\]
+Setzen wir nun
+\[
+b_{1i} = b_{3i} = a_i, \quad b_{2i} = b_{4i} = b_i,
+\]
+dann erhält $D$ zwei Paar gleiche Zeilen und geht über in
+\[
+\Delta = \begin{vmatrix}
+a_1\ a_2\ a_3\ a_4 \\
+b_1\ b_2\ b_3\ b_4 \\
+a_1\ a_2\ a_3\ a_4 \\
+b_1\ b_2\ b_3\ b_4
+\end{vmatrix}
+= (ab)_{12}(ab)_{34} - (ab)_{13}(ab)_{24} + (ab)_{14}(ab)_{23}
++ (ab)_{23}(ab)_{14} - (ab)_{24}(ab)_{13} + (ab)_{34}(ab)_{12}
+\]
+\[
+= 2\left\{(ab)_{12}(ab)_{34} - (ab)_{13}(ab)_{24} + (ab)_{14}(ab)_{23}\right\} = 0 \, .
+\]
+
+
+% ===== pdf idx 79, printed 65.0 =====
+% !PRINTED 65
+\weberpage{65}
+Bezeichnen wir noch k\"urzer $(-1)^\nu (ab)_{ik}$ mit $p_{ik}$, so liefert die Matrix $\Delta$
+die Relation:
+
+\[
+p_{12}p_{34} + p_{13}p_{42} + p_{14}p_{23} = 0.
+\]
+
+Sie entsteht aus ihrem ersten Gliede $p_{12}p_{34}$, indem man die 3 Indices 2 3 4 cyclisch
+vertauscht.
+
+59. \textit{Berechnung des Werthes einer Determinante mit Hilfe der Laplace'schen
+Entwicklung.} \textit{Beispiel} 1. Wir berechnen zun\"achst unter Anwendung dieser
+Entwicklung von $\Delta$ noch einmal den Werth der Determinante (6) in Nr. 15:
+
+\[
+\begin{aligned}
+\Delta &= \begin{vmatrix} 3 & 1 & 1 & 2 \\ 1 & 5 & 0 & 3 \\ 2 & -2 & 1 & 6 \\ 0 & 4 & -5 & 3 \end{vmatrix}
+= \begin{vmatrix} 3 & 1 \\ 1 & 5 \end{vmatrix} \cdot \begin{vmatrix} 1 & 6 \\ -5 & 3 \end{vmatrix}
+- \begin{vmatrix} 3 & 1 \\ 1 & 0 \end{vmatrix} \cdot \begin{vmatrix} -2 & 6 \\ 4 & 3 \end{vmatrix}\\
+&\quad + \begin{vmatrix} 3 & 2 \\ 1 & 3 \end{vmatrix} \cdot \begin{vmatrix} -2 & 1 \\ 4 & -5 \end{vmatrix}
++ \begin{vmatrix} 1 & 1 \\ 5 & 0 \end{vmatrix} \cdot \begin{vmatrix} 2 & 6 \\ 0 & 3 \end{vmatrix}
+- \begin{vmatrix} 1 & 2 \\ 5 & 3 \end{vmatrix} \cdot \begin{vmatrix} 2 & 1 \\ 0 & -5 \end{vmatrix}
++ \begin{vmatrix} 1 & 2 \\ 0 & 3 \end{vmatrix} \cdot \begin{vmatrix} 2 & -2 \\ 0 & 4 \end{vmatrix}\\
+&= (15-1)(3+30) - (0-1)(-6-24) + (9-2)(10-4)\\
+&\quad + (0-5)(6-0) - (3-10)(-10-0) + (3-0)(8-0)\ .\\
+&= 14\cdot 33 - 30 + 42 - 30 - 70 + 24 = 398\ .
+\end{aligned}
+\]
+
+60. \textit{Beispiel} 2. Wesentliche Vortheile f\"ur die Berechnung des Werthes einer
+Determinante gew\"ahrt die Methode von Laplace dann, wenn die Matrix der Determinante eine
+gr\"ossere Zahl von Elementen enth\"alt, welche Null sind. Hierher geh\"ort in erster Linie
+der Fall, wobei jene Elemente verschwinden, in welchen sich $p$ Verticalreihen mit $q$
+Zeilen schneiden. Wir k\"onnen dann durch Vertauschung von Zeilen mit Zeilen und Colonnen mit
+Colonnen die Elemente in der Matrix der gegebenen Determinante so ordnen, dass alle
+verschwindenden Elemente selbst eine zusammenh\"angende Matrix von $p$ Colonnen und $q$
+Zeilen bilden. Nehmen wir zun\"achst an $q = n - p$; die gegebene Determinante ist dann:
+
+\[
+\Delta = \begin{vmatrix}
+a_{11} & \cdot\cdot\cdot & a_{1p} & a_{1p} & a_{1,p+1} & \cdot\cdot\cdot & a_{1n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{p1} & \cdot\cdot\cdot & a_{pp} & a_{p,p+1} & \cdot\cdot\cdot\cdot\cdot & a_{pn} \\
+0 & \cdot\cdot\cdot\cdot & 0 & a_{p+1,p+1}, & \cdot\cdot\cdot & a_{p+1,n} \\
+0 & \cdot\cdot\cdot\cdot & 0 & \cdot & \cdot\cdot\cdot & \cdot \\
+0 & \cdot\cdot\cdot\cdot & 0 & a_{n,p+1} & \cdot\cdot\cdot & a_{nn}
+\end{vmatrix}\ .
+\]
+
+
+% ===== pdf idx 80, printed 66.0 =====
+% !PRINTED 66
+\weberpage{66}
+Entwickeln wir sie nach der Methode von Laplace, indem wir die Determinanten aus der Matrix
+
+\[
+(A)\quad
+\begin{vmatrix}
+a_{11} & a_{12} & \cdot\cdot\cdot & a_{1p} \\
+a_{21} & \cdot\cdot\cdot\cdot\cdot & & a_{2p} \\
+& \cdot & \cdot & \cdot \\
+a_{p1} & \cdot & \cdot & a_{pp} \\
+0 & 0 & \cdot\cdot & 0 \\
+0 & \cdot & \cdot & 0 \\
+& \cdot & \cdot & \cdot \\
+0 & \cdot & \cdot & 0
+\end{vmatrix}
+\]
+
+bilden, jede mit der correspondirenden Determinante multipliciren und die Summe \"uber alle
+Producte nehmen, so erkennt man, dass diese Summe sich auf das einzige Product
+
+\[
+\begin{vmatrix}
+a_{11} & \cdot\cdot\cdot & a_{1p} \\
+a_{21} & \cdot\cdot\cdot & a_{2p} \\
+\cdot & \cdot & \cdot \\
+a_{p1} & \cdot\cdot\cdot & a_{pp}
+\end{vmatrix}
+\cdot
+\begin{vmatrix}
+a_{p+1,p+1} & \cdot\cdot\cdot & a_{p+1,n} \\
+a_{p+2,p+1} & \cdot\cdot\cdot & a_{p+2,n} \\
+\cdot & \cdot & \cdot \\
+a_{n,p+1} & \cdot & \cdot & a_{nn}
+\end{vmatrix}
+= \Delta^{(p)} \cdot \Delta^{(n-p)}
+\]
+
+reducirt, weil ja alle Determinanten der Matrix $(A)$ --- die in diesem Producte auftretende
+ausgenommen --- verschwinden.
+
+61. \textit{Beispiel} 3. Nehmen wir zweitens an $q = n - p + 1$, dann enth\"alt die Matrix
+$(A)$ nicht mehr wie vorhin $p$ Colonnen und $p$ Zeilen nicht verschwindender Elemente,
+sondern sie enth\"alt nun eine Zeile mehr als sie Colonnen hat. Wir k\"onnen dann aus ihr
+
+\[
+\binom{p+1}{p} = p+1
+\]
+
+nicht verschwindender Determinanten bilden und die zugeh\"origen correspondirenden
+ermitteln; die Summe der $(p+1)$ Producte liefert dann die Determinante $\Delta$.
+
+Sei z. B. gegeben:
+
+\[
+\Delta = \begin{vmatrix}
+a_1 & b_1 & c_1 & d_1 & e_1 \\
+a_2 & b_2 & c_2 & d_2 & e_2 \\
+a_3 & b_3 & c_3 & d_3 & e_3 \\
+0 & 0 & c_4 & d_4 & e_4 \\
+0 & 0 & c_5 & d_5 & e_5
+\end{vmatrix},
+\]
+%CONT>>
+
+
+% ===== pdf idx 81, printed 67.0 =====
+% !PRINTED 67
+\weberpage{67}
+%<<CONT
+dann liefert die Entwicklung nach den Determinanten der Matrix der beiden ersten Colonnen:
+
+\[
+\begin{aligned}
+\Delta &= \begin{vmatrix} a_1 & b_1 \\ a_2 & b_2 \end{vmatrix} \cdot
+\begin{vmatrix} c_3 & d_3 & e_3 \\ c_4 & d_4 & e_4 \\ c_5 & d_5 & e_5 \end{vmatrix}
++ (-1)^{\nu_1} \begin{vmatrix} a_1 & b_1 \\ a_3 & b_3 \end{vmatrix} \cdot
+\begin{vmatrix} c_2 & d_2 & e_2 \\ c_4 & d_4 & e_4 \\ c_5 & d_5 & e_5 \end{vmatrix}\\
+&\quad + (-1)^{\nu_2} \begin{vmatrix} a_2 & b_2 \\ a_3 & b_3 \end{vmatrix} \cdot
+\begin{vmatrix} c_1 & d_1 & e_1 \\ c_4 & d_4 & e_4 \\ c_5 & d_5 & e_5 \end{vmatrix}\ ,
+\end{aligned}
+\]
+
+wobei
+
+\[
+\nu_1 = 1 + 2 + 1 + 3 = 7
+\]
+\[
+\nu_2 = 1 + 2 + 2 + 3 = 8,
+\]
+
+also:
+
+\[
+\Delta = (ab)_{12}(cde)_{345} - (ab)_{13}(cde)_{245} + (ab)_{23}(cde)_{145}\ .
+\]
+
+62. \textit{Entwicklung einer Determinante nach Producten von Elementen zweier sich
+schneidender Reihen.} Manche Aufgaben lassen es w\"unschenswerth erscheinen, eine
+Determinante nach den Elementen einer Zeile und Colonne gleichzeitig zu entwickeln. Wir
+wollen dabei der Einfachheit halber annehmen, diese Elemente \underline{w\"urden} % [sic] underlined in print
+die erste Zeile und Colonne bilden, die sich also in dem Elemente $a_{11}$ schneiden. Um zur
+Entwicklungsformel zu gelangen, gehen wir wieder aus von der Gleichung in Nr. 28:
+
+\weq{1}{\Delta = a_{11}A_{11} + a_{12}A_{12} + \cdots a_{1n}A_{1n}\ .}
+
+Von den darin auftretenden Minoren $A_{1i}$ entwickeln wir den ersten $A_{11}$ nicht weiter,
+die \"ubrigen aber nach den Unterdeterminanten der Elemente in der ersten \textit{Colonne}
+(w\"ahrend wir sie in Nr. 53 (2) nach den Unterdeterminanten der Elemente in der ersten
+\textit{Zeile} geordnet hatten).
+
+Wir erhalten also:
+
+\[
+(2)\quad
+\left\{
+\begin{aligned}
+A_{12} &= a_{21}A_{\substack{12\\21}} + a_{31}A_{\substack{13\\21}} + a_{41}A_{\substack{14\\21}} + \cdots a_{n1}A_{\substack{1n\\21}}\\
+A_{13} &= a_{21}A_{\substack{12\\31}} + a_{31}A_{\substack{13\\31}} + a_{41}A_{\substack{14\\31}} + \cdots a_{n1}A_{\substack{1n\\31}}\\
+&\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+A_{1k} &= a_{21}A_{\substack{12\\k1}} + a_{31}A_{\substack{13\\k1}} + \cdots + a_{k1}A_{\substack{1k\\k1}} + \cdots + a_{n1}A_{\substack{1n\\k1}}\\
+&\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+A_{1n} &= a_{21}A_{\substack{12\\n1}} + a_{31}A_{\substack{13\\n1}} + a_{41}A_{\substack{14\\n1}} \cdots + a_{n1}A_{\substack{1n\\n1}}
+\end{aligned}
+\right.
+\]
+
+
+% ===== pdf idx 82, printed 68.0 =====
+% !PRINTED 68
+\weberpage{68}
+Tragen wir diese Werthe in $\Delta$ ein, so kommt:
+
+\[
+(3)\quad
+\begin{aligned}
+\Delta &= a_{11}A_{11} + a_{21}a_{12}A_{\substack{12\\21}} + a_{31}a_{12}A_{\substack{13\\21}} + \cdots + a_{n1}a_{12}A_{\substack{1n\\21}}\\
+&\quad + a_{21}a_{13}A_{\substack{12\\31}} + a_{31}a_{13}A_{\substack{13\\31}} + \cdots\\
+&\quad \cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+&\quad + a_{21}a_{1,k-1}A_{\substack{12\\k1}} + \cdots + a_{n1}a_{1n}A_{\substack{1n\\n1}}\ .
+\end{aligned}
+\]
+
+Man erkennt, dass in dieser Summe durchgehends die Factoren der Minoren $A_{\substack{1i\\k1}}$
+Producte von Elementen sind, welche der ersten Zeile und ersten Colonne angeh\"oren, und zwar
+tritt jedes solche Product $a_{i1}a_{1k}$ nur einmal auf, indem jedes der $(n-1)$ Elemente der
+ersten Zeile mit jedem der $(n-1)$ Elemente der ersten Colonne --- $a_{11}$ ist ja
+ausgeschlossen --- multiplicirt wird. Wir k\"onnen also, die $(n-1)^2$ Glieder der obigen
+Entwicklung zusammenfassend, die Gleichung (3) schreiben:
+
+\weq{4}{\Delta = a_{11}A_{11} + \sum a_{i1}a_{1k}A_{\substack{1i\\k1}}\ ,}
+
+oder, weil
+
+\[
+A_{\substack{1i\\k1}} = -A_{\substack{1i\\1k}}\quad \text{(vergleiche Nr. 49)},
+\]
+
+so wird endlich die gesuchte Entwicklung dargestellt durch
+
+\weq{5}{\Delta = a_{11}A_{11} - \sum a_{i1}a_{1k}A_{\substack{1i\\1k}}\ ,}
+
+\[
+k\ \text{und}\ i > 1\ ,
+\]
+
+wobei erinnert sei, dass $A_{\substack{1k\\1i}}$ der Minor erster Ordnung des Elements
+$a_{ik}$ in der Determinante $A_{11}$ ist. Wir erhalten sonach die Regel:
+
+\glqq Um eine Determinante nach den Producten der Elemente zweier sich schneidender Reihen zu
+entwickeln, bilde man die Determinante $A_{11}$, so wie ihre $(n-1)^2$ ersten Minoren
+$A_{\substack{1k\\1i}}$.
+
+Jeden derselben multiplicire man mit dem entsprechenden Producte $a_{i1}a_{1k}$, addire alle
+Producte und subtrahire die Summe von $a_{11}A_{11}$\grqq{}.
+
+63. \textit{Entwicklung einer Determinante nach den Producten von Elementen zweier Paare
+sich schneidender Reihen.} Bisweilen tritt auch die Frage auf, wie l\"asst sich eine
+Determinante in der Weise entwickeln, dass sie nach Producten geordnet ist, deren beide erste
+Factoren zweigliedrige Determinanten sind, entnommen aus der Matrix der zwei ersten Zeilen
+und der Matrix der zwei ersten Colonnen. Mit Hilfe der
+%CONT>>
+
+
+% ===== pdf idx 83, printed 69.0 =====

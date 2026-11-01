@@ -1,0 +1,873 @@
+% !PRINTED 81
+\weberpage{81}
+
+76. \textit{Zusammenhang der ursprünglichen Form mit ihren Elementarcovarianten.} Diese letzterwähnten Formen tragen ihren Namen deshalb, weil ihnen die wichtigste Rolle aller Covarianten von $F$ zugetheilt ist. Es gilt nämlich der Satz: \glqq \gesperrt{Die Form} $F$ \gesperrt{ist eine simultane Covariante ihrer Elementarcovarianten.}\grqq
+
+Damit ist aber die Gesammtheit aller invarianten Formen von $F$ auf die simultanen Formen dieser Elementarcovarianten zurückgeführt, und da dieselben nur eine Reihe von Variabeln enthalten, so ist die Theorie einer Form mit mehr Reihen cogredienter Variabler übereinstimmend mit der von simultanen Formen einer einzigen Reihe Variabler.
+
+Wir beweisen den Satz in einer allgemeineren Fassung, indem wir zeigen, dass jedes Product
+\[ P = (rs)^\lambda r_x^{m-\lambda} s_y^{n-\lambda}, \quad \lambda = 0, 1, 2, \cdots n, \]
+das aus Nr. 75 (4) für $r=k=0$ entsteht, eine lineare Function der mit Potenzen von $(xy)$ multiplicirten Polaren der Elementarcovarianten $E$ ist. Die Form $F = r_x^m s_y^n$ ist dann das erste dieser Producte $P$ für $\lambda = 0$. Der Grad einer jeden solchen mit $(xy)^\nu$ multiplicirten Polare der Elementarcovariante $E$
+\[ E_{y^\mu}(xy)^\nu = (\overline{rs})_{y^\mu}^\lambda (xy)^\nu \]
+muss in $x$ und $y$ mit dem von $F$ übereinstimmen, wenn $F$ sich in der angegebenen Weise darstellen lässt, d. h. es muss sein:
+\[ m+n-2\lambda-\mu+\nu = m \]
+und ferner
+\[ \mu+\nu = n. \]
+
+Ist alsdann die Form $P$ eine lineare Function dieser Formen $(xy)^\nu E_{y^\mu}$, so ist sie damit auch simultane Covariante derselben.
+
+77. \textit{Beweis, dass $F$ eine lineare Function der Polaren $E_{y^\mu}$ ist.} Wir werden den Beweis des im vorhergehenden Absatze aufgestellten fundamentalen Satzes zunächst ohne rechnerische Operationen führen, indem wir in den einzelnen Schlüssen genau wie in der Polarentheorie vorgehen.
+
+Wir können die Form
+\[ P = (rs)^\lambda r_x^{m-\lambda} s_y^{n-\lambda} \]
+betrachten als ein Glied der $(n-\lambda)^{\text{ten}}$ Polare von der Elementarcovariante
+\[ E = (\overline{rs})^\lambda = (rs)^\lambda r_x^{m-\lambda} s_x^{n-\lambda}. \]
+
+Nach den Sätzen der Polarentheorie lässt sich $P$ alsdann durch
+%CONT>>
+
+
+% ===== pdf idx 96, printed 82.0 =====
+% !PRINTED 82
+\weberpage{82}
+
+%<<CONT
+die Polare der Elementarcovariante $E$ plus einer Summe von Gliedern darstellen von der Form
+\[ G = (xy)(rs)^{\lambda+1} r_x^g r_y^h s_x^k s_y^l. \]
+Diese Glieder enthalten ausser dem Factor $(xy)$ auch noch einen Klammerfactor $(rs)$ mehr als die Covariante $E = (\overline{rs})^\lambda$. Sie können demnach als Glieder einer Polare von
+\[ E_1 = (rs)^{\lambda+1} r_x^{m-\lambda-1} s_x^{n-\lambda-1} \]
+aufgefasst werden, und zwar einer Polare niedrigeren Grades als die eben betrachtete. Alle diese Glieder lassen sich wieder durch die Polare der Elementarcovariante $E_1$ darstellen plus einer Summe von abermals einfacheren Producten, die wieder einen Factor $(xy)$ und einen Factor $(rs)$ mehr besitzen. Dieses Verfahren kann fortgesetzt werden, bis man auf die nullte Polare der $(n+1)^{\text{ten}}$ Elementarcovariante gelangt, womit das gewünschte Ziel erreicht ist. Die Form $P$ ist alsdann durch eine lineare Function der Polaren ihrer Elementarcovarianten dargestellt, die nach steigenden Potenzen von $(xy)$ fortschreitet.
+
+Manche Untersuchungen lassen es wünschenswerth erscheinen, in dieser Reihe wiederum eine der Polaren $E_{y^\mu}$ durch eines ihrer Glieder und niedrigere Polaren zu ersetzen. Die äussere Form der Reihe bleibt hierbei unverändert, da sich die niedrigeren Polaren mit den bereits vorhandenen zusammenziehen lassen, so dass sich nur die numerischen Coefficienten der Reihe in anderer Weise darstellen.
+
+Diese Entwicklung war unabhängig von dem Werthe $\lambda$; sie gilt also auch für $\lambda = 0$, d. h. für die Form
+\[ F = r_x^m s_y^n. \]
+Es bleibt nur noch die Aufgabe zu erledigen, für diese einfachste Form mit zwei Reihen Veränderlicher die Coefficienten der einzelnen Glieder in independenter Weise aufzustellen.
+
+78. \textit{Die Reihenentwicklung von $F$ ist eindeutig.} Ehe wir jedoch zur Berechnung der Coefficienten schreiten, wollen wir noch zeigen, dass sich $F$ nur auf eine einzige Art in eine solche Reihe entwickeln lässt. Gäbe es nämlich zwei Entwicklungen für $F$, die nicht übereinstimmen:
+\[ F = \sum C'_\mu \cdot E_{y^\mu} \cdot (xy)^\nu \]
+und
+\[ F = \sum C''_\mu \cdot E_{y^\mu} \cdot (xy)^\nu, \]
+dann würde die Differenz beider eine Entwicklung für den Werth Null geben:
+\[ 0 = \sum (C'_\mu - C''_\mu)\, E_{y^\mu} . (xy)^\nu . \]
+% checked against the GDZ scan (27 Oct 2026): a stray dot stands to the right of this display, apart from its final period; not part of the text
+
+
+% ===== pdf idx 97, printed 83.0 =====
+% !PRINTED 83
+\weberpage{83}
+
+Nehmen wir nun an $C'_{\mu_i} - C''_{\mu_i}$ sei die erste nicht verschwindende Differenz in dieser Entwicklung, so können wir, nachdem wir dieselbe mit der niedrigsten Potenz von $(xy)$ dividirt haben, in ihr $x=y$ setzen. Dann verschwinden eben wegen des Factors $(xy)$ alle Glieder bis auf das erste. Man hätte also
+\[ 0 = C'_{\mu_i} - C''_{\mu_i}, \ \text{oder} \ C'_{\mu_i} = C''_{\mu_i}. \]
+
+Also können die beiden Entwicklungen nicht von einander verschieden sein.
+
+79. \textit{Wirkung des $\Omega$-Processes auf ein Product $\varphi \cdot \psi$ zweier Formen.} Um nun die Coefficienten $C_\mu$ der Entwicklung zu bestimmen, müssen wir vorher noch eine Hilfsformel aufstellen, die uns lehrt, wie sich das Product $\varphi \cdot \psi$ zweier Formen mit zwei Reihen cogredienter Variabler unter dem Einfluss des Omegaprocesses verändert.
+
+Es ist:
+\[ \begin{aligned} \dfrac{\partial(\varphi\cdot\psi)}{\partial x_1} &= \varphi\,\dfrac{\partial\psi}{\partial x_1} + \psi\,\dfrac{\partial\varphi}{\partial x_1} \\ \dfrac{\partial(\varphi\cdot\psi)}{\partial x_2} &= \varphi\,\dfrac{\partial\psi}{\partial x_2} + \psi\,\dfrac{\partial\varphi}{\partial x_2}, \end{aligned} \]
+und demnach:
+\weq{1}{\dfrac{\partial^2(\varphi\cdot\psi)}{\partial x_1\partial y_2} = \varphi\,\dfrac{\partial^2\psi}{\partial x_1\partial y_2} + \dfrac{\partial\varphi}{\partial y_2}\dfrac{\partial\psi}{\partial x_1} + \dfrac{\partial\psi}{\partial y_2}\dfrac{\partial\varphi}{\partial x_1} + \psi\,\dfrac{\partial^2\varphi}{\partial x_1\partial y_2}}
+\weq{2}{\dfrac{\partial^2(\varphi\cdot\psi)}{\partial x_2\partial y_1} = \varphi\,\dfrac{\partial^2\psi}{\partial x_2\partial y_1} + \dfrac{\partial\varphi}{\partial y_2}\dfrac{\partial\psi}{\partial x_1} + \dfrac{\partial\psi}{\partial y_1}\dfrac{\partial\varphi}{\partial x_2} + \psi\,\dfrac{\partial^2\varphi}{\partial x_2\partial y_1}.}
+Setzt man nun der Kürze halber
+\[ \dfrac{\partial\varphi}{\partial y_2}\dfrac{\partial\psi}{\partial x_1} - \dfrac{\partial\varphi}{\partial y_1}\dfrac{\partial\psi}{\partial x_2} = (\varphi\overset{\smile}{,}\psi), \quad \dfrac{\partial\psi}{\partial y_2}\dfrac{\partial\varphi}{\partial x_1} - \dfrac{\partial\psi}{\partial y_1}\dfrac{\partial\varphi}{\partial x_2} = (\psi\overset{\smile}{,}\varphi), \]
+so erhält man, wenn $\varrho$ und $\mu$ die Grade von $x$ in $\varphi$ resp. $\psi$ bedeuten, $\sigma$ und $\nu$ die von $y$ in $\varphi$ resp. $\psi$, aus (1) und (2) durch Subtraction:
+\weq{I}{(\varrho+\mu)(\sigma+\nu)\Omega(\varphi\cdot\psi) = \mu\cdot\nu\cdot\varphi\,\Omega(\psi) + (\varphi\overset{\smile}{,}\psi) + \varrho\cdot\sigma\cdot\psi\,\Omega(\varphi) + (\psi\overset{\smile}{,}\varphi).}
+Ist speciell $\psi = (xy)^\lambda$, so ist
+\[ \lambda^2\Omega(xy)^\lambda = 2\lambda(xy)^{\lambda-1} + \lambda(\lambda-1)(xy)^{\lambda-1} = \lambda(\lambda+1)(xy)^{\lambda-1}, \]
+ferner wird
+\[ (\varphi\overset{\smile}{,}(xy)^\lambda) = \dfrac{\partial\varphi}{\partial y_2}\lambda(xy)^{\lambda-1}y_2 + \dfrac{\partial\varphi}{\partial y_1}\lambda(xy)^{\lambda-1}y_1 \]
+\[ ((xy)^\lambda\overset{\smile}{,}\varphi) = \lambda(xy)^{\lambda-1}x_1\dfrac{\partial\varphi}{\partial x_1} + \lambda(xy)^{\lambda-1}x_2\dfrac{\partial\varphi}{\partial x_2}, \]
+folglich nach dem Euler'schen Satze:
+\[ (\varphi\overset{\smile}{,}\psi) + (\psi\overset{\smile}{,}\varphi) = \lambda(\varrho+\sigma)(xy)^{\lambda-1}\varphi. \]
+Daher erhalten wir aus Gleichung (I) für $\psi = (xy)^\lambda$:
+\weq{II}{(\varrho+\lambda)(\sigma+\lambda)\Omega(\varphi\cdot(xy)^\lambda) = \varrho\cdot\sigma\cdot(xy)^\lambda\Omega(\varphi) + \lambda(\varrho+\sigma+\lambda+1)(xy)^{\lambda-1}\cdot\varphi.}
+
+
+% ===== pdf idx 98, printed 84.0 =====
+% !PRINTED 84
+\weberpage{84}
+
+80. \textit{Berechnung der Coefficienten $C_\mu$.} Die zuletzt erhaltene Formel benutzen wir nun, um die Coefficienten der Reihe
+\weq{III}{(rs)^\lambda r_x^{m-\lambda} s_y^{n-\lambda} = \sum C_{\lambda,k} (\overline{rs})_{y^{n-k}}^k (xy)^{k-\lambda}, \quad k \geqq \lambda}
+% checked against the GDZ scan (27 Oct 2026): the sign has two bars under the > (\geqq)
+zu bestimmen. Dass die einzelnen Glieder rechts die hier gegebene Form besitzen müssen, haben wir bereits in Nr. 76 und 77 entwickelt. Ihr Grad in $y$ ist
+\[ n-k+k-\lambda = n-\lambda, \]
+ihr Grad in $x$ ist
+\[ m+n-2k-(n-k)+k-\lambda = m-\lambda, \]
+wie es die linke Seite der Relation (III) auch erheischt.
+
+Zunächst erhält man für $\lambda=k$ den ersten Coefficienten $C_{k,k}$, indem man $x=y$ setzt. Dabei geht die linke Seite in die Elementarcovariante
+\weq{1}{E = (\overline{rs})^\lambda = (rs)^\lambda r_x^{m-\lambda} s_x^{n-\lambda}}
+über, während die rechte Seite sich auf ihr erstes Glied
+\weq{2}{C_{k,k}\left[(\overline{rs})_{y^{n-\lambda}}^\lambda\right]_{y=x} = C_{k,k}(\overline{rs})^\lambda}
+reducirt. Durch Comparation von (1) mit (2) erhält man
+\[ C_{k,k} = 1. \]
+
+Um nun die weiteren Coefficienten zu finden, wenden wir auf beiden Seiten der Relation (III) den $\Omega$-Process an, was immer erlaubt ist, da dieselbe eine Identität darstellt. Die Rechnung erleichtert uns Formel (II), Nr. 79. In ihr tritt nur an Stelle von $\varphi$ die Polare $(\overline{rs})_{y^{n-k}}^k$, an Stelle von $\lambda$ der Exponent $k-\lambda$; ebenso haben wir ihren Grad $\varrho$ in $x$ durch $m-\lambda$, ihren Grad $\sigma$ in $y$ durch $n-\lambda$ zu ersetzen.
+
+Der $\Omega$-Process auf eine Polare angewendet liefert aber null (vgl. Nr. 19). Es bleiben daher rechts nur die vom zweiten Terme der Formel (II) herrührenden Glieder unter dem Summenzeichen übrig, nämlich die Glieder:
+\[ (k-\lambda)(m+n-k-\lambda+1)(xy)^{k-\lambda-1}\cdot(\overline{rs})_{y^{n-k}}^k. \]
+Berücksichtigen wir nun, dass nach Nr. 20 (I)
+\[ (m-\lambda)(n-\lambda)\Omega\!\left((rs)^\lambda r_x^{m-\lambda} s_y^{n-\lambda}\right) = (m-\lambda)(n-\lambda)(rs)^{\lambda+1} r_x^{m-\lambda-1} s_y^{n-\lambda-1}, \]
+so liefert der $\Omega$-Process, angewendet auf die Reihe (III)
+\weq{IV}{\begin{aligned}(m-\lambda)(n-\lambda)(rs)^{\lambda+1} r_x^{m-\lambda-1} s_y^{n-\lambda-1} \\ = \sum C_{\lambda,k}(k-\lambda)(m+n-k-\lambda+1)(xy)^{k-\lambda-1}(\overline{rs})_{y^{n-k}}^k.\end{aligned}}
+
+
+% ===== pdf idx 99, printed 85.0 =====
+% !PRINTED 85
+\weberpage{85}
+Ersetzen wir nun aber anderntheils in der Relation (III)
+\[
+\lambda \text{ durch } \lambda + 1,
+\]
+so erhalten wir für die linke Seite der Relation (IV) eine zweite Entwicklung
+\weq{V}{(rs)^{\lambda+1} r_x^{m-\lambda-1} s_y^{n-\lambda-1} = \sum_{\lambda+1,\,k} (\overline{rs})^k_{y^{n-k}} (xy)^{k-\lambda-1}.}
+Multipliciren wir diese Entwicklung mit $(m-\lambda)(n-\lambda)$ und compariren wir (IV) und (V), so erhalten wir die recurrente Coefficienten-Relation
+\weq{VI}{(m-\lambda)(n-\lambda)\,C_{\lambda+1,\,k}=C_{\lambda,\,k}(k-\lambda)(m+n-k-\lambda+1),}
+wobei
+\[
+C_{k,\,k}=1.
+\]
+
+81. Damit ist das Mittel gegeben, die Coefficienten einzeln zu berechnen. Setzen wir $k-\lambda=\varrho$, und somit $\lambda=k-\varrho$, so liefern die Substitutionen
+\[
+\varrho=1,\ \varrho=2,\ \dots\ \varrho=\varrho
+\]
+in die Formel
+\[
+(m-k+\varrho)(n-k+\varrho)\,C_{k+1-\varrho,\,k}=C_{k-\varrho,\,k}(m+n-2k+\varrho+1)\,\varrho
+\]
+der Reihe nach folgende Gleichungen:
+\begin{align*}
+(m-k+1)(n-k+1)\cdot 1 &= C_{k-1,\,k}(m+n-2k+2)\\
+(m-k+2)(n-k+2)\,C_{k-1,\,k} &= C_{k-2,\,k}(m+n-2k+3)\cdot 2\\
+(m-k+3)(n-k+3)\,C_{k-2,\,k} &= C_{\lambda-3,\,k}(m+n-2k+4)\cdot 3 % [sic] printed C_{\lambda-3,k}, apparent misprint for C_{k-3,k}
+\\
+\cdots\cdots\cdots\cdots &\cdots\cdots\cdots\cdots\\
+\cdots\cdots\cdots\cdots &\cdots\cdots\cdots\cdots\\
+(m-k+\varrho)(n-k+\varrho)\,C_{k-\varrho+1,\,k} &= C_{k-\varrho,\,k}(m+n-2k+\varrho+1)\,\varrho.
+\end{align*}
+Multiplicirt man die untereinander stehenden Gleichungen, so erhält man:
+\begin{align*}
+&(m-k+1)(m-k+2)\cdots(m-k+\varrho)(n-k+1)(n-k+2)\cdots(n-k+\varrho)\\
+&= C_{k-\varrho,\,k}\cdot \varrho!\,(m+n-2k+2)(m+n-2k+3)\cdots(m+n-2k+\varrho+1),
+\end{align*}
+oder:
+\weq{1}{\frac{(m-k+\varrho)!}{(m-k)!}\cdot\frac{(n-k+\varrho)!}{(n-k)!}=C_{k-\varrho,\,k}\cdot \varrho!\,\frac{(m+n-2k+\varrho+1)!}{(m+n-2k+1)!}\cdot}
+Nun ist aber:
+\[
+\frac{(m-k+\varrho)!}{(m-k)!}=\binom{m-k+\varrho}{\varrho}\cdot \varrho\,!
+\]
+und analoge Beziehungen gelten für die beiden andern Quotienten. Führt man also in (1) diese Werthe für die betreffenden Quotienten ein, so erhält man nach Division mit $(\varrho!)^2$:
+\weq{VII}{\binom{m-k+\varrho}{\varrho}\binom{n-k+\varrho}{\varrho}=C_{k-\varrho,\,k}\binom{m+n-2k+\varrho+1}{\varrho}.}
+Wir haben die Formel (VII) nicht in dieser Allgemeinheit nöthig, sondern nur für die Reihenentwicklung von
+\[
+F=r_x^m s_y^n,
+\]
+%CONT>>
+
+
+% ===== pdf idx 100, printed 86.0 =====
+% !PRINTED 86
+\weberpage{86}
+%<<CONT
+also für den Fall
+\[
+\lambda=0,\ \text{d.\,h.}\ k=\varrho.
+\]
+Man erhält alsdann:
+\[
+\binom{m}{k}\binom{n}{k}=C_{0,\,k}\binom{m+n-k+1}{k},
+\]
+und demnach:
+\[
+F=r_x^m s_y^n=\sum C_{0,\,k}(\overline{rs})^k_{y^{n-k}}(xy)^k,
+\]
+oder
+\weq{VIII}{r_y^m s_y^n=\sum \frac{\binom{m}{k}\binom{n}{k}}{\binom{m+n-k+1}{k}}\,(\overline{rs})^k_{y^{n-k}}(xy)^k.} % [sic] printed r_y^m s_y^n; preceding line has r_x^m s_y^n
+Diese Entwicklung wurde von \gesperrt{Clebsch} und \gesperrt{Gordan} gleichzeitig entdeckt, und wir haben hier dieselbe auf dem von \gesperrt{Clebsch} eingeschlagenen Wege gegeben. Durch sie ist also der Beweis geliefert:
+
+\begin{quote}
+\glqq Jede Form mit zwei Reihen cogredienter Variabeln ist eine simultane Covariante ihrer Elementarcovarianten, also von Formen mit nur einer Variabelnreihe.\grqq{}
+\end{quote}
+
+82. \textit{Beispiel für die Clebsch-Gordan'sche Reihenentwicklung.} Wir wollen die Form
+\[
+F=r_x^2 s_y
+\]
+in eine Reihe entwickeln, und durch einfache Rechnung die Identität der Entwicklung mit der ursprünglichen Form nachweisen. Es ist:
+\[
+F=r_x^2 s_y=\sum \frac{\binom{2}{k}\binom{1}{k}}{\binom{4-k}{k}}\,(\overline{rs})^k_{y^{n-k}}(xy)^k,
+\]
+oder
+\[
+r_x^2 s_y=(\overline{rs})^0_y+\frac{2}{3}(\overline{rs})^1(xy).
+\]
+Also:
+\[
+F=\frac{1}{3}\left\{r_x^2 s_y+2r_x s_x r_y\right\}+\frac{2}{3}(rs)r_x(xy)
+\]
+\[
+=\frac{1}{3}F+\frac{2}{3}r_x\left\{s_x r_y+(rs)(xy)\right\}.
+\]
+Nun ist aber:
+\[
+(rs)(xy)=r_x s_y - s_x r_y.
+\]
+Demnach wird:
+\[
+F=\frac{1}{3}F+\frac{2}{3}r_x\left\{s_x r_y+r_x s_y-s_x r_y\right\}
+\]
+\[
+=\frac{1}{3}F+\frac{2}{3}r_x^2 s_y=F.
+\]
+
+
+% ===== pdf idx 101, printed 87.0 =====
+% !PRINTED 87
+\weberpage{87}
+Weitere Beispiele. Es ist für die in $y$ linearen Formen $F$
+\[
+r_x s_y=(\overline{rs})^0_y+\frac{1}{2}(\overline{rs})^1(xy)
+\]
+\[
+r_x^2 s_y=(\overline{rs})^0_y+\frac{2}{3}(\overline{rs})^1(xy)
+\]
+\[
+r_x^m s_y=(\overline{rs})^0_y+\frac{m}{m+1}(\overline{rs})^1(xy).
+\]
+Ebenso erhalten wir für die in $y$ quadratischen Formen $F$
+\[
+r_x^2 s_y^2=(\overline{rs})^0_{y^2}+(\overline{rs})^1_y(xy)+\frac{1}{3}(\overline{rs})^2(xy)^2
+\]
+\[
+r_x^4 s_y^2=(\overline{rs})^0_{y^2}+\frac{4}{3}(\overline{rs})^1_y(xy)+\frac{3}{5}(\overline{rs})^2(xy)^2
+\]
+\[
+r_x^m s_y^2=(\overline{rs})^0_{y^2}+\frac{2m}{m+2}(\overline{rs})^1_y(xy)+\frac{m-1}{m+1}(\overline{rs})^2(xy)^2.
+\]
+Entwickeln wir endlich noch eine in $y$ biquadratische Form in ihre Reihe, etwa $r_x^4 s_y^4$, so erhalten wir:
+\[
+r_x^4 s_y^4=(\overline{rs})^0_{y^4}+2(\overline{rs})^1_{y^3}(xy)+\frac{12}{7}(\overline{rs})^2_{y^2}(xy)^2+\frac{4}{5}(\overline{rs})^3_y(xy)^3+\frac{1}{5}(\overline{rs})^4(xy)^4.
+\]
+
+83. \textit{Verallgemeinerung der Reihenentwicklung.} Wir können die eben gewonnene Reihenentwicklung noch auf etwas complicirtere Formen ausdehnen. Die zunächst liegenden Formen $F$ sind durch das symbolische Product dargestellt:
+\[
+r_x^\lambda s_y^m r_y^\varrho=F.
+\]
+Um die Reihen für diese Form zu erhalten, brauchen wir nur die Formel (VIII) $\varrho$mal nach $x$ zu differentiiren und die Incremente durch $y$ zu ersetzen; dann erhalten wir:
+\[
+m(m-1)(m-2)\dots(m-\varrho+1)\,r_x^{m-\varrho}s_y^n r_y^\varrho
+=\sum \frac{\binom{m}{k}\binom{n}{k}}{\binom{m+n-k+1}{k}}(m-k)(m-k+1)\dots(m-k-\varrho+1)(xy)^k(\overline{rs})^k_{y^{n-k+\varrho}}.
+\]
+Hierbei muss $\varrho$ kleiner als $(m-k)$ sein. Nach Division der Gleichung mit dem Coefficienten der linken Seite erhält man
+\weq{1}{r_x^{m-\varrho} s_y^n r_y^\varrho=\sum \frac{\binom{m}{k}\binom{n}{k}}{\binom{m+n-k+1}{k}}\cdot\frac{(m-k)\dots(m-k-\varrho+1)}{m(m-1)\dots(m-\varrho+1)}\cdot(xy)^k(\overline{rs})^k_{y^{n-k+\varrho}}.}
+Nun ist aber
+\[
+\binom{m}{k}\cdot\frac{(m-k)\dots(m-k-\varrho+1)}{m(m-1)\dots(m-\varrho+1)}=\frac{m(m-1)\dots(m-\varrho+1)(m-\varrho)\dots(m-\varrho-k+1)}{m(m-1)\dots(m-\varrho+1)\,.\,1\,.\,2\,.\,3\,.\,.\,k}=\binom{m-\varrho}{k}\cdot
+\]
+
+
+% ===== pdf idx 102, printed 88.0 =====
+% !PRINTED 88
+\weberpage{88}
+Setzen wir also $m-\varrho=\lambda$, so geht (1) über in:
+\weq{IX}{r_x^\lambda s_y^n r_y^\varrho=\sum \frac{\binom{\lambda}{k}\binom{n}{k}}{\binom{\lambda+\varrho+n-k+1}{k}}\cdot(\overline{rs})^k_{y^{n-k+\varrho}}(xy)^k.}
+
+84. \textit{$F$ ist ein Product von vier und mehr Factoren.} Während also für die Reihenentwicklung einer binären Form $F$ mit zwei Reihen Variabeln die Coefficienten noch allgemein angegeben werden können, wenn $F$ durch drei Factoren repräsentirt wird, ist uns das nicht mehr möglich, wenn die Zahl der Factoren die Anzahl drei überschreitet. Die figurirten Zahlen reichen alsdann nicht mehr aus, das Coefficientengesetz allgemein festzustellen. Die Reihe muss dann für jeden einzelnen Fall berechnet werden. Für den Fall von vier Factoren kann man sich etwa in folgender Weise behelfen. Es sei
+\[
+F=r_x^\lambda r_y^\varrho s_y^\sigma s_x^\mu
+\]
+und $\mu$ der kleinste der Exponenten. Erheben wir die Identität
+\[
+r_y s_x=\{r_x s_y-(rs)(xy)\}
+\]
+auf die $\mu^{\text{te}}$ Potenz, entwickeln rechts nach dem binomischen Lehrsatz und multipliciren alsdann mit $r_y^{\varrho-\mu}r_x^\lambda s_y^\sigma$, so erhalten wir eine Reihe, in welcher nur mehr Factoren wie $r_x^k s_y^\lambda$ neben den Potenzen von $(xy)^k$ und den Polaren der Elementarcovarianten auftreten. Diese beiden Factoren der einzelnen Glieder entwickelt man nun nach Reihe (VIII) und erhält so die allgemeine Darstellung.
+
+Eine andere Methode ist die folgende. Man setzt
+\[
+r_x^\lambda s_x^\mu\cdot r_y^\varrho s_y^\sigma=R_x^{\lambda+\mu}\cdot S_y^{\varrho+\sigma}.
+\]
+Nun entwickelt man $R_x^{\lambda+\mu}\cdot S_y^{\varrho+\sigma}$ nach Reihe (VIII), ersetzt in ihr hierauf $R$ und $S$ in geeigneter Weise durch $r_x^\lambda s_x^\mu$ und $r_y^\varrho s_y^\sigma$ und wendet sodann auf die erhaltenen neuen Glieder wiederum die Entwicklung (VIII) an.
+
+85. \textit{Symmetrische und alternirende Formen.} Diese Reihenentwicklungen werden durchgehends einfacher, sobald $F$ eine symmetrische oder eine alternirende Form ist, was natürlich von vornherein voraussetzt, dass $m=n$ sei. Im ersten Falle ändert sich nämlich $F=r_x^m s_y^m$ nicht, wenn $x$ mit $y$, oder was das nämliche ist, wenn $r$ mit $s$ vertauscht wird. Durch Vertauschung von $r$ mit $s$ verändern aber alle ungeraden Elementarcovarianten, also die Formen:
+\[
+E=(\overline{rs})^{2\lambda+1},
+\]
+ihr Zeichen. Sie müssen demnach, da die Function $F$ selbst unverändert
+%CONT>>
+
+
+% ===== pdf idx 103, printed 89.0 =====
+% !PRINTED 89
+\weberpage{89}
+bleibt, identisch null sein. Die Reihe reducirt sich sonach auf die H\"alfte der Glieder.
+
+Im zweiten Falle verschwinden aus dem gleichen Grunde die geraden Elementarcovarianten, also die Formen
+\[
+E = (rs)^{2\lambda},
+\]
+die ja bei Vertauschung von $r$ mit $s$ sich nicht \"andern, w\"ahrend $F$ als alternirende Function ihr Zeichen \"andert. Zu diesen Formen geh\"ort unter andern die in Nr. 67 aufgestellte Fundamentalcombinante
+\[
+f(x)\varphi(y) - \varphi(x)f(y) = P.
+\]
+
+86. \textit{Umkehrung der Reihe (VIII).} Ersetzt man in der Reihe (VIII) die Gr\"ossen $m$ und $n$ bezw. durch $m-\nu$, $n-\nu$ und multiplicirt auf beiden Seiten mit $(rs)^\nu \cdot (xy)^\nu$, so kommt:
+\[
+(rs)^\nu r_x^{m-\nu} s_y^{n-\nu} (xy)^\nu = \sum \frac{\binom{m-\nu}{k}\binom{n-\nu}{k}}{\binom{m+n-2\nu-k+1}{k}} (\overline{rs})_{y^{n-(\nu+k)}}^{\nu+k} (xy)^{k+\nu}. % checked against the GDZ scan (27 Oct 2026): printed (\overline{rs})^{\nu+k}_{y^{n-(\nu+k)}}, as transcribed
+\]
+
+Legt man hier dem $\nu$ alle m\"oglichen Werthe bei von $\nu = 0$ bis $\nu = n$, so erh\"alt man $(n+1)$ Gleichungen, in denen rechts nur die $(n+1)$ Polaren der $(n+1)$ Elementarcovarianten $(rs)^k$ in linearer Verbindung auftreten. Dabei beginnt mit wachsendem $\nu$ die Entwicklung rechts mit einer immer h\"oheren Elementarcovariante, so dass also, wenn man diese $(n+1)$ Gleichungen nach der Determinantenmethode aufl\"ost, die Nennerdeterminante den Werth Eins besitzt, da ihr Diagonalglied nur Elemente vom Werthe 1 und links derselben nur Elemente vom Werthe 0 enth\"alt. Bei Aufl\"osung der Gleichungen nach diesen Polaren tritt also kein Nenner auf, und es wird sich somit der Werth einer Polare in der Form darstellen:
+\weq{1}{(\overline{rs})^k_{y^{n-k}} (xy)^k = \sum C_{k,\,\nu} (rs)^\nu r_x^{m-\nu} s_y^{n-\nu} (xy)^\nu \cdot}
+
+Die Glieder unter dem Summenzeichen rechts gehen, vom Factor $C_{k,\,\nu} (xy)^\nu$ abgesehen, aus $F = r_x^m s_y^n$ durch den $\Omega$-Process hervor (vgl. Nr. 20).
+
+Auch diese Reihenentwicklung ist eindeutig, wie sich durch die gleichen Schl\"usse ergiebt, womit wir die Eindeutigkeit der Reihe (VIII) nachgewiesen haben. Wir d\"urfen also behufs Co\"efficientenbestimmung wiederum den $\Omega$-Process anwenden. Dabei beschr\"anken wir uns indess auf den Fall $k=0$; der andere ergiebt sich aus diesem, wenn man nur f\"ur $m$ und $n$ entsprechend andere Werthe einf\"uhrt.
+
+87. \textit{Berechnung der Co\"efficienten.} F\"ur $k=0$, $\nu = k$ wird die Relation (1)
+\weq{2}{(rs)^0_{y^n} = (r_x^m s_x^n)_{y^n} = \sum C_k (rs)^k r_x^{m-k} s_y^{n-k} (xy)^k \cdot}
+
+
+% ===== pdf idx 104, printed 90.0 =====
+% !PRINTED 90
+\weberpage{90}
+Da links eine Polare steht, so liefert der $\Omega$-Process auf dieser Seite Null. Auf der rechten Seite erhalten wir nach Formel (II) Nr. 79 zwei Summen, von denen wir die eine nach links transponiren. Es entsteht dann, da $\varrho = (m-k)$ und $\sigma = (n-k)$, die Beziehung:
+\[
+\left.\begin{aligned}
+-\sum_{0}^{n} C_k\,(m-k)(n-k)(rs)^{k+1} r_x^{m-k-1} s_y^{n-k-1}(xy)^k \\
+= \sum_{0}^{n} C_k\,k\,(m+n-k+1)(rs)^k r_x^{m-k} s_y^{n-k}(xy)^{k-1}
+\end{aligned}\right\} \cdot (\mathrm{X})
+\]
+Da das erste Glied der Summe rechts verschwindet, so k\"onnen wir auf dieser Seite $k$ durch $k+1$ ersetzen und erhalten:
+\[
+-\sum C_k\,(m-k)(n-k)(rs)^{k+1} r_x^{m-k-1} s_y^{n-k-1}(xy)^k = \sum C_{k+1}\,(k+1)(m+n-k)(rs)^{k+1} r_x^{m-k-1} s_y^{n-k-1}(xy)^k \cdot
+\]
+Hieraus ergiebt sich durch Comparation gleich hoher Potenzen
+\weq{3}{-C_k\,(m-k)(n-k) = C_{k+1}\,(k+1)(m+n-k).}
+Nun folgt aber aus Reihe (2) f\"ur $k=0$, $C_0 = 1$. Demnach erhalten wir aus (2), indem wir der Gr\"osse $k$ alle Werthe von 0 bis $k$ beilegen:
+\[
+\begin{aligned}
+m \cdot n &= C_1\,(m+n) \\
+- C_1\,(m-1)(n-1) &= C_2\,(m+n-1)\cdot 2 \\
+- C_2\,(m-2)(n-2) &= C_3\,(m+n-2)\cdot 3 \\
+&\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots \\
+&\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots \\
+- C_{k-1}\,(m-k+1)(n-k+1) &= C_k\,(m+n-k+1)\,k.
+\end{aligned}
+\]
+Durch Multiplication dieser Gleichungen mit einander erh\"alt man:
+\[
+(-1)^k \cdot \binom{m}{k} k! \binom{n}{k} k! = C_k \cdot k!\,k! \binom{m+n}{k}
+\]
+oder
+\[
+C_k = (-1)^k \frac{\binom{m}{k}\binom{n}{k}}{\binom{m+n}{k}}.
+\]
+Tr\"agt man diesen Werth von $C_k$ in die Relation (2) ein, so erh\"alt man:
+\weq{XI}{(r_x^m s_x^n)_{y^n} = \sum (-1)^k \frac{\binom{m}{k}\binom{n}{k}}{\binom{m+n}{k}} (rs)^k r_x^{m-k} s_y^{n-k}(xy)^k \cdot}
+
+\S~8. \textbf{Anwendungen des Processes der Reihenentwicklung.}
+
+88. \textit{Zweck der Reihenentwicklungen.} Die Reihenentwicklungen dienen in erster Linie dazu, complicirte symbolische Producte in einfache \"uberzuf\"uhren, oder unbekannte Formen durch bekannte darzu-
+%CONT>>
+
+
+% ===== pdf idx 105, printed 91.0 =====
+% !PRINTED 91
+\weberpage{91}
+%<<CONT
+stellen. Sie werden so das wichtigste Hilfsmittel f\"ur die symbolische Rechnung, insbesondere bei Aufstellung der von einander linear unabh\"angigen Co- und Invarianten einer Form $n^{\mathrm{ten}}$ Grades. Wesentliche Vortheile bieten die hier entwickelten Formeln auch, wenn es sich darum handelt, lineare Relationen zwischen Ueberschiebungen herzustellen. In seinem Programme \glqq Ueber das Formensystem bin\"arer Formen\grqq{} (Teubner, 1875) hat Gordan aus der Hauptformel (VIII) noch mehrere andere durch Differentiation und einfache Substitutionen abgeleitet, welche ganz allgemein solche Relationen zwischen Ueberschiebungen mit drei Reihen von Symbolen bieten.
+
+Im Folgenden wollen wir nun in einer Reihe von Anwendungen zeigen, inwiefern die Reihenentwicklungen zu einem so wirksamen Hilfsmittel der symbolischen Rechnung werden; zahlreiche specielle Beispiele werden wir im zweiten und dritten Teile dieses Bandes kennen lernen.
+
+89. \textit{Die Ueberschiebnngen der Form $f = a_x^4$ \"uber ihre Hesse'sche Covariante $\Delta = (ab)^2 a_x^2 b_x^2$.} % [sic] \textquotedbl{}Ueberschiebnngen\textquotedbl{} printed thus, misprint for \textquotedbl{}Ueberschiebungen\textquotedbl{}
+Als erste Anwendung will ich hier die Berechnung der vier Ueberschiebungen $(f,\Delta)^k$, $k=4,3,2,1$, so weit dies vortheilhaft, mit Reihenentwicklung geben.
+
+Am einfachsten berechnet sich $(f,\Delta)^4$; man bedarf hierbei keiner Reihenentwicklung; vielmehr ergiebt sich unmittelbar aus der vierten Polare
+\[
+\Delta_{y^4} = (ab)^2 a_y^2 b_y^2,
+\]
+indem wir nach der in Nr. 35 gegebenen Theorie $y_1$ durch $c_2$, $y_2$ durch $-c_1$ ersetzen, der Werth:
+\weq{1}{(\Delta, f)^4 = (ab)^2(ac)^2(bc)^2 = j.}
+Zur Berechnung von $(f,\Delta)^3$ entwickeln wir ein Glied der dritten Polare von $\Delta$ nach der Reihe (IX) Nr. 83. Wir erhalten, da $k$ nur die Werthe 0, 1 annehmen kann:
+\[
+\begin{aligned}
+(ab)^2 b_x a_y^2 b_y &= (ab)^2 \sum \frac{\binom{1}{k}\binom{2}{k}}{\binom{1+1+2-k+1}{k}} \cdot (\overline{ab})^{k}_{y^{2-k+1}} (xy)^k \\
+&= \left[(ab)^2 a_x^2 b_x^2\right]_{y^3} + \frac{2}{4}\left[(ab)^3 a_x b_x\right](xy). % checked against the GDZ scan (27 Oct 2026): the barred term in the line above is printed (\overline{ab})^k_{y^{2-k+1}}, as transcribed
+\end{aligned}
+\]
+Weil aber $(ab)^3 a_x b_x$ identisch null, und $(ab)^2 a_x^2 b_x^2 = \Delta$, so hat man
+\weq{I}{(ab)^2 b_x a_y^2 b_y = \Delta_{y^3} = \Delta_x \Delta_y^3.}
+Ersetzen wir wiederum $y_1$ durch $c_2$, $y_2$ durch $-c_1$ und multipliciren mit $c_x$, so kommt:
+\weq{2}{(ab)^2 (ac)^2 (bc)\, b_x c_x = (\Delta, f)^3 = 0,}
+%CONT>>
+
+
+% ===== pdf idx 106, printed 92.0 =====
+% !PRINTED 92
+\weberpage{92}
+%<<CONT
+weil die linke Seite durch Vertauschung von $b$ mit $c$ nur ihr Zeichen \"andert. Vertauscht man in (I) $y$ mit $x$, so ergiebt sich aus dieser dritten Polare von $\Delta$ die erste, und damit durch die gleiche Substitution statt der dritten Ueberschiebung $(\Delta, f)^3$ die erste:
+\weq{3}{(ab)^2 (bc)\, a_x^2 b_x c_x^3 = (\Delta, f) = t.}
+Sie verschwindet nicht, und liefert somit eine Covariante sechsten Grades von $f = a_x^4$.
+
+Es er\"ubrigt nur noch die zweite Ueberschiebung von $f$ \"uber $\Delta$ zu berechnen. Wir k\"onnten zu dem Zwecke wiederum ein Glied der zweiten Polare von $\Delta$ in eine Reihe entwickeln. Vortheilhafter ist es aber, diesen Process f\"ur ein Glied der dritten Polare von $(f,f)$ vorzunehmen, n\"amlich f\"ur das Glied $(ab)a_x^3 b_y^3$. Da diese Form $(f,f)$ sowohl, als auch $(f,f)^3$ identisch verschwinden, so ist in der durch Formel (VIII) dictirten Entwicklung
+\[
+(ab)\,a_x^3 b_y^3 = (ab) \sum \frac{\binom{3}{k}\binom{3}{k}}{\binom{7-k}{k}} (\overline{ab})_{y^{3-k}} (xy)^k
+\]
+die erste und dritte Elementarcovariante null, und sie reducirt sich demnach auf die f\"ur $k=1$ und $k=3$ sich ergebenden Glieder:
+\[
+\begin{aligned}
+(ab)\,a_x^3 b_y^3 &= \frac{3}{2}\left\{(ab)^2 a_x^2 b_x^2\right\}_{y^2} (xy) + \frac{1}{4}(ab)^4 (xy)^3 \\
+&= \frac{3}{2}\Delta_{y^2}\cdot (xy) + \frac{1}{4}(ab)^4 (xy)^3\cdot
+\end{aligned}
+\]
+Ersetzen wir hierin $y_1$ durch $-c_2$, $y_2$ durch $+c_1$ und multipliciren mit $c_x$, so kommt:
+\[
+-(ab)(bc)^3 a_x^3 c_x = \frac{3}{2}(\Delta, f)^2 + \frac{i}{4} \cdot f,
+\]
+wenn wir die Invariante $(ab)^4$ von $f$ wie schon fr\"uher mit $i$ bezeichnen. Vertauscht man links $b$ mit $c$, nimmt die halbe Summe der so entstehenden symbolischen Producte und ber\"ucksichtigt, dass
+\[
+(ab)c_x - (ac)b_x = -(bc)a_x,
+\]
+so kommt endlich
+\[
+\frac{i}{2} f = \frac{3}{2}(\Delta, f)^2 + \frac{i}{4} f,
+\]
+oder:
+\weq{4}{(\Delta, f)^2 = \frac{i}{6} \cdot f.}
+Wir erhalten somit das Resultat:
+\[
+(\Delta, f) = t, \quad (\Delta, f)^2 = \frac{i}{6} \cdot f, \quad (\Delta, f)^3 = 0, \quad (\Delta, f)^4 = j.
+\]
+
+
+% ===== pdf idx 107, printed 93.0 =====
+% !PRINTED 93
+\weberpage{93}
+Es möge hier bemerkt sein, dass die fünf Formen
+\[
+f,\ t,\ \Delta,\ i,\ j
+\]
+überhaupt die einzigen selbstständigen Covarianten der Form $f$ sind (wie wir später noch beweisen werden), durch welche sich alle andern rational und ganz darstellen lassen.
+
+90. \textit{Die aszygetischen Covarianten dritten Grades in den Coefficienten von $f=a_x^5$.} Wir stellen uns weiter die Aufgabe, alle aszygetischen, d. i. linear von einander unabhängigen Covarianten dritten Grades in den Coefficienten einer Form fünfter Ordnung zu berechnen. Sie müssen jedenfalls durch symbolische Producte von der Form:
+\weq{I}{P = (ab)^\mu (bc)^\varkappa (ca)^\lambda a_x^{\varkappa_1} b_x^{\lambda_1} c_x^{\mu_1}}
+repräsentirt werden können, wobei die Exponenten den Gleichungen
+\[
+5 = \lambda + \mu + \varkappa_1 = \mu + \varkappa + \lambda_1 = \varkappa + \lambda + \mu_1
+\]
+genügen müssen.
+
+Jedes solche Product $P$ lässt sich aber durch Ueberschiebungen von Formen zweiten Grades in den Coefficienten mit solchen ersten Grades darstellen, wie aus unsern allgemeinen Betrachtungen Nr. 45 und Nr. 46 erhellt. Die einzige Form ersten Grades ist aber die Originalform $f=a_x^5$ selbst, und die Formen zweiten Grades sind die aus $(f, f)^\varrho$ für $\varrho = 2$ und 4 sich ergebenden nicht verschwindenden Covarianten:
+\[
+\varphi = (ab)^2 a_x^3 b_x^3,\ \ i = (ab)^4 a_x b_x.
+\]
+Jede Form $P$ muss sich demnach, von $P = f^3 = a_x^5 b_x^5 c_x^5$ abgesehen, durch eine Summe von der Gestalt
+\weq{II}{P = \sum m_i \cdot (f,\ \varphi)^\varrho + \sum n_i (f,\ i)^\sigma,}
+wo $m_i$, $n_i$ noch zu bestimmende Constante sind, darstellen lassen, und zu solchen Summen gelangen wir, wenn wir nach bereits früher gegebenen Methoden das Symbol $c$ in $P$ zunächst durch $y$ ersetzen, und nun die so entstehende Form $P_y$ in eine Reihe entwickeln. Die Coefficienten der Potenzen von $(xy)$ sind dann Polaren von $\varphi$ oder $i$. Da nun in (I) kein Exponent die Zahl 4 aus bekannten Gründen überschreiten kann, so giebt es eine endliche Zahl von linearen Relationen (II). Aus ihnen eliminiren wir so viele Formen dritten Grades $P$, $(f,\ \varphi)^\varrho$, $(f,\ i)^\sigma$, als nur möglich, und gelangen so zu den linear unabhängigen Formen dritten Grades in den Coefficienten.
+
+91. In unserem Falle können wir indess die aszygetischen Formen dritten Grades a priori erkennen, so dass die Reihenentwicklungen, welche in allgemeineren Fällen zur Bildung der Relationen (II) nöthig
+%CONT>>
+
+
+% ===== pdf idx 108, printed 94.0 =====
+% !PRINTED 94
+\weberpage{94}
+%<<CONT
+werden, sich hier auf ein Minimum beschränken. Denn da die sechs Formen:
+\[
+f^3,\ f\cdot\varphi,\ (f,\ \varphi),\ f\cdot i,\ (f,\ i),\ (f,\ i)^2
+\]
+von immer andern und andern Grade 15, 11, 9, 7, 5, 3 in den Variabeln sind, so können zwischen ihnen keine \gesperrt{linearen Relationen} bestehen. Unsere Aufgabe besteht also nur darin, zu zeigen, dass in der That keine weiteren Formen von der erwähnten Eigenschaft existiren.
+
+Zum Zwecke dieses Beweises schreiten wir von den einfachsten Producten $P$ allmälig zu der Berechnung complicirterer vor, indem wir den Exponenten $\mu$, $\varkappa$, $\lambda$ der Klammerfactoren von $P$ immer grössere und grössere Zahlenwerthe beilegen. Dabei können wir schon von vorn herein eine Grenze angeben, über welche hinaus diese Grössen $\mu$, $\varkappa$, $\lambda$ nicht wachsen können. Nehmen wir nämlich an --- was bei der Symmetrie in den Symbolen $a$, $b$, $c$ stets erlaubt ist ---
+\[
+P = (ab)^\mu (bc)^\varkappa (ca)^\lambda a_x^{\varkappa_1} b_x^{\lambda_1} c_x^{\mu_1}
+\]
+sei so geordnet, dass
+\[
+\mu > \varkappa \geqq \lambda,
+\]
+dann muss, wenn
+\[
+\mu + \varkappa + \lambda > 6
+\]
+ist, $\mu$ mindestens den Werth 3 besitzen. Jedes symbolische Product $P$ mit dem Factor $(ab)^3$ kann aber (vgl. Nr. 11) stets auf eines mit dem Factor $(ab)^4$ reducirt werden. Nach unsern allgemeinen Ueberschiebungssätzen lässt sich aber alsdann eine solche Form $P$ dritten Grades linear durch Ueberschiebungen darstellen mit $i = (ab)^4 a_x b_x$, und einer Form ersten Grades, also der Form $f$, d. h. $P$ lässt sich linear durch $i\cdot f$, $(i,\ f)$, $(i,\ f)^2$ ausdrücken, und ist somit keine aszygetische Form zu diesen dreien.
+
+Die Summe $\mu + \varkappa + \lambda$ der drei Exponenten kann also im günstigsten Falle den Werth 6 erreichen, und dabei kann $\mu$ oder $\varkappa$ oder $\lambda$ den Werth 4 nicht überschreiten.
+
+92. Wir wollen im Folgenden die nach diesen Beschränkungen übrig bleibenden Möglichkeiten untersuchen.
+
+1) Es sei: $\mu + \varkappa + \lambda = 0$, d. h. $\mu = \varkappa = \lambda = 0$, dann ist:
+\[
+P_0 = a_x^5 b_x^5 c_x^5 = f^3.
+\]
+
+2) Ist $\mu + \varkappa + \lambda = 1$, so lässt sich ein hiezu gehöriges symbolisches Product $P_1$ immer reduciren (vgl. Nr. 11) auf ein Product $P_2$, für welches
+
+3)
+\[
+\mu + \varkappa + \lambda = 2,
+\]
+%CONT>>
+
+
+% ===== pdf idx 109, printed 95.0 =====
+% !PRINTED 95
+\weberpage{95}
+%<<CONT
+und zwar $\mu = 2$, $\varkappa = \lambda = 0$ ist. In diesem Falle wird
+\[
+P_2 = (ab)^2 a_x^3 b_x^3 c_x^5 = \varphi \cdot f.
+\]
+
+4) Wenn $\mu + \varkappa + \lambda = 3$, so kann entweder
+\[
+\mu = k = \lambda = 1 % [sic] printed \textquotedbl{}k\textquotedbl{} for \varkappa
+\]
+oder
+\[
+\mu = 2,\ \varkappa = 1,\ \lambda = 0
+\]
+oder
+\[
+\mu = 3,\ \varkappa = \lambda = 0.
+\]
+Die nach dem letzten der drei Fälle zu bildende Form ist identisch null. Die Form des ersten Falles dagegen lässt sich auf die des zweiten Falles reduciren, für welchen
+\[
+P_3 = (ab)^2 (bc) a_x^3 b_x^2 c_x^4.
+\]
+Ersetzt man hierin nach der allgemein gegebenen Methode $c$ durch $y$, und entwickelt nun $P_{3y}$ in eine Reihe, so kommt:
+\[
+(ab)^2 a_x^3 b_x^2 b_y = [(ab)^2 a_x^3 b_x^3]_y + \text{Const.} \times [(ab)^3 a_x^2 b_x^2] (xy) \cdot
+\]
+Die zweite Elementarcovariante rechts ist identisch Null, die erste ist $\varphi$; also wird, wenn man wieder $y$ durch $c$ ersetzt:
+\[
+P_3 = (\varphi,\ f).
+\]
+
+5) Ist ferner: $\mu + \varkappa + \lambda = 4$, so ist entweder
+\[
+\mu > 2,\quad \text{oder}\quad \mu = 2,\ \varkappa = \lambda = 1
+\]
+\[
+\mu = 2,\ \varkappa = 2.
+\]
+Im ersten Falle ist entweder $P$ direct gleich $f \cdot i$, wenn $\mu = 4$, $k = \lambda = 0$ % [sic] printed \textquotedbl{}k\textquotedbl{} for \varkappa
+oder, wenn $\mu = 3$, $k = 1$, $\lambda = 0$: % [sic] printed \textquotedbl{}k\textquotedbl{} for \varkappa
+\[
+P_4 = (ab)^3 (ac) a_x b_x^2 c_x^4.
+\]
+Vertauscht man $a$ mit $b$ und nimmt die halbe Summe, so kommt:
+\[
+P_4 = \tfrac{1}{2} (ab)^3 a_x b_x c_x^4 \{(ac) b_x - c_x (ab)\}
+\]
+\[
+= \tfrac{1}{2} f \cdot i.
+\]
+Im zweiten Falle ist:
+\[
+P_5 = (ab)^2 (ac) (bc) a_x^2 b_x^2 c_x
+\]
+\[
+= \tfrac{1}{3} a_x^2 b_x^2 c_x^2 (ab)(ac)(bc) \{c_x (ab) + a_x (bc) + b_x (ca)\} = 0.
+\]
+Im dritten Falle ist
+\[
+P_6 = (ab)^2 (ac)^2 a_x b_x^3 c_x^3.
+\]
+Um diese Form durch Ueberschiebungen auszudrücken, entwickeln wir $(ac) a_y^3 a_x c_x^4$ in eine Reihe und erhalten:
+\[
+(ac) a_y^3 a_x c_x^4 = [(ac) a_x^4 c_x^4]_{y^3} + c_1 [(ac)^2 a_x^3 c_x^3]_{y^2} (yx) + c_2 [(ac)^3 a_x^2 c_x^2]_y (yx)^2 + c_3 [(ac)^4 a_x c_x] (yx)^3.
+\]
+
+
+% ===== pdf idx 110, printed 96.0 =====
+% !PRINTED 96
+\weberpage{96}
+Hierin verschwindet der erste und dritte Term rechts identisch. Ersetzen wir also in dieser Reihe $y$ durch $b$, so kommt
+\[
+(ab)^3 (ac) a_x b_x^2 c_x^4 = c_1 (\varphi,\ f)^2 + c_3 \cdot i \cdot f.
+\]
+Die linke Seite ist $P_4 = \tfrac{1}{2} f \cdot i$; der erste Term rechts ist aber bis auf einen Zahlenfactor $P_6 = (ab)^2 (ac)^2 a_x^3 b_x^3 c_x^3$. Denn die Polare
+\[
+[(ac)^2 a_x^3 c_x^3]_{y^2} = \varphi_{y^2} = \frac{3}{\binom{6}{2}} \left\{ 2 (ac)^2 c_x^3 a_x a_y^2 + 3 (ac)^2 a_x^2 c_x^2 a_y c_y \right\}
+\]
+geht durch die Substitution $y_1 = b_2$, $y_2 = -b_1$ in die Ueberschiebung über:
+\[
+(\varphi,\ f)^2 = \frac{1}{5} \left\{ 2 (ac)^2 c_x^3 a_x (ab)^2 b_x^3 + 3 (ac)^2 a_x^2 c_x^2 (ab)(cb) b_x^3 \right\}
+\]
+\[
+= \frac{1}{5} \{ 2 P_6 + 3 P_5 \},\ \text{oder weil } P_5 = 0,
+\]
+\[
+= \frac{2}{5} P_6.
+\]
+Demnach ist:
+\[
+P_6 = \varrho \cdot (f,\ \varphi)^2 = k \cdot i \cdot f,
+\]
+wo $\varrho$ und $k$ numerische Coefficienten. Zwischen den beiden Ueberschiebungen $(f,\ \varphi)^2$ und $i \cdot f$ besteht also eine lineare Relation.
+
+6) Nehmen wir ferner an:
+\[
+\mu + \varkappa + \lambda = 5,
+\]
+so ist entweder:
+\[
+\mu = 5,\ \varkappa = 0,\ \lambda = 0,\ \text{also}\ P_7 = (ab)^5 c_x^5 = 0
+\]
+oder
+\[
+\mu = 4,\ \varkappa = 1,\ \lambda = 0,\ \text{also}\ P_8 = (ab)^4 (ac) b_x c_x^4 = (i,\ f)
+\]
+oder
+\[
+\mu = 3,\ \varkappa = 1,\ \lambda = 1,\ \text{also}\ P_9 = (ab)^3 (ac) (bc) a_x b_x c_x^3 = 0,
+\]
+da $P_9$ durch Vertauschung von $a$ mit $b$ sein Zeichen ändert,
+
+oder
+\[
+\mu = 3,\ \varkappa = 2,\ \lambda = 0,\ \text{also}\ P_{10} = (ab)^3 (ac)^2 b_x^2 c_x^3.
+\]
+Dieses Product geht, wenn man $b$ mit $c$ vertauscht und die halbe Summe nimmt, in das Product
+\[
+P_{11} = (ab)^2 (ac)^2 (bc) b_x^2 c_x^2 a_x
+\]
+über, welches dem Werthsystem $\mu = 2$, $\varkappa = 2$, $\lambda = 1$ entspricht. Die Form $P_{11}$ verschwindet aber identisch, da sie nur ihr Zeichen ändert, bei Vertauschung von $b$ mit $c$.
+
+7) Ist endlich:
+\[
+\mu + \varkappa + \lambda = 6,
+\]
+so sind die einzig möglichen Fälle:
+\[
+\mu = 4,\ \varkappa = 1,\ \lambda = 1,\ \text{also}\ P_{12} = (ab)^4 (ac) (bc) c_x^3 = (i,\ f)^2
+\]
+\[
+\mu = 3,\ \varkappa = 2,\ \lambda = 1,\ \text{also}\ P_{13} = (ab)^3 (ac)^2 (bc) b_x c_x^2
+\]
+\[
+\mu = 2,\ \varkappa = 2,\ \lambda = 2,\ \text{also}\ P_{14} = (ab)^2 (ac)^2 (bc)^2 a_x b_x c_x.
+\]
+
+
+% ===== pdf idx 111, printed 97.0 =====
+% !PRINTED 97
+\weberpage{97}
+Die beiden Formen $P_{13}$ und $P_{14}$ führen auf dieselbe Ueberschiebung $(i,f)^2$ wie $P_{12}$. Denn vertauscht man in $P_{13}$ $a$ mit $b$ und nimmt die halbe Summe, so kommt:
+
+\[
+P_{13}=\frac{1}{2}(ab)^3(ac)(bc)c_x^2\{(ac)b_x-(bc)a_x\}=\frac{1}{2}(ab)^4(ac)(bc)c_x^3=\frac{1}{2}(i,f).
+\]
+
+Vertauscht man aber in $P_{13}$ $b$ mit $c$, so kommt durch Addition beider Producte:
+
+\[
+P_{13}=\frac{1}{2}(ab)^2(ac)^2(bc)b_xc_x\{(ab)c_x-(ac)b_x\}=\frac{1}{2}(ab)^2(ac)^2(bc)^2a_xb_xc_x,
+\]
+oder
+\[
+P_{14}=2P_{13}=(i,f)=(ab)^2(ac)^2(bc)^2a_xb_xc_x.
+\]
+
+Wir sind am Schlusse angelangt. Die sechs Formen $f^3$, $i\cdot f$, $(i,f)$, $(i,f)^2$, $\varphi\cdot f$, $(\varphi,f)$ sind in der That die einzigen aszygetischen Covarianten von $f$, die in den Coefficienten vom dritten Grade sind.
+
+93. \textit{Reciprocitätsgesetz von Hermite.} Es ist nun sehr bemerkenswerth, das jedem aszygetischen System von Covarianten $P_i$ einer Form $f$ stets ein gleichfalls aszygetisches System von Covarianten $Q_i$ einer andern gewissen Form $\varphi$ entspricht, und zwar ist das Entsprechen nach Hermite durch folgendes Gesetz definirt:
+
+\glqq Besitzt die Form $n^{\mathrm{ten}}$ Grades $f=a_x^n$ eine Covariante $P_i$ vom Grade $m$ in den Coefficienten, so besitzt die Form $m^{\mathrm{ten}}$ Grades $\varphi=A_x^m$ eine entsprechende Covariante $Q_i$ vom Grade $n$ in den Coefficienten und beide Covarianten sind von gleichem Grade $\lambda$ in $x$.\grqq{}
+
+So entsprechen den vorhin ermittelten sechs aszygetischen Formen $P_i$ dritten Grades in den Coefficienten
+
+\[
+f^3,\ f\cdot\varphi,\ (f,\varphi),\ f\cdot i.\ (f,i),\ (f,i)^2
+\]
+
+der Form $f=a_x^5$ ebenfalls sechs aszygetische Formen $Q_i$ fünften Grades
+%CONT>>
+
+
+% ===== pdf idx 112, printed 98.0 =====
+% !PRINTED 98
+\weberpage{98}
+%<<CONT
+in den Coefficienten:
+
+\[
+\varphi^5,\ \varphi^3\cdot\Delta,\ \varphi^2\cdot Q,\ \varphi\cdot\Delta^2,\ Q\cdot\Delta,\ \varphi\cdot R
+\]
+
+der Form $\varphi=A_x^3$, wobei, wie wir früher gesehen haben (vgl. Nr. 37)
+
+\[
+\Delta=(AB)^2A_xB_x,\quad Q=(A\Delta)A_x^2\Delta_x,\quad R=(\Delta,\Delta)^2.
+\]
+
+Der Beweis dieses Reciprocitätsgesetzes kann auf folgende Weise geführt werden.
+
+Es sei $P$ eine Covariante vom Grade $m$ in den Coefficienten von $f=a_x^n=b_x^n=$ etc. und vom Grade $\lambda$ in den Variabeln $x$. Es sei ferner $\varphi=A_x^m$ eine Form $m^{\mathrm{ten}}$ Grades in $x$, welche die $m$ Wurzeln $\alpha^{(k)}=\dfrac{\alpha_1^{(k)}}{\alpha_2^{(k)}}$ besitzen möge, und demgemäss sich auch in der Gestalt schreiben lässt (von einem constanten Factor abgesehen):
+
+\[
+\varphi=(\alpha_2^{(1)}x_1-\alpha_1^{(1)}x_2)(\alpha_2^{(2)}x_1-\alpha_1^{(2)}x_2)\cdots(\alpha_2^{(m)}x_1-\alpha_1^{(m)}x_2),
+\]
+oder
+\[
+\varphi=\alpha_{1x}\cdot\alpha_{2x}\cdot\alpha_{3x}\cdots\alpha_{mx}=A_x^m.
+\]
+
+Ersetzen wir alsdann in dem symbolischen Producte $P$ das Symbol $a$ durch $\alpha_1$, $b$ durch $\alpha_2$, \dots, $m$ durch $\alpha_m$, so geht dadurch $P$ zunächst in eine simultane Covariante $\overline{Q}$ der $m$ linearen Factoren $\alpha_{kx}$ über. Nun wird $P$ nicht geändert, wenn wir in ihm irgend welche zwei gleichberechtigte Symbole $a$ und $b$ vertauschen. Permutiren wir entsprechend in $\overline{Q}$ alle Wurzeln $\overline{\alpha}_k$, so gehört immer noch jedes $\overline{Q}$ zur nämlichen Form $P$. Aber die Summe aller dieser $\mu!$ Formen $\overline{Q}$ ist nun eine symmetrische Function der Wurzeln $\overline{\alpha}_k$ und lässt sich demnach rational in den Coefficienten von $\varphi$ darstellen. Da anderntheils jedes Glied $\overline{Q}$ gemäss seiner Ableitung Covarianteneigenschaft besass, so muss sie auch die Summe besitzen, d. h.
+
+\[
+Q=\sum{}^{\prime}\overline{Q}
+\]
+
+ist rationale Covariante von $\varphi=A_x^m$, und zwar vom Grade $\lambda$ in $x$, weil die Zahl der Factoren erster Art bei diesen Operationen unberührt blieb und vom Grade $n$ in den Coefficienten von $\varphi$, weil jede Wurzel $\overline{\alpha}_k$ in jedem $\overline{Q}$ gleich oft und zwar $n$ mal auftritt. (Vergl. Salmon, Lineare Transformationen, Art. 57 und 58, über Grad und Gewicht symmetr. Functionen der Wurzeln.) Es entspricht also in der That jeder Form $P$ von $f$ eine Form $Q$ von $\varphi$, und insbesondere einem aszygetischen System $P_i$ wieder ein aszygetisches System $Q_i$. So entspricht z. B. der Invariante
+
+\[
+j=(ab)^2(ac)^2(bc)^2
+\]
+
+dritten Grades in den Coefficienten der Form $f=a_x^4$ die Invariante
+\[
+R=(\alpha_1\alpha_2)^2(\alpha_1\alpha_3)^2(\alpha_2\alpha_3)^2,
+\]
+welche vierten Grades in den Coefficienten der Form
+\[
+\varphi=\alpha_{1x}\alpha_{2x}\alpha_{3x}=A_x^3
+\]
+ist, deren drei Wurzeln die Werthe $\alpha^{(1)}=\dfrac{\alpha_1^{(1)}}{\alpha_2^{(1)}}$, $\alpha^{(2)}=\dfrac{\alpha_1^{(2)}}{\alpha_2^{(2)}}$, $\alpha^{(3)}-\dfrac{\alpha_1^{(3)}}{\alpha_2^{(3)}}$ % checked against the GDZ scan (27 Oct 2026): a single bar on the math axis (a minus sign, misprint for =) is printed before the third fraction
+besitzen.
+
+94. \textit{Darstellung einer in den Wurzeln von $\varphi=A_x^m$ ausgedrückten Covariante durch ein symbolisches Product; Beispiel.} Wir haben schon in \S~1 Nr. 8 darauf hingewiesen, dass jede symmetrische simultane Covariante der $m$ linearen Factoren $\alpha_{ix}$ von $\varphi$ auch eine \gesperrt{rationale} Covariante der Form $\varphi$ ist, und haben den einfachen Beweis dieser Thatsache eben gegeben. Die Reihenentwicklungen für Formen mit
+%CONT>>
+
+
+% ===== pdf idx 113, printed 99.0 =====
+% !PRINTED 99
+\weberpage{99}
+%<<CONT
+mehreren Reihen cogredienter Variablen setzen uns in den Stand, eine solche in den Wurzeln dargestellte Covariante direct in ein symbolisches Product umzuformen, was man allerdings auch gemäss der Theorie der symmetrischen Functionen auf einem Umwege über die unsymbolische Darstellung der Covariante erreichen könnte. Ehe wir die Methode allgemein entwickeln, will ich sie an einem Beispiele vorbereiten, und benutze hierzu die bereits vorhin angeführte simultane symmetrische Invariante
+
+\[
+R=(\alpha_1\alpha_2)^2(\alpha_1\alpha_3)^2(\alpha_2\alpha_3)^2
+\]
+
+der drei linearen Factoren $\alpha_{kx}$ von
+
+\[
+\varphi=\alpha_{1x}\alpha_{2x}\alpha_{3x}=A_x^3=B_x^3=\text{etc.}
+\]
+
+Wir wissen: $\varphi$ besitzt nur eine Invariante vierten Grades, nämlich die Discriminante (vergl. Nr. 37 und 39)
+
+\[
+R_1=(\Delta,\Delta)^2=(AB)^2(DC)^2(BC)(AD),
+\]
+
+und wir wollen nun zeigen, wie sich successive $R$ in $R_1$ überführen lässt. Zu dem Zwecke setzen wir zunächst:
+
+\weq{1}{\alpha_{2x}\alpha_{3x}=p_x^2=p}
+
+und erhalten so eine quadratische Hilfsform, deren Invariante durch
+
+\weq{2}{(pp_1)^2=(\alpha_{2x}\alpha_{3x},\ \alpha_{2x}\alpha_{3x})^2=-\frac{1}{2}(\alpha_2\alpha_3)^2}
+
+dargestellt ist. Unter Benutzung dieser Werthe (1) und (2) wird:
+
+\weq{3}{\varphi=p_x^2\alpha_{1x}=A_x^3,}
+
+\weq{4}{R=-2(pp_1)^2(\alpha_1\alpha_2)^2(\alpha_1\alpha_3)^2.}
+
+Ueberschieben wir $p$ auch zweimal über $\alpha_{1x}$, so kommt:
+
+\weq{5}{(p\alpha_1)^2=(\alpha_1\alpha_2)(\alpha_1\alpha_3)}
+
+und demnach lässt sich Gleichung (4) auch schreiben:
+
+\weq{6}{R=-2(pp_1)^2(p_2\alpha_1)^2(p_3\alpha_1)^2.}
+
+In diesem Ausdrucke können wir nun successive die Symbole $A$, $B$, etc. der Form $\varphi$ einführen. Denn überschieben wir Gleichung (3) zweimal über $\alpha_{1x}$, so kommt:
+
+\weq{7}{(p_2\alpha_1)^2\alpha_{1x}=3(A\alpha_1)^2A_x,}
+
+und wenn wir hierin $x$ durch $p_3$ ersetzen:
+
+\weq{8}{(p_2\alpha_1)^2(\alpha_1p_3)=3(A\alpha_1)^2(Ap_3);}
+
+also:
+
+\weq{9}{R=6(pp_1)^2(p_3\alpha_1)(A\alpha_1)^2(Ap_3).}
+
+Damit ist eine erste Reduction von $R$ erzielt. Wir wollen nun weiter das Symbol $p_3$ eliminiren, und bilden dementsprechend die erste
+%CONT>>
+
+
+% ===== pdf idx 114, printed 100.0 =====
+% !PRINTED 100
+\weberpage{100}
+%<<CONT
+Ueberschiebung von $p_x^2\alpha_{1x}$ über $\alpha_{1x}$:
+
+\weq{10}{2p_x(p\alpha_1)\alpha_{1x}=3A_x^2(A\alpha_1)=3B_x^2(B\alpha_1).}
+
+Ersetzen wir hierin $x$ durch $A$, so kommt:
+
+\[
+2(Ap)(p\alpha_1)(A\alpha_1)=3(AB)^2(B\alpha_1),
+\]
+
+und demnach:
+
+\[
+R=9(pp_1)^2(A\alpha_1)(AB)^2(B\alpha_1),
+\]
+
+oder, weil $\Delta_x^2=(AB)^2A_xB_x$, und demnach $(\Delta\alpha_1)^2=(AB)^2(A\alpha_1)(B\alpha_1)$, so wird:
+
+\[
+R=9(pp_1)^2(\Delta\alpha_1)^2.
+\]
+
+Da aber nach dem Identitätssatze:
+
+\[
+\{(pp_1)(\Delta\alpha_1)\}^2=\{(p\Delta)(p_1\alpha_1)-(p_1\Delta)(p\alpha_1)\}^2
+\]
+\[
+=2(p\Delta)^2(p_1\alpha_1)^2-2(p\Delta)(p_1\Delta)(p\alpha_1)(p_1\alpha_1),
+\]
+
+so wird endlich:
+
+\weq{11}{R=18(p\Delta)^2(p_1\alpha_1)^2-18(p\Delta)(p_1\Delta)(p\alpha_1)(p_1\alpha_1).}
+
+Für die beiden Terme rechts können wir nun aber zwei Relationen aufstellen, mit Hilfe deren wir das gewünschte Ziel erreichen. Der erste Term geht nämlich aus $p_y^2\alpha_{1x}$ hervor, wenn wir darin $y$ durch $\Delta$, $x$ durch $p_1$ ersetzen und mit $(\alpha_1p_1)$ multipliciren. Es ist aber
+
+\[
+p_y^2\alpha_{1x}=\{p_x^2\alpha_{1x}\}_{y2}+\frac{2}{3}\{(p\alpha_1)p_x\}_y(yx)
+\]
+
+nach Formel (VIII) Nr. 81, wobei nur $x$ mit $y$ vertauscht ist; und da nach Voraussetzung $p_x^2\alpha_x=B_x^3$, so wird, wenn wir die angegebene Substitution ausführen:
+
+\[
+(p\Delta)^2(p_1\alpha_1)^2=(B\Delta)^2(Bp_1)(\alpha_1p_1)+\frac{2}{3}(p\alpha_1)(p_1\alpha_1)(p\Delta)(p_1\Delta).
+\]
+
+Hierin ist der erste Term rechts identisch Null, da nach der Theorie der cubischen Formen jedes symbolische Product mit dem Klammerfactor $(B\Delta)^2$ verschwindet. [Vergl. Nr. 63, (5) u. Nr. 145, (I).] Demnach wird:
+
+\weq{12}{(p\Delta)^2(p_1\alpha_1)^2=\frac{2}{3}(p\alpha_1)(p_1\alpha_1)(p\Delta)(p_1\Delta)}
+
+und dies ist die erste der gesuchten Relationen. Um noch eine zweite zu erhalten, berücksichtigen wir, dass der zweite Term in Gleichung (11) aus $p_y(p\alpha_1)\alpha_{1x}$ hervorgeht, wenn wir darin $y$ durch $\Delta$, $x$ durch $p_1$ ersetzen und mit $(p_1\Delta)$ multipliciren. Es ist aber
+
+\[
+(p\alpha_1)p_y\alpha_{1x}=\{(p\alpha_1)p_x\alpha_{1x}\}_y+\frac{1}{2}\{(p\alpha_1)^2(yx)\}
+\]
+
+nach Formel (VIII) Nr. 81, und weil nach Gleichung (10) die Form $(p\alpha_1)p_x\alpha_{1x}$ gleich $\frac{3}{2}(B\alpha_1)B_x^2$ ist, so wird nach Ausführung der Substitution
+%CONT>>
+
+
+% ===== pdf idx 115, printed 101.0 =====

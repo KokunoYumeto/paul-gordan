@@ -14,6 +14,8 @@ typeset in LaTeX from scans of the prints, and English translations.
 
 Each PDF has its LaTeX source beside it in the table; all sources are in the `tex/` folder of each work.
 
+To help translate the rest of the *Vorlesungen* with your own Claude, see [vorlesungen/translation](vorlesungen/translation).
+
 ## Quality and completeness
 
 - ***De linea geodetica* and *Thetafunctionen*.** Complete diplomatic transcriptions with separate English

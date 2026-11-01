@@ -1,0 +1,1156 @@
+% !PRINTED 261
+\weberpage{261}
+%<<CONT
+von einem Zahlenfactor abgesehen, die Resultante von $j(x)$ und $i(x)$
+bekanntlich dargestellt durch (vergl. auch Bd.\ I Nr.\ 168)
+\[
+\begin{aligned}
+R_{j,\,i} &= j(r)\cdot j(s) = (jr)^3\cdot(j's)^3 \\
+&= (jr)^2(j's)^2\{(jj')(rs)+(js)(j'r)\} \\
+&= (jr)^2(j's)^2(jj')(rs)+(jr)^2(j'r)(j's)^2(js) \\
+&= (jr)(j's)(jj')(rs)\{(jj')(rs)+(js)(j'r)\}+(jr)^2(j'r)(j's)^2(js) \\
+&= (jj')^2(jr)(j's)(rs)^2+(jr)(js)(j'r)(j's)(jj')(rs) \\
+&\qquad {}+(jr)^2(js)(j's)^2(j'r).
+\end{aligned}
+\]
+
+Der erste Term rechts zerf\"allt in die Factoren
+\[
+(rs)^2 = -\,2(i,\,i)^2 = -\,2A
+\]
+und
+\[
+(jj')^2(jr)(j's) = (\tau,\,rs)^2 = (\tau,\,i)^2 = B.
+\]
+Der zweite Term verschwindet identisch, da er durch Vertauschung
+von $j$ mit $j'$ nur sein Zeichen \"andert; der dritte Term endlich zer-
+f\"allt wiederum in die beiden Factoren
+\[
+\begin{aligned}
+(jr)^2(js) &= (j,\,rs\cdot r)^3 = (j,\,i\cdot r)^3 = ((j,\,i),\,r) \\
+&= -(\alpha,\,r) = -(\alpha r),
+\end{aligned}
+\]
+und
+\[
+(j's)^2(jr) = -(\alpha s).
+\]
+Durch Substitution dieser Werthe der einzelnen Glieder erhalten wir
+\[
+\begin{aligned}
+R_{j,\,i} &= -\,2AB+(\alpha r)(\alpha s) \\
+&= -\,2AB+(\alpha^2,\,i)^2 \\
+&= -\,2AB+M,
+\end{aligned}
+\]
+oder endlich, weil $M=2AB-3C$:
+\weq{1}{R_{j,\,i} = -\,3C.}
+
+Die Resultante von $j$ und $i$ stimmt also in der That mit der
+Invariante $C$ bis auf einen numerischen Factor überein.
+
+237. \textit{Berechnung des gemeinsamen Factors.} Nehmen wir nun an,
+die Invariante $C$ verschwinde, und der gemeinsame lineare Factor von
+$j$ und $i$ sei $r_x$, dann k\"onnen wir uns die Aufgabe stellen, diesen gemeinsamen
+ Factor, der sich bekanntlich auf rationalem Wege berechnen
+ l\"asst, durch die linearen Covarianten des Systemes auszudr\"ucken.
+
+Um diese Aufgabe zu l\"osen, gehen wir von der Form aus
+\[
+F = (jr)^3 s_x^3 - (js)^3 r_x^3,
+\]
+welche sich f\"ur den Fall, dass $r$ oder $s$ der gemeinschaftliche Factor
+ist, wegen $(jr)^3=0$, resp.\ $(js)^3=0$ auf den Cubus dieses gemeinschaftliches
+ Factors reducirt. Nun ist aber
+%CONT>>
+
+
+% ===== pdf idx 276, printed 262.0 =====
+% !PRINTED 262
+\weberpage{262}
+%<<CONT
+\[
+\begin{aligned}
+F &= \{(jr)s_x-(js)r_x\}\{(jr)^2s_x^2+(jr)(js)r_xs_x+(js)^2r_x^2\} \\
+&= (rs)j_x\{[(jr)s_x-(js)r_x]^2+3(jr)(js)r_xs_x\} \\
+&= (rs)j_x\{j_x^2(rs)^2+3(jr)(js)r_xs_x\} \\
+&= \{j\cdot(rs)^2+3(jr)(js)j_xr_xs_x\}(rs).
+\end{aligned}
+\]
+Der Factor $(rs)$ ist eine von null verschiedene Constante; der
+erste Term in der Klammer hat den Werth $=-\,2A\cdot j$, der zweite
+Term den Werth $3(j,\,i)^2\cdot i=-\,3\alpha\cdot i$. Also wird
+\[
+F = \text{Const.}\{-\,2Aj-3\alpha i\},
+\]
+oder, wenn wir den Factor 3 herausziehen und mit der Constanten
+vereinigen:
+\[
+F = \text{Const.}\left\{-\frac{2}{3}\,Aj-\alpha i\right\},
+\]
+d.\,i. wegen Nr.\ 225, (1)
+\[
+= \text{Const.}\,(f,\,\tau)^2.
+\]
+
+Wir haben also den Satz:
+
+\glqq Besitzen $j$ und $i$ einen gemeinsamen Factor, ist also $C=0$,
+so ist die zweite Ueberschiebung von $f$ und $\tau$ proportional
+dem Cubus dieses gemeinsamen Factors.\grqq{}
+
+Schiebt man diesen Cubus $(f,\,\tau)^2$ zweimal \"uber irgend eine beliebige
+ Form zweiten Grades, so erh\"alt man den gemeinschaftlichen
+Factor linear. Wir w\"ahlen hiezu die Form $\tau$ und erhalten
+\[
+((f,\,\tau)^2,\,\tau)^2 = \text{Const.}\left(-\frac{2}{3}\,Aj-\alpha i,\,\tau\right)^2;
+\]
+nach der Theorie der cubischen Formen aber ist $(j,\,\tau)^2=0$; demnach
+wird, unter Vernachl\"assigung der Gr\"osse: $-\dfrac{3}{2}\cdot\text{Const.}$,
+\[
+\begin{aligned}
+((f,\,\tau)^2,\,\tau)^2 &= +3(\alpha i,\,\tau)^2 = ((i\tau)^2\alpha+2(i\tau)(\alpha\tau)i_x) \\
+&= B\cdot\alpha+2(i\tau)\{(i\tau)\alpha_x-(i\alpha)\tau_x\} \\
+&= B\cdot\alpha+2(i\tau)^2\alpha-2(i\tau)(i\alpha)\tau_x \\
+&= 3B\cdot\alpha+2(\tau,\,(i\alpha)i_x) \\
+&= 3B\cdot\alpha+2\delta = +3B\cdot\alpha+2\delta,
+\end{aligned}
+\]
+also wegen Nr.\ 235, (5)
+\[
+((f,\,\tau)^2,\,\tau)^2 = \frac{1}{2}\,\varrho\,.
+\]
+
+Es ergiebt sich daher:
+
+\glqq Ist $C=0$, so ist die lineare Covariante $\varrho$ der gemeinschaftliche
+ Factor von $j$ und $i$, und die Gleichung f\"unften Grades
+geht durch die Substitution $x_1=\varrho$, $x_2=\delta$ in die Bring'sche
+Normalform \"uber.\grqq{}
+
+
+% ===== pdf idx 277, printed 263.0 =====
+% !PRINTED 263
+\weberpage{263}
+238. \textit{Typische Darstellung der Form f\"unften Grades f\"ur $B=0$.}
+Unter den verschiedenen Normalformen der Gleichung f\"unften Grades
+beansprucht neben der Bring'schen Normalform auch noch eine
+von Brioschi herr\"uhrende ein hervorragendes Interesse. Auf diese
+Brioschi'sche Normalform wird man direct gef\"uhrt, sobald man die
+typische Darstellung einer solchen Form $f$ unternimmt, deren Invariante
+$B$ identisch verschwindet. Man hat nur statt der fr\"uher benutzten
+linearen Covarianten $\alpha$ und $\beta$, resp.\ $\delta$ und $\varrho$ in diesem Falle die
+Formen $\alpha$ und $\gamma$ f\"ur die betreffende typische Darstellung zu Grunde
+zu legen. Wir wollen im Folgenden diese Normalform von $f=a_x^5$
+f\"ur den Fall $B=0$ entwickeln, m\"ussen aber zu dem Zwecke zun\"achst
+die Ueberschiebung $(f,\,\gamma)$ durch andere Formen des Systemes darstellen
+, um alsdann in einfacher Weise die typischen Coefficienten
+\[
+(f,\,\alpha^5)^5,\quad (f,\,\alpha^4\gamma)^5,\quad (f,\,\alpha^3\gamma^2)^5,\quad (f,\,\alpha^2\gamma^3)^5,\quad (f,\,\alpha\gamma^4)^5,\quad (f,\,\gamma^5)^5
+\]
+berechnen zu k\"onnen.
+
+239. \textit{Hilfssatz f\"ur die typische Darstellung von $f$ f\"ur $B=0$.} Wir
+behaupten: Die lineare Ueberschiebung $(f,\,\gamma)$ l\"asst sich in der Form
+darstellen
+\weq{1}{(f,\,\gamma) = \frac{3}{2}\,\tau^2 + B\cdot(f,\,j)^2.}
+
+Man erkennt schon aus dieser Relation deren Tragweite. Denn
+f\"ur $B=0$ reducirt sich die rechte Seite auf das Quadrat der Form
+$\tau$, und alle typischen Coefficienten --- von dem bereits bekannten
+$(f,\,\alpha^5)^5$ abgesehen --- ergeben sich dann durch Ueberschiebung dieser
+Form $\tau$ \"uber Potenzen von linearen Formen*).
+
+Um diese Relation (1) zu beweisen, schreiben wir sie zun\"achst
+in der Form
+\[
+(f,\,\gamma) - \frac{\tau^2}{2} = \tau^2 + B\cdot(f,\,j)^2
+\]
+und formen nun jede Seite dieser Gleichung durch symbolische Rechnung
+geeignet um.
+
+Wir erhalten dann f\"ur die linke Seite, da nach der Theorie der
+cubischen Formen $(j,\,(j,\,\tau)) = -\dfrac{\tau^2}{2} = (j'\tau)(j\tau)j_x^2j_x'^2$:
+\[
+(f,\,\gamma) - \frac{\tau^2}{2} = (a\gamma)a_x^4 + (j'\tau)(j\tau)j_x^2j_x'^2
+\]
+
+\rule{4cm}{0.4pt}
+
+\noindent *) Man kann $(f,\,\gamma)$ als Polare $f_y$ f\"ur $y=\gamma$ betrachten. Im Falle $B=0$
+besitzt also die betreffende Form $f$ eine erste Polare, die ein volles Quadrat ist.
+Umgekehrt: Weiss man von einer Form f\"unften Grades, dass sie eine erste Polare
+besitzt, die ein volles Quadrat ist, so ist f\"ur diese Form $B=0$, und diese Polare
+ist mit $(f,\,\gamma)$ identisch.
+
+
+% ===== pdf idx 278, printed 264.0 =====
+% !PRINTED 264
+\weberpage{264}
+%<<CONT
+und, wenn wir im ersten Gliede $\gamma$ durch $(\tau\alpha)\tau_x$ oder wegen $\alpha_x=-(ji)^2j_x$
+durch $-(ji)^2(\tau j)\tau_x$ ersetzen und im zweiten Gliede an Stelle von $j_x'^3$
+das gleichwerthige Symbol $-(ai)^2a_x^3$ einf\"uhren:
+\[
+(f,\,\gamma) - \frac{\tau^2}{2} = -\,a_x^4(a\tau)(\tau j)(ji)^2 - a_x^2(ai)^2(a\tau)(j\tau)j_x^2,
+\]
+oder
+\weq{2}{(f,\,\gamma) - \frac{\tau^2}{2} = a_x^2(a\tau)(j\tau)\left|\begin{array}{cc} a_x^2, & (ai)^2 \\ j_x^2, & (ji)^2 \end{array}\right|.}
+F\"ur die rechte Seite dagegen erhalten wir successive
+\[
+\begin{aligned}
+B\cdot(f,\,j)^2+\tau^2 &= (i\tau)^2\cdot(aj)^2a_x^3j_x+\tau_x^2\cdot(jj')^2j_xj_x' \\
+&= a_x^3j_x\{(a\tau)(ij)+(j\tau)(ai)\}^2-\tau_x^2\cdot(ai)^2(aj)^2j_xa_x.
+\end{aligned}
+\]
+Ersetzen wir im zweiten Term rechts $(ai)j_x$ durch $(aj)i_x+(ji)a_x$,
+dann reducirt sich derselbe wegen $(aj)^3a_x^2=0$ auf $\tau_x^2\cdot(ai)(aj)^3(ji)a_x^2$.
+Wenn wir also darin $(aj)\tau_x$ durch $(\tau j)a_x-(\tau a)j_x$ ersetzen, so geht
+die letzte Gleichung \"uber in:
+\[
+B\cdot(f,\,j)^2+\tau^2 = a_x^3j_x\cdot\{(a\tau)(ij)+(j\tau)(ai)\}^2 - (ai)(ji)a_x^2\{(\tau j)a_x-(\tau a)j_x\}^2.
+\]
+Nun ist $(j,\,\tau)^2=0$, also verschwindet im ersten Binom rechts
+das dritte, im zweiten Binom das erste Glied, w\"ahrend sich die beiden
+mittleren Glieder gegenseitig aufheben. Es bleibt demnach:
+\[
+B\cdot(f,\,j)^2+\tau^2 = a_x^3j_x\cdot(a\tau)^2(ij)^2 - (ai)(ji)a_x^2\cdot(\tau a)^2j_x^2,
+\]
+oder
+\weq{3}{B\cdot(f,\,j)^2+\tau^2 = a_x^2(a\tau)^2\left|\begin{array}{cc} a_xj_x, & (ai)(ji) \\ j_x^2, & (ji)^2 \end{array}\right|.}
+Subtrahiren wir nun Gleichung (2) von Gleichung (3), so erhalten
+ wir:
+\[
+B\cdot(f,\,j)^2 + \frac{3}{2}\tau^2 - (f,\,\gamma) = a_x^2(a\tau)^2\left|\begin{array}{cc} a_xj_x, & (ai)(ji) \\ j_x^2, & (ji)^2 \end{array}\right|
+\]
+\[
+{}- a_x^2(a\tau)(j\tau)\left|\begin{array}{cc} a_x^2, & (ai)^2 \\ j_x^2, & (ji)^2 \end{array}\right|
+\]
+\[
+= a_x^2\cdot\left|\begin{array}{ccc} (a\tau)^2, & a_x^2, & (ai)^2 \\ (a\tau)(j\tau), & a_xj_x, & (ai)(ji) \\ 0, & j_x^2, & (ji)^2 \end{array}\right|,
+\]
+oder wegen $0=(j,\,\tau)^2=(j\tau)^2j_x$
+\weq{4}{B\cdot(f,\,j)^2 + \frac{3}{2}\tau^2 - (f,\,\gamma) = a_x^2\left|\begin{array}{ccc} (a\tau)^2, & a_x^2, & (ai)^2 \\ (a\tau)(j\tau), & a_xj_x, & (ai)(ji) \\ (j\tau)^2, & j_x^2, & (ji)^2 \end{array}\right|.}
+
+
+% ===== pdf idx 279, printed 265.0 =====
+% !PRINTED 265
+\weberpage{265}
+Die Determinante rechts verschwindet aber identisch; denn sie
+ist durch Multiplication der beiden Determinanten
+
+\[
+\begin{vmatrix} \tau_1^{2}, & -\tau_1\tau_2, & \tau_2^{2} \\ x_1^{2}, & x_1x_2, & x_2^{2} \\ i_1^{2}, & -i_1i_2, & i_2^{2} \end{vmatrix}
+\cdot
+\begin{vmatrix} a_1^{2}, & 2a_1a_2, & a_2^{2} \\ a_1j_1, & a_1j_2+j_1a_2, & a_2j_2 \\ j_1^{2}, & 2j_1j_2, & j_2^{2} \end{vmatrix}
+\]
+
+entstanden. Die erste dieser Determinanten besitzt den Werth (vergl.
+Bd. I Nr. 40, Anmerkung)
+
+\[ \tau_x\cdot(\tau i)\cdot i_x, \]
+
+die zweite besitzt den Werth:
+
+\[ (aj)^3. \]
+
+Die rechte Seite der Gleichung (4) geht also über in
+
+\[ (aj)^3a_x^2\cdot(\tau i)\tau_x i_x, \]
+
+und diese Grösse ist null, da der eine Factor $(aj)^3a_x^2=(f,j)^3$ identisch
+verschwindet. Also hat man:
+
+\[ B\cdot(f,j)^2+\frac{3}{2}\tau^2=(f,\gamma) \]
+
+wie oben behauptet war.
+
+240. \textit{Berechnung der typischen Coefficienten, wenn $B=0$.} Die
+typische Darstellung der Form $f=a_x^5$ für $B=0$ ergiebt sich nun,
+indem wir die Identität:
+
+\[ (\alpha\gamma)a_x=(\alpha\gamma)\alpha_x-(a\alpha)\gamma_x \]
+
+auf die fünfte Potenz erheben, und die typischen Coefficienten alsdann
+in Function der Fundamentalinvarianten darstellen. Zu letzterem
+Zwecke berücksichtigen wir, dass wegen $B=0$ folgende Beziehungen
+bestehen:
+
+\[
+\left.\begin{aligned}
+(f,\gamma) &= \frac{3}{2}\tau^2, \quad (\tau,\alpha)^2 = -(\alpha\gamma) = N = \frac{AC}{2} \\
+(i,\alpha)^2 &= M = -3C
+\end{aligned}\right\}
+\begin{array}{l} \text{vgl.} \quad \text{Nr. 221} \quad (1) \\ \phantom{\text{vgl.}} \quad \text{Nr. 226} \quad (2) \end{array}
+\]
+
+\weq{3}{(\tau,\gamma)=(\tau',(\tau,\alpha))=-\frac{C}{2}\cdot\alpha \quad \text{(Identit\"atssatz)}}
+
+\weq{4}{(\tau,\gamma^2)^2=((\tau,\gamma),\gamma)=-\frac{C}{2}(\alpha\gamma)=\frac{C}{2}\cdot N=\frac{AC^2}{4}\quad[\text{nach (3)}]}
+
+\weq{5}{(\tau\gamma)(\tau\alpha)=-\frac{C}{2}(\alpha_1\alpha)=0\quad[\text{nach (3)}]}
+
+\weq{6}{\lambda=-\frac{2}{3}A^2. \quad (\text{nach Nr. 230})}
+
+Dann erhalten wir der Reihe nach folgende Gleichungen:
+
+\[ (a\alpha)^5=\lambda\cdot R=-\frac{2}{3}A^2\cdot R \quad \text{(vergl. Nr. 230)} \]
+
+\[ (a\alpha)^4(a\gamma) = ((f,\gamma),\alpha^4)^4=\frac{3}{2}(\tau^2,\alpha^4)^4=\frac{3}{2}(\tau\alpha)^2\cdot(\tau\alpha)^2=\frac{3A^2\cdot C^2}{8} \]
+
+
+% ===== pdf idx 280, printed 266.0 =====
+% !PRINTED 266
+\weberpage{266}
+\[ (a\alpha)^3(a\gamma)^2=((f,\gamma),\alpha^3\gamma)^4=\frac{3}{2}(\tau^2,\alpha^3\gamma)=\frac{3}{2}(\tau\alpha)^2\cdot(\tau\gamma)(\tau\alpha)=0 \]
+
+\begin{align*}
+(a\alpha)^2(a\gamma)^3 &= ((f,\gamma),\alpha^2\gamma^2)^4=\frac{3}{2}(\tau^2,\alpha^2\gamma^2)^4= \begin{pmatrix}\text{nach Ueberschiebungs-}\\ \text{gesetzen}\end{pmatrix}\\
+&=\frac{3}{2}\cdot\frac{1}{6}\left\{(\tau\alpha)^2\cdot(\tau'\gamma)^2+4(\tau\gamma)(\tau\alpha)\cdot(\tau'\gamma)(\tau'\alpha)+(\tau'\alpha)^2(\tau'\gamma)^2\right\}\\
+&=\frac{1}{4}\left\{[(\tau\alpha)(\tau'\gamma)-(\tau\gamma)(\tau'\alpha)]^2+6(\tau\gamma)(\tau\alpha)\cdot(\tau'\gamma)(\tau'\alpha)\right\}\\
+&=\frac{1}{4}(\tau\tau')^2\cdot(\alpha\gamma)^2=\frac{1}{4}C\cdot N^2=\frac{A^2C^3}{16}
+\end{align*}
+
+\[ (a\alpha)(a\gamma)^4=((f,\gamma),\alpha\gamma^3)^4=\frac{3}{2}(\tau^2,\alpha\gamma^3)^4=\frac{3}{2}(\tau\gamma)^2\cdot(\tau\gamma)(\tau\alpha)=0 \]
+
+\[ (a\gamma)^5=((f,\gamma),\gamma^4)^4=\frac{3}{2}(\tau^2,\gamma^4)=\frac{3}{2}(\tau\gamma)^2\cdot(\tau\gamma)^2=\frac{3A^2C^4}{32}. \]
+
+Tragen wir die soeben berechneten Werthe der typischen Coefficienten
+ in die Gleichung
+
+\[ (\alpha\gamma)^5\cdot a_x^5=\{\alpha_x(\alpha\gamma)-\gamma_x(a\alpha)\}^5 \]
+
+ein, so erhalten wir:
+
+\[ -\frac{A^5\cdot C^5}{32}\cdot f = \frac{3}{32}A^2C^4\alpha^5+\frac{10}{16}A^2C^3\alpha^3\gamma^2+\frac{15}{8}A^2C^2\alpha\gamma^4-\frac{2}{3}A^2R\gamma^5. \]
+
+Dividiren wir diese Gleichung mit $A^2C^2$ und setzen
+
+\[ \frac{\alpha}{\gamma}\sqrt{-\frac{3}{2}C}=\xi, \]
+
+so kommt endlich nach leichter Reduction:
+
+\[ -\frac{1}{4}\cdot\frac{A^3C^4}{\gamma^5}\cdot\sqrt{-\frac{3C}{2}}\cdot f=\xi^5-10\xi^3+45\xi-\frac{16\sqrt{-\frac{3}{2}}}{\sqrt{C^3}}\cdot R. \]
+
+Die Form fünften Grades erscheint hiemit abermals in einer
+Normalform, die nur einen Parameter besitzt, und diese Normalform
+wird die Brioschi'sche genannt. Eine ganz elementare Methode,
+die allgemeine Gleichung fünften Grades durch eine Tschirnhaustransformation
+ in die Brioschi'sche Form zu bringen, hat Gordan
+neuerdings in den Math. Ann. Bd. XXVIII publicirt.
+
+\begin{center}
+\textbf{\S\ 25. Die Discriminante und die Auflösung der Gleichung}\\
+\textbf{fünften Grades.}
+\end{center}
+
+241. \textit{Erste Darstellung der Discriminante durch die Fundamentalinvarianten
+.} Aus der in Nr. 235, (11) gegebenen Darstellung der Form
+$f$ lässt sich unmittelbar der Werth der Discriminante $\Delta$ von $f$ erschliessen
+. Die Discriminante muss nämlich als Resultante von $\dfrac{\partial f}{\partial x_1}$
+und $\dfrac{\partial f}{\partial x_2}$ vom Grade 8 in den Coefficienten sein; deshalb kann in der
+%CONT>>
+
+
+% ===== pdf idx 281, printed 267.0 =====
+% !PRINTED 267
+\weberpage{267}
+%<<CONT
+ganzen und rationalen Function von Invarianten, durch welche sie
+sich ausdrücken lassen muss, die Invariante $C$ zwölften Grades in
+den Coefficienten nicht auftreten. $\Delta$ ist sonach unabhängig von $C$
+und ändert sich daher nicht, wenn $C=0$ gesetzt wird. Die Discriminante
+der Form
+
+\[ 6R^4f = B\delta^5+5B\delta^4\varrho-4A^2\varrho^5=0 \]
+
+ist also auch die Discriminante der allgemeinen Form. Es ist aber
+
+\[ \frac{\partial f}{\partial\delta} = 5\{B\delta^4+4B\delta^3\varrho\}=0 \]
+
+\[ \frac{\partial f}{\partial\varrho} = 5\{B\delta^4-4A^2\varrho^4\}=0. \]
+
+Die erste der beiden Gleichungen liefert
+
+\[ \frac{\delta}{\varrho} = -4. \]
+
+Substituirt man diesen Werth in die zweite, so ergiebt sich als
+Resultat der Elimination von $\dfrac{\delta}{\varrho}$:
+
+\[ \Delta = 64B-A^2. \]
+
+242. \textit{Zweite Darstellung der Discriminante.} Wir wollen im Folgenden
+ noch eine zweite Methode zur Berechnung der Discriminante geben,
+die an die allgemeine Form $f=a_x^5$ anknüpft und auf denselben Grundsätzen
+ beruht, wie früher die Berechnung der Discriminante einer
+Form vierten Grades.
+
+Wie damals nehmen wir wieder an, die Form $f$ besitze einen
+linearen Doppelfactor $p_x$, sei also dargestellt durch
+
+\[ f = p^2\cdot l = a_x^5, \]
+
+wo $l$ irgend eine cubische Form bedeute. Indem wir uns alsdann die
+Frage stellen, auf welche Invariantenrelation $F(A,B)=0$ führt diese
+Annahme, werden wir naturgemäss auf die eine geführt, deren linke
+Seite wir als Discriminante bezeichnen müssen.
+
+Die Beantwortung der Frage lässt sich mannigfach bewerkstelligen.
+Es handelt sich in der Hauptsache darum, die Invarianten $A$ und $B$
+der allgemeinen Form mit dem simultanen System unserer Form $f$
+und $p$ in Beziehung zu setzen. Hiezu liefern uns die in Nr. 99 aus
+der Bedingung $f=p^2\cdot l$ abgeleiteten Gleichungen die geeigneten
+Mittel. Wir erhielten damals:
+
+\weq{1}{(ap)^5=0, \quad (ap)^4a_x=0}
+
+\weq{2}{(ap)^3a_x^2=\lambda\cdot p^2}
+
+\weq{3}{(ab)^2(ap)^3b_x^3=\frac{1}{2}(i,p)\cdot p^2,}
+
+
+% ===== pdf idx 282, printed 268.0 =====
+% !PRINTED 268
+\weberpage{268}
+wobei Gleichung (3) aus $(ap)^4a_x=0$ durch die a. a. O. angegebene
+Reihenentwicklung entsteht. Man könnte nun direct aus diesen
+Gleichungen und der Voraussetzung $a_x^5=p^2l$ die Formen $A=(i,i)^2$,
+$B=(\tau,i)^2$ zu berechnen suchen; dabei würde man finden, dass beide
+Formen $A$ und $B$ sich als Functionen von $(ip)^2$ und $(\tau p)^2$ darstellen
+lassen. Indem wir daher hier von vornherein nach der Berechnung
+dieser beiden Grössen streben, gelangen wir auf kürzerem Wege
+zum Ziele.
+
+Um den Werth von $(ip)^2$ zu ermitteln, überschieben wir (2) zweimal
+über $f$ und erhalten:
+
+\[ (ab)^2(ap)^3b_x^3 = \lambda\cdot(f,p^2)^2, \]
+
+oder durch Comparation mit (3)
+
+\weq{4}{(i,p)\cdot p^2=2\lambda\cdot(f,p^2)^2.}
+
+Indem wir aber diese Gleichung abermals mit $p$ überschieben,
+kommt:
+
+\[ (i,p)^2\cdot p^2 = 6\lambda\cdot(f,p^3)^3, \]
+
+oder endlich wegen (2)
+
+\weq{5}{6\lambda^2=(ip)^2.}
+
+Zur Berechnung von $(\tau p)^2$ stellen wir zunächst eine Entwicklung für
+das Product $i\cdot p^4$ her, indem wir die Identität $(ab)p_x=(ap)b_x-(bp)a_x$
+auf die vierte Potenz erheben, und nachträglich mit $a_xb_x$ multipliciren.
+Dann kommt nach einfacher Reduction, weil $(ap)^4a_x=0$:
+
+\[ i\cdot p^4 = -8(ap)^3a_x^2\cdot(bp)b_x^4+6(ap)^2a_x^3\cdot(bp)^2b_x^3, \]
+
+oder:
+
+\[ i\cdot p^4 = -8\lambda p^2\cdot(f,p)+6(f,p^2)^2\cdot(f,p^2)^2 \]
+
+und demnach wegen Gleichung (4)
+
+\weq{6}{i\cdot p^4 = -8\lambda p^2\cdot(f,p)+\frac{6}{4\lambda^2}\cdot p^4\cdot(ip)(i_1p_1)i_xi_{1x}.}
+
+Das symbolische Product $2(ip)(i_1p_1)i_xi_{1x}$ lässt sich mit Hilfe des
+Productsatzes (vergl. Nr. 11) leicht in die Form $12i\lambda^2-Ap^2$ bringen,
+so dass alsdann die Gleichung (6) die Form annimmt:
+
+\weq{7}{8ip^2 = 8\lambda\cdot(f,p)+\frac{3}{4\lambda^2}Ap^4,}
+
+wie man sieht, eine Gleichung für die einzige uns noch unbekannte
+Ueberschiebung der Form $f$ über $p$. Aus ihr lässt sich zunächst
+$(j,p)=(-(f,i)^2,p)$ berechnen, womit der erste Schritt zur Darstellung
+ von $(\tau p)^2$ gemacht ist, da ja $\tau=(j,j)^2$. Wir überschieben
+nämlich (7) zweimal über $i$ und erhalten:
+
+\[ \frac{8}{6}\{Ap^2+4(ii_1)(pi_1)i_xp_x+i\cdot(pi_1)^2\} = -8\lambda\cdot(j,p)+\frac{3}{4\lambda^2}A\cdot p^2\cdot(pi)^2, \]
+%CONT>>
+
+
+% ===== pdf idx 283, printed 269.0 =====
+% !PRINTED 269
+\weberpage{269}
+%<<CONT
+oder, weil nach dem Identit\"atssatze das mittlere Glied links mit $2\,A\,p^2$ \"ubereinstimmt und $(i\,p)^2 = 6\,\lambda^2$, so kommt:
+\weq{8}{8\,\lambda\cdot(j,\,p) = \frac{1}{2}\,A\,p^2 - 8\,\lambda^2\cdot i.}
+
+Ueberschiebt man aber diese Gleichung zweimal \"uber sich selbst, so erhalten wir nach Division mit $16\,\lambda^2$:
+\weq{9}{4\,(\tau p)^2 = \lambda^2\cdot A.}
+
+Ueberschiebt man dagegen Gleichung (8) zweimal \"uber $\tau$, so kommt, weil nach der Theorie der cubischen Formen $(j,\,\tau)^2$ verschwindet:
+\[
+0 = \frac{1}{2}\,A\cdot(\tau p)^2 - 8\,\lambda^2\cdot B,
+\]
+oder wegen (9)
+\weq{10}{0 = A^2 - 64\,B.}
+
+Wenn also $f$ einen Doppelfactor besitzt, so besteht zwischen $A$ und $B$ die Relation (10), d.\,h. $A^2-64B$ ist die Discriminante von $f$.
+
+243. \textit{Aufl\"osung der Gleichung f\"unften Grades.} Die Aufl\"osung der Gleichung f\"unften Grades ist bekanntlich durch algebraische Methoden allein nicht mehr m\"oglich. Die Grenze, bis zu welcher die Algebra vorgehen kann, haben wir bereits kennen gelernt: sie ist durch die Transformation der allgemeinen Gleichung in eine Form mit einem einzigen Parameter $Z$ gekennzeichnet. Dieselbe kann unter anderm stets nach Klein (vergl. \glqq Vorlesungen \"uber das Ikosaeder\grqq{} \S~10, Seite 252) in rationaler Weise auf die in Nr.\,192 erw\"ahnte Ikosaedergleichung $\dfrac{C_2\cdot f^3}{H^3} = \varrho$ zur\"uckgef\"uhrt werden, deren Wurzeln $\xi = \dfrac{x_1}{x_2} = \vartheta(\varrho)$ sich mit Hilfe elliptischer Modulfunctionen darstellen lassen. (Vergl. Klein: \glqq Vorlesungen \"uber das Ikosaeder\grqq{} \S~7, Seite 132.) Wenn wir uns also hier mit Aufl\"osung von Gleichungen f\"unften Grades besch\"aftigen, so m\"ussen wir uns auf specielle F\"alle beschr\"anken, bei welchen verm\"oge gewisser Invariantenrelationen die Aufl\"osung sich ohne transcendente Methoden bewerkstelligen l\"asst. Aus der grossen Mannigfaltigkeit der hier gegebenen M\"oglichkeiten besprechen wir hier nur einige wichtige F\"alle. Hieher geh\"oren in erster Linie die Formen $f$, f\"ur welche $R=0$, $M\gtrless 0$, $N\gtrless 0$; denn w\"ahrend f\"ur $B=0$ resp. $C=0$ nur Reductionen der Form $f$ auf gewisse, besonders interessante Normalformen eintreten und die Bedingung $A=0$ \"uberhaupt keine bemerkenswerthe Typik zur Folge hat, zerf\"allt f\"ur $R=0$ die Form $f$ rational in einen linearen und einen biquadratischen Factor. Hieher geh\"oren ferner die F\"alle:
+%CONT>>
+
+
+% ===== pdf idx 284, printed 270.0 =====
+% !PRINTED 270
+\weberpage{270}
+%<<CONT
+\[
+\text{II)}\quad \alpha = 0, \text{ und eine der drei Formen } A,\ B,\ C\gtrless 0,
+\]
+\[
+\text{III)}\quad \alpha = 0,\ B=0,\ C=0,\ A_1=0,\ j\gtrless 0,
+\]
+\[
+\text{IV)}\quad \alpha = 0,\ A=B=C=0,\ j=0.
+\]
+
+244. \textit{Erster Fall.} Wir betrachten zun\"achst den Fall, in welchem die schiefe Invariante verschwindet, also den Fall
+\[
+R=0,\ M\gtrless 0,\ N\gtrless 0.
+\]
+
+Da alle schiefen Invarianten des Systemes $R$ zum Factor haben m\"ussen, so verschwinden dieselben durchwegs.
+
+Solche schiefe Invarianten sind z.\,B.
+\[
+(f,\ \alpha)^5,\ \ (f,\ \alpha^3\beta^2)^5,\ \ (f,\ \alpha\beta^4)^5,
+\]
+ebenso
+\[
+(f,\ \gamma)^5,\ \ (f,\ \gamma^3\alpha^2)^5,\ \ (f,\ \gamma\alpha^4)^5.
+\]
+Wenn wir also entweder
+\[
+a_x(\beta\alpha) = \beta_x(a\alpha) - \alpha_x(a\beta),
+\]
+oder
+\[
+a_x(\gamma\alpha) = \gamma_x(a\alpha) - \alpha_x(a\gamma)
+\]
+auf die f\"unfte Potenz erheben, so verschwinden stets drei Glieder in der binomischen Entwicklung rechts, so dass wir erhalten:
+\[
+f\cdot(\beta\alpha)^5 = c_1\alpha^5 + c_2\alpha^3\beta^2 + c_3\alpha\beta^4,
+\]
+oder
+\[
+f\cdot(\gamma\alpha)^5 = \bar c_1\alpha^5 + \bar c_2\alpha^3\gamma^2 + \bar c_3\alpha\gamma^4,
+\]
+wo $c_1\,c_2\,c_3$, $\bar c_1\,\bar c_2\,\bar c_3$ wie in Nr.\,235 zu berechnen sind. $(\beta\alpha)$ ist dabei gleich $M$, $(\gamma\alpha) = N$; da diese Invarianten nicht verschwinden, so sind die rechten Seiten in der That Entwicklungen von $F$. Setzen wir sie gleich null, so erhalten wir in beiden F\"allen von vornherein eine Wurzel von $f$, n\"amlich $\alpha_x=0$. Der andere Factor ist dann eine biquadratische Gleichung, die sich leicht auf eine quadratische reduciren l\"asst.
+
+245. \textit{Zweiter Fall.} Wir nehmen an, dass die beiden Invarianten $M$ und $N$ verschwinden, woraus von selbst hervorgeht, dass auch $R$ null wird [vergl. Nr.\,227, (4)], also dass
+\[
+M=0,\ N=0,\ R=0.
+\]
+Die Invariante $C$ sei von null verschieden.
+
+Wenn aber $M=N=0$, dann ist, wie wir nun beweisen wollen, auch $\alpha=0$, und folglich existirt in diesem Falle \"uberhaupt keine lineare Covariante.
+
+Nehmen wir zun\"achst an, $\alpha$ w\"are von null verschieden. Es ist nun:
+\weq{11}{i_x^2\tau_y^2 - \tau_x^2 i_y^2 = (i_x\tau_y - \tau_x i_y)(i_x\tau_y + \tau_x i_y) = 2\,\vartheta_x\vartheta_y(xy).}
+
+
+% ===== pdf idx 285, printed 271.0 =====
+% !PRINTED 271
+\weberpage{271}
+Ersetzen wir $y$ durch $\alpha$, so kommt:
+\[
+i_x^2(\tau\alpha)^2 - \tau_x^2(i\alpha)^2 = 2(\vartheta\alpha)\vartheta_x\alpha_x.
+\]
+Weil aber
+\[
+(\tau\alpha)^2 = N = 0,
+\]
+\[
+(i\alpha)^2 = M = 0,
+\]
+so folgt:
+\[
+(\vartheta,\ \alpha) = 0,
+\]
+d.\,h. $\vartheta$ hat den Factor $\alpha$. Da nun aber
+\[
+j_x^2(j\alpha) = -\vartheta, \quad \text{[vergl. Nr.\,224, (2)]}
+\]
+so ist auch
+\[
+(j\alpha)^2 j_x = ((j\alpha)j_x^2,\ \alpha) = -(\vartheta,\ \alpha) = 0.
+\]
+Daraus folgt, dass $j$ den linearen Factor $\alpha$ mindestens quadratisch besitzt, dass also, wenn $\varrho$ irgend ein linearer Factor
+\[
+j = \alpha^2\cdot\varrho,
+\]
+und folglich (vergl. Nr.\,154)
+\[
+\tau = \alpha^2\cdot c,
+\]
+wo $c$ eine Constante ist.
+
+Erinnern wir uns nun, dass [vergl. Nr.\,230, (II) und 225, (1)]
+\weq{12}{(f,\ \alpha^2)^2 = A\cdot(f,\ \tau)^2 + Bj + \frac{3}{2}\,\alpha\tau,}
+folglich
+\[
+(f,\ \alpha^2)^2 = Ac\cdot(f,\ \alpha^2)^2 + B\alpha^2\varrho + \frac{3}{2}\,c\alpha^3;
+\]
+und bedenken wir ferner, dass
+\[
+0 = (f,\ j)^3 = (f,\ \varrho\alpha^2)^3 = ((f,\ \alpha^2),\ \varrho),
+\]
+so folgt, wenn wir (10) dreimal \"uber $\varrho$ schieben:
+\[
+((f,\ \alpha^2),\ \varrho^3)^3 = Ac\,((f,\ \alpha^2)^2,\ \varrho^3)^3 + B\,(\alpha^2\varrho,\ \varrho^3)^3 + \frac{3}{2}\,c\,(\alpha\varrho)^3.
+\]
+Nun ist aber $(\alpha^2\varrho,\ \varrho^3)^3 = 0$, und wegen
+\[
+((f,\ \alpha^2),\ \varrho) = 0
+\]
+sowohl das Glied links als auch das erste Glied rechts gleich null; es bleibt also noch
+\[
+(\alpha\varrho)^3 = 0,
+\]
+d.\,h.
+\[
+\varrho = c_1\alpha,
+\]
+folglich
+\[
+j = c_1\alpha^3.
+\]
+Da aber auch $i$ den Factor $\alpha$ besitzen muss wegen
+\[
+M = (i\alpha)^2 = 0,
+\]
+so ist auch
+\[
+(j,\ i)^2 = -\alpha = 0,
+\]
+was der Voraussetzung widerspricht.
+
+Die Bedingung $M=0$, $N=0$ f\"uhrt also stets $\alpha=0$ mit sich, wie umgekehrt aus $\alpha=0$ auch sofort das Verschwinden von $M$ und $N$ sich ergiebt.
+
+
+% ===== pdf idx 286, printed 272.0 =====
+% !PRINTED 272
+\weberpage{272}
+246. Wir nehmen also an, die lineare Covariante $\alpha$ verschwinde, doch von den drei fundamentalen Invarianten $A$, $B$, $C$ sei wenigstens eine von null verschieden.
+
+Wegen $\alpha=0$ ist zun\"achst
+\[
+\vartheta = -(j,\ \alpha) = 0,
+\]
+und daher [vergl. Nr.\,227, (1)]
+\[
+2(\vartheta,\ i) = A\tau - Bi = 0.
+\]
+Es ist sonach $\tau$ proportional der Covariante $i$. Und da nun
+\[
+(f,\ \alpha) = 2((f,\ j)^2,\ i) = 0, \quad \text{[vergl. Nr.\,230, (I)]}
+\]
+so muss, so lange $A=(i,\ i)^2\gtrless 0$, $(f,\ j)^2$ eine Potenz von $i$ sein, d.\,h. es muss die Relation bestehen:
+\[
+(aj)^2 a_x^3 j_x = c\cdot i^2,
+\]
+oder weil
+\[
+A\tau = Bi,
+\]
+auch
+\[
+(aj)^2 a_x^3 j_x = c_1\tau^2,
+\]
+wo $c_1$ eine Constante.
+
+Schiebt man diese Relation einmal \"uber $j$, so erh\"alt man, da die beiden Glieder der ersten Polare von $(aj)^2 a_x^3 j_x$ einander gleich sein m\"ussen --- ihre Differenz hat den Factor $(aj)^3$ ---
+\weq{13}{(aj)^2(jj_1)a_x^3 j_{1x}^2 = c_1(\tau^2,\ j) = c_1\tau\cdot(\tau,\ j).}
+Vertauscht man links $j$ mit $j_1$ und nimmt die halbe Summe, so kommt:
+\[
+\frac{1}{2}\,a_x^3(jj_1)\{(aj)^2 j_{1x}^2 - (aj_1)^2 j_x^2\}
+\]
+\[
+= \frac{1}{2}\,a_x^3(jj_1)\{(aj)j_{1x} - (aj_1)j_x\}\{(aj)j_{1x} + (aj_1)j_x\}
+\]
+\[
+= -\frac{1}{2}\,a_x^4(jj_1)^2(aj)j_{1x} + \frac{1}{2}\,a_x^4(jj_1)^2(aj_1)j_x.
+\]
+Beide Glieder sind aber ein und dasselbe symbolische Product, welches nichts anderes darstellt, als die Functionaldeterminante von $f$ und $\tau=(jj_1)^2 j_x j_{1x}$. Wir haben also:
+\[
+(jj_1)^2(aj)a_x^4 j_{1x} = (f,\ \tau),
+\]
+und folglich l\"asst sich Gleichung (13) in der Form schreiben:
+\[
+(f,\ \tau) + c_1\tau(j,\ \tau) = 0,
+\]
+oder
+\[
+(f + c_1\tau j,\ \tau) = 0.
+\]
+Es m\"usste also, da $\tau = \dfrac{B}{A}\cdot i$ von null verschieden ist % checked against the GDZ scan (27 Oct 2026): no bar or accent over the A; the short stroke at its lower left is an ink speck
+und keine zwei gleichen Factoren besitzt, $f+c_1\tau j$ eine Potenz von $\tau$ sein. Dies ist aber unm\"oglich, da $f$ und $j$ ungeraden Grades. Daher bleibt nur
+\[
+f + c_1\tau j = 0,
+\]
+%CONT>>
+
+
+% ===== pdf idx 287, printed 273.0 =====
+% !PRINTED 273
+\weberpage{273}
+d. h., wenn die lineare Covariante $\alpha$ verschwindet, aber nicht alle
+fundamentalen Invarianten, so zerfällt die Form fünften Grades in ihre
+Covariante $j$ und deren Hesse'sche $\tau$:
+\[
+f = c_2 \cdot j \cdot \tau .
+\]
+
+247. \textit{Dritter Fall.} Wir nehmen nun an, dass neben $\alpha = 0$ auch
+die Invarianten $B$ und $C$ verschwinden mögen, während die Invariante $A$
+noch willkürlich sei.
+
+Aus der Relation [vgl. Nr. 230 (II)]
+\[
+(f,\alpha^2)^2 = \frac{3}{2}\,\alpha\tau - Ai\alpha + \left(B - \frac{2}{3}A^2\right) j
+\]
+folgt alsdann für $\alpha = 0$ die Beziehung:
+\[
+-\frac{2}{3}A^2 j = 0.
+\]
+Daraus ergiebt sich, dass entweder $A$ oder $j$ verschwinden muss. Nehmen wir an
+\weq{1}{j \gtrless 0,\quad A = 0.}
+Dann ist einmal $(f,\tau)^2 = 0$, weil ja nach Nr. 225:
+\weq{1}{(f,\tau)^2 = -i\alpha - \frac{2}{3}Aj,}
+und ebenso [vgl. Nr. 245 (11)]:
+\weq{2}{i_x^2\tau_y^2 - i_y^2\tau_x^2 = 0,}
+da $\vartheta = -(j,\alpha) = 0$. Ersetzen wir in (2) $y$ durch $a$, so kommt:
+\[
+i\cdot(f,\tau)^2 - \tau\cdot(f,i)^2 = 0,
+\]
+also wegen $(f,\tau)^2 = 0$
+\[
+\tau\cdot(f,i)^2 = 0 = -j\cdot\tau .
+\]
+Da $j$ von null verschieden sein soll, so folgt daraus
+\[
+\tau = 0,
+\]
+d. h. aber, die Covariante $j$ ist ein reiner Cubus:
+\[
+j = \varrho_x^3 .
+\]
+Und weil nun in jedem Falle:
+\[
+(f,j)^3 = 0,
+\]
+so ist nunmehr
+\[
+(a\varrho)^3 a_x^2 = 0,
+\]
+und daraus erkennt man, dass $f$ den Factor $\varrho$ dreimal enthält. Wenn
+also: $\alpha = 0$, $B = 0$, $C = 0$, $A = 0$ und $j \gtrless 0$, dann ist
+\[
+f = \varrho_x^3 \cdot l,
+\]
+wo $l$ quadratische Form ist.
+
+248. Setzen wir nun aber voraus, dass
+\weq{2}{A \gtrless 0,\quad j = 0;}
+%CONT>>
+
+
+% ===== pdf idx 288, printed 274.0 =====
+% !PRINTED 274
+\weberpage{274}
+%<<CONT
+dann besitzt zunächst $i$ wegen $A = A_{ii} \gtrless 0$ zwei verschiedene
+lineare Factoren
+\[
+i = \varrho \cdot \sigma .
+\]
+Aber aus:
+\[
+-j = (f,i)^2 = (a\varrho)(a\sigma)a_x^3 = 0
+\]
+folgt, dass jedes symbolische Product mit dem Reducenten
+\[
+(a\varrho)(a\sigma)
+\]
+verschwindet. Wenn man daher die Identität
+\[
+a_x(\varrho\sigma) = \varrho_x(a\sigma) - \sigma_x(a\varrho)
+\]
+auf die fünfte Potenz erhebt, so reducirt sich die binomische Entwicklung
+rechts auf ihr erstes und letztes Glied, und wir erhalten
+\[
+f\cdot(\varrho\sigma)^5 = c_1\varrho^5 + c_2\sigma^5,
+\]
+d. h. $f$ ist in diesem Falle eine binomische Gleichung.
+
+249. \textit{Vierter Fall.} Nehmen wir endlich an, dass neben $\alpha = 0$,
+$B = 0$, $C = 0$ auch
+\weq{3}{j = 0 \text{ und } A = 0}
+sei, dann ist zunächst $i$ ein volles Quadrat, also
+\[
+i = \varrho_x^2,
+\]
+und weil
+\[
+-j = (f,i)^2 = (a\varrho)^2 a_x^3 = 0
+\]
+so muss $f$ den linearen Factor $\varrho$ viermal enthalten. Daraus geht
+aber umgekehrt hervor, dass $i$ selbst verschwinden muss. Denn es ist
+\weq{1}{\varrho_x^4(ab)^4 a_x b_x = \{b_x(a\varrho) - a_x(b\varrho)\}^4 a_x b_x .}
+Der Ausdruck rechts verschwindet aber wegen der Reducenten
+\[
+(a\varrho)^2,\quad (b\varrho)^2,
+\]
+und folglich auch
+%CONT>>
+
+
+% ===== pdf idx 289, printed 275.0 =====
+% !PRINTED 275
+\weberpage{275}
+%<<CONT
+\[
+\varrho_x^4(ab)^4 a_x b_x = i^3 = 0.
+\]
+Wenn also $\alpha = 0$, $B = C = A = 0$, und $j = 0$, dann verschwindet auch $i$.
+
+Fragen wir uns nun aber umgekehrt, welche Eigenschaft besitzt $f$, wenn $i$
+verschwindet, so geht aus dieser einen Bedingung zunächst das Verschwinden
+aller Invarianten hervor, so dass $f$ jedenfalls mindestens einen
+quadratischen Factor besitzt, den wir mit $\varrho$ bezeichnen wollen.
+Bilden wir nun:
+\weq{2}{\varrho_x^4(ab)^4(a\varrho)(b\varrho) = \{b_x(a\varrho) - a_x(b\varrho)\}^4(a\varrho)(b\varrho),}
+so ist der Ausdruck links gleich dem Product $\varrho_x^4\cdot(i,\varrho^2)^2 = 0$.
+Die rechte Seite reducirt sich aber wegen $(a\varrho)^4 a_x = (b\varrho)^4 b_x = 0$ auf
+\weq{3}{(a\varrho)^3 a_x^2 \cdot (b\varrho)^3 b_x^2 = \{(a\varrho)^3 a_x^2\}^2 = 0,}
+d. h. $f$ enthält $\varrho$ cubisch. Aus diesem Grunde erhalten wir aus der
+Identität
+\[
+0 = \varrho_x^4\cdot(ab)^4(b\varrho)a_x = \{b_x(a\varrho) - a_x(b\varrho)\}^4(b\varrho)a_x
+\]
+die Beziehung:
+\weq{4}{(a\varrho)^2 a_x^3 = 0,}
+welche lehrt, dass $f$ den Factor $\varrho$ viermal besitzt. Verschwindet
+also die Form $(f,f)^4$ identisch, so reducirt sich $f$ auf
+$\varrho_x^4\cdot\sigma_x$, wo $\varrho$ und $\sigma$ lineare Formen sind,
+ein Resultat, das wir schon in der allgemeinen Untersuchung § 19 erhalten
+haben.
+
+§ 26. \textbf{Das Formensystem der Form sechsten Grades $f = a_x^6$.}
+
+250. \textit{Aufstellung der Systeme $(A^{(i)})$ und $(B^{(i)})$.} Wie bei
+der Form fünften Grades, so ist auch hier das System $(A^{(0)})$ durch
+$f = a_x^6$, das System $(B^{(0)})$ durch $(f,f)^2 = (ab)^2 a_x^4 b_x^4$
+dargestellt, und man zeigt wie dort, dass das aus beiden durch
+Ueberschiebung entstehende System $(A^{(1)})$ nur die drei Formen enthält:
+\[
+f,\quad (f,f)^2,\quad ((f,f)^2, f).
+\]
+Dieses System $(A^{(1)})$ ist relativ vollständig mod. $(ab)^4$. Wir
+überschieben dasselbe mit dem Bildsystem resp. wirklichen System
+$(B^{(1)})$ der Form:
+\[
+k = (f,f)^4 = (ab)^4 a_x^2 b_x^2 .
+\]
+Da diese Form $k$ vierten Grades ist, so ist ihr System bereits bekannt.
+Es besteht aus den fünf Formen:
+\[
+k,\quad (k,k)^2,\quad ((k,k)^2, k),\quad i_k = B,\quad j_k = C,
+\]
+und ist relativ vollständig mod. $(ab)^6$. Die beiden Formen $i_k$ und
+$j_k$ sind Invarianten und als solche an der Ueberschiebung nicht
+betheiligt. Das vollständige Formensystem $(A^{(2)})$ von $f$ besteht
+demnach aus den durch Ueberschiebung der Covarianten
+\[
+f,\quad (f,f)^2,\quad ((f,f)^2, f)
+\]
+über die Covarianten
+\[
+k,\quad (k,k)^2,\quad ((k,k)^2, k)
+\]
+sich ergebenden Formen, zu welchen ausserdem die drei Invarianten
+\[
+A = (f,f)^6,\quad B = (k,k)^4,\quad C = ((k,k)^2, k)^4
+\]
+hinzutreten.
+
+251. \textit{Methode der Ueberschiebung beider Systeme.} Es ist nun
+vortheilhaft, diesen Ueberschiebungsprocess nicht direct auf dem
+allgemeinen Wege vorzunehmen, wie ihn die aus je drei Formen bestehenden
+Systeme dictiren würden. Vielmehr bietet die folgende Methode wesentliche
+Vereinfachungen. Denken wir uns das volle System von $f$ gebildet, so
+können wir die symbolischen Producte, durch welche die Formen des
+Systemes dargestellt sind, in zwei Klassen theilen.
+
+
+% ===== pdf idx 290, printed 276.0 =====
+% !PRINTED 276
+\weberpage{276}
+Bei den Faltungen, welche die Ueberschiebungen des Systemes $(A^{(1)})$
+über das System $(B^{(1)})$ vorschreiben, entstehen nämlich nur
+Klammerfactoren vom Typus $(ak)$. Alle sich so ergebenden Formen des
+Systemes werden demnach mindestens die erste und höchstens die vierte
+Potenz dieses Klammerfactors $(ak) = (bk_1) = (ck_2)$ etc. enthalten.
+Fassen wir nun alle Formen zusammen, welche die höchste Potenz $(ak)^4$
+enthalten, so kann man sich dieselben entstanden denken durch
+Ueberschiebung mit der Form
+\[
+l = (ak)^4 a_x^2,
+\]
+während sämmtliche Formen, welche die drei ersten Potenzen dieses
+Factors enthalten, für sich ein modulo $(ak)^4$ relativ vollständiges
+System $S$ bilden. Dieses System $S$ suchen wir zuerst zu ermitteln;
+indem wir dasselbe alsdann mit der Form $l$ überschieben, erhalten wir
+das volle System $(A^{(2)})$ der Form $f$.
+
+Auf diese Weise ist die Arbeit getheilt in zwei übersichtlichere und
+einfachere Aufgaben, einmal weil das mod. $(ak)^4$ relativ vollständige
+System viel kleiner ist als das gesammte System, dann aber auch, weil
+die Ueberschiebungen über eine quadratische Form $l$ leicht discutirbar
+sind.
+
+252. \textit{Aufstellung der Reducenten; erster Reducent $(ab)^3$.} Ehe
+wir jedoch die erste Aufgabe in Angriff nehmen, das System $S$ zu
+ermitteln, wollen wir versuchen, uns über die Reducenten, sei es nun des
+Systemes $S$, oder sei es des vollen Systemes $(A^{(2)})$ zu orientiren.
+Dabei erinnere ich, dass ein Klammerfactorenproduct als Reducent
+bezeichnet wird, sobald das aus ihm allein construirte Stammproduct,
+sowie alle daraus durch Faltung entstehenden reducibel sind. (Vergl.
+Nr. 124 und 144.)
+
+So ist $(ab)^3$ Reducent. Denn das Stammproduct $(ab)^3 a_x^3 b_x^3$ ist
+reducibel, weil es verschwindet, und die aus ihm durch Faltung
+hervorgehenden von null verschiedenen Formen
+\[
+k = (ab)^4 a_x^2 b_x^2,\quad A = (ab)^6
+\]
+sind bekannte in das System $(A^{(2)})$ bereits aufgenommene Formen.
+
+253. \textit{Zweiter Reducent $(ak)^3$.} Aus diesem Reducenten $(ab)^3$
+lässt sich sofort ein zweiter gewinnen. Denn ersetzen wir in dem
+symbolischen Product:
+\[
+(ab)^3 a_y^3 b_y b_x^2 = k_y^3 k_x (yx)
+\]
+$y$ durch $c$, so erhalten wir:
+\[
+(ab)^3(ac)^3(bc) b_x^2 c_x^2 = (kc)^3 c_x^3 k_x^3 = (ka)^3 a_x^3 k_x .
+\]
+%CONT>>
+
+
+% ===== pdf idx 291, printed 277.0 =====
+% !PRINTED 277
+\weberpage{277}
+
+Da die linke Seite verschwindet, wie man durch Vertauschung von $b$ mit $c$
+erkennt, so ist auch das Product:
+\weq{1}{(ak)^3 a_x^3 k_x = 0 = (f,\,k)^3,}
+d.\,h. reducibel; aus ihm entsteht durch Faltung die zum System $(A^{(2)})$
+gehörige Form
+\[
+l = (ak)^4 a_x^2 ;
+\]
+und somit ist $(ak)^3$ Reducent.
+
+Besitzt also ein symbolisches Product den Factor $(ab)^3$ oder $(ak)^3$,
+so lässt es sich im ersten Falle, von Producten mit dem Invariantenfactor
+$A$ ganz abgesehen, auf Ueberschiebungen mit der Form $k$, im zweiten
+Falle auf Ueberschiebungen mit der Form $l$ reduciren. Die irreduciblen
+Formen dieser beiden Ueberschiebungsgruppen werden wir alsbald kennen
+lernen.
+
+254. \textit{Dritter Reducent $(k\,k')$.} Durch Combination der beiden
+Reducenten $(ab)^3$ und $(ak)^3$ ergiebt sich ein dritter. Denn die
+Polarenglieder $(ab)^3 a_y^3 b_x^3$ und $(ak)^3 a_y^3 k_x$ ihrer beiden
+Stammproducte lassen sich in die Reihen entwickeln
+\weq{1}{(ab)^3 a_y^3 b_x^3 = \frac{3}{2}\,k_{y^2}(yx) + \frac{1}{4}\,A(yx)^3}
+\weq{2}{(ak)^3 a_y^3 k_x = \frac{3}{4}\,l_{y^2}(yx).}
+Ersetzt man in (1) $\dot{y}$ durch $k$, in (2) aber durch $b$ und
+vergleicht die beiden sich so ergebenden Ueberschiebungsrelationen, so
+kommt direct
+\weq{I}{(f,\,l)^2 = 2\varDelta + \frac{A}{3}\,k,}
+wobei $\varDelta$ die Hesse'sche Form von $k$ ist. Wir werden später die
+Form $(f,\,l)^2$, wie überhaupt alle Ueberschiebungen von $f$ mit
+$l^\varrho$, $[\varrho = 1,\,2,\,3]$, in das System $(A^{(2)})$ aufnehmen.
+Die Covariante $\varDelta$ ist dann eine reducible Form vermöge Gleichung
+(I). Daraus folgt, dass drittens $(k\,k')$ Reducent ist. Denn
+\[
+(k\,k')\,k_x^3\,k_x'^{\,3} = 0
+\]
+und die aus diesem Stammproduct durch Faltung entstehenden sind
+$\varDelta$ und die Invariante $B$. Jedes symbolische Product mit dem
+Factor $(k\,k')$ lässt sich also reduciren auf solche, die entweder die
+Invarianten $B$ bezw. $A$ zu Factoren haben, oder auf Ueberschiebungen
+mit dem Factor $(al)^2$. Die letzteren werden wir aber, soweit wir nicht
+noch deren abermalige Reduction zeigen, im System vorfinden und somit
+ist $(k\,k')$ Reducent auf diese Formen.
+
+
+% ===== pdf idx 292, printed 278.0 =====
+% !PRINTED 278
+\weberpage{278}
+
+255. \textit{Vierter Reducent $(ab)^2(ak)^2$.} Einen vierten Reducenten
+gewinnen wir durch folgende Betrachtung. Es ist nach Nr. 81 (VIII):
+\weq{1}{(ak)^3 a_y a_x^2 k_x = \frac{1}{4}\,l\cdot(yx)\ \text{(wegen }(f,\,k)^3=0\text{)}}
+und nach Nr. 83 (IX):
+\weq{2}{(ab)\,a_y^3 a_x^2 b_x^5 = \frac{3}{2}\,(f,f)^2_{y^2}(yx) + \frac{5}{28}\,k\cdot(yx)^3.}
+Ersetzen wir in (1) $y$ durch $b$, in (2) aber durch $k$, so kommt durch
+Comparation der gleichen rechten Seiten:
+\weq{II}{\frac{3}{2}\,\big((f,f)^2,\,k\big)^2 = \frac{1}{4}\,l\cdot f - \frac{5}{28}\,k^2.}
+Es ist also $\big((f,f)^2,\,k\big)^2$ eine reducible Form, und daraus
+ergiebt sich $(ab)^2(ak)^2$ als Reducent. Denn das Stammproduct
+\[
+P = (ab)^2(ak)^2\,a_x^2\,b_x^4\,k_x^2
+\]
+ist ein Glied der Ueberschiebung $\big((f,f)^2,\,k\big)^2$ und als
+solches durch diese plus einer Summe niedrigerer Ueberschiebungen
+darstellbar, die mindestens den Reducenten $(ab)^3$ zum Factor haben,
+da sie ja aus $(f,f)^2$, resp. $k$ durch Faltung entstehen müssen (vergl.
+Nr. 42). Faltet man in dem Product $P$ den Factor $a_x$ mit $b_x$, so
+entsteht $(ab)^3$, $a_x$ mit $k_x$, so kommt $(ak)^3$, und endlich $b_x$
+mit $k_x$, so ergeben sich mittelst des Identitätssatzes beide
+Reducenten. Es ist also $P$ und jedes aus ihm durch Faltung entstehende
+Product reducibel, und folglich $(ab)^2(ak)^2$ Reducent.
+
+256. \textit{Fünfter Reducent $(ak)^2(al)^2$.} Da $(f,\,l)^2 = 2\varDelta
++ \frac{A}{3}\,k$, so erhalten wir einen weitern Reducenten durch
+Ueberschiebung dieser Form mit $k$. Es ist nämlich:
+\[
+\big((f,l)^2,\,k\big)^2 = (ak)^2(al)^2\,a_x^2\,k_x^2 =
+\Big(2\varDelta + \frac{A}{3}\,k,\ k\Big)^2.
+\]
+Weil aber nach der Theorie der biquadratischen Formen
+\[
+(\varDelta,\,k)^2 = \frac{B}{6}\,k,
+\]
+so erhält man
+\[
+(ak)^2(al)^2\,a_x^2\,k_x^2 = \frac{1}{3}\,B\cdot k + \frac{1}{3}\,A\cdot\varDelta.
+\]
+Das symbolische Product links ist also reducibel. Durch einmalige
+Faltung desselben entsteht der Reducent $(ak)^3$ und demnach ist
+$(ak)^2(al)^2$ Reducent.
+
+257. \textit{Sechster Reducent $(ab)^2(al)^2$.} Da endlich $\varDelta$
+eine reducible Form, so ist es auch $(f,\,\varDelta)^2$, und zwar findet
+man ihren Werth auf folgende Weise. Es ist:
+%CONT>>
+
+
+% ===== pdf idx 293, printed 279.0 =====
+% !PRINTED 279
+\weberpage{279}
+%<<CONT
+\weq{1}{(ak)^3 a_x^3 k_y = -\frac{3}{4}\,l(yx)}
+\weq{2}{(k\,k_1)\,k_y^3\,k_{1x}^3 = \frac{3}{2}\,\varDelta_{y^2}(yx) + \frac{B}{4}\,(yx)^3.}
+Ersetzt man in (1) $y$ durch $k$, in (2) aber durch $a$, so erhält man
+durch Comparation der beiden entstehenden Ueberschiebungsresultate die
+Relation:
+\weq{III}{\frac{3}{4}\,l\cdot k = \frac{3}{2}\,(\varDelta,\,f)^2 + \frac{B}{4}\,f.}
+Anderntheils ist aber
+\[
+(ab)^2(al)^2\,b_x^4\,a_x^2 = \big((f,l)^2,\,f\big)^2 =
+\Big(2\varDelta+\frac{A}{3}\,k,\ f\Big)^2
+\]
+\[
+= 2(\varDelta,\,f)^2 + \frac{A}{3}\,(k,\,f)^2,
+\]
+also wegen (III)
+\weq{IV}{(ab)^2(al)^2\,b_x^4\,a_x^2 = l\cdot k - \frac{B}{3}\,f + \frac{A}{3}\,(f,\,k)^2.}
+Demnach ist das symbolische Product links reducibel, und weil jedes aus
+ihm durch Faltung entstehende Product wegen des Factors $(ab)^3$
+gleichfalls reducibel ist, so ist $(ab)^2(al)^2$ Reducent.
+
+258. \textit{Rückblick.} Wir haben sonach sechs Reducenten erhalten:
+\[
+(ab)^3,\ (ak)^3,\ (k\,k_1),\ (ab)^2(ak)^2,
+\]
+\[
+(ak)^2(al)^2,\ (ab)^2(al)^2.
+\]
+Jedes symbolische Product, das eine dieser sechs Grössen zum Factor
+besitzt, ist auf andere reducibel, welche entweder eine der Invarianten
+$A$ resp. $B$ zum Factor haben, oder welche durch Einführung der
+Symbole $k$ resp. $l$ als einfachere Ueberschiebungen dieser Formen
+über andere Formen des Systemes sich darstellen lassen. Diese
+letzteren Ueberschiebungen werden wir, insoweit nicht selbst wieder
+lineare Relationen unter ihnen bestehen, in das System $(A^{(2)})$
+aufzunehmen haben.
+
+Wir erhielten ferner folgende Beziehungen:
+\weq{I}{2\varDelta = 2(k,\,k)^2 = (f,\,l)^2 - \frac{1}{3}\,A\cdot k}
+\weq{II}{3\,l\cdot k = 6(\varDelta,\,f)^2 + B\cdot f}
+\weq{III}{\big((f,l)^2,\,f\big)^2 = l\cdot k - \frac{B}{3}\,f + \frac{A}{3}\,(f,\,k)^2}
+\[
+(f,\,k)^3 = 0.
+\]
+Vermöge der Gleichung (I) erhält man hiezu noch die beiden
+Invariantenrelationen:
+\weq{IV}{A_u = (l,\,l)^2 = 2C + \frac{A}{3}\,B}
+\weq{V}{(k,\,l^2)^4 = \frac{2}{3}\,(B^2+AC).}
+
+
+% ===== pdf idx 294, printed 280.0 =====
+% !PRINTED 280
+\weberpage{280}
+
+Die erste derselben entsteht aus (I), indem man diese Gleichung viermal
+über $k$ schiebt:
+\[
+2(\varDelta,\,k)^4 = \big((f,l)^2,\,k\big)^4 - \frac{1}{3}\,AB
+\]
+oder:
+\[
+2j_k = \big((f,k)^4,\,l\big)^2 - \frac{1}{3}\,AB
+\]
+oder:
+\[
+2C = (l,\,l)^2 - \frac{1}{3}\,AB.
+\]
+Die zweite wird durch die viermalige Ueberschiebung von (I) über sich
+selbst geliefert:
+\[
+4(\varDelta,\,\varDelta)^4 = \big((f,l)^2,(f,l)^2\big)^4 -
+\frac{2}{3}\,A\big((f,l)^2,\,k\big)^4 + \frac{1}{9}\,A^2(k,\,k)^4
+\]
+oder
+\weq{$\alpha$}{\frac{2}{3}\,B^2 = (ab)^4(al)^2(bl_1)^2 - \frac{2}{3}\,A\Big(2C+\frac{AB}{3}\Big) + \frac{1}{9}\,A^2 B.}
+Der erste Term rechts ist aber ein Glied der Ueberschiebung
+\[
+(k,\,l^2)^4 = \frac{1}{3}\,(ab)^4\big\{(al)^2(bl_1)^2 + 2(al)(al_1)(bl)(bl_1)\big\},
+\]
+welche unter Anwendung des Productsatzes auf das zweite Glied rechts in
+\weq{$\beta$}{(k,\,l^2)^4 = (ab)^4(al)^2(bl_1)^2 - \frac{1}{3}\,A\cdot A_u}
+übergeht. Durch Substitution des hieraus sich ergebenden Werthes von
+$(ab)^4(al)^2(bl_1)^2$ in Gleichung ($\alpha$) ergiebt sich die
+Relation (V).
+
+259. \textit{Aufstellung des Systemes $S\equiv 0$ mod. $(ak)^4$.} Nach
+diesen Vorbereitungen sind wir nun im Stande, durch Ueberschiebung des
+Systemes $(A^{(1)})$ über das System $(B^{(1)})$ in einfacher Weise das
+neue System $S\equiv 0\ \mathrm{mod}\ (ak)^4$ herzustellen. Es ergiebt
+sich nämlich wegen der Reducenten und der letzten Relationen direct,
+dass hiebei überhaupt nur die Ueberschiebungen der Form $k$ über die
+Formen des Systemes $(A^{(1)})$ in Betracht kommen und selbst hier nur
+die Ueberschiebung der ersten Potenz von $k$.
+
+Denn die Form $\varDelta$ ist nach Relation (I) Nr. 258 auf $(f,l)^2$,
+also auf eine Form mit dem Modul $(ak)^4$, und auf $k$ reducibel, und
+demnach reduciren sich die Ueberschiebungen zwischen ihr und den Formen
+des Systemes $(A^{(1)})$ auf die Ueberschiebungen von $k$.
+
+Die Form $(\varDelta,\,k)$ ist wegen der nämlichen Relation gleichfalls
+auf Formen mit dem Modul $(ak)^4$ reducibel, sei es a priori oder sei es
+mittelst des Reducenten $(k\,k_1)$, also ebenfalls überflüssig.
+
+Die Formen $B=i_k$ und $C=j_k$ sind aber Invarianten. Also bleibt in der
+That vom ganzen Systeme $(B^{(1)})$ nur die Form $k$ für die
+%CONT>>
+
+
+% ===== pdf idx 295, printed 281.0 =====

@@ -1,0 +1,1246 @@
+% !PRINTED 341
+\weberpage{341}
+$V$, resp. $\Delta$, sehr nahe liegend sind auch die beiden Ueberschiebungen
+von $f$ und $\varphi$ über die andere quadratische Form $\Theta$, nämlich
+$(f, \Theta)^2$ und $(\varphi, \Theta)^2$. Wir erhalten:
+\[
+\begin{aligned}
+(\Theta, f)^2 &= (a\alpha)^2(ab)(\alpha b)\,b_x\\
+&= \frac{1}{2}\{(a\alpha)^2(ab)(\alpha b)\,b_x + (b\alpha)^2(ba)(\alpha a)\,a_x\}\\
+&= \frac{1}{2}(a\alpha)(ab)(\alpha b)\{(a\alpha)\,b_x + (\alpha b)\,a_x\}\\
+&= \frac{1}{2}(a\alpha)(ab)^2(\alpha b)\,\alpha_x = -\frac{1}{2}(a\alpha)(b\alpha)(ab)^2\alpha_x,
+\end{aligned}
+\]
+oder, weil $(ab)^2a_xb_x = \Delta$ und nach Nr.\ 309, $(\varphi, \Delta)^2 = p$,
+\weq{1}{(f, \Theta)^2 = -\frac{1}{2}(\Delta, \varphi)^2 = -\frac{1}{2}\,p,}
+also auch
+\weq{2}{(\varphi, \Theta)^2 = -\frac{1}{2}(V, f)^2 = -\frac{1}{2}\,\pi.}
+
+Wir haben damit auch für die beiden wichtigen linearen Covarianten $p$ und
+$\pi$ einen neuen Ausdruck gefunden.
+
+Eine zweite Reihe einfach zu berechnender verwandter linearer Covarianten
+ergiebt sich aus den Ueberschiebungen von $f$ und $\varphi$ über Producte
+und Potenzen von $p$ und $\pi$, also die Covarianten:
+\[
+(f, p^2)^2, \ (f, p\pi)^2, \ (f, \pi^2)^2; \quad (\varphi, p^2), \ (\varphi, p\pi)^2, \ (\varphi, \pi^2)^2. % [sic] first term lacks outer exponent 2 as printed
+\]
+
+Da wir die Werthe von $p^2$ und $\pi^2$ bereits als lineare Functionen
+quadratischer Formen ermittelt haben, so hat die Berechnung dieser
+Covarianten keine weitere Schwierigkeit. Wir schieben die Relation
+\[
+p^2 = A_{\Delta\Delta}\,V - 2A_{\Theta\Delta}\,\Theta + \left(A_{\Theta\Theta} - \frac{J^2}{2}\right)\Delta + J(f, p)
+\]
+zweimal über $f$ und erhalten:
+\[
+\begin{aligned}
+(f, p^2)^2 = (ap)^2a_x &= A_{\Delta\Delta}(f,V)^2 - 2A_{\Theta\Delta}(f,\Theta)^2 + \left(A_{\Theta\Theta} - \frac{J^2}{2}\right)(f,\Delta)^2\\
+&\quad + J(f, (ap)a_x^2)^2\\
+&= A_{\Delta\Delta}\pi + A_{\Theta\Delta}p + J(ab)^2(ap)b_x,
+\end{aligned}
+\]
+weil ja die Ueberschiebung $(f, \Delta)^2 = 0$ ist. Es ist aber
+\[
+(ab)^2(ap)b_x = (\Delta, p),
+\]
+somit
+\weq{3}{(f, p^2)^2 = A_{\Delta\Delta}\pi + A_{\Theta\Delta}p + J(\Delta, p),}
+und ebenso
+\weq{4}{(\varphi, \pi^2)^2 = A_{VV}p + A_{\Theta V}\pi - J(V, \pi).}
+
+Ferner ergiebt sich:
+\[
+\begin{aligned}
+(\varphi, p^2)^2 = (\alpha p)^2\alpha_x &= A_{\Delta\Delta}(\varphi,V)^2 - 2A_{\Theta\Delta}(\varphi,\Theta)^2 + \left(A_{\Theta\Theta} - \frac{J^2}{2}\right)(\varphi,\Delta)^2\\
+&\quad + J(\varphi, (ap)a_x^2)^2.
+\end{aligned}
+\]
+
+
+% ===== pdf idx 356, printed 342.0 =====
+% !PRINTED 342
+\weberpage{342}
+In dieser Relation ist einestheils $(\varphi, V)^2 = 0$, und anderntheils:
+\[
+\begin{aligned}
+(\varphi, (ap)a_x^2)^2 = (ap)(\alpha a)^2\alpha_x &= (a\alpha)^2\{a_x(p\alpha) + p_x(a\alpha)\}\\
+&= (a\alpha)^3p + (a\alpha)^2(p\alpha)a_x.
+\end{aligned}
+\]
+Da aber wegen der Fundamentalrelation $(f, \pi) + (\varphi, p) = 0$:
+\[
+(\alpha a)^2(p\alpha)a_x = ((p\alpha)\alpha_x^2, a_x^3)^2 = ((b\pi)b_x^2, a_x^3)^2 = (ab)^2(b\pi)a_x = (\Delta,\pi),
+\]
+so erhalten wir:
+\[
+(\varphi, (ap)a_x^2)^2 = Jp + (\Delta,\pi).
+\]
+
+Es wird sonach, unter Berücksichtigung dieser Werthe der einzelnen Glieder,
+und wegen Nr.\ 318, (2):
+\weq{5}{(\varphi, p^2)^2 = A_{\Theta\Delta}\pi + \left(A_{\Theta\Theta} + \frac{J^2}{2}\right)p + J(\Delta,\pi),}
+also auch
+\weq{6}{(f, \pi^2)^2 = A_{\Theta V}p + \left(A_{\Theta\Theta} + \frac{J^2}{2}\right)\pi - J(V,p).}
+
+Nun kann man die Ueberschiebung $(\varphi, p^2)^2$ auch schreiben:
+\[
+((\varphi, p), p);
+\]
+weil aber $(\varphi, p) = -(f, \pi)$, so ist auch
+\[
+(\varphi, p^2)^2 = -((f, \pi), p)^2 = -(f, \pi\cdot p)^2,
+\]
+und ebenso
+\[
+(f, \pi^2)^2 = -((\varphi, p), \pi)^2 = -(\varphi, p\cdot\pi)^2.
+\]
+
+Diese beiden letzten linearen Covarianten haben sonach dieselben Werthe,
+die wir bereits in (5) und (6) berechnet haben.
+
+319. \textit{Die Invarianten des simultanen Systems.} Von den sieben
+Invarianten, auf welche wir durch Aufstellung des Systemes geführt wurden,
+behalten wir folgende vier bei: $J$, $A_{\Delta\Delta}$, $A_{VV}$,
+$A_{\Delta V}$. Die drei übrigen: $(f, K)^3$, $(\varphi, Q)^3$, $(Q, K)^3$
+ersetzen wir durch andere, indem wir die übrigen Invarianten des
+simultanen Systemes $\Delta$, $V$, $\Theta$ zu Hilfe nehmen. Es ist
+nämlich:
+\weq{1}{(f, K)^3 = (\alpha V)(a\alpha)^2(aV) = ((a\alpha)^2a_x\alpha_x, V)^2 = (\Theta, V)^2 = A_{\Theta V},}
+und ebenso
+\[
+(\varphi, Q)^3 = A_{\Theta\Delta}.
+\]
+Ferner ist ein Glied der Ueberschiebung $(Q, K)^3$ dargestellt durch:
+\[
+G = (a\Delta)(\alpha V)(a\alpha)^2(\Delta V).
+\]
+Die rechte Seite geht aus der schon mehrmals benutzten
+Reihenentwicklung hervor:
+\[
+(a\alpha)^2a_y\alpha_x = \Theta_x\Theta_y + \frac{1}{2}J(yx),
+\]
+wenn wir in ihr $y$ durch $\Delta$, $x$ durch $V$ ersetzen und mit
+$(\Delta V)$ multipliciren. Wir erhalten:
+%CONT>>
+
+
+% ===== pdf idx 357, printed 343.0 =====
+% !PRINTED 343
+\weberpage{343}
+%<<CONT
+\[
+\begin{aligned}
+G = (\Delta V)\left\{(\Theta V)(\Theta\Delta) + \frac{1}{2}J(\Delta V)\right\}
+&= (\Delta V)(\Theta V)(\Theta\Delta) + \frac{1}{2}J A_{\Delta V}.
+\end{aligned}
+\]
+Man kann somit $(Q, K)^3$ ersetzen durch das erste Glied rechts
+\weq{2}{\Omega = (\Delta V)(\Theta V)(\Theta\Delta),}
+welches nichts anderes ist, als die simultane Invariante der drei
+quadratischen Formen $\Delta$, $V$ und $\Theta$.
+
+Diese Form $\Omega$ lässt sich auch noch auf eine andere Weise
+darstellen. Wir hatten gefunden [vergl. Nr.\ 311, (1)]
+\[
+(f, p) = (ap)a_x^2 = 2(\Delta, \Theta) = 2(\Delta\Theta)\Delta_x\Theta_x.
+\]
+Aus dem Ausdrucke rechts geht aber $\Omega$ hervor, wenn man diese
+Relation zweimal über $V$ schiebt; man erhält also:
+\[
+((ap)a_x^2, V)^2 = 2((\Delta\Theta)\Delta_x\Theta_x, V)^2,
+\]
+oder
+\[
+(aV)^2(ap) = -2\Omega.
+\]
+Es ist aber
+\[
+(aV)^2(ap) = ((aV)^2a_x, p) = (\pi, p);
+\]
+also ist
+\[
+2\Omega = (p, \pi).
+\]
+
+Es erübrigt noch, den Werth der nicht zum System gehörigen Invariante
+$A_{\Theta\Theta}$ zu bestimmen. Zu dem Zwecke ersetzen wir in der
+Reihenentwicklung
+\[
+(a\alpha)^2a_y\alpha_x = \Theta_x\Theta_y + \frac{1}{2}J(yx)
+\]
+$y$ durch $b$ und $x$ durch $\beta$ und multipliciren die Entwicklung
+mit $(b\beta)^2$; dann erhalten wir:
+\weq{3}{
+\begin{aligned}
+(a\alpha)^2(ab)(\alpha\beta)(b\beta)^2 &= (b\beta)^2\left\{(\Theta\beta)(\Theta b) + \frac{J}{2}(b\beta)\right\}\\
+&= \left(\Theta, (b\beta)^2b_x\beta_x\right) + \frac{J^2}{2}\\
+&= A_{\Theta\Theta} + \frac{J^2}{2}.
+\end{aligned}
+}
+Um den Ausdruck links umzuformen beachte man, dass wegen des Factors
+$(ab)$ es vortheilhaft ist, $a$ mit $b$ zu vertauschen und die halbe
+Summe zu nehmen; dann wird:
+\[
+\begin{aligned}
+(a\alpha)^2(b\beta)^2(ab)(\alpha\beta) &= \frac{1}{2}(ab)(\alpha\beta)\{(a\alpha)^2(b\beta)^2 - (b\alpha)^2(a\beta)^2\}\\
+&= \frac{1}{2}(ab)(\alpha\beta)\{(a\alpha)(b\beta) + (b\alpha)(a\beta)\}\\
+&\quad \{(a\alpha)(b\beta) - (b\alpha)(a\beta)\}\\
+&= \frac{1}{2}(ab)^2(\alpha\beta)^2\{(a\alpha)(b\beta) + (b\alpha)(a\beta)\}.
+\end{aligned}
+\]
+
+
+% ===== pdf idx 358, printed 344.0 =====
+% !PRINTED 344
+\weberpage{344}
+Die beiden Terme rechts stimmen überein; also ist:
+\weq{4}{(a\alpha)^2(b\beta)^2(ab)(\alpha\beta) = (ab)^2(\alpha\beta)^2(a\alpha)(b\beta) = (\Delta V)^2 = A_{\Delta V}.}
+Substituirt man daher (4) in (3), so erhält man:
+\weq{5}{A_{\Theta\Theta} = A_{\Delta V} - \frac{J^2}{2}.}
+
+Fassen wir wiederum die sieben Invarianten des Systemes zusammen, so
+sind dieselben repräsentirt durch:
+\[
+A_{\Delta\Delta}, \ A_{VV}, \ J, \ A_{\Delta V}, \ A_{\Delta\Theta}, \ A_{V\Theta}, \ \Omega = R_{\Delta V\Theta}.
+\]
+Zwischen diesen sieben Invarianten müssen, wie schon früher erwähnt,
+zwei Relationen bestehen. Wir wollen sie im Folgenden berechnen.
+
+320. \textit{Invariantenrelation für $\Omega^2$.} Zunächst weiss man aus
+der Theorie der quadratischen Formen, dass das Quadrat der schiefen
+Invariante $\Omega$ sich darstellen lässt durch [vgl. Nr.\ 134, (2)
+$\beta$)] die Determinante:
+\[
+2\Omega^2 = \begin{vmatrix}
+A_{\Delta\Delta}, & A_{\Theta\Delta}, & A_{V\Delta} \\
+A_{\Delta\Theta}, & A_{\Theta\Theta}, & A_{V\Theta} \\
+A_{\Delta V}, & A_{\Theta V}, & A_{VV}
+\end{vmatrix}.
+\]
+
+Wir bezeichnen diese Determinante mit $U$ und ihre Unterdeterminanten mit
+$U_{ik}$. Diese Unterdeterminanten $U_{ik}$ sind nach der Theorie der
+quadratischen Formen nichts anderes als die zweiten Ueberschiebungen von
+Functionaldeterminanten der drei Formen $\Delta$, $V$, $\Theta$. Denn
+ersetzen wir die dort [vgl. Nr.\ 134, (1) $\beta$) und $\gamma$)] mit
+$f$, $\varphi$, $\psi$ bezeichneten quadratischen Formen durch $\Delta$,
+resp. $\Theta$, $V$ und demnach $\vartheta_1 = (\varphi,\psi)$,
+$\vartheta_2 = (\psi,f)$, $\vartheta_3 = (f,\varphi)$ durch $(\Theta,V)$,
+resp. $(V,\Delta)$, $(\Delta\Theta)$, so erhalten wir unmittelbar die
+folgenden sechs Relationen:
+\[
+\begin{aligned}
+2A_{\vartheta_1\vartheta_1} &= 2((\Theta,V),(\Theta,V))^2 = A_{\Theta\Theta}A_{VV} - A_{V\Theta}^2 = +U_{11}\\
+2A_{\vartheta_2\vartheta_2} &= 2((V,\Delta),(V,\Delta))^2 = A_{VV}A_{\Delta\Delta} - A_{V\Delta}^2 = +U_{22}\\
+2A_{\vartheta_3\vartheta_3} &= 2((\Delta,\Theta),(\Delta,\Theta))^2 = A_{\Delta\Delta}A_{\Theta\Theta} - A_{\Delta\Theta}^2 = +U_{33}\\
+2A_{\vartheta_1\vartheta_2} &= 2((\Theta,V),(V,\Delta))^2 = A_{V\Delta}A_{V\Theta} - A_{VV}A_{\Delta\Theta} = -U_{12}\\
+2A_{\vartheta_1\vartheta_3} &= 2((\Theta,V),(\Delta,\Theta))^2 = A_{\Theta\Delta}A_{V\Theta} - A_{\Theta\Theta}A_{\Delta V} = +U_{13}\\
+2A_{\vartheta_2\vartheta_3} &= 2((V,\Delta),(\Delta,\Theta))^2 = A_{\Delta\Theta}A_{\Delta V} - A_{\Delta\Delta}A_{\Theta V} = -U_{23}.
+\end{aligned}
+\]
+
+Diese Unterdeterminanten spielen bei der typischen Darstellung von
+$\Delta$, $V$ und $\Theta$ eine besondere Rolle. Denn sie sind es, welche
+die typischen Coefficienten liefern. Sie dienen ferner dazu, die
+Relation, welche das Product $\Omega J$ mit den andern fundamentalen
+Invarianten bildet, in einfacher Weise darzustellen.
+
+
+% ===== pdf idx 359, printed 345.0 =====
+% !PRINTED 345
+\weberpage{345}
+
+321. \textit{Invariantenrelation für $\Omega\cdot J$.} Man hat für das
+Product dieser beiden Invarianten den symbolischen Ausdruck:
+\[
+2J\cdot\Omega=(a\alpha)^3\cdot(p\pi),
+\]
+oder, indem wir den Identitätssatz benutzen:
+\[
+\begin{aligned}
+2J\cdot\Omega&=(a\alpha)^2\{(ap)(\alpha\pi)-(a\pi)(\alpha p)\}\\
+&=(a\alpha)^2(ap)(\alpha\pi)-(a\alpha)^2(a\pi)(\alpha p)\\
+&=\mathbf{(}(ap)a_x^2,(\alpha\pi)\alpha_x^2\mathbf{)}^2-\mathbf{(}(a\pi)a_x^2,(\alpha p)\alpha_x^2\mathbf{)}^2\\
+&=((f,p),(\varphi,\pi))^2-((f,\pi),(\varphi,p))^2.
+\end{aligned}
+\]
+
+Nun bestehen aber nach dem Früheren die Beziehungen:
+\[
+\left.\begin{array}{l}
+(f,\pi)=-(\Delta,V)\\
+(\varphi,p)=-(V,\Delta)\\
+(f,p)=-2(\Theta,\Delta)\\
+(\varphi,\pi)=-2(\Theta,V)
+\end{array}\right\}\qquad\text{(I)}
+\]
+Demnach wird die Relation für $2J\cdot\Omega$:
+\[
+\begin{aligned}
+2J\cdot\Omega&=4((\Theta,\Delta),(\Theta,V))^2-((\Delta,V),(V,\Delta))^2\\
+&=((V,\Delta),(V,\Delta))^2-4((\Theta,V),(\Delta,\Theta))^2,
+\end{aligned}
+\]
+oder:
+\[
+4J\cdot\Omega=U_{22}-4U_{13}.
+\]
+
+Hiemit seien die Untersuchungen über die Relationen der Formen des
+Systems von $f$ und $\varphi$ beschlossen.
+
+322. \textit{Zusammenfassung.} Ehe wir zu Anwendungen der bisherigen
+theoretischen Untersuchungen übergehen, dürfte es angezeigt sein, eine
+tabellarische Uebersicht über die gewonnenen Resultate zu entwerfen.
+
+Die 26 Formen des simultanen Systemes von $f$ und $\varphi$ sind durch
+folgende Symbole dargestellt:
+\[
+\vartheta=(a\alpha)a_x^2\alpha_x^2,
+\]
+\[
+\begin{array}{llll}
+f=a_x^3, & \Delta=(ab)^2a_xb_x, & \pi=(aV)^2a_x, & A_{\Delta\Delta}\\
+\varphi=\alpha_x^3, & V=(\alpha\beta)^2\alpha_x\beta_x, & p=(\alpha\Delta)^2\alpha_x, & A_{VV}\\
+Q=(a\Delta)a_x^2\Delta_x, & \Theta=(a\alpha)^2a_x\alpha_x, & (\Delta,p), & A_{\Delta V}\\
+K=(\alpha V)\alpha_x^2V_x, & (f,p), & (\Delta,\pi), & A_{\Delta\Theta}\\
+(f,V), & (\varphi,\pi), & (V,p), & A_{V\Theta}\\
+(\varphi,\Delta), & (f,\pi)=-(\varphi,p), & (V,\pi), & J=(a\alpha)^3
+\end{array}
+\]
+\[
+\Omega=(\Delta V)(V\Theta)(\Delta\Theta).
+\]
+
+Zwischen den Ueberschiebungen dieser Formen bestehen insbesondere
+folgende Relationen:
+%CONT>>
+
+
+% ===== pdf idx 360, printed 346.0 =====
+% !PRINTED 346
+\weberpage{346}
+%<<CONT
+
+\[
+\left.\begin{array}{l}
+(f,\Theta)^2=-\dfrac{1}{2}p,\qquad (\vartheta,f)^3=-\dfrac{3}{4}p\\[6pt]
+(\varphi,\Theta)^2=-\dfrac{1}{2}\pi,\qquad (\vartheta,\varphi)^3=+\dfrac{3}{4}\pi
+\end{array}\right\}\qquad\text{(I)}
+\]
+\[
+\left.\begin{array}{l}
+(f,p)=-2(\Theta,\Delta),\qquad (\vartheta,p)=\dfrac{1}{2}\{\Delta\pi+\Theta p\}\\[6pt]
+(\varphi,\pi)=-2(\Theta,V),\qquad (\vartheta,\pi)=-\dfrac{1}{2}\{Vp+\Theta\pi\}
+\end{array}\right\}\qquad\text{(II)}
+\]
+\[
+\left.\begin{array}{l}
+(f,\pi)=-(\Delta,V)\\
+(\varphi,p)=-(V,\Delta)
+\end{array}\right\},\quad\text{daher: }(f,\pi)+(\varphi,p)=0\qquad\text{(III)}
+\]
+\[
+\left.\begin{array}{l}
+p^2=A_{\Delta\Delta}V-2A_{\Theta\Delta}\Theta+\left(A_{\Theta\Theta}-\dfrac{J^2}{2}\right)\Delta+J(f,p)\\[6pt]
+\pi^2=A_{V\Delta}\Delta-2A_{\Theta V}\Theta+\left(A_{\Theta\Theta}-\dfrac{J^2}{2}\right)V-J(\varphi,\pi)
+\end{array}\right\}\qquad\text{(IV)}
+\]
+\[
+\left.\begin{array}{l}
+(f,p^2)^2=A_{\Delta\Delta}\pi+A_{\Theta\Delta}p+J(\Delta,p)\\
+(\varphi,\pi^2)^2=A_{V\Delta}p+A_{\Theta V}\pi-J(V,\pi)\\
+(\varphi,p^2)^2=A_{\Theta\Delta}\pi+\left(A_{\Theta\Theta}+\dfrac{J^2}{2}\right)p+J(\Delta,\pi)=-(f,\pi p)^2\\
+(f,\pi^2)^2=A_{\Theta V}p+\left(A_{\Theta\Theta}+\dfrac{J^2}{2}\right)\pi-J(V,p)=-(\varphi,\pi p)^2
+\end{array}\right\}\qquad\text{(V)}
+\]
+\[
+A_{\Theta\Theta}=A_{V\Delta}-\dfrac{J^2}{2}\qquad\text{(VI)}
+\]
+\[
+2\Omega=(p\pi),\qquad 2\Omega^2=(A_{\Delta\Delta}A_{\Theta\Theta}A_{VV}).\qquad\text{(VII)}
+\]
+
+Die Unterdeterminanten $U_{ik}$ dieser Determinante
+$(A_{\Delta\Delta}A_{\Theta\Theta}A_{VV})$ sind den sechs Invarianten,
+die zum simultanen System der drei Functionaldeterminanten $(\Theta,V)$,
+$(V,\Delta)$, $(\Delta,\Theta)$ gehören, proportional. (Vergl. Nr. 320.)
+Endlich ist:
+\[
+4\Omega J=U_{22}-4U_{13}.\qquad\text{(VIII)}
+\]
+
+\begin{center}
+\S\ 33.\quad\textbf{Anwendungen des simultanen Formensystems\\
+zweier cubischer Formen.}
+\end{center}
+
+323. \textit{Typische Darstellung der quadratischen Covarianten
+$\Delta$, $\Theta$, $V$.} Die ersten Anwendungen, die wir von den im
+vorhergegangenen Paragraphen gewonnenen Resultaten machen, beziehen
+sich auf typische Darstellungen von Formen des Systemes unter
+Zugrundelegung der beiden linearen Covarianten $p$ und $\pi$. Um eine
+der drei quadratischen Covarianten $\Delta$, $V$ oder $\Theta$, etwa
+die Covariante $\Delta$, typisch darzustellen, gehen wir wiederum aus
+von der Identität
+\[
+(p\pi)\Delta_x=(\Delta\pi)p_x-(\Delta p)\pi_x.
+\]
+
+
+% ===== pdf idx 361, printed 347.0 =====
+% !PRINTED 347
+\weberpage{347}
+
+Wir erheben sie auf die zweite Potenz und erhalten:
+\[
+4\Omega^2\Delta=(\Delta\pi)^2p^2-2(\Delta p)(\Delta\pi)p\pi+(\Delta p)^2\pi.
+\]
+Für die typischen Coefficienten $(\Delta\pi)^2$, $(\Delta p)(\Delta\pi)$,
+$(\Delta p)^2$ ergeben sich aber unmittelbar die Werthe:
+\[
+\begin{aligned}
+(\Delta p)^2&=2U_{33}=2\{A_{\Delta\Delta}A_{\Theta\Theta}-A_{\Delta\Theta}^2\}\\
+(\Delta p)(\Delta\pi)&=U_{23}=A_{\Theta V}A_{\Delta\Delta}-A_{\Theta\Delta}A_{V\Delta}\\
+(\Delta\pi)^2&=\dfrac{1}{2}U_{22}=\dfrac{1}{2}\{A_{\Delta\Delta}A_{VV}-A_{V\Delta}^2\}.
+\end{aligned}
+\]
+Denn es ist (vergl. Nr. 320 und 322):
+\[
+\begin{aligned}
+2U_{33}&=4((\Delta,\Theta),(\Delta,\Theta))^2=((f,p),(f,p))^2=(ab)^2(ap)(bp)=(\Delta p)^2\\
+U_{23}&=2((V,\Delta),(\Theta,\Delta))^2=((f,p),(f,\pi))^2=(ab)^2(ap)(b\pi)=(\Delta p)(\Delta\pi)\\
+\dfrac{1}{2}U_{22}&=((\Delta,V),(\Delta,V))^2=((f,\pi),(f,\pi))^2=(ab)^2(a\pi)(b\pi)=(\Delta\pi)^2.
+\end{aligned}
+\]
+
+In derselben Weise gelangt man zu den typischen Coefficienten von $V$
+und $\Theta$. Man braucht nur die Ueberschiebungen:
+\[
+((\varphi,\pi),(\varphi,\pi))^2,\quad ((\varphi,\pi),(\varphi,p))^2,\quad ((\varphi,p),(\varphi,p))^2
+\]
+\[
+((f,p),(\varphi,p))^2,\quad ((f,\pi),(\varphi,p))^2,\quad ((f,\pi),(\varphi,\pi))^2
+\]
+zu berechnen.
+
+324. \textit{Die typischen Coefficienten von $f$ und $\varphi$.} Ebenso
+bietet, nachdem wir die Ueberschiebungen
+\[
+(f,p^2)^2,\quad (f,p\pi)^2,\quad (f,\pi^2)^2
+\]
+\[
+(\varphi,p^2)^2,\quad (\varphi,p\pi)^2,\quad (\varphi,\pi^2)^2
+\]
+bereits berechnet haben, die typische Darstellung von $f$ und $\varphi$
+mit Hilfe der linearen Covarianten $p$ und $\pi$ keine Schwierigkeiten
+mehr. Wir haben die für diese Ueberschiebungen gegebenen Relationen
+(vgl. Nr. 322) nur noch einmal über die Formen $p$ und $\pi$ zu
+schieben und hiebei die sich aus den Betrachtungen in Nr. 323
+ergebenden Werthe für $(\Delta p)^2$, $(\Delta\pi)^2$ etc. zu benutzen.
+
+Sind auf diese Weise die typischen Coefficienten berechnet, so ist die
+typische Darstellung von $f$ und $\varphi$ wieder durch die
+Identitäten:
+\[
+(p\pi)^3a_x^3=\{(a\pi)p_x-(ap)\pi_x\}^3
+\]
+\[
+(p\pi)^3\alpha_x^3=\{(\alpha\pi)p_x-(\alpha p)\pi_x\}^3
+\]
+unmittelbar gegeben.
+
+Die leicht auszuführende Rechnung ergiebt, dass $f$ und $\varphi$ in
+der typischen Darstellung bis auf einen Invariantenfactor als die
+beiden
+%CONT>>
+
+
+% ===== pdf idx 362, printed 348.0 =====
+% !PRINTED 348
+\weberpage{348}
+
+%<<CONT
+ersten Differentialquotienten einer gewissen Form vierten Grades
+erscheinen, nämlich der Form:
+\[
+\begin{aligned}
+F&=-8\Omega^3\{f\pi+\varphi p\}\\
+&=Ap^4+4Bp^3\pi+3Cp^2\pi^2+4Dp\pi^3+E\pi^4.
+\end{aligned}
+\]
+Diese Eigenschaft hat \gesperrt{Clebsch} für das Problem der
+Transformation dritter Ordnung in der Theorie der elliptischen
+Functionen ausgebeutet. Da sie auch noch anderweitig interessante
+Beziehungen bietet, so wollen wir bei Betrachtung dieser Form $F$ noch
+ein wenig verweilen.
+
+325. \textit{Die ersten Polaren der Form $F$ nach $p$ und $\pi$.} Wir
+werden zunächst noch in anderer Weise zeigen, dass, wenn
+\[
+F=f\pi+\varphi p
+\]
+ist, die ersten Differentialquotienten von $F$ nach $p$ und $\pi$,
+oder was dasselbe ist, die ersten Polaren nach $p$ und $\pi$
+proportional sind den Formen $f$ resp. $\varphi$.
+
+Setzen wir nämlich etwa
+\[
+F=r_x^4,
+\]
+so ist:
+\[
+4(F,\pi)=4r_x^3(r\pi);
+\]
+und wegen der Voraussetzung auch
+\[
+\begin{aligned}
+4(F,\pi)&=3(f,\pi)\pi+(\pi,\pi)f+3(\varphi,\pi)p+\varphi(p,\pi)\\
+&=3(a\pi)a_x^2\pi_x+3(\alpha\pi)\alpha_x^2p_x+\varphi(p,\pi).
+\end{aligned}
+\]
+Berücksichtigen wir, dass $(f,\pi)=-(\varphi,p)$, so wird
+\[
+\begin{aligned}
+4r_x^3(r\pi)&=-3(\alpha p)\alpha_x^2\pi_x+3(\alpha\pi)\alpha_x^2p_x+\varphi(p\pi)\\
+&=3\alpha_x^2\{(\alpha\pi)p_x-(\alpha p)\pi_x\}+\varphi(p\pi)\\
+&=4\varphi(p\pi)=8\Omega\varphi.
+\end{aligned}
+\]
+Demnach ist:
+\[
+r_x^3(r\pi)=2\Omega\varphi,\qquad\text{(1)}
+\]
+und ebenso findet sich:
+\[
+r_x^3(rp)=-2\Omega f.\qquad\text{(2)}
+\]
+
+326. \textit{Das System der Form $F$.} Dasselbe besteht bekanntlich aus
+den Formen:
+\[
+\Delta_F=(F,F)^2,\quad t_F=(F,\Delta_F),\quad i_F=(F,F)^4,\quad j_F=(F,\Delta_F)^4.
+\]
+Mit Hilfe der Relationen (1) und (2) können wir dasselbe leicht durch
+die simultanen Formen von $f$ und $\varphi$ ausdrücken.
+
+Ueberschiebt man nämlich diese beiden Relationen dreimal übereinander,
+so kommt:
+\[
+(rr_1)^3(r\pi)(r_1p)=4\Omega^2J.
+\]
+
+
+% ===== pdf idx 363, printed 349.0 =====
+% !PRINTED 349
+\weberpage{349}
+Vertauscht man links $r$ mit $r_1$ und nimmt die halbe Summe, so kommt:
+\[
+-\frac{1}{2}(rr_1)^4(p\pi) = 4\Omega^2J,
+\]
+oder, da $(p\pi)=2\Omega$:
+\weq{1}{i_F = -4\Omega J.}
+Ebenso findet man durch einmalige Ueberschiebung von (1) und (2):
+\[
+(rr_1)(r\pi)(r_1p)r_x^2r_{1x}^2 = -4\Omega^2(\varphi,f) = 4\Omega^2\vartheta.
+\]
+Vertauscht man wieder $r$ mit $r_1$ und nimmt die halbe Summe, so kommt:
+\[
+-\Omega\Delta_F = 4\Omega^2\vartheta,
+\]
+oder
+\weq{2a}{\Delta_F = -4\Omega\vartheta.}
+Zur Berechnung von $t_F$ und $j_F$ benutzen wir die in Nr. 322 aufgestellten vier Relationen:
+\weq{2b}{\left.
+\begin{aligned}
+(\vartheta,f)^3 &= -\frac{3}{4}p, & (\vartheta,\varphi)^3 &= +\frac{3}{4}\pi\\
+(\vartheta,p) &= \frac{1}{2}(\Delta\pi+\Theta p), & (\vartheta,\pi) &= -\frac{1}{2}(Vp+\Theta\pi)
+\end{aligned}
+\right\}}
+Es ist dann:
+\[
+\begin{aligned}
+j_F &= (F,-4\Omega\vartheta)^4 = -4\Omega(f\pi+\varphi p,\vartheta)^4\\
+&= -4\Omega\{(\vartheta,f\pi)^4+(\vartheta,fp)^4\}\\
+&= -4\Omega\{((\vartheta,f)^3,\pi)+((\vartheta,\varphi),p)\}\\
+&= -4\Omega\left\{-\frac{3}{4}(p\pi)+\frac{3}{4}(\pi p)\right\},
+\end{aligned}
+\]
+also:
+\weq{3}{j_F = +12\Omega^2.}
+Ferner geht mit R\"ucksicht auf die Formeln (2a) und (2b) und (1) und (2) Nr. 325 aus der Identit\"at:
+\[
+(F,\Delta_F)(p,\pi) = (F,p)(\Delta_F,\pi) - (F,\pi)(\Delta_F,p)
+\]
+die Relation hervor:
+\[
+\begin{aligned}
+t_F\cdot 2\Omega &= (-2\Omega f)\left(-4\Omega\cdot-\frac{1}{2}\{Vp+\Theta\pi\}\right)\\
+&\quad -(+2\Omega\varphi)\left(-4\Omega\cdot\frac{1}{2}(\Delta\pi+\Theta p)\right),
+\end{aligned}
+\]
+oder:
+\weq{4}{t_F = 2\Omega\cdot\{\varphi(\Delta\pi+\Theta p)-f(Vp+\Theta\pi)\}.}
+Die eben angestellten Berechnungen zeigen einen merkw\"urdigen Zusammenhang zwischen den drei Formen $F$, $p$, $\pi$ einerseits und den beiden Formen $f$ und $\varphi$ andererseits. Sind die Co\"efficienten einer biquadratischen Form so beschaffen, dass die Invariante $j$ proportional der Invariante $(p\pi)$, dass also die Relation (3)
+\[
+12\Omega^2 = j_F
+\]
+%CONT>>
+
+
+% ===== pdf idx 364, printed 350.0 =====
+% !PRINTED 350
+\weberpage{350}
+%<<CONT
+besteht, so stimmt das simultane System von $F$, $p$, $\pi$ \"uberein mit dem simultanen System zweier cubischen Formen $f$ und $\varphi$, welche $p$ und $\pi$ zu linearen Covarianten haben. In der That reducirt sich auch durch die Relation (3) die Zahl 9 der Constanten von $F$, $p$ und $\pi$ auf 8 willk\"urliche, was mit der Zahl der unabh\"angigen Coefficienten von $f$ und $\varphi$ \"ubereinstimmt.
+
+327. \gesperrt{Resultante von $f$ und $\varphi$.} Die Resultante zweier Formen $F_1$ und $F_2$, also $R_{F_1,F_2}$, ist bis auf den Factor $(p\pi)^3$ gleich der Resultante der beiden Formen $\pi_2F_1-\pi_1F_2$ und $p_2F_1-p_1F_2$, d.\,h. es ist:
+\[
+(p\pi)^3R_{F_1,F_2} = R_{\pi_2F_1-\pi_1F_2,\,p_2F_1-p_1F_2}, \quad (\text{vgl. Bd. I Nr. 256}),
+\]
+wenn $F_1$ und $F_2$ Formen dritten Grades in $x$ sind. Sind nun $F_1$ und $F_2$ die ersten Differentialquotienten von $F$, so ist einestheils $R_{F_1,F_2}$ gleich der Discriminante $R$ von $F$ und andererntheils ist wegen der Relationen (1) und (2) Nr. 325
+\[
+R_{\pi_2F_1-\pi_1F_2,\,p_2F_1-p_1F_2} = R_{2\Omega\varphi,\,-2\Omega f},
+\]
+also bis auf einen Zahlenfactor gleich
+\[
+\Omega^6R_{f,\varphi}.
+\]
+Man hat also die Relation (von einem Zahlenfactor abgesehen):
+\[
+\Omega^3R = \Omega^6R_{f,\varphi},
+\]
+oder weil, wiederum von numerischen Factoren abgesehen,
+\[
+R = 6j_F^2 - i_F^3 = 6\cdot12^2\Omega^4 - 64\Omega^3\cdot J^3,
+\]
+so ist:
+\[
+R_{f,\varphi} = 32\{27\Omega - 2J^3\}.
+\]
+
+328. \gesperrt{F\"alle, in denen die typische Darstellung unm\"oglich ist.} Sind alle sechs linearen Formen
+\[
+\begin{gathered}
+p,\quad (\Delta,p),\quad (V,p)\\
+\pi,\quad (\Delta,\pi),\quad (V,\pi)
+\end{gathered}
+\]
+einander proportional, so kann eine typische Darstellung durch lineare Formen nicht mehr geleistet werden. In diesem Falle verschwindet zun\"achst jedenfalls $\Omega=(p\pi)$. Dies kann eine Folge des Verschwindens aller Unterdeterminanten $U_{ik}$ sein oder nicht, und je nachdem werden entweder alle linearen Covarianten identisch verschwinden, oder alle einander proportional sein, oder bei nicht verschwindenden $U_{ik}$ zwei von einander verschiedene lineare Formen existiren. Wir wollen daher der Reihe nach folgende zwei Fragen untersuchen:
+
+1) Welche Eigenschaften haben $f$ und $\varphi$, wenn $\Omega=0$, $U_{ik}\lessgtr0$?
+
+2) Welche Eigenschaften haben $f$ und $\varphi$, wenn $U_{ik}=0$, und also auch $\Omega=0$?
+
+329. \gesperrt{Beantwortung der ersten Frage.} Wir setzen voraus:
+\[
+\Omega=0,\quad U_{ik}\gtrless0.
+\]
+%CONT>>
+
+
+% ===== pdf idx 365, printed 351.0 =====
+% !PRINTED 351
+\weberpage{351}
+Wenn $\Omega$ verschwindet, also immer $p$ f\"ur einen bestimmten Werth von $\lambda$ mit $\lambda\cdot\pi$ \"ubereinstimmt, so muss wegen der Relation:
+\[
+(f,\pi)+(\varphi,p)=0
+\]
+die Ueberschiebung:
+\[
+(f,\pi)+\lambda\cdot(\varphi,p)=(f+\lambda\varphi,\pi)
+\]
+identisch verschwinden. Das Verschwinden der Functionaldeterminante
+\[
+(f+\lambda\varphi,\pi)=0
+\]
+lehrt aber, dass $f+\lambda\varphi$ eine Potenz von $\pi$ sein muss. Wir haben also in diesem Falle:
+\[
+f+\lambda\varphi = c\cdot\pi^3,
+\]
+d.\,h. es giebt eine Combination der beiden Formen $f$ und $\varphi$, welche ein vollst\"andiger Cubus ist. Umgekehrt: Ist $f+\lambda\varphi$ ein vollst\"andiger Cubus, also
+\[
+f+\lambda\varphi = r_x^3,
+\]
+dann ist die zweite Ueberschiebung von $f+\lambda\varphi$ \"uber $V$, wegen $(\varphi,V)^2=0$:
+\weq{1}{p = r(Vr)^2}
+und ferner ist die zweite Ueberschiebung \"uber $\Delta$, wegen $(f,\Delta)^2=0$:
+\weq{2}{\lambda\pi = r(\Delta r)^2}
+Aus der Comparation von (1) mit (2) folgt:
+\[
+p = \lambda\cdot\frac{(Vr)^2}{(\Delta r)^2}\cdot\pi = \varrho\cdot\pi
+\]
+und demnach:
+\[
+\Omega = \frac{(p\pi)}{2} = 0.
+\]
+
+330. \gesperrt{Beantwortung der zweiten Frage.} Wir setzen voraus:
+\[
+U_{ik}=0,\quad\text{und demnach}\quad \Omega=0,\quad i\text{ und }k=1,2,3.
+\]
+In diesem Falle sind aber auch $p$ und $\pi$ identisch null. Um diesen Lehrsatz zu beweisen, haben wir nur zu zeigen, dass $\Delta$, resp. $V$ identisch verschwindet; dann ist auch
+\[
+(\varphi,\Delta)^2 = p = 0,\quad\text{und}\quad (f,V)^2 = \pi = 0.
+\]
+Nun ist (vgl. Nr. 323)
+\[
+U_{33} = \frac{1}{2}(\Delta p)^2.
+\]
+Da aber $U_{33}=0$, so folgt
+\[
+(\Delta p)^2 = 0
+\]
+und ebenso
+\[
+(Vp)^2 = 0,\quad (\Theta p)^2 = 0\ \text{etc.}
+\]
+Diese Relationen lehren, dass $\Delta$, $V$, $\Theta$ den Factor $p$ im ersten Grade besitzen. Nun ist aber:
+%CONT>>
+
+
+% ===== pdf idx 366, printed 352.0 =====
+% !PRINTED 352
+\weberpage{352}
+%<<CONT
+\[
+\begin{aligned}
+\Theta_x^2(\Delta p)^2 - \Delta_x^2(\Theta p)^2 &= (\Theta_x(\Delta p)+\Delta_x(\Theta p))(\Theta_x(\Delta p)-\Delta_x(\Theta p))\\
+&= (\Theta_x(\Delta p)+\Delta_x(\Theta p))(\Delta\Theta)p_x\\
+&= ((\Delta\Theta)\Delta_x\Theta_x,p)p\\
+&= ((\Delta,\Theta),p)p.
+\end{aligned}
+\]
+Die linke Seite ist null; folglich auch, wenn $p\gtrless0$ ist:
+\[
+((\Delta,\Theta),p) = 0.
+\]
+Es ist aber (vgl. Nr. 322):
+\[
+(\Delta,\Theta) = \frac{1}{2}(f,p) = \frac{1}{2}(ap)a_x^2,
+\]
+also
+\[
+(ap)^2a_x = 0
+\]
+und ebenso
+\[
+(\alpha p)^2\alpha_x = 0,
+\]
+d.\,h. die cubischen Formen $f$ und $\varphi$ besitzen $p$ als quadratischen Factor. Daraus folgt nach der Theorie der cubischen Formen, dass auch $\Delta$ und $V$ ihn quadratisch enthalten. Ebenso aber auch $\Theta$. Denn wenn $f$ und $\varphi$ den Factor $p$ quadratisch enthalten, so besitzt ihn auch $f+\lambda\varphi$ und demnach auch die Hesse'sche $\Delta_{f+\lambda\varphi}$ dieser Form. Nun ist
+\[
+\Delta_{f+\lambda\varphi} = \Delta + 2\lambda\Theta + \lambda^2V.
+\]
+Hierin besitzen $\Delta_{f+\lambda\varphi}$, $\Delta$, $V$ den Factor $p$ quadratisch, also auch $\Theta$. Wenn aber $\Delta$, $V$, $\Theta$ diesen Factor quadratisch enthalten, so ist
+\[
+(\Delta p)\Delta_x = 0,\quad (Vp)V_x = 0,\quad (\Theta p)\Theta_x = 0.
+\]
+Bilden wir also:
+\[
+\begin{aligned}
+\Theta_x^2(\Delta p)\Delta_x - \Delta_x^2(\Theta p)\Theta_x &= \Theta_x\Delta_x\{(\Delta p)\Theta_x-(\Theta p)\Delta_x\}\\
+&= p\cdot(\Delta\Theta)\Theta_x\Delta_x = p\cdot(\Delta,\Theta),
+\end{aligned}
+\]
+so ist, da die linke Seite verschwindet und $p$ von Null verschieden sein soll:
+\[
+(\Delta,\Theta) = (f,p) = a_x^2(ap) = 0,
+\]
+d.\,h. $f$ besitzt den Factor $p$ im dritten Grade, und also ebenso auch $\varphi$. Wenn aber $f$ und $\varphi$ reine Cuben sind, dann verschwinden ihre Hesse'schen Formen und folglich ist, wie behauptet wurde:
+\[
+(\varphi,\Delta)^2 = p = 0,\quad (f,V)^2 = \pi = 0.
+\]
+
+331. \gesperrt{Folgerungen f\"ur $f$ und $\varphi$.} Wir setzen also voraus
+\[
+p=0,\quad \pi=0.
+\]
+Wenn $p$ und $\pi$ identisch verschwinden, so m\"ussen ihre Co\"efficienten $p_1$ $p_2$ $\pi_1$ $\pi_2$ einzeln null sein, d.\,h. (vgl. Nr. 312) es m\"ussen die Determinanten der Matrix
+%CONT>>
+
+
+% ===== pdf idx 367, printed 353.0 =====
+% !PRINTED 353
+\weberpage{353}
+Systeme einzelner und simultaner Formen höheren Grades.
+
+\[
+V = \begin{vmatrix}
+\overline{a_0} & \overline{a_1} & \overline{\alpha_0} & \overline{\alpha_1} \\
+\overline{a_1} & \overline{a_2} & \overline{\alpha_1} & \overline{\alpha_2} \\
+\overline{a_2} & \overline{a_3} & \overline{\alpha_2} & \overline{\alpha_3}
+\end{vmatrix}
+\]
+verschwinden. Es mögen hiebei zunächst wenigstens die Minoren dieser Determinanten von null verschieden sein. Wir multipliciren alsdann mit dieser Matrix Zeile für Zeile die Determinante
+\[
+\begin{vmatrix}
+x_1 & x_2 & 0 & 0 \\
+\Delta_1 & -\Delta_2 & 0 & 0 \\
+0 & 0 & x_1 & x_2 \\
+0 & 0 & V_2 & -V_1
+\end{vmatrix}.
+\]
+Das Product ist einerseits Null, da alle Determinanten von $V$ verschwinden. Andererseits ist es dargestellt durch die Matrix:
+\[
+\begin{vmatrix}
+f_{11} & Q_{11} & \varphi_{11} & K_{11} \\
+f_{12} & Q_{12} & \varphi_{12} & K_{12} \\
+f_{22} & Q_{22} & \varphi_{22} & K_{22}
+\end{vmatrix}.
+\]
+Sie verschwindet, d. h. ihre einzelnen Determinanten sind null, nicht aber deren Minoren. Greifen wir nun etwa die erste Determinante heraus
+\weq{1}{
+\begin{vmatrix}
+f_{11} & Q_{11} & \varphi_{11} \\
+f_{12} & Q_{12} & \varphi_{12} \\
+f_{22} & Q_{22} & \varphi_{22}
+\end{vmatrix} = 0.
+}
+Da die Minoren nicht verschwinden, so muss $\varphi$ eine lineare Function von $f$ und $Q$ sein. Denn die Determinante (1) lässt sich schreiben:
+\[
+\begin{vmatrix}
+\overline{a_0}\,x_1 + \overline{a_1}\,x_2, & \overline{Q_0}\,x_1 + \overline{Q_1}\,x_2, & \overline{\alpha_0}\,x_1 + \overline{\alpha_1}\,x_2 \\
+\overline{a_1}\,x_1 + \overline{a_2}\,x_2, & \overline{Q_1}\,x_1 + \overline{Q_2}\,x_2, & \overline{\alpha_1}\,x_1 + \overline{\alpha_2}\,x_2 \\
+\overline{a_2}\,x_1 + \overline{a_3}\,x_2, & \overline{Q_2}\,x_1 + \overline{Q_3}\,x_2, & \overline{\alpha_2}\,x_1 + \overline{\alpha_3}\,x_2
+\end{vmatrix} = 0.
+\]
+Zerlegt man diese Determinante in ihre 8 Summanden und fasst gleiche Potenzen von $x$ zusammen, so müssen die Coefficienten von $x^\lambda$ einzeln verschwinden. Nun ist z. B. der Coefficient von $x_1{}^3$
+\[
+\begin{vmatrix}
+\overline{a_0} & \overline{Q_0} & \overline{\alpha_0} \\
+\overline{a_1} & \overline{Q_1} & \overline{\alpha_1} \\
+\overline{a_2} & \overline{Q_2} & \overline{\alpha_2}
+\end{vmatrix} = 0,
+\]
+d. h. es müssen die Gleichungen bestehen:
+\[
+\begin{aligned}
+k\overline{a_0} + \lambda \overline{Q_0} + \varrho\overline{\alpha_0} &= 0 \\
+k\overline{a_1} + \lambda \overline{Q_1} + \varrho\overline{\alpha_1} &= 0 \\
+k\overline{a_2} + \lambda \overline{Q_2} + \varrho\overline{\alpha_2} &= 0.
+\end{aligned}
+\]
+%CONT>>
+
+
+% ===== pdf idx 368, printed 354.0 =====
+% !PRINTED 354
+\weberpage{354}
+Dritter Theil.
+
+%<<CONT
+Daraus geht aber die Richtigkeit der Behauptung direct hervor, dass $\varphi = a_x^3$ eine lineare Function $f = a_x^3$ und $Q = Q_x^3$ ist.
+
+Wenn also $p$ und $\pi$ identisch null sind, so ist $\varphi$ keine selbstständige Form, sondern eine Covariante $f + \mu Q$. Dies gilt, so lange die Minoren der Determinanten $\gtrless 0$ sind. Verschwinden auch diese identisch, die, in so weit sie aus den beiden ersten resp. aus den beiden letzten Colonnen von $V$ entnommen sind, nichts anderes als die Coefficienten von $\Delta$ und $V$ darstellen, so sind $f$ und $\varphi$ vollständige Cuben, da $\Delta$ und $V$ in diesem Falle null sind.
+
+Wir haben demnach folgende Resultate:
+
+\glqq Ist $\Omega = 0$, aber $U_{ik}$ im Allgemeinen von null verschieden, so existirt eine lineare Combination $f + \lambda\varphi$, welche dem Cubus der linearen Form $\pi$ proportional ist.\grqq{}
+
+\glqq Ist $U_{ik} = 0$, $i$ und $k = 1, 2, 3$ und daher $\Omega = 0$, so ist entweder $\varphi = \mathrm{Const.}\,(f + \mu Q)$, oder $f$ und $\varphi$ sind vollständige Cuben; in diesen beiden Fällen ist eine typische Darstellung durch $p$ und $\pi$ unmöglich.\grqq{}
+
+\bigskip
+\centerline{\S\ 34. \textbf{Die Schwesterformen.}}
+\bigskip
+
+332. \textit{Einleitende Bemerkungen.} Wir haben uns bisher mit der Aufstellung des Systemes jener Grundformen beschäftigt, welche die Eigenschaft haben, dass alle Co- und Invarianten, die eine bestimmte Form besitzt, rationale und ganze Functionen derselben sind.
+
+Einem solchen System gegenüber steht nun eine Reihe anderer Systeme von Formen von der Eigenschaft, dass sämmtliche Co- und Invarianten von $f = a_x^n$ zwar noch rationale Functionen derselben sind, aber nicht mehr ganze. Dies ist von vornherein einzusehen. Denn die Form $f$ besitzt zunächst $(n+1)$ Constante. Vier derselben können durch lineare Transformationen bestimmte Zahlenwerthe annehmen; die ursprüngliche Form hängt alsdann von den $n - 3$ transformirten Constanten und der Transformationsdeterminante ab, d. i. von $n - 2$ Parametern. Es muss also bereits zwischen $n - 1$ Invarianten der Form $f$ eine Relation bestehen. Nehmen wir die beiden Variabeln $x_1$ und $x_2$ als zwei weitere Parameter hinzu, so hängt jede Covariante der Form $f$ von $n$ willkürlichen Grössen ab; demnach sind auch stets $n + 1$ Covarianten von $f$ durch eine Relation verknüpft, deren Coefficienten nur numerische Constante sind. Wenn nun das vollständige System von $f$ aus $s$ Formen besteht, so müssen zwischen denselben $s - n$ Relationen existiren. Jede Covariante lässt sich aber durch die $s$ Formen rational und ganz darstellen. Eliminirt man ver-
+%CONT>>
+
+
+% ===== pdf idx 369, printed 355.0 =====
+% !PRINTED 355
+\weberpage{355}
+Systeme einzelner und simultaner Formen höheren Grades.
+
+%<<CONT
+möge der $s - n$ Relationen aus jeder solchen Darstellung $s - n$ bestimmte Formen, ein Process, der immer rational ausführbar ist, aber im Allgemeinen zu einer gebrochenen Function führt, so ist jede Covariante durch eine rationale und gebrochene Function von $n$ bestimmten Covarianten dargestellt. Diese $n$ ausgewählten Covarianten bilden in diesem Sinne ein System, und die Aufgabe, ein solches System von Formen herzustellen, ist auf unendlich mannigfaltige Weisen lösbar, da ja auch die $s$ Formen des vollständigen Systemes nicht a priori fest sind, sondern stets durch andere ersetzt werden können. Der einfachste Fall eines solchen Systemes von $n$ Formen ist jener, in welchem der Nenner dieser rationalen Functionen eine Potenz von $f$ ist, während die Zähler Aggregate von Producten ganz bestimmter Covarianten sind.
+
+Wir werden uns hier nur mit diesem einfachsten Falle beschäftigen und verweisen wegen der allgemeinen Untersuchungen auf Clebsch: \glqq Binäre Formen\grqq{}, siebenter Abschnitt. Hier sei nur noch erwähnt, dass die Aufgabe, jene Formen zu ermitteln, durch welche sich alle Formen des Systems rational ausdrücken lassen, im innigsten Zusammenhange steht mit der typischen Darstellung von Formen, sowie mit der Aufgabe, Covariantenrelationen herzustellen, wie auch aus diesen einleitenden Betrachtungen hervorgehen mag (vgl. auch Nr. 335).
+
+333. \textit{Jedes symbolische Product ist gleich einer rationalen Function von Covarianten, deren Nenner eine Potenz von $f$ ist.} Um ein beliebiges symbolisches Product $P$ durch eine rationale Function von Formen darzustellen, deren Nenner eine Potenz von $f$ ist, können wir auf folgende Weise verfahren. Wir denken uns zunächst dasselbe in Symbolen von $f = a_x^n = b_x^n = c_x^n$ etc. allein dargestellt und erinnern uns, dass wir früher gesetzt hatten:
+\[
+f_1 = a_x^{n-1}a_1 = \frac{1}{n}\frac{\partial f}{\partial x_1}
+\]
+\[
+f_2 = a_x^{n-2}a_2 = \frac{1}{n}\frac{\partial f}{\partial x_2}.
+\]
+Es ist dann in Analogie mit $a_x = a_1x_1 + a_2x_2$ auch $f_x = f_1x_1 + f_2x_2$, und anderntheils ist $f_1x_1 + f_2x_2$ nach dem Euler'schen Satze auch identisch mit $f = a_x^n$. Jeder Klammerfactor $(ab)$, $(cd)$ etc. des symbolischen Products lässt sich aber nach dem Identitätssatze ersetzen durch
+\weq{1}{
+(ab) = \frac{b_x(af) - a_x(bf)}{f_x}.
+}
+Enthält das symbolische Product $P$ $\nu$ solcher Klammerfactoren, so geht
+%CONT>>
+
+
+% ===== pdf idx 370, printed 356.0 =====
+% !PRINTED 356
+\weberpage{356}
+Dritter Theil.
+
+%<<CONT
+dasselbe durch Substitution ihrer Werthe (1) in einen Quotienten über, dessen Nenner eine Potenz von $f$ ist, und dessen Zähler ein Aggregat von Producten ist, die sich aus Factoren $a_x, b_x, c_x \ldots$ erster Art, und Klammerfactoren $(af), (bf), (cf) \ldots$ etc. zusammensetzen, während Klammerfactoren vom Typus $(ab), (ac), (bc) \ldots$ etc. nicht mehr vorkommen. Das Symbol $a$ kann also beispielsweise nur mehr in einer Form vorkommen wie:
+\weq{2}{
+\psi_k = a_x^{n-k}(af)^k,
+}
+deren unsymbolische Bedeutung die folgende Untersuchung klar legen soll.
+
+334. \textit{Alle Formen $\psi$ haben die Form $f$ als Factor.} Zunächst wollen wir zeigen, dass jede Form $\psi$ in die Factoren $f \cdot u$ zerfällt, wo $u$ ein Aggregat von symbolischen Producten ist. Dies ist für $k = 0$ und $k = 1$ von vornherein ersichtlich. Denn für $k = 0$ hat man
+\[
+\psi_0 = a_x^{n-0}(af)^0 = a_x^n = f \cdot u, \text{ wo } u_0 = 1;
+\]
+für $k = 1$ folgt
+\[
+\begin{aligned}
+\psi_1 = a_x^{n-1}(af)^1 &= a_x^{n-1}\{a_1b_2b_x^{n-1} - a_2b_1b_x^{n-1}\} \\
+&= (ab)\,a_x^{n-1}b_x^{n-1} = 0 = f \cdot u_1, \text{ wo } u_1 = 0.
+\end{aligned}
+\]
+Wir setzen nun voraus, der Satz gelte bereits für $k = \varrho$, und zeigen, dass er alsdann auch für $k = \varrho + 1$ giltig ist. Es sei demnach:
+\[
+\psi_\varrho = a_x^{n-\varrho}(af)^\varrho = f \cdot U_\varrho.
+\]
+Die erste Polare von $\psi_\varrho$ wird:
+\[
+\begin{aligned}
+&(n - \varrho)\,a_x^{n-\varrho-1}a_y(af)^\varrho + \varrho\,a_x^{n-\varrho}(af)^{\varrho-1}\cdot(n-1)b_x^{n-2}b_y(ab) \\
+&= nf_y + \mathrm{Const.}\times f\cdot U_{\varrho y}.
+\end{aligned}
+\]
+Ersetzen wir hierin $y_1$ durch $f_2$ und $y_2$ durch $-f_1$, so erhalten wir, wenn wir jene Grösse, die dadurch aus $U_{\varrho y}$ wird, mit $M$ bezeichnen:
+\weq{3}{
+\begin{aligned}
+&(n - \varrho)\,a_x^{n-\varrho-1}(af)^{\varrho+1} + \varrho(n-1)\,a_x^{n-\varrho}(ab)b_x^{n-2}(af)^{\varrho-1}(bf) \\
+&= 0 + \mathrm{Const.}\times f \cdot M.
+\end{aligned}
+}
+In dieser Identität ist das erste Glied links eine Form $\psi$ und zwar gerade die nächstfolgende Form $\psi_{\varrho+1}$ (vom Factor $n - \varrho$ abgesehen). Das zweite Glied rechts besitzt den Factor $f$; können wir also zeigen, dass der zweite Term links ebenfalls diesen Factor enthält, so ist der zu führende Beweis erbracht. Nun ist aber:
+\[
+\begin{aligned}
+a_x^{n-\varrho}b_x^{n-2}(ab)(bf)(af)^{\varrho-1} &= a_x^{n-\varrho}b_x^{n-\varrho}\cdot(ab)(bf)(af)^{\varrho-1}b_x^{\varrho-2} \\
+&= a_x^{n-\varrho}b_x^{n-\varrho}(ab)(bf)(af)\cdot b_x^{\varrho-2}(af)^{\varrho-2} \\
+&= \frac{1}{2}a_x^{n-\varrho}b_x^{n-\varrho}(ab)(bf)(af)\cdot\{(af)^{\varrho-2}b_x^{\varrho-2} - (bf)^{\varrho-2}a_x^{\varrho-2}\}.
+\end{aligned}
+\]
+%CONT>>
+
+
+% ===== pdf idx 371, printed 357.0 =====
+% !PRINTED 357
+\weberpage{357}
+Die in der Klammer stehende Differenz besitzt den Factor
+\[
+(af)\,b_x - (bf)\,a_x = f_x\,(ab) = f\cdot (ab).
+\]
+Es besitzt daher in der That der zweite Term links in (3) den Factor
+$f$ und damit auch der erste Term, was zu beweisen war.
+
+335. \textit{Definition der Schwesterformen.} Jede Form $\psi_k$ zerfällt also
+in das Product $u_k\cdot f$; die Formen
+\[
+u_k = \frac{a_x^{n-k}(af)^k}{f}
+\]
+nennen wir \glqq Schwesterformen\grqq{} (formes associées) der Form $f$. Die
+Anzahl der Schwesterformen einer Form $f$ ist $n$, oder wenn wir $f$ mit
+einschliessen gleich $n+1$, denn $k$ kann nur die Werthe $0, 1, 2, \dots n$
+annehmen. Indess ist, wie wir schon oben gesehen haben, $u_0=1$,
+$u_1=0$.
+
+Es ist ferner:
+\[
+u_2 = \frac{1}{2}(f,f)^2 = \frac{1}{2}H.
+\]
+Denn man hat:
+\[
+\begin{aligned}
+a_x^{n-2}(af)^2 &= a_x^{n-2}(af)\cdot(ab)\,b_x^{n-1}\\
+&= \frac{1}{2}\,a_x^{n-2}b_x^{n-2}(ab)\,\{(af)\,b_x - a_x(bf)\}\\
+\text{oder}\qquad (af)^2 a_x^{n-2} &= \frac{1}{2}\,a_x^{n-2}b_x^{n-2}(ab)^2\cdot f = \frac{1}{2}(f,f)^2\cdot f.
+\end{aligned}
+\]
+Hieraus erhält man $u_3$, wenn man von dieser Gleichung die erste
+Polare bildet und wie in Nr. 334 (3) $y$ durch $f_2$, $y_2$ durch
+$-f_1$ ersetzt. Dann kommt:
+\[
+(n-2)a_x^{n-3}(af)^3+2a_x^{n-2}(af)\cdot(n-1)(bf)b_x^{n-2}(ab)=(n-2)f\cdot((f,f)^2,f).
+\]
+Der zweite Term links verschwindet, da er durch Vertauschung von
+$a$ mit $b$ nur sein Zeichen ändert; demnach wird:
+\[
+a_x^{n-3}(af)^3 = f\cdot((f,f)^2,f) = f\cdot T
+\]
+\[
+u_3 = T = ((f,f)^2,f).
+\]
+Auf analoge Weise findet man der Reihe nach:
+\[
+u_4 = \frac{1}{2}(f,f)^4\cdot f^2 - \frac{3}{4}\left\{(f,f)^2\right\}^2
+\]
+\[
+u_5 = (f,f)^4\cdot f^3 - (f,f)^2\cdot((f,f),f)
+\]
+\[
+u_6 = \frac{1}{2}(f,f)^6\cdot f^4 - \frac{15}{4}(f,f)^4\cdot(f,f)^2\cdot f^2 + \frac{45}{8}\left\{(f,f)^2\right\}^3 + 10\left\{((f,f)^2,f)\right\}^2 \qquad \text{u.\,s.\,w.}
+\]
+Diese Formen $u_\varrho$ sind es also, durch welche sich jede Covariante von
+$f$ rational darstellen lässt. Insbesondere bilden sie die typischen
+%CONT>>
+
+
+% ===== pdf idx 372, printed 358.0 =====
+% !PRINTED 358
+\weberpage{358}
+%<<CONT
+Coefficienten, wenn die Form $f$ selbst durch sie ausgedrückt werden
+soll. Zu dem Zwecke hat man nur $f(y)$ durch die lineare Substitution
+\[
+\begin{aligned}
+\xi &= f_1y_1+f_2y_2 = f_y\\
+\eta &= -x_2y_1+x_1y_2 = (xy)
+\end{aligned}
+\]
+vom Modul $\Delta = f_1x_1+f_2x_2=f$ zu transformiren und erhält dann
+\[
+f^{n-1}\cdot f(y) = u_0\xi^n+\binom{n}{1}u_1\xi^{n-1}\eta+\binom{n}{2}u_2\xi^{n-2}\eta^2+\cdots u_n\eta^n.
+\]
+So erhält man beispielsweise für $n=4$
+\[
+\begin{aligned}
+f^3\cdot f(y) &= u_0\xi^4+4u_1\xi^3\eta+6u_2\xi^2\eta^2+4u_3\xi\eta^3+u_4\eta^4\\
+&= \xi^4+3H\xi^2\eta^2+4T\xi\eta^3+\left(\frac{i}{2}f^2-\frac{3}{4}H^2\right)\eta^4.
+\end{aligned}
+\]
+Will man nun irgend eine Covariante $P$ von $f$ durch die
+Schwesterformen $u_0u_1\dots u_n$ darstellen, so genügt bereits deren
+Anfangsglied, das im Falle einer Invariante mit dieser zusammenfällt.
+Man ersetzt alsdann im Anfangsglied die ursprünglichen Coefficienten
+$\overline{a}_0\,\overline{a}_1\dots\overline{a}_n$ durch die typischen $u_0=1$, $u_1=0$,
+$u_2=\frac{H}{2}$ etc. und dividirt mit einer passenden Potenz von $f$.
+So ist in unserm Beispiele $n=4$ die Form $j$ keine Schwesterform.
+Wenn wir daher in der Determinante
+\[
+j = 6\begin{vmatrix} \overline{a}_0 & \overline{a}_1 & \overline{a}_2 \\ \overline{a}_1 & \overline{a}_2 & \overline{a}_3 \\ \overline{a}_2 & \overline{a}_3 & \overline{a}_4 \end{vmatrix}
+\]
+die Coefficienten $\overline{a}_i$ durch die Schwesterformen $u_i$ ersetzen und
+mit $f^3$ dividiren, so kommt:
+\[
+j = \frac{1}{f^3}\left\{\frac{3}{2}\,iHf^2 - 3H^3 - 6T^2\right\}\cdot
+\]
+Man erkennt zugleich in dieser Gleichung jene einzige Relation, welche
+zwischen den fünf Covarianten von $f=a_x^4$ bestehen muss. (Vgl. auch
+Nr. 162 und Clebsch, a.\,a.\,O., 7. Abschnitt.)
+
+336. \textit{Stellung der Schwesterformen zum vollständigen System von $f$.}
+Betrachtet man die Nr. 335 gegebenen Darstellungen der Schwesterformen
+$u_0, u_1, u_2, u_3, u_4, u_5, u_6$ genauer, so sieht man, dass diese sieben
+Formen ganze und rationale Functionen von $f$, von Ueberschiebungen
+zweiten Grades $(f,f)^{2k}$ in den Coefficienten von $f$ und von
+Ueberschiebungen dritten Grades $((f,f)^{2k},f)$ sind. Nachdem nun bereits
+Hermite im Jahre 1854, Crelle's Journ. Bd.\,52 seine grundlegenden
+Gedanken über associirte Formen und typische Darstellung
+veröffentlicht hatte, unterwarf später Clebsch diese Begriffe einer
+allgemeinen
+%CONT>>
+
+
+% ===== pdf idx 373, printed 359.0 =====
+% !PRINTED 359
+\weberpage{359}
+%<<CONT
+Untersuchung und fragte sich insbesondere auch, welche Stellung das
+einfachste System von associirten Formen $u_0u_1\dots u_n$ zum vollen
+System von $f$ einnehme. Dabei zeigte sich, dass, was eben die ersten
+sieben Formen schon vermuthen lassen, jede Form $u_i$ eine ganze und
+rationale Function\par
+1) der Form $f$ selbst,\\
+2) der Formen $(f,f)^{2k}=G_{2k}$,\\
+3) der Functionaldeterminanten $((f,f)^{2k},f)=H_{2k}$\\
+ist. Die Anzahl dieser Formen $f$, $G_{2k}$, $H_{2k}$, $k=1,2\dots n$ ist in
+der That gleich der Anzahl der Schwesterformen $u_0u_1\dots u_n$ und es
+handelt sich nur, Recursionsformeln herzustellen, welche die Formen
+$f$, $G_{2k}$, $H_{2k}$ einerseits mit den Formen $u_\varrho$ andererseits in
+Beziehung setzen. Bestätigt sich die eben aufgestellte Behauptung, so
+können wir folgenden Satz aussprechen:
+
+\glqq Jede Covariante und Invariante von $f$ ist eine rationale
+gebrochene Function der $(n+1)$ Formen $f$, $G_{2k}$, $H_{2k}$, deren
+Nenner eine Potenz von $f$ ist.\grqq{}
+
+337. \textit{Recursionsformeln für $G_{2k}$ und $H_{2k}$.} Um die gesuchten
+Beziehungen aufzustellen, verfahren wir ganz nach der schon im
+Eingange dieses Paragraphen gegebenen allgemeinen Methode. Wir
+ersetzen in den Formen
+\[
+\begin{aligned}
+G_{2k} &= (ab)^{2k}a_x^{n-2k}b_x^{n-2k}\\
+H_{2k} &= (ab)^{2k}(a_x^{n-2k}b_x^{n-2k},\,c_x^n)\\
+&= \frac{1}{2}(ab)^{2k}\big(b_x^{n-2k}a_x^{n-2k-1}c_x^{n-1}(ac)+a_x^{n-2k}b_x^{n-2k-1}(bc)c_x^{n-1}\\
+&= (ab)^{2k}(ac)a_x^{n-2k-1}b_x^{n-2k}c_x^{n-1}
+\end{aligned}
+\]
+den Klammerfactor $(ab)$ durch $\dfrac{b_x(af)-a_x(bf)}{f}$, und die Grösse
+$(ac)c_x^{n-1}$ durch $(af)$. Dann erhalten wir:
+\[
+\begin{aligned}
+G_{2k}\cdot f^{2k} &= a_x^{n-2k}b_x^{n-2k}\big((af)\,b_x-(bf)\,a_x\big)^{2k}\\
+H_{2k}\cdot f^{2k} &= a_x^{n-2k-1}b_x^{n-2k}(af)\big((af)\,b_x-(bf)\,a_x\big)^{2k}.
+\end{aligned}
+\]
+Entwickelt man rechts nach dem binomischen Lehrsatze und ersetzt
+sofort $(af)^\varrho a_x^{n-\varrho}$ durch $f\cdot u_\varrho$, so kommt:
+{\scriptsize
+\[
+G_{2k}\cdot f^{2k} = u_{2k}\cdot f^2 - \binom{2k}{1}u_{2k-1}\cdot u_1f^2+\binom{2k}{2}u_{2k-2}\cdot u_2\cdot f^2
+-\cdots(-1)^k\binom{2k}{k}u_k^2\cdot f^2\cdots-\binom{2k}{1}u_1\cdot u_{2k-1}\cdot f^2+u_{2k}\cdot f^2;
+\]
+}
+%CONT>>
+
+
+% ===== pdf idx 374, printed 360.0 =====
+% !PRINTED 360
+\weberpage{360}
+%<<CONT
+{\scriptsize
+\[
+H_{2k}\cdot f^{2k} = u_{2k+1}\cdot f^2 - \binom{2k}{1}u_{2k}\cdot u_1\cdot f^2+\binom{2k}{2}u_{2k-1}u_2\cdot f^2
+-\cdots(-1)^k\binom{2k}{k}u_{k+1}\cdot u_k\cdot f^2\cdots-\binom{2k}{1}u_{2k-1}\cdot u_2\cdot f^2+u_{2k}u_1\cdot f^2.
+\]
+}
+Dividirt man die beiden Gleichungen mit $f^2$, führt in sie sodann die
+Werthe $u_0=1$, $u_1=0$ ein, und zieht endlich je zwei gleichwerthige
+Glieder zusammen, so kommt:
+\[
+G_{2k}\cdot f^{2k-2} = 2\left\{u_{2k}u_0+\binom{2k}{2}u_{2k-2}u_2-\binom{2k}{3}u_{2k-3}u_3-\cdots\frac{1}{2}(-1)^k\binom{2k}{k}u_k^2\right\}
+\]
+\[
+\begin{aligned}
+H_{2k}\cdot f^{2k-2} &= u_{2k+1}u_0 + \frac{2k(2k-3)}{2!}u_{2k-1}u_2\\
+&\qquad -\frac{2k(2k-1)(2k-5)}{3!}u_{2k-2}u_3\cdots(-1)^k\binom{2k}{k}u_{k+1}u_k.
+\end{aligned}
+\]
+Dies sind die beiden Recursionsformeln, aus denen sich successive jede
+Schwesterform $u_\varrho$ als rationale und ganze Function der $G_\varrho$ und
+$H_\varrho$ berechnen lässt. So erhält man z.\,B.
+\[
+\begin{aligned}
+G_2 &= (f,f)^2 = 2u_2,\\
+G_4\cdot f^2 &= (f,f)^4\cdot f^2 = 2\{u_4+3u_2^{\,2}\},\\
+G_6\cdot f^4 &= (f,f)^6\cdot f^4 = 2\{u_6+15u_4u_2-10u_3^{\,2}\};\\
+H_2 &= ((f,f)^2,f) = u_3,\\
+H_4\cdot f^2 &= ((f,f)^2,f)\cdot f^2 = u_5+2u_2u_3,\\
+H_6\cdot f^4 &= ((f,f)^6,f)\cdot f^4 = u_7+9u_2u_5-5u_3u_4,\quad \text{u.\,s.\,w.}
+\end{aligned}
+\]
+Bestimmt man hieraus die Werthe von $u_2, u_3, u_4\dots u_7$, so erhält
+man genau dieselben Functionen in $H$ und $G$, welche wir bereits
+früher auf anderm Wege ermittelt haben. Eine independente
+Darstellung der Schwesterform $u_\varrho$ ist bis jetzt noch nicht geliefert
+worden.
+
+\weberfigure{360}{Typographischer Schlussschmuck: eine waagrechte Zierlinie mit rautenförmigen Verzierungen in der Mitte, darunter ein kurzer versprengter Druckstrich; markiert das Ende von Nr.\ 337.}
+
+
+% ===== pdf idx 375, printed 360.001 =====
+% !PRINTED none
+% [no running-head folio number visible on this page image; it is a publisher's
+%  advertisement page (Verlagsanzeige) listing other Teubner/Vieweg mathematics texts]
+%<<CONT
+\textbf{Graefe, Dr. Fr.,} Professor, Auflösungen u. Beweise der Aufgaben und Lehrsätze
+aus der analytischen Geometrie des Punktes, der geraden Linie, des Kreises und der
+Kegelschnitte. Für Studierende an Universitäten und technischen Hochschulen.
+[IV u. 259 S.] gr. 8. geh. n. M 4.80.
+
+\textbf{Heinze, Dr. Karl,} weiland Professor in Cöthen, genetische Stereometrie,
+bearbeitet von Franz Lucke, Gymnasiallehrer in Zerbst. Mit lithographierten Tafeln.
+[XII u. 194 S.] gr. 8. geh. n. M 6.\,---
+
+\textbf{Hochheim, Dr. Adolf,} Professor, Aufgaben aus der analytischen Geometrie der
+Ebene. Heft III. Die Kegelschnitte. Abteilung II. A. Aufgaben. [67 S.] gr. 8. geh.
+n. M 1.20.
+
+\rule{1.5em}{0.4pt} B. Auflösungen. [94 S.] gr. 8. geh. n. M 1.60.
+
+\textbf{Hofmann, Fritz,} die Constructionen doppelt berührender Kegelschnitte mit
+imaginären Bestimmungsstücken. Eine Wanderung durch die Theorie der Kegelschnitte in
+doppelter Berührung an der Hand anschaulicher Methoden. [Mit Figuren im Text.]
+[IV u. 109 S.] gr. 8. geh. n. M 3.20.
+
+\textbf{Holzmüller, Dr. G.,} Direktor der Gewerbeschule zu Hagen, Einführung in das
+stereometrische Zeichnen. Mit Berücksichtigung der Krystallographie und Kartographie.
+[VIII u. 102 S. mit 16 lithographierten Tafeln.] gr. 8. kart. n. M 4.40.
+
+\textbf{Januschke, Hans,} k. k. Professor an der Staats-Oberrealschule in Troppau,
+das Princip der Erhaltung der Energie in der elementaren Elektricitätslehre.
+[VIII u. 186 S.] gr. 8. geh. n. M 4.\,---
+
+\textbf{Kohlrausch, Dr. F.,} ordentl. Professor an der Universität Würzburg, Leitfaden
+der praktischen Physik mit einem Anhange: Das absolute Mafs-System. Mit in den Text
+gedruckten Figuren. Sechste vermehrte Auflage. [XXIII u. 364 S.] gr. 8. geh. n. M
+5.60, geb. M 6.10.
+
+In leichtem Leinwandband [nach Art von Baedekers Reisebüchern] elegant gebundene
+Exemplare n. M 6.10.
+
+\textbf{Krause, Martin,} Professor der Mathematik an der Universität zu Rostock, die
+Transformation der hyperelliptischen Functionen erster Ordnung. Nebst Anwendungen.
+[VII u. 276 S.] gr. 8. geh. n. M 10.\,---
+
+\textbf{Legendre, Adrien-Marie,} Zahlentheorie. Nach der dritten Auflage ins Deutsche
+übertragen von H. Maser. Zwei Bände. [I. Bd. XVIII u. 442, II. Bd. XII u. 453 S.]
+gr. 8. geh. n. M 23.20.
+
+\textbf{Mansion, Dr. P.,} Professor an der Universität zu Gent, Elemente der Theorie
+der Determinanten mit vielen Übungsaufgaben. Zweite vermehrte Aufl. [XXIV u. 56 S.]
+gr. 8. geh. n. M 1.20.
+
+\textbf{Reidt, Dr. Friedrich,} Professor am Gymnasium und dem Realprogymnasium in
+Hamm, Sammlung von Aufgaben und Beispielen aus der Trigonometrie und Stereometrie.
+Zweiter Teil: Stereometrie. Dritte Auflage. [VIII u. 190 S.] gr. 8. geh. M 3.\,---
+%CONT>>
+
+
+% ===== pdf idx 376, printed 360.002 =====
+% !PRINTED none
+% [no running-head folio number visible on this page image; it continues the
+%  publisher's advertisement page (Verlagsanzeige) begun on the previous scan]
+%<<CONT
+\textbf{Reidt, Dr. Friedrich,} Professor am Gymnasium und dem Realprogymnasium in
+Hamm, Resultate der Rechnungs-Aufgaben in der Sammlung von Aufgaben und Beispielen
+aus der Trigonometrie und Stereometrie. I. Teil: Trigonometrie. Dritte Auflage.
+[84 S.] gr. 8. geh. n. M 1.80.
+
+\rule{1.5em}{0.4pt}\ \rule{1.5em}{0.4pt} II. Teil: Stereometrie. Dritte Auflage.
+[48 S.] gr. 8. geh. M 1.\,---
+
+\textbf{Schoenflies, Dr. Arthur,} Privatdocent der Mathematik an der Universität
+Göttingen, Geometrie der Bewegung in synthetischer Darstellung. Mit Figuren im Text.
+[VI u. 185 S.] gr. 8. geh. n. M 4.\,---
+
+\textbf{Stolz, Dr. Otto,} ord. Professor an der Universität zu Innsbruck,
+Vorlesungen über allgemeine Arithmetik. Nach den neueren Ansichten bearbeitet.
+Erster Theil: Allgemeines und Arithmetik der reellen Zahlen. [VI u. 344 S.] gr. 8.
+geh. n. M 8.\,---
+
+\rule{1.5em}{0.4pt}\ \rule{1.5em}{0.4pt} Zweiter Theil: Arithmetik der complexen
+Zahlen mit geometrischen Anwendungen. [VIII u. 326 S.] gr. 8. geh. n. M 8.\,---
+
+\textbf{Wertheim, Gustav,} Elemente der Zahlentheorie. [IX u. 382 S.] gr. 8. geh.
+n. M 8.40.
+
+\textbf{Wiener, Dr. Christ.,} Geh. Hofrath und Professor an der Grossh. technischen
+Hochschule zu Karlsruhe, Lehrbuch der darstellenden Geometrie. In zwei Bänden.
+Zweiter Band. Krumme Linien (zweiter Theil) und krumme Flächen. Beobachtungslehre,
+Perspektive. Mit Figuren im Text. [XXX u. 649 S.] gr. 8. geh. M 18.\,---
+
+\textbf{Wüllner, Dr. Adolph,} Professor der Physik an der Königl. technischen
+Hochschule zu Aachen, Lehrbuch der Experimentalphysik. Vierter Band: Die Lehre vom
+Magnetismus und von der Electricität. Mit einer Einleitung \glqq Grundzüge der Lehre
+vom Potential\grqq{}. Vierte vielfach umgearbeitete und verbesserte Auflage. (Mit
+vielen in den Text gedruckten Holzschnitten.) [XII u. 1231 S.] gr. 8. geh. n.
+M 16.80. --- Preis des ganzen Werkes M 48.80.
+
+% [horizontal rule printed below this line, marking the end of the advertisement list]
+

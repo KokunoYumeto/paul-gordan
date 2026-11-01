@@ -1,0 +1,984 @@
+% !PRINTED 121
+\weberpage{121}
+\weq{II}{
+\left.\begin{aligned}
+\sum_{k=0}^{k=n} \frac{\partial J}{\partial \overline{A}_k}\left(\frac{\partial \overline{A}_k}{\partial \xi_1}\,\xi_1 + \frac{\partial \overline{A}_k}{\partial \xi_2}\,\xi_2\right) &= \varrho J\\
+\sum \frac{\partial J}{\partial \overline{A}_k}\left(\frac{\partial \overline{A}_k}{\partial \xi_1}\,\eta_1 + \frac{\partial \overline{A}_k}{\partial \xi_2}\,\eta_2\right) &= 0\\
+\sum \frac{\partial J}{\partial \overline{A}_k}\left(\frac{\partial \overline{A}_k}{\partial \eta_1}\,\xi_1 + \frac{\partial \overline{A}_k}{\partial \eta_2}\,\xi_2\right) &= 0\\
+\sum \frac{\partial J}{\partial \overline{A}_k}\left(\frac{\partial \overline{A}_k}{\partial \eta_1}\,\eta_1 + \frac{\partial \overline{A}_k}{\partial \eta_2}\,\eta_2\right) &= \varrho J
+\end{aligned}\right\}.
+}
+
+Da jedoch, wie in Folge der Beziehungen (B), theils direct der
+Euler'sche Satz, theils auch ganz einfache Rechnung ergiebt:
+\[
+\begin{aligned}
+\frac{\partial \overline{A}_k}{\partial \xi_1}\,\xi_1 + \frac{\partial \overline{A}_k}{\partial \xi_2}\,\xi_2 &= (n-k)\,\overline{A}_k\\
+\frac{\partial \overline{A}_k}{\partial \xi_1}\,\eta_1 + \frac{\partial \overline{A}_k}{\partial \xi_2}\,\eta_2 &= (n-k)\,\overline{A}_{k+1}\\
+\frac{\partial \overline{A}_k}{\partial \eta_1}\,\xi_1 + \frac{\partial \overline{A}_k}{\partial \eta_2}\,\xi_2 &= k\,\overline{A}_{k-1}\\
+\frac{\partial \overline{A}_k}{\partial \eta_1}\,\eta_1 + \frac{\partial \overline{A}_k}{\partial \eta_2}\,\eta_2 &= k\,\overline{A}_k,
+\end{aligned}
+\]
+so nehmen die Gleichungen (II) unmittelbar die Form an:
+\weq{II$_a$}{
+\left.\begin{aligned}
+\sum (n-k)\cdot \overline{A}_k\ \ \frac{\partial J}{\partial \overline{A}_k} &= \varrho J\\
+\sum (n-k)\cdot \overline{A}_{k+1}\,\frac{\partial J}{\partial \overline{A}_k} &= 0\\
+\sum k\cdot \overline{A}_{k-1}\,\frac{\partial J}{\partial \overline{A}_k} &= 0\\
+\sum k\cdot \overline{A}_k\ \ \frac{\partial J}{\partial \overline{A}_k} &= \varrho J
+\end{aligned}\right\}.
+}
+Sie gelten für jeden Wert von $\xi$ und $\eta$; also auch für $\xi_1 = \eta_2 = 1$, $\xi_2 = \eta_1 = 0$.
+Für diese Werte geht aber $\overline{A}_k$ in $\overline{a}_k$ und demnach $J$ in $i$ über, so dass
+endlich die gesuchten Differentialgleichungen in der Form sich ergeben:
+\weq{III}{
+\left.\begin{aligned}
+n\,\frac{\partial i}{\partial \overline{a}_0}\,\overline{a}_0 + (n-1)\,\frac{\partial i}{\partial \overline{a}_1}\,\overline{a}_1 + (n-2)\,\frac{\partial i}{\partial \overline{a}_2}\,\overline{a}_2 + \cdots &= \varrho i\\
+n\,\frac{\partial i}{\partial \overline{a}_0}\,\overline{a}_1 + (n-1)\,\frac{\partial i}{\partial \overline{a}_1}\,\overline{a}_2 + (n-2)\,\frac{\partial i}{\partial \overline{a}_2}\,\overline{a}_3 + \cdots &= 0\\
+1\,\frac{\partial i}{\partial \overline{a}_1}\,\overline{a}_0 + \phantom{(n{-}1)}2\,\frac{\partial i}{\partial \overline{a}_2}\,\overline{a}_1 + \phantom{(n{-}2)}3\,\frac{\partial i}{\partial \overline{a}_3}\,\overline{a}_2 + \cdots &= 0\\
+1\,\frac{\partial i}{\partial \overline{a}_1}\,\overline{a}_1 + \phantom{(n{-}1)}2\,\frac{\partial i}{\partial \overline{a}_2}\,\overline{a}_2 + \phantom{(n{-}2)}3\,\frac{\partial i}{\partial \overline{a}_3}\,\overline{a}_3 + \cdots &= \varrho i
+\end{aligned}\right\}.
+}
+
+
+% ===== pdf idx 136, printed 122.0 =====
+% !PRINTED 122
+\weberpage{122}
+Dieses System von partiellen Differentialgleichungen, denen jede Invariante
+ $i$ einer Form $f = a_x^n$ genügt, gab bereits Cayley im 47.\ Bd.
+des Crelle'schen Journals.
+
+\textit{Anmerkung.} Addirt man in dem Systeme (III) die erste und
+vierte Gleichung, so erhält man:
+\[
+\frac{2\varrho i}{n} = \overline{a}_0\,\frac{\partial i}{\partial \overline{a}_0} + \overline{a}_1\,\frac{\partial i}{\partial \overline{a}_1} + \overline{a}_2\,\frac{\partial i}{\partial \overline{a}_2} + \cdots \overline{a}_n\,\frac{\partial i}{\partial \overline{a}_n}.
+\]
+Anderntheils ist nach dem Euler'schen Satze, wenn $\mu$ der Grad der
+Invariante $i$ in den Coefficienten von $f$ ist,
+\[
+\mu i = \overline{a}_0\,\frac{\partial i}{\partial \overline{a}_0} + \overline{a}_1\,\frac{\partial i}{\partial \overline{a}_1} + \overline{a}_2\,\frac{\partial i}{\partial \overline{a}_2} + \cdots \overline{a}_n\,\frac{\partial i}{\partial \overline{a}_n}.
+\]
+Hieraus folgt für das Gewicht $\varrho$ der Invariante $i$ die Beziehung:
+\[
+\varrho = \frac{\mu \cdot n}{2}.
+\]
+Da $\varrho$ stets eine ganze Zahl ist, so lehrt diese Gleichung überdies,
+dass Formen $f$ ungeraden Grades in $x$ nur Invarianten $i$ geraden Grades
+in den Coefficienten von $f$ besitzen können.
+
+108. \gesperrt{Das System der Differentialgleichungen ist ein vollständiges.} Bezeichnen
+ wir diese vier Gleichungen (III), indem wir noch in der Gleichung
+(1) und (4) die Grösse $\varrho i$ auf die rechte Seite schaffen, mit $A_1 = 0$,
+$A_2 = 0$, $A_3 = 0$, $A_4 = 0$, so können wir, wie Clebsch zuerst bemerkt
+ hat, zeigen, dass dieses System von Differentialgleichungen ein
+vollständiges ist, d.\,h. dass die Anwendung der Differentialgleichungen
+auf einander in der Weise, wie sie z.\,B. durch
+\[
+A_1(A_2) - A_2(A_1) = 0
+\]
+angedeutet sein mag, zu keinen neuen Differentialgleichungen führt,
+sondern nur auf lineare Combinationen der bereits vorhandenen. Es
+wird genügen, dies an einem Beispiele zu zeigen, indem wir $i$ etwa
+als eine Potenz der Discriminante $\overline{a}_0 \overline{a}_2 - \overline{a}_1{}^2$ einer quadratischen Form
+annehmen. Wir haben dann:
+\[
+\begin{aligned}
+A_1 &= 2\,\frac{\partial i}{\partial \overline{a}_0}\,\overline{a}_0 + \frac{\partial i}{\partial \overline{a}_1}\,\overline{a}_1 - 2i = 0\\
+A_2 &= 2\,\frac{\partial i}{\partial \overline{a}_0}\,\overline{a}_1 + \frac{\partial i}{\partial \overline{a}_1}\,\overline{a}_2 \phantom{{}-2i{}} = 0.
+\end{aligned}
+\]
+Folglich wird
+%CONT>>
+
+
+% ===== pdf idx 137, printed 123.0 =====
+% !PRINTED 123
+\weberpage{123}
+%<<CONT
+\[
+\begin{aligned}
+0 = {}& A_1(A_2) - A_2(A_1)\\
+= {}& 2\overline{a}_0\,\frac{\partial\left[2\dfrac{\partial i}{\partial \overline{a}_0}\,\overline{a}_1 + \dfrac{\partial i}{\partial \overline{a}_1}\,\overline{a}_2\right]}{\partial \overline{a}_0} + \overline{a}_1\,\frac{\partial\left[2\dfrac{\partial i}{\partial \overline{a}_0}\,\overline{a}_1 + \dfrac{\partial i}{\partial \overline{a}_1}\,\overline{a}_2\right]}{\partial \overline{a}_1} - 2i\left[2\,\frac{\partial i}{\partial \overline{a}_0}\,\overline{a}_1 + \frac{\partial i}{\partial \overline{a}_1}\,\overline{a}_2\right]\\
+& - 2\overline{a}_1\,\frac{\partial\left[2\dfrac{\partial i}{\partial \overline{a}_0}\,\overline{a}_0 + \dfrac{\partial i}{\partial \overline{a}_1}\,\overline{a}_1 - 2i\right]}{\partial \overline{a}_0} - \overline{a}_2\cdot\frac{\partial\left[2\dfrac{\partial i}{\partial \overline{a}_0}\,\overline{a}_0 + \dfrac{\partial i}{\partial \overline{a}_1}\,\overline{a}_1 - 2i\right]}{\partial \overline{a}_1}\\
+= {}& 4\overline{a}_0\overline{a}_1\,\frac{\partial^2 i}{\partial \overline{a}_0{}^2} + 2\overline{a}_0\overline{a}_2\,\frac{\partial^2 i}{\partial \overline{a}_0 \partial \overline{a}_1} + 2\overline{a}_1{}^2\,\frac{\partial^2 i}{\partial \overline{a}_0 \partial \overline{a}_1} + \overline{a}_1\overline{a}_2\,\frac{\partial^2 i}{\partial \overline{a}_1{}^2}\\
+& - 4\overline{a}_1 i\,\frac{\partial i}{\partial \overline{a}_0} - 2\overline{a}_2 i\,\frac{\partial i}{\partial \overline{a}_1}\\
+& - 4\overline{a}_0\overline{a}_1\,\frac{\partial^2 i}{\partial \overline{a}_0{}^2} - 2\overline{a}_0\overline{a}_2\,\frac{\partial^2 i}{\partial \overline{a}_0 \partial \overline{a}_1} - 2\overline{a}_1{}^2\,\frac{\partial^2 i}{\partial \overline{a}_0 \partial \overline{a}_1} - \overline{a}_1\overline{a}_2\,\frac{\partial^2 i}{\partial \overline{a}_1{}^2}\\
+& + 4\overline{a}_1\,\frac{\partial i}{\partial \overline{a}_0} + 2\overline{a}_2\,\frac{\partial i}{\partial \overline{a}_1}\\
+= {}& -2i\left\{2\,\frac{\partial i}{\partial \overline{a}_0}\,\overline{a}_1 + \frac{\partial i}{\partial \overline{a}_1}\,\overline{a}_2\right\} + 2\left\{\frac{\partial i}{\partial \overline{a}_0}\,\overline{a}_1 + \frac{\partial i}{\partial \overline{a}_1}\,\overline{a}_2\right\}.
+\end{aligned}
+\]
+Man erkennt, dass die ganze rechte Seite sich reducirt auf
+\[
+0 = -2i\,A_2 + 2A_2 = 2A_2\cdot(1-i),
+\]
+d.\,h. die Differentialgleichung $A_1(A_2) - A_2(A_1) = 0$ ist dieselbe, wie
+$A_2 = 0$.
+
+\indent Den allgemeinen Beweis hat Clebsch in seinen \glqq Binären Formen\grqq{}
+Seite 310 gegeben.
+
+\textit{Anmerkung.} Zu den vier Differentialgleichungen treten nur dann
+neue hinzu, wenn es sich darum handelt, specielle Invarianten zu
+charakterisiren. So hat Brioschi noch specielle Differentialgleichungen
+aufgestellt, um Discriminanten und Resultanten zu charakterisiren.
+(Vgl. auch die Untersuchungen Nöther's in Faà di Bruno, übersetzt
+von Walter, Seite 275.)
+
+109. \gesperrt{Differentialgleichungen für simultane Invarianten und Covarianten
+.} Es hat nun keine Schwierigkeit, ein System von Differentialgleichungen
+ für simultane Invarianten $i$ direct anzuschreiben. Ist
+nämlich $i$ simultane Invariante der $s$ Formen
+\[
+f_1,\ f_2,\ f_3,\ \cdots f_s
+\]
+von den Graden $n_1$, $n_2$, $n_3$, $\ldots n_s$ in $x$, welche bezw. die Coefficienten
+%CONT>>
+
+
+% ===== pdf idx 138, printed 124.0 =====
+% !PRINTED 124
+\weberpage{124}
+%<<CONT
+\[
+a_k^{(1)},\quad a_k^{(2)},\quad \overline{a}_k^{(3)},\quad \cdots a_k^{(s)}
+\]
+besitzen, so geht aus der ganzen Ableitung dieser Differentialgleichungen
+ direct hervor, dass sie für diesen Fall die Gestalt annehmen
+ müssen:
+\weq{IV}{
+\left.\begin{aligned}
+\sum_{\lambda=1}^{\lambda=s}\left(n\cdot\frac{\partial i}{\partial \overline{a}_0{}^{(\lambda)}}\,\overline{a}_0^{(\lambda)} + (n-1)\,\frac{\partial i}{\partial \overline{a}_1{}^{(\lambda)}}\,\overline{a}_1^{(\lambda)} + (n-2)\,\frac{\partial i}{\partial \overline{a}_2{}^{(\lambda)}}\,\overline{a}_2^{(\lambda)}\ldots\right) &= \varrho\cdot i\\
+\sum_{\lambda=1}^{\lambda=s}\left(n\cdot\frac{\partial i}{\partial \overline{a}_0{}^{(\lambda)}}\,\overline{a}_1^{(\lambda)} + (n-1)\,\frac{\partial i}{\partial \overline{a}_1{}^{(\lambda)}}\,\overline{a}_2^{(\lambda)} + \cdots\cdots\cdots\cdots\right) &= 0\\
+\sum_{\lambda=1}^{\lambda=s}\left(1\cdot\frac{\partial i}{\partial \overline{a}_1{}^{(\lambda)}}\,a_0^{(\lambda)} + \phantom{(n-1)}2\cdot\frac{\partial i}{\partial \overline{a}_2{}^{(\lambda)}}\,a_1^{(\lambda)} + \cdots\cdots\cdots\right) &= 0\\
+\sum_{\lambda=1}^{\lambda=s}\left(1\cdot\frac{\partial i}{\partial \overline{a}_1{}^{(\lambda)}}\,\overline{a}_1^{(\lambda)} + \phantom{(n-1)}2\cdot\frac{\partial i}{\partial \overline{a}_2{}^{(\lambda)}}\,\overline{a}_2^{(\lambda)} + \cdots\cdots\cdots\cdots\right) &= \varrho\cdot i
+\end{aligned}\right\}.
+}
+% [sic] third row of (IV) prints a_0^{(\lambda)}, a_1^{(\lambda)} without the overline bar
+% that the other rows carry on the corresponding letters; reproduced as printed.
+Da man nun an Stelle jeder Covariante\footnotemark\ eine Invariante einführen
+kann, bei deren Bildung das simultane System um ebensoviel lineare
+Formen vermehrt ist, als Reihen von Veränderlichen in der Covariante
+existiren, so genügt jede Covariante ebenfalls einem simultanen
+Systeme (IV) von Differentialgleichungen. Will man in ihnen die
+Glieder absondern, welche die Differentialquotienten nach den Veränderlichen
+ enthalten, so denke man sich einen Augenblick die
+Coefficienten $l^{(i)}$ der linearen Formen an Stelle der Variabeln eingeführt
+. Dann treten links den vier Gleichungen entsprechend die
+Summen auf:
+\[
+\sum l_1\,\frac{\partial i}{\partial l_1},\quad \sum l_2\,\frac{\partial i}{\partial l_1},\quad \sum l_1\,\frac{\partial i}{\partial l_2},\quad \sum l_2\,\frac{\partial i}{\partial l_2}
+\]
+oder, wenn wir nun wieder $l_1$ durch $x_2$, und $l_2$ durch $-x_1$ ersetzen:
+\[
+\sum x_2\,\frac{\partial i}{\partial x_2},\quad -\sum x_1\,\frac{\partial i}{\partial x_2},\quad -\sum x_2\,\frac{\partial i}{\partial x_1},\quad \sum x_1\,\frac{\partial i}{\partial x_1},
+\]
+oder endlich, wenn $i$ vom Grade $\sum \nu_i$ in den verschiedenen Variabelnreihen
+ ist, gemäss dem Euler'schen Satze:
+\[
+\begin{aligned}
+i\sum \nu_i - \sum x_1\,\frac{\partial i}{\partial x_1}, &\quad -\sum x_1\,\frac{\partial i}{\partial x_2},\\
+-\sum x_2\,\frac{\partial i}{\partial x_1}, &\quad i\sum \nu_i - \sum x_2\,\frac{\partial i}{\partial x_2}.
+\end{aligned}
+\]
+\footnotetext{Vgl. auch \gesperrt{Clebsch}, \glqq Binäre Formen\grqq, S. 315 und diese Vorles. Nr. 100.}
+
+
+% ===== pdf idx 139, printed 125.0 =====
+% !PRINTED 125
+\weberpage{125}
+Das System (IV) der Differentialgleichungen nimmt also, wenn man dort noch $\varrho+\Sigma\nu$ durch $\varrho$ ersetzt, für Covarianten auch die Formen an:
+
+\[
+\left.
+\begin{aligned}
+&\sum_{1}^{s}\sum_{0}^{n_s-1}(n_s-k)\frac{\partial i}{\partial \bar a_k^{(\lambda)}}\bar a_k^{(\lambda)} - \sum x_1\frac{\partial i}{\partial x_1} = i\cdot\varrho\\
+&\sum_{1}^{s}\sum_{0}^{n_s-1}(n_s-k)\frac{\partial i}{\partial \bar a_k^{(\lambda)}}\bar a_{k+1}^{(\lambda)} - \sum x_1\frac{\partial i}{\partial x_2} = 0\\
+&\sum_{1}^{s}\sum_{1}^{n_s} k\cdot\frac{\partial i}{\partial \bar a_k^{(\lambda)}}\bar a_{k-1}^{(\lambda)} - \sum x_2\frac{\partial i}{\partial x_1} = 0\\
+&\sum_{1}^{s}\sum_{1}^{n_s} k\cdot\frac{\partial i}{\partial \bar a_k^{(\lambda)}}\bar a_k^{(\lambda)} - \sum x_2\frac{\partial i}{\partial x_2} = i\cdot\varrho
+\end{aligned}
+\right\}\ \text{(V)}
+\]
+
+Ist nun $i$ von den Graden $\mu_1,\mu_2\ldots\mu_s$ in den Co\"efficienten der Formen $f_1,f_2\cdots f_s$, so erhält man durch Addition der ersten und letzten Gleichung nach Anwendung des Euler'schen Satzes:
+
+\[
+\frac{1}{2}\left\{\sum_1^s \mu_i\nu_i - \sum \nu_i\right\} = \varrho.
+\]
+
+Ist insbesondere $s=1$, also $i$ Covariante einer einzigen Form $f=a_x^n$ mit einer Reihe von Variabeln, dann besteht wiederum zwischen Gewicht $\varrho$, dem Grade $\nu$ in $x$, dem Grade $\mu$ in den Co\"efficienten die Beziehung
+
+\[
+\varrho = \frac{1}{2}(\mu n - \nu).
+\]
+
+Daraus erkennt man, dass Formen ungeraden Grades keine Covarianten besitzen, die gleichzeitig ungeraden Grades in den Co\"efficienten und geraden Grades in den Variabeln sind, oder umgekehrt.
+
+110. \gesperrt{Die Differentialgleichungen (IV) resp. (V) sind nicht nur nothwendig, sondern auch hinreichend zur Definition einer Invariante, resp. Covariante.} Wir haben bisher gezeigt, dass jede ganze homogene Function $i$, welche der Gleichung
+
+\[
+J = i\cdot(\xi\eta)^\varrho \tag{I}
+\]
+
+genügt, stets ein System von Differentialgleichungen befriedigt. Es lässt sich nun aber auch umgekehrt der Beweis liefern, dass jede Lösung $i$ der Differentialgleichungen (IV) eine Invariante ist, d. h. dass für sie die Relation (I) besteht, in welcher $J$ aus $i$ durch die Vertauschung von $a_1$ mit $a_\xi$, $a_2$ mit $a_\eta$ etc. hervorgegangen ist.
+
+
+% ===== pdf idx 140, printed 126.0 =====
+% !PRINTED 126
+\weberpage{126}
+Um diesen Beweis zu erbringen, nehmen wir an: $J$ sei eine ganze homogene Function der Co\"efficienten $\bar A_k = a_\xi^{n-k}a_\eta^k$ etc., welche dem Systeme (IV) genügt, oder also, was dasselbe ist, dem Systeme (I). In gleicher Weise sei $K$ eine beliebige zweite Lösung dieser Gleichungen (I). Dann bestehen zunächst die beiden Systeme von Gleichungen:
+
+\[
+\begin{array}{r@{\ }l@{\qquad}r@{\ }l}
+& \dfrac{\partial J}{\partial \xi_1}\xi_1+\dfrac{\partial J}{\partial \xi_2}\xi_2=\varrho J
+& & \dfrac{\partial K}{\partial \xi_1}\xi_1+\dfrac{\partial K}{\partial \xi_2}\xi_2=\varrho K\\[6pt]
+(1)\quad & \dfrac{\partial J}{\partial \xi_1}\eta_1+\dfrac{\partial J}{\partial \xi_2}\eta_2=0
+& (2)\quad & \dfrac{\partial K}{\partial \xi_1}\eta_1+\dfrac{\partial K}{\partial \xi_2}\eta_2=0\\[4pt]
+& \cdots\cdots
+& & \cdots\cdots\\[4pt]
+& \dfrac{\partial J}{\partial \eta_1}\eta_1+\dfrac{\partial J}{\partial \eta_1}\eta_2=\varrho J
+& & \dfrac{\partial K}{\partial \eta_1}\eta_1+\dfrac{\partial K}{\partial \eta_2}\eta_2=\varrho K.
+\end{array}
+\]
+% [sic] printed second term of the last J-row as $\partial J/\partial\eta_1$ (not $\partial J/\partial\eta_2$), unlike the parallel K-row
+
+Multipliciren wir das erste mit $K$, das zweite mit $J$ und subtrahiren je zwei in gleicher Zeile befindliche Gleichungen von einander, so bekommen wir, wenn wir die erhaltenen Differenzen noch mit $K^2$ dividiren:
+
+\[
+\frac{K\dfrac{\partial J}{\partial \xi_1}-J\dfrac{\partial K}{\partial \xi_1}}{K^2}\,\xi_1+\frac{K\dfrac{\partial J}{\partial \xi_2}-J\dfrac{\partial K}{\partial \xi_2}}{K^2}\,\xi_2=0
+\]
+\[
+\frac{K\dfrac{\partial J}{\partial \xi_1}-J\dfrac{\partial K}{\partial \xi_1}}{K^2}\,\eta_1+\frac{K\dfrac{\partial J}{\partial \xi_2}-J\dfrac{\partial K}{\partial \xi_2}}{K^2}\,\eta_2=0\text{, etc.}
+\]
+
+Setzen wir hierin:
+
+\[
+\frac{J}{K} = L\ldots \tag{c}
+\]
+
+so kommt:
+
+\[
+\frac{\partial L}{\partial \xi_1}\xi_1+\frac{\partial L}{\partial \xi_2}\xi_2=0,\quad \frac{\partial L}{\partial \xi_1}\eta_1+\frac{\partial L}{\partial \xi_2}\eta_2=0 \tag{1}
+\]
+
+\[
+\frac{\partial L}{\partial \eta_1}\xi_1+\frac{\partial L}{\partial \eta_2}\xi_2=0,\quad \frac{\partial L}{\partial \eta_1}\eta_1+\frac{\partial L}{\partial \eta_2}\eta_2=0. \tag{2}
+\]
+
+Jedes der beiden Gleichungssysteme (1) und (2) ist homogen in den Differentialquotienten; da die Determinante $(\xi\eta)$ nicht verschwindet, so haben sie nur die identischen Lösungen (vgl. Bd. I, Nr. 96 und 97)
+
+\[
+\frac{\partial L}{\partial \xi_1}=0,\quad \frac{\partial L}{\partial \xi_2}=0,\quad \frac{\partial L}{\partial \eta_1}=0,\quad \frac{\partial L}{\partial \eta_2}=0,
+\]
+
+d. h. die Grösse $L$ ist von $\xi$ und $\eta$ unabhängig. Nun ist aber $K$ eine beliebige specielle Lösung der Gleichungen (I), also etwa gleich $\Delta^\varrho$, von welcher wir wissen, dass sie eine solche ist. Benutzen wir dieselbe, so ist wegen (c)
+
+\[
+J = \Delta^\varrho \cdot L.
+\]
+
+
+% ===== pdf idx 141, printed 127.0 =====
+% !PRINTED 127
+\weberpage{127}
+Setzen wir hier, da $\xi_1\eta_1\xi_2\eta_2$, beliebig sind, $\xi_1=1$, $\eta_2=1$, $\xi_2=0$, $\eta_2=0$, so geht $a_\xi$ über in $a_1$, $a_\eta$ in $a_2$, $\Delta$ in $1$, und $J$ in $i$, so dass wir erhalten
+% [sic] the second condition is printed $\eta_2=0$, duplicating the earlier $\eta_2=1$
+
+\[
+L = i,
+\]
+
+d. h. jede Lösung der Differentialgleichung (IV) genügt der Relation
+
+\[
+J = \Delta^\varrho \cdot i,
+\]
+
+so dass dieselben in der That nur Invarianten definiren.
+
+111. \gesperrt{Begriff der Evectante.} Wir können die Differentialgleichungen für Invarianten auch direct aufstellen, ohne dabei von der Transformation Gebrauch zu machen. Zu dem Zwecke führen wir aber zunächst einen neuen Begriff ein, nämlich den der Evectante.
+
+Wir haben schon mehrfach von dem Satze Gebrauch gemacht, dass man in einem symbolischen Producte jederzeit $a_1$ durch $x_2$ und $a_2$ durch $-x_1$ ersetzen darf, wodurch die Invarianteneigenschaft desselben nicht aufgehoben wird. Nun ist nach dem Euler'schen Satze
+
+\[
+\mu i = \frac{\partial i}{\partial \bar a_0}\bar a_0+\frac{\partial i}{\partial a_1}\bar a_1+\frac{\partial i}{\partial \bar a_2}\bar a_2+\cdots \frac{\partial i}{\partial \bar a_n}\bar a_n.
+\]
+% [sic] second term printed $\partial i/\partial a_1$ without the bar, unlike the other terms
+
+Ersetzt man jeden zweiten Factor $\bar a_k$ der Summe rechts durch sein Symbol $a_1^n$, $a_1^{n-1}a_2$, $a_1^{n-2}a_2^2$, und in diesen Symbolen wieder $a_1$ durch $x_2$, $a_2$ durch $-x_1$, so erhält man als Resultat dieser Substitutionen die Covariante
+
+\[
+p_x^n = x_2^n\frac{\partial i}{\partial \bar a_0} - x_2^{n-1}x_1\frac{\partial i}{\partial \bar a_1} + x_2^{n-2}x_1^2\frac{\partial i}{\partial \bar a_2} - \cdots
+\]
+
+oder
+
+\[
+p_x^n = \sum(-1)^k\cdot x_2^{n-k}\cdot x_1^k\cdot\frac{\partial i}{\partial \bar a_k}.
+\]
+
+Man nennt diese Covariante Evectante von $i$, und zwar die erste Evectante, insofern $i$ nur einmal nach den Co\"efficienten $\bar a_k$ differentiirt wurde.
+
+Die $r^{\text{te}}$ Evectante entsteht alsdann durch $r$-malige Wiederholung des angegebenen Processes.
+
+112. \gesperrt{Beispiel:} Die Discriminante der quadratischen Form $a_x^2$ ist
+
+\[
+(ab)^2 = 2(\bar a_0\bar a_2-\bar a_1^2)=i;
+\]
+
+also ist nach dem Euler'schen Satze:
+
+\[
+2i=\left[\frac{\partial i}{\partial \bar a_0}\bar a_0+\frac{\partial i}{\partial \bar a_1}\bar a_1+\frac{\partial i}{\partial \bar a_2}\bar a_2\right]=\left[\frac{\partial i}{\partial \bar a_0}a_1^2+\frac{\partial i}{\partial \bar a_1}a_1a_2+\frac{\partial i}{\partial \bar a_2}a_2^2\right]
+\]
+
+und somit, wenn man rechts $a_1$ durch $x_2$, $a_2$ durch $-x_1$ ersetzt:
+
+\[
+p_x^2 = 2(\bar a_2x_2^2+2\bar a_1x_1x_2+\bar a_0x_1^2)=2a_x^2=2b_x^2,
+\]
+
+d. h. die erste Evectante der Discriminante ist die Form selbst.
+
+
+% ===== pdf idx 142, printed 128.0 =====
+% !PRINTED 128
+\weberpage{128}
+2) Die Discriminante der cubischen Form $a_x^3$ ist
+
+\[
+i=(ab)^2(cd)^2(ad)(cb)=[\bar a_0^2\bar a_3^2+4\bar a_0\bar a_2^3-6\bar a_0\bar a_1\bar a_2\bar a_3+4\bar a_1^3\bar a_3-3\bar a_1^2a_2^2]2;
+\]
+% [sic] final term printed $a_2^2$ without the bar, unlike the other terms of the bracket
+
+folglich ist
+
+\[
+4i=\frac{\partial i}{\partial \bar a_0}a_1^3+\frac{\partial i}{\partial \bar a_1}a_1^2a_2+\frac{\partial i}{\partial \bar a_2}a_1a_2^2+\frac{\partial i}{\partial \bar a_3}a_2^3;
+\]
+
+demnach
+
+\[
+\begin{aligned}
+p_x^3 = {} & [(2\bar a_0a_3^2+4a_2^3-6a_1a_2a_3)x_2^3+(6a_0\bar a_2\bar a_3-12\bar a_1^2\bar a_3+6\bar a_1\bar a_2^2)x_2^2x_1\\
+& {}+(12\bar a_0\bar a_2^2-6\bar a_0a_1a_3-6a_1^2\bar a_2)x_2x_1^2+(2\bar a_0^2\bar a_3-6\bar a_0a_1a_2+4a_1^3)x_1^3]2\\
+= {} & 4(ab)^2(cb)c_x^2a_x.
+\end{aligned}
+\]
+
+Diese Evectante ist aber nichts anderes als die Covariante dritten Grades von $f=a_x^3$, welche auch als Functionaldeterminante von $f$ mit der Hesse'schen Form von $f$ sich ergiebt. (Vgl. Nr. 37.)
+
+113. \gesperrt{Symbolische Darstellung des Evectantenprocesses.} Betrachten wir die beiden gegebenen Beispiele näher, so sieht man: durch den Evectantenprocess wurde aus $(ab)^2$ die ursprüngliche Form $f=2a_x^2=2b_x^2$. Dieselbe entsteht auch direct aus $(ab)^2$, indem man einmal die Symbolreihe $a_2,a_1$ durch $x_1,-x_2$, und dann aber auch die Symbolreihe $b_2,b_1$ durch $x_1,-x_2$ ersetzt. Die erste Operation giebt ein Glied $g_1$, die zweite ein Glied $g_2$, und es ist
+
+\[
+f=g_1+g_2=b_x^2+a_x^2=2a_x^2=2b_x^2.
+\]
+
+Ebenso erhält man im zweiten Falle durch successive Vertauschung der vier Symbole $a,b,c,d$ mit den Variabeln $x_1$ und $-x_2$ vier Glieder $g_1g_2g_3g_4$, und zwar, da alle vier Symbole vollständig symmetrisch auftreten, so ist:
+
+\[
+g_1+g_2+g_3+g_4=4g_1=4g_2=4g_3=4g_4,
+\]
+
+also ist
+
+\[
+p_x^3=4(ab)^2(cb)c_x^2a_x.
+\]
+
+Wir schliessen: \glqq{}Die erste Evectante entsteht aus der Invariante $\mu^{\text{ten}}$ Grades, indem wir aus ihr $\mu$ Glieder $g_1g_2\ldots g_\mu$ dadurch bilden, dass wir immer je eine Symbolreihe durch die Variabelnreihe der $x$ ersetzen, und dann die Summe aller Glieder nehmen.\grqq{} (Vgl. auch die Wirkung des Aronhold'schen Processes an einem symbolischen Producte, Nr. 60.)
+
+114. \gesperrt{Umformung der Differentialgleichungen für Invarianten.} Wir können nun die Differentialgleichungen (III) Nr. 107 für Invarianten auch in kürzerer Form schreiben. Vergleicht man in der Identität
+
+\[
+p_x^n=\sum(-1)^kx_1^kx_2^{n-k}\frac{\partial i}{\partial \bar a_k}
+\]
+%CONT>>
+
+
+% ===== pdf idx 143, printed 129.0 =====
+% !PRINTED 129
+\weberpage{129}
+%<<CONT
+die Coefficienten gleich hoher Potenzen von $x$, so erhält man:
+\[
+\binom{n}{k} p_1^k p_2^{n-k} = \frac{\partial i}{\partial \bar a_k} (-1)^k.
+\]
+Tragen wir diese Werthe der Differentialquotienten in die Gleichungen (III) Nr.~107 ein, so kommt:
+\[
+\begin{aligned}
+\varrho i &= \sum (n-k) \binom{n}{k} (-1)^k a_1^{n-k} a_2^k p_1^k p_2^{n-k}\\
+&= \sum n \binom{n-1}{k} (-1)^k a_1^{n-k} a_2^k p_1^k p_2^{n-k}, \quad \text{etc.}
+\end{aligned}
+\]
+oder:
+\weq{VI}{
+\left.
+\begin{aligned}
+\varrho i &= -\, n\, a_1 p_2\, (pa)^{n-1}\\
+0 &= \phantom{-\,} n\, a_1 p_1\, (pa)^{n-1}\\
+0 &= \phantom{-\,} n\, a_2 p_2\, (pa)^{n-1}\\
+\varrho i &= +\, n\, a_2 p_1\, (pa)^{n-1}
+\end{aligned}
+\right\}
+}
+
+Dieses System (VI) lässt sich noch kürzer in die beiden folgenden Gleichungen zusammenfassen:
+\weq{VII}{
+\left.
+\begin{aligned}
+\frac{2\varrho i}{n} = \mu i &= (pa)^n\\
+0 &= (pa)^{n-1} p_x a_x
+\end{aligned}
+\right\}
+}
+
+Die erste derselben ergiebt sich direct durch Addition der ersten und vierten Gleichung des Systemes (VI). Sie lehrt:
+\glqq Die $n^{\text{te}}$ Ueberschiebung der ursprünglichen Form $f = a_x^n$ mit der ersten Evectante einer ihrer Invarianten $i$ liefert wiederum die Invariante $i$.\grqq{}
+
+Die zweite der Gleichungen (VII) erhalten wir, wenn wir die vier Gleichungen (VI) der Reihe nach mit $-x_1x_2$, $x_1^2$, $x_2^2$, $x_1x_2$ multipliciren und addiren. Sie lehrt:
+\glqq Die $(n-1)^{\text{te}}$ Ueberschiebung der ursprünglichen Form $f=a_x^n$ mit der ersten Evectante einer ihrer Invarianten ist identisch null.\grqq{}
+
+115. \textit{Evectanten von Combinanten.} Ist $i$ eine Combinante der beiden Formen $f=a_x^n$, $\varphi=\alpha_x^n$, genügt also $i$ der Gleichung
+\weq{1}{
+\delta i = \sum \frac{\partial i}{\partial \bar a_k} \bar\alpha_k = \sum \frac{\partial i}{\partial \bar\alpha_k} \bar a_k = 0,
+}
+so liefert die $n^{\text{te}}$ Ueberschiebung der ersten Evectante von $i$ über eine der Grundformen nicht mehr $i$, wie im vorigen einfachen Falle. Vielmehr hat man nun:
+\weq{2}{
+(p\alpha)^n = (pa)^n = 0;
+}
+denn es ist:
+\[
+p_x^n = \sum (-1)^k \frac{\partial i}{\partial \bar a_k} x_1^k x_2^{n-k},
+\]
+also
+\[
+\frac{\partial i}{\partial \bar a_k} = (-1)^k \binom{n}{k} \bar p_{n-k}
+\]
+
+
+% ===== pdf idx 144, printed 130.0 =====
+% !PRINTED 130
+\weberpage{130}
+Substituirt man den Werth dieser partiellen Differentialquotienten in (1), so erhält man:
+\[
+\sum_{k=n}^{k=0} (-1)^k \binom{n}{k} \bar p_{n-k} \bar\alpha_k = (\alpha p)^n = 0.
+\]
+Eine solche Combinante ist insbesondere die Resultante $R_{f,\varphi}$ der beiden Formen $f$ und $\varphi$. Für sie können wir die Richtigkeit der Gleichung (2) auch noch in anderer Weise zeigen, wodurch zugleich auf die Combinanteneigenschaft von $R_{f,\varphi}$ ein neues Licht geworfen wird. Man weiss nämlich (vergl. auch Bd.~I Nr.~164), dass die partiellen Differentialquotienten $\dfrac{\partial R_{f,\varphi}}{\partial \bar a_i}$ den Potenzen der gemeinschaftlichen Wurzel $\xi = -\dfrac{\xi_2}{\xi_1}$ von $f$ und $\varphi$ proportional sind. Ersetzt man also in der Evectante
+\[
+p_x^n = \sum (-1)^k \frac{\partial R_{f,\varphi}}{\partial \bar a_k} x_1^k x_2^{n-k}
+\]
+dementsprechend die Grössen $\dfrac{\partial R_{f,\varphi}}{\partial \bar a_k}$ durch $c\cdot(-1)^k\cdot\xi^{n-k}$, so kommt:
+\[
+p_x^n = \bar c \cdot (\xi_1 x_1 + \xi_2 x_2)^n = \bar c \cdot \xi_x^n.
+\]
+Folglich ist:
+\[
+(\varphi, p)^n = \bar c \cdot (\varphi, \xi^n)^n = \bar c \cdot \varphi(\xi).
+\]
+Da aber $\varphi(x)$ für die gemeinschaftliche Wurzel $x=\xi$ verschwindet, so ist $\varphi(\xi)=0$ und damit
+\[
+(\varphi, p)^n = 0.
+\]
+Ist nun aber $\chi = r_x^n$ neben $f=a_x^n$ und $\varphi=\alpha_x^n$ eine dritte Form, die gleichfalls für $x=\xi$ verschwindet, so ist auch
+\[
+(\chi, p)^n = \bar c \cdot (\chi, \xi^n)^n = 0.
+\]
+Es ist aber:
+\[
+(\chi, p)^n = \sum (-1)^k \binom{n}{k} \bar p_{n-k} \bar r_k = \sum \frac{\partial R_{f,\varphi}}{\partial \bar a_k} \cdot \bar r_k = \bar\delta R_{f,\varphi}.
+\]
+Demnach ist auch:
+\[
+\bar\delta R_{f,\varphi} = 0,
+\]
+wobei nun die Incremente durch die Coefficienten einer völlig fremden Form $\chi$ ersetzt werden, für welche nur die Bedingung besteht, dass sie mit $f$ und $\varphi$ eine gemeinschaftliche Wurzel $\xi$ besitzt. Wir werden später von diesem Satze Gebrauch machen.
+
+116. \textit{Zweite Methode zur Aufstellung der Differentialgleichungen für Invarianten.} Das in Nr.~114 erhaltene System (VII) von Gleichungen ist nur eine andere Form des Systemes der Differentialgleichungen
+%CONT>>
+
+
+% ===== pdf idx 145, printed 131.0 =====
+% !PRINTED 131
+\weberpage{131}
+%<<CONT
+(III) Nr.~107 für Invarianten. Indem wir dasselbe direct aufstellen, erhalten wir einen zweiten Beweis, dass alle Invarianten gewissen Differentialgleichungen genügen müssen.
+
+Die Aufgabe ist, die Richtigkeit der beiden Gleichungen nachzuweisen
+\weq{A}{
+\left.
+\begin{aligned}
+(p,f)^n &= \mu \cdot i\\
+(p,f)^{n-1} &= 0
+\end{aligned}
+\right\}
+}
+Nun ist die erste Evectante $p$ von $i$ eine Summe symbolischer Producte $g$, welche entstehen, wenn jede der $\mu$ Symbolreihen $a$, resp. $b$, $c \ldots$ etc. durch $x$ ersetzt wird. Es ist also:
+\weq{2}{
+(p,f)^n = \sum_1^\mu (g,f)^n.
+}
+Anderntheils entsteht aber die $n^{\text{te}}$ Ueberschiebung zweier Formen, indem man umgekehrt die Variabeln $x_1 x_2$ durch Symbolreihen $a_2, -a_1$, resp. $b_2, -b_1$ etc. ersetzt. Beide Operationen hinter einander ausgeführt, der Evectantenprocess und der Ueberschiebungsprocess, ändern also das ursprüngliche symbolische Product nicht; jedes Glied der Summe (2) geht durch die Ueberschiebung wieder in $i$ über, so dass man in der That erhält:
+\[
+(p,f)^n = \mu \cdot i.
+\]
+Was nun die zweite Gleichung betrifft, so gestaltet sich ihr Beweis folgendermassen. Es ist wiederum zunächst
+\[
+(p,f)^{n-1} = \sum_1^\mu (g,f)^{n-1}.
+\]
+Jede der $\mu$ Ueberschiebungen rechts besitzt $n$ Terme. Denn ist z.\,B. $g_1$ jenes Glied der Evectante, das entstanden ist, indem man für die Symbolreihe $a$ die Variabeln $x$ einführte, so entsteht nach den Gesetzen der Ueberschiebung $(g_1,f)^{n-1}$ dadurch, dass man in immer andern und andern $(n-1)$ Factoren erster Art von $g_1$ umgekehrt $x_1$ und $x_2$ durch $a_2, -a_1$ ersetzt, was bei $n$ Elementen nur auf $n$ Arten möglich ist. Die Summe rechts enthält also $n \cdot \mu$ Terme, wobei $n \cdot \mu$ jedenfalls eine gerade Zahl ist, wie aus Nr.~107, Anmerkung hervorgeht. Jeder der $n \cdot \mu$ Terme enthält zwei und nur zwei Factoren erster Art, da $f$ sowohl als jedes Glied $g_i$ vom Grade $n$ in $x$ ist. Man kann einen solchen Term auch erhalten, indem man z.\,B. in der Invariante $i$ in einem Klammerfactor $(ba)$ die Symbolreihe $a_1, a_2$ durch $-x_2, +x_1$ ersetzt und das so entstehende symbolische Product mit $a_x$ multiplicirt, so dass also $(ba)$ durch $b_x a_x$ ersetzt wurde. Es tritt
+%CONT>>
+
+
+% ===== pdf idx 146, printed 132.0 =====
+% !PRINTED 132
+\weberpage{132}
+%<<CONT
+aber alsdann bei dieser Bildung der $n \cdot \mu$ Terme, die ja völlig symmetrisch erfolgt, jedenfalls auch noch ein zweiter Term neben dem eben erwähnten auf, der entsteht, wenn in demselben Klammerfactor $(ba)$ von $i$ die Symbolreihe $b_1, b_2$ durch $-x_2, x_1$ ersetzt und das so entstehende symbolische Product mit $b_x$ multiplicirt wird. Da dieser Term aber bis auf das Vorzeichen mit dem vorhin erwähnten übereinstimmt, so sieht man, dass je zwei der $n \cdot \mu$ Terme sich gegenseitig aufheben, d.\,h. dass
+\[
+(p,f)^{n-1} = \sum_1^\mu (g,f)^{n-1} = 0,
+\]
+was wir zu beweisen hatten.
+
+Wir haben somit durch reine Invariantenprocesse die Existenz der Gleichungen (A) nachgewiesen, welche das System der Differentialgleichungen (III) nach jeder Richtung ersetzen, und da jener Satz in Nr.~108, dass dieses System von Differentialgleichungen ein vollständiges ist, zu seinem Beweise nur Processe der Invariantentheorie benutzt, so dürfte es jedenfalls möglich sein, auch ihn durch ein rein algebraisches Aequivalent zu ersetzen.
+
+117. \textit{Umformung einer Relation $F(A_i)=0$ in}
+\[
+\sum \{(ab)c_x + (bc)a_x + (ca)b_x\} \varphi_\lambda = 0.
+\]
+Zum Schlusse noch eine Anwendung des Evectantenprocesses. Ich habe bereits in \S~1 an einem Beispiele gezeigt, wie sich eine in Coefficienten und Variabeln homogene Relation $F(A_i)=0$ von symbolischen Producten $A_i$ in die Gestalt bringen lässt
+\[
+\sum \{(ab)c_x + (bc)a_x + (ca)b_x\} = 0.
+\]
+Die Möglichkeit dieser Umformung wollen wir nun für eine beliebige Relation $F(A_i)=0$ nachweisen. Wir betrachten $F(A_i)$ als Covariante $\mu^{\text{ten}}$ Grades in den Coefficienten einer Form $f=a_x^n=b_x^n=$ etc.; da sie identisch verschwindet, so verschwinden auch die partiellen Differentialquotienten in der nach dem Euler'schen Satze gegebenen Darstellung:
+\[
+\mu F(A_i) = \sum \frac{\partial (F(A_i))}{\partial \bar a_k} \cdot \bar a_k,
+\]
+und demnach auch die erste Evectante dieser Covariante
+\[
+P_y^n = \sum (-1)^k \frac{\partial (F(A_i))}{\partial \bar a_k} \cdot y_1^k y_2^{n-k}.
+\]
+Nun erhält man diese Evectante auch, wenn man in $F(A_i)$ der Reihe nach das Symbol $a$, $b$, $c$ etc. durch $y$ ersetzt; es ist also:
+\[
+0 = P_y^n = F(A_i)_{a=y} + F(A_i)_{b=y} + \cdots + F(A_i)_{m=y} = \sum_{m=a,b,\ldots} F(A_i)_{m=y}.
+\]
+
+
+% ===== pdf idx 147, printed 133.0 =====
+% !PRINTED 133
+\weberpage{133}
+Hiebei ist es gestattet, nachträglich rechts im zweiten, dritten, etc.,
+letzten Posten, $a$ mit $b$, resp. $a$ mit $c$, etc. zu vertauschen, so dass
+in keinem Gliede mehr das Symbol $a$ auftritt. Wir setzen nun voraus,
+dass sich einfachere Relationen $F(A_i)$ — also insbesondere solche,
+welche mindestens \gesperrt{ein} Symbol $a$, $b$, etc. weniger besitzen, oder
+solche, welche durch Spaltung in zwei Factoren, deren einer mindestens
+\gesperrt{ein} Symbolfactor $r_x$ oder $(pq)$ ist, sich auf einfachere Relationen
+reduciren, — stets in die Form $\sum \{(ab)\,c_x + (bc)\,a_x + (ca)\,b_x\}\,\varphi_\lambda = 0$
+bringen lassen. Der Beweis gestaltet sich dann für complicirtere Fälle
+folgendermassen.
+
+$P_y^n$ wird sich im allgemeinen in zwei Theile trennen lassen, einen
+Theil $\mathbf{M} = (xy) \sum Q_i^{(1)}$, der also $(xy)$ zum Factor hat, und einen
+Theil
+
+\weq{1}{\mathbf{N} = \sum c_i\,G_i,}
+
+der diesen Factor nicht besitzt. Sollten zufälliger Weise in $P_y^n = 0$
+alle Glieder diesen Factor enthalten, so dividire man mit der höchsten
+Potenz von $(xy)$ diese Identität.
+
+Setzen wir alsdann in $P_y^n = 0$ einen Moment $y = x$, so verschwindet
+wegen des Factors $(xx)$ der erste Theil, und demnach auch der zweite,
+d.\,h. wir haben
+
+\weq{2}{\mathbf{N} = \sum c_i\,H_i = 0,}
+
+wenn wir die Glieder $G_i$ für $x = y$ mit $H_i$ bezeichnen. Da aber die
+Glieder $H_i$ um das Symbol $a$ weniger Symbole besitzen als die ursprünglichen
+Glieder in $F(A_i)$, so kann man nach Voraussetzung schreiben:
+
+\weq{3}{\mathbf{N} = \sum c_i\,H_i = \sum \{(db)\,c_x + (bc)\,d_x + (cd)\,b_x\}\,\varphi_\lambda = 0.}
+
+Bilden wir nun wieder die $n^{\text{te}}$ Polare von $\sum c_i\,H_i$, wobei die
+Polare von $H_i$ mit $\overline{G}_i$ bezeichnet sei, dann ist, weil die Glieder $G_i$
+in (1) Glieder dieser Polaren sein müssen [vergl. Nr. 25, (I)]:
+
+\[
+G_i = \overline{G}_i + (xy) \sum \varrho_i\,Q_i^{(2)},
+\]
+
+also
+
+\[
+\sum c_i\,G_i = \sum c_i\,\overline{G}_i + (xy) \sum \overline{\varrho}_i\,Q_i^{(3)},
+\]
+
+oder, weil $\sum c_i\,G_i = \mathbf{N}$, und $\sum c_i\,\overline{G}_i = \big[\sum c_i\,H_i\big]_{y^n}$,
+mit Benutzung von Gleichung (1) und (3)
+
+\[
+\mathbf{N} = \Big[\sum \{(db)\,c_x + (bc)\,d_x + (cd)\,b_x\}\,\varphi_\lambda\Big]_{y^n} + (xy) \sum \overline{\varrho}_i\,Q_i^{(3)}.
+\]
+
+
+% ===== pdf idx 148, printed 134.0 =====
+% !PRINTED 134
+\weberpage{134}
+Addiren wir hiezu:
+
+\[
+\mathbf{M} = (xy) \sum Q_i^{(1)},
+\]
+
+so erhalten wir:
+
+\[
+P_y^n = \Big[\sum \{(db)\,c_x + (bc)\,d_x + (cd)\,b_x\}\,\varphi_\lambda\Big]_{y^\mu} + (xy) \sum \lambda_i\,Q_i^{(4)}.
+\]
+
+Ersetzen wir endlich hierin $y$ wieder durch $a$, so geht $P_y^\mu$ in
+$\sum F(A_i)$ über, wobei die späteren Posten $F(A_i)$ aus dem ersten durch
+Vertauschung von $a$ mit $b$, resp. $c$, $d$, \dots\ etc. entstehen. Da sonach
+alle diese Posten einander gleich sind und nur $\mu$ Symbole $a$, $b$, $c$ \dots\
+$m$ vorhanden sind, so wird:
+
+\[
+\mu\,F(A_i) = \sum F(A_i) = \sum \{(db)\,c_x + (bc)\,d_x + (cd)\,b_x\}\,\varphi_\lambda + a_x \sum \overline{\lambda}_i\,Q_i^{(4)}.
+\]
+
+Weil nun $F(A_i)$ sowohl, als auch $\sum \{(db)\,c_x + (bc)\,d_x + (cd)\,b_x\}\,\varphi_\lambda$
+identisch verschwinden, so verschwindet auch $\sum \overline{\lambda}_i\,Q_i^{(4)}$,
+da aber wegen des abgesonderten Factors $a_x$ diese Relation
+$\sum \overline{\lambda}_i\,Q_i^{(4)} = 0$ einen symbolischen Factor weniger besitzt
+als die Relation $F(A_i) = 0$, so lässt sich nach Voraussetzung auch
+$\sum \overline{\lambda}_i\,Q_i^{(4)}$ in die Form
+
+\[
+\sum \{(ab)\,c_x + (bc)\,a_x + (ca)\,b_x\}\,\overline{\varphi}_\lambda
+\]
+
+bringen und demnach hat man in der That:
+
+\[
+F(A_i) = \sum \{(ab)\,c_x + (bc)\,a_x + (ca)\,b_x\}\,\varphi_\lambda = 0.
+\]
+
+% [end-of-section ornament: short horizontal rule below the last display,
+%  marking the close of "Erster Theil"; remainder of the page is blank]
+
+
+% ===== pdf idx 149, printed 135.0 =====
+% !PRINTED 135
+\weberpage{135}
+% !PRINTED none
+% Unnumbered part-opening leaf: large blank area at the head of the page
+% (a short horizontal rule and two small printer's dots), followed by the
+% part title, the part subtitle, the section heading, and the opening
+% subsection text.
+
+\begin{center}
+Zweiter Theil.
+
+\textbf{Die Formen zweiten, dritten und vierten Grades.}
+\end{center}
+
+\begin{center}
+\textbf{§ 11. Die Form zweiten Grades: System einer und zweier}
+
+\textbf{simultaner Formen.}
+\end{center}
+
+118. \textit{Ueberblick über die folgenden Untersuchungen.} Wir haben mit
+den letzten Paragraphen die allgemeinen Untersuchungen über In- und
+Covarianten binärer Formen (so weit sie sich nicht auf Systembildung
+und associirte Formen beziehen) abgeschlossen und wenden uns nunmehr
+den einzelnen Formen zu, indem wir mit der quadratischen Form
+beginnen.
+
+Die ersten Fragen, die wir uns hier stellen, sind die Fragen nach
+dem vollen System einer quadratischen Form, oder zweier simultaner
+Formen. Unter vollem System verstehen wir hier wie später die Gesammtheit
+derjenigen Co- und Invarianten, durch welche sich alle übrigen
+rational und ganz darstellen lassen. Dieses volle System aufzufinden,
+wird immer eine unserer Hauptaufgaben sein. Eine allgemeine Methode,
+das \gesperrt{kleinste volle System} aufzufinden, existirt nicht. Es muss immer
+erst durch successive Begrenzung der Anzahl gezeigt werden, dass
+wirklich keine der in das System aufgenommenen Formen überflüssig
+ist, d.\,h. durch die übrigen sich rational und ganz darstellen lässt.
+Diese Reduction der Formenanzahl stützt sich insbesondere auf einen
+Begriff: den des \gesperrt{Reducenten}, dessen Definition im Laufe dieses
+Paragraphen festgestellt wird.
+
+Bei den quadratischen Formen lässt sich das volle System \textit{a priori}
+angeben. Nachdem wir dies für zwei simultane Formen erledigt und
+die Relationen zwischen diesen Formen aufgestellt haben, werden wir
+in einigen Anwendungen davon Gebrauch machen. Hieran schliessen
+wir die Betrachtungen über das volle System dreier quadratischer
+Formen, und den mannigfachen Relationen die zwischen den Co- und
+Invarianten desselben bestehen. Das System lässt sich dann leicht
+allgemein für eine beliebige Anzahl quadratischer Formen erweitern.
+Nach diesen Untersuchungen über allgemeine Formen zweiten Grades
+%CONT>>
+
+
+% ===== pdf idx 150, printed 136.0 =====
+% !PRINTED 136
+\weberpage{136}
+%<<CONT
+wenden wir uns speciellen zu, insbesondere solchen, die bei Auflösung
+der Gleichungen vierten und fünften Grades eine wesentliche Rolle
+spielen.
+
+119. \textit{System einer quadratischen Form.} Es sei die quadratische
+Form
+
+\[
+f = \overline{a}_0\,x_1^{\,2} + 2\,\overline{a}_1\,x_1 x_2 + \overline{a}_2\,x_2^{\,2}
+\]
+
+symbolisch dargestellt durch
+
+\[
+f = a_x^2 = b_x^2 = c_x^2 = \text{etc.}
+\]
+
+Die erste Ueberschiebung dieser Form über sich selbst ist
+
+\[
+(f,\,f) = (ab)\,a_x\,b_x\,;
+\]
+
+diese verschwindet aber identisch, da sie durch Vertauschung der völlig
+gleichberechtigten Symbole $a$ und $b$ nur das Vorzeichen ändert, wie
+wir bereits auch früher bemerkt haben. Die zweite Ueberschiebung
+liefert die bekannte Discriminante
+
+\[
+D = (f,\,f)^2 = (ab)^2.
+\]
+
+Ihre unsymbolische Gestalt ist (vergl. auch Nr. 2)
+
+\[
+D = 2(\overline{a}_0\,\overline{a}_2 - \overline{a}_1^{\,2}).
+\]
+
+Die Ueberschiebung von $f$ über sich selbst führt somit nur auf eine
+einzige Form, und da dieselbe Invariante ist, so können wir durch
+diesen Process zu keinen weiteren Formen gelangen. Die Frage ist,
+hat überhaupt die Form $f$ noch andere Co- und Invarianten und wenn
+ja, lassen sich dieselben vielleicht als ganze rationale Functionen von
+$f$ und $D$ darstellen.
+
+Wir können zeigen, dass in der That beide Fragen bejaht werden
+müssen, und bezeichnen deshalb $f$ und $D$ zusammen als volles System
+der quadratischen Form.
+
+Das allgemeinste symbolische Product nämlich, das eine Covariante
+von $f$ darstellen kann, ist, weil höhere als erste Potenzen von $a_x$ und
+$(ab)$ immer durch $f$ oder $D$ ersetzt werden können, dargestellt durch
+
+\[
+P = (ab)(ac) \dots (ik)\,a_x b_x c_x \dots i_x k_x.
+\]
+
+Greifen wir irgend einen Klammerfactor $(ab)$ aus diesem Producte
+heraus, so müssen, soll $P$ wirkliche und nicht blos symbolische Bedeutung
+haben, noch ausser ihm entweder die Factoren $a_x b_x$ oder die Factoren
+$(ac)(bc)$ oder $(ad)(bc)$ \dots\ auftreten. Um diese Fälle in einen
+zusammenzufassen, sagen wir
+
+\[
+Q = (ab)\,a_\xi\,b_\eta
+\]
+
+muss ein Theil des Productes $P$ sein, wenn $(ab)$ einer seiner Klammerfactoren
+ist. Aber dieser Theil $Q$ lässt sich auf die bekannten Formen
+%CONT>>
+
+
+% ===== pdf idx 151, printed 137.0 =====
+% !PRINTED 137
+\weberpage{137}
+%<<CONT
+$f$ oder $D$ zurückführen. Vertauscht man nämlich $a$ und $b$, so kommt
+\[
+Q = -(ab)\,b_\xi a_\eta\,,
+\]
+also
+\[
+2Q = (ab)(a_\xi b_\eta - b_\xi a_\eta) = (ab)^2(\xi\eta)\,,
+\]
+oder
+\[
+Q = \frac{1}{2}\,D\cdot(\xi\eta).
+\]
+
+Das Product $P$ hat also die Discriminante $D$ als Factor, und die Ursache liegt in dem Auftreten des Klammerfactors $(ab)$. Durch Absonderung dieses Factors $D$ wird $P$ auf ein einfacheres Product $P_1$ zurückgeführt; es ist, wie wir uns in Zukunft ausdrücken werden, reducibel auf $D$ und $P_1$. In $P_1$ treten aber immer nur Klammerfactoren vom Typus $(ab)$ auf, an deren Stelle wieder die Discriminante $D$ eingeführt werden kann. Was übrig bleibt ist eine Constante mal einer Potenz der Form $f$. $P$ ist also reducibel auf $D^\mu\cdot f^\nu$; d. h. irgend ein symbolisches Product $P$ ist rational durch $D$ und $f$ darstellbar.
+
+120. \textit{Auflösung der quadratischen Gleichung.} Eine Gleichung ist als gelöst zu betrachten, wenn sie in ihre Linearfactoren zerfällt. Diese Zerfällung kann man für
+\[
+f(x) = a_x^2 = b_x^2 = \ldots
+\]
+folgendermassen bewerkstelligen.
+
+Quadrirt man die Identität
+\[
+(ab)(xy) = (a_x b_y - b_x a_y)\,,
+\]
+so kommt:
+\[
+D\cdot(xy)^2 = a_x^2 b_y^2 + b_x^2 a_y^2 - 2a_x a_y b_x b_y.
+\]
+Es ist aber $a_x a_y = b_x b_y = f_y$ und demnach wird:
+\[
+D\cdot(xy)^2 = 2f(x)\cdot f(y) - 2f_y^2\,,
+\]
+oder
+\[
+f(x)\cdot f(y) = f_y^2 + \frac{D}{2}\,(xy)^2.
+\]
+Hieraus folgt:
+\[
+f(x) = \frac{1}{f(y)}\left\{f_y + (xy)\sqrt{-\frac{D}{2}}\right\}\cdot\left\{f_y - (xy)\sqrt{-\frac{D}{2}}\right\}.
+\]
+
+Die rechte Seite dieser Gleichung besteht aus zwei in $x$ linearen Factoren, wobei $y$ nur als willkürlicher Parameter fungirt, so dass die Lösung als eine ganz allgemeine erscheint. Wollen wir die specielle für die gewöhnliche Gleichung zweiten Grades, so brauchen wir nur
+\[
+y_1 = 1\,, \quad y_2 = 0
+\]
+zu setzen und erhalten alsdann die bekannte Zerfällung:
+\weq{I}{f(x) = \frac{1}{a_0}\left\{a_0 x_1 + a_1 x_2 - x_2\sqrt{-\frac{D}{2}}\right\}\left\{a_0 x_1 + a_1 x_2 + x_2\sqrt{-\frac{D}{2}}\right\}.}
+
+
+% ===== pdf idx 152, printed 138.0 =====
+% !PRINTED 138
+\weberpage{138}
+121. \textit{Darstellung der Discriminante in den Co\"efficienten der Linearfactoren von $f$.} Bezeichnen wir in (I) die beiden Klammern rechts mit $p_x$ und $q_x$, setzen wir also, indem wir $\dfrac{1}{a_0}$ in einen dieser Factoren hereinziehen,
+\[
+f = p\cdot q\,,
+\]
+dann ist
+\[
+D = -\frac{1}{2}\,(pq)^2.
+\]
+
+Denn $D$ ist als zweite Ueberschiebung von $f$ über sich selbst dargestellt durch (vergl. Nr. 38, I)
+\[
+\begin{aligned}
+D &= (p_x q_x,\, p_x' q_x')^2 \\
+&= \frac{1}{2}\,\{(pp')(qq') + (pq')(qp')\}.
+\end{aligned}
+\]
+
+Da aber $p$ und $q$ lineare Formen sind, so sind ihre symbolischen Co\"efficienten gleich ihren wirklichen, und demnach ist:
+\[
+p = p'\,, \quad q = q'\,,
+\]
+also
+\[
+(pp') = 0\,, \quad (qq') = 0 \quad \text{und} \quad (pq') = -(qp') = +(pq).
+\]
+Daher wird:
+\[
+D = \frac{1}{2}\,(pq)(qp) = -\frac{1}{2}\,(pq)^2.
+\]
+
+Das gleiche Resultat erhält man auch durch folgende Ueberlegung. Die Form $D=(ab)^2$ geht aus $f=a_x^2$ hervor, wenn man $x$ durch $b$, d. h. $x_1$ durch $b_2$ und $x_2$ durch $-b_1$ ersetzt. Wenn also
+\[
+f = p_x q_x = a_x^2\,,
+\]
+dann ist:
+\[
+D = (pb)(qb) = (ab)^2.
+\]
+
+Das symbolische Product $(bp)(bq)$ geht aber aus der ersten Polare
+\[
+2f_y = 2b_x b_y = p_x q_y + q_x p_y
+\]
+hervor, wenn man $x$ durch $p$, $y$ durch $q$ ersetzt; dies liefert die Beziehung:
+\[
+2(bp)(bq) = (qp)(pq) = -(pq)^2\,,
+\]
+und somit:
+\[
+D = -\frac{1}{2}\,(pq)^2.
+\]
+
+122. \textit{Simultanes System zweier quadratischer Formen.} Das volle simultane System zweier quadratischer Formen
+\[
+f = a_x^2\,, \quad \varphi = \alpha_x^2
+\]
+lässt sich nach den vorausgegangenen Entwicklungen leicht a priori angeben. Es besteht einmal aus denjenigen In- und Covarianten, welche die einzelnen Formen selbst besitzen, also aus den vier Formen
+%CONT>>
+
+
+% ===== pdf idx 153, printed 139.0 =====
+% !PRINTED 139
+\weberpage{139}
+%<<CONT
+\[
+\begin{aligned}
+f &= a_x^2\,, & D_1 &= A_{ff} = (ab)^2\,, \\
+\varphi &= \alpha_x^2\,, & D_2 &= A_{\varphi\varphi} = (\alpha\beta)^2\,,
+\end{aligned}
+\]
+ferner aus jenen, welche durch Ueberschiebung von $f$ über $\varphi$ entstehen, also aus den zwei weitern Formen:
+\[
+\begin{aligned}
+(f,\,\varphi) &= \vartheta_x^2 = \vartheta \\
+(f,\,\varphi)^2 &= A_{f\varphi}.
+\end{aligned}
+\]
+
+Da hiebei eine neue Covariante $\vartheta$ auftritt, so würden sich hieran jene Formen anschliessen, welche durch Ueberschiebung von $\vartheta$ über sich selbst und über $f$ und $\varphi$ sich ergeben. Indess entstehen aus diesen Ueberschiebungen keine neuen Formen; vielmehr lässt sich zeigen:
+
+\glqq Das volle simultane System der beiden quadratischen Formen $f$ und $\varphi$ besteht aus den sechs Formen
+\[
+f,\ \varphi,\ A_{ff},\ A_{\varphi\varphi},\ \vartheta,\ A_{f\varphi};
+\]
+alle übrigen In- und Covarianten sind ganze und rationale Functionen derselben.\grqq{}
+
+123. \textit{Gedankengang im Beweise dieses Satzes.} Das allgemeinste symbolische Product, das eine neue simultane Covariante von $f$ und $\varphi$ darstellen kann, wird die Symbole
+\[
+a,\ b,\ c,\ \ldots\,;\quad \alpha,\ \beta,\ \gamma,\ \ldots\,;\quad \vartheta,\ \vartheta_1,\ \vartheta_2,\ \ldots
+\]
+enthalten, da es aus den Formen $f$, $\varphi$, $\vartheta$ durch Ueberschiebung entstanden sein muss. Doch ist von vornherein klar, dass wir nur solche Producte zu untersuchen brauchen, in denen die Factoren erster Art, wie $a_x$, $\alpha_x$, $\vartheta_x$ nur in ersten Potenzen auftreten. Denn im andern Falle liessen sich ja sofort die bekannten Covarianten $f$, $\varphi$, $\vartheta$ des Systemes als Factoren absondern.
+
+Was die Klammerfactoren betrifft, so können sie, da die Grundformen $f$, $\varphi$, $\vartheta$ selbst nur vom zweiten Grade sind, nur in ersten oder zweiten Potenzen auftreten. Die überhaupt denkbaren Klammerfactoren sind aber folgende sechs:
+\weq{A}{(ab),\ (\alpha\beta),\ (a\alpha)\,;\quad (\vartheta\vartheta_1),\ (a\vartheta),\ (\alpha\vartheta).}
+Wir zeigen nun zuerst:
+
+\glqq Ein symbolisches Product, das einen solchen Factor quadratisch enthält, ist reducibel, d. h. es enthält Factoren, die sich aus den ursprünglichen Invarianten $A_{ff}$, $A_{\varphi\varphi}$, $A_{f\varphi}$ zusammensetzen.\grqq{}
+
+In zweiter Linie beweisen wir:
+
+\glqq Ein symbolisches Product, in welchem ein solcher Factor linear auftritt, ist reducibel, d. h. es enthält Factoren, welche rationale ganze Functionen der ursprünglichen sechs Co- und Invarianten sind.\grqq{}
+
+
+% ===== pdf idx 154, printed 140.0 =====
+% !PRINTED 140
+\weberpage{140}
+124. \textit{Begriff der Reducibilität und des Reducenten.} Ich will hiebei zunächst die Begriffe der Reducibilität und des Reducenten, wie wir sie für jetzt, wie für später n\"othig haben, fest umgrenzen. Ein symbolisches Product ist in drei Fällen als reducibel anzusehen: Erstens, wenn es identisch verschwindet; zweitens, wenn es bereits bekannte Formen, die in dem System schon aufgenommen sind, insbesondere Invarianten zu Factoren hat, oder gar durch solche Formen vollständig dargestellt werden kann; drittens, wenn es sich in andere symbolische Producte überführen lässt, die bereits als reducibel erkannt wurden, was sich oft dadurch schon ausweist, dass man es auf ein Product mit weniger bereits bekannten Symbolen zu reduciren vermag. (Vergl. auch Nr. 144.)
+
+Von den in einem solchen reduciblen Producte auftretenden Klammerfactoren sind alsdann insbesondere jene von Bedeutung, kraft deren die Reducibilität eintritt. Sie erhalten den Namen \glqq Reducent\grqq{}, sobald jedes symbolische Product, welches sie besitzt, reducibel ist. Hiezu ist nur n\"othig, dass das ursprüngliche Product $P$, welches aus ihm und seinen Symbolen allein construirt ist, und alle aus $P$ durch Faltung entstehenden Producte $P_i$ reducible Formen sind. Denn ein beliebiges Product $\Pi$, das den betreffenden Reducenten besitzt, kann stets durch Ueberschiebungen dargestellt werden, welche diese reduciblen Formen $P$ und $P_i$ mit geeigneten andern Formen bilden. (Vergl. Nr. 46.) Und diese Ueberschiebungen sind reducibel, wenn $P$ und $P_i$ es waren. (Vergleiche auch Nr. 144.)
+
+125. \textit{Beweis, dass alle Producte, welche einen der sechs Factoren (A) quadratisch enthalten, reducibel sind.} Da die Grössen $(ab)^2$, $(\alpha\beta)^2$, $(a\alpha)^2$ nicht anderes als die Invarianten $A_{ff}$, $A_{\varphi\varphi}$, $A_{f\varphi}$ des Systemes sind, so können wir von vornherein von Producten mit diesen Klammerfactoren absehen.
+
+Die Grösse $(\vartheta\vartheta_1)^2$ ist die Discriminante $A_{\vartheta\vartheta}$ der Form $\vartheta$, wir können zeigen, dass sie durch die drei Invarianten des Systemes ausdrückbar ist.
+
+Zu dem Zwecke wollen wir diese Discriminante noch durch andere symbolische Producte darstellen, aus deren Vergleichung alsdann die Reducibilität ersichtlich ist.
+
+Zunächst ersetzen wir in $(\vartheta\vartheta_1)^2$ das Symbol $\vartheta_1$ durch die ursprünglichen Symbole $a$, $\alpha$, gemäss der Definition
+\[
+\vartheta_{1x}^2 = (a\alpha)\,a_x \alpha_x\,,
+\]
+und erhalten so:
+\weq{1}{(\vartheta\vartheta_1)^2 = (a\alpha)(\vartheta\alpha)(\vartheta a).}
+
+
+% ===== pdf idx 155, printed 141.0 =====

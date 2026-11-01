@@ -1,0 +1,926 @@
+% !PRINTED 201
+\weberpage{201}
+Bilden wir nun den Quotienten
+\weq{3}{\frac{i^3}{j^2}=\frac{\Delta^{12}i'^3}{\Delta^{12}j'^2}=\frac{i'^3}{j'^2},}
+der somit vom Modul unabh\"angig ist, so gewinnen wir damit unter Benutzung der Relationen (1) eine Gleichung f\"ur den Parameter $m$, n\"amlich:
+\weq{4}{\frac{i'^3}{j'^2}=\frac{2}{9}\cdot\frac{(1+3m^2)^3}{m^2(1-m^2)^2}.}
+Der Ausdruck links ist eine bekannte Constante, und $m$ l\"asst sich somit durch Aufl\"osung einer cubischen Gleichung ermitteln.
+
+Man nennt den Ausdruck $\dfrac{i^3}{j^2}$, da er, wie aus (3) erhellt, bei beliebiger linearer Transformation auch nicht einmal um eine Potenz des Moduls sich \"andert, \gesperrt{absolute Invariante}.
+
+181. \textit{Berechnung des Moduls der Transformation aus dem Parameter $m$ der Normalform.} Sobald der Parameter $m$ bestimmt ist, so k\"onnen wir den Modul $\Delta=(rs)$ der Transformation
+\[
+\left.\begin{aligned}
+x_1 &= r_1 x + r_2 y\\
+x_2 &= s_1 x + s_2 y
+\end{aligned}\right\},
+\]
+durch welche $f=a_x^4$ \"ubergeht in
+\[
+f = x^4 + 6mx^2y^2 + y^4,
+\]
+berechnen. Denn es ist wegen (2) und (1)
+\[
+\Delta^2\cdot\frac{j'}{i'} = \frac{3m(1-m^2)}{1+3m^2}
+\]
+oder
+\weq{5}{\Delta^2 = \frac{3m(1-m^2)}{1+3m^2}\cdot\frac{i'}{j'}.}
+Setzt man nun in Gleichung (4)
+\[
+m^2 = \frac{3i'\varrho+2j'}{3i'\varrho-6j'},
+\]
+so geht sie \"uber in die cubische Resolvente $g$, n\"amlich:
+\[
+g(\varrho) = \varrho^3 - \frac{i'}{2}\varrho - \frac{j'}{3} = 0.
+\]
+Die Gleichung (5) aber geht durch dieselbe Substitution \"uber in:
+\[
+\Delta^2 = -\frac{\varrho}{2m}.
+\]
+Man erh\"alt also f\"ur das Quadrat des Moduls $\Delta$ drei Werthe. Dass sich nur das Quadrat desselben bestimmt, kann dadurch erkl\"art werden, dass die Normalform unge\"andert bleibt, wenn man $m$ durch $-m$ und gleichzeitig $y$ durch $y\sqrt{-1}$ ersetzt. (Vergl. auch \gesperrt{Clebsch}, bin\"are Formen, Seite 168.)
+
+
+% ===== pdf idx 216, printed 202.0 =====
+% !PRINTED 202
+\weberpage{202}
+182. \textit{Rationale Transformation der biquadratischen Form.} Sowohl die Transformation mit Hilfe der linearen Factoren $r_x$, $s_x$ von $\varphi_x^2$, als auch jene, die sich auf die directe Berechnung des Parameters $m$ st\"utzte, konnte nur auf irrationalem Wege, n\"amlich durch L\"osung einer cubischen Resolvente hergestellt werden. \gesperrt{Hermite} hat im Crelle'schen Journal Bd. 52 eine rationale Methode angegeben, die wir im Folgenden klarlegen wollen. Bezeichnen wir den Quotienten $\dfrac{\Delta}{f}$ mit $y$, so ist nach den Regeln der Differentialrechnung
+\[
+dy = (f\cdot d\Delta - \Delta\cdot df):f^2,
+\]
+oder
+\[
+f^2\,dy = \begin{vmatrix} f, & df\\ \Delta, & d\Delta \end{vmatrix} = 4\begin{vmatrix} x_1f_1+x_2f_2, & f_1dx_1+f_2dx_2\\ x_1\Delta_1+x_2\Delta_2, & \Delta_1dx_1+\Delta_2dx_2 \end{vmatrix},
+\]
+die Determinante rechts ist aber das Product
+\[
+4\begin{vmatrix} x_1, & x_2\\ dx_1, & dx_2 \end{vmatrix}\cdot\begin{vmatrix} f_1, & f_2\\ \Delta_1, & \Delta_2 \end{vmatrix},
+\]
+dessen zweiter Factor die Functionaldeterminante $(f,\Delta)=t$ ist. Wir haben also die Beziehung:
+\[
+\frac{1}{4}f^2\,dy = t\cdot(x_1dx_2-x_2dx_1).
+\]
+Quadriren wir auf beiden Seiten und multipliciren mit $(-2)$, so folgt wegen der Identit\"at
+\[
+-2t^2 = \Delta^3 - \frac{i}{2}\Delta f^2 + \frac{i}{3}f^3 % [sic] printed \textquotedbl{}i/3\textquotedbl{} here, \textquotedbl{}j/3\textquotedbl{} in the line below
+\]
+\[
+-\frac{1}{8}f^4(dy)^2 = \left(\Delta^3-\frac{i\Delta}{2}f^2+\frac{j}{3}f^3\right)(x_1dx_2-x_2dx_1)^2.
+\]
+Dividiren wir mit $f^3$ die ganze Gleichung und ziehen die Wurzel, so erhalten wir wegen $\dfrac{\Delta}{f}=y$
+\[
+\frac{dy\sqrt{-\dfrac{1}{8}}}{\sqrt{y^3-\dfrac{i}{2}y+\dfrac{j}{3}}} = \frac{x_1dx_2-x_2dx_1}{\sqrt{\bar a_0 x_1^4+4\bar a_1 x_1^3x_2+\cdots \bar a_4 x_2^4}}.
+\]
+Setzt man hier noch $y=\dfrac{j}{i}z$, so kommt:
+\[
+\frac{1}{i}\sqrt{\frac{-j}{8}}\cdot\frac{dz}{\sqrt{\dfrac{1}{3}-\dfrac{z}{2}+\dfrac{j^2}{i^3}z^3}} = \frac{x_1dx_2-x_2dx_1}{\sqrt{\bar a_0 x_1^4+4\bar a_1 x_1^3x_2\cdots \bar a_4 x_2^4}}.
+\]
+Damit ist der Ausdruck unter dem Wurzelzeichen rechts auf rationalem Wege in einen Ausdruck dritten Grades transformirt, der nur mehr einen Parameter, n\"amlich die absolute Invariante enth\"alt.
+
+
+% ===== pdf idx 217, printed 203.0 =====
+% !PRINTED 203
+\weberpage{203}
+183. \textit{Das Doppelverh\"altniss der vier Wurzeln von $a_x^4=0$.} Wir haben im Vorhergehenden eine Invariante $\dfrac{i^3}{j^2}$ kennen gelernt, die sich bei linearer Transformation auch nicht einmal um einen Zahlenfactor \"andert. Dieselbe Eigenschaft besitzt bekanntlich auch das Doppelverh\"altniss von vier Punkten, die man sich durch $a_x^4=0$ repr\"asentirt denken kann. Um nun den Zusammenhang der absoluten Invariante mit dem Doppelverh\"altniss zu studiren, w\"ahlen wir die Form vierter Ordnung in der \gesperrt{Legendre'schen} Normalform:
+\[
+\begin{aligned}
+f &= (1-x^2)(1-k^2x^2) = 1-(1+k^2)x^2+k^2x^4\\
+  &= x_1^4-(1+k^2)x_1^2x_2^2+k^2x_2^4,
+\end{aligned}
+\]
+deren Coefficienten der Reihe nach dargestellt sind durch
+\[
+1,\ 0,\ \frac{-(1+k^2)}{6},\ 0,\ k^2.
+\]
+Dann ist:
+\[
+i = \frac{1}{6}(12k^2+(1+k^2)^2), \quad j = \frac{1}{36}(k^2+1)((k^2+1)^2-36k^2).
+\]
+Demnach wird:
+\[
+\frac{i^3}{j^2} = 6\cdot\frac{(12k^2+(1+k^2)^2)^3}{((1+k^2)^2-36k^2)^2(k^2+1)^2}.
+\]
+Dividirt man Z\"ahler und Nenner mit $k^6$, so kommt:
+\[
+\frac{i^3}{j^2} = 6\cdot\frac{\left(12+\left(k+\dfrac{1}{k}\right)^2\right)^3}{\left(k+\dfrac{1}{k}\right)^2\left(\left(k+\dfrac{1}{k}\right)^2-36\right)^2}.
+\]
+Substituirt man hier $12\lambda$ f\"ur $\left(k+\dfrac{1}{k}\right)^2$, so erh\"alt man:
+\weq{1}{\frac{i^3}{j^2} = 6\cdot\frac{(1+\lambda)^3}{\lambda(\lambda-3)^2}}
+Nun sind andernteils die vier linearen Factoren der Form:
+\[
+(x_1^2-x_2^2)(x_1^2-k^2x_2^2)=0
+\]
+dargestellt durch:
+\[
+x_1-x_2=0,\quad x_1+x_2=0,\quad x_1-kx_2=0,\quad x_1+kx_2=0,
+\]
+also ihr Doppelverh\"altniss durch:
+\[
+\varrho = \frac{1+k}{1-k}:\frac{-1+k}{-1-k} = \frac{1+k}{1-k}\cdot\frac{1+k}{1-k} = \frac{(1+k)^2}{(1-k)^2} = \frac{\left(k+\dfrac{1}{k}\right)^2}{\left(k-\dfrac{1}{k}\right)^2}.
+\]
+Daher:
+\[
+\varrho = \frac{3\lambda}{3\lambda-1}, \quad \text{oder} \quad \lambda = \frac{\varrho}{3(\varrho-1)}.
+\]
+Das Doppelverh\"altniss steht also in einem directen Zusammenhange
+%CONT>>
+
+
+% ===== pdf idx 218, printed 204.0 =====
+% !PRINTED 204
+\weberpage{204}
+%<<CONT
+mit der absoluten Invariante, und zwar erh\"alt man durch Substitution von
+\[
+\lambda = \frac{\varrho}{3(\varrho-1)}
+\]
+in (1) die Beziehung:
+\weq{2}{\frac{i^3}{j^2} = 6\cdot\frac{3\left(1+\dfrac{\varrho}{3(\varrho-1)}\right)^3(\varrho-1)}{\varrho\left(\dfrac{\varrho}{3(\varrho-1)}-3\right)} = 18\cdot\frac{(4\varrho-3)^3}{\varrho(9-8\varrho)^2}.}
+Es ergeben sich sonach aus (2) drei Werthe f\"ur $\varrho$ resp. $\lambda$, und somit sechs Werthe f\"ur $k$ wegen der Beziehung $\left(k+\dfrac{1}{k}\right)^2=12\lambda$.
+
+\begin{center}
+\textbf{\S~19. Ueber die Formen, f\"ur welche $(f,f)^4=0$.}
+\end{center}
+
+184. \textit{Einleitende Bemerkungen.} Wir haben gesehen, dass in dem Formensystem einer Form vierten Grades eine Covariante $t$ auftritt, sechsten Grades in den Variabeln und dritten Grades in den Coefficienten, welche zwei bemerkenswerthe Eigenschaften besitzt: einmal, dass sie in drei conjugirte quadratische Factoren zerf\"allt, also durch Wurzelziehen aufl\"osbar ist, sodann, dass ihre vierte Ueberschiebung \"uber sich selbst identisch verschwindet. Es liegt die Frage nach dem Zusammenhange dieser beiden Eigenschaften nahe, und \gesperrt{Clebsch} hatte sich die Aufgabe gestellt, zu untersuchen, ob jede Form sechsten Grades, deren vierte Ueberschiebung \"uber sich selbst verschwindet, in drei conjugirte quadratische Factoren zerf\"allt. Es zeigte sich (vgl. \gesperrt{Clebsch}, \glqq Bin\"are Formen\grqq{}, \S~111), dass in der That die eine Eigenschaft die andere involvirt, und somit jede derartige Gleichung sechsten Grades aufl\"osbar ist.
+
+Wir stellen uns hier nach dem Vorgange von \gesperrt{Brioschi} und \gesperrt{Wedekind} die allgemeine Frage: Welche Eigenschaften besitzt eine beliebige Form $f$ $n^{\text{ten}}$ Grades, f\"ur welche $(f,f)^4$ identisch verschwindet?
+
+Hierbei muss nat\"urlich der Grad $n$ von $f>3$ sein. Die Untersuchung wird ergeben, dass der Bedingung $(f,f)^4=0$ ausser den Formen mit $(n-1)$fachem Factor nur ganz specielle Formen gen\"ugen, welche \gesperrt{Klein} mit den Namen Tetraeder, Octaeder und Ikosaeder belegt hat.
+
+Von diesen Formen haben wir bereits in \S~12 gesehen, wie sie sich, sobald sie in einer gewissen Normalform vorliegen, in einfacher Weise in quadratische Factoren spalten lassen.
+
+185. \textit{Die Coefficientenrelationen, die aus $(f,f)^4=0$ hervorgehen.} Die Identit\"at $(f,f)^4=0$ liefert eine Reihe von Relationen f\"ur die
+%CONT>>
+
+
+% ===== pdf idx 219, printed 205.0 =====
+% !PRINTED 205
+\weberpage{205}
+%<<CONT
+Coefficienten der Form $f$, die wir in erster Linie zu untersuchen
+haben, um die Eigenschaften solcher Formen $f$ kennen zu lernen.
+Diese Relationen sind nat\"urlich nicht alle von einander unabh\"angig.
+
+Es sei:
+\[
+f = C_0 x_1^n + \binom{n}{1} C_1 x_1^{n-1}x_2 + \binom{n}{2} C_2 x_1^{n-2}x_2^2 + \cdots + C_n x_2^n = a_x^n
+\]
+\[
+C_k = a_1^{n-k}a_2^k,
+\]
+dann ist:
+\[
+\begin{aligned}
+(f,f)^4 &= (ab)^4 a_x^{n-4}b_x^{n-4}\\
+&= (ab)^4 (a_1x_1+a_2x_2)^{n-4}(b_1x_1+b_2x_2)^{n-4}\\
+&= (ab)^4 \sum_{\lambda,\mu}\binom{n-4}{\mu}\binom{n-4}{\lambda}(a_1x_1)^{n-\lambda-4}(a_2x_2)^\lambda(b_1x_1)^{n-\mu-4}(b_2x_2)^\mu\\
+&= 0.
+\end{aligned}
+\]
+Da diese Identit\"at f\"ur jeden Werth von $x$ gilt, so m\"ussen die
+Coefficienten der einzelnen Potenzen von $x_2$ f\"ur sich verschwinden.
+Greifen wir aus dieser Entwicklung den Coefficienten von $x_2^\varrho$
+heraus, wobei also $\varrho = \lambda + \mu$, oder $\mu = \varrho - \lambda$.
+Er ist dargestellt durch:
+\[
+\begin{aligned}
+0 &= (ab)^4 \sum \binom{n-4}{\varrho-\lambda}\binom{n-4}{\lambda} a_1^{n-\lambda-4}a_2^\lambda b_1^{n-\varrho+\lambda-4}b_2^{\varrho-\lambda}\\
+&= \sum 2\left(a_1^4b_2^4 - 4a_1^3a_2b_1b_2^3 + 3a_1^2a_2^2b_1^2b_2^2\right)\binom{n-4}{\varrho-\lambda}\binom{n-4}{\lambda} a_1^{n-\lambda-4}a_2^\lambda b_1^{n-\varrho+\lambda-4}b_2^{\varrho-\lambda},
+\end{aligned}
+\]
+oder
+\weq{1}{0 = \sum \binom{n-4}{\varrho-\lambda}\binom{n-4}{\lambda}\left\{C_\lambda C_{\varrho+4-\lambda} - 4C_{\lambda+1}C_{\varrho+3-\lambda} + 3C_{\lambda+2}C_{\varrho+2-\lambda}\right\},}
+wobei die Summen \"uber alle Werthe $\lambda$ zu erstrecken sind, f\"ur
+welche die figurirten Zahlen noch Bedeutung haben. Hieraus gehen alle
+Relationen hervor, welchen die Coefficienten von $f = a_x^n$ gen\"ugen
+m\"ussen, wenn wir der Reihe nach $\varrho = 0$ bis $\varrho = 2n-8$ setzen.
+Ihre Anzahl ist also $2n-7$.
+
+Insbesondere erkennt man, dass die Coefficienten von Formen $f$ mit
+$n$-fachen, oder $(n-1)$-fachen Wurzeln immer diese $(2n-7)$ Relationen
+befriedigen. Denn nehmen wir diese Formen in der Normalform, so kann
+man sie darstellen durch
+\weq{2}{\text{und}\quad\left.\begin{aligned} f &= x^n\\ f &= x^{n-1}y\end{aligned}\right\}}
+Im ersten Falle ist $C_0 = 1$, $C_1 = C_2 \cdots = C_n = 0$;
+im zweiten Falle ist $C_1 = 1$, $C_0 = C_2 \cdots = C_n = 0$,
+und diese Werthe der $C_i$ befriedigen immer die Gleichungen (1). Die
+Formen (2) sind also selbstverst\"andliche Formen, f\"ur welche
+$(f,f)^4 = 0$.
+
+
+% ===== pdf idx 220, printed 206.0 =====
+% !PRINTED 206
+\weberpage{206}
+186. \textit{Formen $f$ mit zwei- und mehrfachen Wurzeln.} Nehmen wir
+nun an, dass die Form $f$ eine $\nu$-fache Wurzel, mindestens aber
+eine Doppelwurzel besitze. Man kann sie dann stets so transformiren,
+dass die $\nu$ ersten Coefficienten verschwinden. Wir d\"urfen also in
+diesem Falle $f$ in einer Normalform zu Grunde legen, in welcher
+\weq{I}{C_0 = C_1 = C_2 = C_3 = \cdots = C_{\nu-1} = 0,\quad \nu > 1.}
+Soll nun f\"ur diese Form $f$ auch die Relation
+\[
+(f,f)^4 = 0
+\]
+bestehen, dann k\"onnen wir zeigen, dass in diesem Falle im Allgemeinen
+alle weitern Coefficienten, $C_\nu$, $C_{\nu+1}\cdots C_{n-2}$,
+gleichfalls verschwinden.
+
+Zum Beweise gen\"ugt es, wenn wir zeigen, dass unter den
+Voraussetzungen:
+\weq{A}{(f,f)^4 = 0,}
+\weq{B}{C_0 = C_1 = C_2 = \cdots = C_{\nu-1} = 0,}
+auch
+\[
+C_\nu = 0
+\]
+ist. Nehmen wir n\"amlich an $C_\nu \gtrless 0$, dann muss in jener
+von $2n-7$ Relationen, in welcher verm\"oge der Bedingungen (B) die
+Gr\"osse $C_\nu^2$ allein auftritt, ihr Zahlencoefficient identisch
+null sein. Es l\"asst sich aber zeigen, dass dieser $\gtrless 0$ ist
+und sonach die Annahme $C_\nu \gtrless 0$ falsch sein muss.
+
+Ersetzen wir n\"amlich in der Relation (1) Nr. 185 $\varrho$ durch
+$2\nu-4$, so geht sie \"uber in
+\weq{II}{0 = \sum_{\lambda=0}^{\lambda=2\nu-4}\binom{n-4}{\lambda}\binom{n-4}{2\nu-4-\lambda}\left\{C_\lambda C_{2\nu-\lambda} - 4C_{\lambda+1}C_{2\nu-\lambda-1} + 3C_{\lambda+2}C_{2\nu-\lambda-2}\right\}.}
+In jedem Gliede dieser Relation ist die Summe der Indices der
+Coefficienten gleich $2\nu$. Wenn daher der erste Factor eines jeden
+Gliedes einen Index besitzt, der gr\"osser ist als $\nu$, so enth\"alt
+nothwendig der andere Factor $C$ einen Index $< \nu$; diese Glieder
+verschwinden also wegen der Bedingungen (B) und es bleiben nur die
+Glieder $C_\nu^2$ \"ubrig. Solche Glieder treten aber in einer
+Relation nur drei auf, n\"amlich nur, wenn $\lambda = \nu$, dann wird
+der erste Term der Klammer $C_\nu^2$, ferner wenn $\lambda = \nu-1$,
+wobei der zweite, und endlich, wenn $\lambda = \nu-2$, wobei der
+dritte Term in $C_\nu^2$ \"ubergeht.
+
+Dabei ist f\"ur $\lambda = \nu$ der Zahlencoefficient von $C_\nu^2$
+dargestellt durch $\binom{n-4}{\nu}\binom{n-4}{\nu-4}$, und in den
+beiden andern F\"allen durch
+\[
+-4\binom{n-4}{\nu-1}\binom{n-4}{\nu-3},\quad\text{resp.}\quad 3\binom{n-4}{\nu-2}\binom{n-4}{\nu-2},
+\]
+%CONT>>
+
+
+% ===== pdf idx 221, printed 207.0 =====
+% !PRINTED 207
+\weberpage{207}
+%<<CONT
+so dass die Coefficientenrelation (II) \"ubergeht in:
+\[
+C_\nu^2\left\{\binom{n-4}{\nu}\binom{n-4}{\nu-4} - 4\binom{n-4}{\nu-1}\binom{n-4}{\nu-3} + 3\binom{n-4}{\nu-2}\binom{n-4}{\nu-2}\right\} = 0.
+\]
+Da wir nun angenommen hatten $C_\nu \gtrless 0$, so m\"usste der
+zweite Factor verschwinden. Das ist aber im Allgemeinen nicht der
+Fall, vielmehr besitzt derselbe den Werth
+\[
+\frac{6(n-3)(n-2)\binom{n-4}{\nu-4}\binom{n-4}{\nu-2}}{\nu(\nu-1)(\nu-2)(\nu-3)},
+\]
+wie wir sofort zeigen k\"onnen. Es ist n\"amlich:
+\[
+\begin{aligned}
+\binom{m}{\lambda}\binom{m}{\lambda+4} - \binom{m}{\lambda+1}\binom{m}{\lambda+3} &= \binom{m}{\lambda}\binom{m}{\lambda+3}\left\{\frac{m-\lambda-3}{\lambda+4} + 1 - \frac{m-\lambda}{\lambda+1} - 1\right\}\\
+&= \binom{m}{\lambda}\binom{m}{\lambda+3}(m+1)\left\{\frac{1}{\lambda+4} - \frac{1}{\lambda+1}\right\}\\
+&= \frac{-3(m+1)}{(\lambda+4)(\lambda+1)}\binom{m}{\lambda}\binom{m}{\lambda+3}.
+\end{aligned}
+\]
+Ferner ist:
+\[
+\begin{aligned}
+\binom{m}{\lambda+1}\binom{m}{\lambda+3} - \binom{m}{\lambda+2}^2 &= \binom{m}{\lambda}\binom{m}{\lambda+2}\left\{\frac{m-\lambda-2}{\lambda+3} + 1 - \frac{m-\lambda-1}{\lambda+2} - 1\right\}\\
+&= \frac{-(m+1)}{(\lambda+3)(\lambda+2)}\binom{m}{\lambda+1}\binom{m}{\lambda+2}.
+\end{aligned}
+\]
+Multipliciren wir diese Gleichung mit $-3$ und addiren sie zur
+vorhergehenden, dann erhalten wir:
+\[
+\begin{aligned}
+\binom{m}{\lambda}\binom{m}{\lambda+4} - 4\binom{m}{\lambda+1}\binom{m}{\lambda+3} + 3\binom{m}{\lambda+2}^2 &= 3(m+1)\left\{\frac{\binom{m}{\lambda+1}\binom{m}{\lambda+2}}{(\lambda+3)(\lambda+2)} - \frac{\binom{m}{\lambda}\binom{m}{\lambda+3}}{(\lambda+1)(\lambda+4)}\right\}\\
+&= \frac{3(m+1)\binom{m}{\lambda}\binom{m}{\lambda+2}}{(\lambda+3)(\lambda+1)}\left\{\frac{m-\lambda}{\lambda+2} + 1 - \frac{m-\lambda-2}{\lambda+4} - 1\right\}\\
+&= \frac{6(m+1)(m+2)\binom{m}{\lambda}\binom{m}{\lambda+2}}{(\lambda+1)(\lambda+2)(\lambda+3)(\lambda+4)}.
+\end{aligned}
+\]
+Ersetzen wir hierin $m$ durch $n-4$ und $\lambda+4$ durch $\nu$, so
+geht diese Gleichung \"uber in
+\weq{III}{\binom{n-4}{\nu-4}\binom{n-4}{\nu} - 4\binom{n-4}{\nu-3}\binom{n-4}{\nu-1} + 3\binom{n-4}{\nu-2}^2 = \frac{6(n-3)(n-2)\binom{n-4}{\nu-4}\binom{n-4}{\nu-2}}{\nu(\nu-1)(\nu-2)(\nu-3)},}
+was wir zu beweisen hatten. Die Gr\"osse rechts ist stets von null
+verschieden, sobald $n > 3$, wie wir vorausgesetzt, und $\nu$ solche
+Werthe
+%CONT>>
+
+
+% ===== pdf idx 222, printed 208.0 =====
+% !PRINTED 208
+\weberpage{208}
+%<<CONT
+hat, dass \"uberhaupt dieser Relation noch eine Bedeutung zukommt.
+Dies trifft nicht mehr ein, wenn $\nu = 2, 3, n-2, n-3$; und diese
+F\"alle sind noch speciell zu untersuchen.
+
+Im Allgemeinen verschwindet der Zahlencoefficient von $C_\nu^2$
+nicht, folglich muss $C_\nu$ selbst verschwinden.
+
+187. \textit{Untersuchung dieser Grenzf\"alle.} Besitzt $\nu$ den
+Werth 2, dann kann wegen der figurirten Zahlen in der Relation
+\weq{I}{0 = \sum_{\lambda=0}^{\lambda=2\nu-4}\binom{n-4}{\lambda}\binom{n-4}{2\nu-4-\lambda}\left\{C_\lambda C_{2\nu-\lambda} - 4C_{\lambda+1}C_{2\nu-\lambda-1} + 3C_{\lambda+2}C_{2\nu-\lambda-2}\right\}}
+die Gr\"osse $\lambda$ den Werth 0 nicht \"ubersteigen. Die Relation
+geht also, weil nach Voraussetzung $C_0 = C_1 = C_{\nu-1} = 0$,
+\"uber in
+\[
+0 = 3\binom{n-4}{0}\binom{n-4}{0}C_2^2 = 3C_2^2,
+\]
+folglich:
+\[
+C_2 = 0.
+\]
+Besitzt $\nu$ den Werth 3, so kann $\lambda$ die Werthe 0, 1, 2
+annehmen. In der Relation verschwinden dann, weil nach Voraussetzung
+$C_0 = C_1 = C_2 = C_{\nu-1} = 0$ alle Glieder bis auf die Glieder
+$C_3^2$, deren eines f\"ur $\lambda = 1$ aus $3C_{\lambda+2}C_{2\nu-\lambda-2}$
+und deren anderes aus $-4C_{\lambda+1}C_{2\nu-\lambda-1}$ f\"ur
+$\lambda = 2$ hervorgeht.
+
+Der Zahlencoefficient von $C_3^2$ wird also:
+\[
+3\binom{n-4}{1}\binom{n-4}{1} - 4\binom{n-4}{2}\binom{n-4}{0} = -3(n-4)(n-2).
+\]
+Dieser Zahlencoefficient kann in der That verschwinden, wenn $n = 4$,
+oder $n = 2$ ist. Im ersten Falle ist aber der Coefficient $C_3$
+bereits der vorletzte Coefficient $C_{n-1}$, von dem wir \"uberhaupt
+nicht behauptet haben, dass er verschwinden muss, und im zweiten
+Falle existirt kein Coefficient $C_3$ mehr.
+
+Besitzt $\nu$ den Werth $n-3$, so geht f\"ur diesen Fall die Relation
+(I) \"uber in
+\[
+0 = \sum \binom{n-4}{\lambda}\binom{n-4}{2n-10-\lambda}\left\{C_\lambda C_{2n-6-\lambda} - 4C_{\lambda+1}C_{2n-7-\lambda} + 3C_{\lambda+2}C_{2n-8-\lambda}\right\}.
+\]
+Hierin muss $n-4 \geqq \lambda \geqq n-6$ sein, gem\"ass der beiden
+figurirten Zahlen $\binom{n-4}{\lambda}$ resp.
+$\binom{n-4}{2n-10-\lambda}$. Die Gr\"osse $\lambda$ kann also nur
+die Werthe $n-4$, $n-5$, $n-6$ annehmen, und da nach Voraussetzung
+alle Coefficienten von $C_{\nu-1} = C_{n-4}$ incl. abw\"arts
+verschwinden, so reducirt sich die Relation auf die beiden Glieder
+\[
+-4\binom{n-4}{n-4}\binom{n-4}{n-6}C_{n-8}^2 + 3\binom{n-4}{n-5}\binom{n-4}{n-5}C_{n-3}^2 = 0,
+\]
+oder, was dasselbe ist, auf:
+\[
+\left\{-4\binom{n-4}{2} + 3\binom{n-4}{1}^2\right\}C_{n-3}^2 = 0.
+\]
+
+
+% ===== pdf idx 223, printed 209.0 =====
+% !PRINTED 209
+\weberpage{209}
+Der Coefficient von $C^2_{n-3}$ verschwindet aber nur für $n=4$ oder
+$n=2$, wie wir soeben gesehen haben. Im ersten Falle ist aber
+ohnehin auch $C_{n-3}=C_1$ nach Voraussetzung null, und im zweiten
+Falle existirt $C_{n-3}$ überhaupt nicht.
+
+Besitzt endlich $\nu$ den Werth $n-2$, so kann wegen der figurirten
+Zahlen in der Relation:
+\[
+0=\sum\binom{n-4}{\lambda}\binom{n-4}{2n-8-\lambda}\left\{C_\lambda C_{2n-4-\lambda}-4C_{\lambda+1}C_{2n-5+\lambda}+3C_{\lambda+2}C_{2n-6-\lambda}\right\}
+\]
+die Grösse $\lambda$ von $n-4$ nicht verschieden sein; und da alle Coefficienten
+von $C_{\nu-1}=C_{n-3}$ incl. abwärts verschwinden, so reducirt sich diese
+Relation auf
+\[
+3\binom{n-4}{n-4}\binom{n-4}{n-4}C_{n-2}^2=3C_{n-2}^2=0,
+\]
+d. h.
+\[
+C_{n-2}=0.
+\]
+Es muss also auch dieser Coefficient nach unsern Voraussetzungen
+verschwinden, während $C_{n-1}$ und $C_n$ von null verschieden sein
+können. Ist dies aber der Fall, so reducirt sich $f$ auf
+\[
+f=x_2^{n-1}(C_{n-1}x_1+C_nx_2)=\xi^{n-1}\eta;
+\]
+$f$ ist also dann eine der selbstverständlichen Formen.
+
+188.\ \textit{Formen $f$ ohne mehrfache Wurzeln.} Wir sahen soeben, dass
+keine Form $f$ mit mehrfachen Wurzeln existirt, abgesehen von den
+selbstverständlichen Formen, welche der Bedingung $(f,f)^4=0$ genügen
+. Es erübrigt also noch, die Formen mit einfachen Wurzeln zu
+untersuchen. Hiebei setzen wir $f$ in einer Normalform voraus, in
+welcher
+\weq{1}{C_0=0,\quad C_1=1,\quad C_2=0,}
+was unter Adjunction einer Wurzel von $f=0$ immer zu erreichen
+möglich ist, ohne der Allgemeinheit der Form Eintrag zu thun. Es
+lässt sich alsdann zeigen:
+
+\glqq Ist der Grad $n$ der Form $f$ von 4, 6 oder 12 verschieden,
+so verschwindet, sobald $(f,f)^4=0$ ist, unter der Voraussetzung
+ (1) nicht nur $C_2$, sondern auch $C_3, C_4\cdots C_n$, d. h. die
+Form $f$ ist eine der selbstverständlichen Formen $f=x^{n-1}y$.\grqq{}
+
+Zum Beweise zeigen wir wiederum, dass, wenn alle Coefficienten
+$C_3, C_4, \ldots C_{\nu-1}, \nu>1$, verschwinden, auch der Coefficient $C_\nu$ verschwinden
+ muss. Wir haben nur zu sorgen, dass in der allgemeinen
+Coefficientenrelation die Summe der Indices jedes Gliedes gleich
+$\nu+1$ ist, damit stets ein Coefficient $C_i, i<\nu$, mit einem Coefficienten
+$C_k, k>\nu$, verbunden auftritt, abgesehen von den Gliedern $C_\nu\cdot C_1$.
+
+
+% ===== pdf idx 224, printed 210.0 =====
+% !PRINTED 210
+\weberpage{210}
+Während alsdann die ersten Glieder nach Voraussetzung verschwinden
+müssen, werden zunächst die Grössen $C_\nu C_1 \gtrless 0$ sein, so dass, wenn
+gleichwohl die Relation $(f,f)^4=0$ bestehen soll, der Zahlencoefficient
+von $C_\nu C_1$ nicht von null verschieden sein kann. Damit nun aber die
+Summe der Indices gleich $\nu+1$ sei, setzen wir in der allgemeinen
+Relation $\varrho=\nu-3$; sie geht dann über in
+\[
+0=\sum\binom{n-4}{\nu-3-\lambda}\binom{n-4}{\lambda}\left\{C_\lambda C_{\nu+1-\lambda}-4C_{\lambda+1}C_{\nu-\lambda}+3C_{\lambda+2}C_{\nu-1-\lambda}\right\}
+\]
+und reducirt sich gemäss den vorausgegangenen Bemerkungen auf
+\weq{2}{\binom{n-4}{\nu-4}\binom{n-4}{1}C_1C_\nu-4\binom{n-4}{\nu-3}\binom{n-4}{0}C_1C_\nu=0,}
+welche zwei Glieder aus ihr für $\lambda=1$ und $\lambda=0$ entstehen.
+
+Die Gleichung (2) geht aber wegen $C_1=1$ über in
+\[
+\binom{n-4}{\nu-4}\left\{n-4-4\cdot\frac{n-\nu}{\nu-3}\right\}C_\nu=0,
+\]
+oder
+\[
+\frac{n}{\nu-3}\cdot\binom{n-4}{\nu-4}\left\{\nu-7+\frac{12}{n}\right\}C_\nu=0.
+\]
+Verschwindet nun der Zahlencoefficient von $C_\nu$ nicht, so muss
+$C_\nu$ verschwinden. Dieser Zahlencoefficient kann aber nur dann gleich
+null werden, wenn $n$ ein Theiler von 12 ist, also wenn $n$ gleich 4,
+6 oder 12 ist. Es können also ausser den selbstverständlichen Formen
+mit mehrfachen Wurzeln in der That Formen vierten, sechsten und
+zwölften Grades auftreten, welche der Bedingung $(f,f)^4=0$ genügen.
+Wir wollen daher im Folgenden diese speciellen Fälle $n=4, 6, 12$
+noch eingehender untersuchen.
+
+189.\ \textit{Die Formen des Tetraeders und Octaeders.} Wir setzen hier
+wie im Folgenden voraus, dass die Form vierten Grades $f$, welche
+der Bedingung
+\[
+(f,f)^4=0
+\]
+genügt, wiederum in einer Normalform gegeben sei, in welcher
+\[
+C_0=0,\quad C_1=1,\quad C_2=0
+\]
+ist. Dann liefert die Bedingung $(f,f)^4=i=0$ unmittelbar
+\[
+C_0C_4-4C_1C_3+3C_2{}^2=0,
+\]
+oder
+\[
+-4C_1C_3=0,
+\]
+also
+\[
+C_3=0.
+\]
+Die betreffende Form $f$ hat daher die Gestalt:
+\weq{1}{f=y(4x^3+C_4y^3).}
+
+
+% ===== pdf idx 225, printed 211.0 =====
+% !PRINTED 211
+\weberpage{211}
+Ich möchte hiebei erwähnen, dass man gewöhnlich die Tetraederform
+ in folgender Normalform
+\[
+f=x^4+6mx^2y^2+y^4
+\]
+darstellt (vergl. Nr. 180), wobei $m$ wegen $i=(f,f)^4=0$ vermöge
+Gleichung (4) Nr. 180 den Werth
+\[
+m=\frac{1}{3}\sqrt{-3}
+\]
+besitzt. Es ist dann
+\weq{2}{f=x^4\pm 2\sqrt{-3}\cdot x^2y^2+y^4.}
+Die Form (1) geht in die Form (2) über durch eine Transformation,
+deren Modul $\varDelta$ der Gleichung
+\[
+\varDelta^2=-\frac{\varrho}{2m},
+\]
+genügt, wobei $\varrho=\varepsilon^k\sqrt[3]{-\frac{1}{3}j}=\varepsilon^k\sqrt[3]{-2C_4}$, und $\varepsilon^k$ eine dritte Wurzel
+der Einheit ist. (Vergl. auch Nr. 181.)
+
+\textit{Anmerkung.} Das Product der beiden Formen
+\[
+f=x^4\pm 2\sqrt{-3}\cdot x^2y^2+y^4
+\]
+liefert die Würfelform $x^8+14x^4y^4+y^8$. (Vergl. Nr. 141.)
+
+Um die Coefficienten der Form sechsten Grades, welche der Bedingung
+ $(f,f)^4=0$ genügt, zu berechnen, gehen wir wieder zurück auf
+die allgemeine Coefficientenrelation, die sich für $n=6$ in der Form
+\[
+0=\sum\binom{2}{\varrho-\lambda}\binom{2}{\lambda}\left\{C_\lambda C_{\varrho+4-\lambda}-4C_{\lambda+1}C_{\varrho+3-\lambda}+3C_{\lambda+2}C_{\varrho+2-\lambda}\right\}
+\]
+darstellt. Wir erhalten aus ihr vier Relationen, für $\varrho=0,1,2,3$,
+wobei $\lambda$ entsprechend die Werthe $0; 0,1; 0,1,2; 1,2$ annehmen
+kann. Es ergiebt sich, wenn wiederum $C_0=0$, $C_1=1$, $C_2=0$ gesetzt
+ wird:
+\weq{1}{C_0C_4-4C_1C_3+3C_2{}^2=0,}
+also $C_3=0;$
+\weq{2}{2\{C_0C_5-4C_1C_4+3C_2C_3\}+2\{C_1C_4-4C_2C_3+3C_3C_2\}=0,}
+also $(-2\cdot4+2)C_1C_4=0,$
+
+d. h. $C_4=0;$
+\weq{3}{\{C_0C_6-4C_1C_5+3C_2C_4\}+4\{C_1C_5-4C_2C_4+3C_3{}^2\}+\{C_2C_4-4C_3{}^2+3C_4C_2\}=0,}
+oder $(-4+4)C_1C_5=0,$
+
+d. h. $C_5$ braucht nicht zu verschwinden;
+\weq{4}{2\{C_1C_6-4C_2C_5+3C_3C_4\}+2\{C_2C_5-4C_3C_4+3C_4C_3\}=0,}
+d. h. $C_6=0.$
+
+
+% ===== pdf idx 226, printed 212.0 =====
+% !PRINTED 212
+\weberpage{212}
+Also hat das Octaeder die Form:
+\[
+xy(x^4+C_5y^4)=f,
+\]
+oder für $y_1=\sqrt[4]{C_5}\,y$
+\[
+f=\frac{1}{\varrho}xy_1(x^4+y_1{}^4),
+\]
+wo $\varrho$ eine Constante ist. (Vergl. auch Nr. 138.)
+
+190.\ \textit{Die Ikosaederform.} In derselben Weise wie vorhin, berechnet
+ man der Reihe nach die Coefficienten der Form $f=a_x^{12}$, welche
+der Bedingung $(f,f)^4=0$ genügt. Die allgemeine Coefficientenrelation
+ wird hiebei
+\[
+0=\sum\binom{8}{\lambda}\binom{8}{\varrho-\lambda}\left\{C_\lambda C_{\varrho+4-\lambda}-4C_{\lambda+1}C_{\varrho+3-\lambda}+3C_{\lambda+2}C_{\varrho+2-\lambda}\right\}
+\]
+und es genügt, wenn wir hieraus die zehn Relationen bilden, die sich
+für $\varrho=0$ bis $\varrho=9$ ergeben. Unter der Voraussetzung $C_0=0$,
+$C_1=1$, $C_2=0$ findet man alsdann:
+
+Für $\varrho=0$ ist der Coefficient von $C_1C_3$ die Zahl $-4$, also $C_3=0$.
+
+\begin{flushleft}
+\text{\textquotedbl}\quad $\varrho=1$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_4$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $-24$, \quad \text{\textquotedbl}\quad $C_4=0$\\
+\text{\textquotedbl}\quad $\varrho=2$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_5$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $-48$, \quad \text{\textquotedbl}\quad $C_5=0$\\
+\text{\textquotedbl}\quad $\varrho=3$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_6$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $0$, \quad \text{\textquotedbl}\quad $C_6\lesseqqgtr 0$ % checked against the GDZ scan (27 Oct 2026): one printed sign, < above a single double bar above > (\lesseqqgtr), not \leqq over \geqq
+\\
+\text{\textquotedbl}\quad $\varrho=4$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_7$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $168$, \quad \text{\textquotedbl}\quad $C_7=0$\\
+\text{\textquotedbl}\quad $\varrho=5$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_8$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $336$, \quad \text{\textquotedbl}\quad $C_8=0$\\
+\text{\textquotedbl}\quad $\varrho=6$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_9$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $344$, \quad \text{\textquotedbl}\quad $C_9=0$\\
+\text{\textquotedbl}\quad $\varrho=7$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad\quad\text{\textquotedbl}\quad\text{\textquotedbl}\quad $C_1C_{10}$ \quad \text{\textquotedbl}\quad\text{\textquotedbl}\quad $192$, \quad \text{\textquotedbl}\quad $C_{10}=0$.
+\end{flushleft}
+
+Für $\varrho=8$ ergiebt sich die Relation:
+\[
+\begin{aligned}
+(8\cdot8-4)C_1C_{11}+\{28^2-4\cdot56^2+3\cdot70^2\}C_6{}^2&=0\\
+&=60\{C_1C_{11}+49C_6{}^2\}=0,
+\end{aligned}
+\]
+oder
+\[
+C_{11}+49C_6{}^2=0.
+\]
+Der Coefficient $C_{11}$ ist also linear von $C_6{}^2$ abhängig. Für $\varrho=9$
+erhält man endlich:
+\[
+8C_1C_{12}=0,\quad\text{also}\quad C_{12}=0.
+\]
+Die Ikosaederform ist demnach dargestellt durch:
+\[
+f=12C_1x^{11}y+12\cdot11\cdot7C_6{}^2x^6y^6-49\cdot12C_6{}^2xy^{11},
+\]
+oder wegen $C_1=1$
+\[
+\frac{1}{12}f=xy(x^{10}+11\cdot7C_6x^5y^5-49C_6{}^2xy^{10}).
+\]
+Setzen wir hierin noch $y_1=\sqrt[5]{7C_5}\cdot y$, so erhalten wir die be-
+%CONT>>
+
+
+% ===== pdf idx 227, printed 213.0 =====
+% !PRINTED 213
+\weberpage{213}
+%<<CONT
+\[
+\frac{\sqrt[5]{7C_0}}{12}\cdot f = xy_1(x^{10}+11\,x^5y_1^{5}-y_1^{10}).
+\]
+
+Vergleiche auch Nr. 142, Anmerkung.
+
+191. \textit{Allgemeine Betrachtungen über die regulären Körper.} Wir haben somit gesehen, dass die Formen
+\[
+\begin{aligned}
+f &= xy(x^{10}+11\,x^5y^5-y^{10})\\
+f &= xy(x^4+y^4)\\
+f &= x^4 \pm 2\,i\sqrt{3}\,x^2y^2+y^4
+\end{aligned}
+\]
+und die daraus durch lineare Transformation hervorgehenden Formen die einzigen sind, für welche $(f,f)^4$ identisch verschwindet. Das Formensystem dieser Formen reducirt sich nach den in \S~20 zu entwickelnden Gesetzen direct auf die drei Covarianten $f$, $(f,f)^2=H$, $((f,f)^2,f)=T$ und eine Invariante $A$. Da nun $T$ eine schiefe Covariante, so muss, weil sich das Quadrat derselben stets durch gerade Formen ausdrücken lässt, und aus Gründen der Homogeneität in den Variabeln für das Ikosaeder eine lineare Relation zwischen $f^5$, $H^3$, $T^2$, für das Octaeder eine ebensolche zwischen $f^4$, $H^3$, $T^2$, und für das Tetraeder eine solche zwischen $f^3$, $H^3$, $T^2$ bestehen. In allen drei Gleichungen treten natürlich noch gewisse Potenzen der Invariante $A$ auf, damit auch die Homogeneität in den Coefficienten gewahrt bleibt\footnote{Zu den regulären Körpern gelangt man auch, wenn man diese Relationen als Definitionsgleichungen auffasst. Halphen hat gezeigt (siehe \glqq Mémoire sur la réduction des équations différentielles linéaires aux formes intégrables\grqq{}, Paris 1883): Die Formen, welche der Gleichung
+\[
+c_1f^{\lambda}+c_2H^{\nu}+c_3T^{\mu}=0
+\]
+genügen, sind ausser den allgemeinen cubischen und biquadratischen Formen noch die regulären Körper und die aus diesen Formen durch die Substitution $x_1=\varphi(y)$, $x_2=\psi(y)$ hervorgehenden Formen. Er nennt die cubischen, biquadratischen und regulären Formen zum Unterschied von den übrigen \glqq primitive Formen\grqq{}. Diese primitiven Formen, sowie die aus ihnen durch die erwähnte Transformation hervorgehenden genügen auch den Gleichungen:
+\weq{I}{(f,T)^2=0,\quad (T,H)^2=0,\quad (H,f)^2=0}
+\weq{II}{(f,T)=\varrho_i H^{\lambda},\quad (T,H)=\varrho_2\cdot f^{\mu},\quad (H,f)=\varrho_3\cdot T^{\nu}.} % [sic] \textquotedbl{}ρ_i\textquotedbl{} so gedruckt, vermutlich für ρ_1 (Inkonsistenz mit ρ_2, ρ_3)
+}.
+
+Denken wir uns nun jede der Relationen mit $H^3$ dividirt, so sind
+\[
+\frac{Cf^5}{H^3},\quad \frac{C_1f^4}{H^3},\quad \frac{C_2f^3}{H^3}
+\]
+Formen nullten Grades in den Variabeln, und wenn $C$, $C_1$, $C_2$ geeignete Potenzen der betreffenden Invarianten, auch nullten Grades in den Coefficienten. Man nennt diese Formen von der Dimension null in den Variabeln und Coefficienten die Parameter des Ikosaeders, resp.
+%CONT>>
+
+
+% ===== pdf idx 228, printed 214.0 =====
+% !PRINTED 214
+\weberpage{214}
+%<<CONT
+Octaeders oder Tetraeders und bezeichnet sie mit $\varrho$. Man könnte ebenso den andern Quotienten $\dfrac{T^2}{H^3}$ als Parameter einführen; denn vermöge der linearen Relation ist der eine bekannt, wenn der andere Quotient gegeben ist.
+
+Der Parameter $\varrho$ wird jedesmal null, wenn $f$ verschwindet; denn $H$ und $f$ können im Allgemeinen keinen Factor gemeinschaftlich haben, da ja sowohl die Discriminante von $f$ als auch die Resultante von $H$ und $f$ eine Potenz der einzigen im System nicht verschwindenden Invariante $A$ sein müssen.
+
+Wenn es also gelingt, diese Functionen
+\[
+\frac{Cf^5}{H^3}=\varrho,\quad \frac{C_1f^4}{H^3}=\varrho,\quad \frac{C_2f^3}{H^3}=\varrho
+\]
+umzukehren, also $x=\dfrac{x_1}{x_2}$ in Function von $\varrho$ darzustellen, etwa
+\[
+x=\frac{x_1}{x_2}=\vartheta(\varrho),
+\]
+so ist damit auch unmittelbar die Auflösung des Ikosaeders, Octaeders und Tetraeders gegeben. Die Functionen $\vartheta(\varrho)$ nennt Klein die Irrationalitäten des Ikosaeders, Octaeders und Tetraeders. Die Berechnung der Ikosaederirrationalität verlangt die Auflösung einer Gleichung sechzigsten Grades, und ihre Darstellung ist nur auf transcendentem Wege möglich. Dagegen können die beiden andern durch Wurzelziehen hergestellt werden; wir wollen uns daher mit der Berechnung derselben nun beschäftigen und zwar einmal für die Normalformen des Octaeders und Tetraeders, dann aber auch für die allgemeinen Formen sechsten beziehungsweise achten Grades.
+
+192. \textit{Berechnung der Octaederirrationalität für die Normalform.} Die Covariante $H$ der Form
+\[
+f=xy(x^4+y^4)
+\]
+besitzt den Werth
+\[
+H=x^8+14\,x^4y^4+y^8. \quad \text{(Vgl. Nr. 189, Anm.)}
+\]
+Der Octaederparameter ist also, wenn wir die Invariante $C_1$ in die Grösse $\varrho$ hereinziehen, dargestellt durch
+\[
+\frac{x^4y^4(x^4+y^4)^4}{(x^8+14\,x^4y^4+y^8)^3}=\varrho.
+\]
+Die Grösse $\varrho=\dfrac{x}{y}$ genügt also einer Gleichung vierundzwanzigsten Grades. Um sie zu lösen, dividiren wir zunächst Nenner und Zähler der linken Seite mit $x^{12}y^{12}$ und erhalten, wenn wir im Zähler noch quadriren:
+\[
+\frac{\left(\dfrac{x^4}{y^4}+2+\dfrac{y^4}{x^4}\right)^2}{\left(\dfrac{x^4}{y^4}+14+\dfrac{y^4}{x^4}\right)^3}=\varrho,
+\]
+%CONT>>
+
+
+% ===== pdf idx 229, printed 215.0 =====
+% !PRINTED 215
+\weberpage{215}
+%<<CONT
+oder, wenn wir nun
+\weq{I}{\frac{x^4}{y^4}+\frac{y^4}{x^4}=\eta-14}
+setzen:
+\weq{II}{(\eta-12)^2=\varrho\cdot\eta^3.}
+Hieraus lässt sich $\eta$ berechnen. Die Gleichung (I) liefert alsdann eine quadratische Gleichung für $\dfrac{x^4}{y^4}=\xi^4$, so dass sich endlich $\xi$ in der Form darstellt
+\weq{III}{\xi=\varepsilon^k\sqrt[4]{\frac{\eta_i-14\pm\sqrt{\eta_i^{2}-28\eta_i+192}}{2}}=\vartheta(\varrho),}
+wobei $\varepsilon^k$ eine der vier Wurzeln $\pm\sqrt{\pm i}$ und $\eta_i$ eine der drei Wurzeln von (II) ist.
+
+193. \textit{Berechnung der Tetraederirrationalität für die Normalform.} Wir bezeichnen das Tetraeder
+\[
+f=x^4\pm 2\,i\sqrt{3}\,x^2y^2+y^4
+\]
+mit $u$, wenn das obere Vorzeichen, mit $v$, wenn das untere Vorzeichen gemeint ist. Die Hesse'sche Form $H$ von $u$ fällt dann mit $v$, und umgekehrt die Hesse'sche Form $H$ von $v$ mit $u$ bis auf eine Constante zusammen. Die Gleichung für die Tetraederirrationalität ist also dargestellt durch
+\[
+\frac{u^3}{v^3}=\varrho,
+\]
+oder
+\[
+\frac{u}{v}=\frac{(x^4+2\,i\sqrt{3}\,x^2y^2+y^4)}{(x^4-2\,i\sqrt{3}\,x^2y^2+y^4)}=\sqrt[3]{\varrho}.
+\]
+
+Hieraus folgt, wenn $\varepsilon$ die dritte Wurzel der Einheit bezeichnet, nach bekannten Proportionsgesetzen:
+\weq{1}{\frac{\varepsilon u-\varepsilon^2v}{\varepsilon^2u-\varepsilon v}=\frac{\varepsilon\sqrt[3]{\varrho}-\varepsilon^2}{\varepsilon^2\sqrt[3]{\varrho}-\varepsilon}.}
+Weil aber
+\[
+\varepsilon-\varepsilon^2=i\sqrt{3},
+\]
+so geht die linke Seite der Gleichung (1) über in
+\[
+-\left(\frac{x^2+y^2}{x^2-y^2}\right)^2.
+\]
+Demnach erhält man:
+\[
+\frac{x^2+y^2}{x^2-y^2}=\pm\sqrt{-\frac{\varepsilon\sqrt[3]{\varrho}-\varepsilon^2}{\varepsilon^2\sqrt[3]{\varrho}-\varepsilon}},
+\]
+oder nach bekannten Methoden
+\[
+\frac{x^2}{y^2}=\frac{1\pm\sqrt{-\dfrac{\varepsilon\sqrt[3]{\varrho}-\varepsilon^2}{\varepsilon^2\sqrt[3]{\varrho}-\varepsilon}}}{-1\pm\sqrt{-\dfrac{\varepsilon\sqrt[3]{\varrho}-\varepsilon^2}{\varepsilon^2\sqrt[3]{\varrho}-\varepsilon}}}.
+\]
+
+
+% ===== pdf idx 230, printed 216.0 =====
+% !PRINTED 216
+\weberpage{216}
+Die Tetraederirrationalität ist also schliesslich dargestellt durch:
+\[
+\xi=\frac{x}{y}=\pm\sqrt{\frac{\pm\sqrt{\varepsilon^2\sqrt[3]{\varrho}-\varepsilon}\pm\sqrt{-\varepsilon\sqrt[3]{\varrho}+\varepsilon^2}}{\pm\sqrt{-\varepsilon\sqrt[3]{\varrho}+\varepsilon^2}\mp\sqrt{\varepsilon^2\sqrt[3]{\varrho}-\varepsilon}}}=\vartheta(\varrho). % checked against the GDZ scan (27 Oct 2026): signs as printed (numerator \pm, \pm; denominator \pm, \mp); the outer radical is a plain square root without an index
+\]
+
+194. \textit{Auflösung der allgemeinen Octaedergleichung.} Es sei nun eine Form
+\[
+f=\bar a_0x_1^{6}+6\,\bar a_1x_1^{5}x_2+\cdots \bar a_6x_2^{6}
+\]
+gegeben, welche die Eigenschaft besitzt, dass
+\[
+(f,f)^4=0
+\]
+ist. Wir bilden den zugehörigen Octaederparameter
+\[
+\frac{Cf^4}{H^3}=\varphi(x)=\varrho\cdot
+\]
+Die gebrochene Function $\varphi(x)$ ist vom nullten Grade in $x$, und wenn $C=(f,f)^6$, auch vom nullten Grade in den Coefficienten. Bei einer linearen Transformation dieses Parameters hebt sich, da im Nenner und Zähler gleichviel Klammerfactoren sich befinden, die Transformationsdeterminante weg.
+
+Denkt man sich daher die Transformation von $f$ in die Normalform ausgeführt, wobei $f(x)$ in $f'(y)$, $H(x)$ in $H'(y)$, $\varphi(x)$ in $\varphi'(y)$ und $C$ in $C'$ übergeht, so besteht direct die Gleichung
+\weq{1}{\varphi(x)=\varphi'(y)=\varrho.}
+Die Grösse $y$ ist die Octaederirrationalität, $y=\vartheta(\varrho)$, oder auch
+\weq{2}{y=\vartheta(\varphi(x)).}
+Ersetzen wir nun die Variable $x$ durch einen festen numerischen Werth $\xi$, dem der Werth $\eta$ von $y$ entsprechen möge, so geht diese Gleichung über in:
+\weq{3}{\eta=\vartheta(\varphi(\xi)).}
+Ist insbesondere $\alpha$ eine Wurzel der Gleichung $\varphi(\xi)=\varrho=0$, so ist der dem $\alpha$ entsprechende Werth von $y$ dargestellt durch
+\weq{4}{\beta=\vartheta(\varphi(\alpha)).}
+Da nun $\varphi'(y)$ durch lineare Transformation aus $\varphi(x)$ hervorgegangen ist, so entspricht demnach dem Werthe
+\[
+\xi+\lambda\alpha \quad \text{der Werth} \quad \eta+\lambda\beta
+\]
+und die Gleichung (1) geht durch Substitution dieser entsprechenden Werthe über in
+\weq{5}{\varphi(\xi+\lambda\alpha)=\varphi'(\eta+\lambda\beta)}
+oder
+\[
+\frac{C\cdot f^4(\xi+\lambda\alpha)}{H^3(\xi+\lambda\alpha)}=\frac{C'\cdot f'^4(\eta+\lambda\beta)}{H'^3(\eta+\lambda\beta)}.
+\]
+
+
+% ===== pdf idx 231, printed 217.0 =====
+% !PRINTED 217
+\weberpage{217}
+
+Es müssen demnach Zähler und Nenner beiderseits einander proportional sein, d.\,h. es müssen die Gleichungen bestehen:
+
+\[
+\begin{aligned}
+C\cdot f^4(\xi+\lambda\alpha) &= m\cdot C'\cdot f'(\eta+\lambda\beta)\\
+H^3(\xi+\lambda\alpha) &= m\cdot H'^3(\eta+\lambda\beta).
+\end{aligned}
+\]
+Hieraus folgt durch Vergleichung der Co\"efficienten von $\lambda^1$
+
+\[
+\begin{aligned}
+C\cdot f^3(\xi)\cdot f_\alpha(\xi) &= m\cdot C'\cdot f'^3(\eta)\cdot f'_\beta(\eta)\\
+H^2(\xi)H_\alpha(\xi) &= m\cdot H'^2(\eta)\cdot H'_\beta(\eta).
+\end{aligned}
+\]
+Dividirt man die beiden Gleichungen, so kommt:
+
+\weq{6}{C\cdot f^3(\xi)\cdot f(\xi)_\alpha\cdot H'^2(\eta) H'_\beta(\eta) - C'\cdot f'^3(\eta)f'_\beta(\eta)\cdot H^2(\xi) H_\alpha(\xi) = 0.}
+
+Hierin ist $\xi$ eine Constante, etwa $\xi_1=1$, $\xi_2=0$. Berechnet man zu diesem Werthe von $\xi$ die Grösse $\eta$ vermöge $\eta=\vartheta(\varphi(\xi))$, so liefert, weil auch $\beta=\vartheta(\varphi(\alpha))=\vartheta(0)$ eine völlig bekannte Grösse, die Relation (6) eine lineare Bestimmungsgleichung für die Wurzel $\alpha$ der Gleichung $\varphi(x)=0$, deren Wurzeln mit den Wurzeln von $f(x)=0$ übereinstimmen.
+
+Es ist also auf diese Weise möglich, die Wurzeln der allgemeinen Octaedergleichung rational durch die Wurzeln der Normalform und bekannte Grössen darzustellen.
+
+\textit{Anmerkung.} Nach Art der Gleichung (6) lassen sich auch die Wurzeln der allgemeinen Ikosaederform durch die Wurzeln der Normalform und bekannte Grössen ausdrücken.
+
+195. \textit{Auflösung der Gleichung vierten Grades.} Ist die gegebene Gleichung vierten Grades $f=0$ von vornherein eine Tetraedergleichung, d.\,h. genügt $f$ der Bedingung $(f,f)^4=(ab)^4=i=0$, so kann man genau das nämliche Verfahren zur Auflösung derselben einschlagen, das wir vorhin bei der Octaedergleichung verfolgten.
+
+Man kann indess auch die Auflösung einer beliebigen Gleichung vierten Grades
+
+\[
+f = a_x^4 = 0
+\]
+mit Hilfe der Tetraederirrationalität bewerkstelligen. Der Gedanke, der uns hierbei leitet, entspringt aus der Thatsache, dass man, von einer Originalform $f$ ausgehend, stets zwei Tetraederformen sich verschaffen kann, nämlich
+
+\[
+F = \Delta+\lambda_1 f,\quad F_1=\Delta+\lambda_2 f,
+\]
+in denen $\Delta$ das bekannte Symbol für die Hesse'sche Covariante und
+%CONT>>
+
+
+% ===== pdf idx 232, printed 218.0 =====
+% !PRINTED 218
+\weberpage{218}
+%<<CONT
+$\lambda_1$ und $\lambda_2$ die Wurzeln der Gleichung\footnote{Man bemerke, dass die Discriminante dieser Gleichung auch die Discriminante der biquadratischen Form $f=a_x^4$ selbst ist. (Vgl.\ Nr.\ 173.)}
+
+\weq{1}{i_{\Delta+\lambda f} = \frac{i^2}{6} + 2\lambda j + i\lambda^2 = 0}
+
+bedeuten.
+
+Da nun $F$ und $F_1$ Tetraederformen sind, so müssen sie sich durch lineare Transformation in die Formen $u = y_1^4 + 2\sqrt{-3}\cdot y_1^2y_2^2+y_2^4$ und $v=y_1^4-2\sqrt{-3}y_1^2y_2^2+y_2^4$ bringen lassen. Alsdann ist:
+
+\weq{2}{\Delta+\lambda_1 f = r\cdot u}
+
+\weq{3}{\Delta+\lambda_2 f = s\cdot v,}
+
+wobei $r$ und $s$ noch zu ermittelnde Constante sind. Zu ihrer Berechnung können wir unter anderm die Hesse'schen Formen von (2) und (3) benutzen. Wir erhalten:
+
+\[
+\begin{aligned}
+\Delta_{\Delta+\lambda_1 f} &= r^2\cdot(u,\,u)^2\\
+&= r^2\cdot\frac{48\sqrt{-3}}{72}\cdot v = r^2\cdot\frac{2\sqrt{-3}}{3}\cdot v.
+\end{aligned}
+\]
+Es ist aber nach Nr.\ 171
+
+\weq{4}{\Delta_{\Delta+\lambda_1 f} = \left(\lambda_1^2-\frac{i}{6}\right)\Delta+\left(\frac{j}{3}+\frac{i}{3}\lambda_1\right)\cdot f.}
+
+Demnach hat man:
+
+\[
+\left(\lambda_1^2-\frac{i}{6}\right)\left\{\Delta+\frac{1}{3}\cdot\frac{j+\lambda_1 i}{\lambda_1^2-\frac{i}{6}}f\right\} = \frac{2r^2\sqrt{-3}}{3}\cdot v.
+\]
+Diese Gleichung ist eine Identität; es muss also insbesondere
+
+\[
+\Delta+\frac{1}{3}\cdot\frac{j+\lambda_1 i}{\lambda_1^2-\frac{i}{6}}f = \Delta+\lambda_2 f
+\]
+und
+
+\weq{5}{\left(\lambda_1^2-\frac{i}{6}\right)s = \frac{2r^2\sqrt{-3}}{3}}
+
+sein, vermöge der Gleichung (3). Ersetzt man in (5) die Grösse $\frac{i}{6}$ durch $\lambda_1\lambda_2$, was nach Gleichung (1) erlaubt ist, so kommt:
+
+\[
+\lambda_1(\lambda_1-\lambda_2)s = r^2\cdot\frac{2}{3}\sqrt{-3}.
+\]
+Entsprechend ergiebt sich bei Bildung der Hesse'schen Form von Gleichung (3)
+
+\weq{6}{\lambda_2(\lambda_1-\lambda_2)r = s^2\cdot\frac{2}{3}\sqrt{-3}.}
+
+
+% ===== pdf idx 233, printed 219.0 =====
+% !PRINTED 219
+\weberpage{219}
+
+Aus diesen beiden letzten Gleichungen folgt durch Division:
+
+\[
+\frac{\lambda_1}{\lambda_2} = \frac{r^3}{s^3}
+\]
+und damit ist der Quotient $\frac{r}{s}$ bis auf eine dritte Wurzel der Einheit vollständig bestimmt.
+
+Behufs Auflösung der allgemeinen Gleichung vierten Grades verfahren wir nun ganz analog wie bei Auflösung der allgemeinen Octaedergleichung.
+
+Wir lösen zuerst die Tetraederform $\Delta+\lambda_1 f$, deren Hesse'sche Form durch $\lambda_1(\lambda_1-\lambda_2)\{\Delta+\lambda_2 f\}$ dargestellt ist. Es ist alsdann wie dort:
+
+\weq{7}{C\cdot\left(\frac{\Delta+\lambda_1 f}{\Delta+\lambda_2 f}\right)^3 = \varphi(x) = \varrho,}
+
+wobei nun $C = j_{\Delta+\lambda_1 f}:(\lambda_1-\lambda_2)\lambda_1$ ist. Wegen der Gleichungen (2) und (3) erhält man sonach auch:
+
+\[
+\frac{C\cdot r^3}{s^3}\cdot\frac{u^3(y)}{v^3(y)} = \varphi(y) = \varrho\,.
+\]
+Die Tetraederirrationalität ist
+
+\[
+y = \vartheta(\varrho) = \vartheta(\varphi(x))\,.
+\]
+Jedem Werth $\xi$ von $x$ entspricht ein Werth $\eta$ von $y$. Ist insbesondere $\alpha$ eine Wurzel der Gleichung $\varphi(x)=\varrho=0$, so entspricht ihr ein Werth
+
+\[
+\beta = \vartheta(\varphi(0))\,.
+\]
+Die lineare Gleichung zwischen $\alpha$ und $\beta$ erhält man wie früher, nur dass man hier einfacher die erste Polare von $\frac{u}{v}$ statt von $\frac{u^3}{v^3}$ nehmen kann. Sie geht wie früher wegen
+
+\[
+\left(\frac{\Delta+\lambda_1 f}{\Delta+\lambda_2 f}\right)^3 = \frac{r^3}{s^3}\cdot\frac{u^3}{v^3}
+\]
+aus der ersten Polare
+
+\[
+\left\{\frac{\Delta(\xi)+\lambda_1 f(\xi)}{\Delta(\xi)+\lambda_2(f\xi)}\right\}_\alpha = \varepsilon^\varkappa\sqrt[3]{\frac{\lambda_1}{\lambda_2}}\cdot\left\{\frac{u(\eta)}{v(\eta)}\right\}_\beta
+\]
+hervor, wobei $\varepsilon^\varkappa$ eine dritte Wurzel der Einheit ist. Die sich hieraus ergebende Wurzel $\alpha$ ist eine Wurzel der Gleichung $\Delta+\lambda_1 f=0$. Dagegen erhält man für $\varrho=C$, also $\beta=\vartheta(\varphi(C))$ die Wurzeln der Gleichung $f=0$; denn wenn $f$ verschwindet, geht (7) in die Relation
+
+\[
+C=\varrho
+\]
+über.
+
+
+% ===== pdf idx 234, printed 220.0 =====
+% !PRINTED 220
+\weberpage{220}
+
+Durch die eben entwickelte Methode für die Auflösung der Gleichung vierten Grades könnte man demnach, sobald man im Besitze von Tafeln für die Tetraederirrationalität
+
+\[
+y = \vartheta(\varrho)
+\]
+wäre, die Wurzeln jeder biquadratischen Gleichung durch zweimaliges Aufschlagen der Tafel und sonst rationales Rechnen ermitteln.
+
+% [divider: short centred horizontal rule at foot of page, marking end of subsection; nothing else printed below it]
+
+
+% ===== pdf idx 235, printed 221.0 =====

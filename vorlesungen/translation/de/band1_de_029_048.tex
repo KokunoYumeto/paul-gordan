@@ -1,0 +1,1342 @@
+% !PRINTED 29
+\weberpage{29}
+22. \textit{Wollen wir nun zwei Elemente $a_{ik}$ und $a_{rs}$ in die Diagonalreihe
+bringen,} und zwar $a_{ik}$ an die Stelle von $a_{11}$, $a_{rs}$ an die Stelle von
+$a_{22}$, so ist n\"othig, dass $i \geqq r$ und $k \geqq s$ ist, d.\,h. dass die beiden
+Elemente weder derselben Zeile noch Colonne angeh\"oren. Ist dies der Fall, so haben
+wir zun\"achst die $i^{te}$ Zeile mit der ersten Zeile und die $k^{te}$ Colonne mit
+der ersten Colonne, dann die $r^{te}$ Zeile mit der $2^{ten}$ Zeile und die $s^{te}$
+Colonne mit der $2^{ten}$ cyclisch zu vertauschen; die Elemente des \"ubrigen Theiles
+der Matrix behalten dabei ihre gegenseitige Lage m\"oglichst unge\"andert bei;
+insbesondere sind im Diagonalglied, in welchem nun $a_{ik}$ die erste und $a_{rs}$
+die zweite Stelle behauptet, die \"ubrigen Elemente von $a_{11}$ bis $a_{hh}$ gut
+geordnet. Ihm entspricht also die Substitution
+\[
+S = \begin{pmatrix} i\ r\ 1\ 2\ \dots\ h \\ k\ s\ 1\ 2\ \dots\ h \end{pmatrix}.
+\]
+
+Die Derangements der ersten Permutation setzen sich zusammen (nach Nr.\,3)
+\begin{enumerate}
+\item[1)] aus den von der Permutation $(ir)$ herr\"uhrenden,
+\item[2)] aus jenen, welche $i$ und $r$ mit $1\,2\,\dots\,h$ bilden, das sind
+\[
+i - 1 + r - 2.
+\]
+\end{enumerate}
+Ganz ebenso bestehen die Derangements der unteren Permutation
+\begin{enumerate}
+\item[1)] aus den von der Permutation $(ks)$ herr\"uhrenden,
+\item[2)] aus jenen, welche $k$ und $s$ mit $1\,2\,\dots\,h$ bilden, d.\,s.
+$k - 1 + s - 2$.
+\end{enumerate}
+Die Differenz derselben ist also, wenn wir mit $(ir)$ und $(ks)$ gleich die Zahl
+0 oder 1 der zugeh\"origen Derangements bezeichnen:
+\[
+(ir) - (ks) + i + r - k - s;
+\]
+daher ist der Modul der Substitution dargestellt durch eine Potenz von $(-1)$,
+welche diese Zahl zum Exponenten hat. Da aber dieselbe gleichzeitig mit
+\[
+(ir) + (ks) + i + r + k + s = \nu
+\]
+gerade oder ungerade ist, so k\"onnen wir denselben in der Form $(-1)^{\nu}$
+geben, wobei wir also unter $\nu$ stets diese Summe verstehen wollen. Es ist also:
+\[
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & \dots & a_{1h} \\
+a_{21} & a_{22} & a_{23} & \dots & a_{2h} \\
+a_{31} & a_{32} & a_{33} & \dots & a_{3h} \\
+\vdots & & & & \vdots \\
+a_{h1} & a_{h2} & a_{h3} & \dots & a_{hh}
+\end{vmatrix}
+=
+\]
+%CONT>>
+
+
+% ===== pdf idx 44, printed 30.0 =====
+% !PRINTED 30
+\weberpage{30}
+%<<CONT
+\[
+= (-1)^{\nu}
+\left|
+\begin{array}{cccccccccccc}
+a_{ik} & a_{is} & a_{i1} & a_{i2} & \dots & a_{i,k-1} & a_{i,k+1} & \dots & a_{i,s-1} & a_{i,s+1} & \dots & a_{ih} \\
+a_{rk} & a_{rs} & a_{r1} & a_{r2} & \dots & a_{r,k-1} & a_{r,k+1} & \dots & a_{r,s-1} & a_{r,s+1} & \dots & a_{rh} \\
+a_{1k} & a_{1s} & a_{11} & a_{12} & \dots & a_{1,k-1} & a_{1,k+1} & \dots & a_{1,s-1} & a_{1,s+1} & \dots & a_{1h} \\
+a_{2k} & a_{2s} & a_{21} & a_{22} & \dots & a_{2,k-1} & \cdot & \cdot & \cdot & \cdot & \cdot & a_{2h} \\
+\multicolumn{12}{c}{\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot} \\
+a_{i-1,k} & a_{i-1,s} & a_{i-1,1} & a_{i-1,2} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{i+1,k} & a_{i+1,s} & a_{i+1,1} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+\vdots & \vdots & & & & & & & & & & \\
+a_{r-1,k} & a_{r-1,s} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{r+1,k} & a_{r+1,s} & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+\vdots & \vdots & \vdots & \vdots & & & & & & & & \\
+a_{hk} & a_{hs} & a_{h1} & a_{h2} & \dots & a_{h,k-1} & a_{h,k+1} & \dots & a_{h,s-1} & a_{h,s+1} & \dots & a_{hh}
+\end{array}
+\right|
+\]
+wobei $\nu = (ir) + (ks) + i + r + k + s.$
+
+23. \textit{Wir sehen nun, wie sich analog der Zahlenwerth $\nu$ ergeben wird,
+wenn wir drei Elemente $a_{ik}$, $a_{rs}$, $a_{lm}$ an die Pl\"atze von resp.
+$a_{11}$, $a_{22}$, $a_{33}$ durch cyclische Vertauschung bringen.} Stellen wir
+wieder die von den drei ersten Indices herr\"uhrende Zahl von Derangements durch
+$(irl)$, die von den zweiten herr\"uhrende durch $(ksm)$ dar, eine Zahl, die
+offenbar nur die Werthe $0, 1, 2, 3$ annehmen kann, dann ist der Modul der
+Substitution, welche dem neuen Diagonalglied zugeh\"ort, durch eine Potenz
+$(-1)^{\nu}$ dargestellt, wo
+\[
+\nu = (irl) + (ksm) + (i + r + l + k + s + m).
+\]
+Daraus l\"asst sich der Satz abstrahiren: \glqq Bringt man $p$ Elemente, von
+denen keine zwei der n\"amlichen Colonne oder Zeile angeh\"oren d\"urfen, der
+Reihe nach durch cyclische Vertauschung an die erste, zweite u.\,s.\,w.
+$p^{te}$ Stelle der Diagonale einer Matrix, dann setzt sich der Exponent $\nu$
+des zum Diagonalglied geh\"origen Substitutionsmoduls $\varepsilon_S = (-1)^{\nu}$
+zusammen:
+\begin{enumerate}
+\item[1)] aus der Zahl der Derangements, welche die $p$ ersten Factoren
+$a_{\varrho\sigma}$ durch die ersten Indices,
+\item[2)] aus der Zahl, welche sie durch ihre zweiten Indices bilden,
+\item[3)] aus der Summe ihrer Indices \"uberhaupt.\grqq{}
+\end{enumerate}
+\textit{Beispiel.} Sei gegeben die Determinante:
+\[
+\Delta = \begin{vmatrix}
+\varepsilon & \iota & \varphi & \omega & \sigma \\
+\iota & \varphi & \omega & \sigma & \omega \\
+\varphi & \omega & \sigma & \omega & \varphi \\
+\omega & \sigma & \omega & \varphi & \iota \\
+\sigma & \omega & \varphi & \iota & \varepsilon
+\end{vmatrix}.
+\]
+
+
+% ===== pdf idx 45, printed 31.0 =====
+% !PRINTED 31
+\weberpage{31}
+Wir stellen uns die Aufgabe, die f\"unf Elemente $\sigma$ der zweiten Diagonale
+durch cyclische Vertauschung in die Hauptdiagonale zu bringen, so dass jedes
+Element $\sigma$ in einer Zeile bleibt; wir erhalten der Reihe nach
+% ?? uncertain: exact glyph sequence in the four 5x5 sigma/epsilon/iota/phi/omega
+% determinants below (dense symbol grid, image resolution limits confident reading)
+\[
+\Delta = (-1)^{\nu_1}
+\begin{vmatrix}
+\sigma & \varepsilon & \iota & \varphi & \omega \\
+\omega & \iota & \varphi & \omega & \sigma \\
+\varphi & \varphi & \omega & \sigma & \omega \\
+\iota & \omega & \sigma & \omega & \varphi \\
+\varepsilon & \sigma & \omega & \varphi & \iota
+\end{vmatrix}
+=
+(-1)^{\nu_2}
+\begin{vmatrix}
+\sigma & \omega & \varepsilon & \iota & \varphi \\
+\omega & \sigma & \iota & \varphi & \omega \\
+\varphi & \omega & \varphi & \omega & \sigma \\
+\iota & \varphi & \omega & \sigma & \omega \\
+\varepsilon & \iota & \sigma & \omega & \varphi
+\end{vmatrix}
+\]
+\[
+= (-1)^{\nu_3}
+\begin{vmatrix}
+\sigma & \omega & \varphi & \varepsilon & \iota \\
+\omega & \sigma & \omega & \iota & \varphi \\
+\varphi & \omega & \sigma & \varphi & \omega \\
+\iota & \varphi & \omega & \omega & \sigma \\
+\varepsilon & \iota & \varphi & \sigma & \omega
+\end{vmatrix}
+=
+(-1)^{\nu_4}
+\begin{vmatrix}
+\sigma & \omega & \varphi & \iota & \varepsilon \\
+\omega & \sigma & \omega & \varphi & \iota \\
+\varphi & \omega & \sigma & \omega & \varphi \\
+\iota & \varphi & \omega & \sigma & \omega \\
+\varepsilon & \iota & \varphi & \omega & \sigma
+\end{vmatrix}.
+\]
+Da die Elemente $\sigma$ urspr\"unglich die Pl\"atze
+\[
+a_{51}, a_{42}, a_{33}, a_{24}, a_{15}
+\]
+inne hatten, so ist demgem\"ass
+\[
+\nu_4 = (5\,4\,3\,2\,1) + (1\,2\,3\,4\,5) + 2\sum_1^5 i
+\]
+\[
+= 10 + 0 + 2\cdot\frac{5(5+1)}{2} = 40,
+\]
+also
+\[
+(-1)^{\nu_4} = +1.
+\]
+
+\begin{center}
+\S.\,3.\\
+\gesperrt{Unterdeterminanten erster Ordnung.}
+\end{center}
+
+24. \textit{Begriff der Unterdeterminante.} Aus den $N$ Gliedern der
+Determinante $\Delta$ kann man insbesondere diejenigen herausgreifen, welche
+den Factor $a_{ik}$ besitzen. Sie seien $G_{i_1}, G_{i_2}, \dots G_{i_\varrho}$,
+wo $i_1, i_2, \dots i_\varrho$ irgendwelche Zahlen der Reihe $1, 2, 3 \dots$
+bis $N = n!$ sind. Bezeichnet man das Product der andern Elemente in
+$G_{i_\varrho}$ mit $H_{i_\varrho}$, dann ist:
+\[
+G_{i_1} = a_{ik} \cdot H_{i_1},
+\]
+\[
+G_{i_2} = a_{ik} \cdot H_{i_2},
+\]
+\[
+\dots\dots\dots
+\]
+\[
+G_{i_\varrho} = a_{ik} \cdot H_{i_\varrho}.
+\]
+Bildet man die Summe aller dieser Glieder, so erh\"alt man
+\[
+G_{i_1} + G_{i_2} + \dots G_{i_\varrho} = a_{ik} H_{i_1} + a_{ik} H_{i_2} +
+\dots a_{ik} H_{i_\varrho}
+\]
+oder
+\[
+\sum G_{i_\varrho} = a_{ik} \sum H_{i_\varrho}.
+\]
+
+
+% ===== pdf idx 46, printed 32.0 =====
+% !PRINTED 32
+\weberpage{32}
+Bezeichnet man $\sum H_{i_\varrho}$ mit $A_{ik}$*), so erh\"alt man
+\[
+\sum G_{i_\varrho} = a_{ik} \cdot A_{ik}.
+\]
+Die Gr\"osse $A_{ik}$ nennt man \textit{Unterdeterminante (Minor)} des
+Elementes $a_{ik}$.
+
+25. \textit{Berechnung von $A_{11}$.} Die Aufgabe, die Unterdeterminante
+$A_{ik}$ zu berechnen, wollen wir zun\"achst an dem speciellen Falle von
+$i = k = 1$ durchf\"uhren, d.\,h. wir wollen $A_{11}$ bestimmen. Jedem Glied,
+das den Factor $a_{11}$ besitzt, muss eine Substitution zugeordnet sein, in
+der die zwei Indices 1 stets \"uber einander stehen, d.\,h. ein einziges Paar
+bilden. Alle \"ubrigen Indices, unter denen sich also 1 nicht mehr befindet,
+liefern durch ihre Permutationen, die wir der Reihe nach mit der gut
+geordneten $(2\,3\,\dots\,h)$ zu einer Substitution verbinden, diejenigen
+Substitutionen, die an erster Stelle das Zahlenpaar $\binom{1}{1}$ haben. Den
+Permutationen der $n-1$ Elemente $(2\,3\,\dots\,h)$ entsprechen aber die
+$(n-1)!$ Substitutionen, welche zu den Gliedern $H_{i_\varrho}$ Veranlassung
+geben. Die Summe aller dieser $H_{i_\varrho}$ ist also selbst eine
+Determinante:
+\[
+\Delta' = \sum_{i_\varrho = 1}^{i_\varrho = (n-1)!} H_{i_\varrho},
+\]
+und zu ihr geh\"ort die Matrix:
+\[
+\Delta' =
+\begin{vmatrix}
+a_{22} & a_{23} & a_{24} & \dots & a_{2h} \\
+a_{32} & a_{33} & a_{34} & \dots & a_{3h} \\
+a_{42} & a_{43} & a_{44} & \dots & a_{4h} \\
+\vdots & \vdots & & \dots & \\
+a_{h2} & a_{h3} & a_{h4} & \dots & a_{hh}
+\end{vmatrix}.
+\]
+Vergleicht man aber diese Matrix $\Delta'$ mit der Matrix der gegebenen
+Determinante $\Delta$, so erkennt man: $\Delta'$ entsteht aus $\Delta$, indem
+man die erste Zeile und erste Colonne streicht, oder: \textit{Die
+Unterdeterminante $A_{11}$ des Elementes $a_{11}$ entsteht, indem man jene
+Zeile und Colonne streicht, die sich in $a_{11}$ schneiden.}
+
+26. \textit{Berechnung von $A_{ik}$.} Nun k\"onnen wir die allgemeine Aufgabe,
+$A_{ik}$ zu bestimmen, leicht auf diese zur\"uckf\"uhren. Ich bringe zu dem
+Zwecke durch zwei Cyclen das Element $a_{ik}$ an die Stelle von $a_{11}$. Zu
+der dadurch entstehenden Matrix geh\"ort eine Determinante vom Werthe
+\[
+D = (-1)^{\nu}\Delta, \quad \text{wo } \nu = i + k,
+\]
+%CONT>>
+
+*) Es ist $\dfrac{\partial \Delta}{\partial a_{ik}} = A_{ik}$.
+
+
+% ===== pdf idx 47, printed 33.0 =====
+% !PRINTED 33
+\weberpage{33}
+% running head: \S\ 3. Unterdeterminanten erster Ordnung.
+
+und wir sahen in Nr. 21, dass bei einer solchen Reihe von Vertauschungen die
+Glieder von $D$ in passender Ordnung genommen dieselben Werthe haben wie die
+von $\Delta$, nur noch multiplicirt mit $(-1)^\nu$. Insbesondere entsprechen
+den Gliedern mit dem Factor $a_{ik}$ in $\Delta$ die Glieder mit dem Factor
+$b_{11}$ in $D$; ihre Summe
+\[
+G_{i_1}+G_{i_2}+\cdots G_{i_\varrho}=a_{ik}\sum H_{i_\varrho}=a_{ik}\cdot A_{ik}
+\]
+ist bis auf einen Factor $(-1)^\nu$ gleich der entsprechenden
+\[
+\overline{G}_{i_1}+\overline{G}_{i_2}+\cdots \overline{G}_{i_\varrho}=b_{11}\sum \overline{H}_{i_\varrho}=b_{11}\cdot B_{11},
+\]
+wenn die $B_{ik}$ die Unterdeterminanten der $b_{ik}$ bedeuten. Die Matrix zu
+$B_{11}$ entsteht aber aus der Matrix zu $D$, wenn man die erste Zeile und
+erste Colonne streicht; die nämliche Matrix erhält man aber aus $\Delta$,
+wenn man in ihr jene Zeile und Colonne streicht, die sich in $a_{ik}$
+schneiden. Daher der Satz: \glqq Lässt man in der Matrix zu $\Delta$ die
+$i^{\text{te}}$ Zeile und die $k^{\text{te}}$ Colonne weg, so erhält man eine
+neue Matrix $\Delta'$. Multiplicirt man den Werth der entsprechenden
+Determinante mit $(-1)^\nu$, wo $\nu=i+k$, so erhält man die zum Element
+$a_{ik}$ gehörige Unterdeterminante $A_{ik}$.\grqq{}
+
+27. \textit{Beispiel:} 1) Sei gegeben die Determinante
+\[
+\begin{vmatrix} p & q & r \\ u & v & w \\ x & y & z \end{vmatrix};
+\]
+dann ist die Unterdeterminante
+\[
+\text{zu } q=(-1)^{1+2}\begin{vmatrix} u & w \\ x & z \end{vmatrix}=-(uz-wx),
+\]
+\[
+\text{zu } v=(-1)^{2+2}\begin{vmatrix} p & r \\ x & z \end{vmatrix}=+(pz-rx),
+\]
+\[
+\text{zu } y=(-1)^{3+2}\begin{vmatrix} p & r \\ u & w \end{vmatrix}=-(pw-ur).
+\]
+In der That, berechnen wir die Determinante nach dem in Nr. 13 oder 15
+gegebenen Schema, so sieht man, dass $uz$, $wx$ die einzigen Producte sind,
+die mit $q$ multiplicirt auftreten, ebenso $pz$ und $rx$ die einzigen mit $v$
+multiplicirten u.\,s.\,w.
+
+2) In der Determinante
+\[
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & a_{14} \\
+a_{21} & a_{22} & a_{23} & a_{24} \\
+a_{31} & a_{32} & a_{33} & a_{34} \\
+a_{41} & a_{42} & a_{43} & a_{44}
+\end{vmatrix}
+\]
+% running head foot: Gordan, Determinanten.   3
+%CONT>>
+
+
+% ===== pdf idx 48, printed 34.0 =====
+% !PRINTED 34
+\weberpage{34}
+% running head: Erster Theil. Theorie der Determinanten.
+%<<CONT
+ist die Unterdeterminante zu $a_{32}$ dargestellt durch die Matrix
+\[
+(-1)^{3+2}\begin{vmatrix} a_{11} & a_{13} & a_{14} \\ a_{21} & a_{23} & a_{24} \\ a_{41} & a_{43} & a_{44} \end{vmatrix}
+\]
+\[
+=(-1)^5\{a_{11}a_{23}a_{44}-a_{11}a_{43}a_{24}-a_{21}a_{13}a_{44}+a_{21}a_{43}a_{14}+a_{41}a_{13}a_{24}-a_{41}a_{23}a_{14}\}.
+\]
+In der That, bilden wir die Substitutionen, die diesen Gliedern zugehören:
+\[
+\begin{pmatrix} 1 & 2 & 4 \\ 1 & 3 & 4 \end{pmatrix}
+\begin{pmatrix} 1 & 4 & 2 \\ 1 & 3 & 4 \end{pmatrix}
+\begin{pmatrix} 2 & 1 & 4 \\ 1 & 3 & 4 \end{pmatrix}
+\begin{pmatrix} 2 & 4 & 1 \\ 1 & 3 & 4 \end{pmatrix}
+\begin{pmatrix} 4 & 1 & 2 \\ 1 & 3 & 4 \end{pmatrix}
+\begin{pmatrix} 4 & 2 & 1 \\ 1 & 3 & 4 \end{pmatrix},
+\]
+so erkennt man, dass \textit{sämmtliche} Permutationen der drei Indices
+$1\,2\,4$ mit der gut geordneten $(1\,3\,4)$ verbunden sind, wie wir es auch
+in unserer obigen Darstellung verlangten.
+
+28. \textit{Berechnung des Werthes einer Determinante mittelst der
+Unterdeterminanten, welche den Elementen der ersten Zeile entsprechen.}
+Nach den Entwicklungen in Nr. 15 hat jedes Glied der Determinante stets ein
+und nur ein Element der ersten Zeile unter seinen Factoren. Ordnen wir also
+alle $N$ Glieder in Klassen, indem wir zuerst alle Glieder herausgreifen,
+welche den Factor $a_{11}$, sodann alle, welche den Factor $a_{12}$
+u.\,s.\,w., endlich jene, welche den Factor $a_{1n}$ besitzen, so ist die
+Gesammtheit aller Glieder dadurch erschöpft. Nun bilden aber nach Nr. 24
+alle Glieder mit dem Factor $a_{11}$ zusammen die Unterdeterminante $A_{11}$,
+alle mit dem Factor $a_{12}$ die Unterdeterminante $A_{12}$ u.\,s.\,w.,
+endlich alle mit dem Factor $a_{1n}$ die Unterdeterminante $A_{1n}$; folglich
+ist der Werth der Determinante $\Delta$ dargestellt durch die Summe
+\weq{1}{\Delta = a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}+\cdots+a_{1n}A_{1n}.}
+Die hierbei auftretenden Unterdeterminanten $A_{1i}$ sind entnommen aus der
+Matrix von $n$ Colonnen und $(n-1)$ Zeilen:
+\weq{A}{
+\begin{vmatrix}
+a_{21} & a_{22} & a_{23} & \cdots & a_{2,n} \\
+a_{31} & a_{32} & a_{33} & \cdots & a_{3,n} \\
+a_{41} & & & & \\
+\vdots & & & & \\
+a_{n1} & a_{n2} & a_{n3} & \cdots & a_{nn}
+\end{vmatrix}.
+}
+Die Matrix der Unterdeterminante $A_{11}$ entsteht dann hieraus, indem man
+die erste Colonne weglässt; analog ist $A_{12}$ dargestellt durch die nach
+dem Streichen der zweiten Colonne übrig bleibende Matrix multiplicirt mit
+$(-1)^\nu$, wo $\nu=1+2=3$ ist u.\,s.\,w., endlich die Unterdeterminante
+$A_{1n}$ durch die Matrix, welche die letzte Colonne nicht enthält,
+multiplicirt mit $(-1)^\nu$, wo $\nu=1+n$. Man
+%CONT>>
+
+
+% ===== pdf idx 49, printed 35.0 =====
+% !PRINTED 35
+\weberpage{35}
+% running head: \S\ 3. Unterdeterminanten erster Ordnung.
+%<<CONT
+sieht hiebei, indem man der Zahl $n$ alle Werthe von 1 bis $n$ beilegt, dass
+der Factor $(-1)^\nu$ abwechselnd positiv und negativ ist, d.\,h. die
+Glieder der Summe (1) haben abwechselnd das Zeichen plus und minus.
+
+29. \textit{Entwicklung der Determinanten nach Unterdeterminanten der
+Elemente einer beliebigen Zeile oder Colonne.} Ganz ebenso, wie wir hier den
+Werth der Determinante $\Delta$ nach den Unterdeterminanten der ersten
+Zeile entwickelt haben, können wir ihn auch berechnen nach den
+Unterdeterminanten einer beliebigen Zeile oder Colonne, die wir ja nach den
+vorausgehenden Sätzen jederzeit zur ersten Zeile oder Colonne machen können.
+
+Wir haben also ganz allgemein für den Werth der Determinante $\Delta$ die
+beiden Formeln
+\weq{B}{
+\left\{
+\begin{array}{l}
+\Delta = a_{i1}A_{i1}+a_{i2}A_{i2}+a_{i3}A_{i3}\cdots a_{in}A_{in}, \\
+\Delta = a_{1i}A_{1i}+a_{2i}A_{2i}+a_{3i}A_{3i}\cdots a_{ni}A_{ni}.
+\end{array}
+\right.
+}
+30. \textit{Beispiele.} 1) Berechnen wir nach dieser Methode noch einmal die
+viergliederige Determinante Beispiel 6 in Nr. 15 nach den
+Unterdeterminanten, die zu den Elementen der ersten Zeile gehören. Wir
+erhalten:
+\[
+\Delta=\begin{vmatrix} 3 & 1 & 1 & 2 \\ 1 & 5 & 0 & 3 \\ 2 & -2 & 1 & 6 \\ 0 & 4 & -5 & 3 \end{vmatrix}
+=3\begin{vmatrix} 5 & 0 & 3 \\ -2 & 1 & 6 \\ 4 & -5 & 3 \end{vmatrix}
+-1\begin{vmatrix} 1 & 0 & 3 \\ 2 & 1 & 6 \\ 0 & -5 & 3 \end{vmatrix}
++1\begin{vmatrix} 1 & 5 & 3 \\ 2 & -2 & 6 \\ 0 & 4 & 3 \end{vmatrix}
+-2\begin{vmatrix} 1 & 5 & 0 \\ 2 & -2 & 1 \\ 0 & 4 & -5 \end{vmatrix}
+\]
+\[
+=3\{15+150+30-12\}-\{3+30-30\}+\{-6-24-30+24\}
+\]
+\[
+-2\{10-4+50\}=549-3-36-112=398,
+\]
+was mit dem früheren Resultat übereinstimmt.
+
+2) Fassen wir umgekehrt die einzelnen Glieder der ausgerechneten
+viergliederigen Determinante Nr. 17 Beispiel 3 in der Weise zusammen, dass
+wir sie nach den Elementen der ersten Colonne ordnen, so ergiebt sich:
+\[
+a[erw-evs-qfw+qvg+ufs-urg] % ?? uncertain: last letter of bracket smudged/annotated in scan, read as "g" by cofactor-expansion sense (matches erw-esv-fqw+fsu+gqv-gru)
++p[bfw-bvg-ecw+evd+ucg-ufd].
+\]
+Die beiden Klammerfactoren dieser Summe sind aber offenbar nur die
+Entwicklungen der beiden dreigliederigen Determinanten (vergleiche das
+Schema in Nr. 15, $\beta$)
+\[
+A_{11}=\begin{vmatrix} e & f & g \\ q & r & s \\ u & v & w \end{vmatrix}
+\quad \text{und} \quad
+A_{31}=\begin{vmatrix} b & c & d \\ e & f & y \\ u & v & w \end{vmatrix}.
+\]
+% running head foot: 3*
+
+
+% ===== pdf idx 50, printed 36.0 =====
+% !PRINTED 36
+\weberpage{36}
+% running head: Erster Theil. Theorie der Determinanten.
+
+\textit{Beispiel} 3. Sind in einer Zeile oder Reihe alle Elemente bis auf
+eines gleich null, so wird man am Besten bei einer Berechnung der
+Determinante zuerst nach dieser entwickeln, da sich die Summe (B) dann auf
+ein einziges Glied reducirt.
+
+Es sei:
+\[
+\Delta=\begin{vmatrix} 3 & 2 & 5 & 1 \\ 0 & 0 & 4 & 0 \\ 4 & 6 & 2 & 3 \\ 1 & 2 & 1 & 0 \end{vmatrix}.
+\]
+Wir entwickeln nach der zweiten Zeile; es wird also:
+\[
+\Delta=(-1)^\nu 4\begin{vmatrix} 3 & 2 & 1 \\ 4 & 6 & 3 \\ 1 & 2 & 0 \end{vmatrix}, \quad \nu=2+3=5.
+\]
+
+\textit{Beispiel} 4. Sind alle Elemente auf einer Seite der Diagonale einer
+Matrix null, so reducirt sich der Werth der Determinante auf das
+Diagonalglied; denn man hat:
+\[
+\Delta=\begin{vmatrix}
+a & b & c & d & e \\
+0 & f & g & h & i \\
+0 & 0 & k & l & m \\
+0 & 0 & 0 & n & 0 \\
+0 & 0 & 0 & 0 & p
+\end{vmatrix}
+=a\begin{vmatrix} f & g & h & i \\ 0 & k & l & m \\ 0 & 0 & n & 0 \\ 0 & 0 & 0 & p \end{vmatrix}
+=af\begin{vmatrix} k & l & m \\ 0 & n & 0 \\ 0 & 0 & p \end{vmatrix}
+=afk\begin{vmatrix} n & 0 \\ 0 & p \end{vmatrix}
+=afknp.
+% ?? uncertain: several zero entries in this display carry a small circular ink mark in the scan (over the "0" in row4/col5, and inside the two smaller minors); read as plain 0, mark may be a printing/scan blemish rather than a diacritic
+\]
+
+\textit{Beispiel} 5. Man kann umgekehrt jede Determinante als
+Unterdeterminante betrachten, deren Element $a_{11}=1$, deren Elemente
+$a_{i1}=0$, wenn $i>1$, und deren Elemente $a_{1i}$, wenn $i>1$, beliebig
+sind; so ist offenbar:
+\[
+\Delta=\begin{vmatrix} p & q & r \\ u & v & w \\ x & y & z \end{vmatrix}
+=\begin{vmatrix}
+1 & \varkappa & \lambda & \mu \\ % ?? uncertain: first entry of row 1 after "1" -- read as \varkappa, glyph partly unclear in scan
+0 & p & r & q \\ % [sic] printed order "p, r, q" (not "p, q, r" as in the 3x3 above)
+0 & u & v & w \\
+0 & x & y & z
+\end{vmatrix}.
+\]
+
+31. \textit{Beziehungen zwischen den Unterdeterminanten der Elemente der
+ersten Zeile.} Bezeichnen wir wie früher mit $D$ eine Determinante von
+$n^2$ Elementen $b_{ik}$, und setzen wir aber nun fest, dass zwischen den
+Elementen von $D$ und den Elementen $a_{ik}$ der Determinante $\Delta$ die
+Relationen bestehen:
+\[
+\alpha)\ b_{1i}=a_{2i}, \qquad \beta)\ b_{ki}=a_{ki},\ k>1.
+\]
+Dann ist, weil die Matrix zu $D$ zwei gleiche — nämlich die erste und
+zweite — Zeilen hat, der Werth der Determinante $D$ gleich null.
+
+
+% ===== pdf idx 51, printed 37.0 =====
+% !PRINTED 37
+\weberpage{37}
+(Nr. 19, Zusatz.) Entwickeln wir daher die Determinante $D$ nach den
+Unterdeterminanten der ersten Zeile, so erhalten wir die Relation:
+
+\weq{1}{b_{11}B_{11}+b_{12}B_{12}+\cdots+b_{1n}B_{1n}=0.}
+
+Nun ist aber wegen der Bedingung ($\alpha$)
+
+\[
+b_{11}=a_{21},\ b_{12}=a_{22},\cdots b_{1n}=a_{2n}.
+\]
+
+Ebenso sind, wegen Bedingung ($\beta$), die Unterdeterminanten $B_{1i}$ der
+gleichen Matrix
+
+\[
+(A)\quad
+\begin{vmatrix}
+b_{21} & b_{22} & b_{23} & \ldots & b_{2n} \\
+b_{31} & b_{32} & b_{33} & \ldots & b_{3n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+b_{n1} & b_{n2} & b_{n3} & \ldots & b_{nn}
+\end{vmatrix}
+=
+\begin{vmatrix}
+a_{21} & a_{22} & a_{23} & \ldots & a_{2n} \\
+a_{31} & a_{32} & a_{33} & \ldots & a_{3n} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+a_{n1} & a_{n2} & a_{n3} & \ldots & a_{nn}
+\end{vmatrix}
+\]
+
+entnommen wie die Unterdeterminante $A_{1i}$, d. h. es ist auch
+
+\[
+B_{11}=A_{11},\ B_{12}=A_{12}\cdots B_{1n}=A_{1n}\, .
+\]
+
+Tragen wir also diese Werthe von $b_{1i}$ und $B_{1i}$ in die Relation (1)
+ein, so erhalten wir:
+
+\weq{2}{a_{21}A_{11}+a_{22}A_{12}+a_{23}A_{13}+\cdots a_{2n}A_{1n}=0.}
+
+Diese Gleichung ist eine Identität, da ja zwischen den Elementen $a_{ik}$
+der Determinante $\Delta$ keine Beziehungen bestehen sollen; sie sagt:
+
+\glqq Multiplicirt man die $n$ Determinanten der Matrix $(A)$ Nr. 28 der
+Reihe nach mit den Elementen der ersten Zeile dieser Matrix und summirt
+diese Producte, so ist diese Summe identisch null.\grqq{}
+
+32. \textit{Verallgemeinerung der Relation (2) Nr. 31.} Nun ist aber jede
+Zeile einer Determinante mit $n^2$ willkürlichen Elementen
+gleichberechtigt, und man kann schon daraus schliessen, dass die Elemente
+$a_{2i}$ in (2) durch die Elemente jeder folgenden Zeile ersetzt werden
+können, ohne dass unser Satz seine Gültigkeit verliert. Strenger folgt
+dieses, wenn wir statt der Bedingung $\alpha$) $b_{1i}=a_{2i}$ die
+Bedingung einführen
+
+\[
+b_{1i}=a_{\varrho i}\, .
+\]
+
+Dann bleiben immer noch die Matrix $(A)$ und mit ihr die
+Unterdeterminanten $A_{1i}$ die nämlichen, und nur an Stelle der Elemente
+$a_{2i}$ in (2) treten die Elemente $a_{\varrho i}$, $\varrho=3,4,5\cdots
+n$. Wir haben sonach eine erste Erweiterung des Satzes:
+
+\glqq Multiplicirt man die Determinanten der Matrix $(A)$ der Reihe nach
+mit den Elementen einer beliebigen Zeile derselben, so ist die Summe
+aller dieser Producte identisch null.\grqq{}
+
+
+% ===== pdf idx 52, printed 38.0 =====
+% !PRINTED 38
+\weberpage{38}
+Wir haben bisher immer die Determinanten der Matrix $(A)$, d. i. die
+Unterdeterminanten der ersten Zeile der Determinante $\Delta$
+ausgezeichnet. Da wir aber jede Zeile oder Colonne zur ersten Zeile
+machen können, ohne dass sich der absolute Werth von $\Delta$ ändert, so
+sind wir berechtigt, ganz allgemein den Satz aufzustellen:
+
+\glqq Multiplicirt man die Elemente einer Zeile bezw. Colonne mit der je
+entsprechenden Unterdeterminante einer andern Zeile bezw. Colonne, so ist
+die Summe aller dieser Producte identisch null.\grqq{}
+
+Wir erhalten also, wenn wir gleichzeitig das in Nr. 28 enthaltene
+Resultat berücksichtigen, folgendes System von Relationen:
+
+\[
+(C)\quad
+\begin{cases}
+a_{i1}A_{k1}+a_{i2}A_{k2}+\cdots+a_{in}A_{kn}=\Delta, & \text{wenn } i=k,\\
+a_{i1}A_{k1}+a_{i2}A_{k2}+\cdots+a_{in}A_{kn}=0, & \text{wenn } i\gtrless k,\\
+a_{1i}A_{1k}+a_{2i}A_{2k}+\cdots+a_{ni}A_{nk}=\Delta, & \text{wenn } i=k,\\
+a_{1i}A_{1k}+a_{2i}A_{2k}+\cdots+a_{ni}A_{nk}=0, & \text{wenn } i\gtrless k.
+\end{cases}
+\]
+
+33. \textit{Beispiel.} Sei gegeben die Determinante
+
+\[
+\Delta=
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{vmatrix};
+\]
+
+die zur letzten Colonne gehörige Matrix ist:
+
+\[
+\begin{vmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22} \\
+a_{31} & a_{32}
+\end{vmatrix};
+\]
+
+sie enthält die Unterdeterminanten:
+
+\[
+A_{33}=\begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix},\quad
+A_{23}=-\begin{vmatrix} a_{11} & a_{12} \\ a_{31} & a_{32} \end{vmatrix},\quad
+A_{13}=\begin{vmatrix} a_{21} & a_{22} \\ a_{31} & a_{32} \end{vmatrix}.
+\]
+
+Multipliciren wir sie mit den Elementen der ersten Colonne, so erhalten
+wir:
+
+\[
+\begin{aligned}
+a_{11}A_{13}+a_{21}A_{23}+a_{31}A_{33} &= a_{11}(a_{21}a_{32}-a_{31}a_{22})-a_{21}(a_{11}a_{32}-a_{12}a_{31})\\
+&\quad{}+a_{31}(a_{11}a_{22}-a_{21}a_{12}).
+\end{aligned}
+\]
+
+Die rechte Seite dieser Gleichung verschwindet aber identisch.
+
+34. \textit{Anwendungen der Identitäten in $(C)$.} Aus der zweiten
+specielleren Fassung des soeben erhaltenen allgemeinen Satzes ergeben
+sich für die $n$ Determinanten $A_{1k}$, welche in der Matrix $(A)$
+enthalten sind, folgende $(n-1)$ Relationen. Bezeichnen wir nämlich mit
+Ein-
+%CONT>>
+
+
+% ===== pdf idx 53, printed 39.0 =====
+% !PRINTED 39
+\weberpage{39}
+%<<CONT
+schluss des Vorzeichens diese $n$ Grössen der Reihe nach mit $p_1p_2\ldots
+p_n$, so haben wir die Beziehungen:
+
+\[
+(D)\quad
+\begin{cases}
+a_{21}p_1+a_{22}p_2+\cdots+a_{2n}p_n=0,\\
+a_{31}p_1+a_{32}p_2+\cdots+a_{3n}p_n=0,\\
+a_{41}p_1+a_{42}p_2+\cdots+a_{4n}p_n=0,\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+a_{n1}p_1+a_{n2}p_2+\cdots+a_{nn}p_n=0.
+\end{cases}
+\]
+
+Mit Hilfe dieser Relationen wollen wir noch zwei Identitäten ableiten,
+die später von Wichtigkeit sein werden.
+
+1) Sei gegeben die Matrix:
+
+\[
+\begin{vmatrix}
+a_1 & b_1 & c_1 \\
+a_2 & b_2 & c_2
+\end{vmatrix};
+\]
+
+schreiben wir die mit $p_1p_2p_3$ bezeichneten Minoren in der Form
+$(bc)$, $(ca)$, $(ab)$ --- vergleiche Nr. 18 --- so werden die Relationen
+$(D)$:
+
+\[
+\begin{gathered}
+a_1(bc)+b_1(ca)+c_1(ab)=0,\\
+a_2(bc)+b_2(ca)+c_2(ab)=0.
+\end{gathered}
+\]
+
+Multipliciren wir die erste Gleichung mit $x_1$, die zweite mit $x_2$ und
+addiren, führen sodann für $a_1x_1+a_2x_2$, $b_1x_1+b_2x_2$,
+$c_1x_1+c_2x_2$ bezw. die Symbole $a_x$, $b_x$, $c_x$ ein, so erhalten
+wir die Identität
+
+\weq{I}{a_x(bc)+b_x(ca)+c_x(ab)=0.}
+
+2) Ebenso liefert die Matrix:
+
+\[
+\begin{vmatrix}
+a_1 & b_1 & c_1 & d_1 \\
+a_2 & b_2 & c_2 & d_2 \\
+a_3 & b_3 & c_3 & d_3
+\end{vmatrix},
+\]
+
+wenn wir wieder die Unterdeterminanten $p_1p_2p_3p_4$ mit $(bcd)$,
+$-(cda)$, $(dab)$, $-(abc)$ bezeichnen, die drei Relationen:
+
+\[
+\begin{gathered}
+a_1(bcd)-b_1(cda)+c_1(dab)-d_1(abc)=0,\\
+a_2(bcd)-b_2(cda)+c_2(dab)-d_2(abc)=0,\\
+a_3(bcd)-b_3(cda)+c_3(dab)-d_3(abc)=0.
+\end{gathered}
+\]
+
+Multiplicirt man auch hier die drei Gleichungen der Reihe nach mit
+$x_1x_2x_3$ und setzt $a_1x_1+a_2x_2+a_3x_3=a_x$,
+$b_1x_1+b_2x_2+b_3x_3=b_x$, $c_1x_1+c_2x_2+c_3x_3=c_x$,
+$d_1x_1+d_2x_2+d_3x_3=d_x$, nachdem man die drei Gleichungen addirt hat,
+so kommt die Identität:
+
+\weq{II}{a_x(bcd)-b_x(cda)+c_x(dab)-d_x(abc)=0.}
+
+
+% ===== pdf idx 54, printed 40.0 =====
+% !PRINTED 40
+\weberpage{40}
+35. \textit{Addition von zwei Determinanten.} Ergänzt man die Matrix
+$(A)$ auf drei verschiedene Arten zur Matrix einer Determinante
+
+1) indem man zu den $(n-1)$ Zeilen die Zeile $a_{11}\,a_{12}\ldots
+a_{1n}$,
+
+2) indem man die Zeile $b_{11}\,b_{12}\ldots b_{1n}$, endlich
+
+3) indem man die Zeile $a_{11}+b_{11},\,a_{12}+b_{12}\ldots
+a_{1n}+b_{1n}$ hinzufügt,
+
+so erhält man dadurch die Matrix von drei verschiedenen Determinanten
+$\Delta_0$, $\Delta_1$, $\Delta_2$. Ihre Werthe sind nach 29 $(B)$
+
+\[
+\left.
+\begin{aligned}
+\Delta_0 &= a_{11}p_1+a_{12}p_2+\cdots a_{1n}p_n\\
+\Delta_1 &= b_{11}p_1+b_{12}p_2+\cdots b_{1n}p_n\\
+\Delta_2 &= (a_{11}+b_{11})p_1+(a_{12}+b_{12})p_2+\cdots (a_{1n}+b_{1n})p_n
+\end{aligned}
+\right\}
+\quad (E).
+\]
+
+Man erkennt, dass der Werth der dritten Determinante gleich ist der
+Summe der Werthe der beiden andern; daher der Satz:
+
+\glqq Die Summe zweier Determinanten, deren Matrices in $(n-1)$ Zeilen
+gleiche, in der $n^{\text{ten}}$ Zeile aber verschiedene Elemente haben,
+ist dargestellt durch Eine Determinante, deren Matrix die $(n-1)$
+gemeinschaftlichen Zeilen besitzt und deren $n^{\text{te}}$ Zeile die
+Summe je zweier entsprechender Elemente der beiden nicht
+gemeinschaftlichen Zeilen enthält.\grqq{}
+
+36. \textit{Addition von $m$ Determinanten mit $(n-1)$ gemeinschaftlichen
+Zeilen.} Wir hätten ebenso die Matrix $(A)$ auf $m$ Arten zu den
+Matrices von $m$ verschiedenen Determinanten ergänzen können. Die Summe
+aller dieser Determinanten ist dann dargestellt durch eine neue
+Determinante, in deren einer Zeile jedes Element aus der Summe von $m$
+entsprechenden Elementen der einzelnen Determinanten besteht, während
+die übrigen Zeilen nur die allen gemeinschaftlichen Elemente enthalten.
+Aus der Entwicklung des Satzes geht unmittelbar auch seine
+Umkehrbarkeit hervor, d. h. tritt in einer Determinante eine Zeile auf,
+deren Elemente algebraische Summen sind, so lässt sich dieselbe immer
+in eine Summe von Determinanten zerlegen.
+
+37. \textit{Beispiele.} 1) Es sei gegeben die Matrix
+
+\[
+\begin{vmatrix}
+a_1 & b_1 & c_1 & d_1 \\
+a_2 & b_2 & c_2 & d_2 \\
+a_3 & b_3 & c_3 & d_3
+\end{vmatrix}.
+\]
+% ?? uncertain: scan shows a stray mark over the d_2 subscript in row 2 (ink flaw/correction, not legible as separate text)
+
+Ergänzen wir sie durch 1) Anfügen der ersten Zeile
+
+\[
+\alpha_1\ \beta_1\ \gamma_1\ \delta_1
+\]
+
+zur Determinante $\Delta_1$, 2) durch Anfügen der ersten Zeile
+
+\[
+-\alpha_2,\ -\beta_2,\ -\gamma_2,\ -\delta_2
+\]
+%CONT>>
+
+
+% ===== pdf idx 55, printed 41.0 =====
+% !PRINTED 41
+\weberpage{41}
+%<<CONT
+zur Determinante $\varDelta_2$, 3) endlich durch Anfügen der Zeile
+\[
++\alpha_3, - \beta_3, +\gamma_3, -\delta_3
+\]
+zur Determinante $\varDelta_3$, dann ist
+\[
+\varDelta = \varDelta_1+\varDelta_2+\varDelta_2 =
+\begin{vmatrix}
+\alpha_1-\alpha_2+\alpha_3, & \beta_1-\beta_2-\beta_3, & \gamma_1-\gamma_1+\gamma_3, & \delta_1-\delta_2-\delta_3\\
+a_1 & b_1 & c_1 & d_1\\
+a_2 & b_2 & c_2 & d_2\\
+a_3 & b_3 & c_3 & d_3
+\end{vmatrix}.
+\]
+2) Die Determinante:
+\[
+\varDelta = \begin{vmatrix} a+\lambda, & b, & c\\ p & q & r\\ u & v & w\end{vmatrix}
+= \begin{vmatrix} a & b & c\\ p & q & r\\ u & v & w\end{vmatrix}
++ \begin{vmatrix} \lambda & 0 & 0\\ p & q & r\\ u & v & w\end{vmatrix}.
+\]
+3) Die Determinante:
+\[
+\varDelta = \begin{vmatrix} a_{11}+\lambda, & a_{12}, & a_{13}\\ a_{21}, & a_{22}+\lambda, & a_{23}\\ a_{31} & a_{32} & a_{33}+\lambda\end{vmatrix}
+= \begin{vmatrix} a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22}+\lambda & a_{23}\\ a_{31} & a_{32} & a_{33}+\lambda\end{vmatrix}
++ \begin{vmatrix} \lambda & a_{12} & a_{13}\\ 0 & a_{22}+\lambda & a_{23}\\ 0 & a_{32} & a_{33}+\lambda\end{vmatrix}
+= \varDelta_1+\varDelta_2.
+\]
+Jede dieser Determinanten $\varDelta_1$ und $\varDelta_2$ lässt sich wieder zerlegen:
+\[
+\varDelta_1 = \begin{vmatrix} a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22} & a_{23}\\ a_{31} & a_{32} & a_{33}+\lambda\end{vmatrix}
++ \begin{vmatrix} a_{11} & 0 & a_{13}\\ a_{21} & \lambda & a_{23}\\ a_{31} & 0 & a_{33}+\lambda\end{vmatrix}
+= \varDelta_1'+\varDelta_1'',
+\]
+und
+\[
+\varDelta_2 = \begin{vmatrix} \lambda & a_{12} & a_{13}\\ 0 & a_{22} & a_{23}\\ 0 & a_{32} & a_{33}+\lambda\end{vmatrix}
++ \begin{vmatrix} \lambda & 0 & a_{13}\\ 0 & \lambda & a_{23}\\ 0 & 0 & a_{33}+\lambda\end{vmatrix}
+= \varDelta_2'+\varDelta_2''.
+\]
+Zerlegt man endlich jede dieser vier Determinanten, so erhält man $\varDelta$ dargestellt durch die Summe:
+\[
+\begin{aligned}
+\varDelta ={}& \begin{vmatrix} a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22} & a_{23}\\ a_{31} & a_{32} & a_{33}\end{vmatrix}
++ \begin{vmatrix} a_{11} & a_{12} & 0\\ a_{21} & a_{22} & 0\\ a_{31} & a_{32} & \lambda\end{vmatrix}
++ \begin{vmatrix} a_{11} & 0 & a_{13}\\ a_{21} & \lambda & a_{23}\\ a_{31} & 0 & a_{33}\end{vmatrix}
++ \begin{vmatrix} a_{11} & 0 & 0\\ a_{21} & \lambda & 0\\ a_{31} & 0 & \lambda\end{vmatrix}\\
+&+ \begin{vmatrix} \lambda & a_{12} & a_{13}\\ 0 & a_{22} & a_{23}\\ 0 & a_{32} & a_{33}\end{vmatrix}
++ \begin{vmatrix} \lambda & a_{12} & 0\\ 0 & a_{22} & 0\\ 0 & a_{32} & \lambda\end{vmatrix}
++ \begin{vmatrix} \lambda & 0 & a_{13}\\ 0 & \lambda & a_{23}\\ 0 & 0 & a_{33}\end{vmatrix}
++ \begin{vmatrix} \lambda & 0 & 0\\ 0 & \lambda & 0\\ 0 & 0 & \lambda\end{vmatrix}.
+\end{aligned}
+\]
+
+
+% ===== pdf idx 56, printed 42.0 =====
+% !PRINTED 42
+\weberpage{42}
+38. \textit{Multiplication einer Determinante mit einer beliebigen Grösse $\lambda$.} Gehen wir wiederum von der Matrix $(A)$ aus und ergänzen sie zur Matrix einer Determinante $\varDelta_1$, indem wir die Elemente $\lambda a_{11}$, $\lambda a_{12}$, $\lambda a_{13} \ldots \lambda a_{1n}$ als erste Zeile anfügen. Dann erhalten wir nach Nr. 28, (1)
+\[
+\varDelta_1 = \lambda a_{11}\,p_1 + \lambda a_{12}\,p_2 + \lambda a_{13}\,p_3 + \cdots \lambda a_{1n}\,p_n
+\]
+\[
+= \lambda(a_{11}\,p_1 + a_{12}\,p_2 + \cdots + a_{1n}\,p_n) = \lambda \cdot \varDelta.
+\]
+Andererseits ist $\varDelta_1$ dargestellt durch die Matrix:
+\[
+\varDelta_1 = \begin{vmatrix}
+\lambda a_{11}, & \lambda a_{12}, & \lambda a_{13} \ldots \lambda a_{1n}\\
+a_{21} & a_{22} & a_{23} \ldots . a_{2n}\\
+a_{31} & \ldots\ldots\ldots\ldots\ldots & a_{3n}\\
+\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\\
+a_{n1} & a_{n2} & a_{n3} \ldots a_{nn}
+\end{vmatrix} = \lambda \cdot \varDelta.
+\]
+Man sieht daraus: wenn alle Elemente der ersten Zeile einen gemeinschaftlichen Factor $\lambda$ besitzen, so ist die Determinante selbst ein Product, dessen einer Factor $\lambda$ ist. Dies gilt offenbar auch, wenn $\lambda$ Factor aller Elemente einer \textit{beliebigen} Zeile oder Colonne ist. Ebenso erkennt man umgekehrt den Satz:
+\begin{quote}
+\glqq Eine Determinante wird mit einem Factor $\lambda$ multiplicirt, indem man alle Elemente einer Zeile oder Colonne mit demselben multiplicirt.\grqq{}
+\end{quote}
+39. \textit{Verbindung des Additions- und Multiplicationssatzes.} Wir hatten in Nr. 35 die Gleichungen $(E)$ erhalten:
+\[
+\varDelta_0 = a_{11}\,p_1 + a_{12}\,p_2 + \cdots a_{1n}\,p_n,
+\]
+\[
+\varDelta_1 = b_{11}\,p_1 + b_{12}\,p_2 + \cdots b_{1n}\,p_n,
+\]
+\[
+\varDelta_2 = \varDelta_0 + \varDelta_1.
+\]
+Setzen wir nun fest, dass die Elemente $b_{ii}$ den Bedingungen genügen:
+\[
+\alpha)\qquad b_{11} = \lambda a_{21}, \quad b_{12} = \lambda a_{22}, \quad b_{13} = \lambda a_{23} \cdots b_{1n} = \lambda a_{2n},
+\]
+dann wird wegen der ersten Relation in Nr. 34 $(D)$
+\[
+\varDelta_1 = \lambda(a_{21}\,p_1 + a_{22}\,p_2 + \cdots a_{2n}\,p_n) = 0,
+\]
+folglich
+\[
+\varDelta_2 = \varDelta_0;
+\]
+das heisst:
+\begin{quote}
+\glqq Addirt man die mit der willkürlichen Grösse $\lambda$ multiplicirt gedachten Elemente der zweiten Zeile zu den entsprechenden der ersten Zeile, so ändert sich der Werth der Determinante nicht.\grqq{}
+\end{quote}
+
+
+% ===== pdf idx 57, printed 43.0 =====
+% !PRINTED 43
+\weberpage{43}
+Auch hier ist die Verallgemeinerung sofort einzusehen. Wir ersetzen die Bedingungen $\alpha$) durch die allgemeineren
+\[
+\beta)\qquad b_{11} = \lambda a_{\varrho 1}, \quad b_{12} = \lambda a_{\varrho 2} \cdots b_{1n} = \lambda a_{\varrho n},
+\]
+und erinnern uns an die Vertauschbarkeit von Zeilen und Colonnen. Dann ist der Satz evident:
+\begin{quote}
+\glqq Der Werth einer Determinante bleibt ungeändert, wenn man die mit dem nämlichen Factor multiplicirt gedachten Elemente einer Zeile oder Colonne zu den entsprechenden Elementen einer andern Zeile bezw. Colonne addirt.\grqq{}
+\end{quote}
+Dass dieser Process ohne Einfluss auf den Werth der Determinante beliebig wiederholt werden kann, bedarf wohl nur der Erwähnung.
+
+40. \textit{Anwendungen.} \textit{Beispiel} 1. Die Determinante
+\[
+\begin{vmatrix} x^2+y^2 & x & y & 1\\ a_3 & -a_2 & -a_1 & 1\\ b_3 & -b_2 & -b_1 & 1\\ c_3 & -c_2 & -c_1 & 1\end{vmatrix}
+= \begin{vmatrix} 0 & x & y & 1\\ a_3+a_2 x+a_1 y & -a_2 & -a_1 & 1\\ b_3+b_2 x+b_1 y & -b_2 & -b_1 & 1\\ c_3+c_2 x+c_1 y & -c_2 & -c_1 & 1\end{vmatrix}
+\]
+\[
+= \begin{vmatrix} 0 & x & y & 1\\ a_3+a_2 x+a_1 y & -(x+a_2) & -(y+a_1) & 0\\ b_3+b_2 x+b_1 y & -(x+b_2) & -(y+b_1) & 0\\ c_3+c_2 x+c_1 y & -(x+c_2) & -(y+c_1) & 0\end{vmatrix}
+\]
+\[
+= -\begin{vmatrix} a_3+a_2 x+a_1 y & x+a_2 & y+a_1\\ b_3+b_2 x+b_1 y & x+b_2 & y+b_1\\ c_3+c_2 x+c_1 y & x+c_2 & y+c_1\end{vmatrix}.
+\]
+Hier wurde die zweite Determinante aus der ersten erhalten, indem man die mit $x$ multiplicirt gedachte zweite Colonne und die mit $y$ multiplicirt gedachte dritte Colonne von der ersten subtrahirte. Daraus ging die dritte hervor durch Addition der mit $-1$ multiplicirten ersten Zeile zu den drei übrigen. Die letzte Determinante liefert die Entwicklung der eben erhaltenen nach den Elementen der letzten Colonne.
+
+\textit{Beispiel} 2.
+\[
+\varDelta = \begin{vmatrix} 1 & 1 & 1\\ \alpha & \beta & \gamma\\ \alpha^2 & \beta^2 & \gamma^2\end{vmatrix}
+= \begin{vmatrix} 1 & 0 & 0\\ \alpha & \beta-\alpha & \gamma-\alpha\\ \alpha^2 & \beta^2-\alpha^2 & \gamma^2-\alpha^2\end{vmatrix}
+=
+\]
+%CONT>>
+
+
+% ===== pdf idx 58, printed 44.0 =====
+% !PRINTED 44
+\weberpage{44}
+%<<CONT
+\[
+= (\beta-\alpha)(\gamma-\alpha) \begin{vmatrix} 1 & 0 & 0\\ \alpha & 1 & 1\\ \alpha^2 & \beta+\alpha & \gamma+\alpha\end{vmatrix}
+\]
+\[
+= (\beta-\alpha)(\gamma-\alpha) \begin{vmatrix} 1 & 0 & 0\\ \alpha & 1 & 0\\ \alpha^2 & \beta+\alpha & \gamma-\beta\end{vmatrix}
+\]
+\[
+= (\beta-\alpha)(\gamma-\alpha)(\gamma-\beta) \begin{vmatrix} 1 & 0 & 0\\ \alpha & 1 & 0\\ \alpha^2 & \beta+\alpha & 1\end{vmatrix} = (\beta-\alpha)(\gamma-\alpha)(\gamma-\beta).
+\]
+Ganz in derselben Weise erhält man der Reihe nach:
+
+\textit{Beispiel} 3.
+\[
+\varDelta = \begin{vmatrix} 1 & 1 & 1 & 1 & 1\\ \alpha_1 & \alpha_2 & \alpha_3 & \alpha_4 & \alpha_5\\ \alpha_1^2 & \alpha_2^2 & \alpha_3^2 & \alpha_4^2 & \alpha_5^2\\ \alpha_1^3 & \alpha_2^3 & \alpha_3^3 & \alpha_4^3 & \alpha_5^3\\ \alpha_1^4 & \alpha_2^4 & \alpha_3^4 & \alpha_4^4 & \alpha_5^4\end{vmatrix}
+= \begin{vmatrix}
+1 & 0 & 0 & 0 & 0\\
+\alpha_1, & \alpha_2-\alpha_1, & \alpha_3-\alpha_1, & \alpha_4-\alpha_1, & \alpha_5-\alpha_1\\
+\alpha_1^2, & \alpha_2^2-\alpha_1^2, & \alpha_3^2-\alpha_1^2, & \alpha_4^2-\alpha_1^2, & \alpha_5^2-\alpha_1^2\\
+\alpha_1^3, & \alpha_2^3-\alpha_1^3, & \alpha_3^3-\alpha_1^3, & \alpha_4^3-\alpha_1^3, & \alpha_5^3-\alpha_1^3\\
+\alpha_1^4, & \alpha_2^4-\alpha_1^4, & \alpha_3^4-\alpha_1^4, & \alpha_4^4-\alpha_1^4, & \alpha_5^4-\alpha_1^4
+\end{vmatrix}
+\]
+\[
+= (\alpha_2-\alpha_1)(\alpha_3-\alpha_1)(\alpha_4-\alpha_1)(\alpha_5-\alpha_1) \times
+\]
+% ?? uncertain: the row separators in the following two 4-column blocks mix commas and semicolon-like gaps in the scan; reproduced as printed, spacing approximate
+\[
+\times \begin{vmatrix}
+1 & 0 & 0 & 0\\
+\alpha_1 & 1 & 1 & 1\\
+\alpha_1^2, & \alpha_1+\alpha_2 & {}; \alpha_1+\alpha_3 & , \alpha_1+\alpha_4, \alpha_1+\alpha_5\\
+\alpha_1^3, & \alpha_1^2+\alpha_1\alpha_2+\alpha_2^2 & , \alpha_1^2+\alpha_1\alpha_3+\alpha_3^2 & , \cdots, \cdots\\
+\alpha_1^4, & \alpha_1^3+\alpha_1^2\alpha_2+\alpha_1\alpha_2^2+\alpha_2^3 & , \alpha_1^3+\alpha_1^2\alpha_3+\alpha_1\alpha_3^2+\alpha_3^3 & , \cdots, \cdots
+\end{vmatrix}
+\]
+\[
+= (\alpha_2-\alpha_1)(\alpha_3-\alpha_1)(\alpha_4-\alpha_1)(\alpha_5-\alpha_1) \times
+\]
+\[
+\times \begin{vmatrix}
+1 & 0 & 0 & 0\\
+\alpha_1 & 1 & 0 & 0\\
+\alpha_1^2, & \alpha_1+\alpha_2, & \alpha_3-\alpha_2, & \alpha_4-\alpha_2, \quad \alpha_5-\alpha_2\\
+\alpha_1^3, & \dfrac{\alpha_2^2-\alpha_1^2}{\alpha_2-\alpha_1}, & (\alpha_3-\alpha_2)\displaystyle\sum_{1}^{3}\alpha_i, & \alpha_4^2-\alpha_2^2+\alpha_1(\alpha_4-\alpha_2), \cdots\\
+\alpha_1^4, & \dfrac{\alpha_2^4-\alpha_1^4}{\alpha_2-\alpha_1}, & \cdots, & \cdots, \cdots
+\end{vmatrix}
+\]
+\[
+= (\alpha_2-\alpha_1)(\alpha_3-\alpha_1)(\alpha_4-\alpha_1)(\alpha_5-\alpha_1)(\alpha_3-\alpha_2)(\alpha_4-\alpha_2)(\alpha_5-\alpha_2) \times
+\]
+\[
+\times \begin{vmatrix}
+1 & 0 & 0 & 0 & 0\\
+\alpha_1 & 1 & 0 & 0 & 0\\
+\alpha_1^2, & \alpha_1+\alpha_2, & 1 & 1 & 1\\
+\alpha_1^3, & \dfrac{\alpha_2^2-\alpha_1^2}{\alpha_2-\alpha_1}, & \displaystyle\sum_{1}^{3}\alpha_i, & \alpha_1+\alpha_2+\alpha_4, & \alpha_1+\alpha_2+\alpha_5\\
+\alpha_1^4, & \dfrac{\alpha_2^3-\alpha_1^3}{\alpha_2-\alpha_1}, & \cdots, & \cdots, & \cdots
+\end{vmatrix}
+\]
+%CONT>>
+
+
+% ===== pdf idx 59, printed 45.0 =====
+% !PRINTED 45
+\weberpage{45}
+%<<CONT
+{\footnotesize
+\[
+\begin{aligned}
+={}& (\alpha_2-\alpha_1)(\alpha_3-\alpha_1)(\alpha_4-\alpha_1)(\alpha_5-\alpha_1)(\alpha_3-\alpha_2)(\alpha_4-\alpha_2)(\alpha_5-\alpha_2) \times\\
+&
+\left|
+\begin{array}{lllll}
+1 & 0 & 0 & 0 & 0 \\
+\alpha_1 & 1 & 0 & 0 & 0 \\
+\alpha_1^2, & \alpha_1+\alpha_2, & 1 & 0 & 0 \\
+\alpha_1^3, & \dfrac{\alpha_2^2-\alpha_1^2}{\alpha_2-\alpha_1}, & \displaystyle\sum_1^3\alpha_i, & \alpha_4-\alpha_3, & \alpha_5-\alpha_3 \\
+\alpha_1^4, & \dfrac{\alpha_2^4-\alpha_1^4}{\alpha_2-\alpha_1}, & \cdots, & (\alpha_4-\alpha_3)\displaystyle\sum_1^4\alpha_i, & (\alpha_5-\alpha_3)\left(\displaystyle\sum_1^5\alpha_i-\alpha_4\right)
+\end{array}
+\right|
+\end{aligned}
+\]
+}
+\[
+= \prod_1^{5\,(i>k)} \frac{\alpha_i-\alpha_k}{\alpha_5-\alpha_4} \times
+\left|
+\begin{array}{lllll}
+1 & 0 & 0 & 0 & 0 \\
+\alpha_1 & 1 & 0 & 0 & 0 \\
+\alpha_1^2, & \alpha_1+\alpha_2, & 1 & 0 & 0 \\
+\alpha_1^3, & \dfrac{\alpha_2^2-\alpha_1^2}{\alpha_2-\alpha_1}, & \displaystyle\sum_1^3\alpha_i, & 1, & 1 \\
+\alpha_1^4, & \dfrac{\alpha_2^4-\alpha_1^4}{\alpha_2-\alpha_1}, & \cdots, & \displaystyle\sum_1^4\alpha_i, & \displaystyle\sum_1^5\alpha_i-\alpha_4
+\end{array}
+\right|
+\]
+\[
+= \prod_1^{5\,(i>k)} (\alpha_i-\alpha_k) \times
+\left|
+\begin{array}{lllll}
+1 & 0 & 0 & 0 & 0 \\
+\alpha_1 & 1 & 0 & 0 & 0 \\
+\alpha_1^2, & \alpha_1+\alpha_2, & 1 & 0 & 0 \\
+\alpha_1^3, & \dfrac{\alpha_2^2-\alpha_1^2}{\alpha_2-\alpha_1}, & \displaystyle\sum_1^3\alpha_i, & 1, & 0 \\
+\alpha_1^4, & \dfrac{\alpha_2^4-\alpha_1^4}{\alpha_2-\alpha_1}, & \cdots, & \displaystyle\sum_1^4\alpha_i, & 1
+\end{array}
+\right|.
+\]
+
+Die Determinante im letzten Ausdrucke besitzt aber (vergl. Nr.\,30, Beispiel 4) den Werth 1, also hat man
+
+\[
+\Delta = (\alpha_2-\alpha_1)(\alpha_3-\alpha_1)(\alpha_4-\alpha_1)(\alpha_5-\alpha_1)(\alpha_3-\alpha_2)(\alpha_4-\alpha_2)
+(\alpha_5-\alpha_2)(\alpha_4-\alpha_3)(\alpha_5-\alpha_3)(\alpha_5-\alpha_4).
+\]
+
+\textit{Anmerkung.} Dergleichen Determinanten wie (2) und (3) werden übrigens rascher auf folgende Weise berechnet. Man denkt sich $\alpha_1$ bis $\alpha_5$ als Veränderliche, und frägt sich, unter welcher Bedingung $\Delta=0$ wird. Dies geschieht aber, so oft zwei Colonnen in $\Delta$ einander gleich werden, d. i. also, wenn $\alpha_2=\alpha_1$, $\alpha_3=\alpha_1$ $\cdot$ $\cdot$ u. s. w., d. h. $\alpha_2-\alpha_1$, $\alpha_3-\alpha_1$ u. s. w. müssen Factoren von $\Delta$ sein. Auf diese Weise erhält man sofort
+%CONT>>
+
+
+% ===== pdf idx 60, printed 46.0 =====
+% !PRINTED 46
+\weberpage{46}
+%<<CONT
+\[
+\Delta = \varrho \prod_1^5 (\alpha_i-\alpha_k), \quad i>k.
+\]
+
+Es handelt sich noch $\varrho$ zu berechnen. In unserm Falle kann $\varrho$ nur noch eine Constante sein und zwar gleich $+1$, wie man durch Vergleichung des Diagonalgliedes von $\Delta$, mit dem Product aller Minuenden in $\Pi$ erkennt.
+
+\textit{Beispiel} 4. Die Sätze dieses Paragraphen, insbesondere der letzte, leisten bei Berechnung von Determinanten, namentlich wenn die Elemente grosse Zahlen sind, werthvolle Dienste. Wir wollen dies in dem folgenden Beispiele zeigen.
+
+Es ist:
+\[
+\Delta =
+\left|
+\begin{array}{cccc}
+18 & 36 & 58 & 50 \\
+26 & 39 & 80 & 78 \\
+17 & 39 & 55 & 45 \\
+9 & 16 & 27 & 23
+\end{array}
+\right|
+\]
+zu berechnen.
+
+Subtrahirt man die zweifache letzte Zeile von der ersten, ihr dreifaches von der zweiten und ihr zweifaches von der dritten, so kommt:
+\[
+\Delta =
+\left|
+\begin{array}{rrrr}
+0 & 4 & 4 & 4 \\
+-1 & -9 & -1 & 9 \\
+-1 & 7 & 1 & -1 \\
+9 & 16 & 27 & 23
+\end{array}
+\right|.
+\]
+
+Subtrahirt man von der letzten Zeile die vierfache erste, addirt sodann die dritte zur zweiten und subtrahirt endlich die letzte Colonne von der zweiten und dritten, dann erhält man der Reihe nach:
+\[
+\Delta =
+\left|
+\begin{array}{rrrr}
+0 & 4 & 4 & 4 \\
+-1 & -9 & -1 & 9 \\
+-1 & 7 & 1 & -1 \\
+9 & 0 & 11 & 7
+\end{array}
+\right|
+=
+\left|
+\begin{array}{rrrr}
+0 & 4 & 4 & 4 \\
+-2 & -2 & 0 & 8 \\
+-1 & 7 & 1 & -1 \\
+9 & 0 & 11 & 7
+\end{array}
+\right|
+\]
+\[
+=
+\left|
+\begin{array}{rrrr}
+0 & 0 & 0 & 4 \\
+-2 & -10 & -8 & 8 \\
+-1 & 8 & 2 & -1 \\
+9 & -7 & 4 & 7
+\end{array}
+\right|
+= +4
+\left|
+\begin{array}{rrr}
+2 & 10 & 8 \\
+-1 & 8 & 2 \\
+9 & -7 & 4
+\end{array}
+\right|.
+\]
+
+Dividirt man in der letzten Determinante einmal die letzte Colonne, dann die erste Zeile durch den Factor 2, addirt alsdann die erste Zeile zur zweiten und subtrahirt das neunfache der ersten Zeile von der dritten, so erhält man endlich:
+%CONT>>
+
+
+% ===== pdf idx 61, printed 47.0 =====
+% !PRINTED 47
+\weberpage{47}
+%<<CONT
+\[
+\Delta = 16
+\left|
+\begin{array}{rrr}
+1 & 5 & 2 \\
+-1 & 8 & 1 \\
+9 & -7 & 2
+\end{array}
+\right|
+= 16
+\left|
+\begin{array}{rrr}
+1 & 5 & 2 \\
+0 & 13 & 3 \\
+0 & -52 & -16
+\end{array}
+\right|
+= -16
+\left|
+\begin{array}{rr}
+13 & 3 \\
+52 & 16
+\end{array}
+\right|
+\]
+\[
+= -64
+\left|
+\begin{array}{rr}
+13 & 3 \\
+13 & 4
+\end{array}
+\right|
+= -64\cdot 13
+\left|
+\begin{array}{rr}
+1 & 3 \\
+1 & 4
+\end{array}
+\right|
+= -64\cdot 13(4-3) = -64\cdot 13 = -832.
+\]
+
+\textit{Beispiel} 5. Man berechne die Determinante:
+\[
+\Delta =
+\left|
+\begin{array}{cccc}
+0 & \varrho & \sigma & \tau \\
+\varrho & 0 & \tau & \sigma \\
+\sigma & \tau & 0 & \varrho \\
+\tau & \sigma & \varrho & 0
+\end{array}
+\right|.
+\]
+
+Addirt man die zweite, dritte und vierte Zeile zur ersten, so erhält man:
+\[
+\Delta =
+\left|
+\begin{array}{cccc}
+\varrho+\sigma+\tau & \varrho+\sigma+\tau & \varrho+\sigma+\tau & \varrho+\sigma+\tau \\
+\varrho & 0 & \tau & \sigma \\
+\sigma & \tau & 0 & \varrho \\
+\tau & \sigma & \varrho & 0
+\end{array}
+\right|
+= (\varrho+\sigma+\tau)
+\left|
+\begin{array}{cccc}
+1 & 1 & 1 & 1 \\
+\varrho & 0 & \tau & \sigma \\
+\sigma & \tau & 0 & \varrho \\
+\tau & \sigma & \varrho & 0
+\end{array}
+\right|.
+\]
+
+Subtrahirt man ferner die zweite Colonne von der ersten, die dritte von der zweiten, die vierte von der dritten, so kommt:
+\[
+\Delta = (\varrho+\sigma+\tau)
+\left|
+\begin{array}{cccc}
+0 & 0 & 0 & 1 \\
+\varrho & -\tau & \tau-\sigma & \sigma \\
+\sigma-\tau & \tau & -\varrho & \varrho \\
+\tau-\sigma & \sigma-\varrho & \varrho & 0
+\end{array}
+\right|
+= (\varrho+\sigma+\tau)
+\left|
+\begin{array}{ccc}
+\varrho & -\tau & \tau-\sigma \\
+\sigma-\tau & \tau & -\varrho \\
+\tau-\sigma & \sigma-\varrho & \varrho
+\end{array}
+\right|.
+\]
+
+Addirt man hier die dritte zur zweiten Zeile, dann entsteht:
+\[
+\Delta = (\varrho+\sigma+\tau)
+\left|
+\begin{array}{ccc}
+\varrho & -\tau & \tau-\sigma \\
+0 & \tau+\sigma-\varrho & 0 \\
+\tau-\sigma & \sigma-\varrho & \varrho
+\end{array}
+\right|
+= (\varrho+\sigma+\tau)(\tau+\sigma-\varrho)
+\left|
+\begin{array}{cc}
+\varrho & \tau-\sigma \\
+\tau-\sigma & \varrho
+\end{array}
+\right|
+\]
+\[
+= (\varrho+\sigma+\tau)(\tau+\sigma-\varrho)(\varrho+\tau-\sigma)(\varrho-\tau+\sigma).
+\]
+
+\begin{center}
+\textbf{§ 4. Partialdeterminanten höherer Ordnung.}
+\end{center}
+
+41. \textit{Begriff der Unterdeterminante zweiter Ordnung einer Determinante $\Delta$.} Es möge noch einmal daran erinnert werden, dass in keinem Gliede $G_\varrho$ einer Determinante zwei Elemente $a_{ik}$ und $a_{rs}$ als Factoren auftreten können, für welche $i=r$, oder $k=s$ wäre, da jedes Glied aus jeder Zeile und jeder Colonne ein und nur ein Element besitzt. Wählen wir nun aus allen $N$ Gliedern $G_\varrho$ diejenigen heraus, welche
+%CONT>>
+
+
+% ===== pdf idx 62, printed 48.0 =====
+% !PRINTED 48
+\weberpage{48}
+%<<CONT
+das Product $a_{ik}\cdot a_{rs}$ ($i\gtrless r$, $k\gtrless s$) als Factor haben und bezeichnen sie der Reihe nach mit
+
+\weq{1}{G_{k_1},\ \ G_{k_2},\ \ G_{k_3},\ \cdots G_{k_\sigma}.}
+
+Das Product aller übrigen Factoren eines dieser ausgewählten Glieder sei \textit{inclusive Modul} $\varepsilon_S$ mit $K_{k_\varrho}$ bezeichnet, so dass also die Beziehungen gelten:
+
+\weq{2}{G_{k_1}=a_{ik}a_{rs}\cdot K_{k_1},\quad G_{k_2}=a_{ik}a_{rs}K_{k_2},\cdots \text{u.\,s.\,w.},\quad G_{k_\sigma}=a_{ik}a_{rs}K_{k_\sigma}.}
+
+Die Summe aller dieser Glieder ist daher dargestellt durch
+
+\weq{3}{\sum_{\varrho=1}^{\varrho=\sigma} G_{k_\varrho} = a_{ik}\,a_{rs}\sum_{\varrho=1}^{\varrho=\sigma} K_{k_\varrho},}
+
+oder wenn wir
+
+\weq{4}{\sum_{\varrho=1}^{\varrho=\sigma} K_{k_\varrho} = A_{\substack{ir\\ks}}}
+
+setzen, so erhalten wir:
+
+\weq{5}{\sum_{\varrho=1}^{\varrho=\sigma} G_{k_\varrho} = a_{ik}\,a_{rs}\cdot A_{\substack{ir\\ks}}.}
+
+Wir nennen nun $A_{\substack{ir\\ks}}$ die zum Producte $a_{ik}a_{rs}$ gehörige \textit{Partialdeterminante zweiter Ordnung} von $\Delta$, oder Minor zweiter Ordnung.
+
+42. \textit{Beziehung des Minors zweiter Ordnung $A_{\substack{ir\\ks}}$ zum Minor erster Ordnung $A_{ik}$.} Die oben ausgewählten Glieder $G_{k_\varrho}$ müssen, da sie ja den Factor $a_{ik}$ enthalten, sämmtlich unter den bereits früher (Nr.\,24) herausgegriffenen Gliedern $G_{i_\varrho}$ auftreten, welche die Form besassen:
+
+\weq{6}{G_{i_\varrho} = a_{ik}\cdot H_{i_\varrho}.}
+
+Jedes Glied $G_{i_\varrho}$, dessen Factor $H_{i_\varrho}$ das Element $a_{rs}$ enthält, ist auch ein Glied $G_{k_\varrho}$. Bezeichnen wir also jeden solchen Factor $H_{i_\varrho}$, in welchem $a_{rs}$ auftritt, mit $H_{k_\varrho}$, dann besitzt dieser selbst wieder die Form
+
+\weq{7}{H_{k_\varrho} = a_{rs}\cdot K_{k_\varrho},}
+
+wenn wir unter $K_{k_\varrho}$ die Gesammtheit aller anderen Elemente in $H_{k_\varrho}$ verstehen, wie wir bereits in Nr.\,41 festgesetzt haben.
+
+Wir haben also auch wegen Gleichung (4) in Nr.\,41 für die Summe aller dieser Factoren $H_{k_\varrho}$ die Beziehung
+
+\[
+\sum_{\varrho=1}^{\varrho=\sigma} H_{k_\varrho} = \sum_{\varrho=1}^{\varrho=\sigma} a_{rs} K_{k_\varrho} = a_{rs}\sum_{\varrho=1}^{\varrho=\sigma} K_{k_\varrho} = a_{rs}\,A_{\substack{ir\\ks}}.
+\]
+%CONT>>
+
+
+% ===== pdf idx 63, printed 49.0 =====

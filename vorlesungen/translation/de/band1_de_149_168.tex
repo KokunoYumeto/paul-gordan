@@ -1,0 +1,1238 @@
+% !PRINTED 149
+\weberpage{149}
+%<<CONT
+wurde. Bildet man sich aus den Functionen $f(x)$ und $\varphi(x)$ der Reihe nach die
+Functionen
+
+\[ x^0\cdot f,\quad x^1\cdot f,\quad x^2\cdot f,\quad x^3\cdot f \ldots x^{n-1}\cdot f \]
+\[ x^0\cdot \varphi,\quad x^1\cdot \varphi,\quad x^2\cdot \varphi,\quad x^3\cdot \varphi
+\ldots x^{m-1}\cdot \varphi, \]
+
+so kann man sich darin die Potenzen $x^k$ durch $\xi_k$ ersetzt denken, wodurch wir $m+n$
+lineare Functionen der $m+n$ Gr\"ossen
+
+\[ \xi_0,\ \xi_1,\ \xi_2 \ldots \xi_k \ldots \xi_{n+m-1} \]
+
+erhalten. Die partiellen Differentialquotienten nach diesen $m+n$ Gr\"ossen sind gerade die
+Coefficienten der Functionen $f$ und $\varphi$, und es ist daher
+
+\[
+R_{f,\varphi} =
+\left|
+\begin{array}{cccc}
+\dfrac{\partial(x^{n-1}f)}{\partial\xi_{n+m-1}} & \dfrac{\partial(x^{n-1}f)}{\partial\xi_{n+m-2}} & \dfrac{\partial(x^{n-1}f)}{\partial\xi_{n+m-3}} \ldots & \dfrac{\partial(x^{n-1}f)}{\partial\xi_0} \\[2ex]
+\dfrac{\partial(x^{n-2}f)}{\partial\xi_{n+m-1}} & \dfrac{\partial(x^{n-2}f)}{\partial\xi_{n+m-2}} & \cdot\ \cdot\ \cdot\ \cdot\ \cdot & \dfrac{\partial(x^{n-2}f)}{\partial\xi_0} \\[2ex]
+\cdot & \cdot & \cdot\ \cdot\ \cdot\ \cdot\ \cdot & \cdot \\[1ex]
+\dfrac{\partial(x^{m-1}\varphi)}{\partial\xi_{n+m-1}} & \dfrac{\partial(x^{m-1}\varphi)}{\partial\xi_{n+m-2}} & \dfrac{\partial(x^{m-1}\varphi)}{\partial\xi_{n+m-3}} \ldots & \dfrac{\partial(x^{m-1}\varphi)}{\partial\xi_0} \\[2ex]
+\dfrac{\partial(x^{m-2}\varphi)}{\partial\xi_{n+m-1}} & \cdot & \cdot\ \cdot\ \cdot\ \cdot\ \cdot & \cdot \\[1ex]
+\cdot & \cdot & \cdot\ \cdot\ \cdot\ \cdot\ \cdot & \cdot \\[1ex]
+\dfrac{\partial(x^0\varphi)}{\partial\xi_{n+m-1}} & \dfrac{\partial(x^0\varphi)}{\partial\xi_{n+m-2}} & \dfrac{\partial(x^0\varphi)}{\partial\xi_{n+m-3}} \ldots & \dfrac{\partial(x^0\varphi)}{\partial\xi_0}
+\end{array}
+\right| .
+\]
+
+Man kann daher in diesem Sinne auch k\"urzer schreiben:
+
+\[
+R_{f,\varphi} =
+\left(
+\begin{array}{cccccc}
+x^{n-1}f, & x^{n-2}f \ldots x^0f, & x^{m-1}\varphi, & x^{m-2}\varphi \ldots x^0\varphi \\
+x^{n+m-1}, & x^{n+m-2}\ldots\ldots x^n, & x^{n-1}\ldots x^0
+\end{array}
+\right).
+\]
+
+Dabei ist also in der obern Reihe dieses Ausdruckes, den wir
+%CONT>>
+
+
+% ===== pdf idx 164, printed 150.0 =====
+% !PRINTED 150
+\weberpage{150}
+%<<CONT
+fr\"uher mit Z\"ahler bezeichnet haben, jede Potenz von $x$ durch $\xi$ mit dem
+entsprechenden Index ersetzt zu denken, und die Gr\"ossen der untern Reihe, welcher wir
+seinerzeit den Namen Nenner gaben, sind jene Gr\"ossen $\xi_{n+m-1}$, $\xi_{n+m-2}\ldots
+\xi_0$, von welchen wir alle Functionen im Z\"ahler als linear abh\"angig zu betrachten
+haben. Wir werden im Folgenden auch noch Functionaldeterminanten betrachten, in deren Nenner
+selbst lineare Functionen der $\xi_k$ sich befinden, so dass alsdann die Gr\"ossen des
+Z\"ahlers nicht nur linear in $\xi_k$, sondern auch noch linear in diesen linearen
+Functionen der $\xi_k$ zu denken sind. (Vergleiche auch das Beispiel in Nr. 149.)
+
+144. \textit{Methode f\"ur die folgenden Betrachtungen.} Das wesentlichste Hilfsmittel bei
+allen folgenden Untersuchungen wird der bereits in
+%CONT>>
+
+%<<CONT
+Nr. 117 aufgestellte Productsatz f\"ur Functionaldeterminanten bilden, welcher dort
+dargestellt wurde durch
+
+\[
+\left(
+\begin{array}{cc}
+y_1\ y_2\ y_3 \ldots y_n \\
+x_1\ x_2\ x_3 \ldots x_n
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+z_1\ z_2\ z_3 \ldots z_n \\
+y_1\ y_2\ y_3 \ldots y_n
+\end{array}
+\right)
+=
+\left(
+\begin{array}{cc}
+z_1\ z_2\ z_3 \ldots z_n \\
+x_1\ x_2\ x_3 \ldots x_n
+\end{array}
+\right).
+\]
+
+Dabei werden wir jene Determinanten, mit denen wir multipliciren, stets so w\"ahlen, dass
+sie den Werth 1 besitzen. Man erreicht dies durch solche Wahl der Functionen und ihrer
+unabh\"angig Ver\"anderlichen, dass diejenigen partiellen Differentialquotienten derselben,
+welche in die Diagonale zu stehen kommen, den Werth 1, alle rechts davon befindlichen aber
+oder alle links in der Matrix stehenden verschwinden. An Stelle der Multiplication tritt
+bisweilen auch Division, d.\,h. anstatt mit der Functionaldeterminante
+
+\weq{1}{
+\left(
+\begin{array}{cc}
+z_1\ z_2\ z_3 \ldots z_n \\
+y_1\ y_2\ y_3 \ldots y_n
+\end{array}
+\right)
+}
+
+zu multipliciren, nehmen wir die gleichsam gest\"urzte Form
+
+\weq{2}{
+\left(
+\begin{array}{cc}
+y_1\ y_2\ y_3 \ldots y_n \\
+z_1\ z_2\ z_3 \ldots z_n
+\end{array}
+\right)
+}
+
+als Multiplicator, eine Determinante, die nothwendig gleichfalls den Werth 1 besitzt, wenn
+ihn die urspr\"ungliche besass, wie ja aus dem Satze (vgl. Nr. 118)
+
+\[
+\left(
+\begin{array}{cc}
+y_1\ y_2\ y_3 \ldots y_n \\
+x_1\ x_2\ x_3 \ldots x_n
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+x_1\ x_2\ x_3 \ldots x_n \\
+y_1\ y_2\ y_3 \ldots y_n
+\end{array}
+\right)
+= 1
+\]
+
+direct hervorgeht.
+
+145. \textit{Berechnung von $R_{f+\varphi\psi,\varphi}$.} Sei $\psi$ irgend eine Function
+von $x$
+
+\[ \psi = c_0x^{q-1} + c_1x^{q-2}\ldots c_q, \]
+
+wo $q \leqq m-n$ ist. Bilden wir die Producte
+
+\[ \varphi\cdot\psi\cdot x^{n-1},\quad \varphi\cdot\psi\cdot x^{n-2}\ldots \varphi\cdot\psi\cdot x^0, \]
+
+ersetzen darin die Potenzen $x^k$ durch $\xi_k$, so stellt die Functionaldeterminante
+
+\[
+A =
+\left(
+\begin{array}{cc}
+x^{n-1}(f+\varphi\cdot\psi),\ x^{n-2}(f+\varphi\cdot\psi)\ldots x^0(f+\varphi\cdot\psi),\ x^{m-1}\varphi,\ x^{m-2}\varphi\ldots x^0\varphi \\
+x^{n-1}f,\ x^{n-2}f,\ \ldots\ x^0f,\ x^{m-1}\varphi,\ x^{m-2}\varphi\ldots x^0\varphi
+\end{array}
+\right)
+\]
+
+eine Determinante dar vom Werthe 1. Denn jede Gr\"osse im Z\"ahler ist eine lineare
+Function aller Gr\"ossen im Nenner, und zwar so beschaffen, dass die partiellen
+Differentialquotienten nach denselben f\"ur die Diagonalelemente die Werthe 1, f\"ur die
+links gelegenen die Werthe Null liefern, wie dies ein einfaches Beispiel klar machen mag.
+Ich nehme an $m=3$, $q=1$, $n=2$, dann ist die erste Function im
+%CONT>>
+
+
+% ===== pdf idx 165, printed 151.0 =====
+% !PRINTED 151
+\weberpage{151}
+%<<CONT
+Z\"ahler, wenn wir uns die Gr\"ossen $\xi_k$ eingetragen denken, dargestellt
+durch
+\[
+\begin{aligned}
+z_1 = (a_0\xi_4 + \alpha_1\xi_3 + a_2\xi_2 + a_3\xi_1) + c_0(b_0\xi_4 + b_1\xi_3 + b_2\xi_2)\\
+{} + c_1(b_0\xi_3 + b_1\xi_2 + b_2\xi_1).
+\end{aligned}
+\]
+% [sic] second term of z_1 printed as \alpha_1, not a_1, as elsewhere
+Die Variabeln der Nenner sind:
+\[
+\eta_1 = a_0\xi_4 + a_1\xi_3 + a_2\xi_2 + a_3\xi_1,\quad
+\eta_2 = a_0\xi_3 + a_1\xi_2 + a_2\xi_1 + a_3\xi_0,
+\]
+\[
+\eta_3 = b_0\xi_4 + b_1\xi_2 + b_2\xi_1,\quad
+\eta_4 = b_0\xi_3 + b_1\xi_2 + b_2\xi_1,\quad
+\eta_5 = b_0\xi_0 + b_1\xi_1 + b_2\xi_0.
+\]
+Die Differentiation nach diesen Gr\"ossen liefert als Elemente der ersten
+Zeile der Reihe nach
+\[
+1,\ 0,\ c_0,\ c_1,\ 0
+\]
+u. s. w. Die Determinante $A$ ist also in der That eine Determinante
+von der in Nr. 144 erw\"ahnten Eigenschaft: sie hat den Werth 1.
+
+Berechnen wir nun das Product
+\[
+A \cdot R_{f,\varphi} = 1 \cdot R_{f,\varphi},
+\]
+so entsteht gem\"ass dem Productsatze
+\[
+R_{f,\varphi} = \left(\begin{array}{l}
+x^{n-1}(f+\varphi\cdot\psi),\ x^{n-2}(f+\varphi\cdot\psi)\ldots x^0(f+\varphi\cdot\psi),\ x^{m-1}\varphi\ldots\varphi\\[2pt]
+x^{m+n-1},\quad x^{m+n-2}\ \cdots\cdots\cdots\cdots\ x^2,\ x^1,\ x^0
+\end{array}\right),
+\]
+oder
+\weq{I}{R_{f,\varphi} = R_{f+\varphi\cdot\psi,\varphi},}
+d. h.: \glqq Die Resultante von $f$ und $\varphi$ ist auch gleich der
+Resultante von $f+\varphi\cdot\psi$ und $\varphi$, wenn $\psi$ eine
+beliebige Function vom Grade $q\leqq m-n$ ist.\grqq{}
+
+\textit{Anmerkung.} Indem wir die Einschr\"ankung machten $q\leqq m-n$,
+setzen wir, wie schon mehrmals erw\"ahnt, voraus $m>n$. Es w\"are
+eine sch\"atzenswerthe Arbeit, auch den Fall zu untersuchen, in welchem
+$m<n$ ist, d. h. allgemein die Frage zu behandeln: Wie h\"angen die
+Resultante $R_{f+\varphi\cdot\psi,\varphi}$ und $R_{f,\varphi}$ zusammen,
+wenn wir \"uber den Grad der diesbez\"uglichen Functionen keinerlei
+Voraussetzung machen?
+
+146. \textit{Beispiel.} Ein besonders h\"aufiger Fall, in welchem von
+diesem Satze Gebrauch gemacht wird, ist jener, in welchem die Function
+$\psi$ eine Constante $\lambda$ ist. Man hat alsdann:
+\[
+R_{f,\varphi} = R_{f+\lambda\varphi,\varphi}.
+\]
+In diesem Falle ist der Satz auch leicht durch Zerlegung der
+Determinante $R_{f+\lambda\varphi,\varphi}$ zu erkennen. Sei z. B.
+\[
+f = a_0x^2 + a_1x + a_2
+\]
+\[
+\varphi = b_0x^2 + b_1x + b_2,
+\]
+dann ist
+\[
+R_{f+\lambda\varphi,\varphi} = \begin{vmatrix}
+a_0+\lambda b_0, & a_1+\lambda b_1, & a_2+\lambda b_2, & 0\\
+0 & a_0+\lambda b_0, & a_1+\lambda b_1, & a_2+\lambda b_2\\
+b_0 & b_1 & b_2 & 0\\
+0 & b_0 & b_1 & b_2
+\end{vmatrix}.
+\]
+
+
+% ===== pdf idx 166, printed 152.0 =====
+% !PRINTED 152
+\weberpage{152}
+Zerlegt man diese Determinante nach Nr. 37 in eine Summe von
+Determinanten, so sieht man leicht, dass alle bis auf
+\[
+R_{f,\varphi} = \begin{vmatrix}
+a_0 & a_1 & a_2 & 0\\
+0 & a_0 & a_1 & a_2\\
+b_0 & b_1 & b_2 & 0\\
+0 & b_0 & b_1 & b_2
+\end{vmatrix}
+\]
+identisch verschwinden, dass also die Beziehung besteht
+\[
+R_{f+\lambda\varphi,\varphi} = R_{f,\varphi}.
+\]
+147. \textit{Resultante von $f(x+u)$ und $\varphi(x+u)$.} Ersetzen wir
+in den Functionen $f$ und $\varphi$ die Ver\"anderliche $x$ durch $x+u$,
+so erhalten wir
+\[
+f(x+u) = a_0(x+u)^m + a_1(x+u)^{m-1}\cdots + a^m
+\]
+% [sic] printed a^m (superscript), not a_m
+\[
+\varphi(x+u) = b_0(x+u)^n + b_1(x+u)^{n-1}\cdots + b_n.
+\]
+Um die Resultante der so transformirten Functionen zu gewinnen, bilden
+wir zun\"achst folgende drei Functionaldeterminanten:
+\[
+\left(\begin{array}{l}
+(x+u)^{m+n-1},\ (x+u)^{m+n-2},\ \ldots (x+u)^0\\[2pt]
+x^{m+n-1},\quad x^{m+n-2},\ \ \ldots\ x^0
+\end{array}\right)
+\]
+\[
+\left(\begin{array}{l}
+(x+u)^{n-1}f,\ (x+u)^{n-2}f,\ldots(x+u)^0f,\ x^{m-1}\varphi,\quad x^{m-2}\varphi\ldots x^0\varphi\\[2pt]
+x^{n-1}f,\quad x^{n-2}f,\ \ldots\ x^0f,\quad x^{m-1}\varphi,\quad x^{m-2}\varphi\ldots x^0\varphi
+\end{array}\right)
+\]
+\[
+\left(\begin{array}{l}
+(x+u)^{n-1}f,\ (x+u)^{n-2}f,\ldots(x+u)^0f,\ (x+u)^{m-1}\varphi,\ (x+u)^{m-2}\varphi\ldots(x+u)^0\varphi\\[2pt]
+(x+u)^{n-1}f,\ (x+u)^{n-2}f,\ \ldots\ldots\ldots,\quad x^{m-1}\varphi,\quad x^{m-2}\varphi\ldots x^0\varphi
+\end{array}\right)
+\]
+und bezeichnen die erste mit $A$, die zweite mit $B$, die dritte mit
+$C$. Ersetzen wir wieder in allen darin auftretenden Gr\"ossen die
+$x^k$ durch $\xi_k$ und denken uns die Differentiationen nach den
+Gr\"ossen im Nenner ausgef\"uhrt, so sieht man, dass alle drei
+Determinanten als Diagonalelemente die Zahl 1, und links davon nur
+verschwindende Elemente besitzen. So sind z. B. die Elemente der ersten
+Determinante den Zeilen nach
+\[
+\begin{array}{lll}
+1 & \binom{m+n-1}{1}u, & \binom{m+n-1}{2}u^2\ldots u^{m+n-1}\\
+0 & 1 & \binom{m+n-2}{1}u\ldots u^{m+n-2}\\
+0 & 0 & 1\ \ldots\ldots u^{m+n-3}
+\end{array}
+\]
+u. s. w. Ebenso sind die ersten Zeilen der zweiten Determinante
+\[
+\begin{array}{lll}
+1 & \binom{n-1}{1}u, & \binom{n-1}{2}u^2\ldots u^{n-1}\ 0\ 0\ldots 0\\
+0 & 1 & \binom{n-2}{1}u\ldots u^{n-2}\ 0\ 0\ldots\\
+0 & 0 & 1\ \ldots u^{n-3}\ 0\ 0\ldots
+\end{array}
+\]
+u. s. w. Multipliciren wir mit den beiden letzten Determinanten die
+%CONT>>
+
+
+% ===== pdf idx 167, printed 153.0 =====
+% !PRINTED 153
+\weberpage{153}
+%<<CONT
+Resultante $R_{f,\varphi}$, und dividiren wir das Product durch die
+erste, so erhalten wir
+\[
+R_{f,\varphi}\cdot B\cdot C : A = R_{f,\varphi}
+\]
+\[
+= \left(\begin{array}{l}
+(x+u)^{n-1}f,\ (x+u)^{n-2}f\ldots(x+u)^0f,\ (x+u)^{m-1}\varphi\ldots(x+u)^0\varphi\\[2pt]
+(x+u)^{n+m-1},\ (x+u)^{n+m-2}\ \ldots\ldots\ldots\ldots\ (x+u)^0
+\end{array}\right).
+\]
+Der Ausdruck rechts ist aber nichts anderes als die Resultante der
+beiden Functionen $f(x+u)$, $\varphi(x+u)$; daher das Resultat:
+\weq{1}{R_{f,\varphi} = R_{f(x+u),\,\varphi(x+u)}.}
+Diese Relation definirt in Verbindung mit den beiden fr\"uher
+erhaltenen
+\weq{2}{R_{f,\varphi} = \frac{1}{\lambda^{mn}}\cdot R_{f(\lambda x),\,\varphi(\lambda x)}}
+und
+\weq{3}{R_{f,\varphi} = R_{x^n f\left(\frac{1}{x}\right),\; x^m\varphi\left(\frac{1}{x}\right)}}
+die Resultante als Invariante der beiden Formen $f$ und $\varphi$.
+
+Eine Invariante $J$ ist, wie wir sp\"ater noch eingehender betrachten
+werden, eine solche homogene Function der Coefficienten von $f(x)$ und
+$\varphi(x)$, welche sich bei linearer Transformation h\"ochstens um
+eine Potenz der Transformationsdeterminante
+$\Delta = \alpha_1\beta_2 - \beta_1\alpha_2$ von jener Function
+unterscheidet, die genau in derselben Weise aus den Coefficienten der
+linear transformirten Functionen $f(\alpha_1\xi+\alpha_2\eta)$ und
+$\varphi(\beta_1\xi+\beta_2\eta)$ gebildet ist wie $J$ selbst. Aus den
+drei Substitutionen
+\[
+x = \xi + u,\quad x = \frac{1}{\xi},\quad x = \lambda\xi
+\]
+l\"asst sich aber jede lineare Transformation zusammensetzen.
+
+148. \textit{Reduction der $(m+n)$reihigen Determinante $R_{f,\varphi}$.}
+Betrachten wir die Resultante
+\[
+A = \left(\begin{array}{l}
+x^{n-1},\quad x^{n-2}\ldots x^0,\ x^{m-1}\varphi,\ x^{m-2}\varphi\ldots x^0\varphi\\[2pt]
+x^{m+n-1},\quad x^{m+n-2}\ \ldots\ldots\ldots\ldots\ x^1,\ x^0
+\end{array}\right)
+\]
+und wenden auf sie die in Nr. 139 durchgef\"uhrte Vertauschung der
+Zeilen an, so erhalten wir
+\[
+A = (-1)^{m\cdot n}\left(\begin{array}{l}
+x^{m-1}\varphi,\ x^{m-2}\varphi\ldots x^0\varphi,\ x^{n-1},\ x^{n-2}\ldots x^0\\[2pt]
+x^{m+n-1},\quad x^{m+n-2}\ \ldots\ldots\ldots\ x^1,\ x^0
+\end{array}\right).
+\]
+Der Ausdruck rechts ist eine Determinante --- immer vorausgesetzt, dass
+$x^k$ durch $\xi_k$ ersetzt ist ---, deren $m$ erste Diagonalelemente
+den Werth $b_0$ und deren $n$ letzte Diagonalelemente den Werth 1
+haben. Alle Elemente links der Diagonale sind null; sie reducirt sich
+also auf
+\[
+A = (-1)^{m\cdot n}\,b_0^m.
+\]
+
+
+% ===== pdf idx 168, printed 154.0 =====
+% !PRINTED 154
+\weberpage{154}
+Dividiren wir daher die Resultante $R_{f,\varphi}$ mit $A$, so erhalten
+wir
+\[
+R_{f,\varphi}\cdot\frac{1}{(-1)^{m\cdot n}b_0^m}
+\]
+\[
+= \left(\begin{array}{l}
+x^{m+n-1},\quad x^{m+n-2}\ \ldots\ldots\ x^0\\[2pt]
+x^{n-1},\quad x^{n-2}\ldots x^{m-1}\varphi\ldots x^0\varphi
+\end{array}\right)
+\left(\begin{array}{l}
+x^{n-1}f,\quad x^{n-2}f\ldots f,\ x^{m-1}\varphi\ldots\varphi\\[2pt]
+x^{m+n-1},\ x^{m+n-2}\ \ldots\ldots\ x^0
+\end{array}\right)
+\]
+\[
+R_{f,\varphi} = (-1)^{mn}\cdot b_0^m\left(\begin{array}{l}
+x^{n-1}f,\ x^{n-2}f\ldots x^0f,\ x^{m-1}\varphi\ldots x^0\varphi\\[2pt]
+x^{n-1},\quad x^{n-2}\ \ldots x^0,\quad x^{m-1}\varphi\ldots x^0\varphi
+\end{array}\right),
+\]
+oder endlich (vgl. Nr. 116) nach Unterdr\"uckung gleicher
+\"ubereinander stehender Gr\"ossen:
+\weq{I}{R_{f,\varphi} = (-1)^{m\cdot n}\,b_0^m\left(\begin{array}{l}
+x^{n-1}f,\ x^{n-2}f,\ x^{n-3}f\ldots x^0f\\[2pt]
+x^{n-1},\quad x^{n-2}\ \ldots\ldots\ldots\ x^0
+\end{array}\right).}
+Hierbei sind die Functionen im Z\"ahler noch immer als Function sowohl
+der noch vorhandenen als der unterdr\"uckten Gr\"ossen zu betrachten,
+so dass also keineswegs der Ausdruck rechts, wie es auf den ersten
+Blick erscheinen m\"ochte, von den Coefficienten $b$ von $\varphi$
+unabh\"angig ist. Die Resultante als Determinante vom Grade $m+n$ ist
+somit reducirt auf eine vom Grade $n$.
+
+149. \textit{Beispiel.} Ich will das eben erhaltene Resultat noch
+durch ein Beispiel erl\"autern, indem ich die Resultante einer
+cubischen und quadratischen Form auf Grund desselben aufstelle. Es sei
+\[
+f(x) = a_0x^3 + a_1x^2 + a_2x + a^3
+\]
+% [sic] printed a^3 (superscript), not a_3
+\[
+\varphi(x) = b_0x^2 + b_1x + b_2.
+\]
+Dann ist die Resultante der beiden Functionen dargestellt durch
+\[
+R_{f,\varphi} = (-1)^6\cdot b_0{}^3\left(\begin{array}{l}
+x^1f,\ x^0f,\ x^2\varphi,\ x^1\varphi,\ x^0\varphi\\[2pt]
+x^1,\quad x^0,\quad x^2\varphi,\ x^1\varphi,\ x^0\varphi
+\end{array}\right)
+= b_0{}^3\left(\begin{array}{l}
+x^1f,\ x^0f\\[2pt]
+x^1,\quad x^0
+\end{array}\right).
+\]
+Bezeichnen wir also die Functionen im Z\"ahler mit
+$y_1\ y_2\ y_3\ y_4\ y_5$ und f\"uhren im Sylvester'schen Sinne $\xi_k$
+ein, so erhalten wir
+\[
+y_1 = a_0\xi_4 + a_1\xi_3 + a_2\xi_2 + a_3\xi_1
+\]
+\[
+y_2 = a_0\xi_3 + a_1\xi_2 + a_2\xi_1 + a_3\xi_0
+\]
+\[
+y_3 = b_0\xi_4 + b_1\xi_3 + b_2\xi_2
+\]
+\[
+y_4 = b_0\xi_3 + b_1\xi_2 + b_2\xi_1
+\]
+\[
+y_5 = b_0\xi_2 + b_1\xi_1 + b_2\xi_0.
+\]
+Ich eliminire nun aus $y_1$ und $y_2$ die Gr\"ossen $\xi_1\ \xi_3\ \xi_2$
+vermittelst der linearen Function $y_3\ y_4\ y_5$ in folgender Weise.
+Es ist
+\weq{1}{y_1 : y_3 = (a_0\xi_4 + a_1\xi_3\ldots) : (b_0\xi_4 + b_1\xi_3 + b_2\xi_2) = \frac{a_0}{b_0} + f_1,}
+%CONT>>
+
+
+% ===== pdf idx 169, printed 155.0 =====
+% !PRINTED 155
+\weberpage{155}
+\textbf{\S.\,11. Eigenschaften der Resultante $R_{f,\varphi}$.}
+
+wo mit $f_1$ der noch von $\xi_3$ und $\xi_2$ abhängige Rest
+\[ f_1 = \frac{1}{b_0}(b_0a_1)\xi_3 + \frac{1}{b_0}(b_0a_2)\xi_2 + a_3\xi_1 \]
+bezeichnet sei. Aus diesem Reste wird $\xi_3$ durch Division $y_4$ eliminirt. Man erhält
+\weq{2}{f_1 : y_4 = \frac{(b_0a_1)}{b_0{}^2} + f_2\,,}
+wobei $f_2$ der Rest ist:
+\[ f_2 = \frac{b_0(b_0a_2) - b_1(b_0a_1)}{b_0{}^2}\,\xi_2 + \frac{b_0{}^2a_3 - b_2(b_0a_1)}{b_0{}^2}\,\xi_1\,. \]
+Eliminirt man endlich hieraus durch Division mit $y_5$ auch $\xi_2$, so kommt:
+\weq{3}{\begin{aligned}
+f_2:y_5 &= \frac{b_0(b_0a_2)-b_1(b_0a_1)}{b_0{}^3} + \frac{1}{b_0{}^3}\{b_0{}^3a_3-b_0b_2(b_0a_1)-b_0b_1(b_0b_2)+b_1{}^2(b_0a_1)\}\xi_1\\
+&\quad -\frac{1}{b_0{}^3}\{b_2b_0(b_0a_2)-b_2b_1(b_0a_1)\}\xi_0\,.
+\end{aligned}}
+Trägt man diese Reste in (2) und (1) successive ein, so kommt:
+\weq{4}{\begin{aligned}
+y_1 &= \frac{a_0}{b_0}y_3 + \frac{(b_0a_1)}{b_0{}^2}y_4 + \frac{b_0(b_0a_2)-b_1(b_0a_1)}{b_0{}^3}y_5\\
+&\quad +\frac{1}{b_0{}^3}\Big\{[b_0{}^3a_3-b_0b_2(b_0a_1)--b_0b_1(b_0a_2)+b_1{}^2(b_0a_1)]\xi_1-[b_2b_0(b_0a_2)-b_2b_1(b_0a_1)]\xi_0\Big\}\,.
+\end{aligned}} % [sic] double minus as printed before b_0b_1(b_0a_2)
+Damit ist die erste Grösse $xf$ des Zählers als eine lineare Function der Grössen $\xi_k$ und anderer Grössen $y_i$, die selbst wieder linear in $\xi_k$ sind, dargestellt. Ebenso erhalten wir für die zweite Function $x^0\cdot f$
+\weq{5}{y_2 = \frac{a_0}{b_0}y_4+\frac{(b_0a_1)}{b_0{}^2}y_5+\frac{1}{b_0{}^2}\Big\{[b_0(b_0a_2)-b_1(b_0a_1)]\xi_1+[a_3b_0{}^2-b_2(b_0a_1)]\xi_0\Big\}\,.}
+Die Resultante der beiden Functionen ist also:
+\[ R_{f,\varphi} = b_0{}^3 \begin{pmatrix} y_1 & y_2 \\ x^1 & x^0 \end{pmatrix} \]
+\[ = \frac{b_0{}^3}{b_0{}^3b_0{}^2}\left|\begin{matrix}
+b_0{}^3a_3-b_0b_2(b_0a_1)-(b_0a_2)b_0b_1+b_1{}^2(b_0a_1), & b_2b_0(b_0a_2)-b_2b_1(b_0a_1)\\[4pt]
+b_0(b_0a_2)-b_1(b_0a_1), & a_3b_0{}^2-b_2(b_0a_1)
+\end{matrix}\right|\,. \]
+Ersetzt man in den Gleichungen (4) und (5) $y_3$, $y_4$, $y_5$ durch $x^2\varphi$, $x\varphi$, $\varphi$ und hierauf $\xi_k$ wieder durch $x^k$, so erhält man:
+\weq{6}{x^1\cdot f = \left\{\frac{a_0}{b_0}x^2+\frac{(b_0a_1)}{b_0{}^2}x+\frac{b_0(b_0a_2)-b_1(b_0a_1)}{b_0{}^3}\right\}\cdot\varphi+g_1(x)}
+\[ = p_1(x)\cdot\varphi + g_1(x)\,, \]
+\weq{7}{x^0\cdot f = \left\{\frac{a_0}{b_0}x+\frac{(b_0a_1)}{b_0}\right\}\varphi+g_2(x) = p_2(x)\cdot\varphi+g_2(x)\,.}
+Hier sind $g_1(x)$ und $g_2(x)$ Functionen vom ersten Grade in $x$, und zwar, wie aus (6) und (7) erkennbar ist, die Reste, welche sich bei Division von $x^1\cdot f$ bezw. $x^0\cdot f$ durch $\varphi$ ergeben.
+
+
+% ===== pdf idx 170, printed 156.0 =====
+% !PRINTED 156
+\weberpage{156}
+\textbf{156\quad Zweiter Theil. Anwendungen der Determinantentheorie.}
+
+Gehe ich also von diesem speciellen Beispiele zum allgemeinen Falle über, der ja ganz in derselben Weise behandelt werden kann, so ergiebt sich die Bedeutung der Grössen, welche den Zähler der Resultante (I) in Nr. 148 bilden. Sie sind nichts anderes als die $n$ Reste $(n-1)^{\text{ten}}$ Grades, welche man erhält durch Division von
+\[ x^{n-1}f,\ x^{n-2}f,\ x^{n-3}f,\ x^0f \]
+mit der Function $\varphi$, und die Resultante zweier Functionen $f$ und $\varphi$ ist bis auf einen Zahlenfactor gleich der Functionaldeterminante dieser $n$ Reste, wenn sie als lineare Functionen von $\xi_k$ gedacht werden.
+
+150. \textit{Reduction der Determinante $R_{f,\varphi}$, wenn die beiden Functionen $f$ und $\varphi$ vom gleichen Grade sind.} Wir sind im Vorhergehenden zu einem Resultate gelangt, das für den Fall, in welchem $f$ und $\varphi$ von gleichem Grade in $x$ bereits von Bézout erreicht wurde. Ist nämlich
+\[ f = a_0x^n + a_1x^{n-1} + a_2x^{n-2} + \ldots + a_n \]
+\[ \varphi = b_0x^n + b_1x^{n-1} + b_2x^{n-2} + \ldots + b_n\,, \]
+so gewinnen wir mit Bézout die Resultante
+\[ R_{f,\varphi} = \begin{pmatrix} x^{n-1}f, & x^{n-2}f\ldots x^0f, & x^{n-1}\varphi, & x^{n-2}\varphi\ldots x^0\varphi\\ x^{2n-1}, & x^{2n-2}\ldots x^n\,, & x^{n-1} & \ldots\ldots\ldots x^0 \end{pmatrix} \]
+in folgender Weise. Zunächst multipliciren wir die Determinante $R_{f,\varphi}$ mit der Functionaldeterminante
+\[ \begin{pmatrix} A_{n-1}\varphi-B_{n-1}f, & A_{n-2}\varphi-B_{n-2}f,\ldots, & A_0\varphi-B_0f, & x^{n-1}\varphi,\ldots\varphi\\ x^{n-1}f\,, & x^{n-2}f\,,\ldots, & x^0f\,, & x^{n-1}\varphi,\ldots\varphi \end{pmatrix} = B\,, \]
+wobei
+\[ A_{n-1} = a_0x^{n-1}\cdots+a_{n-1}\,,\quad B_{n-1}=b_0x^{n-1}\cdots+b_{n-1} \]
+\[ A_{n-2} = a^0x^{n-2}\cdots+a_{n-2}\,,\quad B_{n-2}=b_0x^{n-2}\cdots+b_{n-2} \] % [sic] printed a^0, not a_0
+\[ \cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots \]
+\[ A_0 = a_0\,,\qquad\qquad\qquad\qquad B_0=b_0\,. \]
+Um den Werth der letzteren zu ermitteln, stürzen wir in dieser Determinante die Matrix der ersten $n$ Zeilen und die Matrix der letzten Zeilen und hierauf ebenso die der ersten $n$ Colonnen und die der letzten $n$ Colonnen. Dadurch wird aus $B$:
+\[ \begin{pmatrix} A_0\varphi-B_0f, & A_1\varphi-B_1f,\cdots, & A_{n-1}\varphi-B_{n-1}f, & x^0\varphi,\cdots x^{n-1}\varphi\\ x^0f\,, & x^1f,\cdots, & x^{n-1}f & ,\,x^0\varphi,\cdots x^{n-1}\varphi \end{pmatrix} = B'\,. \]
+Durch diese Vertauschung von Zeilen und Colonnen wird das Vorzeichen nicht geändert, wie man aus dem Diagonalglied der Determinante $B'$ leicht erkennt; es ist sonach
+\[ B = B'\,. \]
+
+
+% ===== pdf idx 171, printed 157.0 =====
+% !PRINTED 157
+\weberpage{157}
+\textbf{\S.\,11. Eigenschaften der Resultante $R_{f,\varphi}$.\quad 157}
+
+Führen wir nun die Differentiation nach den im Nenner befindlichen Grössen aus, so erhalten wir
+\[
+B' = \left|\begin{array}{ccccc|ccccc}
+-b_0 & 0 & \cdots & \cdots & 0 & a_0 & 0 & \cdots & \cdots & 0\\
+-b_1 & -b_0 & 0 & \cdots & 0 & a_1 & a_0 & 0 & \cdots & 0\\
+-b_2 & -b_1 & -b_0 & 0 & \cdots\ 0 & a_2 & a_1 & a_0 & 0 & \cdots\ 0\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+-b_{n-1} & -b_{n-2} & \cdots & \cdots & b_0 & a_{n-1} & \cdots & a_1 & a_0 & \\
+0 & 0 & \cdots & \cdots & 0 & 1 & 0 & \cdots & \cdots & 0\\
+0 & \cdots & \cdots & \cdots & \cdots & 0 & 0 & 1 & \cdots & \cdots\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+0 & \cdots & \cdots & \cdots & \cdots & \cdots & 0 & 0 & 0 & 1
+\end{array}\right|\,.
+\]
+Da diese Determinante in den letzten $n$ Zeilen, von den Diagonalelementen abgesehen, die durchweg 1 sind, nur verschwindende Elemente besitzt, so zerfällt sie nach dem Laplace'schen Satze in
+\[
+B' = \begin{vmatrix} -b_0 & 0 & 0\ldots 0\\ -b_1 & -b_0 & 0\ldots 0\\ -b_2 & -b_1 & -b_0\ldots 0\\ \cdot&\cdot&\cdot&\cdot\\ -b_{n-1}&-b^{n-2}&\ldots& b_0 \end{vmatrix}
+\cdot
+\begin{vmatrix} 1&0&0\ldots 0\\ 0&1&0\ldots 0\\ 0&0&1\ldots 0\\ \cdot&\cdot&\cdot&\cdot\\ 0&0&0\ldots 1 \end{vmatrix}
+= (-1)^n\cdot b_0{}^n\,.
+\]
+Bilden wir nun das Product $B\cdot R_{f,\varphi}$, so erhalten wir
+\[ (-1)^nb_0{}^n\cdot R_{f,\varphi} \]
+\[ = \begin{pmatrix} (a_0x^{n-1}\cdots+a_{n-1})\varphi-(b_0x^{n-1}\cdots+b_{n-1})f\cdots, & a_0\varphi-b_0f, & x^{n-1}\varphi,\cdots,x^0\varphi\\ x^{2n-1}\,, & x^{2n-2}\cdots, & x^n,\ x^{n-1}\,,\ldots,x^0 \end{pmatrix}\,. \]
+Um diese Determinante zu reduciren, dividiren wir sie mit der Determinante
+\[ A = \begin{pmatrix} x^{n-1}\,, & x^{n-2}\ldots x^0\,, & x^{n-1}\varphi\,, & x^{n-2}\varphi\ldots x^0\varphi\\ x^{2n-1}\,, & x^{2n-2}\ldots\ldots x^{n-1} & \ldots\ldots\ldots & x^0 \end{pmatrix}\,, \]
+welche ebenfalls den Werth
+\[ A = (-1)^{n^2}b_0 = (-1)^nb_0{}^n \]
+besitzt.
+
+Wir erhalten
+\[ \left((-1)^nb_0{}^n\cdot R_{f,\varphi}\right) : (-1)^nb_0{}^n \]
+\[ = \begin{pmatrix} (a_0x^{n-1}\cdots+a_{n-1})\varphi-(b_0x^{n-1}+\cdots b_{n-1})f\cdots, & a_0\varphi-b_0f, & x^{n-1}\varphi,\ldots x^0\varphi\\ x^{n-1}\,, & x^{n-2},\ldots\ldots x^0, & x^{n-1}\varphi,\ldots x^0\varphi \end{pmatrix}\,, \]
+%CONT>>
+
+
+% ===== pdf idx 172, printed 158.0 =====
+% !PRINTED 158
+\weberpage{158}
+\textbf{158\quad Zweiter Theil. Anwendungen der Determinantentheorie.}
+
+%<<CONT
+oder, wenn wir die übereinanderstehenden gleichen Grössen unterdrücken und die Matrix der übrigbleibenden $n$ ersten Zeilen stürzen:
+{\footnotesize\setlength{\arraycolsep}{3.5pt}
+\[
+R_{f,\varphi} = (-1)^{\frac{n(n-1)}{2}}
+\begin{pmatrix}
+a_0\varphi-b_0f, & (a_0x+a_1)\varphi-(b_0x+b_1f)\cdots, & (a_0x^{n-1}\cdots+a_{n-1})\varphi-(b_0x^{n-1}+\cdots+b_{n-1})f\\
+x_0\,, & x^1,\ x^2\cdots, & x^{n-1}
+\end{pmatrix}\,.
+\]
+}
+Führen wir die Differentiationen aus, so erhalten wir
+\[
+R_{f,\varphi} = (-1)^{\frac{n(n-1)}{2}}\,\cdot
+\]
+\weq{I}{\begin{array}{llll}
+(a_0b_n), & (a_0b_{n-1}), & (a_0b_{n-2}) & \cdots\cdots\cdots\cdots,\ (a_0b_1)\\
+(a_1b_n), & (a_1b_{n-1})+(a_0b_n), & (a_1b_{n-2})+(a_0b_{n-1}) & \cdots\cdots,\ (a_0b_2)\\
+(a_2b_n), & (a_2b_{n-1})+(a_1b_n), & (a_2b_{n-2})+(a_1b_{n-1})+(a_0b_n) & \cdots,\ (a_0b_3)\\
+(a_3b_n) & \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot & &\\
+\cdot & \cdot & \cdot & \cdot\\
+\cdot & \cdot & \cdot & \cdot\\
+(a_{n-1}b_n), & (a_{n-2}b_n), & (a_{n-3}b_n) & \cdots\cdots\cdots,\ (a_0b_n)
+\end{array}}
+Das Gesetz, nach welchem die Elemente der Determinante gebildet werden, ist hieraus bereits erkenntlich. So ist für $n=5$
+\[ R_{f,\varphi} = \]
+\[
+\begin{vmatrix}
+(a_0b_5), & (a_0b_4), & (a_0b_3), & (a_0b_2), & (a_0b_1)\\
+(a_1b_5), & (a_1b_4)+(a_0b_5), & (a_1b_3)+(a_0b_4), & (a_1b_2)+(a_0b_3), & (a_0b_2)\\
+(a_2b_5), & (a_2b_4)+(a_1b_5), & (a_2b_3)+(a_1b_4)+(a_0b_5), & (a_1b_3)+(a_0b_4), & (a_0b_3)\\
+(a_3b_5), & (a_3b_4)+(a_2b_5), & (a_2b_4)+(a_1b_5), & (a_1b_4)+(a_0b_5), & (a_0b_4)\\
+(a_4b_5), & (a_3b_5), & (a_2b_5), & (a_1b_5), & (a_0b_5)
+\end{vmatrix}\,.
+\]
+Man nennt diese Determinante die Bézout'sche Determinante. Sie ist rücksichtlich der zweiten Diagonale symmetrisch; denn es ist das Element
+\[ a_{n-i,k} = a_{n-k,i}\,. \]
+Für alle wirklichen Berechnungen mittelst Determinanten ist die Darstellung der Resultante in dieser Form die wichtigste, und wir wollen daher dieselbe noch auf eine zweite Art berechnen.
+
+151. \textit{Cayley'sche Methode für die Berechnung der Bézout'schen Determinante.} Vertauschen wir in der Determinante $R_{f,\varphi}$ Nr. 150 (I) die letzte Colonne mit der ersten, die vorletzte mit der zweiten u. s. w., dann kommen die Elemente der zweiten Diagonale in die erste zu stehen, und die Determinante ist nun symmetrisch nach dem Gesetze
+\[ a_{ik} = a_{ki}\,. \]
+
+
+% ===== pdf idx 173, printed 159.0 =====
+% !PRINTED 159
+\weberpage{159}
+\S.\,11. Eigenschaften der Resultante $R_{f,\varphi}$.
+
+Das Vorzeichen der Determinante \"andert sich hierbei nicht (vergl.
+Beispiel 3 Nr. 23). Bezeichnen wir nun die $n^2$ Elemente dieser letzten
+Determinante der Reihe nach mit
+\[
+\begin{matrix}
+c_{00} & c_{01} & c_{02} \cdots c_{0\,n-1} \\
+c_{10} & c_{11} & c_{12} \cdots c_{1\,n-1} \\
+c_{20} & c_{21} & c_{22} \cdots c_{2\,n-1} \\
+\cdot & \cdot & \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot \\
+c_{n-1,0} & c_{n-2,0} & \cdots\cdots c_{n-1,\,n-1}\,,
+\end{matrix}
+\]
+% [sic] second entry of the last row is printed c_{n-2,0}, not c_{n-1,1}
+indem wir einstweilen von der noch nicht streng bewiesenen Symmetrie
+absehen, so k\"onnen wir zur Berechnung dieser Elemente den von Cayley
+angegebenen Weg einschlagen. Cayley bemerkte n\"amlich, dass der Z\"ahler
+in $R_{f,\varphi}$ folgende Eigenschaft besitzt. Bildet man die
+Determinante
+\[
+\frac{1}{y-x}
+\begin{vmatrix} f(x), & \varphi(x) \\ f(y), & \varphi(y) \end{vmatrix}
+=
+\begin{vmatrix} f(x), & \varphi(x) \\[4pt]
+\dfrac{f(y)-f(x)}{y-x}, & \dfrac{\varphi(y)-\varphi(x)}{y-x} \end{vmatrix}
+\]
+\[
+=
+\begin{vmatrix}
+f(x), & a_0 y^{n-1} + (a_0 x + a_1) y^{n-2} \cdots + (a_0 x_{n-1} + \cdots a_{n-1}) y^0 \\
+\varphi(x), & b_0 y^{n-1} + (b_0 x + b_1) y^{n-2} \cdots + (b_0 x^{n-1} + \cdots b_{n-1}) y^0
+\end{vmatrix},
+\]
+% [sic] first row prints x_{n-1} (subscript), second row prints x^{n-1} (superscript) -- inconsistent as printed
+und ordnet ihre Entwicklung nach Potenzen von $y$, so sind, wie man
+sieht, die Coefficienten dieser Entwicklung gerade die Gr\"ossen im
+Z\"ahler der Determinante $R_{f,\varphi}$. Wir k\"onnen daher schreiben:
+\[
+\frac{1}{y-x}\left\{f(x)\varphi(y) - \varphi(x)f(y)\right\}
+\]
+\[
+= (c_{00}x^{n-1}+c_{01}x^{n-2}+\cdots+c_{0,n-1})y^{n-1}+(c_{10}x^{n-1}+c_{11}x^{n-2}+\cdots c_{1,n-1})x^{n-2}
+\]
+% [sic] the second bracketed term is printed multiplied by x^{n-2}, not y^{n-2}
+\[
++ \cdots + (c_{n-1,0}x^{n-1} + c_{n-1,1}x^{n-2} + \cdots + c_{n-1,n-1}x^0)y^0
+\]
+\weq{I}{
+\sum_{\varrho=0,\,\sigma=0}^{\varrho=n-1,\,\sigma=n-1} c_{\varrho\sigma}\, x^{n-\varrho-1}\, y^{n-\sigma-1}\,.
+}
+Wir k\"onnen aber die Determinante $f(x)\varphi(y) - f(y)\varphi(x)$ auch noch
+auf eine andere Weise entwickeln, wodurch wir Relationen f\"ur die
+Coefficienten $c_{ik}$ gewinnen. Es ist n\"amlich (vgl. Nr. 82)
+\[
+f(x)\varphi(y) - \varphi(x)f(y) =
+\begin{vmatrix} a_0 & a_1 & a_2 & \cdots & a_n \\ b_0 & b_1 & b_2 & \cdots & b_n \end{vmatrix}
+\cdot
+\begin{vmatrix} x^n & x^{n-1} & x^{n-2} & \cdots & x^0 \\ y^n & y^{n-1} & y^{n-2} & \cdots & y^0 \end{vmatrix}
+\]
+\[
+= \sum d_{ik}(x^{n-i}y^{n-k} - x^{n-k}y^{n-i}) = \sum d_{ik}\, x^{n-k}y^{n-k}(x^{k-i}-y^{k-i})\,,
+\]
+wobei
+\[
+d_{ik} = a_i b_k - b_i a_k \quad \text{und} \quad k > i\,.
+\]
+
+
+% ===== pdf idx 174, printed 160.0 =====
+% !PRINTED 160
+\weberpage{160}
+Zweiter Theil. Anwendungen der Determinantentheorie.
+
+Dividiren wir diese Relation mit $(x-y)$, so erhalten wir
+\[
+\frac{f(x)\varphi(y)-f(y)\varphi(x)}{x-y} = \sum_{\lambda=k-i-1}^{\lambda=0} d_{ik} \cdot x^{n-k}y^{n-k} \cdot x^{k-i-\lambda-1} \cdot y^{\lambda}
+\]
+\[
+= \sum_{\lambda=k-i-1}^{\lambda=0} d_{ik} \cdot x^{n-i-\lambda-1} \cdot y^{n-k+\lambda}\,,
+\]
+wo nun $\Sigma$ eine dreifache Summe bedeutet: \"uber $i$, \"uber $k$ und \"uber
+$\lambda$. Setzt man in dieser Summe
+\[
+n-i-\lambda-1 = n-1-\varrho
+\]
+und
+\[
+n-k+\lambda \phantom{n-i-\lambda-1} = n-1-\sigma\,,
+\]
+also
+\[
+i = \varrho - \lambda
+\]
+und
+\[
+k = \sigma+\lambda+1\,,
+\]
+dann wird
+\weq{II}{
+\frac{1}{x-y} \cdot \left\{f(x)\varphi(y) - \varphi(x)f(y)\right\} = \sum d_{\varrho-\lambda,\,\sigma+\lambda+1}\, x^{n-1-\varrho}\, y^{n-1-\sigma}\,.
+}
+Vergleichen wir diese Entwicklung (II) mit der Entwicklung (I), so
+erhalten wir die Relation
+\weq{III}{
+c_{\varrho\sigma} = \sum_{\lambda=0}^{\lambda=\varrho-\sigma} d_{\varrho-\lambda,\,\sigma+\lambda+1}\,.
+}
+Dabei kann $\lambda$ sich \"uber positive oder negative Zahlenwerthe
+erstrecken, je nachdem $\varrho \gtrless \sigma$ ist; nur ist zu beachten, dass
+gem\"ass ihrer Definition
+\[
+d_{\varrho\varrho} = 0\,, \quad \text{und} \quad d_{\varrho\sigma} = -d_{\sigma\varrho}\,.
+\]
+Aus der Relation (III) geht \"uberdies hervor, dass
+\[
+c_{\varrho\sigma} = c_{\sigma\varrho}\,,
+\]
+d. h., dass in der That die B\'ezout'sche Determinante eine symmetrische
+ist. Denn es ist gem\"ass dieser Formel:
+\weq{IV}{
+\left.
+\begin{aligned}
+c_{\varrho\sigma} &= d_{\varrho,\sigma+1} + d_{\varrho-1,\sigma+2} + \cdots d_{\sigma,\varrho+1} \\
+c_{\sigma\varrho} &= d_{\sigma,\varrho+1} + d_{\sigma-1,\varrho+2} + \cdots d_{\varrho,\sigma+1}
+\end{aligned}
+\right\}\,.
+}
+% [printed with a single right brace spanning both lines]
+Die Differenz beider Relationen aber ist Null.
+
+\textit{Anmerkung.} Aus der B\'ezout'schen Form der Resultante geht
+unmittelbar eine wichtige Eigenschaft der Resultante hervor. Sind $f$
+und $\varphi$ zwei Functionen $m^{\mathrm{ten}}$ Grades und $F$ und $\Phi$
+irgend zwei lineare Combinationen derselben, etwa:
+\[
+F = \varkappa f + \lambda \varphi
+\]
+\[
+\Phi = \mu f + \nu \varphi\,,
+\]
+so ist:
+\[
+R_{F,\Phi} = \Delta^m \cdot R_{f,\varphi}\,,
+\]
+wobei
+\[
+\Delta = \begin{vmatrix} \varkappa, & \lambda \\ \mu, & \nu \end{vmatrix}\,.
+\]
+
+
+% ===== pdf idx 175, printed 161.0 =====
+% !PRINTED 161
+\weberpage{161}
+\S.\,11. Eigenschaften der Resultante $R_{f,\varphi}$.
+
+Denn $R_{F,\Phi}$ geht direct aus $R_{f,\varphi}$ hervor, wenn wir in der
+Determinante das Element
+\[
+d_{ik} = a_i b_k - b_i a_k
+\]
+ersetzen durch
+\[
+D_{ik} = A_i B_k - B_i A_k\,.
+\]
+Es ist aber:
+\[
+D_{ik} = \begin{vmatrix} \varkappa a_i + \lambda b_i, & \mu a_i + \nu b_i \\ \varkappa a_k + \lambda b_k, & \mu a_k + \nu b_k \end{vmatrix}
+= \begin{vmatrix} \varkappa & \lambda \\ \mu & \nu \end{vmatrix} \cdot \begin{vmatrix} a_i & b_i \\ a_k & b_k \end{vmatrix}
+\]
+\[
+= \Delta \cdot d_{ik}\,.
+\]
+Jedes Element der $m$-zeiligen Determinante $R_{F,\Phi}$ enth\"alt also
+den Factor $\Delta$, folglich $R_{F,\Phi}$ selbst den Factor $\Delta^m$.
+
+152. \textit{Beispiel.} Wir ermitteln unter Anwendung der ersten Formel
+(IV) Nr. 151 die Elemente der B\'ezout'schen Determinante zweier
+Functionen sechsten Grades
+{\footnotesize
+\[
+(-1)^{15}
+\begin{pmatrix}
+a_0\varphi-b_0f, & (a_0x+a_1)\varphi-(b_0x-b_1)f, & \cdots & (a_0x^5+a_1x^4\cdots+a_5)\varphi-(b_0x^5+b_1x^4\cdots+b_5)f \\
+x^5, & x^4, & x^3, & x^2, & x, & x^0
+\end{pmatrix}
+\]
+}
+% [sic: matrix is printed with a ragged number of entries per row, reproduced as printed]
+\[
+= -(c_{00}\ c_{11}\ c_{22}\ c_{33}\ c_{44}\ c_{55})\,.
+\]
+Dabei gen\"ugt es, wegen der Symmetrie der Determinante jene Elemente
+$c_{\varrho\sigma}$ zu berechnen, f\"ur welche $\varrho \geqq \sigma$ ist.
+Ber\"ucksichtigt man, dass
+\[
+d_{ii} = 0\,, \quad d_{-i,k} = 0\,, \quad d_{ik} = -d_{ki} \quad \text{und} \quad i,k \leqq \sigma\,,
+\]
+so erh\"alt man aus der Formel
+\[
+c_{\varrho\sigma} = d_{\varrho,\sigma+1} + d_{\varrho-1,\sigma+2} + d_{\varrho-2,\sigma+3} + d_{\varrho-3,\sigma+4} \cdots + d_{\sigma,\varrho+1}
+\]
+\[
+\begin{aligned}
+c_{00} &= d_{01} & c_{33} &= d_{34} + d_{25} + d_{16} \\
+c_{10} &= d_{02}\,, \quad c_{11} = d_{12} + d_{03}\,, & c_{43} &= d_{35} + d_{26} \\
+c_{20} &= d_{03}\,, \quad c_{21} = d_{13} + d_{04}\,, \quad c_{22} = d_{23} + d_{14} + d_{05}\,, & c_{53} &= d_{36} \\
+c_{30} &= d_{04}\,, \quad c_{31} = d_{14} + d_{05}\,, \quad c_{32} = d_{24} + d_{15} + d_{06}\,, & c_{44} &= d_{45} + d_{36} \\
+c_{40} &= d_{05}\,, \quad c_{41} = d_{15} + d_{06}\,, \quad c_{42} = d_{25} + d_{16}\,, & c_{54} &= d_{46} \\
+c_{50} &= d_{06}\,, \quad c_{51} = d_{16}\,, \quad c_{52} = d_{26}\,, & c_{55} &= d_{56}\,.
+\end{aligned}
+\]
+Die Resultante wird also:
+\[
+R_{f,\varphi} = -
+\begin{vmatrix}
+d_{01} & d_{02} & d_{03} & d_{04} & d_{05} & d_{06} \\
+d_{02} & d_{12}+d_{03} & d_{13}+d_{04} & d_{14}+d_{05} & d_{15}+d_{06} & d_{16} \\
+d_{03} & d_{13}+d_{04} & d_{23}+d_{14}+d_{05} & d_{24}+d_{15}+d_{06} & d_{25}+d_{16} & d_{26} \\
+d_{04} & d_{14}+d_{05} & d_{24}+d_{15}+d_{06} & d_{34}+d_{25}+d_{16} & d_{35}+d_{26} & d_{36} \\
+d_{05} & d_{15}+d_{06} & d_{25}+d_{16} & d_{35}+d_{26} & d_{45}+d_{36} & d_{46} \\
+d_{06} & d_{16} & d_{26} & d_{36} & d_{46} & d_{56}
+\end{vmatrix}\,.
+\]
+
+
+% ===== pdf idx 176, printed 162.0 =====
+% !PRINTED 162
+\weberpage{162}
+Zweiter Theil. Anwendungen der Determinantentheorie.
+
+153. \textit{Resultante aus einer Function $f$ und dem Producte zweier
+Functionen $\varphi$ und $\psi$.} Es sei
+\[
+f = a_0 x^m + a_1 x^{m-1} + \cdots + a_m
+\]
+\[
+\varphi = b_0 x^p + b_1 x^{p-1} + \cdots + b_p
+\]
+\[
+\psi = c_0 x^q + c_1 x^{q-1} + \cdots + c_q\,,
+\]
+wobei die Summe $p+q$ der Grade von $\varphi$ und $\psi$ den Grad $m$
+von $f$ nicht \"ubersteigen soll. Die Resultante zu $f$ und
+$\varphi \cdot \psi$ ist dann dargestellt durch
+\[
+R_{f,\varphi\cdot\psi} =
+\begin{pmatrix}
+x^{p+q-1}f, & x^{p+q-2}f, & \cdots, & x^0f, & x^{m-1}\varphi\cdot\psi, & x^{m-2}\varphi\cdot\psi & \cdots, & x^0\cdot\varphi\psi \\
+x^{m+p+q-1}, & x^{m+p+q-2}, & \cdots, & x^m, & x^{m-1}, & x^{m-2} & \cdots, & x^0
+\end{pmatrix}\,.
+\]
+Diese Resultante hat die Eigenschaft, in zwei Factoren sich zu
+spalten, n\"amlich in die Resultanten $R_{f,\varphi}$ und $R_{f,\psi}$.
+Um dies zu zeigen, werden wir $R_{f,\varphi\cdot\psi}$ zun\"achst so
+transformiren, dass sich unter Anwendung des Laplace'schen Satzes in
+erster Linie die Factorenzerf\"allung ergiebt; es er\"ubrigt dann nur
+noch nachzuweisen, dass die erhaltenen Factoren in der That mit
+$R_{f,\varphi}$ und $R_{f,\psi}$ \"ubereinstimmen.
+
+Die Transformationen erreichen wir, nachdem wir in $R_{f,\varphi\psi}$
+eine passende Vertauschung von Zeilen mit Zeilen vorgenommen haben,
+durch Multiplication mit $A =$
+\[
+\begin{pmatrix}
+x^{p-1}f\cdot\psi, & x^{p-2}f\cdot\psi, & \cdots x^0\cdot f\psi, & x^{m-1}\varphi\cdot\psi, & x^{m-2}\varphi\cdot\psi \cdots x^0\varphi\cdot\psi, & x^{q-1}f, & x^{q-2}f, & \cdots x^0f \\
+x^{p+q-1}f, & x^{p+q-2}f, & \cdots x^q\cdot f, & x^{m-1}\varphi\cdot\psi, & x^{m-2}\varphi\cdot\psi \cdots x^0\varphi\cdot\psi, & x^{q-1}f, & x^{q-2}f, & \cdots x^0f
+\end{pmatrix}
+\]
+und durch Division mit
+\[
+B =
+\begin{pmatrix}
+x^{m+p-1}\psi, & x^{m+p-2}\psi & \cdots x^0\psi, & x^{q-1}, & x^{q-2}, & \cdots x^0 \\
+x^{m+p+q-1}, & x^{m+p+q-2}, & \cdots x^m, & x^{q-1}, & x^{q-2}, & \cdots x^0
+\end{pmatrix}\,.
+\]
+Man \"uberzeugt sich leicht, dass die Determinante $A$ den Werth
+$c_0^{\,p}$, die Determinante $B$ den Werth $c_0^{\,m+p}$ besitzt.
+
+Vertauschen wir nun in $R_{f,\varphi\psi}$ die Zeilen so, dass die $m$
+letzten Zeilen sich direct an die $p$ ersten Zeilen anschliessen,
+w\"ahrend die $q$ dazwischen liegenden Zeilen die letzten werden, dann
+\"andert sich $R_{f,\varphi\psi}$ nach Nr. 139 um den Factor $(-1)^{mq}$;
+die Reihenfolge der Gr\"ossen im Z\"ahler von $R_{f,\varphi\psi}$
+stimmt aber alsdann mit der Reihenfolge der Gr\"ossen im Nenner von
+$A$ \"uberein, und wir erhalten daher durch Multiplication mit $A$
+\[
+c_0^{\,p} \cdot R_{f,\varphi\cdot\psi} =
+\]
+\[
+(-1)^{mq}
+\begin{pmatrix}
+x^{p-1}f\psi, & x^{p-2}f\psi, & \cdots, & x^0f\psi, & x^{m-1}\varphi\psi, & \cdots, & x^0\varphi\psi, & x^{q-1}f, & \cdots x^0f \\
+x^{m+p+q-1}, & x^{m+p+q-2}, & \cdots, & \cdots\cdots\cdots\cdots\cdots\cdots & & & & x^0
+\end{pmatrix}\,.
+\]
+
+
+% ===== pdf idx 177, printed 163.0 =====
+% !PRINTED 163
+\weberpage{163}
+\S\ 11. Eigenschaften der Resultante $R_{f,\varphi}$.
+
+Dividiren wir diese Determinante mit $B = c_0^{\,m+p}$, so kommt:
+\[
+\frac{c_0^{\,p}\cdot R_{f,\varphi\cdot\psi}}{c_0^{\,m+p}} =
+(-1)^{mq}
+\begin{pmatrix}
+x^{p-1}f\cdot\psi,\ x^{p-2}f\cdot\psi,\ \ldots x^0\cdot f\psi,\ x^{m-1}\varphi\cdot\psi \ldots x^0\cdot\varphi\psi,\ x^{q-1}f..x^0f\\
+x^{m+p-1}\psi,\ x^{m+p-2}\psi,\ \ldots x^m\psi\ ,\ x^{m-1}\psi \ldots x^0\cdot\psi\ ,\ x^{q-1}\ldots x^0
+\end{pmatrix}.
+\]
+154. \textit{Berechnung und Zerf\"allung von $R_{f,\varphi\cdot\psi}$.} F\"uhrt man hier die Differentiation nach den Gr\"ossen im Nenner aus, so erh\"alt man folgendes Resultat:
+\weq{I}{
+R_{f,\varphi\cdot\psi} = (-1)^{m\cdot q}\cdot c_0^{\,m}\times
+\begin{vmatrix}
+a_0\,a_1\,a_2\ldots\ldots a_m\ \ 0\ \ 0\ldots\ldots\ 0\ \ 0\ \ 0..0\\
+0\,a_0\,a_1\ldots\ldots a_{m-1}a_m\ \ 0\ldots\ldots\ 0\ \ 0\ \ 0..0\\
+0\ 0\,a_0\ldots\ldots a_{m-2}a_{m-1}a_m\ldots\ldots\ 0\ \ 0\ \ 0..0\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+0\ 0\ 0..a_0\ \ a_1\ldots\ldots\ldots\ldots a_{m-2}a_{m-1}a_m\ 0\ \ 0\ldots\\
+b_0\,b_1\,b_2..b_p\ \ 0\ \ 0\ \ 0\ \ 0\ldots\ldots\ldots\ 0\ \ 0\ \ 0\ldots\\
+0\,b_0\,b_1..b_{p-1}b_p\ \ 0\ \ 0\ \ 0\ldots\ldots\ldots\ 0\ \ 0\ \ 0\ldots\\
+0\ 0\,b_0\ldots\ldots b_{p-1}b_p\ \ 0\ \ 0\ldots\ldots\ldots\ 0\ \ 0\ \ 0..0\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+0\ 0\ldots\ldots\ldots\ldots\ldots b_0\ldots b_{p-2}b_{p-1}b_p\ \ 0\ \ 0..0\\
+0\ 0\ 0\ldots\ldots e_{11}\ \ e_{12}\ \ e_{13}\ldots\ldots\ldots\ldots e_{1m}\,e_{1,m+1}..e_{1,m+q}\\
+0\ 0\ 0\ldots\ldots 0\ \ e_{22}\ \ e_{23}\ldots\ldots\ldots\ldots e_{2m}\,e_{2,m+1}..e_{2,m+q}\\
+0\ 0\ldots\ldots\ldots 0\ \ 0\ \ e_{33}\ldots\ldots\ldots\ldots e_{3m}\,e_{3,m+1}..e_{3,m+q}\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+0\ 0\ 0\ldots\ldots\ldots\ldots\ldots\ldots e_{qq}\ \ e_{q,q+1}\ldots\ldots\ldots\ldots e_{q,m+q}
+\end{vmatrix}
+}
+Die Elemente $e_{ik}$ der letzten $q$ Zeilen dieser Determinante sind die Differentialquotienten der Gr\"ossen $x^{q-1}\cdot f,\ x^{q-2}\cdot f\ldots x^0\cdot f$ nach $x^{m-1}\cdot\psi,\ x^{m-2}\cdot\psi\ldots x^0\cdot\psi,\ x^{q-1},\ x^{q-2}\ldots x^0$ und man erh\"alt dieselben, indem man wie in Nr. 149 die Functionen $x^\nu\cdot f$ sich dargestellt denkt in der Form
+\[
+x^\nu\cdot f = \psi\cdot g_\nu(x) + h_\nu(x),
+\]
+wobei $g_\nu(x)$ vom Grade $m+\nu-q$ und $h_\nu(x)$ vom Grade $q-1$ ist. Insbesondere sind die $q^2$ Elemente, welche von den letzten $q$ Colonnen ausgeschnitten werden, die Differentialquotienten der $q$ Reste $h_\nu(x)$ nach $x^{q-1},\ x^{q-2}\ldots x^0$.
+
+Zerf\"allt man daher nach dem Satze von Laplace die erhaltene Determinante in ihre beiden Factoren, so ist der erste, wie man unmittelbar erkennt, die Resultante
+%CONT>>
+
+
+% ===== pdf idx 178, printed 164.0 =====
+% !PRINTED 164
+\weberpage{164}
+Zweiter Theil. Anwendungen der Determinantentheorie.
+
+%<<CONT
+\weq{II}{
+R_{f,\varphi} =
+\begin{vmatrix}
+a_0\,a_1\,a_2\ldots a_m\ \ 0\ \ 0\ \ldots..0\\
+0\ a_0\,a_1\ldots\ldots\ a_m\ \ 0\ \ldots..0\\
+0\ 0\,a_0\ldots\ldots a_{m-1}a_m\ldots..0\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+0\ 0\ 0\ldots a_0\ \ a_1\ \ a_2\ldots\ldots a_m\\
+b_0\,b_1\,b_2\ldots b_p^{*}\ \ 0\ \ 0\ldots\ldots\\
+0\ b_0\,b_1\ldots b_{p-1}b_p\ \ 0\ \ldots\ldots\\
+0\ 0\,b_0\ldots b_{p-2}b_{p-1}b_p\ldots\ldots\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+0\ 0\ 0\ldots\ldots\ldots\ldots b_0\,b_1\ldots b_p
+\end{vmatrix}
+}
+% ?? uncertain: small mark above $b_p$ in the fifth row of matrix (II) (printed as $b_p^{*}$); could be an ink artifact or a footnote-style mark, reproduced as printed.
+Der zweite Factor aber ist -- vergleiche Nr. 149 -- als Functional-determinante der $q$ Reste vom Grade $q-1$, die sich bei Division von $x^{q-1}\cdot f,\ x^{q-2}\cdot f\ldots,\ x^0\cdot f$ mit $\psi$ ergeben, nichts anderes als die Resultante von $f$ und $\psi$ bis auf einen Zahlenfactor. Es ist n\"amlich nach Nr. 148
+\weq{III}{
+R_{f,\psi} = (-1)^{mq}\cdot c_0^{\,m}\cdot
+\begin{pmatrix}
+x^{q-1}\cdot f,\ x^{q-2}\cdot f\ldots x^0f\\
+x^{q-1}\ \ ,\ x^{q-2}\ldots\ldots x^0
+\end{pmatrix}
+}
+Die Functionaldeterminante rechts ist gerade der zweite Factor der Determinante (I), so dass wir, wenn wir in (I) f\"ur die Factoren ihre Werthe aus (II) und (III) einsetzen, erhalten:
+\[
+R_{f,\varphi\cdot\psi} = (-1)^{mq}\cdot c_0^{\,m}\cdot R_{f,\varphi}\cdot R_{f,\psi}\cdot \frac{1}{(-1)^{mq}c_0^{\,m}}
+\]
+oder:
+\[
+R_{f,\varphi\cdot\psi} = R_{f,\varphi}\cdot R_{f,\psi}.
+\]
+155. \textit{Beispiel} 1. Ich nehme die Resultante der Function
+\[
+f = a_0x^3 + a_1x^2 + a_1x + a_3 % [sic]
+\]
+und des Productes $\varphi\cdot\psi$, wo
+\[
+\varphi = b_0x^2+b_1x+b_2
+\]
+\[
+\psi = c_0x+c_1.
+\]
+Dieselbe ist zun\"achst dargestellt durch
+\[
+R_{f,\varphi\cdot\psi} =
+\begin{pmatrix}
+x^2f,\ xf,\ f\ ,\ x^2\varphi\psi,\ x\varphi\psi,\ \varphi\psi\\
+x^5\ \ ,\ x^4\ \ ,\ x^3,\ x^2\ \ \ ,\ x^1\ \ \ ,\ x^0
+\end{pmatrix},
+\]
+oder nach den geeigneten Transformationen durch
+\[
+R_{f,\varphi\cdot\psi} = (-1)^3\cdot c_0^{\,3}
+\begin{pmatrix}
+xf\psi,\ f\psi\ ,\ x^2\varphi\psi,\ x\varphi\psi,\ x^0\varphi\psi,\ f\\
+x^4\psi,\ x^3\psi,\ x^2\psi\ \ ,\ x^1\psi\ ,\ x^0\psi\ \ \ ,\ x^0
+\end{pmatrix}.
+\]
+Wir bezeichnen die Gr\"ossen des Z\"ahlers mit $y_1,\ y_2\ldots y_6$, und schreiben dieselben in der Form:
+%CONT>>
+
+
+% ===== pdf idx 179, printed 165.0 =====
+% !PRINTED 165
+\weberpage{165}
+\S\ 11. Eigenschaften der Resultante $R_{f,\varphi}$.
+
+%<<CONT
+\begin{gather*}
+y_1 = \psi\,(x^4a_0+x^3a_1+x^2a_2+xa_3)\\
+y_2 = \psi\,(x^3a_0+x^2a_1+xa_2+a_3)\\
+y_3 = \psi\,(x^4b_0+x^3b_1+x^2b_2)\\
+y_4 = \psi\,(x^3b_0+x^2b_1+xb_2)\\
+y_5 = \psi\,(x^2b_0+xb_1+b_2)\\
+y_6 = \psi\left(x^2\frac{a_0}{c_0}+x\frac{(a_1c_0)}{c_0^{\,2}}+\frac{c_0^{\,2}a_2-(c_0a_1)c_1}{c_0^{\,3}}\right)+\frac{a^3c_0^{\,3}-a_2c_0^{\,2}c_1+c_1^{\,2}c_0a_1-c_1^{\,3}a_0}{c_0^{\,3}} % [sic]
+\\
+= \psi\,(x^2e_{11}+xe_{12}+e_{13})+e_{14}.
+\end{gather*}
+Die partiellen Differentialquotienten dieser sechs Gr\"ossen nach $x^4\psi,\ x^3\psi,\ x^2\varphi,\ x^1\psi,\ x^0\psi,\ x^0$ liefern daher die Determinante:
+\[
+\varDelta =
+\begin{vmatrix}
+a_0\ a_1\ a_2\ a_3\ \ 0\ \ 0\\
+0\ \ a_0\ a_1\ a_2\ a_3\ \ 0\\
+b_0\ b_1\ b_2\ \ 0\ \ 0\ \ 0\\
+0\ \ b_0\ b_1\ b_2\ \ 0\ \ 0\\
+0\ \ 0\ \ b_0\ b_1\ b_2\ \ 0\\
+0\ \ 0\ \ e_{11}\ e_{12}\ e_{13}\ e_{14}
+\end{vmatrix}
+\]
+oder
+\[
+\varDelta = e_{14}\cdot
+\begin{vmatrix}
+a_0\ a_1\ a_2\ a_3\ \ 0\\
+0\ \ a_0\ a_1\ a_2\ a_3\\
+b_0\ b_1\ b_2\ \ 0\ \ 0\\
+0\ \ b_0\ b_1\ b_2\ \ 0\\
+0\ \ 0\ \ b_0\ b_1\ b_2
+\end{vmatrix}.
+\]
+Der erste Factor $e_{14}$ ist aber nichts anderes als $\dfrac{(-1)^3\cdot R_{f,\psi}}{c_0^{\,3}}$; denn
+\[
+R_{f,\psi} =
+\begin{vmatrix}
+a_0\ a_1\ a_2\ a_3\\
+c_0\ c_1\ 0\ \ 0\\
+0\ \ c_0\ c_1\ 0\\
+0\ \ 0\ \ c_0\ c_1
+\end{vmatrix}
+= a_0c_1^{\,3} - c_0c_1^{\,2}a_1 + c_0^{\,2}a_2c_0 - c_0^{\,3}a_3. % [sic]
+\]
+Wir erhalten daher in der That:
+\[
+R_{f,\varphi\cdot\psi} =
+\begin{vmatrix}
+a_0\ a_1\ a_2\ a_3\ \ 0\\
+0\ \ a_0\ a_1\ a_2\ a_3\\
+b_0\ b_1\ b_2\ \ 0\ \ 0\\
+0\ \ b_0\ b_1\ b_2\ \ 0\\
+0\ \ 0\ \ b_0\ b_1\ b_2
+\end{vmatrix}
+\cdot
+\begin{vmatrix}
+a_0\ a_1\ a_2\ a_3\\
+c_0\ c_1\ 0\ \ 0\\
+0\ \ c_0\ c_1\ 0\\
+0\ \ 0\ \ c_0\ c_1
+\end{vmatrix}
+= R_{f,\varphi}\cdot R_{f,\psi}.
+\]
+
+
+% ===== pdf idx 180, printed 166.0 =====
+% !PRINTED 166
+\weberpage{166}
+Zweiter Theil. Anwendungen der Determinantentheorie.
+
+\textit{Beispiel} 2. Ist \textit{insbesondere} $\varphi$ eine Constante etwa gleich $\lambda$, so erhalten wir:
+\[
+R_{f,\lambda\varphi} = R_{f,\varphi}\cdot R_{f,\lambda}.
+\]
+Die Resultante aus einer Function $m^{\text{ten}}$ Grades und einer Constante $\lambda$ ist aber dargestellt durch
+\[
+R_{f,\lambda} =
+\begin{vmatrix}
+\lambda\ 0\ 0\ \ldots\ldots\ 0\\
+0\ \lambda\ 0\ \ldots\ldots\ 0\\
+0\ 0\ \lambda\ \ldots\ldots\ 0\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+0\ 0\ \ldots\ldots\ 0\ \lambda
+\end{vmatrix}
+= \lambda^m.
+\]
+Denn gem\"ass der Definition der Resultante in Nr. 130 und 131 ist dieselbe eine Determinante, welche die Constanten der einen Function in so vielen Zeilen enth\"alt, als der Grad der andern Function angiebt; in unserem Falle muss sie also die Coefficienten von $f$ in Null Zeilen, die von $\lambda$ in $m$ Zeilen enthalten. Demnach ist
+\[
+R_{f,\lambda\varphi} = \lambda^m\cdot R_{f,\varphi}.
+\]
+
+\begin{center}
+\S.\,12.\\
+\textbf{Fundamentalsatz der Algebra.}
+\end{center}
+
+156. \textit{Transcendenter Theil des Beweises.} Gauss hat bekanntlich den Satz bewiesen: \glqq Ist
+\[
+f(x) = x^n + a_1x^{n-1} + a_2x^{n-2} + \cdots + a_n = 0
+\]
+eine Gleichung $n^{\text{ten}}$ Grades mit durchweg reellen Coefficienten, so giebt es immer einen reellen oder imagin\"aren Werth $x=\xi_1$, f\"ur welchen die Gleichung identisch verschwindet.\grqq{}
+% ?? uncertain: a marginal pencil-style mark (squiggle and a box) appears beside the word "dritten" below; it reads as a reader's annotation rather than print, the printed word itself is transcribed as shown.
+Wir folgen hier dem dritten Beweise, den Gauss f\"ur diesen Satz erbracht und den Gordan wesentlich auf Eliminations- also Determinantenprocesse reducirt hat. (Vergl. M. A. Bd. X. 252.) Man weiss, dass der Beweis nicht durch rein algebraische Betrachtungen allein geliefert werden kann. Wir k\"onnen jedoch den Beweis von dem Augenblicke an im Gebiete der Algebra weiter f\"uhren, wo wir uns \"uberzeugt haben, dass jede Gleichung ungeraden Grades jedenfalls einen Werth von $x$ besitzt, f\"ur welchen sie besteht. Um aber dies zu erkennen, brauchen wir nur f\"ur $x$ einen Werth $\xi_1 > \Sigma a_g$ in $f$ zu substituiren, wo $\Sigma a_g$ die Summe aller absolut genommenen Coefficienten sein m\"oge,
+%CONT>>
+
+
+% ===== pdf idx 181, printed 167.0 =====
+% !PRINTED 167
+\weberpage{167}
+dann überragt das erste Glied $(\Sigma a_g)^n$ der Gleichung alle andern an
+absolutem Werthe. Je nachdem man also $x=+\Sigma a_g$ oder $x=-\Sigma a_g$
+einträgt, wird das Substitutionsresultat positiv oder negativ. Es muss
+also jedenfalls zwischen $+\Sigma a_g$ und $-\Sigma a_g$ ein Werth liegen, welcher
+$f(x)$ verschwinden macht, und den wir dadurch ermitteln können, dass
+wir diese Grenzen successive immer enger und enger ziehen. Hierin,
+also in der Angabe der beiden Grenzen und der Möglichkeit sie zu
+verengern, liegt das Charakteristische für die Transcendenz des Beweises.
+
+Von hier ab jedoch können wir das Gebiet des Transcendenten
+verlassen und unter der Voraussetzung, dass jede Gleichung \emph{ungeraden}
+Grades mit reellen Co\"efficienten einen linearen Factor besitzt, in rein
+algebraischer Weise zeigen:
+
+\glqq Jede Gleichung besitzt einen linearen Factor.\grqq{}
+
+157. \emph{Gedankengang für den algebraischen Theil des Beweises.} Unsere
+Aufgabe ist, die Operationen anzugeben, wie wir zum linearen Factor
+gelangen. Damit ist dann auch der Beweis geliefert, dass derselbe
+existirt. Wir bedienen uns dabei eines gewissen Recursionsverfahrens,
+indem wir die Gleichungen ordnen in Bezug auf die Schwierigkeit sie
+aufzulösen. Setzen wir dann voraus, dass jede leichter auflösbare
+Gleichung einen linearen Factor besitzt, so können wir zeigen, dass
+auch jede schwieriger zu lösende Gleichung einen solchen haben muss.
+Zu dem Zwecke werden wir den Beweis erbringen, dass jede Glei-
+chung $f(x)=0$ sich immer in zwei Factoren spalten lässt, deren
+mindestens einer gleich null gesetzt, leichter lösbar ist, als die Glei-
+chung $f(x)=0$ selbst, ausgenommen in einem einzigen Falle, den
+wir besonders behandeln werden.
+
+158. \emph{Classification der Gleichungen nach dem Grade ihrer Auf-
+lösbarkeit.} Wir können jede ganze Zahl $n$ in der Form schreiben:
+\[ n = 2^{\mu}\cdot \nu\, , \]
+wo $\nu$ eine ungerade Zahl, und $\mu$ alle Werthe von 0 bis $\infty$ annehmen
+kann. Für $\mu=0$ erhalten wir alle ungeraden Zahlen. Alle Gleichungen,
+deren Grad
+\[ n = 2^{0}\cdot \nu \]
+ist, sind nach Nr. 156 als leichter auflösbar zu erachten, als alle
+übrigen und zwar um so leichter, je kleiner die ungerade Zahl $\nu$ ist.
+
+An diese schliessen sich alle Gleichungen an vom Grade
+\[ n = 2^{1}\cdot \nu\, , \]
+sodann jene vom Grade
+\[ n = 2^{2}\cdot \nu\, , \quad \text{u. s. w.,} \]
+%CONT>>
+
+
+% ===== pdf idx 182, printed 168.0 =====
+% !PRINTED 168
+\weberpage{168}
+%<<CONT
+bis endlich allgemein die Gleichungen folgen vom Grade
+\[ n = 2^{\mu}\cdot \nu\, . \]
+Es ist also in diesem Sinne beispielsweise eine Gleichung vierten
+Grades als schwerer auflösbar zu betrachten als eine Gleichung sechsten
+Grades, aber leichter als eine Gleichung zwölften Grades.
+
+Wir nehmen dann an: Jede leichter auflösbare Gleichung, also
+jede Gleichung, deren Grad
+\[ n = 2^{\varrho}\cdot \nu \quad \text{oder} \quad n = 2^{\mu}\cdot \overline{\nu} \]
+ist, wo $\varrho<\mu$, und $\overline{\nu}<\nu$, besitze einen linearen Factor. Dann lässt sich
+zeigen, dass auch $f=0$ vom Grade
+\[ n = 2^{\mu}\cdot \nu \]
+einen solchen besitzt. Setzen wir nämlich einstweilen voraus, $f=0$
+besitze überhaupt einen reellen oder imaginären Factor, so können
+wir unschwer nachweisen, dass derselbe gleich null gesetzt eine leichter
+auflösbare Gleichung repräsentirt als $f(x)=0$.
+
+159. \emph{Voraussetzung: $f(x)=0$ besitze einen reellen Factor.} Gesetzt,
+es sei bereits gezeigt, dass $f=0$ überhaupt einen Factor $\varphi(x)$ vom
+Grade $n_1$ besitze mit reellen Co\"efficienten, dann ist:
+\[ f = \varphi(x)^{n_1}\cdot \psi(x)^{n_2}\, , \]
+wobei
+\[ n_1 = 2^{\mu_1}\cdot \nu_1 \]
+\[ n_2 = 2^{\mu_2}\cdot \nu_2\, , \]
+also
+\[ n = n_1+n_2 = 2^{\mu}\cdot \nu = 2^{\mu_1}\cdot \nu_1 + 2^{\mu_2}\cdot \nu_2\, , \]
+Ist hier $\mu_1\leqq \mu$, dann ist $\varphi$ leichter auflösbar als $f$, da im un-
+günstigsten Falle dann $\nu_1<\nu$ sein muss; es besitzt sonach $\varphi$ einen
+linearen Factor und folglich auch $f$. Ist aber $\mu_1>\mu$, also etwa $\mu_1=\mu+\varrho$,
+%CONT>>
+
+
+% ===== pdf idx 183, printed 169.0 =====

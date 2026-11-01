@@ -1,0 +1,984 @@
+% !PRINTED 129
+\weberpage{129}
+
+Es besteht alsdann in diesem Falle eine Relation zwischen den Functionen $y$, die wir mit
+\weq{2}{\Theta(y) = y_1 - F(y_2 y_3 \cdots y_n) = 0}
+bezeichnen wollen. Wir können dann den Satz beweisen: \glqq Besteht zwischen den $n$ Functionen $y$ eine Relation $\Theta(y) = 0$, so ist ihre Functionaldeterminante $R$ identisch Null.\grqq{} Es möge dabei erwähnt sein, dass die Relation $\Theta(y) = 0$ als Function der Grössen $y$ keineswegs eine Identität ist, wie schon aus der Art und Weise hervorgeht, auf welcher wir zu ihr gelangt sind.
+
+122. \textit{Beweis des Satzes.} Um nun den Satz zu beweisen, denken wir uns die Veränderlichen $y_i$ durch ihre Functionen $f_i(x)$ ersetzt; die entstehende Relation in $x_i$ ist aber dann identisch null, und daher auch alle ihre partiellen Differentialquotienten
+\[
+\frac{\partial \Theta}{\partial x_1} = 0, \quad \frac{\partial \Theta}{\partial x_2} = 0, \quad \cdots \frac{\partial \Theta}{\partial x_n} = 0.
+\]
+Dieselben geben also, da die Grössen $x_i$ nur in Functionen $y_i$ auftreten, Veranlassung zu den $n$ Relationen:
+\begin{gather*}
+\frac{\partial \Theta}{\partial y_1} \cdot \frac{\partial y_1}{\partial x_1} + \frac{\partial \Theta}{\partial y_2} \cdot \frac{\partial y_2}{\partial x_1} + \cdots \frac{\partial \Theta}{\partial y_n} \cdot \frac{\partial y_n}{\partial x_1} = 0 \\
+\frac{\partial \Theta}{\partial y_1} \cdot \frac{\partial y_1}{\partial x_2} + \frac{\partial \Theta}{\partial y_2} \cdot \frac{\partial y_2}{\partial x_2} + \cdots \frac{\partial \Theta}{\partial y_n} \cdot \frac{\partial y_n}{\partial x_2} = 0 \\
+\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots \\
+\frac{\partial \Theta}{\partial y_1} \cdot \frac{\partial y_1}{\partial x_n} + \frac{\partial \Theta}{\partial y_2} \cdot \frac{\partial y_2}{\partial x_n} + \cdots \frac{\partial \Theta}{\partial y_n} \cdot \frac{\partial y_n}{\partial x_n} = 0.
+\end{gather*}
+Wir können dieselben als $n$ homogene Gleichungen mit $n$ Unbekannten $\dfrac{\partial \Theta}{\partial y_k}$ betrachten; dann ist das Werthsystem, das diese Gleichungen befriedigt (nach Nr. 97) dargestellt durch
+\[
+R \cdot \frac{\partial \Theta}{\partial y_k} = 0.
+\]
+Da nun aber die Grössen $\dfrac{\partial \Theta}{\partial y_k}$ nicht sämmtlich verschwinden können, — es ist ja beispielsweise $\dfrac{\partial \Theta}{\partial y_1} = 1$ wegen der Relation (1) — so muss der andere Factor verschwinden; d.\,h. in diesem Falle ist $R = 0$.
+
+123. \textit{Umkehrung.} Ist nun von vornherein die Functionaldeter-
+%CONT>>
+
+
+% ===== pdf idx 144, printed 130.0 =====
+% !PRINTED 130
+\weberpage{130}
+
+%<<CONT
+minante $R$ identisch Null, so ist es immer möglich, bei geeignetem Vorgehen aus den Functionen $y_i$ alle Grössen $x$ zu eliminiren, d.\,h. in diesem Falle existirt eine Relation $\Theta(y) = 0$.
+
+Um den Satz zu beweisen nehmen wir an, dass dessen Richtigkeit für $(n-1)$ Functionen von $(n-1)$ Variabeln bereits dargethan sei, und haben nur zu zeigen, dass er dann auch für $n$ Functionen mit $n$ Variabeln giltig ist. Denn für eine Function $y$ mit einer Variabeln $x$ ist er evident, da aus $\dfrac{\partial f}{\partial x} = 0$, $y = c$ hervorgeht.
+
+Wir unterscheiden hierbei zwei Fälle, indem wir zunächst annehmen, dass neben $R = 0$ nicht zugleich alle Minoren erster Ordnung verschwinden sollen, dass also etwa
+\[
+A_{nn} = \begin{pmatrix} y_1 & y_2 & \cdots & y_{n-1} \\ x_1 & x_2 & \cdots & x_{n-1} \end{pmatrix} \gtrless 0
+\]
+sei. Benutzen wir alsdann den in Nr. 117 aufgestellten Productsatz, so ist, weil wir $A_{nn}$ auch darstellen können durch
+\[
+A_{nn} = \begin{pmatrix} y_1 & y_2 & \cdots & y_{n-1} & x_n \\ x_1 & x_2 & \cdots & x_{n-1} & x_n \end{pmatrix}
+\]
+die Functionaldeterminante $R$ gegeben durch
+\[
+\begin{pmatrix} y_1 & y_2 & y_3 & \cdots & y_n \\ x_1 & x_2 & x_3 & \cdots & x_n \end{pmatrix}
+= \begin{pmatrix} y_1 & y_2 & \cdots & y_{n-1} & x_n \\ x_1 & x_2 & \cdots & x_{n-1} & x_n \end{pmatrix}
+\begin{pmatrix} y_1 & y_2 & y_3 & \cdots & y_{n-1} & y_n \\ y_1 & y_2 & \cdots & \cdots & y_{n-1} & x_n \end{pmatrix}.
+\]
+Nun ist die linke Seite nach Voraussetzung gleich Null, der erste Factor rechts dagegen nach Voraussetzung von Null verschieden. Daher muss nothwendig der zweite Factor verschwinden. Derselbe aber ist nichts anderes als der Differentialquotient von $y_n$ nach $x_n$, wobei $y_n$ gemäss der Bedeutung unserer Schreibweise als Function von
+\[
+y_1 y_2 \ldots y_{n-1} x_n
+\]
+zu betrachten ist. Wenn aber dieser Differentialquotient
+\[
+\frac{\partial y_n}{\partial x_n} = 0
+\]
+sein soll, dann kann $y_n$ nicht mehr abhängig sein von $x_n$, d.\,h. $y_n$ ist eine Function der übrigen Grössen
+\[
+y_1 y_2 \ldots y_{n-1}
+\]
+allein und es existirt somit nothwendig eine Relation zwischen den Grössen $y_i$.
+
+124. \textit{Zweiter Fall.} Nehmen wir nun an, es verschwinden neben $R = 0$ auch alle ihre Minoren erster Ordnung, deren einer gegeben ist durch
+\[
+\begin{pmatrix} y_1 & y_2 & \cdots & y_{k-1} & y_{k+1} & \cdots & y_n \\ x_1 & x_2 & \cdots & \cdot & \cdot & \cdots & x_{n-1} \end{pmatrix} = 0.
+\]
+Dieser Ausdruck stellt aber nichts anderes dar, als eine Functionaldeterminante der $(n-1)$ Functionen $y_i$, die nur von $(n-1)$ der Veränderlichen $x_i$ als abhängig zu betrachten sind. Da unser Satz nach Voraussetzung für diesen Fall gilt, so besteht zwischen den $n-1$ Functionen
+\[
+y_1 y_2 \ldots y_{k-1} y_{k+1} \ldots y_n
+\]
+eine Relation, die natürlich auch noch die Grösse $x_n$ enthalten kann. Solche Relationen erhalten wir $n$ an der Zahl je nach der Grösse $y$,
+%CONT>>
+
+
+% ===== pdf idx 145, printed 131.0 =====
+% !PRINTED 131
+\weberpage{131}
+%<<CONT
+die wir in der ersten Zeile des symbolischen Ausdruckes unterdrücken. Dieselben können nicht durchwegs identisch gleich sein, da ja jede derselben eine andere Grösse $y$ nicht enthält. Es müssen daher mindestens zwei der Relationen verschiedener Art sein; sie seien
+\[ F_1 = 0 \quad \text{und} \quad F_2 = 0. \]
+Eliminiren wir aus diesen beiden aber die Grösse $x_n$, so erhalten wir eine einzige Relation $\Theta(y) = 0$, wie behauptet war.
+
+125. \textit{Beispiel.} Sind $n$ lineare Functionen $y_i$ mit $n$ Unbekannten gegeben
+\[ a_{i1} x_1 + a_{i2} x_2 + a_{i3} x_3 + \cdots a_{in} x_n = y_i, \]
+so ist nach Nr. 111
+\[ p_{n+1} x_i = p_i = y_1 A_{i1} + y_2 A_{i2} + \cdots y_n A_{in}. \]
+Nun ist $p_{n+1}$ nichts anderes als die Functionaldeterminante der gegebenen Functionen $y_i$; verschwindet sie, so besteht zwischen den gegebenen Functionen die lineare Relation
+\[ y_1 A_{i1} + y_2 A_{i2} + \cdots y_n A_{in} = 0 \]
+und wir wissen, dass in diesem Falle eine dieser Functionen $y_i$ eine Folge der übrigen ist.
+
+\textbf{§ 10. Der grösste gemeinsame Factor.}
+
+126. \textit{Euclid'sches Verfahren für zwei ganze Zahlen $a$ und $b$.} Wenn zwei Zahlen $a$ und $b$ gegeben sind, $a > b$, so kann man sich die Aufgabe stellen, den grössten gemeinsamen Factor der beiden Zahlen zu bestimmen. Das Euclid'sche Verfahren, diese Aufgabe zu lösen, besteht einfach darin, dieselbe auf leichtere Aufgaben zurückzuführen. Man dividirt nämlich bekanntlich mit $b$ in $a$ und erhält so einestheils einen Quotienten $q$ und anderntheils einen Rest $b_1$, so dass die Beziehung besteht:
+\[ a = bq + b_1. \]
+Daraus erkennt man, dass jeder gemeinsame Factor — also auch der grösste —, welcher in $a$ und $b$ enthalten ist, auch in $b_1$ enthalten sein muss, d. h. dass wir ihn auch ermitteln können, indem wir den grössten gemeinsamen Factor von den beiden kleineren Zahlen $b$ und $b_1$ suchen. Verfahren wir hier auf die gleiche Weise und setzen diese Methode fort, bis wir endlich zu einem Reste $b_\varrho$ gelangen, über welchen hinaus keiner mehr auftritt, also $b_{\varrho+1} = 0$ ist, so erhalten wir $\varrho$ Divisionsgleichungen
+%CONT>>
+
+
+% ===== pdf idx 146, printed 132.0 =====
+% !PRINTED 132
+\weberpage{132}
+%<<CONT
+\weq{I}{
+\begin{aligned}
+a &= bq + b_1 \\
+b &= b_1 q_1 + b_2 \\
+b_1 &= b_2 q_2 + b_3 \\
+b_2 &= b_3 q_3 + b_4 \\
+& \cdots\cdots\cdots\cdots \\
+b_{\varrho-2} &= b_{\varrho-1} q_{\varrho-1} + b_\varrho.
+\end{aligned}
+}
+In denselben nehmen die Reste $b_1 b_2 \ldots b_\varrho$ fortwährend ab und der letzte Rest $b_\varrho$ ist der gemeinschaftliche Factor aller vorhergehenden und also insbesondere auch von $a$ und $b$. Man hat dieses Verfahren auch mit dem Namen Kettenbruchsverfahren bezeichnet.
+
+127. \textit{Darstellung der Reste $b_1 \ldots b_\varrho$ als lineare Functionen von $a$ und $b$.} Der Algorithmus (I) lehrt uns aber, dass die Grössen $b_1 b_2 b_3 \ldots b_\varrho$ sich ausdrücken lassen in der Form:
+\weq{II}{ b_\mu = A_\mu a + B_\mu b. }
+Der Beweis wird einfach durch Rechnung geführt. Es ist:
+\[ 1)\quad b_1 = a - bq = A_1 a + B_1 b, \]
+wobei:
+\[ A_1 = 1, \quad B_1 = -q; \]
+\[ 2)\quad b_2 = b - q_1(a - bq) = A_2 a + B_2 b, \]
+wobei:
+\[ A_2 = -q_1, \quad B_2 = +(1 + qq_1); \]
+\[ 3)\quad b_3 = (a - bq) - q_2[(b - q_1(a - bq))] = A_3 a + B_3 b, \]
+wobei:
+\[ A_3 = +(1 + q_1q_2), \quad B_3 = -(q + q_2 + qq_1q_2); \]
+\[ 4)\quad b_4 = [b - q_1(a - bq)] - q_3[(a - bq) - q_2(b - q_1(a - bq))] = A_4 a + B_4 b, \]
+wobei:
+\[ A_4 = -(q_1 + q_3 + q_1q_2q_3), \]
+\[ B_4 = +(1 + qq_1 + qq_3 + q_2q_3 + qq_1q_2q_3) \text{ u. s. w.} \]
+Allgemein ist also:
+\[ b_\mu = A_\mu a + B_\mu b, \]
+wobei für $A_\mu$ und $B_\mu$ die Recursionsformeln gelten:
+\[ A_\mu = A_{\mu-2} - q_{\mu-1} A_{\mu-1} \]
+\[ B_\mu = B_{\mu-2} - q_{\mu-1} B_{\mu-1}. \]
+
+
+% ===== pdf idx 147, printed 133.0 =====
+% !PRINTED 133
+\weberpage{133}
+Man folgert aus der Relation (II) direct, dass jeder gemeinsame Factor von $a$ und $b$ auch Factor des Restes $b_\mu$ ist. Denkt man sich mit demselben die Relation (II) dividirt, also $a$ und $b$ relativ prim zu einander, so kann man sie leicht direct beweisen mit Hilfe zweier einfacher Sätze der Lehre von den Kettenbrüchen. Sind nämlich $\frac{\beta_\mu}{\alpha_\mu}$ die Näherungswerthe des Bruches $\frac{b}{a}$, so ist nach bekannten Sätzen:
+\weq{1}{ \frac{b}{a} = \frac{\beta_\mu b_{\mu-1} + \beta_{\mu-1} b_\mu}{\alpha_\mu b_{\mu-1} + \alpha_{\mu-1} b_\mu}; }
+\weq{2}{ \alpha_\mu \beta_{\mu-1} - \alpha_{\mu-1} \beta_\mu = (-1)^\mu. }
+Subtrahirt man von Gleichung (1) $\frac{\beta_\mu}{\alpha_\mu}$ auf beiden Seiten, so ergiebt sich nach leichter Umformung mit Hilfe der Relation (2)
+\weq{III}{ (-1)^\mu \cdot b_\mu = -\beta_\mu a + \alpha_\mu b, }
+eine Relation, die direct mit (II) übereinstimmt und woraus man erkennt, dass die Coefficienten $A_\mu$ und $B_\mu$ nichts anderes sind als der Zähler und Nenner (absolut genommen) des $\mu^{\mathrm{ten}}$ Näherungswerthes von $\frac{b}{a}$.
+
+128. \textit{Grösster gemeinschaftlicher Theiler zweier Functionen $f(\overset{m}{x})$ und $\varphi(\overset{n}{x})$.} Ganz in derselben Weise wie vorhin der Theiler zweier Zahlen ermittelt wurde, kann man verfahren, um den grössten gemeinschaftlichen Theiler zweier Functionen $f(\overset{m}{x})$ und $\varphi(\overset{n}{x})$ zu bestimmen.
+Sei
+\[
+\left.\begin{aligned}
+f(\overset{m}{x}) &= a_0 x^m + a_1 x^{m-1} + a_2 x^{m-2} + \cdots a_m \\
+\varphi(\overset{n}{x}) &= b_0 x^n + b_1 x^{n-1} + b_2 x^{n-2} + \cdots b_n
+\end{aligned}\right\} \quad m > n,
+\]
+wobei also der Index über der Variabeln hier wie im Folgenden stets den Grad der betreffenden Function in $x$ bedeuten soll und $a_m$ und $b_n$ von Null verschieden sind. — Dividiren wir $f(x)$ durch $\varphi(x)$, mit dem entstehenden Rest $f_1$ wieder in $\varphi$, mit dem weitern Rest $f_2$ in $f_1$ u. s. w., dann entstehen wieder eine Reihe von Divisionsgleichungen wie vorhin. Dabei wollen wir jene Grössen erst als Reste definiren, in denen der Coefficient der höchsten Potenz von $x$ die Zahl 1 ist, und ferner wollen wir zunächst alle Coefficienten $a_i$ und $b_i$ als Variable ansehen; dann
+%CONT>>
+
+
+% ===== pdf idx 148, printed 134.0 =====
+% !PRINTED 134
+\weberpage{134}
+%<<CONT
+ist jeder folgende Rest immer um einen Grad niedriger als der vorhergehende.
+Unsere Divisionsgleichungen werden demnach:
+\[ f(\overset{m}{x}) = \overset{m-n}{q}(x)\, \overset{n}{\varphi}(x) + c_1 \overset{n-1}{f_1}(x) \]
+\[ \overset{n}{\varphi}(x) = \overset{1}{q_1}(x)\, \overset{n-1}{f_1}(x) + c_2 \overset{n-2}{f_2}(x) \]
+\[ \overset{n-1}{f_1}(x) = \overset{1}{q_2}(x)\, \overset{n-2}{f_2}(x) + c_3 \overset{n-3}{f_3}(x) \]
+\[ \overset{n-2}{f_2}(x) = \overset{1}{q_3}(x)\, \overset{n-3}{f_3}(x) + c_4 \overset{n-4}{f_4}(x) \]
+\[ \cdots\cdots\cdots\cdots\cdots\cdots \]
+\[ \overset{3}{f_{n-3}}(x) = \overset{1}{q_{n-2}}(x)\, \overset{2}{f_{n-2}}(x) + c_{n-1} \overset{1}{f_{n-1}}(x) \]
+\[ \overset{2}{f_{n-2}}(x) = \overset{1}{q_{n-1}}(x)\, \overset{1}{f_{n-1}}(x) + c_n \overset{0}{f_n}(x), \]
+wobei
+\[ \overset{0}{f_n}(x) = 1 \]
+und die Constanten $c_1 c_2 \ldots c_n$ davon herrühren, dass der Coefficient der höchsten Potenz jedes Restes gleich 1 genommen wurde. Wir wollen nun wieder aus diesen Divisionsgleichungen die Reste $f_1$ bis $f_n$ in der Form darstellen
+\weq{I}{ \overset{n-\mu}{f_\mu}(x) = \overset{\mu-1}{A_\mu}(x)\, \overset{m}{f}(x) + \overset{m-n+\mu-1}{B_\mu}(x)\, \overset{n}{\varphi}(x). }
+Es ist:
+\weq{1}{ \overset{n-1}{f_1}(x) = \frac{1}{c_1}\left\{ \overset{m}{f}(x) - \overset{m-n}{q}(x)\overset{n}{\varphi}(x) \right\} = \overset{0}{A_1}(x)\,\overset{m}{f}(x) + \overset{m-n}{B_1}(x)\,\overset{n}{\varphi}(x), }
+wobei
+\[ \overset{0}{A_1}(x) = +\frac{1}{c_1}, \quad \overset{n-m}{B_1}(x) = -\frac{\overset{m-n}{q}(x)}{c_1}; \]
+\weq{2}{ \overset{n-2}{f_2}(x) = \frac{1}{c_2}\left\{ \overset{n}{\varphi}(x) - \overset{1}{q_1}(x)\left[ \overset{0}{A_1}(x)\overset{m}{f}(x) + \overset{m-n}{B_1}(x)\overset{n}{\varphi}(x) \right] \right\} = \overset{1}{A_2}(x)\,\overset{m}{f}(x) + \overset{m-n+1}{B_2}(x)\,\overset{n}{\varphi}(x), }
+wobei
+\[ \overset{1}{A_2}(x) = -\frac{1}{c_1c_2}\cdot \overset{1}{q_1}(x), \quad \overset{m-n+1}{B_2}(x) = +\frac{1}{c_1c_2}\left( c_1 + \overset{m-n}{q}(x)\overset{1}{q_1}(x) \right); \]
+\weq{3}{ \overset{n-3}{f_3}(x) = \frac{1}{c_3}\left\{ \overset{n-1}{f_1}(x) - \overset{1}{q_2}(x)\left[ \overset{1}{A_2}(x)\overset{m}{f}(x) + \overset{m-n+1}{B_2}(x)\overset{n}{\varphi}(x) \right] \right\} }
+%CONT>>
+
+
+% ===== pdf idx 149, printed 135.0 =====
+% !PRINTED 135
+\weberpage{135}
+\S.\,10. Der grösste gemeinsame Factor.
+
+%<<CONT
+\[
+= \frac{1}{c_3}\left\{ \overset{0}{A_1}(x)\overset{m}{f}(x) + \overset{m-n}{B_1}(x)\varphi(x) - \overset{1}{q_2}(x)\overset{1}{A_2}(x)\overset{m}{f}(x) - \overset{1}{q_2}(x)\overset{m-n+1}{B_2}(x)\overset{n}{\varphi}(x) \right\} = \overset{2}{A_3}(x)\overset{m}{f}(x) + \overset{m-n+2}{B_3}(x)\overset{n}{\varphi}(x),
+\]
+wobei
+\[
+\overset{2}{A_3}(x) = \frac{1}{c_3}\left[ \overset{0}{A_1}(x) - \overset{1}{q_2}(x)\overset{1}{A_2}(x) \right] = +\frac{1}{c_1c_2c_3}\left[ c_2 + \overset{1}{q_1}(x)\overset{1}{q_2}(x) \right],
+\]
+\[
+\overset{2}{B_3}(x) = \frac{1}{c_3}\left[ \overset{m-n}{B_1}(x) - \overset{1}{q_2}(x)\overset{m-n+1}{B_2}(x) \right] = -\frac{1}{c_1c_2c_3}\left[ c_2\overset{m-n}{q}(x) + c_1\overset{1}{q_2}(x) + \overset{n-m}{q}(x)\overset{1}{q_1}(x)\overset{1}{q_2}(x) \right] \text{u.\,s.\,w.}
+\]
+
+Man sieht hieraus, dass die Grössen $A_\mu(x)$ und $B_\mu(x)$ sich wieder
+durch die Recursionsformeln darstellen lassen:
+
+\[
+\overset{\mu-1}{A_\mu}(x) = \frac{1}{c_\mu}\left\{ \overset{\mu-3}{A_{\mu-2}}(x) - \overset{1}{q_{\mu-1}}(x)\overset{\mu-2}{A_{\mu-1}}(x) \right\}
+\]
+\[
+\overset{m-n+\mu-1}{B_\mu}(x) = \frac{1}{c_\mu}\left\{ \overset{m-n+\mu-3}{B_{\mu-2}}(x) - \overset{1}{q_{\mu-1}}(x)\overset{m-n+\mu-2}{B_{\mu-1}}(x) \right\}.
+\]
+Insbesondere erhalten wir als Ausdruck des letzten Restes
+
+\weq{n}{\overset{0}{f_n}(x) = 1 = \overset{n-1}{A_n}(x)\overset{m}{f}(x) + \overset{m-1}{B_n}(x)\overset{n}{\varphi}(x).}
+
+129. \textit{Exposition der hier zu lösenden Aufgaben.} Die rechte Seite
+der Gleichungen (1) bis ($n$) ist stets eine ganze Function der $x$, ebenso
+wie die linke; dagegen ist sie als Function der Coefficienten betrachtet
+im Allgemeinen eine gebrochene Function derselben, so lange $a_i$ und $b_i$
+variabel sind. Bezeichnen wir in dem Ausdrucke für $\overset{n-\mu}{f_\mu}(x)$ den Haupt\-nenner der ganzen rechten Seite mit $D_{n-\mu}$, so können wir die
+Gleichung (I) in Nr. 128 auch schreiben
+
+\weq{II}{D_{n-\mu}\overset{n-\mu}{f_\mu}(x) = \overset{\mu-1}{\overline{A}_\mu}(x)\overset{m}{f}(x) + \overset{m-n+\mu-1}{\overline{B}_\mu}(x)\overset{n}{\varphi}(x),}
+
+wo nun $\overline{A}_\mu$ und $\overline{B}_\mu$ andere Functionen der Grössen $a$ und $b$ sind,
+also vorhin $A_\mu$ und $B_\mu$. In dieser Relation (II) sind aber nun sowohl
+$D_{n-\mu}\overset{n-\mu}{f}(x)$, als auch $\overline{A}_\mu$, $\overline{B}_\mu$, $f(x)$ und $\varphi(x)$ ganze Functionen der
+Coefficienten wie der Variabeln. Der Nenner $D_{n-\mu}$ kann verschwinden;
+in diesem Falle tritt überhaupt kein Rest vom Grade $n-\mu$ in $x$ auf,
+%CONT>>
+
+
+% ===== pdf idx 150, printed 136.0 =====
+% !PRINTED 136
+\weberpage{136}
+Zweiter Theil. Anwendungen der Determinantentheorie.
+
+%<<CONT
+sondern es folgt auf den Rest vom Grade $n-\mu+1$ ein Rest vom
+Grade $n-\mu-1$, oder von noch niedrigerem Grade, wie wir sogleich
+auch noch ausführlicher sehen werden. Ist dagegen der Nenner
+$D_{n-\mu}\,\overset{\geqq}{\leqq}\,0$, so können wir uns die Aufgabe stellen, den zugehörigen
+Rest $f_\mu$, oder vielmehr das Product $D_\mu \cdot f_\mu$ zu bestimmen.
+
+Es kann ferner eintreten, dass alle Nenner vom letzten $D_0$ an
+gerechnet bis zum $\nu^{\text{ten}}$ $D_{n-\nu+1}$ verschwinden, $D_{n-\nu}$ aber nicht; dann
+verschwinden nach dem eben Erwähnten auch alle Reste
+
+\[
+f_n, f_{n-1}\cdots f_{n-\nu+1}.
+\]
+Der erste nicht verschwindende Rest ist $f_{n-\nu}$ vom Grade $\nu$ in $x$, und
+dieser ist nothwendig der grösste gemeinsame Factor von $\overset{m}{f}(x)$ und
+$\overset{n}{\varphi}(x)$. Daraus erkennt man: Es sind $\nu$ Bedingungen nöthig
+
+\[
+D_0 = 0, \quad D_1 = 0, \quad D_2 = 0 \cdots, \quad D_{n-\nu+1} = 0,
+\]
+damit $f$ und $\varphi$ einen gemeinsamen Factor vom Grade $\nu$ in $x$ besitzen
+und dieser gemeinsame Factor ist der letzte Rest, der nicht ver\-schwindet.
+
+Wir haben also hier zwei Aufgaben zu lösen: einmal die Be\-dingungen aufzustellen, dass ein gemeinsamer Factor vom Grade $\nu$
+vorhanden ist; sodann, diesen Factor selbst zu ermitteln.
+
+130. \textit{Berechnung von $D_0$.} Um zur Lösung der ersten Aufgabe zu
+gelangen, berechnen wir zuerst
+
+\[
+D_0 = D_0\overset{0}{f_n}(x),
+\]
+indem wir dabei die Identität benutzen
+
+\weq{I}{1 = \overset{n-1}{A_n}(x)\overset{m}{f}(x) + \overset{m-1}{B_n}(x)\overset{n}{\varphi}(x).}
+
+Wir folgen hierbei ganz den Entwicklungen der diesbezüglichen Arbeit
+\gesperrt{Nöther}'s, veröffentlicht in \gesperrt{Faà di Bruno}'s Einleitung zur Invarianten\-theorie pag. 58 (deutsche Uebersetzung von \gesperrt{Walter}. Teubner 1881).
+Die Bestimmung von $A_n$ und $B_n$, welche wir als Functionen vom
+Grade $n-1$, bezw. $m-1$ darstellen können durch
+
+\[
+\begin{aligned}
+A_n &= p_0 x^{n-1} + p_1 x^{n-2} + \cdots + p_{n-1}\\
+B_n &= q_0 x^{m-1} + q_1 x^{m-2} + \cdots + q_{n-1}
+\end{aligned}
+\]
+geschieht aus der Identität (I) durch Coefficientenvergleichung. Man
+erhält aus ihr für die $m+n$ Unbekannten
+
+\[
+p_0, p_1, \cdots p_{n-1}, \quad q_0, q_1 \cdots q_{m-1}
+\]
+die $m+n$ linearen Gleichungen:
+%CONT>>
+
+
+% ===== pdf idx 151, printed 137.0 =====
+% !PRINTED 137
+\weberpage{137}
+%<<CONT
+\S.\,10. Der grösste gemeinsame Factor.
+
+\[
+\text{(II)}\quad
+\left\{
+\begin{aligned}
+0 &= a_0 p_0 \cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots + b_0 q_0\\
+0 &= a_1 p_0 + a_0 p_1 \cdots\cdots\cdots\cdots\cdots\cdots\cdots + b_1 q_0 + b_0 q_1\\
+0 &= a_2 p_0 + a_1 p_1 + a_0 p_2 \cdots\cdots\cdots + b_2 q_0 + b_1 q_1 + b_2 q_2\\
+&\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+0 &= a_n p_0 + a_{n-1} p_1 + \cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+&\qquad\cdots + b_n q_0 + b_{n-1} q_1 + b_{n-2} q_2\cdots + b_{n-m+1} q_{m-1}\\
+0 &= a_{n+1} p_0 + a_n p_1 + \cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+&\qquad\qquad + b_n q_1 + b_{n-1} q_2 \cdots + b_{n-m+2} q_{m-1}\\
+&\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+0 &= a_m p_0 + a_{m-1} p_1 + \cdots + a_{m-n+2} p_{n-2} + a_{m-n+1} p_{n-1}\\
+&\qquad\qquad + b_n q_{m-n} + b_{n-1} q_{m-n+1}\cdots\\
+0 &= a_m p_1 + \cdots + a_{m-n+3} p_{n-2} + a_{m-n+2} p_{n-1}\\
+&\qquad\qquad + b_n q_{m-n+1} + b_{n-1} q_{m-n+2}\cdots\\
+&\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+0 &= a_m p_{n-2} + a_{m-1} p_{n-1}\\
+&\qquad\qquad + b_n q_{m-2} + b_{n-1} q_{m-1}\\
+1 &= a_m p_{n-1}\\
+&\qquad\qquad + b_n q_{m-1}
+\end{aligned}
+\right.
+\]
+Löst man diese Gleichungen nach $p_i$ und $q_i$ auf, so haben die Werthe
+von $p_i$ und $q_i$ durchwegs den Nenner:
+
+% ?? uncertain: exact column spacing/blank-cell layout of the D_0 determinant below is approximated from the scan; entries and dot-rows reproduced as printed.
+\[
+D_0 = \left|
+\begin{array}{cccccccccc}
+a_0 & 0 & 0 & \cdots & b_0 & 0 & 0 & 0 & \cdots & 0\\
+a_1 & a_0 & 0 & \cdots & b_1 & b_0 & 0 & 0 & \cdots & 0\\
+a_2 & a_1 & a_0 & \cdots & b_2 & b_1 & b_0 & 0 & \cdots & 0\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+ & & & & & b_n & b_{n-1} & b_{n-2} & \cdots & \\
+ & & & & & 0 & b_n & b_{n-1} & \cdots & \\
+a_m & a_{m-1} & a_{m-2} & \cdots & 0 & 0 & b_n & & & \\
+0 & a_m & a_{m-1} & \cdots & 0 & 0 & 0 & & & \\
+0 & 0 & a_m & \cdots & 0 & 0 & 0 & & & \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+ & & & & & & & & & b_{n-1}\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+0 & 0 & 0 & \cdots & a_m & 0 & 0 & \cdots & \cdots & b_n
+\end{array}
+\right.
+\]
+
+
+% ===== pdf idx 152, printed 138.0 =====
+% !PRINTED 138
+\weberpage{138}
+Zweiter Theil. Anwendungen der Determinantentheorie.
+
+Transponirt man diese Determinante, so erhält man
+
+% ?? uncertain: exact column spacing/blank-cell layout of the transposed determinant below is approximated from the scan; one entry in row 8 prints a bare "b" without subscript, reproduced as printed.
+\[
+D_0 = \left|
+\begin{array}{cccccccccc}
+a_0 & a_1 & a_2 & \cdots & a_m & 0 & 0 & \cdots & & 0\\
+0 & a_0 & a_1 & \cdots & \cdots & a_m & 0 & \cdots & & 0\\
+0 & 0 & a_0 & \cdots & \cdots & \cdots & \cdots & \cdots & & 0\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+0 & \cdots & \cdots & \cdots & a_0 & a_1 & a_2 & a_3 & \cdots & a_m\\
+b_0 & b_1 & b_2 & \cdots & \cdots & b_n & 0 & 0 & \cdots & 0\\
+0 & b_0 & b_1 & \cdots & \cdots & \cdots & b_n & 0 & \cdots & 0\\
+0 & 0 & b_0 & \cdots & \cdots & \cdots & \cdots & b & \cdots & 0\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+0 & 0 & \cdots & \cdots & \cdots & \cdots & \cdots & b_0 & b_1 \cdots & b_n
+\end{array}
+\right| = R_{f,\varphi}.
+\]
+131. \textit{Definition der Resultante von $f(x)$ und $\varphi(x)$.} Dieser Nenner
+kann im Allgemeinen nicht verschwinden, wenn die Identität (I) Nr. 130
+besteht, da ja sonst nicht die Gleichungen (II) Nr. 130 zusammen
+existiren könnten (vergleiche Nr. 112), die aus dieser Identität hervor\-gehen. Wir nennen diese Determinante $D_0$ \glqq die Resultante\grqq{} der beiden
+Functionen $f(x)$ und $\varphi(x)$ und bezeichnen sie als solche mit $R_{f,\varphi}$.
+Sie ist eine ganze Function der Coefficienten und offenbar auch homogen
+sowohl in $a_i$ als $b_i$, und zwar in $a_i$ vom Grade $n$, in $b_i$ vom Grade $m$,
+wie man aus der Anzahl der Zeilen in $D_0$ erkennt, die einestheils die
+Elemente $a_i$, andertheils die Elemente $b_i$ enthalten.
+
+Ersetzt man in der Identität (I) alle Coefficienten $p$ und $q$ von
+$A_n$ und $B_n$ durch jene Werthe, welche sich aus dem System (II) Nr. 130
+von linearen Gleichungen ergeben und multiplicirt mit dem Nenner
+aller dieser Coefficienten die Identität, so erhält man die andere Form
+derselben:
+
+\[
+D_0 = \overset{n-1}{\overline{A}_n}(x)\overset{m}{f}(x) + \overset{m-1}{\overline{B}_n}(x)\varphi(x) = R_{f,\varphi}.
+\]
+Diese Identität kann man auch direct aus der Determinante $R_{f,\varphi}$ selbst
+herleiten, wenn man in dieser Determinante die erste Colonne mit
+$x^{n-m-1}$, die zweite mit $x^{n-m-2}$ u. s. w. sich multiplicirt denkt und
+zur letzten addirt. Es wird dann:
+
+\[
+R_{f,\varphi} = \left|
+\begin{array}{ccccc}
+a_0 & a_1 & a_2 & \cdots & x^{n-1}\cdot f(x)\\
+0 & a_1 & a_2 & \cdots & x^{n-2}\cdot f(x)\\
+\cdot & \cdot & \cdot & \cdot & \cdot\\
+0 & 0 & \cdots & a_{m-1}, & f(x)\\
+b_0 & b_1 & b_2 & \cdots & x^{m-1}\varphi(x)\\
+0 & b_1 & b_2 & \cdots & x^{m-2}\varphi(x)\\
+\cdot & \cdot & \cdot & \cdot & \cdot\\
+ & & & b_{n-1}, & \varphi(x)
+\end{array}
+\right.
+\]
+
+
+% ===== pdf idx 153, printed 139.0 =====
+% !PRINTED 139
+\weberpage{139}
+
+Entwickelt man diese Determinante nach der letzten Colonne, so erhält man gerade
+
+\[
+R_{f,\varphi} = \overset{m}{f}(x)\left\{\bar p_0 x^{n-1}+\bar p_1 x^{n-2}\cdots \bar p_{n-1}\right\}
+\]
+\[
+{}+ \overset{m}{\varphi}(x)\left\{\bar q_0 x^{m-1}+\bar q_1 x^{m-2}+\cdots \bar q_{m-1}\right\}
+\]
+oder
+\[
+R_{f,\varphi} = \overset{n-1}{\bar A_n}(x)\,\overset{m}{f}(x) + \overset{m-1}{\bar B_n}(x)\cdot \overset{n}{\varphi}(x).
+\]
+Sind die Co\"efficienten $a_i$ und $b_i$ so beschaffen, dass $D_0$ identisch verschwindet, dann wird diese Identität
+
+\[
+0 = \overset{n-1}{\bar A_n}(x)\,\overset{m}{f}(x) + \overset{m-1}{\bar B_n}(x)\,\overset{n}{\varphi}(x).
+\]
+Die Functionen $f$ und $\varphi$ haben alsdann einen gemeinschaftlichen linearen Factor $f_{n-1}$, vorausgesetzt dass -- wie wir gleich noch eingehender untersuchen werden -- $D_1$ nicht verschwindet.
+
+132. \textit{Berechnung von $D_1$.} Unsere nächste Aufgabe ist, den Nenner $D_1$ zu berechnen. Wir benutzen dazu wiederum die Identität (I) Nr. 128, indem wir dort $n-1$ für $\mu$ substituiren; man erhält
+
+\weq{II}{\overset{1}{f}_{n-1}(x) = \overset{n-2}{A}_{n-1}(x)\,\overset{m}{f}(x) + \overset{m-2}{B}_{n-1}(x)\,\overset{n}{\varphi}(x) = x + r.}
+
+Die Functionen $A_{n-1}$, $B_{n-1}$ kann man in der Form annehmen:
+
+\[
+A_{n-1} = p_0 x^{n-2} + p_1 x^{n-3}\cdots + p_{n-2}
+\]
+\[
+B_{n-1} = q_0 x^{m-2} + q_1 x^{m-3}\cdots + q_{m-2}.
+\]
+Vergleicht man zunächst auf beiden Seiten die Co\"efficienten von $x^{m+n-2}$, $x^{m+n-3}\ldots$ bis herab zu $x^2$, so erhält man für die $m+n-2$ Unbekannten:
+
+\[
+p_0\ p_1\ p_2 \cdots p_{n-2},\ q_0,\ q_1 \cdots q_{m-2}
+\]
+$(m+n-3)$ lineare und homogene Gleichungen:
+
+\weq{I}{
+\left\{
+\begin{gathered}
+a_0\,p_0 + b_0\,q_0 = 0\\
+a_1\,p_0 + a_0\,p_1 + b_1\,q_0 + b_1\,q_1 = 0\\
+a_2\,p_0 + a_1\,p_1 + a_0\,p_2 + b_2\,q_0 + b_1\,q_1 + b_0\,q_2 = 0\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+a_m\,p_0 + a_{m-1}\,p_1 + \cdots + a_{m-n+2}\,p_{n-2} + \cdots + b_{m-n+2}\,q_{n-2} = 0\\
+a_m\,p_1 + \cdots + a_{m-n+3}\,p_{n-2} + \cdots\cdots\cdots + b_{m-n+3}\,q_{n-2} = 0\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+a_m\,p_{n-4} + a_{m-1}\,p_{n-3} + a_{m-2}\,p_{n-2} + b_n\,q_{n-4} + b_{n-1}\,q_{n-3} + b_{n-2}\,q_{n-2} = 0,
+\end{gathered}
+\right.
+}
+
+
+% ===== pdf idx 154, printed 140.0 =====
+% !PRINTED 140
+\weberpage{140}
+
+Hiezu tritt noch als weitere Gleichung jene, welche man durch Comparation des Co\"efficienten der ersten Potenz von $x$ in der Identität (II) gewinnt, d. i.
+
+\weq{2}{1 = a_m\,p_{n-3} + a_{m-1}\,p_{n-2} + b_n\,q_{m-3} + b_{n-1}\,q_{n-2}.}
+
+Beide Systeme zusammen liefern $(m+n-2)$ Gleichungen mit $m+n-2$ Unbekannten $p_i$ und $q_i$; die letzteren ergeben sich also aus ihnen in Bruchform mit dem gemeinsamen Nenner
+
+\[
+D_1 =
+\left|
+\begin{array}{cccccccccc}
+a_0 & a_1 & a_2 & \cdot & \cdot & \cdot & a_m & 0 & \cdot & 0\\
+0 & a_0 & a_1 & \cdot & \cdot & \cdot & \cdot & a_m & \cdot & 0\\
+0 & 0 & a_0 & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & 0\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_m\\
+0 & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & a_0 & a_1 & a_2 \cdots a_{m-1}\\
+b_0 & b_1 & b_2 & \cdot & \cdot & \cdot & b_n & 0 & 0 & \cdot\ 0\\
+0 & b_0 & b_1 & \cdot & \cdot & \cdot & \cdot & b_n & 0 & \cdot\ 0\\
+0 & 0 & b_0 & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & b_n\ \cdot\ 0\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & b_n\\
+0 & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & b_0 & b_1 & b_2\ b_3 \cdots b_{n-1}
+\end{array}
+\right|.
+\]
+
+Derselbe ist nichts anderes als eine Unterdeterminante zweiter Ordnung von $D_0$; man erhält sie aus $D_0$, wenn in ihr die zwei letzten Colonnen und die letzte Zeile sowohl der Elemente $a$, als die letzte der Elemente $b$ unterdrückt werden. Die Unbekannten $p_i$ und $q_i$ sind dann, wenn man die Minoren der letzten Colonne in $D_1$ mit
+
+\[
+D_{10}\ D_{11} \ldots D_{1,n-2}\ \Delta_{10}\ \Delta_{11} \ldots \Delta_{1,m-2}
+\]
+bezeichnet, dargestellt durch
+
+\[
+p_i = \frac{D_{1i}}{D_1},\quad q_i = \frac{\Delta_{1i}}{D_1}.
+\]
+Trägt man diese Werthe in die Gleichung ein, welche durch Comparation des Co\"efficienten von $x^0$ aus der Identität (II) hervorgeht, also in
+
+\weq{3}{r = a_m\,p_{n-2} + b_n\,q_{n-2},}
+
+so erhält man auch den Werth dieser Grösse $r$, woraus hervorgeht, dass sie nur auf eine einzige Art bestimmt werden kann. Der Rest $x + r = \overset{1}{f}_{n-1}(x)$ ist somit eindeutig ermittelt.
+
+
+% ===== pdf idx 155, printed 141.0 =====
+% !PRINTED 141
+\weberpage{141}
+
+Die Determinante $D_1$ ist jene Grösse, deren Verschwinden ausdrückt, dass kein Rest vom ersten Grade in $x$ existirt. Denn tragen wir in die Identität
+
+\[
+\overset{1}{f}_{n-1}(x) = x + r = \overset{n-2}{A}_{n-1}(x)\,\overset{m}{f}(x) + \overset{m-2}{B}_{n-1}(x)\,\overset{n}{\varphi}(x)
+\]
+die Werthe von $p_i$ und $q_i$ ein und multipliciren mit dem gemeinsamen Nenner $D_1$, so erhalten wir
+
+\[
+D_1 \cdot \overset{1}{f}_{n-1}(x) = \overset{n-2}{\bar A}_{n-1}(x)\,\overset{m}{f}(x) + \overset{m-2}{B}_{n-1}(x)\,\overset{n}{\varphi}(x),
+\]
+woraus die Behauptung direct hervorgeht.
+
+133. \textit{Berechnung von $\overset{1}{f}_{n-1}(x)$.} Verschwinden $D_0$ und $D_1$ gleichzeitig, so besitzen also die beiden Functionen $f(x)$ und $\varphi(x)$ einen gemeinsamen Factor zweiten Grades. Verschwindet nur $D_0$ allein, so existirt, wie schon in Nr. 130 erwähnt, ein gemeinsamer Factor ersten Grades, der erhalten wird, wenn wir in der Identität (II) Nr. 132 den Ausdruck auf der rechten Seite in zwei Glieder zusammenfassen, eines mit dem Factor $x^1$, das andere mit dem Factor $x^0$, also diese Identität (II) in der Form schreiben
+
+\[
+\overset{1}{f}_{(n-1)}(x) = M \cdot x^1 + N \cdot x^0
+\]
+und nun in $M$ und $N$ die Grössen $p_i$ und $q_i$ vermöge der Relationen
+
+\[
+p_i = \frac{D_{1i}}{D_1},\quad q_i = \frac{\Delta_{1i}}{D_1}
+\]
+eliminiren.
+
+134. \textit{Berechnung von $D_2$.} Wir gehen wieder aus von der Identität
+
+\weq{III}{\overset{.2}{f}_{n-2}(x) = \overset{n-3}{A}_{n-2}(x)\,\overset{m}{f}(x) + \overset{m-3}{B}_{n-2}(x)\,\overset{n}{\varphi}(x) = x^2 + rx + s}
+
+und vergleichen darin zunächst die Co\"efficienten von $x^{m+n-1}$, $x^{m+n-2}\ldots$ bis $x^3$, wodurch wir $(m+n-5)$ homogene lineare Gleichungen mit den $m+n-4$ Unbekannten
+
+\[
+p_0\ p_1\ p_2 \cdots p_{n-3},\ q_0\ q_1\ q_2 \cdots q_{m-3}
+\]
+erhalten, nämlich die Gleichungen
+
+\weq{1}{
+\left\{
+\begin{gathered}
+0 = a_0\,p_0 + b_0\,q_0\\
+0 = a_1\,p_0 + p_1\,a_0 + b_1\,q_0 + b_0\,q_1\\
+0 = a_2\,p_0 + a_1\,p_1 + a_0\,p_2 + b_2\,q_0 + b_1\,q_1 + b_0\,q_2\\
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+0 = a_m\,p_{n-5} + a_{m-1}\,p_{n-4} + a_{m-2}\,p_{n-3} + b_n\,q_{n-5} + b_{n-1}\,q_{n-4} + b_{n-2}\,q_{n-3}.
+\end{gathered}
+\right.
+}
+
+Hiezu tritt als nächste Gleichung jene, welche durch Comparation der Co\"efficienten von $x^2$ entsteht, nämlich
+
+\weq{2}{1 = a_m\,p_{n-4} + a_{m-1}\,p_{n-3} + b_n\,q_{n-4} + b_{n-1}\,q_{n-3}.}
+
+
+% ===== pdf idx 156, printed 142.0 =====
+% !PRINTED 142
+\weberpage{142}
+
+Beide Systeme zusammen geben die nöthige Zahl von Gleichungen, um die Grössen $p_i$ und $q_i$ zu berechnen. Der gemeinsame Nenner aller Werthe $p_i$ und $q_i$ ist die Determinante des Systems (1), nämlich
+
+\[
+D_2 =
+\left|
+\begin{array}{cccccccc}
+a_0 & a_1 & a_2 & \cdots & a_m & 0 & 0 & \cdots 0\\
+ & a_0 & a_1 & \cdots & \cdots & a_m & \cdots & \cdots\\
+ \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+ & & & & a_0 & a_1 & \cdots & a_{m-2}\\
+b_0 & b_1 & b_2 & \cdots & b_n & 0 & \cdots & 0\\
+ & b_0 & b_1 & \cdots & \cdots & b_n & \cdots & \cdots\\
+ \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot\\
+ & & & & b_0 & b_1 & \cdots & b_{n-2}
+\end{array}
+\right|,
+\]
+also ein Minor vierter Ordnung von $D_0$, den man erhält durch Unterdrückung der letzten vier Colonnen einestheils und der letzten Zeilenpaare mit den Elementen $a$ bezw. Elementen $b$ anderntheils.
+
+135. \textit{Berechnung von $\overset{2}{f}_{n-2}(x)$.} Tragen wir die in Function von $a_i$ und $b_i$ berechneten Werthe von $p_i$ und $q_i$ in jene Gleichungen ein, die man durch Comparation der zweiten, ersten und nullten Potenz von $x$ aus der Identität (III) gewinnt, so werden dadurch die Co\"efficienten $r$ und $s$, und also auch der ganze Rest $\overset{2}{f}_{n-2}(x)$ eindeutig bestimmt. Zu demselben Resultate gelangt man, indem man die rechte Seite der Identität (III) Nr. 134 in drei Gliedern zusammenfasst, von der Form
+
+\[
+\overset{2}{f}_{n-2}(x) = Ax^2 + Bx + C
+\]
+und in den Co\"efficienten $A$, $B$ und $C$ die Grössen $p_i$ und $q_i$ eliminirt. Dabei erhält die rechte Seite durchweg den Nenner $D_2$, so dass nach Multiplication mit demselben die Gleichung entsteht
+
+\[
+D_2 \cdot \overset{2}{f}_{n-2}(x) = \bar A x^2 + \bar B x + \bar C,
+\]
+woraus man erkennt, dass mit $D_2 = 0$ auch kein Rest vom zweiten Grade in $x$ auftritt.
+
+Wenn also die Reste $D_0$, $D_1$ und $D_2$ verschwinden, $D_3$ aber von Null verschieden ist, dann haben $f(x)$ und $\varphi(x)$ einen Factor dritten Grades in $x$ gemein.
+
+136. \textit{Verallgemeinerung.} Aus den bisherigen Entwicklungen ist das Verfahren, nun zur Aufstellung des Restes vom Grade $\varrho$ in $x$ zu gelangen, leicht abzusehen. Man comparirt in der Identität
+
+\[
+\overset{\varrho}{f}_{n-\varrho}(x) = \overset{n-\varrho-1}{A}_{n-\varrho}(x)\,\overset{m}{f}(x) + \overset{m-\varrho-1}{B}_{n-\varrho}(x)\,\overset{n}{\varphi}(x)
+\]
+
+
+% ===== pdf idx 157, printed 143.0 =====
+% !PRINTED 143
+\weberpage{143}
+
+\begin{center}
+\S.\,10. Der grösste gemeinsame Factor.
+\end{center}
+
+die Coefficienten der $(m+n-\varrho-1)^{\mathrm{ten}}$ bis $\varrho^{\mathrm{ten}}$ Potenz von $x$; das giebt ein erstes Gleichungssystem. Hierzu tritt die Gleichung, die durch Comparation der $\varrho^{\mathrm{ten}}$ Potenz von $x$ selbst entsteht, zusammen $m+n-2\varrho$ Gleichungen mit $m+n-2\varrho$ Unbekannten, die sich sonach daraus berechnen lassen. Ihr gemeinsamer Nenner ist $D_\varrho$, und der Rest vom Grade $\varrho$ geht aus der Identität hervor, indem man die Werthe von $p_i$ und $q_i$ in dieselbe substituirt. Verschwinden alle Determinanten $D_0, D_1 \ldots D_\varrho$, dagegen $D_{\varrho+1}$ nicht, so existirt kein Rest von niedrigerem Grade als dem $(\varrho+1)^{\mathrm{ten}}$, und die beiden Functionen $f$ und $\varphi$ haben einen gemeinsamen Factor $(\varrho+1)^{\mathrm{ten}}$ Grades in $x$. Insbesondere haben wir gesehen, ist $D_0 = 0$ die nothwendige und hinreichende Bedingung, dass beide Functionen überhaupt einen linearen Factor gemein haben.
+
+137. \textit{Beispiel.} Sei gegeben
+\[
+f_x = a_0x^4+a_1x^3+a_2x^2+a_3x+a_4,
+\]
+\[
+\varphi_x = b_0x^3+b_1x^2+b_2x+b_3.
+\]
+
+Wir bestimmen zunächst $D_0$ aus der Identität:
+\[
+\begin{array}{l}
+1 = (p_0x^2+p_1x+p_2)(a_0x^4+a_1x^3+a_2x^2+a_3x+a_4) \\
+\hphantom{1} + (q_0x^3+q_1x^2+q_2x+q_3)(b_0x^3+b_1x^2+b_2x+b_3).
+\end{array}
+\]
+
+Die Coefficientenvergleichung giebt:
+\weq{1}{
+\begin{array}{rcl}
+0 &=& a_0p_0 + b_0q_0 \\
+0 &=& a_1p_0+a_0p_1 + b_1q_0+b_0q_1 \\
+0 &=& a_2p_0+a_1p_1+a_0p_2 + b_2q_0+b_1q_1+b_0q_2 \\
+0 &=& a_3p_0+a_2p_1+a_1p_2 + b_3q_0+b_2q_1+b_1q_2+b_0q_3 \\
+0 &=& a_4p_0+a_3p_1+a_2p_2 + b_3q_1+b_2q_2+b_1q_3 \\
+0 &=& a_4p_1+a_3p_2 + b_3q_2+b_2q_3 \\
+1 &=& a_4p_2 + b_3q_3
+\end{array}}
+
+Die Determinante des Systems wird, wenn man sie transponirt:
+\[
+D_0 =
+\begin{vmatrix}
+a_0 & a_1 & a_2 & a_3 & a_4 & 0 & 0 \\
+0 & a_0 & a_1 & a_2 & a_3 & a_4 & 0 \\
+0 & 0 & a_0 & a_1 & a_2 & a_3 & a_4 \\
+b_0 & b_1 & b_2 & b_3 & 0 & 0 & 0 \\
+0 & b_0 & b_1 & b_2 & b_3 & 0 & 0 \\
+0 & 0 & b_0 & b_1 & b_2 & b_3 & 0 \\
+0 & 0 & 0 & b_0 & b_1 & b_2 & b_3
+\end{vmatrix}.
+\]
+
+
+% ===== pdf idx 158, printed 144.0 =====
+% !PRINTED 144
+\weberpage{144}
+
+\begin{center}
+Zweiter Theil. Anwendungen der Determinantentheorie.
+\end{center}
+
+Ihr Verschwinden drückt aus, dass $f$ und $\varphi$ einen gemeinsamen linearen Factor besitzen.
+
+Ermitteln wir ferner $D_1$ aus der Identität:
+\[
+\begin{array}{l}
+x+r = (p_0x+p_1)(a_0x^4+a_1x^3+a_2x^2+a_3x+a^4) % [sic] printed a^4, apparently for a_4
+\\
+\hphantom{x+r} + (q_0x^2+q_1x+q_2)(b_0x^3+b_1x^2+b_2x+b_4), % [sic] printed b_4, apparently for b_3
+\end{array}
+\]
+indem wir zuerst die Coefficienten der Potenzen $x^5, x^4, x^3, x^2, x$ vergleichen, so kommt:
+\weq{1}{
+\begin{array}{rcl}
+0 &=& a_0p_0 + b_0q_0 \\
+0 &=& a_1p_0+a_0p_1 + b_1q_0+b_0q_1 \\
+0 &=& a_2p_0+a_1p_1 + b_2q_0+b_1q_1+b_0q_2 \\
+0 &=& a_3p_0+a_2p_1 + b_3q_0+b_2q_1+b_1q_2 \\
+1 &=& a_4p_0+a_3p_1 + b_3q_1+b_2q_2
+\end{array}}
+
+Die Determinante des Systems ist:
+\[
+D_1 =
+\begin{vmatrix}
+a_0 & a_1 & a_2 & a_3 & a_4 \\
+0 & a_0 & a_1 & a_2 & a_3 \\
+b_0 & b_1 & b_2 & b_3 & b_4 \\
+0 & b_0 & b_1 & b_2 & b_3 \\
+0 & 0 & b_0 & b_1 & b_2
+\end{vmatrix}.
+\]
+
+Sie geht also in der That aus $D_0$ hervor durch Unterdrückung der beiden letzten Colonnen sowie der letzten Zeile der Elemente $a$ und der letzten Zeile der Elemente $b$.
+
+Ebenso erhalten wir endlich $D_2$ aus der Identität
+\[
+\begin{array}{l}
+x^2+rx+s = p_0x\cdot(a_0x^4+a_1x^3+a_2x^2+a_3x+a_4) \\
+\hphantom{x^2+rx+s} + (q_0x+q_1)(b_0x^3+b_1x^2+b_2x+b_3),
+\end{array}
+\]
+indem wir das Gleichungssystem
+\weq{1}{
+\begin{array}{rcl}
+0 &=& a_0p_0+b_0q_0 \\
+0 &=& a_1p_0+b_1q_0+b_0q_1 \\
+1 &=& a_2p_0+b_2q_0+b_1q_1
+\end{array}}
+nach $p_i$ und $q_i$ auflösen. Der Nenner aller Werthe $p_i$ und $q_i$ ist
+\[
+D_2 =
+\begin{vmatrix}
+a_0 & a_1 & a_2 \\
+b_0 & b_1 & b_2 \\
+0 & b_0 & b_1
+\end{vmatrix},
+\]
+ein Minor vierter Ordnung der Determinante $D_0$. Die Werthe von $p_i$ und $q_i$ sind:
+%CONT>>
+
+
+% ===== pdf idx 159, printed 145.0 =====
+% !PRINTED 145
+\weberpage{145}
+
+\begin{center}
+\S.\,11. Eigenschaften der Resultante $R_{f,\varphi}$.
+\end{center}
+
+%<<CONT
+\[
+D_2p_0 =
+\begin{vmatrix}
+0 & b_0 & 0 \\
+0 & b_1 & 0 \\
+1 & b_2 & b_1
+\end{vmatrix}, \quad
+D_2q_0 =
+\begin{vmatrix}
+a_0 & 0 & 0 \\
+a_1 & 0 & b_0 \\
+a_2 & 1 & b_1
+\end{vmatrix}, \quad
+D_2q_1 =
+\begin{vmatrix}
+a_0 & b_0 & 0 \\
+a_1 & b_1 & 0 \\
+a_2 & b_2 & 0
+\end{vmatrix}.
+\]
+Trägt man diese Werthe in die Gleichungen
+\[
+r = a_3p_0+b_3q_0+b_2q_1
+\]
+\[
+s = a_4p_0+b_3q_1
+\]
+ein, so erhält man die Coefficienten des quadratischen Restes ausgedrückt in den Coefficienten der gegebenen Functionen $f$ und $\varphi$.
+
+\begin{center}
+\textbf{\S.\,11. Eigenschaften der Resultante $R_{f,\varphi}$.}
+\end{center}
+
+138. \textit{Darstellung der Methode zur Ermittelung dieser Eigenschaften.} Nach den Entwicklungen des vorhergehenden Paragraphen haben wir die Resultante zweier Functionen
+\[
+\left.
+\begin{array}{l}
+f(x) = a_0x^m+a_1x^{m-1}\ldots+a_m \\
+\varphi(x) = b_0x^n+b_1x^{n-1}\ldots+b_n
+\end{array}
+\right\} \quad m>n
+\]
+in Form einer Determinante vom Grade $m+n$ erhalten, nämlich:
+\[
+R_{f,\varphi} =
+\begin{vmatrix}
+a_0 & a_1 & a_2 & \cdots & a_m & 0 & \cdots & 0 \\
+0 & a_0 & a_1 & \cdots & \cdots & a_m & \cdots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & \cdots & \cdots & a_0 & a_1 & \cdots & a_m & {} \\
+b_0 & b_1 & b_2 & \cdots & b_n & 0 & \cdots & 0 \\
+0 & b_0 & b_1 & \cdots & \cdots & b_n & \cdots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & \cdots & \cdots & b_0 & b_1 & \cdots & b_n & {}
+\end{vmatrix}.
+\]
+
+Gerade aus diesem Umstande lassen sich zahlreiche Eigenschaften derselben einfach dadurch herleiten, dass wir diese Determinante geeignet umformen, ohne ihren Werth zu ändern. Die umgestaltete Determinante wiederum als Resultante anderer Functionen mit entsprechenden Coefficienten betrachtet, lässt dann direct die Eigenschaften erkennen. Diese Umformungen sind zweierlei Art; einmal lediglich Vertauschungen von Zeilen oder Reihen, dann aber auch Addition von Reihen, die mit gewissen Grössen multiplicirt gedacht werden, zu andern Reihen.
+%CONT>>
+
+
+% ===== pdf idx 160, printed 146.0 =====
+% !PRINTED 146
+\weberpage{146}
+
+\begin{center}
+Zweiter Theil. Anwendungen der Determinantentheorie.
+\end{center}
+
+%<<CONT
+139. \textit{Vertauschung der letzten $m$ Zeilen mit den $n$ ersten.} Bringt man in der Determinante $R_{f,\varphi}$ die Zeilen mit dem Index $n+1, n+2, \cdots n+m$ an die ersten Stellen, und fügt die $m$ ersten Zeilen an die so erhaltene letzte Zeile an, so entsteht
+\[
+\begin{vmatrix}
+b_0 & b_1 & b_2 & \cdots & b_n & 0 & \cdots & 0 \\
+0 & b_0 & b_1 & \cdots & \cdots & b_n & \cdots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & \cdots & \cdots & b_0 & b_1 & \cdots & b_n & {} \\
+a_0 & a_1 & a_2 & \cdots & a_m & 0 & \cdots & 0 \\
+0 & a_0 & a_1 & \cdots & \cdots & a_m & \cdots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & \cdots & \cdots & a_0 & a_1 & \cdots & a_m & {}
+\end{vmatrix}.
+\]
+Das Diagonalglied hat in seinen ersten Indices die Permutation
+\[
+(n+1, n+2 \ldots n+m, 1\,2\,3 \ldots n),
+\]
+jede der $m$ ersten Zahlen bildet mit den folgenden $n$ Derangements, so dass die Anzahl aller $n\cdot m$ ist. Wir haben daher die Beziehung
+\[
+R_{f,\varphi} = (-1)^{n\cdot m} R_{\varphi,f}.
+\]
+
+140. \textit{Transposition der Resultante.} Wendet man auf die Resultante eine zweimalige Transposition an, zunächst durch eine Umklappung um die zweite Diagonale, sodann durch eine zweite Umklappung um die erste Diagonale der erhaltenen neuen Matrix, so erhalten wir eine Matrix, in welcher die Elemente genau in umgekehrter Reihenfolge auftreten, nämlich
+\[
+R =
+\begin{vmatrix}
+b_n & b_{n-1} & b_{n-2} & \cdots & b_0 & 0 & \cdots & 0 \\
+0 & b_n & b_{n-1} & \cdots & \cdots & b_0 & \cdots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & \cdots & \cdots & b_n & b_{n-1} & \cdots & b_0 & {} \\
+a_m & a_{m-1} & \cdots & \cdots & a_0 & \cdots & \cdots & 0 \\
+0 & a_m & \cdots & \cdots & \cdots & a_0 & \cdots & {} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & \cdots & \cdots & \cdots & \cdots & a_m & \cdots & a_0
+\end{vmatrix}.
+\]
+Da die Transposition das Vorzeichen einer Determinante nicht ändert, so ist
+\weq{I}{R = R_{f,\varphi}.}
+Nun ist aber diese Determinante nichts anderes als die Resultante der Gleichungen
+%CONT>>
+
+
+% ===== pdf idx 161, printed 147.0 =====
+% !PRINTED 147
+\weberpage{147}
+%<<CONT
+\[ b_n x^n + b_{n-1}x^{n-1} + \cdots + b_0 = x^n \cdot \varphi\left(\frac{1}{x}\right) \]
+\[ a_m x^m + a_{m-1}x^{m-1} + \cdots + a_0 = x^m \cdot f\left(\frac{1}{x}\right). \]
+
+Die Relation (I) giebt daher den Satz:
+
+\[ R_{f,\varphi} = R_{x^n\varphi\left(\frac{1}{x}\right),\ x^mf\left(\frac{1}{x}\right)} . \]
+
+141. \textit{Resultante von $f(\lambda x)$ und $\varphi(\lambda x)$.} Ersetzen wir in den
+Functionen $f(x)$ und $\varphi(x)$ die Ver\"anderliche $x$ durch $\lambda \cdot x$, so erhalten
+wir
+
+\weq{I}{
+\begin{cases}
+f(\lambda x) = a_0\lambda^m x^m + a_1\lambda^{m-1}x^{m-1} + \cdots \lambda^0 a_m \\
+\varphi(\lambda x) = b_0\lambda^n x^n + b_1\lambda^{n-1}x^{n-1} + \cdots \lambda^0 b_n.
+\end{cases}
+}
+
+Dasselbe Resultat ergiebt sich, wenn wir in $f(x)$ und $\varphi(x)$ $a_0$ durch
+$\lambda^m a_0$, $a_1$ durch $\lambda^{m-1}a_1 \ldots$ u.\,s.\,w., $b_0$ durch
+$\lambda^n b_0$, $b_1$ durch $\lambda^{n-1} b_1$ u.\,s.\,w. ersetzen. Die Resultante der
+Functionen $f(\lambda x)$ und $\varphi(\lambda x)$ ergiebt sich also aus der Resultante von
+$f(x)$ und $\varphi(x)$, durch Substitution dieser Werthe f\"ur $a_i$ und $b_i$, d.\,h. es
+wird
+
+\[
+R_{f(\lambda x),\ \varphi(\lambda x)} =
+\left|
+\begin{array}{ccccccc}
+\lambda^m a_0 & \lambda^{m-1}a_1 & \lambda^{m-2}a_2 & \ldots & 0 \\
+0 & \lambda^m a_0 & \lambda^{m-1}a_2 & \ldots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & \ldots & \lambda^m a_0 & \ldots & \lambda^0 a_m \\
+\lambda^n b_0 & \lambda^{n-1}b_1 & \ldots & \lambda^0 b_n & 0 & \ldots & 0 \\
+0 & \lambda^n b_0 & \lambda^{n-1}b_1 & \ldots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & \ldots & \ldots & \lambda^n b_0 & \ldots & \ldots & \lambda_0 b_n
+\end{array}
+\right| .
+\]
+
+Genau dieselbe Resultante erh\"alt man aber, wenn wir in $R_{f,\varphi}$ die erste Colonne
+mit $\lambda^{m+n-1}$, die zweite mit $\lambda^{m+n-2}$, die letzte mit $\lambda^0$, also
+insgesammt mit $\lambda^{\frac{(m+n)(m+n-1)}{2}}$ multipliciren und hierauf die erste Zeile
+mit $\lambda^{n-1}$, die zweite mit $\lambda^{n-2}\ldots$, die $n^{\text{te}}$ mit $\lambda^0$,
+die $(n+1)^{\text{te}}$ mit $\lambda^{m-1}\ldots$, die $(n+m)^{\text{te}}$ mit $\lambda^0$,
+also insgesammt mit $\lambda^{\frac{n(n-1)}{2}+\frac{m(m-1)}{2}}$ dividiren. Dadurch erh\"alt
+aber $R_{f,\varphi}$ schliesslich den Factor $\lambda^{m\cdot n}$, so dass wir zu dem
+Resultate gelangen:
+
+\[ R_{f(\lambda x),\ \varphi(\lambda x)} = \lambda^{m\cdot n} R_{f,\varphi}. \]
+
+Daraus geht zun\"achst hervor, dass jedes Glied der Resultante $R_{f,\varphi}$ so beschaffen
+sein muss, dass es bei Substitution von $a_0\lambda^m$, $a_1\lambda^{m-1}\ldots$,
+%CONT>>
+
+
+% ===== pdf idx 162, printed 148.0 =====
+% !PRINTED 148
+\weberpage{148}
+%<<CONT
+$a_m\lambda^0$, $b_0\lambda^n$, $b_1\lambda^{n-1}\ldots$, $b_n\lambda^0$ f\"ur
+$a_0a_1\ldots a_m$, $b_0b_1\ldots b_n$ den Factor $\lambda^{m\cdot n}$ erh\"alt. Aus
+Gr\"unden der Symmetrie folgt, dass das N\"amliche eintritt bei den Substitutionen
+$a_0\lambda^0$, $a_1\lambda^1\ldots a_m\lambda^m$, $b_0\lambda^0$, $b_1\lambda^1\ldots
+b_n\lambda^n$ f\"ur $a_0a_1\ldots a_m$, $b_0b_1\ldots b_n$. Demgem\"ass haben alle Glieder der
+Resultante die Eigenschaft, dass in ihnen die Summe aller Indices der darin auftretenden
+Coefficienten $a_i$ und $b_i$ --- jeden Index $i$ so oftmal genommen als der bez\"ugliche
+Exponent von $a_i$ oder $b_i$ angiebt --- eine constante Zahl n\"amlich gleich $m\cdot n$
+ist. Man nennt diese Zahl $m\cdot n$ das Gewicht der Resultante, und sagt, die Resultante
+ist eine isobare Function der Coefficienten von $f(x)$ und $\varphi(x)$.
+
+142. \textit{Schnittpuncte zweier Curven $m^{\text{ter}}$ und $n^{\text{ter}}$ Ordnung.} Die
+Eigenschaft der Resultante, eine isobare Function zu sein, k\"onnen wir benutzen, in
+einfacher Weise \"uber die Zahl der Schnittpunkte zweier algebraischer Curven Aufschluss zu
+erhalten. Denken wir uns n\"amlich, entsprechend den Factoren $\lambda^0$, $\lambda^1$,
+$\lambda^2\ldots$ u.\,s.\,w., die Gr\"ossen $a_0$ und $b_0$ als Functionen nullten Grades in
+$\xi$ und $\eta$, die Gr\"ossen $a_1$ und $b_1$ als homogene Functionen ersten, und allgemein
+die Gr\"ossen $a_\varrho$ und $b_\varrho$ als homogene Functionen $\varrho^{\text{ten}}$
+Grades in $\xi$ und $\eta$, so ist jedes Glied der Resultante eine homogene Function
+$m\cdot n^{\text{ten}}$ Grades dieser zwei Ver\"anderlichen, wie sein Gewicht $m\cdot n$
+lehrt.
+
+Sind nun $f(x_1\overset{m}{x_2}x_3) = 0$ und $\varphi(x_1\overset{n}{x_2}x_3) = 0$ zwei
+% ?? uncertain: exact placement/meaning of the small superscript degree marker over $x_2$ in $f(x_1\overset{m}{x_2}x_3)$ and $\varphi(x_1\overset{n}{x_2}x_3)$
+Gleichungen, welche homogen geschrieben und nach $x_1$ geordnet die Form besitzen:
+
+\[ f(x_1x_2x_3) = a_0x_1^m + a_1x_1^{m-1} + a_2x_1^{m-2}\ldots + a_m = 0 \]
+\[ \varphi(x_1x_2x_3) = b_0x_1^n + b_1x_1^{n-1} + b_2x_2^{n-2}\ldots + b_n = 0, \] % [sic] second term prints $x_2^{n-2}$, not $x_1^{n-2}$
+
+dann sind in ihnen die Coefficienten $a_0$, $b_0$; $a_1$, $b_1$; $a_2$, $b_2$ u.\,s.\,w.
+solche homogene Functionen von $x_2$ und $x_3$ vom bezw. $0^{\text{ten}}$,
+$1^{\text{ten}}$, $2^{\text{ten}}$ Grade u.\,s.\,w. Bildet man also die Resultante
+$R_{f,\varphi}$ nach $x_1$, so erh\"alt man in ihr eine homogene ganze Function von $x_2$
+und $x_3$, die nach dem Vorausgehenden vom Grade $m\cdot n$ ist. Deutet man daher $f$ und
+$\varphi$ geometrisch als Curvengleichungen, so hat man den Satz: Zwei Curven
+$m^{\text{ter}}$ bezw. $n^{\text{ter}}$ Ordnung besitzen $m\cdot n$ gemeinsame
+Schnittpuncte*).
+
+143. \textit{Die Resultante als Functionaldeterminante.} Eine weitere Reihe von
+Eigenschaften der Resultante l\"asst sich durch eine Betrachtungsweise derselben erkennen,
+die zuerst von Sylvester hierbei eingef\"uhrt
+%CONT>>
+
+\bigskip\noindent\rule{4cm}{0.4pt}
+
+\smallskip\noindent
+*) Dieser Satz wurde hier auf rationalem Wege abgeleitet. Eine gleiche rationale Methode, zu
+zeigen dass drei Fl\"achen bezw. $m^{\text{ten}}$, $p^{\text{ten}}$ und $q^{\text{ten}}$
+Grades sich in $mpq$ Punkten schneiden, besitzen wir noch nicht.
+
+
+% ===== pdf idx 163, printed 149.0 =====

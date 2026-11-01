@@ -1,0 +1,913 @@
+% !PRINTED 61
+\weberpage{61}
+%<<CONT
+und die Invariante $\nu$ Grades in den Coefficienten von $f$
+\[
+i = \psi (\bar a_0,\ \bar a_1,\ \bar a_2,\ \ldots \bar a_n).
+\]
+Dann ist:
+\[
+f + \lambda\varphi = (\bar a_0 + \lambda \bar\alpha_0)x_1^n + \binom{n}{1}(\bar a_1+\lambda\bar\alpha_1)x_1^{n-1}x_2 + \cdots
+\]
+und demnach
+\[
+J = \psi (\bar a_0+\lambda\bar\alpha_0,\ \bar a_1+\lambda\bar\alpha_1,\ \ldots \bar a_n+\lambda\bar\alpha_n).
+\]
+
+Denken wir uns diese Invariante $J$ nach steigenden Potenzen von
+$\lambda$ geordnet, und die Coefficienten der ersten bis $\nu^{\text{ten}}$ Potenz der Reihe
+nach mit $\delta i,\ \delta^2 i \ldots \delta^\nu i$, so stellt sich $J$ in der Form
+dar
+\[
+J = \lambda^0 i + \lambda^1 \delta i + \lambda^2 \delta^2 i + \lambda^3 \delta^3 i + \cdots \lambda^\nu \delta^\nu i. \tag{I}
+\]
+Dass der Coefficient von $\lambda^0$ die Invariante $i$ ist, geht daraus hervor,
+dass für $\lambda = 0$ die Form $f+\lambda\varphi$ in $f$, also $J$ in $i$ übergehen muss.
+
+57. \textit{Definition des Aronhold'schen Processes.} Erster Fall: $\varphi$ ist
+von $f$ unabhängig. Um die Werthe der Grössen $\delta^k i$ zu ermitteln,
+bedienen wir uns einen Augenblick einer neuen Art der symbolischen
+Darstellung für die Invariante $i$. Da nämlich $i$ als Invariante eine
+homogene Function $\nu^{\text{ten}}$ Grades in den Coefficienten $a_k$ ist, so kann
+man sie symbolisch darstellen durch
+\[
+i = (\bar a_0 p_0 + \bar a_1 p_1 + \bar a_2 p_2 + \cdots \bar a_n p_n)^\nu = p_a^\nu.
+\]
+Hiebei sind die Coefficienten $p_i$ nur als Symbole numerischer
+Grössen zu denken, d.\,h. der Zahlencoefficient --- Null nicht ausge\-schlossen --- irgend des Gliedes $\bar a_{i_0}^{\mu_0}\bar a_{i_1}^{\mu_1}\ldots\bar a_{i_\nu}^{\mu_\nu}$ der Invariante ist repräsentirt durch
+\[
+\frac{\nu!}{\mu_0!\,\mu_1!\ldots}p_{i_0}^{\mu_0}p_{i_1}^{\mu_1}\cdots p_{i_\nu}^{\mu_\nu},\ \text{wo}\ \mu_0+\mu_1+\cdots\mu_\nu = \nu.
+\]
+Im allgemeinen, wenn $i$ Covariante, können diese Grössen $p_i$ noch
+Functionen von $x$ sein.
+
+Da nun $J$ aus $i$ dadurch entstanden ist, dass an Stelle von $\bar a_i$ die
+Grösse $\bar a_i + \lambda\bar\alpha_i$ trat, so ist das analoge Symbol für $J$
+\[
+J = (\bar a_0 p_0+\bar a_1 p_1+\cdots+\lambda\bar\alpha_0 p_0+\lambda\bar\alpha_1 p_1+\cdots)^\nu = (p_a+\lambda p_\alpha)^\nu.
+\]
+Diesen Ausdruck kann man aber nach dem binomischen Lehrsatz ent\-wickeln, wodurch man erhält:
+\[
+J = p_a^\nu + \binom{\nu}{1}p_a^{\nu-1}p_\alpha\lambda + \binom{\nu}{2}p_a^{\nu-2}p_\alpha^2\lambda^2 + \cdots \lambda^\nu p_\alpha^\nu. \tag{II}
+\]
+Vergleicht man diese Entwicklung mit der Entwicklung (I) Nr. 56,
+so erhält man allgemein:
+\[
+\delta^k i = \binom{\nu}{k}p_a^{\nu-k}p_\alpha^k. \tag{I}
+\]
+
+
+% ===== pdf idx 76, printed 62.0 =====
+% !PRINTED 62
+\weberpage{62}
+Der Ausdruck rechts ist aber bis auf einen numerischen Coefficienten
+nichts anderes als die $k^{\text{te}}$ Polare von $p_a^\nu$
+\[
+p_a^{\nu-k}p_\alpha^k = (p_a^\nu)_{\alpha^k} = \frac{1}{\nu(\nu-1)\cdots(\nu-k+1)}\left(\frac{\partial i}{\partial \bar a_0}\bar a_0+\frac{\partial i}{\partial \bar a_1}\bar a_1+\cdots\frac{\partial i}{\partial \bar a_n}\bar a_n\right)^k.
+\]
+Daher ist
+\[
+\delta^k i = \binom{\nu}{k}\ \frac{1}{\nu(\nu-1)\cdots(\nu-k+1)}\sum\frac{\partial^k i}{\partial\bar a_{i_1}\cdots\partial\bar a_{i_k}}\ \bar\alpha_{i_1}\bar\alpha_{i_2}\ldots\bar\alpha_{i_k}
+\]
+oder
+\[
+\delta^k i = \frac{1}{k!}\sum\frac{\partial^k i}{\partial\bar a_{i_1}\partial\bar a_{i_2}\cdots\partial\bar a_{i_k}}\ \bar\alpha_{i_1}\bar\alpha_{i_2}\cdots\bar\alpha_{i_k}. \tag{II}
+\]
+Wir erhalten demnach die Lösung:
+
+\glqq Die Grösse $\delta^k i$ ist bis auf einen numerischen Coefficienten
+gleich der $k^{\text{ten}}$ Polare von $i$ nach den Coefficienten $\bar a_i$, wobei
+die Incremente jedesmal durch $\bar\alpha_i$ ersetzt werden.\grqq{}
+
+Nach den Eigenschaften der Polaren entsteht also $\delta^2 i$ ebenso aus
+$\delta i$ wie $\delta i$ aus $i$, oder allgemein: Man erhält $\delta^k i$, wenn man $\delta^{k-1}i$ nach
+jedem Coefficienten differentiirt, die Incremente durch $\bar\alpha_i$ ersetzt und
+alle so erhaltenen Ausdrücke summirt. Der Process, welcher durch
+\[
+\delta i = \frac{\partial i}{\partial \bar a_0}\bar\alpha_0 + \frac{\partial i}{\partial \bar a_1}\bar\alpha_1 + \cdots + \frac{\partial i}{\partial \bar a_n}\bar\alpha_n
+\]
+ausgedrückt ist, wird somit, immer vorausgesetzt, dass die Coefficienten $\bar\alpha_i$
+unabhängig sind von den Coefficienten $\bar a_i$, ein Iterationsprocess. Wir
+nennen ihn den Aronhold'schen Process und bezeichnen die Aus\-führung desselben an einer In- oder Covariante mit dem Worte \glqq del\-tairen\grqq{}. Die Formen $f$ und $\varphi$ sind hiebei als lineare Functionen der
+Variabeln $a_i$, $b_i$ aufgefasst, während die Potenzen $x^m$, $x^{m-1}$, $\ldots x^0$
+als Constante betrachtet werden. Beide Formen haben in diesem
+Sinne die nämlichen Coefficienten, aber verschiedene Variable und $i$
+ist dann Covariante $\nu^{\text{ten}}$ Grades der Form $f$.
+
+58. \textit{Beispiel.} 1) Die quadratische Form
+\[
+f = \bar a_0 x_1^2 + 2\bar a_1 x_1 x_2 + \bar a_2 x_2^2
+\]
+besitzt die Invariante
+\[
+i = \bar a_0 \bar a_2 - \bar a_1^2 = (f,\,f)^2.
+\]
+Ist nun $\varphi$ eine zweite quadratische Form
+\[
+\varphi = \bar\alpha_0 x_1^2 + 2\bar\alpha_1 x_1 x_2 + \bar\alpha_2 x_2^2,
+\]
+so ist die der Form $i$ entsprechende Invariante von $f+\lambda\varphi$
+\[
+\begin{aligned}
+J &= (\bar a_0+\lambda\bar\alpha_0)(\bar a_2+\lambda\bar\alpha_2)-(\bar a_1+\lambda\bar\alpha_1)^2\\
+&= (\bar a_0\bar a_2-\bar a_1^2) + \lambda(\bar a_0\bar a_2-2\bar a_1\bar\alpha_1+a_2\alpha_0) + \lambda^2(\bar\alpha_0\bar\alpha_2-\bar\alpha_1^2) % [sic] third term prints \textquotedbl{}a_2 alpha_0\textquotedbl{} without overlines, unlike the parallel terms
+\end{aligned}
+\]
+
+
+% ===== pdf idx 77, printed 63.0 =====
+% !PRINTED 63
+\weberpage{63}
+Das gleiche Resultat erhalten wir, wenn wir die erste und zweite
+Polare von $i$ bilden und die Werte von
+\[
+\begin{aligned}
+2p_a\,p_\alpha &= \delta i\\
+p_\alpha^2 &= \delta^2 i.
+\end{aligned}
+\]
+in die Entwicklung
+\[
+J = i + \lambda\,\delta i + \lambda^2\,\delta^2 i
+\]
+eintragen. Denn es ist:
+\[
+p_a\,p_\alpha = \frac{1}{2}\left(\frac{\partial i}{\partial \bar a_0}\bar\alpha_0+\frac{\partial i}{\partial \bar a_1}\bar\alpha_1+\frac{\partial i}{\partial \bar a_2}\bar\alpha_2\right) = \frac{1}{2}(\bar a_2\bar\alpha_0-2\bar a_1\bar\alpha_1+\bar\alpha_2\bar a_0)
+\]
+\[
+= \frac{1}{2}(f,\,\varphi)^2 \ \text{(vergl. Nr. 36, (1))}
+\]
+und ebenso (vgl. Nr. 14, 8)
+\[
+p_\alpha^2 = \frac{1}{2}\left(\frac{\partial i}{\partial \bar a_0}\bar\alpha_0+\frac{\partial i}{\partial \bar a_1}\bar\alpha_1+\frac{\partial i}{\partial \bar a_2}\bar\alpha_2\right)^2 = (\bar\alpha_0\bar\alpha_2-\bar\alpha_1^2) = (\varphi,\,\varphi)^2.
+\]
+Also ist
+\[
+J = i + \lambda(f,\,\varphi)^2 + \lambda^2(\varphi,\,\varphi)^2.
+\]
+59. \textit{Beispiel} 2. Die biquadratische Form $f=a_x^4$ besitzt eine In\-variante dritten Grades in den Coefficienten, welche entsteht, wenn
+man die Hesse'sche Form $(f,\,f)^2=(ab)^2a_x^2b_x^2$ viermal über $f=c_x^4$
+selbst schiebt, nämlich die Invariante
+\[
+j = (ab)^2(ac)^2(bc)^2 = ((f,\,f)^2,\,f)^4.
+\]
+Ersetzt man hier die symbolischen Coefficienten durch die unsymbo\-lischen, so findet man (vgl. auch Nr. 155 d. Bd.), vom Factor 6 abge\-sehen,
+\[
+j = \begin{vmatrix} \bar a_0 & \bar a_1 & \bar a_2\\ \bar a_1 & \bar a_2 & \bar a_3\\ \bar a_2 & \bar a_3 & \bar a_4 \end{vmatrix}
+\]
+oder
+\[
+\begin{aligned}
+j &= \bar a_0\bar a_2\bar a_4 + 2\bar a_1\bar a_2\bar a_3 - a_2^3 - \bar a_0\bar a_3^2 - \bar a_1^2\bar a_4 % [sic] \textquotedbl{}a_2^3\textquotedbl{} prints without overline, unlike the surrounding barred terms
+\\
+&= \{p_0\bar a_0+p_1\bar a_1+p_2\bar a_2+p_3\bar a_3+p_4\bar a_4\}^3 = p_a^3.
+\end{aligned}
+\]
+Die entsprechende Invariante $J$ von $f+\lambda\varphi$, wobei $\varphi=\alpha_x^4$, wird
+\[
+J = j + \lambda\,\delta j + \lambda^2\,\delta^2 j + \lambda^3\,\delta^3 j
+\]
+und die Coefficienten $\delta j$, $\delta^2 j$, $\delta^3 j$ sind bezw. gleich den Polaren:
+\[
+3(p_a^3)_\alpha,\quad 3(p_a^3)_{\alpha^2},\quad (p_a^3)_{\alpha^3}.
+\]
+Bezeichnen wir der Kürze halber obige Determinante durch
+ihr Diagonalglied $(\bar a_0\,\bar a_2\,\bar a_4)$, so werden entsprechend diese drei Po\-
+laren durch
+%CONT>>
+
+
+% ===== pdf idx 78, printed 64.0 =====
+% !PRINTED 64
+\weberpage{64}
+%<<CONT
+\[
+(p_a^3)_\alpha = \frac{1}{3}\sum\frac{\partial j}{\partial\bar a_k}\bar\alpha_k = \frac{1}{3}\left\{(\bar\alpha_0\bar a_2\bar a_4)+(\bar a_0\bar\alpha_2\bar a_4)+(\bar a_0\bar a_2\bar\alpha_4)\right\}
+\]
+\[
+(p_a^3)_{\alpha^2} = \frac{1}{3\cdot 2}\sum\frac{\partial j}{\partial\bar a_k\partial\bar a_\lambda}\bar\alpha_k\bar\alpha_\lambda = \frac{2}{6}\left\{(\bar\alpha_0\bar\alpha_2\bar a_4)+(\bar\alpha_0\bar a_2\bar\alpha_4)+(\bar a_0\bar\alpha_2\bar\alpha_4)\right\}
+\]
+% checked against the GDZ scan (27 Oct 2026): every a and alpha in the two bracketed sums above carries a bar, as transcribed
+\[
+(p_a^3)_{\alpha^3} = \frac{1}{3\cdot 2\cdot 1}\sum\frac{\partial j}{\partial\bar a_k\partial\bar a_\lambda\partial\bar a_\nu}\cdot\bar\alpha_k\bar\alpha_\lambda\bar\alpha_\nu = (\bar\alpha_0\bar\alpha_2\bar\alpha_4) = ((\varphi,\,\varphi)^2,\,\varphi)^4
+\]
+dargestellt sein. Demnach wird
+\[
+\begin{aligned}
+J = ((f,\,f)^2,\,f)^4 &+ \lambda\left\{(\bar a_0\bar\alpha_2\bar a_4)+(\bar a_0\bar a_2\bar\alpha_4)+(\bar\alpha_0\bar a_2\bar a_4)\right\}\\
+&+ \lambda^2\left\{(\bar\alpha_0\bar\alpha_2\bar a_4)+(\bar\alpha_0\bar a_2\bar\alpha_4)+(\bar a_0\bar\alpha_2\bar\alpha_4)\right\} + \lambda^3((\varphi,\,\varphi)^2,\,\varphi)^4.
+\end{aligned}
+\]
+Hierin sind auch die beiden mittleren Coefficienten Invarianten, deren
+symbolische Darstellung wir sofort kennen lernen werden.
+
+60. \textit{Darstellung des Aronhold'schen Processes $\delta i$ in seiner Wirkung
+auf ein symbolisches Product.} Schon das letzte Beispiel führte uns zur
+Frage: Wie äussert sich der Aronhold'sche Process an einem sym\-
+bolischen Product? Die Antwort hierauf will ich zunächst an dem
+gleiche Beispiel erläutern. Die gegebene Invariante
+\[
+j = (ab)^2(bc)^2(ac)^2 = 6\left\{\bar a_0\bar a_2\bar a_4+2\bar a_1\bar a_2\bar a_3-\bar a_2^3-\bar a_0\bar a_3^2-\bar a_1^2\bar a_4\right\} \tag{1}
+\]
+ist vom dritten Grade in den Coefficienten. Denken wir uns dement\-
+sprechend die biquadratische Form $f=r_x^4$ einen Moment auf drei Arten
+unsymbolisch dargestellt:
+\[
+\left.
+\begin{aligned}
+f &= \bar a_0 x_1^4+4\bar a_1 x_1^3x_2+\cdots \bar a_4 x_2^4\\
+f &= \bar b_0 x_1^4+4\bar b_1 x_1^3x_2+\cdots \bar b_4 x_2^4\\
+f &= \bar c_0 x_1^4+4c_1 x_1^3x_2+\cdots \bar c_4 x_2^4
+\end{aligned}
+\right\}\ r_i = \bar a_i = \bar b_i = \bar c_i,
+\]
+so können wir aus dem symbolischen Product $j=(ab)^2(bc)^2(ac)^2$ noch
+zu einer andern unsymbolischen Darstellung $\bar j$ von $j$ gelangen, als der
+in (1) gegebenen, wenn wir die Symbolreihe
+\[
+\begin{aligned}
+a_1^4,\ a_1^3a_2,\ a_1^2a_2^2\ldots &\ \text{durch}\ \bar a_0\bar a_1\bar a_2\ldots\\
+\text{und ebenso:}\quad b_1^4,\ b_1^3b_2,\ b_1^2b_2^2\ldots &\ \text{durch}\ \bar b_0\bar b_1\bar b_2\ldots\\
+c_1^4,\ c_1^3c_2,\ c_1^2c_2^2\ldots &\ \text{durch}\ \bar c_0\bar c_1\bar c_2\ldots
+\end{aligned}
+\]
+ersetzen. Der so erhaltene Ausdruck $\bar j$ ist aber nun linear in den
+Grössen $\bar a_i$, $\bar b_i$, $\bar c_i$ und geht für $\bar a_i=\bar b_i=\bar c_i=\bar r_i$ in den unter (1) ge\-
+gebenen über. Der partielle Differentialquotient von $\bar j$ nach $\bar r_i$ ist in
+Folge dessen durch
+\[
+\frac{\partial\bar j}{\partial\bar r_i} = \frac{\partial\bar j}{\partial\bar a_i} + \frac{\partial\bar j}{\partial\bar b_i} + \frac{\partial\bar j}{\partial\bar c_i} \tag{2}
+\]
+%CONT>>
+
+
+% ===== pdf idx 79, printed 65.0 =====
+% !PRINTED 65
+\weberpage{65}
+dargestellt, und der Aronhold'sche Process erhält den analytischen Ausdruck
+\weq{3}{\begin{aligned}
+\partial \bar j &= \sum_0^4 \frac{\partial \bar j}{\partial \bar r_i}\,\bar\alpha_i\\
+&= \sum_0^4 \frac{\partial \bar j}{\partial \bar a_i}\,\bar\alpha_i + \sum \frac{\partial \bar j}{\partial \bar b_i}\,\bar\alpha_i + \sum \frac{\partial \bar j}{\partial \bar c_i}\,\bar\alpha_i.
+\end{aligned}}
+Durch die erste der drei Operationen rechts wird aber in den in $\bar\alpha_i$ linearen Ausdruck $\bar j$, an Stelle des Coefficienten $\bar a_i$ der Coefficient $\bar\alpha_i$ oder also in $j$ an Stelle des Symboles $a_1^{4-i}a_2^{\,i}$ das Symbol $\alpha_1^{4-i}\alpha_2^{\,i}$ eingeführt. Wenn man daher zum symbolischen Product zurückkehrt, so erhält man an Stelle von $(ab)^2(bc)^2(ac)^2$ einfach $(\alpha b)^2(bc)^2(\alpha c)^2$.
+Ebenso liefert die zweite und dritte Operation rechts in (3)
+\[
+(a\alpha)^2(\alpha c)^2(ac)^2, \quad (ab)^2(b\alpha)^2(a\alpha)^2.
+\]
+Weil aber alle drei Resultate identisch gleich sind, so hat man:
+\[
+\delta j = 3(ab)^2(b\alpha)^2(a\alpha)^2 = \big((ab)^2a_x^2b_x^2,\ \alpha_x^4\big)^4 = 3\big((f,f)^2,\varphi\big)^4.
+\]
+61. In derselben Weise findet man:
+\[
+\begin{aligned}
+\delta^2 j &= 3(a\alpha)^2(\alpha\beta)^2(a\beta)^2 = \big((\varphi,\varphi)^2,f\big)^4\\
+\delta^3 j &= (\alpha\beta)^2(\alpha\gamma)^2(\beta\gamma)^2 = \big((\varphi,\varphi)^2,\varphi\big)^4.
+\end{aligned}
+\]
+Denn in Gleichung (3) sind die drei Glieder rechts linear in den Grössen $\bar a_i, \bar b_i, \bar c_i$; resp. $\bar\alpha_i, \bar a_i, \bar c_i$; $\bar\alpha_i, \bar a_i, \bar b_i$. Setzen wir nun der Einfachheit halber
+\[
+\begin{aligned}
+\sum \frac{\partial \bar j}{\partial \bar a_i}\,\bar\alpha_i &= k_a\\
+\sum \frac{\partial \bar j}{\partial \bar b_i}\,\bar\alpha_i &= k_b\\
+\sum \frac{\partial \bar j}{\partial \bar c_i}\,\bar\alpha_i &= k_c
+\end{aligned}
+\]
+und unterwerfen die Grössen $k_a$, $k_b$, $k_c$ wiederum dem Aronhold'schen Process, so erhalten wir entsprechend der Gleichung (3)
+\[
+\begin{aligned}
+\delta k_a &= \sum_0^4 \frac{\partial k_a}{\partial \bar b_\varkappa}\,\bar\beta_\varkappa + \sum_0^4 \frac{\partial k_a}{\partial \bar c_\varkappa}\,\bar\beta_\varkappa\\
+\delta k_b &= \sum_0^4 \frac{\partial k_b}{\partial \bar a_\varkappa}\,\bar\beta_\varkappa + \sum \frac{\partial k_b}{\partial \bar c_\varkappa}\,\bar\beta_\varkappa\\
+\delta k_c &= \sum_0^4 \frac{\partial k_c}{\partial \bar a_\varkappa}\,\bar\beta_\varkappa + \sum \frac{\partial k_c}{\partial \bar b_\varkappa}\,\bar\beta_\varkappa.
+\end{aligned}
+\]
+
+
+% ===== pdf idx 80, printed 66.0 =====
+% !PRINTED 66
+\weberpage{66}
+Ersetzen wir in diesen drei Gleichungen $k_a$ durch $\displaystyle\sum \frac{\partial \bar j}{\partial \bar a_i}\,\bar\alpha_i$ etc. und addiren, so kommt:
+\[
+\sum_{a,\ b,\ c} \delta k_r = 2\left\{ \sum \frac{\partial \bar j}{\partial \bar a_i\,\partial \bar b_\varkappa}\,\bar a_i\bar\beta_\varkappa + \sum \frac{\partial \bar j}{\partial \bar a_i\,\partial \bar c_\varkappa}\,\bar a_i\bar\beta_\varkappa + \sum \frac{\partial \bar j}{\partial \bar b_i\,\partial \bar c_\varkappa}\,\bar a_i\bar\beta_\varkappa \right\}.
+\]
+Die drei Summen rechts sind linear in $\bar\alpha_i\bar\beta_\varkappa\bar c_\lambda$, resp. $\bar\alpha_i\bar\beta_\varkappa\bar b_\lambda$, $\bar\alpha_i\bar\beta_\varkappa\bar a_\lambda$ und führen demnach wie vorhin eindeutig zurück auf die symbolischen Producte $(\alpha\beta)^2(\alpha c)^2(\beta c)^2$, resp. $(\alpha\beta)^2(\alpha b)^2(\beta b)^2$, $(\alpha\beta)^2(\alpha a)^2(\beta b)^2$, welche alle drei die nämliche Bedeutung haben. Demnach ist
+\[
+\sum_{a,\ b,\ c} \partial k_r = 6(a\alpha)^2(a\beta)^2(\alpha\beta)^2.
+\]
+Es ist aber
+\[
+\sum_{a,\ b,\ c} \partial k_r = 2\sum \frac{\partial j}{\partial \bar r_i\,\partial \bar r_k}\,\bar\alpha_i\bar\alpha_k
+\]
+und also gemäss der Definition des Aronhold'schen Processes
+\[
+\delta^2 j = \frac{1}{2}\sum \partial k_r = 3(a\alpha)^2(a\beta)^2(\alpha\beta)^2 = \big((\alpha\beta)^2\alpha_x^2\beta_x^2,\ a_x^4\big)^4.
+\]
+Ebenso findet man:
+\[
+\delta^3 j = \frac{1}{3\cdot 2}\sum \frac{\partial \bar j}{\partial \bar a_i\,\partial \bar b_k\,\partial \bar c_\lambda}\,\bar\alpha_i\bar\beta_k\bar\gamma_\lambda = (\alpha\beta)^2(\alpha\gamma)^2(\beta\gamma)^2 = \big((\alpha\beta)^2\alpha_x^2\beta_x^2,\ \gamma_x^4\big).
+\]
+Die im letzten Beispiele zu berechnende Invariante hat also die Form
+\[
+J = \big((f,f)^2,f\big)^4 + 3\lambda\big((f,f)^2,\varphi\big)^4 + 3\lambda^2\big((\varphi,\varphi)^2,f\big)^4 + \big((\varphi,\varphi)^2,\varphi\big)^4.
+\]
+Genau in derselben Weise, wie wir hier an dem einzelnen Beispiele die Wirkung des Aronhold'schen Processes auf ein symbolisches Product studirt haben, so können wir im allgemeinen Falle vorgehen. Wir finden alsdann:
+\[
+\delta^\varrho i = \frac{1}{\varrho!}\sum \frac{\partial i}{\partial \bar a_1\,\partial \bar b_2\,\partial \bar c_3\cdots \partial \bar m_\varrho}\cdot \bar\alpha_1\bar\beta_2\bar\gamma_3\cdots \bar\mu_\varrho,
+\]
+wobei sich die Summe über alle Variationen von $n$ Elementen zur $\varrho^{\text{ten}}$ Klasse ohne Wiederholung erstreckt. In Worten ausgedrückt lautet diese Formel:
+
+\glqq Ein symbolisches Product wird $\varrho$ mal deltairt, wenn man je $\varrho$ Symbole $a$, $b$, $c\dots$ durch $\varrho$ Symbole $\alpha$, $\beta$, $\gamma\dots$ so oftmal ersetzt, als sich $n$ Elemente zur $\varrho^{\text{ten}}$ Klasse combiniren lassen und alsdann die Summe aller so erhaltenen Producte bildet.\grqq{}
+
+62. \textit{Zweiter Fall: Die beiden Formen $f$ und $\varphi$ sind nicht von einander unabhängig.} Wir haben bisher angenommen, dass $f$ und $\varphi$ in keinerlei Weise durch ihre Coefficienten mit einander in Beziehung
+%CONT>>
+
+
+% ===== pdf idx 81, printed 67.0 =====
+% !PRINTED 67
+\weberpage{67}
+%<<CONT
+stehen. Sobald nun zwischen den beiden Formen $f$ und $\varphi$ ein Abhängigkeitsverhältniss etwa der Art existirt, dass die Coefficienten von $\varphi$ Functionen der Coefficienten von $f$ sind, so ist der Aronhold'sche Process kein Iterationsprocess mehr, d.\,h. $\delta^2 i$ wird nicht in derselben Weise aus $\delta i$ erhalten, wie $\delta i$ aus $i$. Denn wenden wir in diesem Falle auf $\delta i$ den Aronhold'schen Process an, so erhalten wir:
+\[
+\begin{aligned}
+\delta\{\delta i\} &= \delta\left\{ \frac{\partial i}{\partial \bar a_0}\bar\alpha_0 + \frac{\partial i}{\partial \bar a_1}\bar\alpha_1 + \frac{\partial i}{\partial \bar a_2}\bar\alpha_2 + \cdots + \frac{\partial i}{\partial \bar a_n}\bar\alpha_n \right\}\\
+&= \frac{\partial^2 i}{\partial \bar a_0^{\,2}}\bar\alpha_0^{\,2} + \frac{\partial^2 i}{\partial \bar a_1^{\,2}}\bar\alpha_1^{\,2} + \cdots + 2\frac{\partial^2 i}{\partial \bar a_0\,\partial \bar a_1}\bar\alpha_0\bar\alpha_1 + 2\frac{\partial^2 i}{\partial \bar a_0\,\partial \bar a_2}\bar\alpha_1\bar\alpha_2 + \cdots % [sic] index pattern as printed
+\\
+&\quad \cdots + \frac{\partial i}{\partial \bar a_0} \left\{ \frac{\partial \bar\alpha_0}{\partial \bar a_0}\bar\alpha_0 + \frac{\partial \bar\alpha_0}{\partial \bar a_1}\bar\alpha_1 + \cdots + \frac{\partial \bar\alpha_0}{\partial \bar a_n}\bar\alpha_n \right\} + \cdots\\
+&\quad \cdots + \frac{\partial i}{\partial \bar a_n} \left\{ \frac{\partial \bar\alpha_n}{\partial \bar a_0}\bar\alpha_0 + \frac{\partial \bar\alpha_n}{\partial \bar a_1}\bar\alpha_1 + \cdots + \frac{\partial \bar\alpha_n}{\partial \bar a_n}\bar\alpha_n \right\},
+\end{aligned}
+\]
+oder
+\[
+\delta\{\delta i\} = \sum_{\substack{k=0\\ \sigma=0}}^{\substack{k=n\\ \sigma=n}} \frac{\partial^2 i}{\partial \bar a_k\,\partial \bar a_\sigma}\cdot \bar\alpha_k\bar\alpha_\sigma + \sum_0^n \frac{\partial i}{\partial \bar a_k}\sum_0^n \frac{\partial \bar\alpha_i}{\partial \bar a_k}\bar\alpha_k.
+\]
+Nun ist aber nach Gleichung (II) Nr. 57 das erste Glied rechts identisch mit $2!\,\delta^2 i$, und anderntheils ist nach der Definition des Aronhold'schen Processes:
+\[
+\sum_0^n \frac{\partial \bar\alpha_i}{\partial \bar a_k}\bar\alpha_k = \delta\alpha_i.
+\]
+Demnach erhält man:
+\[
+2!\,\delta^2 i = \delta(\delta i) - \sum_0^n \frac{\partial i}{\partial \bar a}\,\delta\bar\alpha_k.
+\]
+In derselben Weise findet man weiter:
+\[
+\begin{aligned}
+3!\,\delta^3 i &= \delta(2!\,\delta^2 i) - 2\sum_0^n \frac{\partial i}{\partial \bar a_k\,\partial \bar a_i}\bar\alpha_k\,\delta\alpha_i\\
+4!\,\delta^4 i &= \delta(3!\,\delta^3 i) - 3\sum_0^u \frac{\partial i}{\partial \bar a_k\,\partial \bar a_i\,\partial \bar a_\varrho}\bar\alpha_k\bar\alpha_i\,\delta\bar\alpha_\varrho\\
+&\ \ \cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+k!\,\delta^k i &= \delta\big((k-1)!\,\delta^{k-1}i\big) - (k-1)\sum_0^n \frac{\partial i}{\partial \bar a_{i_1}\,\partial \bar a_{i_2}\cdots \partial \bar a_{i_{k-1}}}\bar\alpha_{i_1}\bar\alpha_{i_2}\cdots \delta\bar\alpha_{i_{k-1}}.
+\end{aligned}
+\]
+Dies ist die Recursionsformel für die Coefficienten $\delta^k i$ in der Entwicklung
+\[
+J = i + \lambda\delta i + \lambda^2\delta^2 i + \cdots \lambda^\nu \delta^\nu i,
+\]
+%CONT>>
+
+
+% ===== pdf idx 82, printed 68.0 =====
+% !PRINTED 68
+\weberpage{68}
+%<<CONT
+sobald die beiden Formen $f$ und $\varphi$ zu einander in covariantem Verhältnisse stehen. Ich werde im nächsten Paragraphen Nr. 72 noch in ausführlicher Weise auf diese Recursionsformel zurückkommen. Hier will ich nur noch ein Beispiel zur Erläuterung anfügen, um auch für diesen Fall die Wirkung des Aronhold'schen Processes an einem symbolischen Product zu zeigen.
+
+63. \textit{Beispiel.} Wir hatten in Nr. 37 jene drei Covarianten einer cubischen Form $f=a_x^3$ kennen gelernt, durch welche sich in Verbindung mit $f$ alle übrigen rational und ganz darstellen lassen. Sie waren (vergl. auch Nr. 9 und 39):
+\[
+\begin{aligned}
+f &= a_x^3\\
+\Delta &= (f,f)^2 = (ab)^2a_xb_x\\
+Q &= \big(f,(f,f)^2\big) = (c\Delta)c_x^2\Delta_x = (ab)^2(cb)c_x^2a_x\\
+R &= (\Delta,\Delta)^2 = (ab)^2(cd)^2(ac)(bd).
+\end{aligned}
+\]
+Die Covariante $Q$ ist wie $f$ vom dritten Grade in den Variabeln, und man kann sich demnach wieder die Aufgabe stellen, irgend eine dieser drei Covarianten für die Form
+\[
+F = f + \lambda Q
+\]
+zu berechnen, etwa gerade die Form $Q_{f+\lambda Q}$ selbst. Sie wird dann dargestellt sein durch
+\weq{I}{Q_{f+\lambda Q} = Q + \lambda\delta Q + \lambda^2\delta^2 Q + \lambda^3\delta^3 Q.}
+Die Coefficienten $\delta Q$, $\delta^2 Q$, $\delta^3 Q$ lassen sich durch die eben aufgestellten Recursionsformeln berechnen. Zu dem Zwecke ist es nöthig, zunächst die Werthe von
+\[
+\delta f,\ \delta\Delta,\ \delta Q,\ \delta R
+\]
+zu ermitteln. Man erhält nach Nr. 60 und 61
+\weq{1}{\delta f = \sum \frac{\partial f}{\partial \bar a_i}\bar Q_i = Q}
+\weq{2}{\delta\Delta = \delta\{(ab)^2a_xb_x\} = 2(aQ)^2a_xQ_x = (f,Q)^2 = \Psi}
+\weq{3}{\begin{aligned}
+\delta Q &= \delta\{(c\Delta)c_x^2\Delta_x\} = (c\Psi)c_x^2\Psi_x + (Q\Delta)Q_x^2\Delta_x = \big(f,(f,Q)^2\big) + (Q,\Delta)\\
+&= \big(f,(f,Q)^2\big) + (f,\Delta),\Delta) % [sic] parenthesis as printed
+\end{aligned}}
+oder weil die Functionaldeterminante
+\[
+\big((f,\Delta),\Delta\big) = -\frac{1}{2}(\Delta,\Delta)^2\cdot f + \frac{2}{3}(f,\Delta)^2\cdot\Delta,
+\]
+[vergl. Nr. 52 (II)], so wird endlich wegen $(\Delta,\Delta)^2=R$,
+\[
+\delta Q = \big(f,(f,Q)^2\big) - \frac{1}{2}R\cdot f + \frac{2}{3}\cdot(f,\Delta)^2\cdot\Delta.
+\]
+Ferner ist:
+\weq{4}{\delta R = \delta(\Delta,\Delta)^2 = 2(\Delta,\Psi)^2 = 2\big(\Delta,(f,Q)^2\big).}
+
+
+% ===== pdf idx 83, printed 69.0 =====
+% !PRINTED 69
+\weberpage{69}
+Nun ist aber, wie wir in der Theorie der cubischen Formen sehen werden [vergl. Nr. 145 (I) und Nr. 146 (II)], oder wie man sich auch unschwer direct unsymbolisch berechnet:
+
+\weq{5}{
+(f,\, Q)^2 = 0 \quad \text{und} \quad (f,\, \Delta)^2 = 0.
+}
+Daher liefert der Aronhold'sche Process:
+
+\weq{II}{
+\left.\begin{aligned}
+\delta f &= Q\\
+\delta \Delta &= 0\\
+\delta Q &= -\frac{1}{2}\,R\cdot f\\
+\delta R &= 0
+\end{aligned}\right\} .
+}
+64. Die Coefficienten $\delta^2 Q$ und $\delta^3 Q$ in (I) erhält man nun durch die folgenden Betrachtungen. Es ist nach Nr. 62:
+
+\[
+2!\,\delta^2 Q = \delta(\delta Q) - \sum \frac{\partial Q}{\partial \bar a_k}\,\delta \bar Q_k .
+\]
+Da aber $\delta Q = -\dfrac{1}{2}\,R\,.\,f$, und demnach $\delta \bar Q_k = -\dfrac{1}{2}\,R \cdot \bar a_k$ sein muss, so geht die letzte Gleichung über in:
+
+\[
+2!\,\delta^2 Q = -\frac{1}{2}\,R \cdot \delta f - \frac{1}{2}\,f \cdot \delta R + \frac{R}{2} \sum \frac{\partial Q}{\partial \bar a_k}\, \bar a_k .
+\]
+Nach den Gleichungen (II) ist $\delta f = Q$, $\delta R = 0$, und nach dem Euler'schen Satze ist, weil $Q$ vom dritten Grade in den Coefficienten $\bar a_k$:
+
+\[
+\sum \frac{\partial Q}{\partial \bar a_k}\, \bar a_k = 3\,Q .
+\]
+Daher wird:
+
+\weq{III}{
+\delta^2 Q = -\frac{1}{4}\,R \cdot Q + \frac{3}{4}\,R \cdot Q = \frac{1}{2}\,R \cdot Q .
+}
+Tragen wir endlich diese Werthe von $2!\,\delta^2 Q$ und $\delta \bar Q_k$ in die Gleichung
+
+\[
+3!\,\delta^3 Q = \delta(2!\,\delta^2 Q) - 2 \sum \frac{\partial Q}{\partial \bar a_k \partial \bar a_i}\, \bar Q_k\, \delta \bar Q_k
+\]
+ein, so kommt:
+
+\[
+\begin{aligned}
+3!\,\delta^3 Q &= \delta(R \cdot Q) + R \sum \frac{\partial Q}{\partial \bar a_k \partial \bar a_i}\, \bar Q_k \cdot \bar a_i\\[4pt]
+&= -\frac{R^2}{2}\cdot f + R \sum \frac{\partial\!\left(\dfrac{\partial Q}{\partial \bar a_k}\right)}{\partial \bar a_i}\, \bar a_i \cdot \bar Q_k .
+\end{aligned}
+\]
+Weil aber $\dfrac{\partial Q}{\partial \bar a_k}$ vom zweiten Grade in den Coefficienten und daher nach dem Euler'schen Satze:
+%CONT>>
+
+
+% ===== pdf idx 84, printed 70.0 =====
+% !PRINTED 70
+\weberpage{70}
+%<<CONT
+\[
+\sum \frac{\partial\!\left(\dfrac{\partial Q}{\partial \bar a_k}\right)}{\partial \bar a_i}\, a_i \cdot \bar Q_k = 2 \sum \frac{\partial Q}{\partial \bar a_k}\, \bar Q_k = 2\,\delta Q = -R f,
+\]
+so wird
+
+\[
+\delta^3 Q = -\frac{1}{4}\,R^2 f .
+\]
+Die cubische Covariante der Form $f + \lambda Q$ hat demnach die Form:
+
+\weq{IV}{
+Q_{f+\lambda Q} = Q - \frac{R}{2}\,f \lambda + \frac{R}{2}\,Q \lambda^2 - \frac{R^2}{4}\,f \lambda^3 ,
+}
+oder
+
+\weq{V}{
+Q_{f+\lambda Q} = \left(1 + \frac{R}{2}\cdot \lambda^2\right)\left(Q - \frac{R}{2}\,f \cdot \lambda\right) .
+}
+
+\begin{center}
+\S\ 6. \textbf{Die Combinanten.}
+\end{center}
+
+65. \textit{Definition der Combinante.} Der zuletzt betrachtete Aronhold'sche Process ist auch noch dadurch von Bedeutung geworden, dass durch ihn eine Reihe simultaner Covarianten $i$ eines Systems von Formen $f, \varphi, \psi \ldots$ gleichen Grades in $x$ gekennzeichnet werden kann, welche bei vielen Untersuchungen, insbesondere der Geometrie, eine hervorragende Rolle spielen. Es sind das die unter dem Namen \gesperrt{Combinanten} bekannten Formen, welche wir folgender Weise definiren können:
+
+\glqq{}Sind $f, \varphi, \psi \ldots$ irgend welche Formen $n^{\text{ten}}$ Grades, so ist eine simultane Covariante $i$ derselben Combinante, sobald sie bei Anwendung des Aronhold'schen Processes identisch verschwindet.\grqq{}
+
+Die Combinanten genügen also, wenn wir der Einfachheit halber nur ein System von zwei Formen $f = a_x^n$ und $\varphi = \alpha_x^n$ voraussetzen, der Differentialgleichung
+
+\weq{I}{
+\delta i = \frac{\partial i}{\partial \bar a_0}\, \bar \alpha_0 + \frac{\partial i}{\partial \bar a_1}\, \bar \alpha_1 + \cdots + \frac{\partial i}{\partial \bar a_n}\, \bar \alpha_n = 0 .
+}
+66. \textit{Eigenschaft der Combinante, wenn das gegebene System $f, \varphi, \psi \ldots$ aus unabhängigen Formen besteht.} Sind nun die gegebenen Formen $f$ und $\varphi$ von einander völlig unabhängig, so ergiebt sich aus dieser Definition sofort eine wichtige Eigenschaft für die Combinanten. Sie kann in dem Satze ausgesprochen werden:
+
+\glqq{}Die Combinante $i$ von $f$ und $\varphi$ ändert sich nicht, wenn man $f$ durch $f + \lambda \varphi$ ersetzt, d.\,h., wenn $J$ die entsprechende Form von $f + \lambda \varphi$ und $f$ ist, so besteht die Gleichung:
+
+\[
+i = J .
+\]
+\grqq{}
+
+
+% ===== pdf idx 85, printed 71.0 =====
+% !PRINTED 71
+\weberpage{71}
+Denn in diesem Falle ist $J$ eine Function der Grössen $\bar a, \bar \alpha, \lambda$ und zwar in der Verbindung $\bar a_k + \lambda \bar \alpha_k$. Wendet man also auf $J$ den Aronhold'schen Process an, indem man $J$ nach $\bar a_k + \lambda \bar \alpha_k$ differentiirt und die Incremente durch $\bar \alpha_k$ ersetzt, so muss nach Definition $J$ der Differentialgleichung genügen:
+
+\[
+\frac{\partial J}{\partial(\bar a_0 + \lambda \bar \alpha_0)}\, \bar \alpha_0 + \frac{\partial J}{\partial(\bar a_1 + \lambda \bar \alpha_1)}\, \bar \alpha_1 + \cdots = \delta J = 0 .
+\]
+Die linke Seite dieser Gleichung ist aber nichts anderes als der Differentialquotient von $J$ nach $\lambda$; demnach ist $\dfrac{\partial J}{\partial \lambda} = 0$, d.\,h. $J$ von $\lambda$ unabhängig. Entwickelt man daher wie im vorigen Paragraphen $J$ nach Potenzen von $\lambda$
+
+\weq{II}{
+J = i + \lambda\,\delta i + \lambda^2\,\delta^2 i + \cdots + \lambda^\nu\,\delta^\nu i ,
+}
+so müssen die Coefficienten der Potenzen von $\lambda$ einzeln verschwinden, was man auch bei der Unabhängigkeit von $f$ und $\varphi$ direct aus $\delta i = 0$ hätte folgern können. Gleichung (II) reducirt sich also auf $J = i$, wie behauptet war.
+
+67. \textit{Beispiele.} Solche Combinanten sind alle \gesperrt{ungeraden Ueberschiebungen} zweier Formen
+
+\[
+f = a_x^n, \quad \varphi = \alpha_x^n ,
+\]
+also die Covarianten
+
+\[
+\pi = (a\alpha)\, a_x^{n-1}\, \alpha_x^{n-1}, \quad (a\alpha)^3\, a_x^{n-3}\, \alpha_x^{n-3}, \quad \cdots \quad (a\alpha)^{2\nu+1}\, a_x^{n-(2\nu+1)}\, \alpha_x^{n-(2\nu+1)} .
+\]
+Denn durch Process $\delta \pi$ erhält man:
+
+\[
+\begin{aligned}
+\delta \pi &= \delta\!\left[(a\alpha)^{2\nu+1}\, a_x^{n-(2\nu+1)}\, \alpha_x^{n-(2\nu+1)}\right]\\
+&= (\beta\alpha)^{2\nu+1}\, \beta_x^{n-(2\nu+1)}\, \alpha_x^{n-(2\nu+1)} .
+\end{aligned}
+\]
+Dieses symbolische Product verschwindet aber identisch, da es durch Vertauschung der gleichwerthigen Symbole $\alpha$ und $\beta$ nur sein Zeichen ändert. Aus denselben Gründen folgt, dass die geraden Ueberschiebungen $(f, \varphi)^{2\mu}$ keine Combinanten sein können.
+
+Die Gesammtheit aller Combinanten zweier Formen $f = a_x^n$ und $\varphi = \alpha_x^n$ ergiebt sich wie Gordan im Bd. V der Math. Annalen gezeigt hat, aus der einen Form
+
+\[
+P = f(x)\,\varphi(y) - \varphi(x)\,f(y) = \begin{vmatrix} a_x^n, & \alpha_x^n \\ a_y^n, & \alpha_y^n \end{vmatrix} .
+\]
+Er nannte sie \glqq{}Fundamentalcombinante\grqq{} von $f$ und $\varphi$. Dass sie in der That eine Combinante ist, erkennen wir unmittelbar, wenn wir $P$ in der Gestalt schreiben:
+%CONT>>
+
+
+% ===== pdf idx 86, printed 72.0 =====
+% !PRINTED 72
+\weberpage{72}
+%<<CONT
+\[
+P = \begin{vmatrix} \bar a_0 & \bar a_1 & \bar a_2 & \cdots & \bar a_n \\ \bar \alpha_0 & \bar \alpha_1 & \bar \alpha_2 & \cdots & \bar \alpha_n \end{vmatrix} \cdot \begin{vmatrix} x_1^n, & \binom{n}{1} x_1^{n-1} x_2, & \cdots & x_2^n \\ y_1^n, & \binom{n}{1} y_1^{n-1} y_2, & \cdots & y_2^n \end{vmatrix}
+\]
+\[
+= \sum \binom{n}{1}\binom{n}{k} (\bar a_i\, \bar \alpha_k) \left\{ x_1^{n-k} x_2^i\, y_1^{n-i}\, y_2^k - x_1^{n-k} x_2^k\, y_1^{n-i}\, y_2^i \right\},
+\]
+eine Darstellung, wie wir sie in Bd. I Nr. 151 gegeben haben. Denn der Aronhold'sche Process verwandelt die Determinanten $(\bar a_i\, \bar \alpha_k)$ in die verschwindenden Determinanten $(\bar \alpha_i\, \bar \alpha_k)$. Wir werden im nächsten Paragraphen sehen, wie sich diese Form $P$ nach Potenzen von $(xy)$ entwickeln lässt, deren Coefficienten gerade die oben erwähnten ungeraden Ueberschiebungen $(f, \varphi)^{2\nu+1}$ sind.
+
+In gleicher Weise hat Gordan a. a. O. gezeigt, dass die Fundamentalcombinante von $p$ Formen $f_1, f_2, \ldots f_p$ dargestellt ist durch:
+
+\[
+P = \begin{vmatrix}
+f_1(x), & f_2(x), & f_3(x) & \cdots & f_p(x) \\
+f_1(y), & f_2(y), & f_3(y) & \cdots & f_p(y) \\
+f_1(z), & f_2(z), & & \cdots & \\
+\vdots & \vdots & & \ddots & \\
+f_1(u), & & \cdots & & f_p(u)
+\end{vmatrix} .
+\]
+Sind z.\,B. $f = a_x^2$, $\varphi = b_x^2$, $\psi = c_x^2$ drei quadratische Formen, so ist ihre Fundamentalcombinante
+
+\[
+P = \begin{vmatrix} a_x^2, & b_x^2, & c_x^2 \\ a_y^2, & b_y^2, & c_y^2 \\ a_z^2, & b_z^2, & c_z^2 \end{vmatrix}
+= \begin{vmatrix} a_1^2, & a_1 a_2, & a_2^2 \\ b_1^2, & b_1 b_2, & b_2^2 \\ c_1^2, & c_1 c_2, & c_2^2 \end{vmatrix} \cdot
+\begin{vmatrix} x_1^2, & 2 x_1 x_2, & x_2^2 \\ y_1^2, & 2 y_1 y_2, & y_2^2 \\ z_1^2, & 2 z_1 z_2, & z_2^2 \end{vmatrix}
+\]
+\[
+= (ab)(ac)(bc) \cdot (xy)(xy)(yz) . % [sic] -- printed thus; expected (xy)(xz)(yz) given the later list of identical covariants (xy),(xz),(yz)
+\]
+Abgesehen von den identischen Covarianten $(xy)$, $(xz)$, $(yz)$ besitzen demnach drei quadratische Formen nur \gesperrt{eine} Combinante, die schon früher berechnete Form (vergl. Nr. 7)
+
+\[
+R = (ab)(ac)(bc) .
+\]
+So ist a. a. O. auch gezeigt, dass für drei Formen dritten Grades $f = a_x^3$, $\varphi = b_x^3$, $\psi = c_x^3$ die Fundamentalcombinante $P$ sich auf die eine Form
+
+\[
+Q = (ab)(ac)(bc)\, a_x\, b_x\, c_x
+\]
+reducirt. Alle Covarianten von $Q$ sind dann selbstverständlich Combinanten von $f$, $\varphi$ und $\psi$.
+
+68. \textit{Ueber eine formale Eigenschaft aller Combinanten.} Aus der Bedingung $\delta i = 0$, welcher eine simultane Covariante genügen muss, damit sie Combinante ist, kann man schliessen, dass diese Combinanten
+%CONT>>
+
+
+% ===== pdf idx 87, printed 73.0 =====
+% !PRINTED 73
+\weberpage{73}
+%<<CONT
+auch unsymbolisch vor den übrigen Covarianten sich auszeichnen. Denn dieser Bedingung genügen beispielsweise sicher alle jene Covarianten zweier Formen $f=a_x^n$, $\varphi=\alpha_x^n$, welche die Coefficienten $\overline a_i$, $\overline\alpha_i$ derselben nur in den zweigliedrigen Determinanten $(\overline a_i\ \overline\alpha_k)$ enthalten; dieselben sind demnach stets Combinanten. Also ist auch die Resultante $R_{f,\varphi}$ dieser beiden Formen Combinante, da sie sich in der Bézout'schen Determinantenform gerade als Function dieser Grössen $(\overline a_i\ \overline\alpha_k)$ darstellt. In der That haben wir auch im ersten Bande für sie die aus $\delta i=0$ resultirende Eigenschaft $J=i$ bewiesen, indem wir dort (vergl. § 11 Nr. 146) zeigten, dass $R_{f,\varphi}=R_{f+\lambda\varphi,\varphi}$ ist.
+
+In derselben Weise schliessen wir, dass die simultanen Covarianten von $p$ Formen $f_1, f_2, \cdots f_p$, welche die Coefficienten derselben nur in den $p$-gliedrigen Determinanten $(\overline a_{i_1}^{(1)}\overline a_{i_2}^{(2)}\overline a_{i_3}^{(3)}\cdots\overline a_{i_p}^{(n)})$ enthalten, % [sic] exponent printed (n), not (p) as in the quoted Satz below
+Combinanten sein müssen. Denn der Aronhold'sche Process bewirkt, dass jede dieser Determinanten zwei gleiche Zeilen oder Colonnen erhält; in Folge dessen verschwinden sie sämmtlich und mit ihnen die betreffende In- oder Covariante.
+
+Verbinden wir nun aber mit diesen Schlüssen den Gordan'schen Satz, dass aus der Fundamentalcombinante
+\[
+P = (a_{1x}^n,\ a_{2y}^n,\ a_{3z}^n,\ \dots)
+\]
+überhaupt alle Combinanten von $p$ Formen $f_i$ abgeleitet werden können, einen Satz, in Bezug auf dessen Beweis ich auf die mehrmals schon citirte Abhandlung in Bd. V der Math. Ann. verweisen muss, so ergiebt sich hieraus:
+
+\glqq Jede Combinante von $p$ binären Formen $f_i$ gleichen Grades in $x$ ist eine solche Function der wirklichen Coefficienten von $f_i$, welche dieselben nur in den Determinantenverbindungen $(\overline a_{i_1}^{(1)}\overline a_{i_2}^{(2)}\overline a_{i_3}^{(3)}\cdots\overline a_{i_p}^{(p)})$ enthält.\grqq{}
+
+69. \textit{Covarianten mit Combinanteneigenschaft binärer von einander abhängiger Formen.} Sind nun die gegebenen Formen nicht, wie wir bisher annahmen, von einander unabhängig, sondern beispielsweise zu einander covariant, so sind zwar immer noch jene Co- und Invarianten $i$, welche der Gleichung $\delta i=0$ genügen, Combinanten der gegebenen Formen; aber dieselben haben alsdann nicht mehr die Eigenschaft $J=i$. Wir können alsdann zur Zeit ihre Eigenschaften überhaupt nicht allgemein discutiren.
+
+Nur ein specieller Fall ist bisher im binären wie im ternären Gebiete untersucht. Das sind die Combinanten einer Form $f$ und ihrer Covariante gleichen Grades $\varphi$, für den Fall, dass, wenn $M$ eine
+%CONT>>
+
+
+% ===== pdf idx 88, printed 74.0 =====
+% !PRINTED 74
+\weberpage{74}
+%<<CONT
+Invariante von $f$, zwischen den beiden Formen die Wechselbeziehung stattfindet:
+\weq{I}{\begin{aligned} \delta f &= \varphi \\ \delta \varphi &= M\cdot f \end{aligned}}
+Ich habe bereits bei Gelegenheit der Darstellung des Aronhold'schen Processes ein diesbezügliches Beispiel gegeben. Die Form $f=a_x^3$ hat eine Covariante gleichen Grades $Q=(ab)^2(cb)a_x c_x^2$ und wir sahen damals, dass
+\[
+\begin{aligned}
+\delta f &= Q\\
+\delta Q &= -\frac{R}{2}\cdot f,
+\end{aligned}
+\]
+wobei $R$ die Invariante $(\varDelta,\varDelta)^2$ der Form $f$ ist. Ebenso werden wir später bei den Formen vierten Grades in der Form $f=a_x^4$ und ihrer Hesse'schen Covariante $H=(ab)^2a_x^2b_x^2$ zwei covariante Formen erhalten, welche in derselben Wechselbeziehung stehen, nämlich
+\[
+\begin{aligned}
+\delta f &= H\\
+\delta H &= \frac{i}{3}\cdot f,
+\end{aligned}
+\]
+wobei $i$ die Invariante $(ab)^4$ von $f$ bedeutet.
+
+Besitzt nun in einem solchen Falle $f$ eine Invariante oder Covariante $i$, so beschaffen, dass $\delta i=0$, so haben wir, wenn auch nicht direct die gleichen, so doch analoge Bedingungen vor uns, wie wir sie ursprünglich zur Definition der Combinante voraussetzten. Wir stellen uns demnach auch die analoge Frage: In welcher Beziehung steht die entsprechende Invariante $J$ von $f+\lambda\varphi$ zur ursprünglichen $i$ von $f$?
+
+In dem ersten der eben angeführten Beispiele haben wir bereits die Hesse'sche Form $\varDelta$ von $f=a_x^3$ als eine solche Form erkannt, für welche $\delta\varDelta=0$ (vergl. Nr. 63, II). Es ist nun aber nicht mehr wie bei den eigentlichen Combinanten $\varDelta_{f+\lambda\varphi}=\varDelta$; vielmehr erhalten wir:
+\[
+\varDelta_{f+\lambda\varphi} = \varDelta + \lambda\,\delta\varDelta + \lambda^2\delta^2\varDelta,
+\]
+oder weil $\delta\varDelta=0$, und demnach (vergl. Nr. 62)
+\[
+\begin{aligned}
+2\,\delta^2\varDelta &= \delta(\delta\varDelta) - \sum \frac{\partial\varDelta}{\partial\overline a_k}\,\delta\overline\alpha_k\\
+&= \frac{R}{2}\sum \frac{\partial\varDelta}{\partial\overline a_k}\,\overline a_k = R\cdot\varDelta,
+\end{aligned}
+\]
+so kommt:
+\weq{II}{\varDelta_{f+\lambda\varphi} = \left(1 + \frac{R}{2}\,\lambda^2\right)\cdot\varDelta.}
+Was sich aber hier in dem speciellen Beispiel ergeben hat, lässt sich auch allgemein beweisen, sobald die oben gegebenen Bedingungen
+%CONT>>
+
+
+% ===== pdf idx 89, printed 75.0 =====
+% !PRINTED 75
+\weberpage{75}
+%<<CONT
+(I) erfüllt sind, nämlich die Gleichung:
+\[
+J_{f+\lambda\varphi} = u\cdot i,
+\]
+wobei $u$ eine Function des Parameters $\lambda$ und jener Invarianten ist, die sich aus $M$ durch fortgesetztes Deltairen ergeben.
+
+70. \textit{Beweis der Relation $J_{f+\lambda\varphi}=u\cdot i$.} Wir können diese aus den Bedingungen (I) in Nr. 69 resultirende Eigenschaft auf zwei Arten beweisen. Ich will sie zunächst direct durch Rechnung ableiten. Es ist, wie wir schon in Nr. 56 (I) erwähnt haben:
+\weq{I}{J_{f+\lambda\varphi} = i + \lambda\delta i + \lambda^2\delta^2 i + \cdots + \lambda^\nu \delta^\nu i,}
+wobei für die Coefficienten nach Nr. 62 die Recursionsformel gilt:
+\[
+\delta^k i = \frac{(k-1)!}{k!}\,\delta(\delta^{k-1}i) - \frac{k-1}{k!}\sum \frac{\partial i}{\partial\overline a_{i_1}\partial\overline a_{i_2}\cdots\partial\overline a_{i_{k-1}}}\cdot \overline\alpha_{i_1}\overline\alpha_{i_2}\cdots \delta\overline\alpha_{i_{k-1}}.
+\]
+
+Da aber nach Voraussetzung $\delta\varphi = M\cdot f$ und demnach
+\[
+\delta\overline\alpha_{i_k} = M.\overline a_{i_k},
+\]
+so wird:
+\[
+\begin{aligned}
+\delta^k i &= \frac{1}{k}\,\delta(\delta^{k-1}i) - \frac{(k-1)M}{k!}\sum \overline\alpha_{i_1}\overline\alpha_{i_2}\cdots\overline\alpha_{i_{k-2}}\cdot \frac{\partial\left(\dfrac{\partial i}{\partial\overline a_{i_1}\partial\overline a_{i_2}\cdots\partial\overline a_{i_{k-2}}}\right)}{\partial\overline a_{i_{k-1}}}\cdot a_{i_{k-1}}\\
+&= \frac{1}{k}\,\delta(\delta^{k-1}i) - \frac{(\nu-k+2)\cdot(k-1)M}{k!}\sum \frac{\partial i}{\partial\overline a_{i_1}\partial\overline a_{i_2}\cdots\partial\overline a_{i_{k-2}}}\cdot \overline\alpha_{i_1}\overline\alpha_{i_2}\cdots\overline\alpha_{i_{k-2}}\\
+&= \frac{1}{k}\,\delta(\delta^{k-1}i) - \frac{(\nu-k+2)(k-1)M\cdot(k-2)!}{k!}\,\delta^{k-2}i,
+\end{aligned}
+\]
+oder endlich:
+\weq{II}{\delta i^k = \frac{1}{k}\,\delta(\delta^{k-1}i) - \frac{\nu-k+2}{k}\,M\cdot\delta^{k-2}i.}
+Legen wir hier der Grösse $k$ der Reihe nach alle Werthe $1, 2, 3\dots$ etc. bei, so erhalten wir:
+\[
+\begin{aligned}
+\delta i &= 0\\
+\delta^2 i &= \frac{1}{2}\,\delta(\delta i) - \frac{\nu}{2}\,M\delta^0 i = -\frac{\nu}{2}\,M\cdot i\\
+\delta^3 i &= \frac{1}{3}\,\delta(\delta^2 i) - \frac{\nu-1}{3}\,M\delta i = -\frac{\nu}{6}\,i\cdot \delta M\\
+\delta^4 i &= \frac{1}{4}\,\delta(\delta^3 i) - \frac{\nu-2}{4}\,M\delta^2 i = -\frac{\nu}{24}\,i\cdot \delta^2 M + \frac{\nu(\nu-2)}{8}\,M^2\cdot i, \quad \text{etc.}
+\end{aligned}
+\]
+
+Man erkennt, dass rechts stets wieder der Factor $i$ auftritt, gerade weil $\delta i=0$. Der Coefficient jeder Potenz von $\lambda$ enthält sonach diesen Factor.
+
+
+% ===== pdf idx 90, printed 76.0 =====
+% !PRINTED 76
+\weberpage{76}
+Die Gleichung (I) kann also in der That auf die Form gebracht werden:
+\[
+J_{f+\lambda\varphi} = u\cdot i,
+\]
+wo $u$ eine Function der Grössen $\lambda$, $M$ und jener Invarianten ist, in welche $H$ durch den Aronhold'schen Process übergeht.
+
+71. \textit{Zweiter Beweis für diese Relation.} Die Eigenschaft $J_{f+\lambda\varphi}=u\cdot i$ geht auch direct aus der Differentialgleichung $\partial i=0$ durch Integration hervor, wenn wir dieselbe nur vorher geeignet umformen. Zu dem Zwecke müssen wir uns aber zunächst die Frage vorlegen: Was wird aus der Covariante $\varphi$ von $f$, wenn $f$ in $f+\lambda\varphi$ übergeht, oder mit andern Worten: Was ist $\varphi_{f+\lambda\varphi}$?
+
+Die Antwort auf die Frage giebt wiederum die Identität
+\weq{I}{\varphi_{f+\lambda\varphi} = \varphi + \lambda\delta\varphi + \lambda^2\delta^2\varphi + \cdots + \lambda^\varrho\delta^\varrho\varphi.}
+Die Coefficienten $\delta^k\varphi$ gehen aus der Recursionsformel
+\[
+\delta^k\varphi = \frac{1}{k}\,\delta(\delta^{k-1}\varphi) - \frac{\varrho-k+2}{k}\,M\delta^{k-2}\varphi
+\]
+hervor, die ich in Nr. 70 entwickelt habe. Ersetzen wir hierin $k$ durch $2, 3, \dots \varrho$, so erhalten wir, da
+\[
+\delta\varphi = M.f,
+\]
+der Reihe nach:
+\[
+\begin{aligned}
+\delta^2\varphi &= \frac{1}{2}\,f\cdot\delta M + \frac{1-\varrho}{2}\,M\cdot\varphi,\\
+\delta^3\varphi &= \frac{1}{6}\,f\cdot\{\delta^2 M + 3(1-\varrho)M^2\} + \frac{2-\varrho}{6}\,\delta M\cdot\varphi., \quad \text{etc.}
+\end{aligned}
+\]
+
+Es ergiebt sich, dass jeder Coefficient $\delta^k\varphi$ eine \gesperrt{lineare Function} der beiden Formen $f$ und $\varphi$ ist, was a priori einzusehen war, da durch den Aronhold'schen Process $f$ in $\varphi$ und $\varphi$ in $f$ verwandelt wird. Die obige Identität (I) lässt sich demnach in der Gestalt [vergl. Nr. 64 (IV)]
+\[
+\varphi_{f+\lambda\varphi} = A\cdot f + B\cdot\varphi
+\]
+schreiben, worin $A$ und $B$ Functionen der Grössen $\lambda$, der Invariante $M$ und der daraus durch Deltairen entstehenden Formen sind. Wenn also $f$ durch $f+\lambda\varphi$ ersetzt wird, so geht unter den Voraussetzungen $\delta f=\varphi$, $\delta\varphi=M\cdot f$, die Covariante $\varphi$ von $f$ in eine Form desselben Büschels $f+\lambda\varphi$ über, und die nämliche Stellung, welche eine Covariante oder Invariante $i$ von $f$ zu den Formen $f$ und $\varphi$ einnimmt, behauptet auch $J$ in Bezug auf $f+\lambda\varphi$ und $\varphi_{f+\lambda\varphi}=Af+B\varphi$.
+
+Schreiben wir der Homogenität halber statt $f+\lambda\varphi$ in der Folge $\lambda_1 f+\lambda_2\varphi$, so besitzt diese Form die Coefficienten
+\[
+\overline a_k\lambda_1 + \overline\alpha_k\lambda_2;
+\]
+entsprechend besitzt $\varphi_{\lambda_1 f+\lambda_2\varphi}$ die Coefficienten:
+\[
+\overline a_k A + \overline\alpha_k B.
+\]
+
+
+% ===== pdf idx 91, printed 77.0 =====
+% !PRINTED 77
+\weberpage{77}
+72. \textit{Umformung der Differentialgleichung $\delta i=0$.} Ist nun $i$ entweder direct eine rationale Combinante von $f$ und $\varphi$, oder auch nur schlechthin eine Covariante, rational in den Coefficienten von $f$ von der Eigenschaft, dass $\delta i=0$ (wie in dem Beispiel Nr.\,69 die Form $\varDelta$), so genügt auch die entsprechende Form $J$ von $\lambda_1 f+\lambda_2\varphi$ der Differentialgleichung
+\[
+\overline{\partial} J=0,
+\]
+wenn nur der Process $\overline{\partial} J$ auch in der entsprechenden Form:
+\[
+\overline{\partial} J=\frac{\partial J}{\partial(\lambda_1\overline{a}_0+\lambda_2\overline{\alpha}_0)}\cdot(A\overline{a}_0+B\overline{\alpha}_0)+\frac{\partial J}{\partial(\lambda_1\overline{a}_1+\lambda_2\overline{\alpha}_1)}\cdot(A\overline{a}_1+B\overline{\alpha}_1)+\cdots
+\]
+ausgeführt wird. Schreibt man die rechte Seite dieser Gleichung in der Gestalt:
+\[
+\begin{aligned}
+&A\left\{\frac{\partial J}{\partial(\lambda_1\overline{a}_0+\lambda_2\overline{\alpha}_0)}\cdot\overline{a}_0+\frac{\partial J}{\partial(\lambda_1\overline{a}_1+\lambda_2\overline{\alpha}_2)}\cdot\overline{a}_1+\cdots\right\}+\\
+&B\left\{\frac{\partial J}{\partial(\lambda_1\overline{a}_0+\lambda_2\overline{\alpha}_0)}\cdot\overline{\alpha}_0+\frac{\partial J}{\partial(\lambda_1\overline{a}_1+\lambda_2\overline{\alpha}_1)}\cdot\overline{\alpha}_1+\cdots\right\},
+\end{aligned}
+\]
+so erkennt man die Factoren von $A$ und $B$ als die partiellen Differentialquotienten $\dfrac{\partial J}{\partial\lambda_1}$, $\dfrac{\partial J}{\partial\lambda_2}$. Die Differentialgleichung $\overline{\partial} J=0$ lässt sich also auch durch
+\weq{II}{A\frac{\partial J}{\partial\lambda_1}+B\frac{\partial J}{\partial\lambda_2}=0}
+darstellen. Diese Differentialgleichung hatte bereits Aronhold als jene Gleichung erkannt, welcher die Combinanten zweier Formen $f$ und $\varphi$ genügen, wenn $\varphi$ Covariante von $f$. Das war der Grund, weshalb Gordan den Process des Deltairens als \gesperrt{Aronhold'schen Process} bezeichnet. Aus ihr können wir nun direct die Combinanteneigenschaft
+\[
+J=u\cdot i
+\]
+herleiten.
+
+73. Denn ist $g$ irgend eine particuläre Lösung dieser Gleichung
+\[
+A\frac{\partial\psi}{\partial\lambda_1}+B\frac{\partial\psi}{\partial\lambda_2}=0,
+\]
+so muss gemäss der Theorie der Differentialgleichungen die allgemeine Lösung $J$ eine ganze Function
+\[
+J=F(g)
+\]
+dieser speciellen Lösung $g$ sein.
+
+Um nun eine solche Lösung $g$ zu finden, gehen wir von irgend einer Combinante von $f$ und $\varphi$ aus, etwa von der Functionaldeterminante $\vartheta=(f,\varphi)$. Es ist dann
+\[
+\begin{aligned}
+\vartheta_{\lambda_1 f+\lambda_2\varphi}&=(\lambda_1 f+\lambda_2\varphi,\ Af+B\varphi)\\
+&=(f,\varphi)\cdot\{\lambda_1 B-\lambda_2 A\}.
+\end{aligned}
+\]
+
+
+% ===== pdf idx 92, printed 78.0 =====
+% !PRINTED 78
+\weberpage{78}
+Die Form $\vartheta_{\lambda_1 f+\lambda_2\varphi}$ ist homogen in $\lambda_1$ und $\lambda_2$. Demnach auch die Form $\lambda_1 B-\lambda_2 A$, während $(f,\varphi)$ von diesen Parametern völlig unabhängig ist; da $\vartheta_{\lambda_1 f+\lambda_2\varphi}$ als Combinante der obigen Differentialgleichung genügt, so genügt ihr daher auch die specielle Form
+\[
+g=\lambda_1 B-\lambda_2 A.
+\]
+Dem Euler'schen Satz gemäss ist hierin:
+\[
+\begin{aligned}
+A&=-g_2=-\frac{1}{\varrho}\,\frac{\partial g}{\partial\lambda_2},\\
+B&=\ \ g_1=\ \ \ \frac{1}{\varrho}\,\frac{\partial g}{\partial\lambda_1}.
+\end{aligned}
+\]
+Nun ist $J$ stets homogen in $\lambda_1$ und $\lambda_2$; es muss daher auch in der Gleichung
+\[
+J=F(g)
+\]
+die rechte Seite homogen sein, d.\,h. $F$ muss sich auf eine Potenz der particulären Lösung $g$ reduciren. Es ist also
+\[
+J=g^\mu\cdot\mathrm{Const.}
+\]
+Um die Constante zu bestimmen, setzen wir $\lambda_1=1$, $\lambda_2=0$; dann geht $J$ in $i$ über, und weil $\vartheta_{\lambda_1 f+\lambda_2\varphi}$ in $\vartheta$ sich verwandelt, auch $g$ in 1. Es ist demnach
+\[
+i=1^\mu\cdot\mathrm{Const.}
+\]
+und folglich:
+\[
+J=g^\mu\cdot i,
+\]
+was zu zeigen war. [Vergl. das Beispiel in Nr.\,69 (II).]
+
+\begin{center}
+\S~7.\\
+\gesperrt{Binäre Formen mit zwei und mehr Reihen cogredienter Variabler. (Process der Reihenentwicklung.)}
+\end{center}
+
+74. \textit{Symbolische Darstellung dieser Formen.} Wir haben uns bisher im Allgemeinen beschränkt auf die Untersuchung von Formen mit einer einzigen Reihe Variabler $x_1$ und $x_2$. Schon die einfachen Polaren derselben führten uns indess auf Formen mit zwei Reihen Variabler $x_1x_2$, $y_1y_2$, während durch die gemischten Polaren sogar Formen mit mehr als zwei Reihen cogredienter Variabler in den Kreis unserer Betrachtungen hereingezogen wurden. Bei der Wichtigkeit, welche diese Formen für die ganze Invariantentheorie haben, wird es nunmehr nothwendig, dieselben einer eingehenden Betrachtung zu unterstellen und insbesondere die Haupteigenschaft derselben zu constatiren, dass alle Co- und Invarianten von Formen mit mehreren Reihen cogredienter Variabler sich durch die Co- und Invarianten von Formen mit nur einer Reihe Veränderlicher darstellen lassen. Dies gilt auch noch, wenn die Veränderlichen $x$ und $y$ nicht direct cogredient sind, sondern beliebig zusammenhängen; es existiren eben dann lineare
+%CONT>>
+
+
+% ===== pdf idx 93, printed 79.0 =====
+% !PRINTED 79
+\weberpage{79}
+%<<CONT
+Functionen $z$ der $y$, welche cogredient zu den Variabeln $x$ sind. Hier beschränken wir uns jedoch auf cogrediente Variable $x$ und $y$.
+
+Es sei die Form $F=F(x;y)$ eine rationale ganze und homogene Function der beiden cogredienten Variabeln $x$ und $y$ und zwar sei dieselbe in $x$ homogen von der Dimension $m$, in $y$ homogen von der Dimension $n$. Jedes Glied dieser Function hat, von einem Coefficienten abgesehen, die Form
+\weq{1}{x_1^{m-k}x_2^k\cdot y_1^{n-\lambda}y_2^\lambda.}
+Die Zahl der Glieder ist $(n+1)(m+1)$, da jedes der $(n+1)$ Glieder einer allgemeinen Function $m^{\text{ten}}$ Grades in $x$ mit immer andern und andern Functionen $n^{\text{ten}}$ Grades in $y$ multiplicirt sein kann.
+
+Um eine solche Form symbolisch darstellen zu können, braucht man auch zwei Reihen von Coefficienten, die eine um ein Glied hinsichtlich der Factoren $x$, die andere um es hinsichtlich der Factoren $y$ zu charakterisiren. Wir werden demnach als symbolischen Coefficienten des Gliedes (1) den Ausdruck wählen
+\weq{2}{r_1^{m-k}r_2^k\cdot s_1^{n-\lambda}s_2^\lambda.}
+Die Symbole $r$ und $s$ gehören unzertrennlich zusammen und der ganze Coefficient hat nur dann unsymbolische Bedeutung, wenn die Summe der Exponenten von $r_1$ und $r_2$ gleich $m$, die von $s_1$ und $s_2$ gleich $n$ ist. Die Potenz eines solchen Coefficienten werden wir durch ein Product von Ausdrücken (2) charakterisiren, in welchem die einzelnen zusammengehörigen Factoren durch obere Indices von den übrigen unterschieden sind. So ist die dritte Potenz des Coefficienten (2) dargestellt durch:
+\[
+r_1^{(1)m-k}r_2^{(1)k}s_1^{(1)n-\lambda}s_2^{(1)\lambda}\cdot r_1^{(2)m-k}r_2^{(2)k}s_1^{(2)n-\lambda}s_2^{(2)\lambda}\cdot r_1^{(3)m-k}r_2^{(3)k}s_1^{(2)n-\lambda}s_2^{(3)\lambda}.
+% [sic] third factor exponent printed s_1^{(2)}, breaking the (1)(2)(3) pattern
+\]
+Multipliciren wir die Ausdrücke (1) und (2) mit einander, versehen sie sodann mit dem Product der Binomialcoefficienten
+\weq{3}{\binom{m}{k}\binom{n}{\lambda}}
+und summiren alle Glieder, die aus diesem einen hervorgehen, indem man den Grössen $k$ und $\lambda$ alle zulässigen Werthe beilegt, so entsteht die symbolische Darstellung
+\[
+F=(r_1x_1+r_2x_2)^m(s_1y_1+s_2y_2)^n=r_x^m s_y^n
+\]
+einer Form $F$ mit zwei Reihen cogredienter Variabler. In ihr kommt also erst der Verbindung von $r$ und $s$ eine reale Bedeutung zu, obwohl auch der Fall nicht ausgeschlossen zu werden braucht, dass $F$ in die beiden wirklichen Factoren $r_x^m$ und $s_y^n$ zerfällt.
+
+
+% ===== pdf idx 94, printed 80.0 =====
+% !PRINTED 80
+\weberpage{80}
+75. \textit{Die Elementarcovarianten von $F$.} Unsere Aufgabe ist nun, die Covarianten einer solchen Function mit zwei Reihen Variabler zu untersuchen. Unter dieselben gehören jedenfalls wieder die symbolischen Producte, welche sich zusammensetzen:
+
+$\alpha$) aus den Factoren erster Art:
+\[
+r_x,\ r_x^{(1)},\ \dots,\ s_x,\ s_x^{(1)},\ \dots;\quad r_y,\ r_y^{(1)},\ \dots,\ s_y,\ s_y^{(1)},
+\]
+$\beta$) aus den Klammerfactoren:
+\[
+(rs),\ (r^{(1)}r),\ (rs^{(1)}),\ (ss^{(1)}),\ \dots
+\]
+Soll das symbolische Product unsymbolische Bedeutung haben, dann müssen die Symbole $r^{(i)}$ in $m$ und die Symbole $s^{(i)}$ in $n$ Factoren vorhanden sein.
+
+Die einfachsten unter diesen Covarianten sind durch jene symbolischen Producte dargestellt, die nur ein einziges Symbolenpaar enthalten, d.\,h. also deren Coefficienten lineare Functionen der Coefficienten der Stammform sind. Dieser Fall trat bei den Formen mit nur einer Reihe von Variabeln nicht auf, da ja die einfachsten Covarianten dort die Ueberschiebungen $(ab)^k a_x^{m-k}b_x^{n-k}$ waren, die bereits vom Grade 2 in den Coefficienten sind.
+
+Eine solche Covariante von $F$ ist dargestellt durch das Product:
+\weq{4}{(rs)^\lambda r_x^g r_y^h s_x^k s_y^l,}
+wobei
+\[
+\begin{aligned}
+\lambda+g+h&=m\\
+\lambda+k+l&=n
+\end{aligned}
+\]
+ist. Unter diesen Covarianten sind wieder die einfachsten jene, in welchen $k=l=0$ ist, also jene, die nur eine einzige Variabelnreihe enthalten. Ihr Symbol ist:
+\[
+E=(rs)^\lambda r_x^{m-\lambda}s_x^{n-\lambda}=(\overline{rs})^\lambda.
+\]
+Wir nennen sie in der Folge: \gesperrt{Elementarcovarianten der Form $F$}. Jede Form $F$ besitzt $n+1$ solcher Elementarcovarianten, wenn $n$ der kleinere der beiden Exponenten $m$ und $n$ ist, nämlich die $n$ Formen:
+\[
+\begin{aligned}
+(\overline{rs})^0&=r_x^m s_x^n\\
+(\overline{rs})^1&=(rs)\,r_x^{m-1}s_x^{n-1}\\
+(\overline{rs})^2&=(rs)^2\,r_x^{m-2}s_x^{n-2}\\
+&\ \cdots\cdots\cdots\cdots\\
+(\overline{rs})^n&=(rs)^n\,r_x^{m-n}.
+\end{aligned}
+\]
+Sie gehen durch Faltung aus den beiden Factoren $r_x^m$ und $s_x^n$ hervor.
+
+
+% ===== pdf idx 95, printed 81.0 =====

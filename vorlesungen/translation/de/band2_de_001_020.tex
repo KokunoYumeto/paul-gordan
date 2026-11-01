@@ -1,0 +1,1089 @@
+% !PRINTED 1
+\weberpage{1}
+\begin{center}
+\textbf{Erster Theil.}
+\end{center}
+
+\begin{center}
+\textbf{Processe für invariante Bildungen.}
+\end{center}
+
+\begin{center}
+\textbf{§ 1. Lineare Transformation und Faltungsprocess.}
+\end{center}
+
+1. \textit{Einführung der Symbolik.} Jeder homogene algebraische Ausdruck $n^{\text{ten}}$ Grades zwischen zwei Variabeln $x_1$ und $x_2$ wird als \glqq binäre Form\grqq{} bezeichnet. Eine solche binäre Form ist allgemein dargestellt durch:
+\weq{1}{f(x) = ax_1{}^n + bx_1{}^{n-1}x_2 + cx_1{}^{n-2}x_2{}^2 + \cdots + qx_2{}^n\,.}
+Viele Untersuchungen lassen es bequemer erscheinen, an Stelle der einfachen Coefficienten $a$, $b$, $c \ldots$ etc. Grössen mit Binomialcoefficienten multiplicirt einzuführen, also $f(x)$ in der Form zu schreiben:
+\weq{2}{f(x) = a_0x_1{}^n + \binom{n}{1}\overline{a_1}x_1{}^{n-1}x_2 + \binom{n}{2}\overline{a_2}x_1{}^{n-2}x_2{}^2 + \cdots \overline{a_n}x_2{}^n\,.}
+Man kann noch einen Schritt weiter gehen. Der algebraische Ausdruck rechts erinnert in mehr als einer Beziehung an die binomische Entwicklung
+\weq{3}{(a_1x_1+a_2x_2)^n = a_1{}^nx_1{}^n + \binom{n}{1}a_1{}^{n-1}a_2x_1{}^{n-1}x_2 + \binom{n}{2}a_1{}^{n-2}a_2{}^2x_1{}^{n-2}x_2{}^2 + \ldots a_2{}^nx_2{}^n\,,}
+welche mit der Darstellung (2) die Homogeneität in $x_1$ und $x_2$, die Zahl und Dimension der Glieder und die Binomialcoefficienten gemein hat. Fügen wir hinzu, dass die $(n+1)$ Constanten der Form $f(x)$ durch die $(n+1)$ Producte $a_1{}^n$, $a_1{}^{n-1}a_2$, $a_1{}^{n-2}a_2{}^2\ldots a_2{}^n$ charakterisirt sein mögen, so ist die binäre Form $f(x)$ auch vollständig definirt durch den symbolischen Ausdruck:
+\[
+f(x) = (\dot a_1x_1 + a_2x_2)^n = a_x{}^n\,,
+\]
+vermöge welchen
+\[
+\begin{array}{lcccl}
+a_1{}^n & \text{als} & \text{Symbol} & \text{für} & \overline{a_0} \\
+a_1{}^{n-1}a_2 & \text{\textquotedbl} & \text{\textquotedbl} & \text{\textquotedbl} & \overline{a_1} \\
+a_1{}^{n-2}a_2{}^2 & \text{\textquotedbl} & \text{\textquotedbl} & \text{\textquotedbl} & \overline{a_2} \\
+\multicolumn{5}{c}{\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot\;\cdot} \\
+a_2{}^n & \text{als} & \text{Symbol} & \text{für} & \overline{a_n}
+\end{array}
+\]
+zu gelten hat.
+
+
+% ===== pdf idx 16, printed 2.0 =====
+% !PRINTED 2
+\weberpage{2}
+2. \textit{Mehrere Symbole für ein- und dieselbe Form $f$.} Diese eine Symbolreihe
+\[
+a_1{}^{n-k}a_2{}^k = \overline{a_k}
+\]
+genügt indess nicht, um jedes beliebige Aggregat aus den Coefficienten von $f$ in der Weise symbolisch darzustellen, dass man auch rückwärts aus dem symbolischen Ausdruck den wirklichen eindeutig zu bilden vermöchte. So wäre beispielsweise das Product $\overline{a_2}\cdot\overline{a_3}$ durch
+\[
+\overline{a_2}\cdot\overline{a_3} = a_1{}^{n-2}a_2{}^2\cdot a_1{}^{n-3}a_2{}^3 = a_1{}^{2n-5}a_2{}^5
+\]
+symbolisch darzustellen. Aus dem Ausdrucke $a_1{}^{2n-5}a_2{}^5$ lässt sich aber umgekehrt das Product der wirklichen Coefficienten nicht mehr eindeutig bestimmen. Derselbe kann auch noch als Symbol für $\overline{a_0}\cdot\overline{a_5}$ und $\overline{a_1}\cdot\overline{a_4}$ gelten. Diese Undeutlichkeit lässt sich aber vermeiden, wenn man neben der einen Symbolreihe $a_1{}^{n-k}a_2{}^k$ noch so viel weitere Symbolreihen $b_1{}^{n-k}b_2{}^k$, $c_1{}^{n-k}c_2{}^k$, \ldots etc. einführt, als das betreffende Glied des Coefficientenaggregates unsymbolische Factoren $\overline{a_k}$ besitzt. In diesem Falle sind die symbolischen Ausdrücke
+\[
+\overline{a_2}\cdot\overline{a_3} = a_1{}^{n-2}a_2{}^2\cdot b_1{}^{n-3}b_3 = c_1{}^{n-2}c_2\cdot d_1{}^{n-3}d_2{}^3 = \text{etc.}
+\]
+\[
+\overline{a_4}{}^3 = a_1{}^{n-4}a_2{}^4\cdot b_1{}^{n-4}b_2{}^4\ c_1{}^{n-4}c_2{}^4 = \text{etc.}\,, % checked against the GDZ scan (27 Oct 2026): only a space between b_2^4 and c_1^{n-4}, no dot or comma
+\]
+hin und zurück nur auf eine Weise zu deuten, in welcher Vertauschung auch die symbolischen Factoren rechts auftreten. Die Form $f$ selbst ist alsdann durch jedes der symbolischen Producte
+\[
+f = a_x{}^n = b_x{}^n = c_x{}^n = d_x{}^n = \text{etc.}
+\]
+in gleich berechtigter Weise repräsentirt.
+
+Diese Symbolik, von der wir nunmehr in den meisten Untersuchungen Gebrauch machen werden, wurde zuerst von \gesperrt{Aronhold} (Crelle's Journ. Bd. 39 und 55) eingeführt, und von \gesperrt{Clebsch} (Crelle's Journ. Bd. 59) systematisch ausgebildet. Etwas früher als diese Beiden hatte \gesperrt{Cayley} eine andere symbolische Methode entwickelt, die im 30. Band von Crelle's Journ. 1846 niedergelegt ist. Beide Methoden erweisen sich in gleicher Weise fruchtbringend für die Untersuchungen der Invariantentheorie.
+
+\textit{Beispiel.} Die quadratische binäre Form
+\[
+f(x) = \overline{a_0}x_1{}^2 + 2\overline{a_1}x_1x_2 + \overline{a_2}x_2{}^2
+\]
+ist symbolisch dargestellt durch
+\[
+f = a_1{}^2x_1{}^2 + 2a_1a_2x_1x_2 + a_2{}^2x_2{}^2 = a_x{}^2 = b_x{}^2 = c_x{}^2 = \text{etc.}
+\]
+Ihre Discriminante ist bekanntlich (vgl. auch Bd. I Nr. 182)
+\[
+\Delta_f = \overline{a_0}\,\overline{a_2} - \overline{a_1}{}^2\,.
+\]
+
+
+% ===== pdf idx 17, printed 3.0 =====
+% !PRINTED 3
+\weberpage{3}
+Dieses Coefficientenaggregat geht unter Einführung der symbolischen Coefficienten über in
+\[
+\Delta_f = a_1{}^2b_2{}^2 - a_1a_2b_1b_2\,,
+\]
+oder auch in
+\[
+\Delta_f = b_1{}^2a_2{}^2 - b_1b_2a_1a_2\,.
+\]
+Durch Addition dieser beiden Ausdrücke erhält man
+\[
+2\Delta_f = (a_1b_2 - b_1a_2)^2 = (ab)^2 \quad \text{(vgl. auch Bd. I Nr. 18)}
+\]
+als einfache symbolische Darstellung der Discriminante von $f$.
+
+3. \textit{Lineare Transformation.} Wir wollen nun zunächst untersuchen, in welcher Weise eine lineare Transformation den symbolischen Ausdruck einer binären Form ändert, und zu dem Zwecke uns auf ein einfaches Beispiel beschränken. Die quadratische Form
+\weq{1}{f(x) = a_x{}^2 = \overline{a_0}x_1{}^2 + 2\overline{a_1}x_1x_2 + \overline{a_2}x_2{}^2}
+unterwerfen wir der linearen Transformation:
+\weq{I}{\left.\begin{aligned}
+x_1 &= \xi_1y_1 + \eta_1y_2 \\
+x_2 &= \xi_2y_1 + \eta_2y_2\,.
+\end{aligned}\right\}}
+Die Determinante
+\[
+\Delta = \begin{vmatrix} \xi_1 & \eta_1 \\ \xi_2 & \eta_2 \end{vmatrix} = (\xi\eta)
+\]
+der Substitutionscoefficienten nennen wir den \glqq Modul\grqq{} der Transformation. Das Resultat der Substitution (I) in (1) liefert:
+\[
+\begin{aligned}
+\varphi(y) &= \overline{a_0}(\xi_1y_1+\eta_1y_2)^2 + 2a_1(\xi_1y_1+\eta_1y_2)(\xi_2y_1+\eta_2y_2) % [sic] a_1 printed here without overline, unlike the neighbouring terms
+\\
+&\quad + \overline{a_2}(\xi_2y_1+\eta_2y_2)^2 \\
+&= y_1{}^2(\overline{a_0}\xi_1{}^2 + 2\overline{a_1}\xi_1\xi_2 + \overline{a_2}\xi_2{}^2) \\
+&\quad + 2y_1y_2(\overline{a_0}\xi_1\eta_1 + \overline{a_1}(\xi_2\eta_1+\xi_1\eta_2) + \overline{a_2}\xi_2\eta_2) \\
+&\quad + y_2{}^2(\overline{a_0}\eta_1{}^2 + 2\overline{a_1}\eta_1\eta_2 + \overline{a_2}\eta_2{}^2)\,.
+\end{aligned}
+\]
+Setzt man hierin:
+\weq{II}{\left.\begin{aligned}
+\overline{a_0}\xi_1{}^2 + 2\overline{a_1}\xi_1\xi_2 + \overline{a_2}\xi_2{}^2 &= \overline{A_0} \\
+\overline{a_0}\xi_1y_1 + \overline{a_1}(\xi_2\eta_1+\xi_1\eta_2) + \overline{a_2}\xi_2\eta_2 &= \overline{A_1} % checked against the GDZ scan (27 Oct 2026): printed xi_1 y_1 with a Latin y (misprint for xi_1 eta_1); kept as printed
+\\
+\overline{a_0}\eta_1{}^2 + 2\overline{a_1}\eta_1\eta_2 + \overline{a_2}\eta_2{}^2 &= \overline{A_2}
+\end{aligned}\right\}}
+so wird durch die Transformation (I) aus $f(x)$
+\weq{2}{\varphi(y) = \overline{A_0}y_1{}^2 + 2\overline{A_1}y_1y_2 + \overline{A_2}y_2{}^2\,.}
+Führt man nun einestheils in $f(x)$ für die unsymbolischen Coefficienten $\overline{a_0}$, $\overline{a_1}$, $\overline{a_2}$ die Symbole $a_1{}^2$, $a_1a_2$, $a_2{}^2$ und ebenso für die Coefficienten $\overline{A_0}$, $\overline{A_1}$, $\overline{A_2}$ der transformirten Form $\varphi(y)$ die Symbole $A_1{}^2$, $A_1A_2$, $A_2{}^2$ ein, so erhalten die Relationen (II) die Form:
+%CONT>>
+
+
+% ===== pdf idx 18, printed 4.0 =====
+% !PRINTED 4
+\weberpage{4}
+%<<CONT
+\[
+\begin{aligned}
+(a_1\xi_1+a_2\xi_2)^2 &= a_\xi{}^2 = A_1{}^2 = \overline{A_0} \\
+(a_1\xi_1+a_2\xi_2)(a_1\eta_1+a_2\eta_2) &= a_\xi a_\eta = A_1A_2 = \overline{A_1} \\
+(a_1\eta_1+a_2\eta_2)^2 &= a_\eta{}^2 = A_2{}^2 = \overline{A_2}\,.
+\end{aligned}
+\]
+In derselben Weise ergeben sich für die Coefficienten $\overline{A_k}$ der transformirten $\varphi = A_y{}^n$ einer Form $f = a_x{}^n$ die Relationen:
+\[
+\overline{A_k} = A_1{}^{n-k}A_2{}^k = (a_1\xi_1+a_2\xi_2)^{n-k}(a_1\eta_1+a_2\eta_2)^k = a_\xi{}^{n-k}a_\eta{}^k\,.
+\]
+Man erkennt daraus folgendes Gesetz:
+
+\glqq Bezeichnet man die ursprüngliche Form mit $f = a_x{}^n$, die transformirte mit $\varphi = A_y{}^n$, so gehen die symbolischen Coefficienten $A_1$, $A_2$ aus den symbolischen $a_1$, $a_2$ durch die Transformation:
+\weq{III}{\left.\begin{aligned}
+A_1 &= \xi_1a_1+\xi_2a_2 = a_\xi \\
+A_2 &= \eta_1a_1+\eta_2a_2 = a_\eta
+\end{aligned}\right\}}
+hervor, eine Transformation, die den gleichen Modul $\Delta$ wie (I) besitzt, und sich von der ursprünglichen (I) nur dadurch unterscheidet, dass in den Coefficienten derselben die Horizontal- mit den Verticalreihen vertauscht sind.\grqq{}
+
+4. \textit{Cogredienz und Contragredienz.} Die Grössen $a_i$ einestheils und die Grössen $x_i$ anderntheils treten durch die Transformation in eine gewisse Beziehung, die man mit Contragredienz bezeichnet hat. Während nämlich die Grössen $x_i$ durch die Substitution (I) in die neuen Variabeln $y_i$ übergehen, transformiren sich die Grössen $a_i$ durch die Substitution (III) in die neuen Grössen $A_i$. Man nennt die Substitutionen (I) und (III) \gesperrt{contragrediente Substitutionen}, und ebendeshalb die Grössen $a_i$ und $x_i$ \gesperrt{contragrediente Grössen}.
+
+Grössen, die denselben Substitutionen unterworfen sind, nennt man \gesperrt{cogrediente Grössen}. So werden wir im nächsten § Formen mit zwei Reihen Variabler $x$ und $y$ kennen lernen, welche wir als cogredient bezeichnen müssen.
+
+Bei den binären Formen sind übrigens cogrediente und contragrediente Grössen nicht wesentlich verschieden. Denn lösen wir Substitutionen (III) nach $a_1$ und $a_2$ auf, so finden wir
+\[
+\begin{aligned}
+(-a_2)\cdot\Delta &= \xi_1(-A_2) + \eta_1A_1 \\
+a_1\cdot\Delta &= \xi_2(-A_2) + \eta_2A_1\,.
+\end{aligned}
+\]
+Für $-a_2$ und $a_1$ ist also die Transformation genau die nämliche, wie für $x_1$ und $x_2$; oder mit anderen Worten: $x_1$ und $x_2$ sind mit $-a_2$ und $a_1$ cogredient. — Wir werden später von dieser Eigenschaft öfter Gebrauch machen, wenn wir in symbolischen Producten gemäss dieser Cogredienz $x_1$ durch $-a_2$, und $x_2$ durch $a_1$ ersetzen.
+
+
+% ===== pdf idx 19, printed 5.0 =====
+% !PRINTED 5
+\weberpage{5}
+5. \textit{Definition der Invarianten.} Betrachtet man nun zwei Reihen
+symbolischer Co\"efficienten $A$ und $B$, nämlich
+\[
+\begin{array}{ll}
+A_1 = a_1\xi_1 + a_2\xi_2 & B_1 = b_1\xi_1+b_2\xi_2\\
+A_2 = a_1\eta_1+a_2\eta_2, & B_2 = b_1\eta_1+b_2\eta_2
+\end{array}
+\]
+und bildet aus ihnen die Determinante
+\[
+\begin{vmatrix} A_1A_2\\ B_1B_2 \end{vmatrix} = (AB),
+\]
+so ist nach dem Multiplicationsgesetze für Determinanten (Bd.\,I Nr.\,70)
+\weq{1}{(AB) = \Delta\,.\,(ab),}
+wobei $\Delta$ der Modul der Transformation (I) Nr.\,3 ist.
+
+Liegt daher ein beliebiges Product solcher Determinanten $(AB)$
+vor, etwa $(AB)^\mu(AC)^\nu(BC)^\varrho$, so besteht immer die Beziehung
+\weq{2}{(AB)^\mu(AC)^\nu(BC)^\varrho = \Delta^{\mu+\nu+\varrho}\cdot(ab)^\mu(ac)^\nu(bc)^\varrho\,.}
+Dieselbe lehrt:
+
+\glqq Irgend ein Product von Determinanten $(ab)\ldots$ aus symbolischen
+Co\"efficienten $a, b, c\ldots$ ändert sich nicht [bis auf den
+Factor $\Delta^\lambda$ des Substitutionsmoduls], sobald die Form
+\[
+f = a_x^n = b_x^n = c_x^n = \text{etc.}
+\]
+linear transformirt wird. Denn das von den Coefficienten der
+transformirten Form
+\[
+\varphi = A_y^n = B_y^n = C_y^n = \text{etc.}
+\]
+gebildete gleiche Product unterscheidet sich seinem Werthe nach
+von dem ersteren nur um eine bekannte Potenz des Moduls, wie die
+Beziehung (1) lehrt.\grqq{}
+
+Man sieht, solche symbolische Determinantenproducte sind linearen
+Transformationen gegenüber unveränderliche algebraische Ausdrücke.
+Nun stellen dieselben aber stets Aggregate der wirklichen
+Co\"efficienten von $f$ dar, wenn nur jedes Symbol $a, b, c$ in
+einer Potenz auftritt, welche gleich ist dem Grade der Form $f$
+in $x$. Es existiren also für jede Form $f$ gewisse weitere
+algebraische Formen ihrer Co\"efficienten, die bei linearer
+Transformation unverändert bleiben.
+
+Wir nennen dieselben \glqq Invarianten\grqq{} von $f$ und jedes symbolische
+Product
+\weq{3}{i = (ab)^\mu(ac)^\nu(bc)^\varrho\ldots}
+stellt eine solche Invariante dar, vorausgesetzt, dass die Summe
+aller Exponenten von $a$ sowohl, als von $b, c$ etc. gleich $n$
+ist, wenn $n$ den Grad von $f$ in $x$ angiebt.
+
+
+% ===== pdf idx 20, printed 6.0 =====
+% !PRINTED 6
+\weberpage{6}
+Die Gleichung:
+\weq{4}{(AB)^\mu(AC)^\nu(BC)^\varrho\ldots = \Delta^{\mu+\nu+\varrho}\cdot\cdot(ab)^\mu(ac)^\nu(bc)^\varrho\ldots}
+ist also Definitionsgleichung für Invarianten. Sie sagt:
+
+\glqq Eine Invariante ist eine solche Verbindung der Co\"efficienten von
+$f$, welche die Eigenschaft hat, bis auf einen bekannten Factor
+$\Delta^\lambda$ in ihrem Werthe unverändert zu bleiben, sei es,
+dass man sie aus den Co\"efficienten der ursprünglichen, sei es,
+dass man sie aus denen der transformirten Form bildet.\grqq{}
+
+\textit{Anmerkung.} Wir haben in Nr.\,3 gesehen, dass durch lineare
+Transformation das Symbol $a_1$ übergeht in $a_\xi$ und das
+Symbol $a_2$ in $a_\eta$. Ersetzen wir also in dem
+nichtsymbolischen Ausdruck der Invariante $i$ den Co\"efficienten
+$\overline{a_0}=a_1{}^n$ durch $a_\xi{}^n$,
+$\overline{a_1}=a_1{}^{n-1}a_2$ durch $a_\xi{}^{n-1}a_\eta$ etc.,
+so erhalten wir die entsprechende Invariante $I$ der
+transformirten Form. Da nun aber nach Definitionsgleichung (4)
+die Beziehung
+\[
+I = \Delta^\lambda\,.\,i
+\]
+bestehen muss, so folgt daraus durch dieselben Schlüsse, die wir
+schon in Bd.\,I Nr.\,141 bei Untersuchung der Resultante zweier
+Formen gezogen haben, dass jede Invariante \gesperrt{homogen und isobar
+vom Gewichte $\lambda$ ist.}
+
+6. \textit{Definition der Covarianten.} Das symbolische Product $i$
+(Nr.\,5, (3)) behält aber diese Invarianteneigenschaft noch bei,
+wenn wir es mit symbolischen Factoren $a_x, b_x, c_x\ldots$
+multipliciren. Denn ein solcher linearer Factor geht durch die
+lineare Transformation nur wieder in einen linearen Factor über.
+Multiplicirt man nämlich die erste der Relationen (III):
+\[
+A_1 = \xi_1 a_1 + \xi_2 a_2
+\]
+\[
+A_2 = \eta_1 a_1 + \eta_2 a_2
+\]
+mit $y_1$, die zweite mit $y_2$ und addirt, so erhält man:
+\[
+A_1y_1 + A_2y_2 = a_1(\xi_1y_1+\eta_1y_2) + a_2(\xi_2y_1+\eta_2y_2)
+\]
+oder
+\[
+A_y = a_x\,.
+\]
+
+Wir nennen ein solches symbolisches Product, das ausser den
+Determinanten $(ab), (bc), \ldots$ etc.\ldots, — die wir in
+Zukunft \gesperrt{Factoren zweiter Art} oder \gesperrt{Klammerfactoren} nennen
+wollen, — auch noch Factoren $a_x, b_x, c_x, \ldots$ etc., d.\,i.
+\gesperrt{Factoren erster Art} enthält, eine \gesperrt{Covariante.}
+
+Die Definitionsgleichung für Covarianten ist sonach:
+\weq{5}{(AB)^\mu(AC)^\nu(BC)^\varrho\ldots A_y^\sigma B_y^\tau C_y^\varkappa\ldots = \Delta^{\mu+\nu+\varrho\cdot\cdot}\cdot(ab)^\mu(ac)^\nu(bc)^\varrho\ldots a_x^\sigma b_x^\tau c_x^\varkappa\ldots}
+
+
+% ===== pdf idx 21, printed 7.0 =====
+% !PRINTED 7
+\weberpage{7}
+Sie sagt: \glqq Eine Covariante ist eine solche Verbindung der
+Co\"efficienten und Variabeln von $f$, welche die Eigenschaft hat,
+bei linearer Transformation von $f$ sich nur um einen Factor
+$\Delta^\lambda$ zu ändern.\grqq{}
+
+Auch hier muss — soll das symbolische Product eine wirkliche
+Covariante der Form $n^{\text{ten}}$ Grades $f=a_x^n$ sein —
+jedes Symbol in einer Potenz auftreten, die gleich $n$ ist,
+d.\,h. es muss sein:
+\weq{6}{\left.\begin{aligned}
+\mu+\nu+\sigma\ldots &= n\\
+\mu+\varrho+\tau\ldots &= n\\
+\nu+\varrho+\varkappa\ldots &= n
+\end{aligned}\right\}}
+
+7. \textit{Beispiele von simultanen Invarianten.} Ein symbolisches
+Product wie (4) oder (5) kann auch eine Co\"efficientenverbindung
+verschiedener Formen
+\[
+f = a_x^n, \quad \varphi = b_x^m, \quad \psi = c_x^r\ldots
+\]
+darstellen, und wir nennen es alsdann \glqq simultane Invariante,
+bezw. Covariante\grqq{} dieser Formen. In diesem Falle muss
+natürlich sein:
+\weq{7}{\left.\begin{aligned}
+\mu+\nu+\sigma\ldots &= n\\
+\mu+\varrho+\tau\ldots &= m\\
+\nu+\varrho+\varkappa\ldots &= r
+\end{aligned}\right\}}
+Eine solche simultane Invariante ist z.\,B. die Resultante zweier
+Formen. (Vgl. Bd.\,I Nr.\,147.) So kann auch der Klammerfactor
+$(a\alpha)$ als simultane Invariante der beiden linearen Formen
+\[
+f = a_1x_1 + a_2x_2
+\]
+\[
+\varphi = \alpha_1x_1 + \alpha_2x_2
+\]
+aufgefasst werden.
+
+Ebenso ist die Determinante der Co\"efficienten dreier
+quadratischer Formen
+\[
+f = \overline{a_0}x_1{}^2+2\overline{a_1}x_1x_2+\overline{a_2}x_2{}^2
+\]
+\[
+\varphi = \overline{b_0}x_1{}^2+2\overline{b_1}x_1x_2+\overline{b_2}x_2{}^2
+\]
+\[
+\psi = \overline{c_0}x_1{}^2+2\overline{c_1}x_1x_2+\overline{c_2}x_2{}^2
+\]
+eine simultane Invariante. Denn führt man in diese Determinante
+\[
+R = \begin{vmatrix}
+\overline{a_0}, & \overline{a_1}, & \overline{a_2}\\
+\overline{b_0}, & \overline{b_1}, & \overline{b_2}\\
+\overline{c_0}, & \overline{c_1}, & \overline{c_2}
+\end{vmatrix}
+\]
+die symbolischen Co\"efficienten ein, so wird sie
+\[
+R = \begin{vmatrix}
+a_1{}^2, & a_1a_2, & a_2{}^2\\
+b_1{}^2, & b_1b_2, & b_2{}^2\\
+c_1{}^2, & c_1c_2, & c_2{}^2
+\end{vmatrix}\,.
+\]
+
+
+% ===== pdf idx 22, printed 8.0 =====
+% !PRINTED 8
+\weberpage{8}
+Diese Determinante hat den Werth (vgl. Bd.\,I Nr.\,40, Anmerk.)
+\[
+R = (ab)(bc)(ac)\,.
+\]
+Die Function $R$ lässt sich also durch ein symbolisches Product
+darstellen und ist folglich Invariante.
+
+\textit{Beispiele von In- und Covarianten einzelner Formen.} Die
+cubische Form
+\[
+f(x) = a_x{}^3 = b_x{}^3 = c_x{}^3 = d_x{}^3 = \ldots =
+\overline{a_0}x_1{}^3+3\overline{a_1}x_1{}^2x_2+3\overline{a_2}x_1x_2{}^2+\overline{a_3}x_2{}^3
+\]
+hat eine Covariante $(ab)^2a_xb_x$. Ihre nichtsymbolische Form
+erhält man, indem man die symbolischen Co\"efficienten in dem
+Producte
+\[
+\Pi = (a_1b_2-b_1a_2)^2(a_1x_1+a_2x_2)(b_1x_1+b_2x_2)
+\]
+\[
+= (a_1{}^2b_2{}^2-2a_1a_2b_1b_2+b_1{}^2a_2{}^2)(a_1b_1x_1{}^2+(a_1b_2+b_1a_2)x_1x_2+a_2b_2x_2) % [sic]
+\]
+\[
+= (a_1{}^3b_1b_2{}^2-2a_1{}^2a_2b_1{}^2b_2+a_1a_2{}^2b_1{}^3)x_1{}^2
+\]
+\[
+\quad + (a_1{}^3b_2{}^3-2a_1{}^2a^2b_1b_2{}^2+a_1a_2{}^2b_1{}^2b_2+\cdots)x_1x_2 % [sic]
+\]
+\[
+\quad + (a_2a_1{}^2b_2{}^3-2a_1a_2{}^2b_1b_2{}^2+a_1{}^2a_2b_1{}^2b_2)x_2{}^2
+\]
+durch die nichtsymbolischen Co\"efficienten ersetzt.
+
+Man erhält:
+\[
+\tfrac{1}{2}\Pi = (a_0a_2-a_1{}^2)x_1{}^2+(a_0a_3-a_1a_2)x_1x_2+(a_1a_3-a_2{}^2)x_2{}^2\,.
+\]
+Für die biquadratische Form
+\[
+f = a_x{}^4 = b_x{}^4 = \text{etc.} =
+a_0x^4+4a_1x_1{}^3x_2+6a_2x_1{}^2x_2{}^2+4a_3x_1x_2{}^3+a_4 % [sic]
+\]
+existirt eine Invariante $(ab)^4$. Ihre nichtsymbolische Gestalt
+geht aus der binomischen Entwicklung
+\[
+\Pi_1 = (a_1b_2-b_1a_2)^4 = a_1{}^4b_2{}^4-4a_1{}^3a_2b_1b_2{}^3
+\]
+\[
+\quad + 6a_1{}^2a_2{}^2b_1{}^2b_2{}^2-4a_1a_2{}^3b_1{}^3b_2+a_2b_1{}^4
+\]
+hervor, wenn man wieder die symbolischen Co\"efficienten durch
+die wirklichen ersetzt. Man erhält:
+\[
+\Pi = a_0a_4-4a_1a_3+6a_2{}^2-4a_3a_1+a_4a_0,
+\]
+oder
+\[
+\Pi = (ab)^4 = 2(a_0a_4-4a_1a_3+3a_2{}^2)\,.
+\]
+
+8. \textit{Eigenschaften der In- und Covarianten, die aus dem
+symbolischen Producte direct erkennbar sind.} Aus den bisherigen
+Entwicklungen ist klar, dass alle symbolischen Producte, wenn sie
+nur die Symbole in der geeigneten Anzahl enthalten, Invarianten
+oder Covarianten von binären Formen repräsentiren. Daraus geht
+hervor, dass diese In- und Covarianten, soweit sie sich durch
+solche Producte darstellen lassen, \gesperrt{ganze und rationale Functionen
+der Co\"efficienten der ursprünglichen Formen sind.} Sie sind
+überdies \gesperrt{homogen in den Variabeln}
+%CONT>>
+
+
+% ===== pdf idx 23, printed 9.0 =====
+% !PRINTED 9
+\weberpage{9}
+wie in den Co\"efficienten; den Grad in den Variabeln erkennt man aus
+der Anzahl der Factoren erster Art, den Grad in den Co\"efficienten
+aus der Anzahl der verschiedenen Symbole, welche in dem Producte
+auftreten. Da die Factoren erster Art bei Transformation in sich
+selbst übergehen, so ist der Exponent des Moduls $\Delta$, den die
+Covariante nach der Transformation als Factor erhält, gleich der Zahl
+der Klammerfactoren überhaupt.
+
+Nun lehrt die Definitionsgleichung für Invarianten $I = \Delta^\varrho \cdot i$
+auch, dass die Invariante isobar ist vom Gewichte $\varrho$, wie wir in
+Nr. 5 gesehen haben. Da aber der Modulexponent gleich der Zahl der
+Klammerfactoren ist, so giebt sonach diese Zahl stets auch das Gewicht
+der Invariante an, während das Gewicht der Covariante sich
+zusammensetzt aus der Zahl $\varrho$ der Klammerfactoren plus dem Grade
+$m$ der Covariante in den Variabeln $x$. Ist $\varrho$ eine gerade Zahl, so
+nennen wir die betreffende Form auch eine \gesperrt{Form geraden
+Charakters} (\textit{forme droite}); so die in Nr. 7 berechnete
+Invariante $(ab)^4$ und die Covariante $(ab)^2 a_x b_x$. Ist dagegen
+$\varrho$ ungerade, so heissen wir die Form eine \gesperrt{Form ungeraden
+Charakters} (\textit{forme gauche}) oder auch schiefe Invariante,
+resp. Covariante; so die in Nr. 7 berechnete simultane Invariante
+$(ab)(bc)(ac)$. Wir werden später sehen: Die Quadrate von schiefen
+Formen lassen sich durch Formen geraden Charakters darstellen.
+
+Ein symbolisches Product $\Pi$ kann indessen auch, wenn die
+symbolischen Co\"efficienten durch die wirklichen ersetzt werden, auf
+einen Ausdruck führen, der identisch verschwindet. Dies tritt unter
+anderm immer dann ein, sobald es bei Vertauschung zweier
+gleichwerthiger Symbole nur sein Zeichen ändert. Denn durch
+Vertauschung zweier Symbole, welche dieselbe Form darstellen, kann
+sich die wirkliche Covariante $C$ nicht ändern, da es ja gleichgiltig
+ist, ob ich beispielsweise $\overline{a_3}\cdot\overline{a_5}$ durch
+$a_1^{n-3}a_2^3 \cdot b_1^{n-5}b_2^5$ oder durch
+$b_1^{n-3}b_2^3 \cdot a_1^{n-5}a_2^5$ repräsentire. Nun ist also vor
+der Vertauschung
+\[
+C = \Pi,
+\]
+nach derselben
+\[
+C = -\Pi,
+\]
+demnach:
+\[
+2C = 0, \quad \text{also} \quad C = 0.
+\]
+
+So ist z.\,B. für die quadratische Form $f = a_x^2 = b_x^2$ die
+Covariante $(ab) a_x b_x$ identisch Null; so verschwindet für die
+cubische Form $\varphi = a_x^3 = b_x^3$ die Invariante $(ab)^3$. Der
+Umstand, dass die Co- und Invarianten ganze rationale und homogene
+Functionen in den Co\"efficienten einer Form $f = a_x^n$ sind, lehrt
+uns auch, dass sie symmetrische Functionen der Wurzeln $a_i$ von
+$f = 0$ sein müssen. Bezeichnen wir mit $\alpha_{ix}$ die
+%CONT>>
+
+
+% ===== pdf idx 24, printed 10.0 =====
+% !PRINTED 10
+\weberpage{10}
+%<<CONT
+$n$ linearen Factoren von $f = 0$, so können wir auch sagen: Jede
+Covariante oder Invariante von $f$ ist eine \gesperrt{simultane
+Covariante}*) oder Invariante der $n$ linearen Formen $\alpha_{ix}$,
+welche symmetrisch ist in den Symbolen $\alpha_i$, und umgekehrt:
+Jede simultane und in $\alpha_i$ symmetrische Covariante der $n$
+linearen Formen $\alpha_{ix}$ ist eine Covariante von
+\[
+f = \alpha_{1x} \,.\, \alpha_{2x} \,.\, \alpha_{3x} \dots \alpha_{nx} = a_x^n .
+\]
+
+Es tritt nun die Frage auf: Wie ist eine in symbolischen
+Co\"efficienten von $f = a_x^n = b_x^n = $ etc. gegebene Covariante
+darstellbar durch die Wurzeln von $f = 0$, und umgekehrt: wie kann man
+eine simultane symmetrische Covariante der $\alpha_{ix}$ zurückführen
+auf ein symbolisches Product in den Co\"efficienten von $f$. Wenn es
+nun auch nicht unser Zweck ist mit Wurzeln zu rechnen, so werden wir
+doch an geeigneter Stelle (vergl. Nr. 39 und Nr. 94) wenigstens eine
+allgemeine Methode zur Beantwortung beider Fragen geben.
+
+Den Beweis, dass jede Covariante oder Invariante sich überhaupt durch
+ein symbolisches Product, oder durch eine Summe solcher, darstellen
+lässt, werden wir später kennen lernen. (\S\,9). Ich werde indess bis
+dahin von diesem Satze auch keinen Gebrauch machen.
+
+9. \textit{Definition des Faltungsprocesses.} Aus einem symbolischen
+Producte
+\[
+P = (ab)^\mu (ac)^\nu (bc)^\varrho \, \dots\dots \, a_x^\sigma b_x^\tau c_x^\varkappa
+\]
+lassen sich eine Reihe anderer ableiten durch eine sehr einfache
+Operation. Man greift zwei Factoren erster Art mit verschiedenen
+Symbolen heraus, etwa $a_x$ und $b_x$ und setzt an ihre Stelle den
+Klammerfactor $(ab)$. Dieses Verfahren nennt \gesperrt{Gordan}
+\gesperrt{falten}, und den Process selbst \glqq Faltungsprocess\grqq{}.
+Man kann auch umgekehrt das Product \gesperrt{entfalten}, indem man
+einen Klammerfactor $(ab)$ in $P$ durch $a_x b_x$ ersetzt. Der
+Faltungsprocess ist ein rein symbolischer Process. Es kann ihm keine
+Bedeutung unterlegt werden, die durch eine wirklich rechnerische
+Operation ihren Ausdruck findet. Die Faltung kann gleichzeitig mehr
+als einmal vorgenommen werden, nämlich gerade so oft, als sich
+verschiedene Factorenpaare erster Art im Producte gleichzeitig
+gruppiren lassen.
+
+Ich will hier durch Faltung einige In- und Covarianten der cubischen
+Form herleiten. Es sei
+\[
+f = a_x^3 = b_x^3 = c_x^3 = d_x^3 = \text{etc.}
+\]
+
+\medskip
+\noindent *) Vgl. auch Nr.\,39 und Nr.\,94.
+
+
+% ===== pdf idx 25, printed 11.0 =====
+% !PRINTED 11
+\weberpage{11}
+1) Durch zweimalige Faltung des Productes
+\[
+\Pi = a_x^3 \,.\, b_x^3
+\]
+erhält man die Covariante
+\[
+\Delta = (ab)^2 a_x b_x \,.
+\]
+Die Formen $(ab) a_x^2 b_x^2$, $(ab)^3$, welche durch einmalige bezw.
+dreimalige Faltung daraus erhalten werden, sind identisch null nach
+den Bemerkungen am Schlusse von Nr. 8.
+
+2) Aus dem Producte
+\[
+\Delta^2 = (ab)^2 a_x b_x \,.\, (cd)^2 c_x d_x
+\]
+erhält man durch zweimalige Faltung entweder:
+\[
+R = (ab)^2 (cd)^2 (ac) (bd)
+\]
+oder:
+\[
+R_1 = (ab)^2 (cd)^2 (bc) (ad) .
+\]
+Beide Producte stellen offenbar dieselbe Invariante dar; denn das
+zweite geht aus dem ersten durch die berechtigte Vertauschung von $b$
+mit $a$ hervor.
+
+3) Aus dem Producte
+\[
+\Delta \,.\, f = (ab)^2 a_x b_x \,.\, c_x^3
+\]
+erhält man durch einmalige Faltung entweder
+\[
+Q = (ab)^2 (ac) b_x c_x^2
+\]
+oder:
+\[
+Q_1 = (ab)^2 (bc) a_x c_x^2 ,
+\]
+und auch hier ist wieder $Q_1 = Q$, wie man erkennt, wenn $a$ mit $b$
+vertauscht wird.
+
+10. \textit{Zusammenhang der durch Faltung entstehenden Producte.}
+Für alle späteren Untersuchungen, insbesondere für die
+Systembildung, ist der Faltungsprocess von einschneidender Bedeutung
+geworden. (Vergl. auch \gesperrt{Camille Jordan}, Liouville Journ.
+sér. 3, Bd. 2 und 5.) Alle durch ihn aus einem Producte $A$ — wir
+wollen es \gesperrt{Stammproduct} nennen — hervorgehenden neuen
+Producte haben symbolisch wenigstens einen engen Zusammenhang. Sie
+haben von vornherein einen gemeinsamen symbolischen Factor, nämlich
+die Klammerfactoren, welche bereits das Stammproduct besass und auf
+welche ja der Faltungsprocess keinen Einfluss hat. Diese
+Klammerfactoren werden unter Umständen von Wichtigkeit, insofern sie
+eine ganze Gruppe von symbolischen Producten charakterisiren können,
+die aus gewissen Betrachtungen ausgeschlossen werden dürfen. (Vergl.
+auch \glqq Reducenten\grqq{} Nr. 123.)
+
+
+% ===== pdf idx 26, printed 12.0 =====
+% !PRINTED 12
+\weberpage{12}
+Eine bestimmte Zahl von Faltungen kann natürlich, wie schon an den
+letzten Beispielen Nr. 9 ersichtlich war, an einem Producte auf
+verschiedene Arten vorgenommen werden. Sind insbesondere $A_1$ und
+$A_2$ zwei solche durch $\mu$ Faltungen aus $A$ entstandene Producte,
+dass $A_1$ durch einmalige in zwei Symbolfactoren vorgenommene
+Vertauschung gleichberechtigter Symbole $a$ und $b$, oder $a$ und $c$,
+$b$ und $c$ etc. in $A_2$ übergeht, so heissen $A_1$ und $A_2$
+\gesperrt{benachbarte symbolische Producte}. So sind:
+\[
+\begin{aligned}
+A_1 &= (ac)\, b_x \,.\, Q \\
+A_2 &= (ab)\, c_x \,.\, Q
+\end{aligned}
+\]
+einestheils, und
+\[
+\begin{aligned}
+A_1 &= (ad)\, (bc) \,.\, Q \\
+A_2 &= (cd)\, (ba) \,.\, Q
+\end{aligned}
+\]
+anderntheils \gesperrt{Nachbarproducte}, wobei mit $Q$ die den
+Producten $A_1$ und $A_2$ gemeinschaftlichen Factoren bezeichnet sein
+mögen. Es ist klar, dass alle durch $\mu$-malige Faltung aus $A$
+entstehenden symbolischen Producte sich stets so ordnen lassen, dass
+immer das vorausgehende mit dem nachfolgenden benachbart ist. Hat man
+eine Reihe symbolischer Producte
+\[
+A_1, \ A_2, \ A_3 \dots A_m ,
+\]
+welche alle homogen in den Co\"efficienten der nämlichen Formen $f$,
+$\varphi$, $\psi \dots$, also auch deren Symbolen $a$, $b$, $c \dots$,
+$\alpha$, $\beta$, $\gamma \dots$ und homogen in den Variabeln $x_1$,
+$x_2$ sind, so kann man sie stets aus ein und demselben Stammproduct
+durch $\mu$-malige Faltung entstanden denken, und demnach ist es immer
+möglich, wenn sie nicht benachbart sein sollten, zwischen je zwei
+$A_i$ und $A_k$ eine Reihe von Producten
+\[
+M_1 M_2 \dots M_r; \ N_1, N_2 \dots N_s; \ \dots.
+\]
+einzuschalten, so dass $A_1$ mit $A_m$ durch eine Kette von
+Nachbargliedern zusammenhängt. Dies wird bei manchen grundlegenden
+Untersuchungen von Wichtigkeit und ich werde daher die ebengemachten
+Bemerkungen am Schlusse dieses \S{} durch ein Beispiel erläutern.
+
+11. \textit{Der Identitäts- und Productsatz.} Sehr häufig erwächst die
+Aufgabe, symbolische Producte, die durch Faltung aus einem
+Stammproduct entstehen, in andere umzuformen. Hierzu wird unter andern
+Hilfsmitteln in sehr fruchtbringender Weise die Identität
+\weq{I}{a_x(bc) + b_x(ca) + c_x(ab) = 0\text{*)}}
+
+\medskip
+\noindent *) Die Richtigkeit dieser Identität haben wir in Bd.\,I
+Nr.\,34 gezeigt; man kann sie übrigens leicht verificiren, wenn man in
+der Determinante
+\[
+\begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_x & b_x & c_x \end{vmatrix} ,
+\]
+die mit $x_1$ multiplicirt gedachte erste und die mit $x_2$ multiplicirt gedachte zweite Zeile von der dritten subtrahirt.% the footnote ends at the foot of p. 13 in the print; checked against the GDZ scan (27 Oct 2026): bottom row a_x, b_x, c_x; b_x and c_x are printed from broken type (faint c, broken x)
+%CONT>>
+
+
+% ===== pdf idx 27, printed 13.0 =====
+% !PRINTED 13
+\weberpage{13}
+%<<CONT
+verwendet, welche wir auch, indem wir $x_1$ durch $d_2$ und $x_2$ durch
+$-d_1$ ersetzen, in der Form schreiben können
+
+\weq{II}{(ad)(bc) + (bd)(ca) + (cd)(ab) = 0,}
+
+oder auch, wenn wir in (I) % checked against the GDZ scan (27 Oct 2026): no footnote mark after (I); the two footnote lines at the foot of this page continue the footnote *) of p. 12 and are given with that footnote
+% (the end of the footnote of p. 12, printed at the foot of this page, is given with that footnote)
+für $c_1$ schreiben $y_2$, für $c_2$ dagegen $-y_1$,
+in der Form
+
+\weq{III}{a_xb_y - b_xa_y = (ab)(xy).}
+
+Mit Hilfe dieser dritten Form des Identitätssatzes können wir z. B.
+direct zeigen, dass sich ein symbolisches Product, welches nicht identisch
+verschwindet, und dessen zumeist auftretender Klammerfactor mit
+gleichberechtigten Symbolen in ungerader Potenz vorhanden ist, immer
+in andere verwandeln lässt, die diesen Klammerfactor in gerader Potenz
+besitzen. Denn nehmen wir an, die im Producte $P$ zu höchst vorkommende
+Potenz eines Klammerfactors sei $(ab)^{2\mu+1}$, dann hat $P$ die Form
+
+\[ P = (ab)^{2\mu+1}\cdot Q \]
+
+und $Q$ enthält im Allgemeinen die Symbole $a$ und $b$ --- mindestens
+einmal, wenn $P\gtrless 0$ --- noch in beliebigen andern Verbindungen,
+die wir, wenn $\xi, \eta, \zeta, \tau \ldots$ beliebige Grössen, mit
+$a_\xi, b_\eta, a_\zeta, b_\tau \ldots$ etc. bezeichnen können. Es ist dann
+
+\[ P = (ab)^{2\mu+1} a_\xi b_\eta a_\zeta b_\tau \ldots \times \overline{Q}, \]
+
+wo nun $\overline{Q}$ weder ein Symbol $a$ noch ein Symbol $b$ enthält.
+Für jedes Factorenpaar $a_\xi b_\eta, a_\zeta b_\tau \ldots$ können wir
+schreiben:
+
+\[ \tfrac{1}{2}\{(a_\xi b_\eta + b_\xi a_\eta) + (a_\xi b_\eta - b_\xi a_\eta)\}, \ldots \]
+
+oder nach (III):
+
+\[ \tfrac{1}{2} (a_\xi b_\eta + b_\xi a_\eta) + \tfrac{1}{2} (ab)(\xi\eta), \text{ etc.,} \]
+
+so dass, wenn $\varrho$ solche Factorenpaare vorhanden sind, $P$ übergeht in
+
+\[
+P = \frac{(ab)^{2\mu+1}}{2^\varrho}\{a_\xi b_\eta + b_\xi a_\eta\}\cdot
+\{a_\zeta b_\tau + b_\zeta a_\tau\}\ldots \times \overline{Q}
++ \frac{(ab)^{2\mu+1}}{2^\varrho}\sum \overline{Q}_i.
+\]
+
+Der erste Term rechts ist Null, da er durch Vertauschung von $a$ mit
+$b$ nur sein Zeichen ändert. Jedes Glied $\overline{Q}_i$ in der Summe des zweiten
+%CONT>>
+
+
+% ===== pdf idx 28, printed 14.0 =====
+% !PRINTED 14
+\weberpage{14}
+%<<CONT
+Termes enthält aber mindestens \gesperrt{Einen} Factor $(ab)$, und es wird
+sonach in der That:
+
+\[ P = \frac{1}{2^\varrho}\cdot (ab)^{2\mu+2}\sum \overline{\overline{Q}}_i. \]
+
+Wir werden jede der drei obigen Relationen (I), (II), (III) stets
+kurz als \glqq Identitätssatz\grqq{} bezeichnen. Aus der ersten von ihnen
+leiten wir eine weitere ebenfalls häufig zu benutzende Identität ab,
+indem wir $c_x (ab)$ auf die rechte Seite schaffen und dann quadriren.
+Es kommt nach einer einfachen Umstellung:
+
+\weq{IV}{a_xb_x(ac)(bc) = \tfrac{1}{2}\{(bc)^2a_x^2 + (ac)^2b_x^2 - (ab)^2c_x^2\}}
+
+oder für $x_1 = -d_2$, $x_2 = d_1$
+
+\weq{V}{(ad)(bd)(ac)(bc) = \tfrac{1}{2}\{(bc)^2(ad)^2 + (ac)^2(bd)^2 - (ab)^2(cd)^2\}.}
+
+Diese beiden Identitäten belegen wir mit dem Namen \glqq Productsatz\grqq{}.
+
+12. \textit{Ein Beispiel symbolischer Rechnung.} Ich will die allgemeinen
+Betrachtungen dieses § über Symbolik schliessen, indem ich an einem
+Beispiel einen Theil der bisher entwickelten Begriffe zusammenfassend
+erläutere. Wir stellen uns nämlich die Aufgabe, irgend eine Relation
+zwischen symbolischen Producten $A_i$, also eine ganze rationale Function
+
+\[ F(A_i) = 0, \]
+
+welche homogen in den Coëfficienten und Variabeln ist, und deren
+einzelne Glieder $G_i$ weder identisch verschwinden noch sich gegenseitig
+aufheben, so umzuformen, dass sie die Gestalt
+
+\weq{VI}{F(A_i) = \sum_1^\lambda \{(bc)a_x + (ca)b_x + (ab)c_x\}\varphi_\lambda = 0}
+
+annimmt, aus welcher das identische Verschwinden der Function $F(A_i)$
+direct ersichtlich ist. Die Möglichkeit dieser Umformung liegt in der
+Beziehung, welche vermöge des Identitätssatzes zwischen zwei Nachbargliedern
+der Function $F(A_i)$ besteht\footnote{Einen strengen Beweis der Relation (VI) wollen wir später bringen. (\S~10.)}. Sind nämlich $G_\lambda$ und $G_\mu$
+zwei Nachbarglieder
+
+\[
+\begin{aligned}
+G_\lambda &{}= (ac)b_x\cdot Q &&\text{oder} &&{}= (ad)(bc)Q\\
+G_\mu &{}= (ab)c_x\cdot Q &&\text{oder} &&{}= (cd)(ba)Q,
+\end{aligned}
+\]
+
+so ist ihre Differenz unter Anwendung des Identitätssatzes durch
+
+\weq{1}{
+\begin{aligned}
+G_\mu - G_\lambda &{}= \{(ab)c_x + (bc)a_x + (ca)b_x\}Q - a_x(bc)\cdot Q\\
+\text{resp.}\quad G_\mu - G_\lambda &{}= \{(ad)(bc) + (bd)(ca) + (cd)(ab)\}Q - (ca)(bd)Q
+\end{aligned}
+}
+%CONT>>
+
+
+% ===== pdf idx 29, printed 15.0 =====
+% !PRINTED 15
+\weberpage{15}
+%<<CONT
+darstellbar, wobei $Q$ immer die gemeinschaftlichen Symbolfactoren von
+$G_\mu$ und $G_\lambda$ bedeutet.
+
+Sind aber $G_\varkappa$ und $G_\varrho$ keine benachbarten Glieder, so können wir
+gleichwohl noch ihre Differenz in der Form darstellen
+
+\weq{2}{
+\begin{aligned}
+G_\varkappa - G_\varrho &{}= \sum_1^\lambda \{(bc)a_x + b_x(ca) + (ab)c_x\}Q_\lambda + \sum_1^\lambda r_x(pq)\cdot Q_\lambda\\
+&{}+ \sum_1^\lambda \{(ad)(bc)+(bd)(ca)+(cd)(ab)\}Q'_\lambda+\sum_1^\lambda (rs)(pq)\cdot Q'_\lambda
+\end{aligned}
+}
+
+wobei $p, q, r, s$ für irgend welche Combination der Symbole $a, b, c, d$
+stehen. Denn wegen der vorausgesetzten Homogeneität in Coëfficienten
+und Variabeln, können wir zwischen $G_\varkappa$ und $G_\varrho$ eine Reihe von
+Gliedern
+
+\[ M_1, \ M_2, \ M_3 \ldots M_s \]
+
+einschalten, so dass in der Reihe
+
+\[ G_\varkappa \ M_1 \ M_2 \ M_3 \ldots G_\varrho \]
+
+jedes vorausgehende mit dem nachfolgenden Gliede benachbart ist.
+Dann ist aber
+
+\[ G_\varkappa - G_\varrho = (G_\varkappa - M_1) + (M_1 - M_2) + (M_2 - M_3) + \ldots (M_s - G_\varrho) \]
+
+und für jede Differenz rechts lässt sich nun aus Formel (1) ein Werth
+einführen, wodurch wir zu Formel (2) gelangen.
+
+In welcher Weise nun diese beiden Identitäten (1) und (2) verwendet
+werden, um irgend eine Relation $F(A_i) = 0$ in die Form
+
+\[ \sum \{(bc)a_x + (ca)b_x + (ab)c_x\}\varphi_\lambda = 0 \]
+
+zu bringen, will ich an folgendem Beispiel zeigen. In der allgemeinen
+Darstellung § 10 werde ich darauf zurückkommen.
+
+Es seien $f = a_x^3 = b_x^3$ und $\varphi = \alpha_x^3 = \beta_x^3$ zwei cubische Formen,
+dann besteht zwischen den beiden simultanen Covarianten
+
+\[
+\begin{aligned}
+G_1 &{}= (\alpha\beta)^2 (ab)(a\alpha)(a\beta)b_x^2\\
+G_2 &{}= (ab)^2 (\alpha\beta)(\alpha a)(\alpha b)\beta_x^2
+\end{aligned}
+\]
+
+die Relation
+
+\[ F(G_i) = G_1 + G_2 = 0. \quad \text{(Vergl. auch Nr. 312, 5.)} \]
+
+Es handelt sich nun darum, $F(G_i)$ durch eine Summe darzustellen, deren
+einzelne Summanden Differenzen von Nachbargliedern sind. Zu dem
+Zwecke genügt ist hier in $G_1$: $a$ mit $b$, in $G_2$: $\alpha$ mit $\beta$ zu vertauschen.
+Die Summe der so entstehenden zwei Glieder, die wir mit
+%CONT>>
+
+
+% ===== pdf idx 30, printed 16.0 =====
+% !PRINTED 16
+\weberpage{16}
+%<<CONT
+\[
+\begin{aligned}
+-G_1' &{}= (\alpha\beta)^2 (ba)(b\alpha)(b\beta)a_x^2\\
+-G_2' &{}= (ab)^2 (\beta\alpha)(\beta a)(\beta b)a_x^2
+\end{aligned}
+\]
+
+bezeichnen wollen, ist dann wiederum gleich $F(G_i)$ und demnach:
+
+\weq{3}{2F(G_i) = G_1 - G_1' + G_2 - G_2'.}
+
+Nun sind aber anderntheils die symbolischen Producte
+
+\[
+\begin{aligned}
+M_1 &{}= (\alpha\beta)^2 (ab)(a\alpha)(b\beta)a_xb_x\\
+M_2 &{}= (ab)^2 (\alpha\beta)(\alpha a)(\beta b)\alpha_x\beta_x
+\end{aligned}
+\]
+
+zu $G_1$ und $+G_1'$, resp. $G_2$ und $+G_2'$ benachbart; wenn wir daher
+Gleichung (3) in die Form
+
+\weq{4}{2F(G_i) = (G_1 - M_1) + (M_1 - G_1') + (G_2 - M_2) + (M_2 - G_2')}
+
+bringen, so sind die einzelnen Differenzen rechts Differenzen von
+Nachbargliedern.
+
+Unter Benutzung der Gleichung (1) geht demnach die Relation (4)
+über in:
+
+\[
+\begin{aligned}
+2F(G_i) &{}= \{(b\beta)a_x + (\beta a)b_x + (ab)\beta_x\}(\alpha\beta)^2(ab)(a\alpha)b_x\\
+&{}\quad - (\alpha\beta)^2(ab)^2(a\alpha)b_x\beta_x\\
+&{}\quad + \{(b\alpha)a_x + (\alpha a)b_x + (ab)\alpha_x\}(\alpha\beta)^2(ab)(b\beta)a_x\\
+&{}\quad - (\alpha\beta)^2(ab)^2(b\beta)a_x\alpha_x\\
+&{}\quad - \{(b\beta)\alpha_x + (\beta\alpha)b_x + (\alpha b)\beta_x\}(ab)^2(\alpha\beta)(\alpha a)\beta_x
+% checked against the GDZ scan (27 Oct 2026): ordinary beta_x; the heavy look is an ink blot on the stem of the beta
+\\
+&{}\quad + (\alpha\beta)^2(ab)^2(a\alpha)b_x\beta_x\\
+&{}\quad - \{(a\beta)\alpha_x + (\beta\alpha)a_x + (\alpha a)\beta_x\}(ab)^2(\alpha\beta)(\beta b)\alpha_x\\
+&{}\quad + (\alpha\beta)^2(ab)^2(b\beta)a_x\alpha_x.
+\end{aligned}
+\]
+
+Die letzten Terme der vier Zeilen heben sich gegenseitig auf; die
+ersten Terme aber sind paarweise gleich, indem der erste Term der
+zweiten Zeile durch Vertauschung der gleichberechtigten Symbole $\alpha$
+und $\beta$ und der erste Term der dritten aus dem ersten der vierten
+Zeile durch Vertauschung von $a$ mit $b$ hervorgeht. Also ist in der
+That
+
+\[
+\begin{aligned}
+F(G_i) &{}= \{(b\beta)a_x + (\beta a)b_x + (ab)\beta_x\}(\alpha\beta)^2(ab)(a\alpha)b_x\\
+&{}\quad - \{(b\beta)\alpha_x + (\beta\alpha)b_x + (\alpha b)\beta_x\}(ab)^2(\alpha\beta)(\alpha a)\beta_x = 0
+\end{aligned}
+\]
+
+oder
+
+\weq{I}{F(G_i) = \sum \{(rs)p_x + (sp)r_x + (pr)s_x\}\varphi_\lambda = 0.}
+
+In ähnlicher Weise kann man jede Relation in die Form (I) bringen.
+(Siehe Evectantenprocess).
+
+
+% ===== pdf idx 31, printed 17.0 =====
+% !PRINTED 17
+\weberpage{17}
+
+\begin{center}
+\S~2. \textbf{Process der Polarenbildung.}
+\end{center}
+
+13. \textit{Definition der Polare einfacher Formen.} An der binären Form $f=a_x^n$ können wir folgende symbolische Operation vornehmen. Wir sondern $\mu$ Factoren $a_x$ von $a_x^n$ ab und ersetzen sie durch gleich viel Factoren $a_y$. Die so entstehende Form
+\weq{1}{f_{y^\mu} = a_x^{n-\mu}a_y^\mu}
+nennen wir $\mu^{\text{te}}$ Polare der Form $a_x^n$, und den eben geschilderten einfachen Process: Polarenprocess. Man erkennt, dass jede Form $n^{\text{ten}}$ Grades $n+1$ Polaren besitzt, indem wir der Zahl $\mu$ alle Werthe von 0 bis $n$ beilegen. Eine höhere Polare von $f$ als die $n^{\text{te}}$ ist stets identisch null. Die $(n-\mu)^{\text{te}}$ Polare ist:
+\weq{2}{f_{y^{n-\mu}} = a_x^\mu a_y^{n-\mu}\,.}
+Man sieht, dass beide Polaren (1) und (2) durch Vertauschung von $x$ mit $y$ aus einander hervorgehen. Diese Thatsache, dass alle Polaren, deren Grad $>\dfrac{n}{2}$ ist, aus den vorhergehenden durch Vertauschung von $x$ mit $y$ erhalten werden, wird später bei Berechnung von Polaren complicirter Formen von Wichtigkeit.
+
+Ich will diesen sehr einfachen Process im Interesse späterer Betrachtungen etwas umständlicher formuliren. Um $f_{y^\mu}$ zu bilden, kann man sich nämlich die $n$ Factoren $a_x$ von $f$ momentan durch $n$ lineare Factoren
+\[ r_{1x},\ r_{2x},\ r_{3x}\ldots r_{nx} \]
+ersetzt denken. Das entstehende Product wird nun $\mu$ mal polarisirt, indem man in allen Combinationen je $\mu$ Factoren $r_{kx}$ durch die $\mu!$ Permutationen gleichviel entsprechender Factoren $r_{ky}$ ersetzt. Dadurch entstehen $\binom{n}{\mu}\mu! = n(n-1)(n-2)\ldots(n-\mu+1)$ Glieder, nämlich gerade so viel, als die Anzahl aller Variationen von $n$ Elementen zur $k^{\text{ten}}$ Klasse beträgt. Bildet man deren Summe, dividirt dieselbe durch diese Anzahl, und ersetzt hierauf wieder alle Symbole $r_k$ durch $a$, so entsteht gerade wieder das Product $a_x^{n-\mu}a_\mu^y$. Es ist also: % [sic] print a_mu^y (y raised, mu lowered) for a_y^mu
+\[
+\begin{aligned}
+f_{y^{n-\mu}} &= a_x^{n-\mu}a_y^\mu\\
+&= \binom{n}{\mu}\mu!\sum r_{i_1y}r_{i_2y}\ldots r_{i_\mu y}\cdot\frac{f}{r_{i_1x}r_{i_2x}\ldots r_{i_\mu x}}\,.
+\end{aligned}
+\]
+% checked against the GDZ scan (27 Oct 2026): the coefficient is printed \binom{n}{\mu}\mu! without a fraction; the 1 above it, the arc under the 1 and an ink dot with a loop before the sum sign are handwritten (a reader's correction to 1/(\binom{n}{\mu}\mu!))
+
+Der Polarenprocess ist nun aber nicht, wie der Faltungsprocess rein symbolischer Natur, vielmehr lässt er sich in mehrfacher Weise
+%CONT>>
+
+
+% ===== pdf idx 32, printed 18.0 =====
+% !PRINTED 18
+\weberpage{18}
+
+%<<CONT
+durch rechnerische Operationen ersetzen, die wir im Folgenden kennen lernen wollen.
+
+14. \textit{Differentiationsmethode.} Bilden wir von $f=a_x^n$ die beiden ersten Differentialquotienten nach $x_1$ und $x_2$, so erhalten wir:
+\weq{1}{\frac{\partial f}{\partial x_1} = na_1a_x^{n-1} = nf_1}
+\weq{2}{\frac{\partial f}{\partial x_2} = na_2a_x^{n-1} = nf_2\,.}
+Multiplicirt man die erste der beiden Gleichungen mit $y_1$, die zweite mit $y_2$ und addirt die entstehenden Producte, so kommt:
+\[ y_1f_1+y_2f_2 = (a_1y_1+a_2y_2)a_x^{n-1} = a_ya_x^{n-1} = f_y\,. \]
+Die erste Polare von $f=a_x^n$ ist also auch durch die Gleichung definirt:
+\weq{3}{f_y = y_1f_1+y_2f_2 = \frac{1}{n}\left(y_1\frac{\partial f}{\partial x_1}+y_2\frac{\partial f}{\partial x_2}\right).}
+Bilden wir ebenso die zweiten Differentialquotienten
+\weq{4}{\frac{\partial^2 f}{\partial x_1^2} = n(n-1)a_1^2a_x^{n-2} = n(n-1)f_{11}}
+\weq{5}{\frac{\partial^2 f}{\partial x_1\partial x_2} = n(n-1)a_1a_2a_x^{n-2} = n(n-1)f_{12}}
+\weq{6}{\frac{\partial^2 f}{\partial x_2^2} = n(n-1)a_2^2a_x^{n-2} = n(n-1)f_{22}\,,}
+multipliciren sodann die erste Gleichung mit $y_1^2$, die zweite mit $2y_1y_2$, die dritte mit $y_2^2$ und addiren, so kommt:
+\[
+\begin{aligned}
+y_1^2f_{11}+2y_1y_2f_{12}+y_2^2f_{22} &= (a_1^2y_1^2+2a_1a_2y_1y_2+a_2^2y_2^2)a_x^{n-2}\\
+&= a_y^2a_x^{n-2} = f_{y^2}\,.
+\end{aligned}
+\]
+Die zweite Polare ist also durch die Gleichung definirt:
+\[ f_{y^2} = y_1^2f_{11}+2y_1y_2f_{12}+y_2^2f_{22} \]
+oder
+\weq{7}{f_{y^2} = \frac{1}{n(n-1)}\left\{y_1^2\frac{\partial^2 f}{\partial x_1^2}+2y_1y_2\frac{\partial^2 f}{\partial x_1\partial x_2}+y_2^2\frac{\partial^2 f}{\partial x_2^2}\right\}.}
+Fährt man auf diese Weise fort, so kommt man der Reihe nach zu allen Polaren. Die rechten Seiten dieser Gleichungen (3) und (7) sind aber nichts anderes als die totalen Differentiale von $f=a_x^n$, wobei nur die Incremente $dx_1$, $dx_2$ und durch $y_1$ resp. $y_2$ ersetzt sind. Daher der Satz:
+
+\glqq Die $\mu^{\text{te}}$ Polare $a_x^{n-\mu}a_y^\mu$ wird erhalten, indem man $a_x^n$ $\mu$ mal total differentiirt, die Incremente durch $y_1$ bezw. $y_2$ ersetzt und endlich mit
+%CONT>>
+
+
+% ===== pdf idx 33, printed 19.0 =====
+% !PRINTED 19
+\weberpage{19}
+
+%<<CONT
+$\dfrac{1}{n(n-1)\ldots(n-\mu+1)}$ multiplicirt\grqq{}; also in leicht verständlicher Form:
+\weq{8}{f_{y^k} = \frac{(m-k)!}{k!}\left\{\frac{\partial f}{\partial x_1}y_1+\frac{\partial f}{\partial x_2}y_2\right\}^k.} % [sic] numerator printed with $m$ rather than $n$
+Durch diese Methode bestätigt man leicht folgende Sätze:
+
+1) Die Polare einer Summe von Formen ist gleich der Summe der Polaren dieser Formen, also
+\[ \left\{\sum f^{(i)}\right\}_{y^k} = \sum f^{(i)}{}_{y^k}\,. \]
+
+2) Die Polare eines Productes von zwei Factoren, deren einer eine Constante $c$ ist, ist gleich dem Producte dieser Constanten in die Polare des andern Factors, also
+\[ \{c\cdot f\}_{y^k} = c\cdot f_{y^k}\,. \]
+
+3) Die $\nu^{\text{te}}$ Polare einer Form $n^{\text{ten}}$ Grades ist identisch Null, wenn
+%CONT>>
+
+$\nu>n$.
+
+Es ist gleichgiltig, ob man das $\nu^{\text{te}}$ totale Differential nach $x$ von der $\mu^{\text{ten}}$ Polare, oder das $\mu+\nu^{\text{te}}$ totale Differential der nullten Polare, also der Form $f$ selbst bildet, ferner ob man die Originalform $k$ mal total nach $x$ differentiirt und die Incremente durch $y$ ersetzt oder die $(\varrho+k)^{\text{te}}$ Polare von $f$ $\varrho$ mal nach $y$ differentiirt und an Stelle der Incremente wieder die Variable $x$ einführt. Man bestätigt dies leicht durch Rechnung und überzeugt sich so von der Richtigkeit des Satzes:
+
+4) \gesperrt{Polaren von Polaren sind selbst wieder Polaren der Originalform.}
+
+15. \textit{Beispiel.} Wir bilden die erste Polare der quadratischen Form
+\[ f = a_x^2 = \overline{a_0}x_1^2+2\overline{a_1}x_1x_2+\overline{a_2}x_2^2 \]
+zuerst nach der ursprünglichen symbolischen Methode, sodann nach der Differentiationsmethode und erhalten:
+\[
+\begin{aligned}
+f_y = a_xa_y &= (a_1x_1+a_2x_2)(a_1y_1+a_2y_2)\\
+&= (a_1^2x_1+a_1a_2x_2)y_1+(a_1a_2x_1+a_2^2x_2)y_2\\
+&= (\overline{a_0}x_1+\overline{a_1}x_2)y_1+(\overline{a_1}x_1+\overline{a_2}x_2)y_2\,.
+\end{aligned}
+\]
+Ebenso findet man
+\[
+f_y = \frac{1}{2}\left(y_1\frac{\partial f}{\partial x_2}+y_2\frac{\partial f}{\partial x_2}\right) = \frac{1}{2}\left\{y_1(2\overline{a_0}x_1+2\overline{a_1}x_2)+y_2(2\overline{a_1}x_1+2\overline{a_2}x_2)\right\}
+\]
+% [sic] both partial derivatives in this line are printed with $\partial x_2$ in the denominator; expected $\partial x_1$ for the first term
+\[ = (\overline{a_0}x_1+\overline{a_1}x_2)y_1+(\overline{a_1}x_1+\overline{a_2}x_2)y_2\,. \]
+
+16. \textit{Methode der binomischen Entwicklung.} Die zweite rechnerische Operation, welche auf Polaren führt, stützt sich auf den binomischen Lehrsatz. Ersetzt man nämlich in dem Symbol $a_x$ die Variable
+\[
+\begin{aligned}
+x_1 &\ \text{durch}\ x_1+\lambda y_1\\
+x_2 &\ \text{durch}\ x_2+\lambda y_2\,,
+\end{aligned}
+\]
+%CONT>>
+
+
+% ===== pdf idx 34, printed 20.0 =====
+% !PRINTED 20
+\weberpage{20}
+
+%<<CONT
+so geht dieser lineare Factor über in: $a_x+\lambda a_y$ und sonach $a_x^n$ in:
+\[ (a_x+\lambda a_y)^n = a_x^n+\binom{n}{1}\lambda a_x^{n-1}a_y+\binom{n}{2}\lambda^2a_x^{n-2}a_y^2+\cdots+a_y^n = f(x+\lambda y)\,. \]
+Hieraus erkennt man:
+
+\glqq Die $\mu^{\text{te}}$ Polare von $a_x^n$ wird erhalten, wenn man in der binomischen Entwicklung von $(a_x+\lambda a_y)^n$ den Coefficienten von $\lambda^\mu$ nimmt, und denselben durch $\binom{n}{\mu}$ dividirt.\grqq{}
+
+\textit{Beispiel.} Um die zweite Polare der Form $f=a_x^3$ zu erhalten, berechnen wir demnach in:
+\[
+\begin{aligned}
+f(x+\lambda y) &= \overline{a_0}(x_1+\lambda y_1)^3+3\overline{a_1}(x_1+\lambda y_1)^2(x_2+\lambda y_2)\\
+&\quad+3\overline{a_2}(x_1+\lambda y_1)(x_2+\lambda y_2)^2+\overline{a_3}(x_2+\lambda y_2)^3
+\end{aligned}
+\]
+das in $\lambda^2$ multiplicirte Glied. Wir erhalten
+\[
+\begin{aligned}
+\binom{3}{2}\lambda^2f_{y^2} &= 3\lambda^2\overline{a_0}x_1y_1^2+3\overline{a_1}\lambda^2y_1^2x_2+6\overline{a_1}\lambda^2x_1y_1y_2+6\overline{a_2}\lambda^2x_2y_2y_1\\
+&\quad+3\overline{a_2}\lambda^2x_1y_2^2+3\overline{a_3}x_2y_2^2\lambda^2\\
+&= 3\lambda^2\left\{(\overline{a_0}x_1+\overline{a_1}x_2)y_1^2+2y_1y_2(\overline{a_1}x_1+\overline{a_2}x_2)+y_2^2(\overline{a_2}x_1+\overline{a_3}x_2)\right\}\cdot
+\end{aligned}
+\]
+Dividiren wir diese Gleichung mit $\binom{3}{2}\lambda^2$, so folgt:
+\[ f_{y^2} = (\overline{a_0}x_1+\overline{a_1}x_2)y_1^2+2y_1y_2(\overline{a_1}x_1+\overline{a_2}x_2)+y_2^2(\overline{a_2}x_1+\overline{a_3}x_2)\,. \]
+
+17. \textit{Methode der Transformation.} Wir sahen bereits in Nr. 3, dass durch die Transformation
+\weq{I}{x_1 = \xi_1y_1+\eta_1y_2,\quad x_2 = \xi_2y_1+\eta_2y_2}
+mit dem Modul $\Delta=(\xi\eta)$ die Form $f=a_x^n$ übergeht in die Form
+\[ F = A_y^n = (a_\xi y_1+a_\eta y_2)^n\,, \]
+dass also die Beziehungen bestehen:
+\[ \overline{A}_k = A_1^{n-k}A_2^k = a_\xi^{n-k}a_\eta^k\,. \]
+Die $\overline{A}_k$ sind die wirklichen Coefficienten der transformirten Form; $a_\xi^{n-k}a_\eta^k$ ist aber eine Polare von $f$, nur geschrieben in den Transformationscoefficienten. Daher der Satz:
+
+\glqq Die Coefficienten von $y$ der transformirten Form sind die Polaren der ursprünglichen Form, nur geschrieben in den Substitutionscoefficienten $\xi$ und $\eta$.\grqq{}
+
+Wir können diesen Satz auch noch in anderer Weise formuliren. Multipliciren wir nämlich die Transformationsgleichungen (I) mit $a_1$ resp. $a_2$ und addiren die Resultate, so kommt:
+\weq{1}{a_x = a_\xi y_1+a_\eta y_2\,.}
+%CONT>>
+
+
+% ===== pdf idx 35, printed 21.0 =====

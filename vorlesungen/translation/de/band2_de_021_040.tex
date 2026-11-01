@@ -1,0 +1,1067 @@
+% !PRINTED 21
+\weberpage{21}
+Anderntheils ist nach dem Identitätssatze:
+\weq{2}{a_x = a_\xi\,\frac{(x\eta)}{(\xi\eta)} + a_\eta\,\frac{(\xi x)}{(\xi\eta)}.}
+Durch Comparation dieser beiden Gleichungen erhält man
+\weq{3}{y_1 = \frac{(x\eta)}{(\xi\eta)}, \quad y_2 = \frac{(\xi x)}{(\xi\eta)}.}
+Erhebt man aber die Identität (2) auf die $n^{\text{te}}$ Potenz, so kommt:
+\[
+a_x^n \cdot (\xi\eta)^n = \{a_\xi(x\eta) + a_\eta(\xi x)\}^n
+\]
+und diese Gleichung lehrt in Verbindung mit (3):
+\glqq Multiplicirt man die Form $f = a_x^n$ mit der $n^{\text{ten}}$ Potenz des Transformationsmoduls, so sind die Coefficienten von $(x\eta)^{n-k}(\xi x)^k = (\xi\eta)^n y_1^{n-k} y_2^k$, dividirt durch den betreffenden Binomialcoefficienten, die $k^{\text{ten}}$ Polaren der Originalform.\grqq{}
+
+\textit{18. Erweiterung des Polarenbegriffes.} Im weiteren Sinne nennt man auch Formen, die mehr als zwei Reihen Veränderlicher enthalten, also Formen wie
+\[
+a_x^{n-k-\lambda}a_y^k a_z^\lambda, \quad a_x^{n-k-\lambda-\mu}a_y^k a_z^\lambda a_u^\mu, \text{ etc.,}
+\]
+Polaren der Form $f$. Ihr Bildungsprocess ist folgendermassen definirt. Man sondere vom Producte $a_x^n$ zunächst $\varkappa+\lambda+\mu$ Factoren ab, ersetze $\varkappa$ derselben durch $a_y$, $\lambda$ Factoren durch $a_z$, $\mu$ Factoren durch $a_u$; oder: Man nehme zuerst $\varkappa+\lambda+\mu$ Factoren $a_x$ hinweg und ersetze sie durch Factoren $a_y$; von diesen trenne man wieder $\lambda+\mu$ Factoren ab und ersetze sie durch Grössen $a_z$, hierauf bringe man an Stelle von $\mu$ Factoren $a_z$ wiederum $\mu$ Factoren $a_u$.
+
+Man kann auch die so definirten Polaren durch rechnerische Processe erhalten. So würde die Differentiationsmethode folgende Operationen verlangen: Die Form $f$ differentiire man $k+\lambda+\mu$ mal total nach $x$, ersetze die Incremente durch $y$.
+% checked against the GDZ scan (27 Oct 2026): Incremente is printed in full, without a break, in all three places on this page
+Hierauf differentiire man $\lambda+\mu$ mal nach $y$, ersetze die neuen Incremente durch $z$, endlich differentiire man $\mu$ mal total nach $z$, und ersetze die Incremente durch $u$.
+
+\textit{19. Differentialgleichung der Polaren.} Die Polaren sind also Formen mit mehreren Reihen cogredienter Variabler. Doch lässt sich aus ihrer Bildung erkennen, dass sie sehr specielle Formen dieser Art sind. In der That genügen sie auch einer bestimmten Differentialgleichung, die sich leicht aufstellen lässt. Bezeichnet man die Polare mit $U$, so dass also
+\[
+U = a_x^{n-\lambda}a_y^\lambda\,,
+\]
+dann ist:
+\[
+\frac{\partial U}{\partial x_1} = (n-\lambda)\,a_x^{n-\lambda-1}a_y^\lambda a_1
+\]
+\[
+\frac{\partial U}{\partial x_2} = (n-\lambda)\,a_x^{n-\lambda-1}a_y^\lambda a_2\,,
+\]
+%CONT>>
+
+
+% ===== pdf idx 36, printed 22.0 =====
+% !PRINTED 22
+\weberpage{22}
+%<<CONT
+und daher:
+\[
+\left.\begin{aligned}
+\frac{\partial^2 U}{\partial x_1\partial y_2} &= \lambda(n-\lambda)\,a_x^{n-\lambda-1}a_y^{\lambda-1}a_1a_2 \\
+\frac{\partial^2 U}{\partial x_2\partial y_1} &= \lambda(n-\lambda)\,a_x^{n-\lambda-1}a_y^{\lambda-1}a_2a_1
+\end{aligned}\right\}
+\]
+also:
+\weq{I}{\frac{\partial^2 U}{\partial x_1\partial y_2} - \frac{\partial^2 U}{\partial x_2\partial y_1} = 0.}
+Das ist die partielle Differentialgleichung, welcher jede Polare genügt; wir werden später umgekehrt sehen, dass jede rationale ganze Function von $x$ und $y$, welche diese Gleichung befriedigt, in der That eine Polare ist.
+
+Besitzt die Polare mehr als zwei Reihen Veränderlicher, dann treten zu dieser Gleichung (I) noch weitere analog gebildete, so dass bei $n$ Reihen von Variabeln die Anzahl derselben auf $N$ anwächst, wo $N$ die Anzahl der Combinationen ohne Wiederholung von $n$ Elementen zu je zweien bedeutet. Dieselben sind natürlich nicht durchwegs selbstständige Gleichungen.
+
+\textit{20. Der Omegaprocess.} Durch die Differentialgleichung (I) ist gleichzeitig ein Process definirt, der wie jener der Faltung und Polarenbildung ein Invariantenprocess ist. Wir schreiben denselben, wenn wir ihn auf eine Form $f$, die in $x$ vom Grade $m$, in $y$ vom Grade $n$ ist, angewendet wissen wollen, gewöhnlich in der Gestalt:
+\[
+\Omega(f) = \frac{1}{m\cdot n}\left\{\frac{\partial^2 f}{\partial x_1\partial y_2} - \frac{\partial^2 f}{\partial x_2\partial y_1}\right\}
+\]
+und nennen ihn demgemäss Omegaprocess. Man kann ihn durch
+\[
+\Omega(f) = \begin{vmatrix} x_1 & x_2 \\ y_1 & y_2 \end{vmatrix}
+\]
+repräsentiren.
+
+Dass durch ihn die Invarianteneigenschaft eines symbolischen Productes nicht aufgehoben wird, erkennt man daraus, weil durch diese Operation aus demselben wieder nur symbolische Producte entstehen.
+
+Wenden wir nämlich den Omegaprocess zunächst auf das symbolische Product
+\[
+P = a_x^m b_y^n
+\]
+an; wir erhalten:
+\[
+\frac{\partial P}{\partial x_1\partial y_2} = n\cdot m\cdot a_1\,a_x^{m-1}b_2b_y^{n-1}
+\]
+\[
+\frac{\partial P}{\partial x_2\partial y_1} = n\cdot m\cdot a_2\,a_x^{m-1}b_1b_y^{n-1}\,.
+\]
+
+
+% ===== pdf idx 37, printed 23.0 =====
+% !PRINTED 23
+\weberpage{23}
+Durch Subtraction folgt aus beiden Gleichungen:
+\[
+\frac{\partial P}{\partial x_1\partial y_2} - \frac{\partial P}{\partial x_2\partial y_1} = n\cdot m\cdot a_x^{m-1}b_y^{n-1}\{a_1b_2 - b_1a_2\} = n\cdot m\cdot(ab)\,a_x^{m-1}b_y^{n-1}\,,
+\]
+also:
+\weq{I}{\Omega(P) = (ab)\,a_x^{m-1}b_y^{n-1}\,.}
+Unterwerfen wir diese Relation abermals demselben Process
+\[
+\Omega^2(P) = \Omega(\Omega(P)) = \frac{1}{m-1\cdot n-1}\left\{\frac{\partial\Omega(P)}{\partial x_1\partial y_2} - \frac{\partial\Omega(P)}{\partial y_1\partial x_2}\right\}\,,
+\]
+so erhalten wir:
+\[
+\Omega^2(P) = (ab)^2 a_x^{m-2}b_y^{n-2}\,, \text{ u.\,s.\,w.}
+\]
+Aus symbolischen Producten entstehen also durch diese Operation immer wieder symbolische Producte, und man erkennt aus dem Beispiel die enge Beziehung, die zwischen Omega- und Faltungsprocess besteht. Alle symbolischen Producte, welche aus einem Stammproducte $P_x\cdot Q_x$ dadurch abgeleitet werden, dass man immer je einen linearen Factor von $P_x$ mit einem von $Q_x$ faltet, entstehen auch aus $P_x\cdot Q_y$, oder $Q_x\cdot P_y$ durch den Omegaprocess.
+
+Seine Invarianteneigenschaft wird übrigens auch noch durch eine gewisse Relation bestätigt, die ihn mit Polarenbildung in Verbindung bringt.
+
+Polarisirt man nämlich das Product
+\[
+P = a_x^m b_y^n
+\]
+nach $x$ in Bezug auf $y$, so erhält man
+\[
+P_y = a_x^{m-1}a_y b_y^n\,.
+\]
+Bildet man aber hiervon wieder die erste Polare nach $y$ in Bezug auf $x$, so kommt unter Anwendung der Differentiationsmethode:
+\[
+(n+1)\sum\frac{\partial P_y}{\partial y_i}x_i = a_x^m b_y^n + n\,a_x^{m-1}a_y b_x b_y^{n-1}\,.
+\]
+Hievon auf beiden Seiten
+\[
+(n+1)P = a_x^m b_y^n + n\,a_x^m b_y^n
+\]
+subtrahirt, liefert die Relation:
+\[
+(n+1)\left\{P - \sum\frac{\partial P_y}{\partial y_i}x_i\right\} = n(ab)(xy)\,a_x^{m-1}b_y^{n-1} = n\,(xy)\cdot\Omega(P)\,,
+\]
+oder:
+\weq{II}{P = (P_y)_x + \frac{n}{n+1}(xy)\,\Omega(P).}
+Clebsch hat diese Relation benutzt, um die Form $P$ in eine Reihe zu entwickeln, die nach Potenzen von $(xy)$ fortschreitet, und deren Coefficienten Polaren gewisser Formen sind (Clebsch, \textit{Theorie der binären Formen}, § 7. — Vgl. auch Nr. 25 und 28 dieses §).
+
+
+% ===== pdf idx 38, printed 24.0 =====
+% !PRINTED 24
+\weberpage{24}
+\textit{21. Polaren eines Productes mehrerer Formen.} In den meisten Fällen hat man nicht die Polare einer einzigen Form zu bilden, sondern eines Productes von Formen. Um dieselbe aufzustellen, benutze ich zunächst die am Schlusse von Nr. 13 entwickelte Methode. Es sei das symbolische Product, dessen Polare zu berechnen ist:
+\[
+\Pi = (ab)(ac)(bc)\dots a_x^\varrho b_x^\sigma c_x^\tau \dots\,.
+\]
+Die Klammerfactoren bleiben als Constante $C$ von dem Polarenprocess unberührt. Die Factoren erster Art, — es seien $\lambda$ an der Zahl — ersetzen wir wieder durch $\lambda$ lineare Factoren $r_{ix}$ und bilden sonach die Polare von
+\[
+F = C\,r_{1x}r_{2x}r_{3x}\dots r_{\lambda x}\,.
+\]
+Dann erhalte ich hieraus die $k^{\text{te}}$ Polare, indem ich in allen möglichen Combinationen ohne Wiederholung von $\lambda$ Elementen je $k$ Elemente $r_{ix}$ herausgreife und jedesmal durch die $k!$ Permutationen der entsprechenden Elemente $r_{iy}$ ersetze. Die Summe aller dieser Glieder, dividirt durch ihre Anzahl $\binom{\lambda}{k}k!$ liefert die Polare von $F$. Wir können sie also schreiben:
+\weq{I}{F_{y^k} = \frac{C}{k!\binom{\lambda}{k}}\sum_{i_1i_2\dots i_k} r_{i_1y}r_{i_2y}\dots r_{i_ky}\,\frac{F}{r_{i_1x}\dots r_{i_kx}}\,.}
+Ersetzen wir hierin wieder die Symbole
+\[
+r_{1y}, r_{2y}\dots r_{\varrho y} \text{ durch } a_x
+\]
+\[
+r_{\varrho+1,\,y}\dots r_{\sigma y} \text{ durch } b_x
+\]
+\[
+r_{\sigma+1,\,y},\, r_{\sigma+2,\,y}\dots r_{\tau y} \text{ durch } c_x \text{ etc.,}
+\]
+so stellt das Resultat die $k^{\text{te}}$ Polare von $\Pi$ dar.
+
+\textit{22. Darstellung dieses Polarenprocesses durch binomische Entwicklung.} Wir können nun wieder diese symbolische Methode durch Rechnung ersetzen und wählen zu dem Zwecke die binomische Entwicklung. Ich will mit einem Producte von zwei Formen beginnen. Es sei
+\[
+F = a_x^m\cdot b_x^n = p_x^{m+n}\,.
+\]
+Die Polare von $F$
+\[
+F_{y^k} = p_x^{m+n-k}p_y^k
+\]
+entsteht alsdann, wenn wir in $F$ die Variable $x_i$ durch $x_i+\lambda y_i$ ersetzen und den Coefficienten von $\binom{m+n}{k}\lambda^k$ in der Entwicklung von $p(x+\lambda y)^{m+n}$ nehmen.
+
+Diesen Coefficienten erhalten wir auf folgende Weise. Es ist:
+%CONT>>
+
+
+% ===== pdf idx 39, printed 25.0 =====
+% !PRINTED 25
+\weberpage{25}
+\[
+\begin{aligned}
+(a_x+\lambda a_y)^m &= \binom{m}{0}a_x^m+\binom{m}{1}\lambda a_x^{m-1}a_y+\binom{m}{2}\lambda^2 a_x^{m-2}a_y^2+\binom{m}{3}\lambda^3 a_x^{m-3}a_y^3+\cdots\\
+(b_x+\lambda b_y)^n &= \binom{n}{0}b_x^n+\binom{n}{1}\lambda b_x^{n-1}b_y+\binom{n}{2}\lambda^2 b_x^{n-2}b_y^2+\binom{n}{3}\lambda^3 b_x^{n-3}b_y^3+\cdots
+\end{aligned}
+\]
+Durch Multiplication der beiden Entwicklungen bekommt man als Co\"efficienten von $\lambda^k$:
+\[
+\begin{aligned}
+\binom{m+n}{k}F_{y^k} &= \binom{m+n}{k}p_x^{m+n-k}p_y^k\\
+&= \binom{m}{0}\binom{n}{k}a_x^m b_x^{n-k}b_y^k+\binom{m}{1}\binom{n}{k-1}a_x^{m-1}a_y b_x^{n-k+1}b_y^{k-1}\\
+&\quad+\binom{m}{2}\binom{n}{k-2}a_x^{m-2}a_y^2 b_x^{n-k+2}b_y^{k-2}+\cdots\\
+&\quad\cdots+\binom{m}{k}\binom{n}{0}a_x^{m-k}a_y^k b_x^m\,.
+\end{aligned}
+\]
+Die rechte Seite dieser Gleichung, dividirt durch $\binom{m+n}{k}$, stellt also die $k^{\text{te}}$ Polare von $a_x^m\cdot b_x^n$ dar.
+
+23. \textit{Relation zwischen den Co\"efficienten der Polare.} In die zuletzt erhaltene Entwicklung führen wir folgende Abkürzungen ein. Wir setzen:
+\[
+c_0=\frac{\binom{m}{0}\binom{n}{k}}{\binom{m+n}{k}},\quad c_1=\frac{\binom{m}{1}\binom{n}{k-1}}{\binom{m+n}{k}},\quad\cdots,\quad c_\varrho=\frac{\binom{m}{\varrho}\binom{n}{k-\varrho}}{\binom{m+n}{k}},
+\]
+ferner:
+\[
+G_0=a_x^m b_x^{n-k}b_y^k,\ G_1=a_x^{m-1}a_y b_x^{n-k+1}b_y^{k-1},\ \cdots,\ G_\varrho=a_x^{m-\varrho}a_y^\varrho b_x^{n-k+\varrho}b_y^{k-\varrho},
+\]
+dann ist:
+\[
+F_{y^k}=c_0G_0+c_1G_1+c_2G_2+\cdots c_\varrho G_\varrho\cdots c_kG_k
+\]
+\weq{I}{F_{y^k}=\sum_0^k c_\varrho G_\varrho\,.}
+Die Grössen $G_\varrho$ bezeichnen wir kurz als \glqq Glieder\grqq{} der Polare, das Glied $G_0$ führt den Namen \glqq Anfangsglied\grqq{}. Jedes Glied hat, wie man unmittelbar ersieht, die Eigenschaft, direct in $F$ überzugehen, sobald man $y$ durch $x$ ersetzt. Da anderntheils $F_{y^k}$ selbst in $F$ übergeht durch diese Substitution, so folgt aus (I) die Identität:
+\[
+F=c_0F+c_1F+c_2F+\cdots c_kF
+\]
+oder nach Division mit $F$
+\weq{II}{1=c_0+c_1+c_2+\cdots c_k\,,}
+d.\,h. \glqq die Summe der Co\"efficienten in der Polare $F_{yk}$ ist immer gleich Eins.\grqq{}
+
+24. \textit{Benachbarte Glieder.} Jedes Glied $G_\varrho$ kann man sich auf folgende Art symbolisch entstanden denken: Man schreibt $m$ Factoren $a_x$ und $n$ Factoren $b_x$ an, nimmt beliebig $\varrho$ ($\varrho\leqq k$) Factoren hinweg und
+%CONT>>
+
+
+% ===== pdf idx 40, printed 26.0 =====
+% !PRINTED 26
+\weberpage{26}
+%<<CONT
+ersetzt sie entsprechend durch Factoren $a_y$ resp. $b_y$. Dabei giebt der Zähler des zugehörigen Co\"efficienten $c_\varrho$ immer an, wie oft durch Herbeiführung immer anderer und anderer Factoren diese Operation vorgenommen werden kann, nämlich $\binom{m}{\varrho}\binom{n}{k-\varrho}$ mal. Zwei aufeinanderfolgende Glieder $G_\varrho$ und $G_{\varrho+1}$
+\[
+\begin{aligned}
+G_\varrho &= a_x^{m-\varrho}a_y^\varrho b_x^{n-k+\varrho}b_y^{k-\varrho}\\
+G_{\varrho+1} &= a_x^{m-\varrho-1}a_y^{\varrho+1}b_x^{n-k+\varrho+1}b_y^{k-\varrho-1}
+\end{aligned}
+\]
+unterscheiden sich nur dadurch, dass an Stelle des Factorenpaares $a_xb_y$, das Product $a_yb_x$ getreten ist, d.\,h. ein vorhergehendes Glied hat einen Factor $a_x$ und einen Factor $b_y$ mehr, als ein nachfolgendes. Zwei Glieder, die sich nur um zwei solchen linearen Factoren unterscheiden, nennen wir \glqq\gesperrt{benachbarte Glieder}\grqq{}. (Vgl. auch Nr. 10.) Ihre Differenz liefert:
+\[
+G_\varrho-G_{\varrho+1}=a_x^{m-\varrho-1}a_y^\varrho b_x^{n-k+\varrho}b_y^{k-\varrho-1}(a_xb_y-b_xa_y)\,.
+\]
+Nun ist aber nach dem Identitätssatze Nr.\ 11, (III):
+\[
+(a_xb_y-b_xa_y)=(ab)(xy)\,.
+\]
+Daher wird:
+\[
+G_\varrho-G_{\varrho+1}=(ab)(xy)\cdot a_x^{m-\varrho-1}a_y^\varrho\cdot b_x^{n-k+\varrho}b_y^{k-\varrho-1},\ \text{d.\,h.}
+\]
+\glqq Die Differenz je zweier benachbarter Glieder einer Polare enthält immer den Factor $(ab)(xy)$.\grqq{}
+
+25. \textit{Verallgemeinerung dieses Satzes.} Dieser Satz gilt aber auch für die Differenz zweier beliebiger Glieder
+\[
+G_\varrho-G_\sigma\,.
+\]
+Denn es ist:
+\[
+G_\varrho-G_\sigma=G_\varrho-G_{\varrho+1}+G_{\varrho+1}-G_{\varrho+2}+G_{\varrho+2}-\cdots+G_{\sigma-1}-G_\sigma\,,
+\]
+wo nun rechts immer je zwei Glieder benachbart sind. Er gilt endlich aber auch für die Differenz
+\[
+F_{y^k}-G_\varrho\,.
+\]
+Denn multipliciren wir die Gleichung (II) Nr.\ 23 mit $G_\varrho$ und subtrahiren sie von Gleichung (I), dann erhalten wir
+\[
+F_{y^k}-G_\varrho=c_0(G_0-G_\varrho)+c_1(G_1-G_\varrho)+\cdots+c_k(G_k-G_\varrho)\,.
+\]
+Daher der Satz:
+
+\glqq Die Differenz zwischen Polare und einem ihrer Glieder enthält immer den Factor $(ab)(xy)$.\grqq{}
+
+Wir wollen diesen fundamentalen Satz noch etwas weiter verfolgen. Der andere Factor, der mit $(ab)(xy)$ zusammen die Differenz $F_{y^k}-G_\varrho$ darstellt, besteht aus einer Summe von Gliedern $H_\sigma$, die in
+%CONT>>
+
+
+% ===== pdf idx 41, printed 27.0 =====
+% !PRINTED 27
+\weberpage{27}
+%<<CONT
+$x$ wie in $y$ um je einen Grad niedriger sind. Multipliciren wir mit dem einen Factor $(ab)$ in diese Summe hinein, so lässt sich jedes Glied
+\[
+(ab)\,H_\sigma
+\]
+als Glied einer gewissen Polare auffassen, die um einen Grad niedriger ist als die ursprüngliche Polare. Ueberdies ist diese $(k-1)^{\text{te}}$ Polare nicht wie $F_{y^k}$ von dem Producte
+\[
+f\cdot\varphi=a_x^m b_x^n
+\]
+der beiden ursprünglichen Formen gebildet, sondern — eben wegen des Klammerfactors $(ab)$ — von einer Form, die aus ihm durch einmalige Faltung entstanden ist. Bezeichnen wir diese Form mit
+\[
+(f,\varphi)^1\,,
+\]
+ihre Polare mit:
+\[
+(f,\varphi)_{y^{k-1}}
+\]
+und ein Glied derselben mit
+\[
+G_{(f,\varphi)_{y^{k-1}}}\,,
+\]
+so kann man den eben erhaltenen Satz in die algebraische Form bringen
+\weq{I}{G_\varrho=F_{y^k}+(xy)\sum c_iG_{(f,\varphi)_{y^{k-1}}}\,.}
+Die Iteration liegt nahe. Ich ersetze die einzelnen Glieder der Summe in (I) gerade nach diesem Gesetze wieder durch die ihnen zugehörigen $(k-1)^{\text{ten}}$ Polaren und eine Summe anderer Glieder $K$, die neuerdings den Factor $(ab)(xy)$ erhalten, also $(k-2)^{\text{ten}}$ Polaren angehören von Formen, die durch zweimalige Faltung aus $f\cdot\varphi$ entstanden sind. Der Ausdruck (I) wird dann:
+\[
+G_\varrho=F_{y^k}+(xy)\sum c_i(f,\varphi)_{y^{k-1}}+(xy)^2\sum c_i^{(1)}K_{(f,\varphi)^2_{y^{k-1}}}
+\]
+% checked against the GDZ scan (27 Oct 2026): printed (f,\varphi)^2_{y^{k-1}} (misprint for k-2); the 1 is struck through in ink and a dot and a 2 are written after it by hand
+Wiederholt man diesen Process so lange, bis man schliesslich auf nullte Polaren kommt, von Formen, die aus $f\cdot\varphi$ durch $k$malige Faltung hervorgingen, so gelangt man endlich zu dem Resultat:
+\weq{II}{G_\varrho=F_{y^k}+(xy)\sum c_i(f,\varphi)_{y^{k-1}}+(xy)^2\sum c_i^{(1)}(f,\varphi)^2_{y^{k-2}}+\cdots+(xy)^k\sum c_i^{k-1}(f,\varphi)^k_{y^0}\,,\ \text{d.\,h.}}
+\glqq Jedes Glied einer Polare lässt sich entwickeln in eine Summe von Polaren, multiplicirt mit Potenzen von $(xy)$. Das erste Glied dieser Summe ist die ursprüngliche Polare selbst und hat den Co\"efficienten Eins.\grqq{}
+
+Für den hier betrachteten einfachen Fall werden wir später ($\S~8$) die Reihenentwicklung mit Angabe der Co\"efficienten geben.
+
+26. \textit{Beispiel.} Ich will die bisher gewonnenen Resultate an einem Beispiele verificiren. Es sei gegeben das Product
+\[
+F=f\cdot\varphi=a_x^3\cdot b_x^3=r_{1x}r_{2x}r_{3x}\cdot r_{4x}r_{5x}r_{6x}\,.
+\]
+
+
+% ===== pdf idx 42, printed 28.0 =====
+% !PRINTED 28
+\weberpage{28}
+Die zweite Polare dieses Products ist nach der ursprünglichen Definition (Nr.\ 21) dargestellt durch:
+\[
+F_{y^2}=\frac{1}{2!\binom{6}{2}}\sum r_{i_1y}r_{i_2y}\cdot\frac{F}{r_{i_1x}r_{i_2x}}
+\]
+\[
+\begin{aligned}
+=\frac{2!\,1}{2!\,15}\Big\{
+&r_{1y}r_{2y}\,r_{3x}r_{4x}r_{5x}r_{6x}+r_{1y}r_{3y}\,r_{2x}r_{4x}r_{5x}r_{6x}+r_{1y}r_{4y}\,r_{2x}r_{3x}r_{5x}r_{6x}\\
+&+r_{1y}r_{5y}\,r_{2x}r_{3x}r_{4x}r_{6x}+r_{1y}r_{6y}\,r_{2x}r_{3x}r_{4x}r_{5x}+r_{2y}r_{3y}\,r_{1x}r_{4x}r_{5x}r_{6x}\\
+&+r_{2y}r_{4y}\,r_{1x}r_{3x}r_{5x}r_{6x}+r_{2y}r_{5y}\,r_{1x}r_{3x}r_{4x}r_{6x}+r_{2y}r_{6y}\,r_{1x}r_{3x}r_{4x}r_{5x}\\
+&+r_{3y}r_{4y}\,r_{1x}r_{2x}r_{5x}r_{6x}+r_{3y}r_{5y}\,r_{1x}r_{2x}r_{4x}r_{6x}+r_{3y}r_{6y}\,r_{1x}r_{2x}r_{4x}r_{5x}\\
+&+r_{4y}r_{5y}\,r_{1x}r_{2x}r_{3x}r_{6x}+r_{4y}r_{6y}\,r_{1x}r_{2x}r_{3x}r_{5x}+r_{5y}r_{6y}\,r_{1x}r_{2x}r_{3x}r_{4x}
+\Big\}\,.
+\end{aligned}
+\]
+Ersetzen wir hierin $r_1r_2r_3$ durch $a$, $r_4r_5r_6$ durch $b$, so erhalten wir:
+\[
+\begin{aligned}
+F_{y^2}=\frac{1}{15}\Big\{
+&a_y^2a_xb_x^3+a_y^2a_xb_x^3+a_yb_ya_x^2b_x^2+a_yb_ya_x^2b_x^2+a_y^2b_ya_x^2b_x\\
+&+a_y^2a_xb_x^3+a_yb_ya_x^2b_x^2+a_yb_ya_x^2b_x^2+a_yb_ya_x^2b_x^2+a_yb_ya_x^2b_x\\
+&+a_yb_ya_x^2b_x^2+a_yb_ya_x^2b_x^2+b_y^2a_x^3b_x+b_y^2a_x^3b_x+b_y^2a_x^3b_x
+\Big\}\,.
+\end{aligned}
+\]
+Fassen wir alle gleichen Glieder zusammen, so kommt:
+\[
+F_{y^2}=\frac{1}{5}\Big\{a_y^2a_xb_x^3+3a_yb_ya_x^2b_x^2+b_y^2a_x^3b_x\Big\}\,.
+\]
+In dem nämlichen Resultate gelangen wir nach Nr.\ 22 durch die binomische Entwicklung. Darnach ist:
+\[
+F_{y^2}=\frac{1}{\binom{6}{2}}\Big\{\binom{3}{2}a_x^3b_xb_y^2+\binom{3}{1}\binom{3}{1}a_x^2a_yb_x^2b_y+\binom{3}{2}a_xa_y^2b_x^3\Big\}
+\]
+\[
+=\frac{1}{5}\Big\{a_x^3b_xb_y^2+3a_x^2a_yb_x^2b_y+a_xa_y^2b_x^3\Big\}\,.
+\]
+Bilden wir nun die Differenz der Polare und des zweiten Gliedes. Man erhält:
+\[
+\begin{aligned}
+F_{y^2}-\frac{5}{5}a_x^2a_yb_x^2b_y &=\frac{1}{5}(a_x^3b_xb_y^2-a_x^2a_yb_x^2b_y)+\frac{1}{5}(a_xa_y^2b_x^3-a_x^2a_yb_x^2b_y)\\
+&=\frac{1}{5}(ab)a_x^2b_xb_y(xy)+\frac{1}{5}(ab)a_xa_yb_x^2(xy)
+\end{aligned}
+\]
+oder
+\[
+F_{y^2}-a_x^2a_yb_x^2b_y=\frac{(xy)}{5}\Big\{(ab)a_x^2b_xb_y+(ab)a_xa_yb_x^2\Big\}\,.
+\]
+Jeder der beiden Terme im zweiten Factor rechts stellt ein Glied der ersten Polare einer Form dar, die aus $a_x^3b_x^3$ durch Faltung hervorgeht, nämlich der Form:
+\[
+\Phi=(ab)a_x^2b_x^2\,.
+\]
+Die erste Polare dieser Form ist aber gerade
+\[
+\Phi_y=\frac{1}{2}\Big\{(ab)a_x^2b_xb_y+(ab)a_xa_yb_x^2\Big\}\,.
+\]
+
+
+% ===== pdf idx 43, printed 29.0 =====
+% !PRINTED 29
+\weberpage{29}
+Folglich ist
+\[
+a_x^2 b_x^2 a_y b_y = F_{y^2} - \frac{2}{5} (xy)\, \Phi_y .
+\]
+27. \textit{Beispiel.} Berechnen wir ebenso die vierte Polare von
+\[
+P = a_x^6 b_x^4 .
+\]
+Sie ist, wenn wir uns wieder lineare Factoren $r_{ix}$ eingeführt denken, dargestellt durch
+\[
+\binom{10}{4} P_{y^4} = \sum r_{1y} r_{2y} r_{3y} r_{4y} \cdot \frac{P}{r_{1x} r_{2x} r_{3x} r_{4x}} .
+\]
+Die 6 Factoren $a_x$ lassen sich $\binom{6}{4}$ mal zu je 4 Factoren $r_{ix}$ gruppiren.
+Also ist das Anfangsglied sammt Coefficienten
+\[
+c_0 G_0 = \binom{6}{4} \binom{4}{0} a_y^4 a_x^2 b_x^4 .
+\]
+Sie lassen sich ferner $\binom{6}{3}$ mal zu je 3 Factoren $r_{ix}$ verbinden. Jede dieser Complexionen kann mit je einem Factor $b_x$ multiplicirt auftreten; folglich ist
+\[
+c_1 G_1 = \binom{6}{3} \binom{4}{1} a_y^3 b_y a_x^3 b_x^3 .
+\]
+Auf gleiche Weise findet man die drei anderen Glieder und erhält so
+\[
+\binom{10}{4} P_{y^4} = \binom{6}{4} \binom{4}{0} a_y^4 a_x^2 b_x^4 + \binom{6}{3} \binom{4}{1} a_y^3 b_y a_x^3 b_x^3 + \binom{6}{2} \binom{4}{2} a_y^2 b_y^2 a_x^4 b_x^2 + \binom{6}{1} \binom{4}{3} a_y b_y^3 a_x^5 b_x + \binom{6}{0} \binom{4}{4} b_x^4 a_x^6
+\]
+oder:
+\[
+P_{y^4} = \frac{1}{210} \left\{ 15 a_y^4 a_x^2 b_x^4 + 80 a_y^3 b_y a_x^3 b_x^3 + 90 a_y^2 b_y^2 a_x^4 b_x^2 + 24 a_y b_y^3 a_x^5 b_x + b_y^4 a_x^6 \right\} .
+\]
+Zunächst erkennt man: die Summe aller Coefficienten ist Eins. Subtrahiren wir nun von $P_{y^4}$ das Glied
+\[
+G_2 = \frac{1}{210} \left\{ 15 a_y^2 b_y^2 a_x^4 b_x^2 + 80 a_y^2 b_y^2 a_x^4 b_x^2 + 90 a_y^2 b_y^2 a_x^4 b_x^2 + 24 a_y^2 b_y^2 a_x^4 b_x^2 + a_y^2 b_y^2 a_x^4 b_x^2 \right\} ,
+\]
+so erhalten wir:
+\[
+P_{y^4} - G_2 = \frac{1}{210} \left\{ 15 (G_0 - G_2) + 80 (G_1 - G_2) + 24 (G_3 - G_2) + G_4 - G_2 \right\} .
+\]
+Nun ist
+\[
+G_1 - G_2 = (ab)(yx)\, a_y^2 b_y a_x^3 b_x^2
+\]
+\[
+G_3 - G_2 = (ab)(xy)\, a_y b_y^2 a_x^4 b_x
+\]
+und folglich:
+\[
+G_0 - G_2 = G_0 - G_1 + G_1 - G_2 = (ab)(yx)\, a_y^3 a_x^2 b_x^3 + (ab)(yx)\, a_y^2 b_y a_x^3 b_x^2
+\]
+\[
+G_4 - G_2 = G_4 - G_3 + G_3 - G_2 = (ab)(xy)\, b_y^3 a_x^5 b_x + (ab)(xy)\, a_y b_y^2 a_x^2 b_x .
+\]
+%CONT>>
+
+
+% ===== pdf idx 44, printed 30.0 =====
+% !PRINTED 30
+\weberpage{30}
+%<<CONT
+Folglich ist:
+\[
+P_{y^4} - G_2 = \frac{(ab)(xy)}{210} \left\{ -15 \left( a_y^2 b_y a_x^3 b_x^2 + a_y^3 a_x^2 b_x \right) - 80 a_y^2 b_y a_x^3 b_x^2 + 24 a_y b_y^2 a_x^4 b_x + b_y^3 a_x^5 + a_y b_y^2 a_x^4 b_x \right\}
+\]
+\[
+= \frac{(ab)(xy)}{210} \left\{ -15 a_y^3 a_x^2 b_x^3 - 95 a_y^2 b_y a_x^3 b_x^2 + 25 a_y b_y^2 a_x^4 b_x + b_y^3 a_x^5 \right\} .
+\]
+Demnach wird:
+\[
+G_2 = P_{y^4} + (xy) \left\{ \frac{1}{14} (ab)\, a_y^3 a_x^2 b_x^3 + \frac{19}{42} (ab)\, a_y^2 b_y a_x^3 b_x^2 - \frac{5}{42} (ab)\, a_y b_y^2 a_x^4 b_x - \frac{1}{210} (ab)\, b_y^3 a_x^5 \right\} .
+\]
+Die Glieder, welche sich rechts innerhalb der Klammer befinden, sind durchwegs Glieder der dritten Polare von
+\[
+Q = (ab)\, a_x^5 b_x^3 .
+\]
+Man könnte sie also wieder ersetzen durch $Q_{y^3}$ plus einer Summe von Gliedern zweiter Polaren u.\,s.\,w.
+
+28. \textit{Polaren eines beliebigen Productes von Formen.} Wir haben bereits in Nr. 21 den Process definirt, durch welchen die Polare eines Productes von mehr als zwei Formen erhalten wird. Es erübrigt noch, rechnerische Operationen anzugeben, durch welche dieser symbolische Process ersetzt werden kann. Am einfachsten bedienen wir uns wieder der binomischen Entwicklung. Sei nunmehr $F$ das Product von $\tau$ Formen
+\[
+f = a_x^m, \quad \varphi = b_x^n, \quad \psi = c_x^p, \quad \ldots \ \text{etc.}
+\]
+Dann ist die $k^{\text{te}}$ Polare von $F$ durch folgende Grösse definirt. Wir ersetzen in $F$ $x_i$ durch $x_i + \lambda y_i$, bilden die binomischen Entwicklungen der Formen
+\[
+(a_x + \lambda a_y)^m, \quad (b_x + \lambda b_y)^n, \quad (c_x + \lambda c_y)^n, \quad \ldots \ \text{etc.}
+\]
+und multipliciren die so erhaltenen Summen. Der Coefficient von $\lambda^k$ dividirt durch
+\[
+\binom{m+n+p+\cdots s}{k} ,
+\]
+liefert die $k^{\text{te}}$ Polare von $F$. Die Coefficienten dieser Polare haben demnach die Form
+\[
+\frac{\binom{m}{i_1}\binom{n}{i_2}\binom{p}{i_3}\cdots\binom{s}{i_k}}{\binom{m+n+p+\cdots s}{k}} % checked against the GDZ scan (27 Oct 2026): the lower entry is printed k (heavy impression); the cursive mark in front of it is handwritten
+\]
+und ihre Summe ist wiederum gleich Eins, wie aus der ursprünglichen Definition Nr. 21 unmittelbar ersichtlich ist.
+
+29. \textit{Beispiele.} Wir berechnen die dritte Polare des Productes:
+\[
+F = a_x^3 b_x^2 c_x .
+\]
+
+
+% ===== pdf idx 45, printed 31.0 =====
+% !PRINTED 31
+\weberpage{31}
+Es ist:
+\[
+(a_x + \lambda a_y)^3 = \binom{3}{0} a_x^3 + \binom{3}{1} \lambda a_x^2 a_y + \binom{3}{2} \lambda^2 a_x a_y^2 + \binom{3}{3} \lambda^3 a_y^3
+\]
+\[
+(b_x + \lambda b_y)^2 = \binom{2}{0} b_x^2 + \binom{2}{1} \lambda b_x^2 b_y + \binom{2}{2} \lambda^2 b_y^2
+\]
+\[
+c_x + \lambda c_y = \binom{1}{0} c_x + \binom{1}{1} \lambda c_y .
+\]
+Die dritte Polare ist somit:
+\[
+F_{y^3} = \frac{1}{\binom{6}{3}} \Big\{ \binom{1}{0}\binom{2}{0}\binom{3}{3}\, a_y^3 b_x^2 c_x + \binom{1}{0}\binom{2}{1}\binom{3}{2}\, a_x^2 a_x b_y b_x c_x % [sic]
+\]
+\[
++ \binom{1}{0}\binom{2}{2}\binom{1}{1}\, a_y b_y^2 a_x^2 c_x + \binom{1}{1}\binom{2}{1}\binom{1}{1}\, a_y b_y c_y a_x^2 b_x % [sic]
+\]
+\[
++ \binom{1}{1}\binom{2}{2}\binom{3}{0}\, a_x^3 b_y^2 c_x \Big\} . % [sic] upper binomial indices printed inconsistently across the terms of this display
+\]
+Ich möchte hierbei noch aufmerksam machen auf die Zahl der Glieder dieser Polare. Sie ist nämlich gleich der Zahl der Variationen mit Wiederholungen von 4 Elementen $(0, 1, 2, 3)$ zur Summe 3. Dies lässt sich an diesem einfachen Beispiel direct ersehen; denn in den Coefficienten der einzelnen Glieder:
+\[
+\binom{1}{0}\binom{2}{0}\binom{3}{3}, \quad \binom{1}{0}\binom{2}{1}\binom{3}{2}, \quad \binom{1}{0}\binom{2}{2}\binom{3}{1}, \quad \binom{1}{1}\binom{2}{1}\binom{3}{1}, \quad \binom{1}{1}\binom{2}{2}\binom{3}{0}
+\]
+stellen gerade die untern Zahlenreihen die erwähnten Complexionen dar. Dieses Gesetz, das aus dieser Art der Polarenberechnung unmittelbar hervorgeht, gilt auch allgemein.
+
+Ueber die Anzahl dieser Variationen hat \gesperrt{Cayley} im Jahre 1856, Phil. Trans. Bd. 146, folgendes Gesetz aufgestellt:
+\glqq Eine Zahl $p$ kann als Summe von $\varrho$ Zahlen der Reihe
+$0, 1, 2, \ldots$ so oft dargestellt werden, als der Coefficient $x^p z^{\varrho}$
+in der Entwicklung nach steigenden Potenzen von $z$ der
+Function
+\[
+\Phi = \frac{1}{(1-z)(1-xz)(1-x^2 z) \ldots (1-x^{\varrho} z)}
+\]
+beträgt. (Vgl.\ auch \gesperrt{Faà di Bruno}, Theorie der binären Formen, übersetzt von \gesperrt{Walter}, Seite 124.)
+
+30. \textit{Benachbarte Glieder.} Auch hier, bei Polaren eines Productes von Formen, sind wiederum zwei Glieder benachbart, wenn sie bis auf ein Factorenpaar $q_x \cdot r_y$ übereinstimmen (wobei $r$ und $q$ für irgend eines der Symbole $a, b, c, d, \ldots$ etc. stehen). Die Differenz zweier benachbarter Glieder besitzt wieder das Factorenpaar $(qr)(xy)$ zu Factoren. Bildet man alsdann die Differenz zweier beliebiger Glieder, oder die Differenz von Polare und einem ihrer Glieder, so hat diese Differenz zunächst den einen Factor $(xy)$. Der zweite Factor gliedert
+%CONT>>
+
+
+% ===== pdf idx 46, printed 32.0 =====
+% !PRINTED 32
+\weberpage{32}
+%<<CONT
+sich in eine Reihe von Summen, welche je mit einem der Klammerfactoren $(qr)$ multiplicirt auftreten. Jede solche Theilsumme ist somit ein Aggregat von Gliedern, die $(k-1)^{\text{ten}}$ Polaren angehören von Formen, welche aus $F$ durch Faltung entstanden sind. Es gilt somit noch immer der Satz:
+
+\glqq Jedes Glied einer Polare von $F$ lässt sich darstellen durch die Polare selbst plus einer Summe von Gliedern, welche selbst wieder niedrigerern Polaren von Formen angehören, die aus $F$ durch Faltung entstanden sind.\grqq{} % [sic] \textquotedbl{}niedrigerern\textquotedbl{}
+
+Wendet man auf diese Glieder niedrigerer Polaren den gleichen Satz an und wiederholt ihn so lange, bis alle Glieder durch Polaren ersetzt sind, so erkennt man die Richtigkeit des Satzes:
+
+\glqq Jedes Glied einer Polare und damit jedes symbolische Product mit zwei Reihen Veränderlicher $x$ und $y$ kann in eine Summe von Polaren entwickelt werden, die nach Potenzen von $(xy)$ fortschreitet.\grqq{}
+
+31. \textit{Polaren mit mehr als zwei Reihen cogredienter Variabler.} Wir haben schon in Nr. 18 den Polarenbegriff für eine Form dahin erweitert, dass wir als Polare auch das symbolische Product definirten:
+\[
+f_{y^k z^{\lambda}} = a_x^{n-k-\lambda} a_y^k a_z^{\lambda} .
+\]
+Aehnlich können wir allgemein ein beliebiges symbolisches Product nach mehreren Reihen Variabler $y, z, u, v \ldots$ etc. polarisiren. Wir ersetzen in dem symbolischen Product
+\[
+F = f \cdot \varphi \cdot \psi \ldots ,
+\]
+welches vom Grade $m + n + p + \cdots = s$ in $x$ sein möge, die Variabeln $x_i$ durch $x_i + \varrho_1 y_i + \varrho_2 z_i + \cdots$, entwickeln die einzelnen Factoren $f, \varphi, \psi \ldots$ nach dem polynomischen Lehrsatz und multipliciren die so erhaltenen Summen. Irgend eine Polare, etwa die Polare $F_{y^k z^{\lambda} u^{\nu}}$ ist alsdann dargestellt durch den Coefficienten von $\varrho_1^k \varrho_2^{\lambda} \varrho_3^{\nu}$, dividirt durch den Polynomialcoefficienten:
+\[
+\frac{s!}{k! \, \lambda! \, \nu! \, (s-k-\lambda-\nu)!} .
+\]
+Wir nennen sie wiederum eine \gesperrt{gemischte Polare} und alle Sätze, welche über die einfachen Polaren und deren Glieder aufgestellt wurden, lassen sich auf diese Polaren und deren Glieder übertragen. Insbesondere gilt der Satz:
+
+\glqq Jedes symbolische Product mit beliebig vielen Reihen cogredienter Veränderlicher $x, y, z, u \ldots$ kann in eine Summe von Polaren entwickelt werden, multiplicirt mit Potenzen von $(xy), (yz), (xz) \ldots$ etc.
+
+
+% ===== pdf idx 47, printed 33.0 =====
+% !PRINTED 33
+\weberpage{33}
+
+\begin{center}
+\S~3.
+
+\textbf{Ueberschiebungsprocess.}
+\end{center}
+
+32. \textit{Definition.} Die einfachsten symbolischen Producte $u$ sind
+diejenigen, welche nur zwei Symbole enthalten:
+\[
+u = (ab)^k a_x^{m-k} b_x^{n-k}.
+\]
+Man nennt sie \glqq Ueberschiebungen\grqq{}, und der Process, durch den sie
+entstehen, ist der Faltungsprocess: Das Product
+\[
+P = a_x^m \cdot b_x^n
+\]
+der beiden Formen $f = a_x^m$, $\varphi = b_x^n$ wird $k$ mal gefaltet. Wir
+werden eine solche $k^{\text{te}}$ Ueberschiebung in der Folge auch sehr
+häufig durch
+\[
+U = (f, \varphi)^k
+\]
+darstellen. Ist $n < m$, so kann $k$ alle Werthe von 0 bis $n$ annehmen.
+Insbesondere ist:
+\[
+(f, \varphi)^0 = f \cdot \varphi = a_x^m \cdot b_x^n
+\]
+\[
+(f, \varphi)^n = (ab)^n a_x^{m-n}.
+\]
+Jede höhere Ueberschiebung als die $n^{\text{te}}$ verschwindet alsdann
+identisch.
+
+Die Ueberschiebung ist eine auch unsymbolisch darstellbare Form, eine
+simultane Covariante von $f$ und $\varphi$, und der rein symbolische
+Faltungsprocess liefert sonach hier ein Resultat, das sonst durch rein
+rechnerische Operationen erhalten wird. (Siehe Nr. 35.) Aus der Definition
+der Ueberschiebung als Resultat der Faltung eines Productes $f \cdot \varphi$
+erkennt man unmittelbar die Gültigkeit folgender Relationen:
+
+\weq{$\alpha$}{(c \cdot f, \varphi)^k = c \cdot (f, \varphi)^k, \quad \text{d. h.:}}
+
+\begin{quote}
+\glqq Die Ueberschiebung eines Productes $c \cdot f$, wo $c$ eine
+Constante, über eine Form $\varphi$ ist gleich dem Producte der
+Ueberschiebung $(f, \varphi)^k$ in die Constante $c$.\grqq{}
+\end{quote}
+
+\weq{$\beta$}{(f + c_1 \cdot \psi,\ \varphi + c_2 \cdot \chi)^k = (f, \varphi)^k + c_1 \cdot (\psi, \varphi)^k + c_2 (f, \chi)^k + c_1 \cdot c_2 \cdot (\psi, \chi)^k, \quad \text{d. h.:}}
+
+\begin{quote}
+\glqq Die Ueberschiebung von linearen Systemen einzelner Formen ist gleich
+einem linearen Systeme der Ueberschiebungen dieser Formen.\grqq{}
+\end{quote}
+
+\weq{$\gamma$}{(\varphi, f)^k = (ba)^k b_x^{n-k} a_x^{m-k} = (-1)^k \cdot (f, \varphi)^k, \quad \text{d. h.:}}
+
+\begin{quote}
+\glqq Die $k^{\text{te}}$ Ueberschiebung ändert, wenn man $f$ mit $\varphi$
+vertauscht, ihr Zeichen, je nachdem $k$ gerade oder ungerade.\grqq{}
+\end{quote}
+
+Im Interesse späterer Untersuchungen will ich die Faltungen, durch welche
+eine Ueberschiebung entsteht, noch auf einem umständlicheren Wege
+ausführen. Wir denken uns nämlich einen Augenblick
+%CONT>>
+
+
+% ===== pdf idx 48, printed 34.0 =====
+% !PRINTED 34
+\weberpage{34}
+
+%<<CONT
+die $m$ symbolischen Factoren von $f$, und die $n$ Factoren von $\varphi$
+verschieden, etwa:
+\[
+f = r_{1x} r_{2x} r_{3x} \cdots r_{mx} = a_x^m
+\]
+\[
+\varphi = s_{1x} s_{2x} s_{3x} \cdots s_{nx} = b_x^n.
+\]
+Die Ueberschiebung $(f, \varphi)^k$ entsteht alsdann, wenn wir das Product
+\[
+P = f \cdot \varphi = r_{1x} r_{2x} \cdots r_{mx} \times s_{1x} s_{2x} \cdots s_{nx}
+\]
+$k$ mal falten und nachträglich $r_k$ durch $a$, $s_k$ durch $b$ wieder
+ersetzen. Um aber hierbei keine der einzelnen Factoren auszuzeichnen, werden
+wir diese $k$ Faltungen auf alle möglichen Arten vornehmen, die Summe aller
+so entstehenden symbolischen Producte bilden, und, damit wir nach
+Einführung der alten Symbole $a$ und $b$ wieder auf das einzige Product
+$(ab)^k a_x^{m-k} b_x^{n-k}$ kommen, diese Summe mit der Anzahl aller
+Glieder dividiren. Diese Anzahl ist im Allgemeinen gleich dem Producte
+\[
+\binom{m}{k} k! \times \binom{n}{k} k! = m(m-1) \cdots (m-k+1) \cdot n(n-1) \cdots (n-k+1),
+\]
+da jede Variation ohne Wiederholung von $m$ Elementen zur $k^{\text{ten}}$
+Klasse mit jeder Variation ohne Wiederholung von $n$ Elementen zu einer
+Faltung Veranlassung giebt, wenn wir völlig symmetrisch verfahren wollen.
+Man hat demnach:
+\[
+(f, \varphi)^k = \frac{1}{m(m-1) \cdots (m-k+1)} \cdot \frac{1}{n(n-1) \cdots (n-k+1)}
+\cdot \sum (r_{i_1} s_{l_1}) \cdots (r_{i_k} s_{l_k}) \cdot \frac{f \cdot \varphi}{r_{i_1 x} r_{i_2 x} \cdots s_{l_1 x} \cdots s_{l_k x}},
+\]
+und dieser Ausdruck rechts reducirt sich auf
+\[
+(f, \varphi)^k = (ab)^k a_x^{m-k} b_x^{n-k},
+\]
+wenn wir $r_k$ durch $a$, und $s_k$ durch $b$ ersetzen.
+
+33. \textit{Der Omegaprocess und die Ueberschiebung.} Das gleiche
+Resultat, das wir hier durch $k$ malige Faltung der beiden Formen $f$ und
+$\varphi$ erhielten, entsteht auch durch $k$ malige Anwendung des
+Omegaprocesses, wenn wir vorher in einer der beiden Formen $x$ mit $y$
+vertauschen, und nach ausgeführter Operation wieder $y$ durch $x$
+ersetzen. Man erkennt dies aus den Entwicklungen in Nr. 20, nach welchen
+der Omegaprocess angewendet auf das Product
+\[
+P = a_x^m b_y^n
+\]
+die Resultate lieferte:
+\[
+\Omega(P) = (ab)\, a_x^{m-1} b_y^{n-1}
+\]
+\[
+\Omega^2(P) = (ab)^2\, a_x^{m-2} b_y^{n-2} \quad \text{etc.}
+\]
+
+
+% ===== pdf idx 49, printed 35.0 =====
+% !PRINTED 35
+\weberpage{35}
+
+Wir haben somit auch als weitere Definitionsgleichung:
+
+\weq{III}{(f, \varphi)^k = \{\Omega^k (f_x \cdot \varphi_y)\}_{y=x}.}
+
+34. \textit{Ueberschiebung der Polaren.} Nach der ursprünglichen Definition
+wurde die Ueberschiebung in der Weise gebildet, dass man je zwei Factoren
+$a_x b_x$ durch den Klammerfactor $(ab)$ ersetzte.
+
+Wir können in diesen Process noch eine scheinbar überflüssige
+Zwischenoperation einführen, die wir aber sofort als einen für die
+Bildung der Ueberschiebung fundamentalen Process erkennen werden.
+Ersetzen wir nämlich in dem Producte
+\[
+P = a_x^m \cdot b_x^n
+\]
+jedes der $k$ Factorenpaare $a_x b_x$ zuerst durch $k$ Factorenpaare
+$a_y b_y$, und falten wir nun erst $k$ mal nach $y$, so entsteht wiederum
+\[
+U = (ab)^k a_x^{m-k} b_x^{n-k}.
+\]
+Die Zwischenoperation war aber nichts anderes als der Polarenprocess,
+durch welchen aus $P$ die Form
+\[
+f_{y^k} \cdot \varphi_{y^k} = a_x^{m-k} a_y^k \cdot b_x^{n-k} b_y^k
+\]
+geworden war.
+
+Die Ueberschiebung entstand hieraus durch Faltung der Polaren nach $y$.
+Daraus erkennen wir den Satz, der namentlich für complicirtere Formen $f$
+und $\varphi$ von Wichtigkeit wird:
+
+\begin{quote}
+\glqq \gesperrt{Die $k^{\text{te}}$ Ueberschiebung der $k^{\text{ten}}$
+Polaren ist gleich der $k^{\text{ten}}$ Ueberschiebung der Formen,}\grqq{}
+oder:
+\end{quote}
+
+\weq{IV}{U = (f, \varphi)^k = (f_{y^k}, \varphi_{y^k})^k.}
+
+Bei dieser Ueberschiebung der Polaren werden hier die Variabeln $x$ als
+constant angesehen und die Ueberschiebung geht so weit als die Variabeln
+$y$ gehen, d. h. die Operation liefert eine simultane Invariante der
+Polaren in Bezug auf die $y$.
+
+35. \textit{Unsymbolische Darstellung der Ueberschiebung zweier einfacher
+Formen $f$ und $\varphi$.} Bezeichnen wir nun die $k^{\text{te}}$ Polare
+von $f$ mit
+\[
+r_y^k = a_x^{m-k} a_y^k,
+\]
+und ebenso die $k^{\text{te}}$ Polare von $\varphi$ mit
+\[
+s_y^k = b_x^{n-k} b_y^k,
+\]
+dann ist also die $k^{\text{te}}$ Ueberschiebung dieser beiden Formen $f$
+und $\varphi$ bezeichnet durch:
+\[
+(rs)^k = (f_{y^k}, \varphi_{y^k})^k = (f, \varphi)^k = a_x^{m-k} b_x^{n-k} (ab)^k.
+\]
+
+
+% ===== pdf idx 50, printed 36.0 =====
+% !PRINTED 36
+\weberpage{36}
+
+Es ist aber $r_y^k = r$ als Function von $y$ betrachtet unsymbolisch
+gegeben durch:
+\[
+r = \bar r_0 y_1^k + \binom{k}{1} \bar r_1 y_1^{k-1} y_2 + \binom{k}{2} \bar r_2 y_1^{k-2} y_2^2 + \cdots + \bar r_k y_2^k
+\]
+und ebenso
+\[
+s = \bar s_k y_2^k + \binom{k}{1} \bar s_{k-1} y_2^{k-1} y_1 + \binom{k}{2} \bar s_{k-2} y_2^{k-2} y_1^2 + \cdots + \bar s_0 y_1^k.
+\]
+Hierbei sind die unsymbolischen Coefficienten $r_i$, $\bar s_i$ im
+Allgemeinen Functionen von $x$. Stellt man nun anderntheils $r$ und $s$
+symbolisch dar, setzt also
+\[
+r = (r_1 y_1 + r_2 y_2)^k
+\]
+\[
+s = (s_1 y_1 + s_2 y_2)^k;
+\]
+dann ist in symbolischer Bezeichnung die Invariante
+
+\weq{I}{(rs)^k = r_1^k s_2^k - \binom{k}{1} r_1^{k-1} r_2 s_2^{k-1} s_1 + \binom{k}{2} r_1^{k-2} r_2^2 s_2^{k-2} s_1^2 + \cdots \pm r_2^k s_1^k.}
+
+Ersetzt man aber hierin die symbolischen Coefficienten
+\[
+r_1^k, \quad r_1^{k-1} \cdot r_2, \quad r_2^{k-2} \cdot r_2^2, \quad \ldots % [sic]
+\]
+\[
+s_1^k, \quad s_1^{k-1} \cdot s_2, \quad s_2^{k-2} \cdot s_2^2, \quad \ldots
+\]
+durch die wirklichen
+\[
+\bar r_0, \quad \bar r_1, \quad \bar r_2, \quad \ldots
+\]
+\[
+\bar s_0, \quad \bar s_1, \quad \bar s_2, \quad \ldots,
+\]
+so erhält man als unsymbolische Darstellung der Ueberschiebung
+$(f, \varphi)^k$ die Invariante der Polaren:
+
+\weq{II}{(rs)^k = \bar r_0 \bar s_k - \binom{k}{1} \bar r_1 \bar s_{k-1} + \binom{k}{2} \bar r_2 \bar s_{k-2} - + \cdots \pm \bar r_k \bar s_0.}
+
+Dieser Ausdruck ist eine simultane Covariante von $f$ und $\varphi$. Er
+stellt direct die bilineare Invariante der beiden Formen dar, sobald
+$m = n = k$, d. h. der Grad der beiden Formen mit dem Grade der
+Ueberschiebung übereinstimmt.
+
+Nun sind die Coefficienten der Polare nichts anderes als die Grössen
+\[
+\frac{(m-k)!}{m!} \frac{\partial^k f}{\partial x_1^{k-\varrho} \cdot \partial x_2^\varrho} \quad \text{(vergl. Nr. 14, (8)).}
+\]
+Ersetzen wir daher dieselben in (II) durch diese Differentialquotienten,
+so erhalten wir als Ausdruck der $k^{\text{ten}}$ Ueberschiebung
+\[
+(f, \varphi)^k = (rs)^k = \frac{(m-k)!}{m!} \frac{(n-k)!}{n!} \left\{ \frac{\partial^k f}{\partial x_1^k} \cdot \frac{\partial^k \varphi}{\partial x_2^k} \right.
+\]
+\[
+\left. - \binom{k}{1} \frac{\partial^k f}{\partial x_1^{k-1} \partial x_2} \cdot \frac{\partial^k \varphi}{\partial x_2^{k-1} \partial x_1} + \cdots \pm \frac{\partial^k f}{\partial x_2^k} \frac{\partial^k \varphi}{\partial x_1^k} \right\},
+\]
+%CONT>>
+
+
+% ===== pdf idx 51, printed 37.0 =====
+% !PRINTED 37
+\weberpage{37}
+% running head: "Processe für invariante Bildungen.  37"
+%<<CONT
+oder in leicht verständlicher kürzerer Schreibweise:
+\weq{III}{(f, \varphi)^k = \frac{(m-k)!}{m!}\,\frac{(n-k)!}{n!}\left\{\frac{\partial f}{\partial x_1}\frac{\partial \varphi}{\partial x_2} - \frac{\partial f}{\partial x_2}\cdot\frac{\partial \varphi}{\partial x_1}\right\}^k \cdot{}^{*)}}
+Vergleicht man diese Darstellung mit der Darstellung der $k^{\text{ten}}$ Polare von $f=a_x^m$, Nr.\,14 (8)
+\[
+f_{\cdot y^k} = \frac{(m-k)!}{m!}\left\{\frac{\partial f}{\partial x_1}y_1+\frac{\partial f}{\partial x_2}y_2\right\}^k,
+\]
+so erkennt man, dass sich der Ueberschiebungsprocess auch folgendermassen formuliren lässt:
+
+\glqq Die $k^{\text{te}}$ Ueberschiebung von $f$ über $\varphi$ wird erhalten, wenn
+man in der $k^{\text{ten}}$ Polare von $f$ $y_1$ durch $b_2$ und $y_2$ durch $-b_1$
+ersetzt, und die entsprechende $(n-k)^{\text{te}}$ Potenz des Symbols
+$b_x$ von $\varphi$ als Factor hinzufügt.\grqq{}
+
+% running head at start of mid band: "36. Beispiele von simultanen Co- und Invarianten."
+36. \textit{Beispiele von simultanen Co- und Invarianten.} Ich will nun
+eine Reihe von Ueberschiebungen wirklich bilden. Wie schon erwähnt,
+erhält man die simultane bilineare Invariante zweier Formen gleichen
+Grades unmittelbar durch die Relation (II).
+
+Ist z.\,B. $f=a_x^2=\bar a_0x_1^2+2\bar a_1x_1x_2+\bar a_2x_2^2$
+\[
+\varphi=b_x^2=\bar b_0x_1^2+2\bar b_1x_1x_2+\bar b_2x_2^2,
+\]
+so ist
+\weq{1}{(f,\varphi)^2=(a_y^2,b_y^2)^2=(ab)^2=\bar a_0\bar b_2-2\bar a_1\bar b_1+\bar a_2\bar b_0.}
+Ebenso ist, wenn $f=a_x^3$ und $\varphi=b_x^3$:
+\weq{2}{(ab)^3=\bar a_0\bar b_3-3\bar a_1\bar b_2+3\bar a_2\bar b_1-\bar a_3\bar b_0.}
+Berechnen wir auch die zweite Ueberschiebung der beiden Formen $f$ und
+$\varphi$. Die zweite Polare von $f$ ist unsymbolisch
+\[
+f_{y^2}=a_y^2a_x=(\bar a_0x_1+\bar a_1x_2)y_1^2+2(\bar a_1x_1+\bar a_2x_2)y_1y_2+(\bar a_2x_1+\bar a_3x_3)y_2^2. % [sic] printed x_3, pattern elsewhere on page reads x_2
+\]
+Ersetzt man hierin
+\[
+\begin{aligned}
+y_1 &\ \text{durch}\ \ b_2\\
+y_2 &\ \text{durch}\ -b_1
+\end{aligned}
+\]
+und multiplicirt mit $b_x$, so erhält man
+\[
+(ab)^2a_xb_x=(\bar a_0x_1+\bar a_1x_2)b_2^2b_x-2(\bar a_1x_1+\bar a_2x_2)b_1b_2b_x+(\bar a_2x_1+\bar a_3x_3)b_1^2b_x, % [sic] printed x_3, cf. above
+\]
+oder, wenn man $b_x$ durch $b_1x_1+b_2x_2$ ersetzt:
+\[
+\begin{aligned}
+(ab)^2a_xb_x={}&(\bar a_0x_1+\bar a_1x_2)(b_1b_2^2x_1+b_2^3x_2)-2(\bar a_1x_1+\bar a_2x_2)(b_1^2b_2x_1+b_1b_2^2x_2)\\
+&+(\bar a_2x_1+\bar a_3x_2)(b_1^3x_1+b_1^2b_2x_2).
+\end{aligned}
+\]
+Führt man hier für die symbolischen Co\"efficienten $b_1^3, b_1^2, b_2$ etc.\ die
+wirklichen ein und ordnet nach den Potenzen der Variabeln $x$, so kommt:
+
+\noindent\rule{4cm}{0.4pt}
+
+{\footnotesize *) Die Gleichung (III) lehrt, dass $(f, \varphi)^k = 0$ eine lineare
+Differentialgleichung zur Bestimmung der Form $\varphi$ ist, sobald $f$ als bekannt
+angenommen wird.}
+%CONT>>
+
+
+% ===== pdf idx 52, printed 38.0 =====
+% !PRINTED 38
+\weberpage{38}
+% running head: "38   Erster Theil."
+%<<CONT
+\weq{3}{
+\begin{aligned}
+(ab)^2a_xb_x={}&(\bar a_0\bar b_2-2\bar a_1\bar b_1+\bar a_2\bar b_0)x_1^2 - (\bar a_1\bar b_2+\bar a_2\bar b_1-\bar a_0\bar b_3+\bar a_3\bar b_0)x_1x_2\\
+&+(\bar a_1\bar b_3-2\bar a_2\bar b_2+\bar a_3\bar b_1)x_2^2.
+\end{aligned}
+}
+
+37. \textit{Beispiele von Co- und Invarianten einer Form.} Bei der
+Darstellung des Ueberschiebungsprocesses waren $f$ und $\varphi$
+beliebige Formen. Wir können nun als Form $\varphi$ die Form $f$
+selbst wieder wählen und erhalten auf diese Weise Co- und Invarianten
+einer einzigen Form, durch Ueberschiebung derselben über sich selbst.
+
+So liefert das Beispiel (2) in Nr.\,36 für die cubische Form
+\[
+f=a_x^3=b_x^3
+\]
+\[
+(ab)^3=\bar a_0\bar a_3-3\bar a_1\bar a_2+3\bar a_2\bar a_1-\bar a_3a_0=0,
+\]
+d.\,h.\ die dritte Ueberschiebung von $f$ über sich selbst verschwindet,
+was a priori aus dem symbolischen Product $(ab)^3$ hervorgeht. (Vergleiche
+Nr.\,8.)
+
+Ebenso wird nach Beispiel (3) Nr.\,36
+\weq{4}{(ab)^2a_xb_x=2\left[(\bar a_0\bar a_2-\bar a_1^2)x_1^2+(\bar a_0\bar a_3-\bar a_1\bar a_2)x_1x_2+(\bar a_1\bar a_3-\bar a_2^2)x_2^2\right].}
+
+Bezeichnet man diese Covariante von $f$ mit $\Delta_x^2$, also ihre
+Co\"efficienten mit $\bar\Delta_0, \bar\Delta_1, \bar\Delta_2$, so kann man von
+ihr selbst einmal die erste Ueberschiebung über $f$, dann die zweite über
+sich selbst auf folgende Weise bilden. Es ist:
+\[
+(f, \Delta)=(a\Delta)a_x^2\Delta_x=\frac{1}{2}\cdot\frac{1}{3}\left\{\frac{\partial f}{\partial x_1}\frac{\partial \Delta}{\partial x_2} - \frac{\partial f}{\partial x_2}\frac{\partial \Delta}{\partial x_1}\right\}.
+\]
+
+Man erhält somit
+\[
+\begin{aligned}
+(a\Delta)a_x^2\Delta_x={}&(\bar a_0x_1^2+2\bar a_1x_1x_2+\bar a_2x_2^2)\Delta_2\Delta_x-(\bar a_1x_1^2+2\bar a_2x_1x_2+\bar a_3x_2^2)\Delta_1\Delta_x\\
+={}&(\bar a_0x_1^2+2\bar a_1x_1x_2+\bar a_2x_2^2)(\Delta_1x_1+\Delta_2x_2)\\
+&-(\bar a_1x_1^2+2\bar a_2x_1x_2+\bar a_3x_2^2)(\bar\Delta_0x_1+\bar\Delta_1x_2).
+\end{aligned}
+\]
+
+Ersetzt man hierin die Co\"efficienten von $\Delta$ durch ihre Werthe,
+also:
+\[
+\begin{aligned}
+\bar\Delta_0 &\ \text{durch}\ \ 2(\bar a_0\bar a_2-\bar a_1^2)\\
+\bar\Delta_1 &\ \text{durch}\ \ (\bar a_0\bar a_3-\bar a_1\bar a_2)\\
+\bar\Delta_2 &\ \text{durch}\ \ 2(\bar a_1\bar a_3-a_2^2),
+\end{aligned}
+\]
+und ordnet nach fallenden Potenzen von $x_1$, so erhält man:
+\weq{5}{
+\begin{aligned}
+(a\Delta)a_x^2\Delta_x={}&(\bar a_0^2\bar a_3-3\bar a_0\bar a_1\bar a_2+2\bar a_1^3)x_1^3+3(\bar a_0\bar a_1\bar a_3-2\bar a_0\bar a_2^2+\bar a_1^2\bar a_2)x_1^2x_2\\
+&-3(\bar a_0\bar a_2\bar a_3-2\bar a_1^2\bar a_3+\bar a_1\bar a_2^2)x_1x_2^2-(\bar a_0\bar a_3^2-3\bar a_1\bar a_2\bar a_3+2\bar a_2^3)x_2^3.
+\end{aligned}
+}
+
+Endlich liefert die zweite Ueberschiebung der quadratischen Form
+$\Delta$ über sich selbst
+%CONT>>
+
+
+% ===== pdf idx 53, printed 39.0 =====
+% !PRINTED 39
+\weberpage{39}
+% running head: "Processe für invariante Bildungen.  39"
+%<<CONT
+\[
+(\Delta, \Delta)^2=(\Delta \Delta^{(1)})^2=(\Delta_1^2\Delta_2^{(1)2}-2\Delta_1\Delta_2^{(1)}\Delta_2\Delta_1^{(1)}+\Delta_2^2\Delta_1^{(1)2})=2(\bar\Delta_0\bar\Delta_2-\bar\Delta_1^2)
+\]
+\[
+=2\left\{4(\bar a_0\bar a_2-\bar a_1^2)(\bar a_1\bar a_3-\bar a_2^2)-(\bar a_0\bar a_3-\bar a_1\bar a_2)^2\right\},
+\]
+oder
+\weq{6}{(\Delta, \Delta)^2=2\left\{6a_0a_1a_2a_3-4a_2^3a_0-4a_1^3a_3+3a_1^2a_2^2-a_0^2a_3^2\right\}.}
+
+Wir haben somit durch einfache Ueberschiebungsprocesse eine
+Invariante $4^{\text{ten}}$ Grades in den Co\"efficienten, eine
+Covariante $3^{\text{ten}}$ Grades in Co\"efficienten und Variabeln,
+und ferner eine Covariante $2^{\text{ten}}$ Grades der cubischen Form
+$f$ kennen gelernt. Wir werden später sehen, dass diese drei Formen
+überhaupt die einzigen \gesperrt{selbstständigen} Covarianten von $f$
+sind, d.\,h.\ dass sich alle übrigen rational und ganz durch $f$ und
+diese drei ausdrücken lassen.
+
+38. \textit{Ueberschiebungen von Producten von Formen.} Wir gehen nun
+zum complicirteren Falle des Ueberschiebungsprocesses über, in welchem
+jede der beiden Formen, die zur Ueberschiebung gelangen sollen, ein
+Product einfacher Formen ist. Die Ueberschiebung ist dann nicht mehr
+wie im vorigen Falle durch ein \gesperrt{einziges} symbolisches
+Product dargestellt, sondern durch eine ganze Reihe derselben, die wir
+nunmehr ermitteln wollen.
+
+Sei $F$ das Product der Formen
+\[
+f_1=a_x^m,\quad f_2=b_x^n,\quad\cdots f_k=k_x^p;
+\]
+ferner $\Phi$ das Product der Formen
+\[
+\varphi_1=\alpha_x^\mu,\quad \varphi_2=\beta_x^\nu,\quad\cdots \varphi_\varkappa=\varkappa_x^\pi.
+\]
+
+Für die linearen symbolischen Factoren der Formen $f_i$ führen wir der
+Reihe nach die Factoren $r_{ix}$ ein; ihre Anzahl $s$ ist also gleich
+der Summe der Grade aller Formen, also
+\[
+s=m+n+\cdots+p.
+\]
+Die linearen Factoren der Formen $\varphi$ ersetzen wir ebenso durch
+die Factoren $\varrho_{ix}$; die Anzahl $\sigma$ derselben ist dann
+\[
+\sigma=\mu+\nu+\cdots+\pi.
+\]
+Die $k^{\text{te}}$ Ueberschiebung der beiden Formen $F$ und $\Phi$
+wird dann erhalten, wenn wir das Product
+\[
+\Pi=r_{1x}r_{2x}\cdots r_{sx}\cdot\varrho_{1x}\varrho_{2x}\cdots\varrho_{\sigma x}
+\]
+auf alle möglichen Arten in der Weise $k$ mal falten, dass immer
+andere Variationen von je $k$ Factoren $r_{ix}$ mit immer neuen
+Variationen $k$ Factoren $\varrho_{\lambda x}$ zu $k$ Klammerfactoren
+vereinigt werden. Die Summe aller so entstehenden symbolischen
+Producte dividirt durch ihre Anzahl gibt die Ueberschiebung von $F$
+über $\Phi$. Diese Anzahl ist daher
+%CONT>>
+
+
+% ===== pdf idx 54, printed 40.0 =====
+% !PRINTED 40
+\weberpage{40}
+% running head: "40   Erster Theil."
+%<<CONT
+gleich dem Producte der Anzahl der Variationen von $s$ Elementen zur
+$k^{\text{ten}}$ Klasse in die Anzahl der Variationen von $\sigma$
+Elementen zur $k^{\text{ten}}$ Klasse. Es ist also die Ueberschiebung
+definirt durch die Gleichung:
+\weq{I}{
+\begin{aligned}
+(F, \Phi)^k={}&\frac{(s-k)!}{s!}\cdot\frac{(\sigma-k)!^{*)}}{\sigma!}\\
+&\cdot\sum(r_{i_1}\varrho_{\lambda_1})(r_{i_2}\varrho_{\lambda_2})\cdots(r_{i_k}\varrho_{\lambda_k})r_{i_{k+1}x}\cdots r_{i_sx}\cdot\varrho_{\lambda_{k+1}x}\cdots\varrho_{\lambda_\sigma x}.
+\end{aligned}
+}
+
+Ersetzt man in dieser Summe
+\[
+\begin{aligned}
+r_{1x},\ r_{2x},\ \cdots r_{mx} &\ \text{durch}\ \ a_x\\
+r_{m+1,x},\ \cdots r_{m+n,x} &\ \text{durch}\ \ b_x\\
+&\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\\
+\varrho_{1x},\ \varrho_{2x},\ \cdots \varrho_{\mu x} &\ \text{durch}\ \ \alpha_x\\
+\varrho_{\mu+1,x},\ \cdots \varrho_{\mu+\nu,x} &\ \text{durch}\ \ \beta_x,\ \text{etc.}
+\end{aligned}
+\]
+und fasst alle gleichen Glieder zusammen, so erhält man die
+Ueberschiebung ausgedrückt durch die ursprünglichen Symbole von $F$
+und $\Phi$. Die Summe aller Co\"efficienten dieser Summe ist gleich
+Eins, wie aus der Definition der Ueberschiebung direct hervorgeht.
+(Vergl.\ auch Nr.\,32.)
+
+\textit{Anmerkung.} Es mag noch bemerkt werden, dass bei wirklicher
+Berechnung solcher Ueberschiebungen nicht jede Variation der Elemente
+$r_k$ mit jeder Variation der Elemente $\varrho_k$ verbunden zu werden
+braucht. Es genügt vielmehr, jede \gesperrt{Combination} von $k$
+Factoren $r_{kx}$ mit jeder Variation von $k$ Factoren $\varrho_{kx}$
+zu falten, da bereits hierdurch alle möglichen Arten von wirklich
+verschiedenen Verbindungen geliefert werden. Die Zahl der Glieder ist
+alsdann gleich der oben erwähnten dividirt durch $k!$. Wenn ich in der
+oben gegebenen Entwicklung mehr Faltungen als nöthig vornahm, so
+geschah das einmal um die Symmetrie nicht zu verletzen, und
+andernteils um die Uebereinstimmung des numerischen Co\"efficienten
+\[
+\frac{(s-k)!}{s!}\cdot\frac{(\sigma-k)!}{\sigma!}
+\]
+mit dem Nr.\,35 (III) gegebenen hervorzuheben.
+
+39. \textit{Beispiel 1.} Ich will diese Darstellung des
+Ueberschiebungsprocesses an einem einfachen Beispiele deduciren, das
+bereits in Nr.\,37 behandelt wurde. Wir hatten dort die zweite
+Ueberschiebung der quadratischen Covariante einer cubischen Form über
+sich selbst berechnet, und zu dem Zwecke für dieselbe das neue Symbol
+$\Delta$ eingeführt. Bilden wir nun direct die zweite Ueberschiebung
+dieser Form
+\[
+\Delta=(ab)^2a_xb_x=(cd)^2c_xd_x=\text{etc.}
+\]
+über sich selbst, so kommt nach den vorhergehenden Entwicklungen
+\[
+\left((ab)^2a_xb_x,\ (cd)^2c_xd_x\right)^2=(ab)^2(cd)^2(a_xb_x,\ c_xd_x)^2
+\]
+\[
+=\frac{1}{2}\left\{(ab)^2(cd)^2(ac)(bd)+(ab)^2(cd)^2(ad)(bc)\right\}.
+\]
+
+
+% ===== pdf idx 55, printed 41.0 =====

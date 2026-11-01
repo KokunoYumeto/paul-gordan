@@ -1,0 +1,589 @@
+% !PRINTED 189
+\weberpage{189}
+
+\S.\,14. Die Discriminante.
+
+Der andere Factor dieser Determinante ist
+\[
+s_0^{\,n-2} \cdot (-1)^\mu,
+\]
+wobei (vergleiche Nr.\,55) $\mu$ gleich ist der Gesammtsumme aller zweiten und ersten Indices der Determinante mit dem Diagonalglied $s_0^{\,n-2}$, also
+\[
+\mu = (1+2+\cdots n-2) + \{(n+1)+(n+2)+\cdots(2n-2)\}
+\]
+\[
+= (n-1)(n-2) + n(n-2).
+\]
+Diese Summe ist aber mit $n$ gerade oder ungerade; daher ist der zweite Factor wegen $s_0 = n$
+\[
+(-1)^n \cdot n^{n-2}
+\]
+und folglich:
+\[
+D = (-1)^n \cdot n^{n-2} \cdot (-1)^{\frac{(n-1)(n-2)}{2}+1} \cdot P^2 = (-1)^{\frac{n(n-1)}{2}} \cdot n^{n-2} \cdot P^2 .
+\]
+177. Nun entsteht aber die Determinante $D$ aus der Determinante
+\[
+\Delta =
+\left|
+\begin{array}{ccccccccc}
+s_0 & s_1 & s_2 & \cdots & s_{n-2} & s_{n-1} & s_n & \cdots & s_{2n-3} \\
+0 & s_0 & s_1 & \cdots & s_{n-3} & s_{n-2} & s_{n-1} & \cdots & s_{2n-4} \\
+0 & 0 & s_0 & \cdots & s_{n-4} & s_{n-3} & \cdot & \cdot & s_{2n-5} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & 0 & \cdots & s_0 & s_1 & s_2 & \cdots & s_{n-1} \\
+-s_1 & -s_2 & -s_3 & \cdots & -s_{n-1} & -s_n & -s_{n+1} & \cdots & -s_{2n-2} \\
+0 & -s_1 & -s_2 & \cdots & -s_{n-2} & -s_{n-1} & -s_n & \cdots & -s_{2n-3} \\
+0 & 0 & -s_1 & \cdots & -s_{n-3} & \cdot & \cdot & \cdot & -s_{2n-4} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & 0 & \cdots & -s_1 & -s_2 & -s_3 & \cdots & -s_n
+\end{array}
+\right| ,
+\]
+indem wir die erste Zeile zur $(n+1)^{\mathrm{ten}}$, die zweite zur $(n+2)^{\mathrm{ten}}$ u.\,s.\,w., endlich die $(n-1)^{\mathrm{te}}$ zur $2(n-1)^{\mathrm{ten}}$, d.\,i. zur letzten Zeile addiren. Es ist also auch
+\[
+\Delta = (-1)^{\frac{n(n-1)}{2}} \cdot n^{n-2} \cdot P^2 .
+\]
+Multipliciren wir aber die Determinante $\Delta$ mit der Determinante
+\[
+T =
+\left|
+\begin{array}{cccccccccc}
+1 & 0 & 0 & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & 0 \\
+a_1 & 1 & 0 & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & 0 \\
+a_3 & a_1 & 1 & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+a_n & a_{n-1} & a_{n-2} & \cdots & 1 & 0 & \cdot & \cdot & \cdot & 0 \\
+0 & a_n & a_{n-1} & \cdots & a_1 & 1 & 0 & \cdot & \cdot & 0 \\
+0 & 0 & a_n & \cdots & a_2 & a_1 & 1 & \cdot & \cdot & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & 0 & \cdots & a_n & a_{n-1} & \cdot & \cdot & \cdot & 1
+\end{array}
+\right| ,
+\]
+%CONT>>
+
+
+% ===== pdf idx 204, printed 190.0 =====
+% !PRINTED 190
+\weberpage{190}
+% [column spec widened array 9->10] a row carried more cells than the spec declared,
+% which is a fatal alignment error. The spec was widened rather than a cell
+% deleted, so no transcribed content is lost; whether Weber's grid really has
+% that many columns is a question for a pass with the scan open.
+
+Zweiter Theil. Anwendungen der Determinantentheorie.
+
+%<<CONT
+welche, da rechts der Diagonale nur verschwindende Elemente stehen, sich auf ihr Diagonalglied reducirt und also den Werth 1 besitzt, so erhalten wir:
+\[
+\Delta \cdot T = (-1)^{\frac{n(n-1)}{2}} \cdot n^{n-2} \cdot P^2 =
+\]
+\[
+\left|
+\begin{array}{ccccc}
+s_0, & s_0a_1+s_1, & s_0a_2+s_1a_1+s_2,\cdots, & s_0a_{n-1}+s_1a_{n-2}+\cdots s_{n-2}a_1+s_{n-1}\cdots \\
+0 & s_0, & s_0a_1+s_1, \cdots, & s_0a_{n-2}+s_1a_{n-3}+\cdots\cdots+s_{n-2},\cdots \\
+0 & 0, & s_0,\cdots\cdots\cdots\cdots, & s_0a_{n-3}+s_1a_{n-4}+\cdots\cdots+s_{n-3},\cdots \\
+\cdot & \cdot & \cdot & \cdot \\
+0, & 0, & 0,\cdots\cdots\cdots s_0, s_0a_1+s_1, & s_0a_2+s_1a_1+s_2,\cdots \\
+-s_1, & -(s_1a_1+s_2), & -(s_1a_2+s_2a_1+s_3),\cdots, & -(s_1a_{n-1}+s_2a_{n-2}+s_3a_{n-3}\cdots+s_n),\cdots \\
+0 & -s_1, & -(s_1a_1+s_2), \cdots\cdots\cdots & -(s_1a_{n-2}+s_2a_{n-3}\cdots\cdot+s_{n-1})\cdots \\
+0 & 0, & -s_1, & -(s_1a_1+s_2), \\
+\cdot & \cdot & \cdot & \cdot \\
+0, & 0, & 0,\cdots\cdots\cdots-s_1, & -(s_1a_1+s_2),\cdots, -(s_1a_{n-1}+\cdots+s_n)
+\end{array}
+\right|
+\]
+Tragen wir aber gemäss den Newton'schen Identitäten für die einzelnen Elemente ihre Werthe ein, so erhalten wir:
+\[
+(-1)^{\frac{n(n-1)}{2}} \cdot n^{n-2} \cdot P^2 =
+\]
+\[
+\left|
+\begin{array}{cccccccccc}
+n, & (n-1)a_1, & (n-2)a_2 & \cdots & a_{n-1}, & 0, & 0 & \cdots & 0 \\
+0 & n, & (n-1)a_1 & \cdots & 2a_{n-2}, & a_{n-1} & 0 & \cdots & 0 \\
+0 & 0, & n & \cdots & \cdots & \cdots & \cdots & a_{n-1} & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & \cdots & \cdots & n, & (n-1)a_1, & \cdots & a_{n-2} & a_{n-1} \\
+a_1 & 2a_2, & 3a_3, & \cdots & \cdots & na_n & 0, & 0 & \cdots & 0 \\
+0 & a_1 & 2a_1, & \cdots & \cdots & (n-1)a_{n-1}, & na_n & 0 & \cdots & 0 \\ % [sic] printed "2a_1" — pattern elsewhere suggests 2a_2
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & 0 & \cdots & \cdots & a_1 & 2a_2, & 3a_3 & \cdots \cdots na_n
+\end{array}
+\right|
+\]
+\[
+= n^{2n-2} \Delta_f,
+\]
+und folglich:
+\[
+R_{f_1,f_2} = \Delta_f = \dfrac{(-1)^{\frac{n(n-1)}{2}}}{n^n} \cdot \prod_{\substack{i=1 \\ k=2}}^{\substack{k=n \\ i=n-1}} (\alpha_i - \alpha_k)^2, \quad i<k.
+\]
+178. \textit{Ueber das Auftreten einer mehrfachen Wurzel von $f$ in der ersten Abgeleiteten von $f$.} Aus dem Differenzenproducte erkennt man,
+%CONT>>
+
+
+% ===== pdf idx 205, printed 191.0 =====
+% !PRINTED 191
+\weberpage{191}
+\S.\,14. Die Discriminante.
+
+dass, wenn $f$ eine Doppelwurzel besitzt, die Discriminante verschwinden
+muss. Da aber die Discriminante Resultante ist von $f$ und $f_1$, so ergiebt
+sich, dass auch $f_1$ den Doppelfactor von $f$ mindestens einmal
+besitzen muss. Es frägt sich nun, wenn $f$ einen $\nu$-fachen linearen
+Factor besitzt: in welchem Grade kommt derselbe der ersten Abgeleiteten $f_1$ zu.
+
+Um dies zu untersuchen, schreiben wir die Function $f$ in der Form:
+\[
+f = (x-t)^\nu \cdot \varphi(x),
+\]
+wobei $(x-t)$ der $\nu$-fache Factor von $f$ ist, und $\varphi(x)=0$, die
+Wurzel $x=t$ nicht mehr besitzt.
+
+Es ist dann die erste Abgeleitete von $f$:
+\[
+f' = \nu (x-t)^{\nu-1} \varphi(x) + (x-t)^\nu \varphi'(x)
+\]
+\[
+= (x-t)^{\nu-1} \{\nu \varphi(x) + (x-t) \varphi'(x)\}.
+\]
+Da der Ausdruck $\nu \varphi(x) + (x-t)\varphi'(x)$ für $x=t$ nicht verschwindet,
+weil nach Voraussetzung $\varphi(t) \gtrless 0$, so besitzt $f'$ den Factor $(x-t)$
+nur $(\nu-1)$mal. Wenn also z.\,B. $(x-t)$ Doppelfactor von $f$ ist, so
+ist er einfacher Factor von $f'$.
+
+\textit{Anmerkung.} Es besteht sodann eine Relation
+\[
+Af + Bf_1 = 0,
+\]
+in welcher $A$ und $B$ keinen gemeinsamen Factor besitzen. $B$ enthält
+sämmtliche vielfache Factoren:
+\[
+x - t_2, \qquad x - t_2 \ldots % [sic] both subscripts printed as t_2
+\]
+von $f$ jeden als einfachen Factor und der grösste gemeinsame Factor $\Phi$
+von $f$ und $B$ ist das Product derselben.
+\[
+\Phi = (x-t_1)(x-t_2) \ldots
+\]
+179. \textit{Berechnung der Doppelwurzel einer Function $f=0$.} Wir
+haben in Nr. 167 gezeigt, dass, wenn der Coefficient der höchsten
+Potenz in $f=1$ ist, stets die Beziehung besteht:
+\[
+R_{f_1,f} = R_{f_1,f_2}.
+\]
+Besitzt also $f$ eine Doppelwurzel, so ist dieselbe der gemeinschaftliche Factor der beiden Differentialquotienten $f_1$ und $f_2$ von $f$.
+Ist also $\alpha$ die Doppelwurzel, so wird der \gesperrt{Cayley}'sche Ausdruck
+\[
+\frac{1}{y-x} \{f_1(x)f_2(y) - f_1(y)f_2(x)\} = \sum_{i=1}^{i=n} p_i y^{n-i}
+\]
+für $x=\alpha$ identisch null, was nur dann möglich ist, wenn in der
+Summe rechts die Coefficienten von $y$ einzeln verschwinden.
+
+
+% ===== pdf idx 206, printed 192.0 =====
+% !PRINTED 192
+\weberpage{192}
+Zweiter Theil. Anwendungen der Determinantentheorie.
+
+Man hat also zur Berechnung der Doppelwurzel $x=\alpha$ die
+$n$ Gleichungen
+\[
+p_1 = c_{11}\alpha^{n-1} + c_{12}\alpha^{n-2} \cdots + c_{1n} = 0
+\]
+\[
+p_2 = c_{21}\alpha^{n-1} + c_{22}\alpha^{n-2} \cdots + c_{2n} = 0
+\]
+\[
+\cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot\ \cdot
+\]
+\[
+p_n = c_{n1}\alpha^{n-1} + c_{n2}\alpha^{n-2} \cdots + c_{nn} = 0,
+\]
+welche linear und homogen sind in den $n$ Grössen:
+\[
+\alpha^{n-1}, \alpha^{n-2}, \ldots \alpha^2, \alpha, 1.
+\]
+Es ist daher:
+\[
+\alpha^{n-1} : \alpha^{n-2} : \ldots \alpha : 1 = A_{i1} : A_{i2} \ldots A_{in},
+\]
+wenn die Grössen $A_{ik}$ die Minoren einer Zeile der Determinante der
+$c_{ik}$, mit abwechselndem Vorzeichen genommen, sind. Auch hier ist
+wieder die Berechnung eine eindeutige, und folglich kann nur eine
+Doppelwurzel und keine höhere Potenz eines linearen Factors auf
+diesem Wege ermittelt werden.
+
+180. \textit{Die ersten partiellen Differentialquotienten der Discriminante.}
+Die Discriminante $\Delta_f = R_{f,f_1}$ lässt sich (nach Nr. 131) auch darstellen
+in der Form:
+\weq{I}{\Delta_f = R_{f,f_1} = A(x)f + B(x)f_1.}
+Differentiiren wir diese Gleichung nach $a_\nu$, so kommt
+\[
+\frac{\partial \Delta_f}{\partial a_\nu} = \frac{\partial A}{\partial a_\nu} f(x) + x^{n-\nu} A(x) + \frac{\partial B}{\partial a_\nu} f_1 + \frac{(n-\nu)}{n} x^{n-\nu-1} \cdot B(x).
+\]
+Wenn demnach $x=\alpha$ wieder Doppelwurzel von $f$ ist, so erhält man
+aus dieser Gleichung durch Substitution $x=\alpha$, da gemäss der Anmerkung in Nr. 178 auch $B(\alpha)=0$,
+\[
+\frac{\partial \Delta_f}{\partial a_\nu} = \alpha^{n-\nu} A(\alpha)
+\]
+und ebenso
+\[
+\frac{\partial \Delta_f}{\partial a_\mu} = \alpha^{n-\mu} A(\alpha),
+\]
+also
+\[
+\frac{\partial \Delta_f}{\partial a_\nu} : \frac{\partial \Delta_f}{\partial a_\mu} = \alpha^{n-\nu} : \alpha^{n-\mu}.
+\]
+Die partiellen Differentialquotienten von $\Delta_f$ nach den Coefficienten
+$a_1$ bis $a_n$ sind also der ersten bis $n^{\text{ten}}$ Potenz des Doppelfactors von $f$
+proportional. Man kann die eben erhaltenen Resultate wieder benutzen, um charakteristische Differentialgleichungen für die Discriminante
+aufzustellen. Diese charakteristischen Differentialgleichungen sowohl
+für die Discriminante als auch für die Resultante wurden zuerst von
+\gesperrt{Brioschi} aufgestellt (Crelle's Journal Bd. 53 und Annali di Matem.
+Bd. 2, 1859), später von \gesperrt{Noether} (\gesperrt{Faà di Bruno}, in's Deutsche über-
+%CONT>>
+
+
+% ===== pdf idx 207, printed 193.0 =====
+% !PRINTED 193
+\weberpage{193}
+\S.\,14. Die Discriminante.
+
+%<<CONT
+setzt von \gesperrt{Walter}, Teubner 1881) eingehender auf ihren inneren Zusammenhang untersucht.
+
+181. \textit{Dritter Beweis für die Uebereinstimmung beider Darstellungen (I) und (II) der Discriminante in} Nr. 174. Denken wir uns
+die Resultante von $f(x)$ und $f(x+y)$ gebildet, etwa nach der \gesperrt{Sylvester}'schen Methode, so ist dieselbe vom Grade $n^2$ in $y$, da die Coefficienten $b_i$ von $f(x+y)$ sich auf $n$ Zeilen vertheilen, und jede Zeile
+in immer anderer Colonne den Coefficienten $b_n$ enthält, der in $y$ vom
+$n^{\text{ten}}$ Grade ist.
+
+Von den $n^2$ Wurzeln $y$ dieser Resultante sind in erster Linie $n$
+gleich null; denn jedesmal wenn
+\[
+\alpha_i + y = \alpha_i, \qquad i = 1, 2 \ldots n,
+\]
+ist, dann verschwindet die Resultante $R_{f(x),f(x+y)}$. Die übrigen $n(n-1)$
+Wurzeln sind nichts anderes als die einmal positiv und einmal negativ
+genommenen Wurzeldifferenzen
+\[
+\alpha_k - \alpha_i;
+\]
+denn die Resultante $R_{f(x),f(x+y)}$ verschwindet auch, wenn
+\[
+\alpha_i + y = \alpha_k, \qquad i \gtrless k,
+\]
+also wenn
+\[
+y = \alpha_k - \alpha_i,
+\]
+oder
+\[
+= \alpha_i - \alpha_k
+\]
+ist. Nun geht aus den Eigenschaften der Resultante (vgl. Nr. 146)
+hervor, dass
+\[
+R_{f(x),f(x+y)} = R_{f(x),\{f(x+y)-f(x)\}} = R_{f(x), \frac{y\{f(x+y)-f(x)\}}{y}}
+\]
+und dass ferner (vergl. Nr. 153, 154, 155)
+\[
+R_{f(x), y\{f(x+y)-f(x)\}} = R_{f(x),y} \cdot R_{f(x), \frac{f(x+y)-f(x)}{y}}.
+\]
+Weil aber $R_{f(x),y} = y^n$, so folgt endlich
+\[
+R_{f(x),f(x+y)} = y^n \cdot R_{f(x), \frac{f(x+y)-f(x)}{y}} = y^n \cdot F(y).
+\]
+Hiebei ist $F(y)$ noch vom Grade $n(n-1)$ in $y$ und besitzt die
+Wurzeln $(\alpha_k - \alpha_i)$, wo $k \gtrless i$ sein kann.
+
+Der Coefficient $c_0$ der höchsten Potenz von $y$ in dieser Function $F(y)$
+ist 1. Denn da der Coefficient von $x^n$ in $f(x)$ selbst 1 ist, so besitzen
+zunächst die Diagonalglieder der $n-1$ ersten Zeilen in der Resultante
+\[
+R_{f, \frac{f(x+y)-f(x)}{y}}
+\]
+den Werth 1. Und weil die Potenzen $y^{n-1}$, welche sich nur in den
+%CONT>>
+
+
+% ===== pdf idx 208, printed 194.0 =====
+% !PRINTED 194
+\weberpage{194}
+Zweiter Theil. Anwendungen der Determinantentheorie.
+
+%<<CONT
+Diagonalgliedern der $n$ letzten Zeilen befinden können, als letzte
+Glieder der binomischen Entwicklungen $(x+y)^n$ gleichfalls nur den
+Coefficienten 1 besitzen, so ist in der That in $F(y)$ der Coefficient
+$c_0 = 1$. Daher ist das letzte Glied $c_n$ in $F(y) = 0$, --- und zwar
+positiv genommen, da $F(y)$ von geradem Grade ist, --- das Product
+aller Wurzeln $(\alpha_k - \alpha_i)$. Dieses letzte Glied wird aber erhalten, wenn
+man in
+\[
+F(y) = R_{f, \frac{f(x+y)-f(x)}{y}}
+\]
+$y=0$ setzt. Die rechte Seite dieser Gleichung geht dadurch über in
+\[
+R_{f, \frac{\partial f}{\partial x}} = R_{f, nf_1} = n^n R_{f,f_1},
+\]
+und weil nach Nr. 139
+\[
+R_{f,f_1} = (-1)^{n(n-1)} R_{f,f_1} = R_{f_1,f}, % ?? uncertain: middle subscript on the printed page reads ambiguous (possibly "f_r"); transcribed as f_1 by context
+\]
+so erhalten wir schliesslich:
+\[
+n^n R_{f_1,f} = (-1)^{\frac{n(n-1)}{2}} \prod (\alpha_i - \alpha_k)^2, \qquad k>i,
+\]
+oder
+\[
+\Delta_f = \frac{(-1)^{\frac{n(n-1)}{2}}}{n^n} \cdot \prod_{\substack{i=1\\k=2}}^{\substack{k=n\\i=n-1}} (\alpha_i - \alpha_k)^2, \qquad i<k.
+\]
+182. \textit{Beispiel.} Die Discriminante der quadratischen Gleichung
+\[
+f(x) = x^2 + a_1 x + a_2 = 0
+\]
+ist:
+\[
+4\Delta_f = (-1)^{\frac{2\cdot 1}{2}} (\alpha_1-\alpha_2)^2 = -(\alpha_1-\alpha_2)^2 = \begin{vmatrix} 2 & a_1 \\ a_1 & 2a_2 \end{vmatrix} = 4a_2 - a_1^2.
+\]
+Sind also die Wurzeln $\alpha_1$ und $\alpha_2$ reell, so ist $\Delta_f$ negativ; sind sie
+imaginär, so ist $\Delta_f$ positiv; ist $\alpha_1 = \alpha_2$, so ist
+\[
+\Delta_f = 0.
+\]
+Zur Berechnung der Doppelwurzel von $f$ hat man, da dieselbe einfache Wurzel der ersten Differentialquotienten ist, entweder die
+Gleichung
+\[
+2x + a_1 = 0,
+\]
+oder
+\[
+a_1 x + 2a_2 = 0.
+\]
+183. \textit{Beispiel.} Die Discriminante der cubischen Gleichung
+\[
+f(x) = x^3 + px + q = 0
+\]
+ist:
+%CONT>>
+
+
+% ===== pdf idx 209, printed 195.0 =====
+% !PRINTED 195
+\weberpage{195}
+\[
+27\Delta_f = (-1)^{3\cdot\frac{2}{2}}(\alpha_1-\alpha_2)^2(\alpha_1-\alpha_3)^2(\alpha_2-\alpha_3)^2
+\]
+\[
+= -(\alpha_1-\alpha_2)^2(\alpha_1-\alpha_3)^2(\alpha_2-\alpha_3)^2
+\]
+oder (vergl. Nr. 174, (II)):
+\[
+81\Delta_f = \begin{vmatrix} 3 & 0 & p & 0 \\ 0 & 3 & 0 & p \\ 0 & 2p & 3q & 0 \\ 0 & 0 & 2p & 3q \end{vmatrix} = 3(27q^2+4p^3),
+\]
+also:
+\[
+27\Delta_f = 27q^2+4p^3.
+\]
+Sind alle drei Wurzeln reell, so ist das Product
+\[
+(\alpha_1-\alpha_2)^2(\alpha_1-\alpha_3)^2(\alpha_2-\alpha_3)^2
+\]
+positiv, also die Discriminante $\Delta_f$ negativ.
+
+Sind zwei Wurzeln imaginär, so ist das Product der quadrirten Wurzeldifferenzen negativ, daher $\Delta_f$ positiv. Besitzt $f(x)=0$ eine Doppelwurzel, so ist $\Delta_f=0$, und man kann dieselbe berechnen aus dem Differentialquotienten
+\[
+f_2 = 2px+3q=0.
+\]
+Nehmen wir die cubische Gleichung in ihrer allgemeinen Form:
+\[
+f = x^3+a_1x^2+a_2x+a_3=0,
+\]
+so ist immer noch
+\[
+\Delta_f = -\frac{1}{27}\{(\alpha_1-\alpha_2)(\alpha_1-\alpha_3)(\alpha_2-\alpha_3)\}^2.
+\]
+Den Ausdruck der Discriminante in den Coefficienten von $f$ finden wir aber am besten durch die \gesperrt{Cayley'sche} Determinante. Es ist nämlich:
+\[
+\begin{aligned}
+\frac{1}{x-y}\cdot\{f_1(x)f_2(y)-f_2(x)f_1(y)\} &=\\
+&= \begin{vmatrix} 3x^2+2a_1x+a_2, & a_1x^2+2a_2x+3a_3 \\ 3y^2+2a_1y+a_2, & a_1y^2+2a_2y+3a_3 \end{vmatrix}\cdot\frac{1}{x-y}\\
+&= \begin{vmatrix} 3 & 2a_1 \\ a_1 & 2a_2 \end{vmatrix}\cdot\begin{vmatrix} x^2 & x & 1 \\ y^2 & y & 1 \end{vmatrix}\cdot\frac{1}{x-y}\\
+&= \begin{vmatrix} 3 & 2a_1 \\ a_1 & 2a_2 \end{vmatrix}\cdot\begin{vmatrix} x^2 & x \\ y^2 & y \end{vmatrix}\cdot\frac{1}{x-y} + \begin{vmatrix} 3 & a_2 \\ a_1 & 3a_3 \end{vmatrix}\begin{vmatrix} x^2 & 1 \\ y^2 & 1 \end{vmatrix}\frac{1}{x-y}\\
+&\quad + \begin{vmatrix} 2a_1 & a_2 \\ 2a_2 & 3a \end{vmatrix}\begin{vmatrix} x & 1 \\ y & 1 \end{vmatrix}\cdot\frac{1}{x-y} = % [sic] second entry printed "3 a" without subscript, unlike the "3a_3" elsewhere
+\\
+&= \begin{vmatrix} 3 & 2a_1 \\ a_1 & 2a_2 \end{vmatrix} xy + \begin{vmatrix} 3 & a_2 \\ a_1 & 3a_3 \end{vmatrix}(x+y) + \begin{vmatrix} 2a_1 & a_2 \\ 2a_2 & 3a_3 \end{vmatrix}\cdot
+\end{aligned}
+\]
+
+
+% ===== pdf idx 210, printed 196.0 =====
+% !PRINTED 196
+\weberpage{196}
+Ordnet man hier die rechte Seite nach $y$, so erhält man:
+\[
+\left\{\begin{vmatrix} 3 & 2a_1 \\ a_1 & 2a_2 \end{vmatrix} x + \begin{vmatrix} 3 & a_2 \\ a_1 & 3a_3 \end{vmatrix}\right\} y
++ \left\{\begin{vmatrix} 3 & a_2 \\ a_1 & 3a_3 \end{vmatrix} x + \begin{vmatrix} 2a_1 & a_2 \\ 2a_2 & 3a_3 \end{vmatrix}\right\} = p_1y+p_2.
+\]
+Die Elimination von $x$ aus den beiden Gleichungen:
+\[
+p_1=0, \qquad p_2=0
+\]
+liefert die Discriminante:
+\[
+-81\cdot\Delta_f=
+\begin{vmatrix}
+\begin{vmatrix} 3 & 2a_1 \\ a_1 & 2a_2 \end{vmatrix}, & \begin{vmatrix} 3 & a_2 \\ a_1 & 3a_3 \end{vmatrix} \\
+\begin{vmatrix} 3 & a_2 \\ a_1 & 3a_3 \end{vmatrix}, & \begin{vmatrix} 2a_1 & a_2 \\ 2a_2 & 3a_3 \end{vmatrix}
+\end{vmatrix}
+= 4(3a_2-a_1^2)(3a_3a_1-a_2^2)-(9a_3-a_1a_2)^2
+\]
+oder:
+\[
+-27\Delta_f = 18a_1a_2a_3 - 4a_1^3a_2 - 4a_2^3 + a_1^2a_2^2 - 27a_3^2.
+\]
+Das negative Vorzeichen links rührt davon her (vergl. Nr. 150), dass die nach der \gesperrt{Cayley'schen} Methode berechnete Resultante $R'$ mit der durch die \gesperrt{Sylvester'sche} Methode gebildeten $R$ durch die Relation zusammenhängt
+\[
+(-1)^{\frac{n(n-1)}{2}} R'_{f_1,f_2} = R_{f_1,f_2}.
+\]
+Will man die Doppelwurzel von $f$ berechnen, so kann man sich hiezu (vergl. Nr. 179) einer der beiden Gleichungen $p_1=0$, $p_2=0$ bedienen.
+
+§. 15. Simultanes System homogener linearer diophantischer Gleichungen.
+
+(Anhang zu § 8.)
+
+184. \textit{Aufsuchung ganzzahliger Lösungen überhaupt.} Wir hatten in Nr. 109 die allgemeinste Lösung eines Systemes linearer Gleichungen besprochen, in denen die Zahl der Unbekannten die Zahl der Gleichungen um mehr als 1 übertrifft. In manchen Fällen, insbesondere in gewissen Hauptaufgaben der Invariantentheorie, interessirt uns nicht die allgemeinste Lösung, sondern jene Lösungen, die nur ganzzahlige
+%CONT>>
+
+
+% ===== pdf idx 211, printed 197.0 =====
+% !PRINTED 197
+\weberpage{197}
+%<<CONT
+Werthe der Unbekannten, ja selbst nur ganzzahlige positive enthalten. Wenn nun auch die im Folgenden entwickelte Methode für die Aufsuchung solcher Werthsysteme die Determinantentheorie nicht zu Hilfe nimmt, so scheint doch hier der geeignete Platz zu sein, jene Punkte dieser Aufgabe zu besprechen, von denen wir im zweiten und dritten Bande Gebrauch machen werden. Die Theorie, die wir hiebei für die Auflösung solcher diophantischer Gleichungen entwickeln, wird in der Praxis im allgemeinen Falle wohl kaum verfolgt werden; für die folgenden Beweise erweist sie sich aber als äusserst zweckentsprechend.
+
+\textit{Auflösung einer einzigen diophantischen Gleichung.} Es sei gegeben die lineare Gleichung mit $n$ Unbekannten:
+\weq{I}{a_1x_1 + a_2x_2 + a_3x_3 + \cdots a_nx_n = 0.}
+Alle Coefficienten sind ganzzahlig und die Aufgabe ist, ganzzahlige Werthe der Unbekannten zu suchen, welche sie befriedigen. Zu dem Zwecke nehmen wir den numerisch kleinsten Coefficienten $a_i$ der Gleichung und dividiren mit ihm alle übrigen $a_k$. Ist dann $q_k$ der sich ergebende Quotient und $r_k$ der Rest, so ist
+\[
+a_k = q_ka_i + r_k.
+\]
+Trägt man diese Werthe von $a_k$ in (I), so erhält man:
+\[
+a_i\left(x_i + \sum_k q_kx_k\right) + r_1x_1 + r_2x_2 + r_3x_3 + \cdots r_nx_n = 0,
+\]
+oder, wenn wir setzen:
+\[
+x_i + \sum_k q_kx_k = \lambda_i,
+\]
+so folgt:
+\weq{II}{a_i\lambda_i + r_1x_1 + r_2x_2 + \cdots r_nx_n = 0.}
+Die Coefficienten dieser neuen Gleichung sind nun kleiner als die der ersten, und die Aufgabe ist somit auf eine leichtere reducirt. Dieses Verfahren wiederholt man so lange, bis irgend eine Unbekannte als kleinsten Coefficienten die Zahl 1 besitzt, bis man also die Gleichung erhält:
+\weq{III}{\lambda_i = \varrho_1\lambda_1 + \varrho_3\lambda_2 + \varrho_3\lambda_3 + \cdots \varrho_{n-1}\lambda_{n-1},} % [sic] subscripts printed 1,3,3,...,n-1
+wo die Grössen $\varrho_i$ irgend welche ganze Zahlen und die $\lambda_i$ theils neu eingeführte, theils noch Unbekannte der ersten Gleichung sein werden. Durch Eliminationen erhält man sodann für jede Unbekannte einen Werth:
+%CONT>>
+
+
+% ===== pdf idx 212, printed 198.0 =====
+% !PRINTED 198
+\weberpage{198}
+%<<CONT
+\weq{IV}{x_i = \xi_i\lambda_1 + \eta_i\lambda_2 + \cdots \pi_i\lambda_{n-1},}
+wobei $\xi_i$, $\eta_i \ldots \pi_i$ ganze Zahlen sind, deren mindestens eine von null verschieden ist. Damit ist aber die allgemeinste Lösung der diophantischen Gleichung aufgestellt. Hiebei ist die Zahl der Parameter $\lambda$ in (IV) immer um 1 kleiner als die Zahl der Unbekannten.
+
+185. \textit{Beispiel.}
+\weq{1}{5x+8y+12z-43t=0.}
+Da der kleinste Coefficient die Zahl 5 ist, so setzen wir
+\weq{2}{x+2y+2z-9t=\lambda_1}
+und erhalten:
+\[
+5\lambda_1 - 2y + 2z + 2t = 0.
+\]
+Substituirt man hierin
+\weq{3}{2\lambda_1-y+z+t=\lambda_2,}
+dann erhält man die Gleichung
+\weq{4}{-2\lambda_2=\lambda_1.}
+Trägt man diesen Werth von $\lambda_1$ in (3) ein, so kommt:
+\weq{5}{t=y-z+5\lambda_2.}
+Hiezu tritt:
+\weq{6}{x=7y-12z+43\lambda_2}
+durch Substitution des Werthes von $\lambda_1$ und $t$ aus (4) und (5) in (2). Diese beiden Gleichungen (5) und (6) stellen in Verbindung mit
+\[
+y=y, \qquad z=z
+\]
+die allgemeine Lösung der diophantischen Gleichung (1) dar. Für
+\[
+\begin{aligned}
+y&=1, & z&=0, & \lambda_2&=0\\
+z&=1, & y&=0, & \lambda_2&=0\\
+\lambda_2&=1, & y&=0, & z&=0
+\end{aligned}
+\]
+erhalten wir die Speciallösungen:
+\[
+\begin{aligned}
+t&=1, & -1, & \quad 5\\
+x&=7, & -12, & \quad 43\\
+y&=1, & 0, & \quad 0 % ?? uncertain: printed glyph reads more like "q" than "y"
+\\
+z&=0, & 1, & \quad 0
+\end{aligned}
+\]
+und man erkennt, dass die Coefficienten $\xi_i$, $\eta_i \ldots \pi_i$ in (IV) nichts anderes sind, als diese einfachen Lösungen der gegebenen Gleichung.
+
+
+% ===== pdf idx 213, printed 199.0 =====
+% !PRINTED 199
+\weberpage{199}
+186. \gesperrt{Auflösung von mehreren simultanen diophantischen Gleichungen.} Die allgemeine Lösung Einer Gleichung ist also dargestellt durch
+\[ x_i = \lambda_1 \xi_i + \lambda_2 \eta_i + \lambda_3 \zeta_i + \cdots \lambda_{n-1} \pi_i, \quad i = 1, 2 \ldots n, \]
+in der alle Grössen rechts ganzzahlig sind. Hat man alsdann zwei diophantische Gleichungen mit $n$ Unbekannten aufzulösen, so kann man zunächst die erste Gleichung nach der vorhergehenden Methode (Nr. 184) behandeln und die sich so ergebenden Werthe der $x_i$ in die zweite Gleichung eintragen. Da die Zahl der Parameter $\lambda_i$ um 1 kleiner ist als die Zahl der Unbekannten, so erhält man dadurch eine Gleichung in $\lambda_i$ mit $n - 1$ Unbekannten. Sie wird ebenso behandelt wie die erste Gleichung für $x_i$, und man wird ein Werthsystem
+\[ \lambda_i = \mu_1 \alpha_i + \mu_2 \beta_i + \mu_3 \gamma_i \cdots + \mu_{n-2} \varphi_i \]
+erhalten, dessen Substitution in die Lösungen für $x_i$ die allgemeine Lösung der beiden simultanen diophantischen Gleichungen ergiebt. Ganz in derselben Weise wiederholt man die Operationen bei Auflösung von drei, vier und mehr diophantischen Gleichungen und man erhält für $\varrho$ Gleichungen mit $n$ Unbekannten, $\varrho < n$:
+\weq{V}{x_i = \xi_i \nu_1 + \eta_i \nu_2 + \zeta_i \nu_3 + \cdots \pi_i \nu_{n-\varrho}.}
+187. \gesperrt{Ganzzahlige positive Lösungen.} Zur Aufsuchung der ganzzahligen positiven Lösungen besitzen wir keine systematische Methode wie vorhin. Man erkennt von vornherein, dass die Gleichung
+\[ a_x = a_1 x_1 + a_2 x_2 + a_3 x_3 + \cdots a_n x_n = 0 \]
+überhaupt keine positive Lösung zulässt, sobald die Coefficienten $a_i$ selbst durchweg positiv sind, die identische Lösung $x_i = 0$ ausgenommen. Dasselbe gilt für ein System von diophantischen Gleichungen, sobald nur eine Combination existirt, welche lauter positive Coefficienten aufweist, da ja diese durch positive Lösungen nicht befriedigt werden kann. Man darf also annehmen, dass eine Anzahl Coefficienten negativ ist; wir bezeichnen sie mit $b_i$ und schreiben daher die Gleichung (I) in der Form
+\weq{VI}{a_x = b_y.}
+Von dieser Gleichung behaupten wir: erstens, sie hat immer positive Lösungen; zweitens, die Zahl der einfachen positiven Lösungen, die ihr zukommen, ist eine endliche. Dabei verstehen wir unter einfachen Lösungen diejenigen Lösungen $x_i$, welche sich nicht mehr aus anderen in der Form
+\[ x_i = \xi_i + \eta_i \]
+%CONT>>
+
+
+% ===== pdf idx 214, printed 200.0 =====
+% !PRINTED 200
+\weberpage{200}
+%<<CONT
+zusammensetzen lassen. Solche Lösungen wie diese nennen wir zusammengesetzte.
+
+188. \gesperrt{Specielle ganzzahlige Lösungen.} Was die erste Behauptung betrifft, so ist deren Richtigkeit leicht einzusehen. Wir setzen zunächst rechts wie links alle Unbekannten bis auf je eine gleich null und erhalten
+\[ a_i x_i = b_k y_k. \]
+Die Gleichung (VI) wird befriedigt für die positiven Werthe
+\[ x_i = b_k, \quad y_k = a_i, \quad x_1 = x_2 = \cdots y_\varrho = y_\sigma = \cdots \text{u. s. w.} = 0. \]
+Solche Lösungen giebt es $m \cdot n$ an der Zahl. Ausser diesen existiren noch sehr viele positive einfache Lösungen; aber die Gesammtzahl derselben muss eine endliche sein. Denn liegt eine Lösung vor $x_i = \xi_i$ und $y_k = \eta_k$, so dass gleichzeitig
+\[ \xi_i > b_k \]
+\[ \eta_k > a_i \]
+ist, dann ist diese Lösung keine einfache mehr, sondern eine zusammengesetzte. Die Gleichung (VI) wird nämlich auch befriedigt durch die Differenz dieser mit der vorerwähnten Lösung. Die Werthe $\xi_i, \eta_k \ldots$ u. s. w. der einfachen Lösungen haben also obere Grenzen, und können demnach nur in endlicher Zahl vorhanden sein. [Der Einwand, dass $\xi_i$ allein über alle Grenzen wachsen könne, während $\eta_k$ die Grenze $a_i$ nicht überschreite, ist a priori hinfällig, da ja die Gleichung (VI) bestehen muss.]
+
+189. \gesperrt{Allgemeine positive ganzzahlige Lösungen.} Ist nun $N$ die Zahl aller einfachen positiven Lösungen, etwa
+\[
+\begin{array}{l}
+x_1 = \xi_1 \quad \eta_1 \quad \zeta_1 \ldots \pi_1 \\
+x_2 = \xi_2 \quad \eta_2 \quad \zeta_2 \ldots \pi_2 \\
+\hphantom{x_2 =} \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \\
+y_1 = \alpha_1 \quad \beta_1 \quad \gamma_1 \ldots \psi_1 \\
+y_2 = \alpha_2 \quad \beta_2 \quad \gamma_2 \ldots \psi_2, \\
+\hphantom{y_2 =} \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot \; \cdot
+\end{array}
+\]
+so erhalten wir wie vorhin (Nr. 184) die allgemeinste positive Lösung, wenn wir die Verticalreihen dieses Systems multipliciren mit
+\[ \lambda_1, \quad \lambda_2, \quad \lambda_3 \ldots \lambda_N \]
+und die Producte einer Zeile addiren, nämlich
+\weq{VII}{\begin{cases} x_i = \xi_i \lambda_1 + \eta_i \lambda_2 + \cdots \pi_i \lambda_N \\ y_k = \alpha_k \lambda_1 + \beta_k \lambda_2 + \cdots \psi_k \lambda_N \end{cases}}
+
+
+% ===== pdf idx 215, printed 201.0 =====

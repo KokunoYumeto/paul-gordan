@@ -1,0 +1,1136 @@
+% !PRINTED 169
+\weberpage{169}
+%<<CONT
+günstigsten Falle dann $\nu_1<\nu$ sein muss; es besitzt sonach $\varphi$ einen
+linearen Factor und folglich auch $f$. Ist aber $\mu_1>\mu$, also etwa $\mu_1=\mu+\varrho$,
+dann ist
+\[ n = 2^{\mu}\cdot \nu = 2^{\mu+\varrho}\cdot \nu_1 + 2^{\mu_2}\cdot \nu_2\, , \]
+oder
+\[ 2^{\mu_2}\cdot \nu_2 = 2^{\mu}(\nu-2^{\varrho}\cdot \nu_1)\, . \]
+Nun ist $\nu-2^{\varrho}\cdot \nu_1$ jedenfalls ungerade, da $\nu$ ungerade ist und nach
+Voraussetzung $\varrho$ nicht null sein kann, also ist:
+\[ \mu_2=\mu \]
+und
+\[ \nu_2=\nu-2^{\varrho}\cdot \nu_1 \]
+oder
+\[ \nu_2<\nu\, , \]
+folglich ist in diesem Falle der Factor $\psi(x)$ eine Gleichung, die leichter
+zu lösen ist als $f(x)$, und $f(x)=0$ hat somit einen linearen Factor,
+da ihn nach Voraussetzung $\psi(x)$ besitzt.
+
+Wir haben somit das Resultat: Sobald $f(x)=0$ einen reellen
+Factor $\varphi(x)$ besitzt, besitzt es auch einen linearen Factor.
+
+160. \emph{Voraussetzung: $f(x)=0$ besitze einen imaginären Factor.}
+Nehmen wir an, $f(x)=0$ habe den Factor
+\[ \varphi(x) = p(x)+i\cdot q(x) = p+iq\, , \]
+dann muss es nothwendig, da nur reelle Co\"efficienten in $f=0$ auf-
+treten sollen, auch den Factor
+\[ \chi(x) = p(x)-iq(x) = p-iq \]
+besitzen. Haben dann $\varphi(x)$ und $\chi(x)$ einen Theiler gemein, so kann
+dies nur davon herrühren, dass $p(x)$ und $q(x)$ denselben als gemein-
+schaftlichen Theiler haben, der in Folge dessen reell sein muss. Daraus
+folgt aber, dass dann auch $f(x)$ diesen reellen Factor besitzt, und so-
+mit auch einen linearen Factor.
+
+Haben aber $\varphi(x)$ und $\chi(x)$ keinen gemeinsamen Theiler, so kann
+man nach Nr. 128 $(n)$ zwei Functionen $A(x)$ und $B(x)$ so finden, dass
+\weq{1}{A^{n_1-1}(x)\cdot \varphi^{n_1}(x) + B^{n_1-1}(x)\chi^{n_1}(x) = 1 = A\cdot(p+iq)+B\cdot(p-iq)}
+ist. Ausserdem ist $f$ darstellbar in den Formen:
+\weq{2}{\begin{cases} f = [p(x)+iq(x)]L(x) = [p+iq]\cdot L \\ f = [p(x)-iq(x)]M(x) = [p-iq]\cdot M. \end{cases}}
+Multipliciren wir Gleichung (1) mit $f(x)$, so erhalten wir
+\[ f(x) = A\cdot f\cdot(p+iq) + B\cdot f\cdot(p-iq) \]
+oder wegen der Relationen (2)
+\[ f(x) = A\cdot M\cdot(p^2+q^2) + B\cdot L\cdot(p^2+q^2) \]
+%CONT>>
+
+
+% ===== pdf idx 184, printed 170.0 =====
+% !PRINTED 170
+\weberpage{170}
+%<<CONT
+\[ f(x) = A\cdot M\cdot(p^2+q^2) + B\cdot L\cdot(p^2+q^2) \]
+oder
+\[ f(x) = (p^2+q^2)(A\cdot M + B\cdot L)\, . \]
+Nun ist aber $p^2+q^2$ reell, und so lange der Grad von $p^2+q^2<n$,
+also der von $\varphi<\dfrac{n}{2}$ ist, besitzt folglich $f$ auch in diesem Falle einen
+reellen Factor. Wäre $\varphi(x)$ vom Grade $\varrho>\dfrac{n}{2}$ gewesen, so hätten wir
+die eben gemachten Schlüsse in Bezug auf den andern Factor $\psi(x)$
+ziehen können, so dass also nach Nr. 159 in jedem der beiden Fälle
+$f(x)$ einen linearen Factor besitzt. Der Fall, wo der Grad von
+$\varphi(x)=p(x)+iq(x)$ gleich $\dfrac{n}{2}$ ist, also $p^2+q^2$ den nämlichen Grad
+in $x$ hat, wie $f(x)$ selbst, bedarf einer speciellen Untersuchung. Wir
+sind also zu folgendem Resultate gelangt:
+
+\glqq Besitzt $f(x)=0$ überhaupt einen reellen Factor, oder einen
+imaginären Factor vom Grade $n_1<\dfrac{n}{2}$, so besitzt $f(x)=0$
+auch immer einen linearen Factor.\grqq{}
+
+Es bleibt also noch zu beweisen: 1) dass jede Gleichung $f(x)=0$
+irgend einen Factor $\varphi(x)$ besitzen muss; 2) dass, wenn dieser Factor
+von der Form $p(x)+iq(x)$ ist und vom Grade $\dfrac{n}{2}$, die Annahme, $p(x)$
+und $q(x)$ hätten dann keinen gemeinschaftlichen Factor, entweder zu
+einem Widerspruche führt, oder wenn nicht, dass dann ein reeller
+Factor a priori vorhanden ist.
+
+161. \emph{Beweis, dass jede Gleichung in Factoren gespalten werden kann.}
+Um zu zeigen, dass jede Gleichung $f(x)=0$ einen Factor besitzen
+muss, bilden wir die beiden Functionen:
+\weq{I}{\begin{cases} \dfrac{f(x+u)+f(x-u)}{2} = F(x) \\ \dfrac{f(x+u)-f(x-u)}{2u} = \Phi(x). \end{cases}}
+Die Resultante der beiden Functionen in Bezug auf $x$ sei $R_{F,\Phi}$. Multi-
+pliciren wir die zweite Gleichung mit $u$ und addiren sie zur ersten,
+so kommt:
+\[ f(x+u) = F(x) + u\,\Phi(x) \]
+und nach dem Satze
+\[ R_{f,\varphi} = R_{f+\lambda\varphi,\varphi} \quad \text{(vgl. Nr. 145)} \]
+stimmt die Resultante $R_{F,\Phi}$ der beiden Functionen (I) überein mit der
+Resultante $R_{f(x+u),\Phi(x)} = P_{(u)}$ der beiden Functionen
+\weq{II}{\begin{cases} f(x+u) \quad \text{und} \\ \dfrac{f(x+u)-f(x-u)}{2u} = \Phi(x). \end{cases}}
+Diese Resultante $R_{f,\Phi} = P_{(u)}$ der beiden letzten Functionen kann,
+gleich null gesetzt, als Gleichung für $u$ aufgefasst werden und es
+fragt sich jetzt, ist sie als solche leichter lösbar als $f$ oder nicht.
+Im ersten Falle hat alsdann nach Voraussetzung $P_{(u)}=0$ einen linearen
+Factor, d. h. man kann einen Werth $u$ berechnen, so dass $R_{f,\varphi}$ ver-
+schwindet. Trägt man diesen speciellen Werth von $u$, den wir mit
+$v$ bezeichnen wollen, in die beiden Functionen (II) ein, so besitzen
+dieselben einen gemeinschaftlichen Factor, da $R_{f,\varphi}$ verschwindet, folg-
+lich besitzt $f(x+u)$ selbst einen Factor, also auch $f(x)$. Dies gilt
+auch, wenn zufälliger Weise $v=0$ ist. Nun ist aber in der That
+%CONT>>
+
+
+% ===== pdf idx 185, printed 171.0 =====
+% !PRINTED 171
+\weberpage{171}
+%% [running head, not body text -- commented out 2026-08-07] Page furniture (running
+%% head, folio, signature) is excluded from this edition by standing policy.
+%% \S.\,12. Fundamentalsatz der Algebra. \hfill 171
+
+$R_{f,\varphi} = P_{(u)} = 0$ eine leichter lösbare Gleichung als $f(x) = 0$. Denn
+denken wir uns $f(x+u)$ nach $x$ und $u$ geordnet, so ist
+\[ f(x+u) = x^n + p_1x^{n-1} + p_2x^{n-2} + \cdots p_n, \]
+wo $p_1, p_2 \ldots p_n$ Functionen von $u$ vom bezw. $1^{\text{ten}}$, $2^{\text{ten}}, \ldots n^{\text{ten}}$ Grade
+sind. Ebenso wird $\Phi$, in welcher sich wegen der Subtraction
+$f(x+u) - f(x-u)$ einmal die höchste Potenz von $x$ weghebt, und
+anderntheils wegen des Divisors $u$ auch der Grad in $u$ um 1 sich
+erniedrigt, von der Form sein:
+\[ \Phi = x^{n-1} + q_1x^{n-2} + q_2x^{n-3} + \cdots q_{n-1}, \]
+wo $q_1, q_2 \ldots q_{n-1}$ Functionen von $u$ bezw. $1^{\text{ten}}$, $2^{\text{ten}}, \ldots (n-1)^{\text{ten}}$ Grades
+sind. Die Resultante $R_{f,\varphi}$ in $u$ ist somit (vgl. Nr. 142) vom Grade
+\[ n(n-1)\cdot \]
+Nun enthalten aber anderntheils die beiden Functionen (I) die Grösse $u$
+nur in geraden Potenzen, wovon man sich unmittelbar überzeugt, wenn
+man die einzelnen Binome $(x+u)^\varrho$ entwickelt und die Addition bezw.
+Subtraction ausführt. Es kann also auch die Resultante derselben,
+die mit der Resultante der beiden Functionen (II) übereinstimmt, nur
+eine Function von $u^2$ sein, und folglich lässt sich durch die Substitution
+$u^2 = w$ ihr Grad erniedrigen auf $\dfrac{n(n-1)}{2}$. Da nun $n = 2^\mu \cdot \nu$ ist,
+so ist
+\[ \frac{n(n-1)}{2} = 2^{\mu-1} \cdot \nu \cdot (2^\mu \cdot \nu - 1) \]
+oder, weil der Factor $2^\mu \cdot \nu - 1$ ungerade ist, solange $\mu > 0$, was immer
+vorausgesetzt werden kann,
+\[ \frac{n(n-1)}{2} = 2^{\mu-1} \cdot \bar{\nu}. \]
+Der Grad der Resultante besitzt also ein kleineres $\mu$ als der Grad
+von $f$; folglich hat die Resultante eine Wurzel, die wir mit $v = \sqrt{w}$
+bezeichnen können, da $P_{(u)}$ in $u$ quadratisch ist. Wird dieser Werth
+$u = v$ in $f = f(x+u)$ und $\varphi = \dfrac{f(x+u) - f(x-u)}{2u}$ eingetragen, so
+verschwindet $R_{f,\varphi}$, d.\,h. $f(x+v)$ und $\varphi$ haben einen gemeinschaft-
+lichen Theiler, und sonach auch $f(x)$ allein einen Factor. Ist $v$ reell, so
+ist auch dieser Factor reell. Ist dagegen $v$ complex oder rein imaginär,
+so wird der Factor von $f$ im Allgemeinen gleichfalls imaginär sein.
+
+162. \textit{Der Ausnahmefall.} Es bleibt also noch der Fall zu be-
+handeln, in welchem dieser Factor von $f(x)$ complex und vom Grade $\dfrac{n}{2}$
+ist, nämlich
+%CONT>>
+
+
+% ===== pdf idx 186, printed 172.0 =====
+% !PRINTED 172
+\weberpage{172}
+%% [running head, not body text -- commented out 2026-08-07] Page furniture (running
+%% head, folio, signature) is excluded from this edition by standing policy.
+%% 172 \hfill Zweiter Theil. Anwendungen der Determinantentheorie.
+
+%<<CONT
+\[ \varphi(x) = p(x) + iq(x) \]
+und $p(x)$ und $q(x)$ keinen gemeinschaftlichen Theiler haben.
+
+Nehmen wir nämlich an, $\varphi(x)$ sei vom Grade $\dfrac{n}{2}$; der andere
+conjugirt complexe Factor ist alsdann
+\[ \psi(x) = p(x) - iq(x) \quad \text{und} \]
+\weq{1}{f(x) = \varphi(x) \cdot \psi(x) = p^2 + q^2}
+sei die einzig mögliche Zerlegung von $f(x)$. Hat aber $f(x)$ den Factor
+$\varphi(x)$, so besitzt $f(x+v)$ den Factor $\varphi(x+v)$ und $f(x+v)$ ist von
+der Form:
+\weq{2}{f(x+v) = \varphi(x+v) \cdot \psi(x+v).}
+Ebenso ist aber auch
+\weq{3}{f(x-v) = \varphi(x-v) \cdot \psi(x-v).}
+Nun soll nach Voraussetzung $f(x+v)$ in keiner anderen Weise zer-
+legbar sein, als in der unter (1) angedeuteten, und da überdies
+\[ \Phi = \frac{f(x+v) - f(x-v)}{2v} \]
+mit $f(x+v)$ einen gemeinschaftlichen Factor besitzt, so besitzt
+diesen ausser
+\[ f(x+v) = \varphi(x+v) \cdot \psi(x+v), \]
+\[ \text{auch} \quad f(x-v) = \varphi(x-v) \cdot \psi(x-v). \]
+Dies ist nur möglich, wenn entweder
+\[ 1) \quad \varphi(x+v) = \varphi(x-v) \quad \text{oder} \]
+\[ 2) \quad \psi(x+v) = \psi(x-v) \quad \text{oder} \]
+\[ 3) \quad \varphi(x+v) = \psi(x-v) \quad \text{oder} \]
+\[ 4) \quad \psi(x+v) = \varphi(x-v). \]
+Man kann zunächst zeigen, dass die beiden ersten Annahmen auf
+Widersprüche führen.
+
+Denn im ersten Falle müsste
+\[ \varphi(x-v) - \varphi(x+v) \]
+identisch null sein. Das ist nur möglich, wenn die Coefficienten der
+Potenzen von $x$ einzeln verschwinden. Dieser Ausdruck ist aber vom
+Grade $\dfrac{n}{2} - 1$ in $x$ und das Glied mit der Potenz $x^{\frac{n}{2}-1}$ rührt einzig
+und allein von der Differenz $(x-v)^{\frac{n}{2}} - (x+v)^{\frac{n}{2}}$ her, hat also den
+%CONT>>
+
+
+% ===== pdf idx 187, printed 173.0 =====
+% !PRINTED 173
+\weberpage{173}
+%% [running head, not body text -- commented out 2026-08-07] Page furniture (running
+%% head, folio, signature) is excluded from this edition by standing policy.
+%% \S.\,12. Fundamentalsatz der Algebra. \hfill 173
+
+%<<CONT
+Coefficienten $-n \cdot v$. Da $v$ nicht null ist, so ist diese Identität unmög-
+lich. Dieselbe Schlussweise lehrt, dass auch der zweite Fall nicht
+eintreten kann.
+
+Was die dritte Annahme betrifft
+\[ \varphi(x+v) = \psi(x-v), \]
+so setzen wir zunächst voraus, dass $v$ eine complexe Grösse sein
+möge, dass also die Identität bestehe
+\weq{I}{\varphi(x+\alpha+i\beta) = \psi(x-\alpha-i\beta)}
+oder ausführlicher
+\[ p(x+\alpha+i\beta) + iq(x+\alpha+i\beta) = p(x-\alpha-i\beta) - iq(x-\alpha-i\beta). \]
+Vertauscht man hier $i$ mit $-i$, so erhält man
+\[ p(x+\alpha-i\beta) - iq(x+\alpha-i\beta) = p(x-\alpha+i\beta) + iq(x-\alpha+i\beta) \]
+oder
+\weq{II}{\psi(x+\alpha-i\beta) = \varphi(x-\alpha+i\beta).}
+Ersetzt man in (I) $x$ durch $x-2\alpha$, so erhält man:
+\weq{III}{\varphi(x-\alpha+i\beta) = \psi(x-3\alpha-i\beta);}
+also durch Comparation von (II) mit (III)
+\[ \psi(x-i\beta+\alpha) = \psi(x-i\beta-3\alpha). \]
+Da diese Identität für jeden Werth von $x$ bestehen soll, so müssen
+die Coefficienten der Potenzen von $x$ einzeln verschwinden. Es muss
+also insbesondere der Coefficient der höchsten in der Identität noch
+auftretenden Potenz $x^{\frac{n}{2}-1} = 0$ sein. Derselbe rührt einzig und allein
+von der Differenz her:
+\[ \{x + (\alpha - i\beta)\}^{\frac{n}{2}} - \{x - (3\alpha + i\beta)\}^{\frac{n}{2}}, \]
+ist also:
+\[ \frac{n}{2}(\alpha - i\beta) + \frac{n}{2}(3\alpha + i\beta) = 2n\alpha. \]
+Daraus folgt: $\alpha$ muss selbst verschwinden, d.\,h. $v$ kann keine com-
+plexe Grösse sein. Ist aber $v$ rein imaginär, also
+\[ v = i\beta, \]
+so geht unsere Voraussetzung (3) über in
+\[ \varphi(x+i\beta) = \psi(x-i\beta) \]
+
+
+% ===== pdf idx 188, printed 174.0 =====
+% !PRINTED 174
+\weberpage{174}
+%% [running head, not body text -- commented out 2026-08-07] Page furniture (running
+%% head, folio, signature) is excluded from this edition by standing policy.
+%% 174 \hfill Zweiter Theil. Anwendungen der Determinantentheorie.
+
+oder: \quad $p(x+i\beta) + iq(x+i\beta) = p(x-i\beta) - iq(x-i\beta).$
+
+Hat also die linke Seite die Form
+\[ A + iB, \]
+so muss die rechte Seite, da sie durch Vertauschung von $i$ mit $-i$
+aus der linken hervorgeht, dargestellt sein durch
+\[ A - iB. \]
+Da aber beide Ausdrücke einander gleich sein sollen, so muss
+\[ B = 0 \]
+sein. Dann hat aber $\varphi(x+i\beta)$ nur reelle Coefficienten, also $f(x+v)$
+einen reellen Factor $A(x)$ und somit auch einen linearen. Dieselben
+Resultate ergeben sich auf gleichem Wege bei Discussion der vierten
+Annahme.
+
+Wir kommen zum Schlusse: Ist der imaginäre Factor $\varphi = p(x)$
+$+ iq(x)$ von $f$ vom Grade $\dfrac{n}{2}$, so besitzt, wenn $p(x)$ und $q(x)$ keinen
+gemeinschaftlichen Theiler haben, $f(x+v)$ einen reellen Factor, also
+auch einen linearen und demnach auch $f(x)$ einen linearen.
+
+Es ist somit der Beweis geliefert, dass $f(x) = 0$ in jedem Falle
+einen linearen Factor haben muss. Wir erhalten denselben, indem
+wir die in Nr. 161 geschilderten Operationen so lange anwenden, bis
+wir schliesslich auf eine Resultante kommen, für welche $\mu = 0$, die
+also von ungeradem Grade ist.
+
+\textit{Anmerkung.} Aus der Thatsache, dass jede Gleichung $n^{\text{ten}}$ Grades
+mindestens eine Wurzel hat, geht unmittelbar hervor, dass sie $n$
+Wurzeln besitzt. Denn dividirt man die Gleichung mit dem einen
+linearen Factor, so erhält man eine Function $(n-1)^{\text{ten}}$ Grades als
+Quotient, welche gleich null gesetzt, ebenso wie die ursprüngliche
+Gleichung, eine Wurzel besitzen muss.
+
+\begin{center}
+\S.\,13.\\
+\gesperrt{Zusammenhang der Resultante mit den Wurzeln der
+Gleichungen.}
+\end{center}
+
+163. \textit{Berechnung der gemeinsamen Wurzeln zweier Gleichungen.}
+Sind
+\[ f(x) = x^m + a_1x^{m-1} + a_2x^{m-2} + \cdots + a_m = 0 \]
+\[ \varphi(x) = x^n + b_1x^{n-1} + b_2x^{n-2} + \cdots + b_n = 0 \]
+zwei Gleichungen vom $m^{\text{ten}}$ und $n^{\text{ten}}$ Grade, die beide für den gemein-
+schaftlichen Werth $x = \alpha$ befriedigt werden, so kann man sich den
+%CONT>>
+
+
+% ===== pdf idx 189, printed 175.0 =====
+% !PRINTED 175
+\weberpage{175}
+% running head: \S.\,13. Zusammenhang der Resultante mit den Wurzeln der Gleichungen. 175
+%<<CONT
+Werth dieser gemeinschaftlichen Wurzel in folgender Weise verschaffen. Man bildet sich die $m+n-2$ Gleichungen:
+\weq{I}{
+\left\{
+\begin{array}{l}
+\alpha^0 f(\alpha) = 0, \quad \alpha f(\alpha) = 0, \cdots \alpha^{n-2} f(\alpha) = 0 \\
+\alpha^0 \varphi(\alpha) = 0, \quad \alpha \varphi(\alpha) = 0, \cdots \alpha^{m-2} \varphi(\alpha) = 0.
+\end{array}
+\right.
+}
+Sie enthalten linear und homogen die $m+n-1$ Unbekannten
+\[
+\alpha^0, \quad \alpha^1, \quad \alpha^2 \ldots \alpha^{m+n-2}
+\]
+und man kann daher ihre Werthe nach Nr. 102 in eindeutiger Weise bestimmen.
+
+Ist speciell $m=n$, so kann man statt des Gleichungssystemes (I) $n-1$ Gleichungen des Systemes
+\weq{II}{
+p_i = c_{i1}\alpha^{n-1} + c_{i2}\alpha^{n-2} + \cdots c_{in}\alpha^0 = 0
+}
+benutzen. Dieselben sind (vergl. Nr. 148) die Coefficienten von $y^{n-i}$ in der Entwicklung der Function:
+\[
+\frac{1}{y-x}\{f(x)\varphi(y) - \varphi(x)f(y)\} = \sum_{i=1}^{i=n} p_i y^{n-i}
+\]
+und verschwinden offenbar für $x=\alpha$, wenn gleichzeitig sowohl $f(\alpha)$ als $\varphi(\alpha)$ verschwinden.
+
+Das System (II) ist wieder linear und homogen in den $n$ Unbekannten
+\[
+\alpha^0, \quad \alpha^1, \quad \alpha^2 \ldots \alpha^{n-1}.
+\]
+Wenn die beiden Functionen $f$ und $\varphi$ mehr als einen linearen Factor gemeinschaftlich haben, so ist es natürlich nicht möglich, dieselben auf diesem Wege zu bestimmen, wie schon daraus erhellt, dass sowohl Gleichungssystem (I) als (II) Systeme von homogenen und linearen Gleichungen sind, die als solche nur eine einzige Lösung zulassen.
+
+164. \textit{Die Differentialquotienten der Resultante.} Wir hatten in Nr. 131 als Ausdruck für die Resultante $R_{f,\varphi}$ erhalten:
+\[
+R_{f,\varphi} = \overset{n-1}{\overline{A}}(x)\,\overset{m}{f}(x) + \overset{m-1}{\overline{B}}(x)\,\overset{n}{\varphi}(x).
+\]
+Differenziren wir diese Gleichung nach einem Coefficienten von $f$ oder $\varphi$, also etwa nach $a_\nu$, so erhalten wir:
+\[
+\frac{\partial R_{f,\varphi}}{\partial a_\nu} = \frac{\partial \overline{A}}{\partial a_\nu}\cdot f + \overline{A}\cdot x^{n-\nu} + \frac{\partial \overline{B}}{\partial a_\nu}\cdot \varphi.
+\]
+Ist nun $\alpha$ eine gemeinschaftliche Wurzel der beiden Gleichungen $f$ und $\varphi$, so geht daraus, wegen $f(\alpha)=0$, $\varphi(\alpha)=0$, die Relation hervor,
+\weq{1}{
+\frac{\partial R_{f,\varphi}}{\partial a_\nu} = \overset{n-1}{\overline{A}}(\alpha)\cdot \alpha^{n-\nu}.
+}
+
+
+% ===== pdf idx 190, printed 176.0 =====
+% !PRINTED 176
+\weberpage{176}
+% running head: 176  Zweiter Theil. Anwendungen der Determinantentheorie.
+Da man ebenso erhält:
+\weq{2}{
+\frac{\partial R_{f,\varphi}}{\partial a_\mu} = \overset{n-1}{\overline{A}}(\alpha)\cdot \alpha^{n-\mu},
+}
+so ergiebt sich aus diesen beiden Relationen die Proportion
+\[
+\frac{\partial R_{f,\varphi}}{\partial a_\nu} : \frac{\partial R_{f,\varphi}}{\partial a_\mu} = \alpha^{n-\nu} : \alpha^{n-\mu}.
+\]
+Man erkennt also, dass die partiellen Differentialquotienten der Resultante nach den Coefficienten von $f$ oder $\varphi$ der Reihe nach proportional sind den verschiedenen Potenzen der gemeinschaftlichen Wurzel $\alpha$. Man kann aus dieser Eigenschaft unter anderm auch eine Reihe von partiellen Differentialgleichungen ableiten, welche charakteristische Gleichungen sind für die Resultante.
+
+165. \textit{Zusammenhang zwischen den Coefficienten und Wurzeln einer Gleichung.} Die Thatsache, dass jede Gleichung $n^{\mathrm{ten}}$ Grades $n$ Wurzeln $\alpha_1 \alpha_2 \ldots \alpha_n$ besitzt, sich also in ein Product von $n$ linearen Factoren zerfällen lässt, lehrt, dass die Coefficienten der Gleichung in einem innern Zusammenhange mit den Wurzeln derselben stehen. Man findet diese Beziehungen in der That direct, wenn man in den beiden Darstellungen der Gleichung $f$:
+\[
+f = (x-\alpha_1)(x-\alpha_2)\cdots(x-\varrho_n) = 0 % [sic] printed \varrho_n, not \alpha_n
+\]
+\[
+f = x^n + a_1 x^{n-1} + a_2 x^{n-2} \cdots + a_{n-1}x + a_n = 0
+\]
+die Coefficienten gleich hoher Potenzen von $x$ vergleicht.
+
+Man erhält so in bekannter Weise die Grössen $a_i$ ausgedrückt in symmetrischen Functionen der Wurzeln
+\[
+\alpha_1 \quad \alpha_2 \quad \alpha_3 \ldots \alpha_n.
+\]
+Um diese symmetrischen Functionen zu ermitteln, kann man auch in folgender Weise vorgehen.
+
+Man bildet die $n$ Gleichungen:
+\[
+f(\alpha_1) = 0, \quad f(\alpha_2) = 0, \quad f(\alpha_3) = 0 \ldots f(\alpha_n) = 0,
+\]
+die linear sind in den $n$ Coefficienten $a_1, a_2 \ldots a_n$, und also zu deren Berechnung gerade ausreichen, wenn alle Wurzeln verschieden sind.
+
+Die Matrix dieses Systems von Gleichungen für $a_0, a_1 \ldots a_n$ ist dargestellt durch:
+\weq{A}{
+\begin{vmatrix}
+\alpha_1^{n}, & \alpha_1^{n-1}, & \alpha_1^{n-2} & \cdots & 1 \\
+\alpha_2^{n}, & \alpha_2^{n-1}, & \alpha_2^{n-2} & \cdots & 1 \\
+\alpha_3^{n}, & \cdot & \cdot & \cdots & 1 \\
+\cdot & \cdot & \cdot & \cdots & \cdot \\
+\alpha_n^{n}, & \alpha_n^{n-1}, & \alpha_n^{n-2} & \cdots & 1
+\end{vmatrix}.
+}
+
+
+% ===== pdf idx 191, printed 177.0 =====
+% !PRINTED 177
+\weberpage{177}
+% running head: \S.\,13. Zusammenhang der Resultante mit den Wurzeln der Gleichungen. 177
+Bezeichnen wir wie früher (vergl. Nr. 112) die mit wechselndem Vorzeichen genommenen $n+1$ Determinanten derselben, welche durch Unterdrückung der bezw. $1^{\mathrm{ten}}$, $2^{\mathrm{ten}} \ldots (n+1)^{\mathrm{ten}}$ Colonne entstehen, mit
+\[
+p_0, \quad p_1, \quad p_2 \cdots p_n % ?? uncertain: a small mark follows p_n in the scan (ink blot or stray accent); transcribed as plain p_n
+\]
+so erhalten wir:
+\[
+a_n = \frac{p_n}{p_0}, \quad a_{n-1} = \frac{p_{n-1}}{p_0}; \quad a_{n-2} = \frac{p_{n-2}}{p_0}, \ldots a_1 = \frac{p_1}{p_0}.
+\]
+Nun ist die Determinante $p_0$ dargestellt durch:
+\[
+p_0 =
+\begin{vmatrix}
+\alpha_1^{n-1}, & \alpha_1^{n-2} & \cdots & 1 \\
+\alpha_2^{n-1}, & \alpha_2^{n-2} & \cdots & 1 \\
+\alpha_3^{n-1}, & \cdot & \cdots & 1 \\
+\cdot & \cdot & \cdots & \cdot \\
+\alpha_n^{n-1}, & \alpha_n^{n-2} & \cdots & 1
+\end{vmatrix}.
+\]
+Diese Determinante ist aber (vergl. Beispiel 2 und 3 in Nr. 40) nichts anderes als das Differenzenproduct
+\[
+\Delta_\alpha = (\alpha_1-\alpha_2)(\alpha_1-\alpha_3)\cdots(\alpha_1-\alpha_n)
+(\alpha_2-\alpha_3)\cdots(\alpha_2-\alpha_n)
+(\alpha_{n-1}-\alpha_n),
+\]
+und man erkennt ebenso aus dem angeführten Beispiele, dass alle Determinanten der Matrix (A) durch dieses Differenzenproduct theilbar sind, so dass wir also auf diese Weise die Coefficienten $a_i$ in der That ausgedrückt erhalten durch ganze symmetrische Functionen der Wurzeln.
+
+166. \textit{Beispiel.} Es sei
+\[
+f(x) = x^4 + a_1 x^3 + a_2 x^2 + a_3 x + a_4 = 0
+\]
+und
+\[
+\alpha_1, \quad \alpha_2, \quad \alpha_3, \quad \alpha_4
+\]
+seien die Wurzeln dieser Gleichung. Es ist dann:
+\[
+\begin{aligned}
+f(\alpha_1) &= \alpha_1^4 + a_1\alpha_1^3 + a_2\alpha_1^2 + a_3\alpha_1 + a_4 = 0 \\
+f(\alpha_2) &= \alpha_2^4 + a_1\alpha_2^3 + a_2\alpha_2^2 + a_3\alpha_2 + a_4 = 0 \\
+f(\alpha_3) &= \alpha_3^4 + a_1\alpha_3^3 + a_2\alpha_3^2 + a_3\alpha_3 + a_4 = 0 \\
+f(\alpha_4) &= \alpha_4^4 + a_1\alpha_4^3 + a_2\alpha_4^2 + a_3\alpha_4 + a_4 = 0.
+\end{aligned}
+\]
+Die Matrix dieses Systems ist:
+\weq{A}{
+\begin{vmatrix}
+\alpha_1^{4} & \alpha_1^{3} & \alpha_1^{2} & \alpha_1 & 1 \\
+\alpha_2^{4} & \alpha_2^{3} & \alpha_2^{2} & \alpha_2 & 1 \\
+\alpha_3^{4} & \alpha_3^{3} & \alpha_3^{2} & \alpha_3 & 1 \\
+\alpha_4^{4} & \alpha_4^{3} & \alpha_4^{2} & \alpha_4 & 1
+\end{vmatrix}
+}
+% foot: Gordan, Determinanten.   12  [author/short-title signature line at foot of page, not body text]
+
+
+% ===== pdf idx 192, printed 178.0 =====
+% !PRINTED 178
+\weberpage{178}
+% running head: 178  Zweiter Theil. Anwendungen der Determinantentheorie.
+Die Determinante
+\[
+p_0 =
+\begin{vmatrix}
+\alpha_1^{3} & \alpha_1^{2} & \alpha_1 & 1 \\
+\alpha_2^{3} & \alpha_2^{2} & \alpha_2 & 1 \\
+\alpha_3^{3} & \alpha_3^{2} & \alpha_3 & 1 \\
+\alpha_4^{3} & \alpha_4^{2} & \alpha_4 & 1
+\end{vmatrix}
+= \Delta_\alpha
+\]
+hat den Werth:
+\[
+p_0 = (\alpha_1-\alpha_2)(\alpha_1-\alpha_3)(\alpha_1-\alpha_4)(\alpha_2-\alpha_3)(\alpha_2-\alpha_4)(\alpha_3-\alpha_4) = \Delta_\alpha.
+\]
+Ebenso findet man:
+\[
+\begin{aligned}
+p_4 &= +\alpha_1\alpha_2\alpha_3\alpha_4 \cdot \Delta_\alpha \\
+p_3 &= -(\alpha_1\alpha_2\alpha_3 + \alpha_1\alpha_2\alpha_4 + \alpha_1\alpha_3\alpha_4 + \alpha_2\alpha_3\alpha_4) \cdot \Delta_\alpha \\
+p_2 &= +(\alpha_1\alpha_2 + \alpha_1\alpha_3 + \alpha_1\alpha_4 + \alpha_2\alpha_3 + \alpha_2\alpha_4 + \alpha_3\alpha_4) \cdot \Delta_\alpha \\
+p_1 &= -(\alpha_1 + \alpha_2 + \alpha_3 + \alpha_4) \cdot \Delta_\alpha.
+\end{aligned}
+\]
+Folglich erhalten wir als Relationen zwischen den Coefficienten und den Wurzeln von $f$:
+\[
+\left.
+\begin{aligned}
+a_1 &= -\sum_{1}^{4} \alpha_i \\
+a_2 &= +\sum_{1}^{4} \alpha_i \alpha_k \\
+a_3 &= -\sum_{1}^{4} \alpha_i \alpha_k \alpha_\varrho \\
+a_4 &= +\alpha_1 \alpha_2 \alpha_3 \alpha_4
+\end{aligned}
+\right\}
+\quad i < k < \varrho.
+\]
+167. \textit{Die Potenzsummen der Wurzeln.} Von den weiteren verschiedenartigen Beziehungen, welche zwischen den Coefficienten $a_i$ und Wurzeln $\alpha_i$ einer Gleichung bestehen, mögen hier nur noch die Relationen zwischen den Coefficienten und den Summen
+\[
+s_\varrho = \alpha_1^\varrho + \alpha_2^\varrho + \alpha_3^\varrho + \cdots \alpha_n^\varrho
+\]
+der Potenzen aller Wurzeln einer Gleichung erwähnt sein. Bildet man nämlich die erste Ableitung von $f(x)$ einmal in der Form:
+\[
+f'(x) = nx^{n-1} + (n-1)a_1 x^{n-2} + (n-2)a_2 x^{n-3} + \cdots a_{n-1},
+\]
+dann aber auch in der Form
+\[
+f'(x) = \frac{f(x)}{x-\alpha_1} + \frac{f(x)}{x-\alpha_2} + \frac{f(x)}{x-\alpha_3} + \cdots \frac{f(x)}{x-\alpha_n}
+\]
+und vergleicht in den beiden Ausdrücken die Coefficienten gleich hoher Potenzen von $x$, so erhält man die unter dem Namen \glqq Newton'sche Identitäten\grqq{} bekannten Formeln:
+%CONT>>
+
+
+% ===== pdf idx 193, printed 179.0 =====
+% !PRINTED 179
+\weberpage{179}
+\[
+(\mathrm{I}) \quad
+\left\{
+\begin{aligned}
+s_1 &+ 1 \cdot a_1 = 0 \\
+s_2 &+ a_1 s_1 + 2 \cdot a_2 = 0 \\
+s_3 &+ a_1 s_2 + a_2 s_3 + 3 \cdot a_3 = 0 \\
+& \cdots\cdots\cdots\cdots\cdots\cdots \\
+s_{n-1} &+ a_1 s_{n-2} + a_2 s_{n-3} + \cdots (n-1) a_{n-1} = 0.
+\end{aligned}
+\right.
+\]
+Hiebei ist unter $s_1, s_2, s_3 \ldots s_{n-1}$ die Summe aller ersten, zweiten,
+dritten, $\ldots$ $(n-1)^{\mathrm{ten}}$ Potenzen aller Wurzeln zu verstehen.
+
+Zu diesen Formeln (I) erhält man noch eine zweite Reihe Formeln für die
+höheren Potenzsummen auf folgende Weise. Man multiplicirt $f(x) = 0$ mit
+$x^m$, so kommt:
+\[
+x^{n+m} + a_1 x^{n+m-1} + a_2 x^{n+m-2} + \cdots a_n x^m = 0.
+\]
+Da diese Gleichung immer noch für jede der $n$ Wurzeln $\alpha_i$
+verschwindet, so erhält man hieraus:
+\[
+\alpha_i^{n+m} + a_1 \alpha_i^{n+m-1} + a_2 \alpha_i^{n+m-2} + \cdots a_n \alpha_i^m = 0.
+\]
+Setzt man $i = 1, 2, 3 \ldots n$ und addirt alle $n$ Relationen, so kommt:
+\[
+s_{n+m} + a_1 s_{n+m-1} + a_2 s_{n+m-2} + \cdots a_n s_m = 0.
+\]
+Für $m = 0, 1, 2 \ldots$ entstehen daraus, da $s_0 = n$, die Relationen:
+\[
+(\mathrm{II}) \quad
+\left\{
+\begin{aligned}
+s_n &+ a_1 s_{n-1} + a_2 s_{n-2} + \cdots n a_n = 0 \\
+s_{n+1} &+ a_1 s_n + a_2 s_{n-1} + \cdots a_n s_1 = 0 \\
+s_{n+2} &+ a_1 s_{n+1} + a_2 s_n + \cdots a_n s_2 = 0 \\
+& \cdots\cdots\cdots\cdots\cdots\cdots \\
+s_{n+m} &+ a_1 s_{n+m-1} \cdot\cdot\cdot + a_n s_m = 0.
+\end{aligned}
+\right.
+\]
+Von diesen Formeln (I) und (II) werden wir alsbald Gebrauch machen
+Sie sind linear in $s$ und in $a$ und man kann daher nach den in \S.\,8
+gegebenen Methoden in einfacher Weise sowohl die Werthe von $s_\varrho$ in
+Function der Coëfficienten $a_i$ als auch die Werthe von $a_i$ in Function
+der Potenzsummen $s_\varrho$ darstellen.
+
+168. \textit{Die Resultante als Product der Wurzeldifferenzen.} Es seien
+\[
+\overset{m}{f}(x) = 0 \quad \text{und} \quad \overset{n}{\varphi}(x) = 0
+\]
+zwei Gleichungen $m^{\mathrm{ten}}$, bezw. $n^{\mathrm{ten}}$ Grades, deren
+erste die Wurzeln
+\[
+\alpha_1, \quad \alpha_2, \quad \alpha_3 \ldots \alpha_m
+\]
+und deren zweite die Wurzeln
+\[
+\beta_1, \quad \beta_2, \quad \beta_3 \ldots \beta_n
+\]
+besitze. Wir können uns alsdann die Frage vorlegen, unter welcher
+%CONT>>
+
+
+% ===== pdf idx 194, printed 180.0 =====
+% !PRINTED 180
+\weberpage{180}
+%<<CONT
+Bedingung die beiden Gleichungen eine gemeinschaftliche Wurzel besitzen.
+Nun ist nach dem Gauss'schen Satze die Gleichung $f(x) = 0$ darstellbar
+in der Form
+\[
+(1) \qquad f(x) = (x - \alpha_1)(x - \alpha_2)(x - \alpha_3) \ldots (x - \alpha_m) = 0
+\]
+und ebenso
+\[
+(2) \qquad \varphi(x) = (x - \beta_1)(x - \beta_2)(x - \beta_3) \ldots (x - \beta_n) = 0.
+\]
+Substituiren wir in die erste Gleichung der Reihe nach die Wurzeln
+$\beta_\varrho$ der zweiten, so erhalten wir die Substitutionsresultate
+\[
+f(\beta_\varrho) = (\beta_\varrho - \alpha_1)(\beta_\varrho - \alpha_2)(\beta_\varrho - \alpha_3) \ldots (\beta_\varrho - \alpha_m),
+\]
+\[
+\varrho = 1, 2, 3 \ldots n.
+\]
+Ist irgend eine Wurzel $\beta_\varrho$ gleich einer Wurzel $\alpha_k$, so
+verschwindet $f(\beta_\varrho)$, und umgekehrt ist die nothwendige und
+hinreichende Bedingung, dass eine Wurzel $\beta_\varrho$ gleich einer
+Wurzel $\alpha_k$ sei, das Verschwinden des Productes:
+\[
+(3) \qquad f(\beta_1) \cdot f(\beta_2) \cdot f(\beta_3) \ldots f(\beta_n).
+\]
+Ganz ebenso drückt
+\[
+(4) \qquad \varphi(\alpha_1) \cdot \varphi(\alpha_2) \cdot \varphi(\alpha_3) \ldots \varphi(\alpha_m) = 0
+\]
+aus, dass $f$ und $\varphi$ eine gemeinschaftliche Wurzel besitzen.
+Bezeichnen wir das letzte Poduct (4) mit % [sic] Poduct
+\[
+\begin{aligned}
+U = {}& (\alpha_1 - \beta_1)(\alpha_1 - \beta_2)(\alpha_1 - \beta_3) \ldots (\alpha_1 - \beta_n) \times \\
+& (\alpha_2 - \beta_1)(\alpha_2 - \beta_2) \cdots\cdots (\alpha_2 - \beta_n) \times \\
+& \cdots\cdots\cdots\cdots\cdots\cdots \\
+& \times (\alpha_m - \beta_1)(\alpha_m - \beta_2)(\alpha_m - \beta_3) \ldots (\alpha_m - \beta_n),
+\end{aligned}
+\]
+welches sonach $m \cdot n$ lineare Factoren besitzt, so ist das
+vorhergehende Product (3) nichts anderes als $(-1)^{m \cdot n} U$
+(vergleiche auch Nr. 139). Nun hatten wir aber bereits früher (vergl.
+Nr. 131) eine in den Coëfficienten von $f$ und $\varphi$ rationale und
+ganze Function $R_{f,\varphi}$ aufgestellt, deren Verschwinden gleichfalls
+das Vorhandensein eines gemeinschaftlichen linearen Factors ankündigte.
+Unsere Aufgabe ist daher, den Zusammenhang zwischen $U$ und $R_{f,\varphi}$
+zu ermitteln. Es wird sich zeigen, dass direct die Beziehung besteht:
+\[
+U = R_{f,\varphi}.
+\]
+Wir geben im Folgenden drei Beweise für diese Behauptung.
+
+169. \textit{Erster Beweis.} Derselbe stützt sich auf den in Nr. 154
+aufgestellten Lehrsatz:
+\[
+R_{f,\varphi \cdot \psi} = R_{f,\varphi} \cdot R_{f,\psi}.
+\]
+
+
+% ===== pdf idx 195, printed 181.0 =====
+% !PRINTED 181
+\weberpage{181}
+Es ist nämlich, wegen $\varphi(x) = (x - \beta_1)(x - \beta_2) \ldots (x - \beta_n),$
+\[
+R_{f,\varphi} = R_{f,(x-\beta_1)(x-\kappa_2)\ldots(x-\beta_n)} = R_{f,x-\beta_1} \times R_{f,x-\beta_2} \times R_{f,x-\beta_3} \ldots \times R_{f,x-\beta_n}. % [sic] printed "κ_2" for β_2
+\]
+Nun ist aber allgemein:
+\[
+R_{f,x-\beta} =
+\begin{vmatrix}
+1 & a_1 & a_2 & a_3 & \cdots & a_m \\
+1 & -\beta & 0 & 0 & \cdots & 0 \\
+0 & 1 & -\beta & 0 & \cdots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & \cdots & 1 & -\beta & 0 \\
+0 & 0 & \cdots & 0 & 1 & -\beta
+\end{vmatrix}.
+\]
+Denken wir uns die erste Colonne mit $\beta^m$, die zweite mit
+$\beta^{m-1}$, die dritte mit $\beta^{m-2}$ u.\,s.\,w., die vorletzte mit
+$\beta$ multiplicirt und zur letzten addirt, so erhalten wir
+\[
+R_{f,x-\beta} =
+\begin{vmatrix}
+1 & a_1 & a_2 & a_3 & \cdots & f(\beta) \\
+1 & -\beta & 0 & 0 & \cdots & 0 \\
+0 & 1 & -\beta & 0 & \cdots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & \cdots & 1 & -\beta & 0 \\
+0 & 0 & \cdots & 0 & 1 & 0
+\end{vmatrix}
+= (-1)^m \cdot f(\beta).
+\]
+Folglich ist
+\[
+\begin{aligned}
+R_{f,\varphi} &= (-1)^{m \cdot n} \cdot f(\beta_1) \cdot f(\beta_2) \cdot f(\beta_3) \ldots f(\beta_n) \\
+&= \varphi(\alpha_1) . \varphi(\alpha_2) \ldots \varphi(\alpha_m) = U.
+\end{aligned}
+\]
+
+170. \textit{Zweiter Beweis.} Bildet man zunächst die Resultante von
+$f(x)$ und $\varphi(x) - y$, so erhält man:
+\[
+R_{f(x),\varphi(x)-y} =
+\begin{vmatrix}
+1 & a_1 & a_2 & a_3 & \cdots & a_m & 0 & 0 & \cdots & 0 \\
+0 & 1 & a_1 & a_2 & \cdots & \cdots & a_m & 0 & \cdots & 0 \\
+0 & 0 & 1 & a_1 & \cdots & \cdots & \cdots & a_m & \cdots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & a_m \\
+1 & b_1 & b_2 & \cdots & b_n - y & 0 & \cdots & \cdots & \cdots & 0 \\
+0 & 1 & b_1 & \cdots & \cdots & \cdots & b_n - y & \cdots & \cdots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & b_{n-1} & b_n - y
+\end{vmatrix}
+= F(y).
+\]
+Diese Resultante $F(y)$ ist in $y$ vom Grade $m$ und der Coëfficient der
+höchsten Potenz ist $(-1)^m$. Das constante Glied dieser Function $F(y)$
+%CONT>>
+
+
+% ===== pdf idx 196, printed 182.0 =====
+% !PRINTED 182
+\weberpage{182}
+%<<CONT
+erhält man aus dieser Determinante für $y = 0$. Es ist also gerade jene
+Function, die wir mit $R_{f,\varphi}$ früher bezeichnet hatten.
+Anderntheils ist aber nach den Beziehungen, die zwischen den
+Coëfficienten und Wurzeln einer Gleichung bestehen (vergl. Nr. 165 und
+166), dieses constante Glied in $F(y)$ bis aufs Vorzeichen $(-1)^m$
+gleich dem Producte aller Wurzeln von $F(y)$. Diese Wurzeln sind aber
+nichts anderes als die Grössen
+\[
+\varphi(\alpha_1), \quad \varphi(\alpha_2) \ldots \varphi(\alpha_m);
+\]
+denn die beiden Functionen
+\[
+f(x) = (x - \alpha_1)(x - \alpha_2) \ldots (x - \alpha_m) = 0
+\]
+und
+\[
+\varphi(x) - \varphi(\alpha_i) = 0
+\]
+haben den gemeinschaftlichen Factor $x - \alpha_i$, und folglich wird
+\[
+R_{f(x),\varphi(x)-y}
+\]
+für $y = \varphi(\alpha_i)$ identisch Null. Daher ist
+\[
+\frac{p_m}{(-1)^m} = \frac{R_{f,\varphi}}{(-1)^m} = (-1)^m \cdot \varphi(\alpha_1) \varphi(\alpha_2) \ldots \varphi(\alpha_m)
+\]
+oder
+\[
+R_{f,\varphi} = \varphi(\alpha_1) \varphi(\alpha_2) \varphi(\alpha_3) \ldots \varphi(\alpha_m) = U.
+\]
+
+171. \textit{Dritter Beweis.} Wir bilden uns einmal aus den Potenzen der
+Wurzeln die Matrices:
+\[
+(\mathrm{I}) \quad
+\begin{vmatrix}
+\alpha_1^{m+n-1}, & \alpha_1^{m+n-2}, & \cdots & \alpha_1^2 & \alpha_1 & 1 \\
+\alpha_2^{m+n-1}, & \alpha_2^{m+n-2}, & \cdots & \alpha_2^2 & \alpha_2 & 1 \\
+\alpha_3^{m+n-1}, & \cdots & \cdots & \cdots & \cdots & 1 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+\alpha_m^{m+n-1}, & \alpha_m^{m+n-2}, & \cdots & \alpha_m^2 & \alpha_m & 1
+\end{vmatrix}.
+\]
+\[
+(\mathrm{II}) \quad
+\begin{vmatrix}
+\beta_1^{m+n-1}, & \beta_1^{m+n-2}, & \beta_1^{m+n-3} & \cdots & \beta_1^2 & \beta_1 & 1 \\
+\beta_2^{m+n-1}, & \beta_2^{m+n-2}, & \beta_2^{m+n-3} & \cdots & \beta_2^2 & \beta_1 & 1 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+\beta_n^{m+n-1}, & \beta_n^{m+n-2}, & \beta_n^{m+n-3} & \cdots & \beta_n^2 & \beta_n & 1
+\end{vmatrix}
+\]
+% [sic] second row of (II) prints "$\beta_1$" for the final entry instead of "$\beta_2$"
+und ebenso aus den Coëfficienten von $f$ und $\varphi$ die Matrices
+\[
+(\mathrm{III}) \quad
+\begin{vmatrix}
+1 & a_1 & a_2 & a_3 & \cdots & a_m & 0 & 0 & \cdots & 0 \\
+0 & 1 & a_1 & a_2 & \cdots & \cdots & a_m & 0 & \cdots & 0 \\
+0 & 0 & 1 & a_1 & \cdots & \cdots & \cdots & a_m & \cdots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & 0 & \cdots & \cdots & \cdots & \cdots & \cdots & a_{m-1} & a_m
+\end{vmatrix}
+(n \text{ Zeilen}),
+\]
+
+
+% ===== pdf idx 197, printed 183.0 =====
+% !PRINTED 183
+\weberpage{183}
+\S.\,13. Zusammenhang der Resultante mit den Wurzeln der Gleichungen.
+
+\[
+\text{(IV)}\quad
+\left|\begin{array}{l}
+1\ \ b_1\ \ b_2\ \ b_3\ \ \ldots\ \ b_n\ \ 0\ \ 0\ \ \ldots\ \ 0\\
+0\ \ 1\ \ b_1\ \ b_2\ \ \ldots\ldots\ \ b_n\ \ 0\ \ \ldots\ \ 0\\
+0\ \ 0\ \ 1\ \ b_1\ \ \ldots\ldots\ldots\ \ b_n\ \ \ldots\ \ 0\\
+\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\\
+0\ \ 0\ \ 0\ \ \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ b_{n-1}\ \ b_n
+\end{array}\right|
+\quad (m\text{ Zeilen}).
+\]
+Die Matrices (I) und (III) sowohl als auch die Matrices (II) und (IV)
+sind hiebei correspondirende Matrices; denn wenn wir (I) mit (III)
+und (II) mit (IV) durch Multiplication von Zeile mit Zeile zu je einer
+Matrix verbinden, so entstehen in beiden Fällen Matrices, deren Elemente durchwegs verschwinden.
+
+Sind daher die Grössen $\rho$ und $\sigma$ Proportionalitätsfactoren, so bestehen (vergl. Nr. 92), wenn wir die Determinanten der Matrices
+(I) und (II) mit $\Delta(\alpha)$, $\Delta(\beta)$, die der correspondirenden Matrices (III)
+und (IV) mit $\Delta(a)$, $\Delta(b)$ bezeichnen, die Relationen
+\[
+\Delta(\alpha) = (-1)^\nu\cdot\rho\cdot\Delta(a),
+\]
+\[
+\Delta(\beta) = (-1)^\mu\cdot\sigma\cdot\Delta(b).
+\]
+Dabei sind $\nu$ und $\mu$ die Summen der Doppelindices des Diagonalgliedes in $\Delta(\alpha)$ bezw. $\Delta(\beta)$.
+
+172. Nehmen wir als Determinante $\Delta(a)$ die Determinante $\Delta_1(a)$
+der $n$ ersten Colonnen in Matrix (III) heraus, so ist die correspondirende die Determinante
+\[
+(-1)^\nu\Delta_1(\alpha) =
+\left|\begin{array}{l}
+\alpha_1^{m-1},\ \ \alpha_1^{m-2},\ \ \ldots\ \ \alpha_1^{2}\ \ \alpha_1\ \ 1\\
+\alpha_2^{m-1},\ \ \alpha_2^{m-2},\ \ \ldots\ \ \alpha_2^{2}\ \ \alpha_2\ \ 1\\
+\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\\
+\alpha_m^{m-1},\ \ \alpha_m^{m-2},\ \ \ldots\ \ \alpha_m^{2}\ \ \alpha_m\ \ 1
+\end{array}\right|
+= \Delta_\alpha.
+\]
+Die Determinante $\Delta_1(a)$ hat aber den Werth 1; folglich erhalten wir
+für den Proportionalitätsfactor $\rho$ den Werth
+\[
+\Delta_1(\alpha) = \Delta_\alpha = (-1)^\nu\cdot\rho\cdot\Delta_1(a) = \rho,
+\]
+weil
+\[
+\nu = 2\sum_{k=n}^{n+m} k,
+\]
+also jedenfalls eine gerade Zahl ist. Ebenso ergiebt sich
+\[
+\sigma = \Delta_\beta.
+\]
+Setzt man nun einestheils die Matrices (I) und (II) zur Matrix einer
+Determinante zusammen:
+%CONT>>
+
+
+% ===== pdf idx 198, printed 184.0 =====
+% !PRINTED 184
+\weberpage{184}
+%<<CONT
+184\quad Zweiter Theil. Anwendungen der Determinantentheorie.
+
+\[
+\Delta =
+\left|\begin{array}{l}
+\alpha_1^{m+n-1},\ \ \alpha_1^{m+n-2},\ \ \alpha_1^{m+n-3},\ \ \ldots\ \ \alpha_1^{2}\ \ \alpha_1\ \ 1\\
+\alpha_2^{m+n-1},\ \ \alpha_2^{m+n-2},\ \ \alpha_2^{m+n-3},\ \ \ldots\ \ \alpha_2^{2}\ \ \alpha_2\ \ 1\\
+\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\\
+\alpha_m^{m+n-1},\ \ \alpha_m^{m+n-2},\ \ \alpha_m^{m+n-3},\ \ \ldots\ \ \alpha_m^{2}\ \ \alpha_m\ \ 1\\
+\beta_1^{m+n-1},\ \ \beta_1^{m+n-2},\ \ \beta_1^{m+n-3},\ \ \ldots\ \ \beta_1^{2}\ \ \beta_1\ \ 1\\
+\beta_2^{m+n-1},\ \ \beta_2^{m+n-2},\ \ \ldots\ldots\ldots\ldots\ldots\ldots\\
+\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\\
+\beta_n^{m+n-1},\ \ \beta_n^{m+n-2},\ \ \beta_n^{m+n-3},\ \ \ldots\ \ \beta_n^{2}\ \ \beta_n\ \ 1
+\end{array}\right|
+\]
+und ebenso die Matrices (III) und (IV) zur Matrix der Determinante
+\[
+D =
+\left|\begin{array}{l}
+1\ \ a_1\ \ a_2\ \ a_3\ \ \ldots\ \ a_m\ \ 0\ \ \ldots\ \ 0\\
+0\ \ 1\ \ a_1\ \ a_2\ \ \ldots\ldots\ldots\ \ a_m\ \ \ldots\ \ 0\\
+\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\\
+0\ \ 0\ \ \ldots\ldots\ldots\ldots\ldots\ldots\ \ a_m\\
+1\ \ b_1\ \ b_2\ \ b_3\ \ \ldots\ \ b_n\ \ 0\ \ \ldots\\
+0\ \ 1\ \ b_1\ \ \ldots\ldots\ \ b_{n-1}\ \ b_n\ \ \ldots\ \ 0\\
+\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\\
+0\ \ 0\ \ \ldots\ldots\ldots\ldots\ldots\ldots\ \ b_n
+\end{array}\right|\ ,
+\]
+so besitzt die erste Determinante den Werth
+\[
+\Delta = \Delta_\alpha\cdot\Delta_\beta\cdot U,
+\]
+denn sie verschwindet 1) für $\alpha_i=\alpha_k$, 2) für $\beta_i=\beta_k$, 3) für $\alpha_i=\beta_k$.
+Die zweite Determinante erkennt man aber unmittelbar als die Resultante $R_{f,\varphi}$. Entwickeln wir diese Resultante $R_{f,\varphi}$ nach den
+Determinanten der ersten $n$ Zeilen gemäss dem \gesperrt{Laplace'schen}
+Satze, so ist ihr Werth dargestellt in der Form
+\[
+R_{f,\varphi} = \sum{}'(-1)^{\bar\nu}\cdot\Delta(a)\cdot\Delta(b)\,,
+\]
+wo $\nu$ stets als Summe aller Doppelindices des Diagonalgliedes in
+$\Delta(a)$ genommen werden kann.
+
+Ersetzen wir hierin $\Delta(a)$ durch
+\[
+\dfrac{\Delta(\alpha)}{(-1)^\nu\cdot\Delta_\alpha}
+\]
+und $\Delta(b)$ durch
+\[
+\dfrac{\Delta(\beta)}{(-1)^\mu\cdot\Delta_\beta}\,,
+\]
+%CONT>>
+
+
+% ===== pdf idx 199, printed 185.0 =====
+% !PRINTED 185
+\weberpage{185}
+\S.\,14. Die Discriminante. 185
+
+%<<CONT
+so erhalten wir
+\[
+R_{f,\varphi} = \sum{}'\dfrac{(-1)^{\bar\nu}\cdot\Delta(\alpha)\cdot\Delta(\beta)}{(-1)^{\mu+\nu}\cdot\Delta_\alpha\cdot\Delta_\beta}
+= \dfrac{1}{\Delta_\alpha\cdot\Delta_\beta}\cdot\sum{}'(-1)^{\bar\nu}\Delta(\alpha)\Delta(\beta);
+\]
+denn $(-1)^{\mu+\nu}=+1$, da $\Delta(a)$ und $\Delta(b)$ correspondirende Determinanten und somit die Summe aller Doppelindices ihrer Diagonalglieder gleich der doppelten Summe aller ersten oder zweiten Indices derselben ist. Die Summe
+\[
+\sum{}'(-1)^{\bar\nu}\Delta(\alpha)\Delta(\beta)
+\]
+ist aber nichts anderes, als die \gesperrt{Laplace'sche} Entwicklung der
+Determinante $\Delta$; daher erhalten wir die Relation
+\[
+R_{f,\varphi} = \dfrac{1}{\Delta_\alpha\cdot\Delta_\beta}\cdot\Delta = U.
+\]
+
+\begin{center}
+\S.\,14.\quad\textbf{Die Discriminante.}
+\end{center}
+
+173. \textit{Definition der Discriminante.} Denken wir uns einen Augenblick die Function $n^{\text{ten}}$ Grades
+\[
+f(x) = x^n + a_1x^{n-1} + a_2x^{n-2} + \cdots a_{n-1}x + a_n
+\]
+homogen gemacht in den Variabeln $x_1$ und $x_2$, so können wir, wenn man
+\[
+\frac{1}{n}\frac{\partial f}{\partial x_1} = f_1 \quad\text{und}\quad \frac{1}{n}\frac{\partial f}{\partial x_2} = f_2
+\]
+setzt, gemäss dem \gesperrt{Euler'schen} Satze $f$ auch in der Form
+schreiben:
+\[
+f = x_1f_1 + x_2f_2\,.
+\]
+Wir definiren nun als Discriminante der Function $f$ die Resultante
+von $f$, $f_1$ und schreiben
+\[
+R_{f_1,f} = \Delta_f\,.
+\]
+Gemäss zweier Eigenschaften der Resultante (vgl. Nr. 146) ist
+\[
+R_{f_1,f} = R_{f_1,\,x_1f_1+x_2f_2} = \rho\cdot R_{f_1,f_2} = \Delta_f\,,
+\]
+d. h. die Discriminante ist auch die Resultante der beiden ersten Differentialquotienten nach $x_1$ und $x_2$ bis auf eine Constante $\rho$, welche
+hier $= 1$ ist.
+
+Aus der Definition der Discriminante als Resultante folgt einmal,
+dass sie eine homogene ganze Function der Co\"efficienten $a_0\,a_1\ldots a_m$
+vom Grade $2(m-1)$ ist; denn $\Delta_f = R_{f_1,f_2}$; $f_1$ und $f_2$ sind aber beide
+vom Grade $(m-1)$ in $x$ (vergl. Nr. 131). Betrachtet man anderntheils
+die Discriminante als Resultante von $f$ und $f_1$, so folgt als
+%CONT>>
+
+
+% ===== pdf idx 200, printed 186.0 =====
+% !PRINTED 186
+\weberpage{186}
+186\quad Zweiter Theil. Anwendungen der Determinantentheorie.
+
+%<<CONT
+Gewicht dieser isobaren Function der Co\"efficienten das Product der
+Grade beider Functionen $f$ und $f_1$, also die Zahl $m(m-1)$ (vergl.
+Nr. 141).
+
+174. \textit{Berechnung der Discriminante.} Aus der Definition
+\[
+\Delta_f = R_{f_1,\,f} = (-1)^{n(n-1)}R_{f,f_1} = R_{f,f_1}
+\]
+erhält man unmittelbar den Werth der Discriminante ausgedrückt in
+den Wurzeln der gleich Null gesetzten Function $f(x)$. Es ist nämlich
+nach Nr. 168, (4)
+\[
+R_{f,f_1} = f_1(\alpha_1)\cdot f_1(\alpha_2)\cdot f_1(\alpha_3)\ldots f_1(\alpha_n)\,.
+\]
+Nun ist aber, wenn wir uns $f$ als Product seiner linearen Factoren
+denken:
+\[
+f_1(x) = \frac{1}{n}\frac{\partial f}{\partial x_1}
+= \frac{1}{n}\sum{}'(x-\alpha_1)(x-\alpha_2)\ldots(x-\alpha_{k-1})(x-\alpha_{k+1})\ldots(x-\alpha_n)\,,
+\]
+wobei sich die Summe über alle jene Producte erstreckt, die irgend
+einen der $n$ linearen Factoren nicht enthalten. Trägt man nun aber
+an Stelle von $x$ eine Wurzel $\alpha_k$ der Gleichung ein, so reducirt sich
+diese Summe auf das eine Product, in welchem der lineare Factor
+\[
+(x - \alpha_k)
+\]
+von vornherein fehlte. Es ist daher
+\[
+f_1(\alpha_k) = \frac{1}{n}(\alpha_k-\alpha_1)(\alpha_k-\alpha_2)\ldots(\alpha_k-\alpha_{k-1})(\alpha_k-\alpha_{k+1})\ldots(\alpha_k-\alpha_n)
+\]
+und folglich:
+\[
+\begin{gathered}
+R_{f,f_1} = \dfrac{1}{n^n}(\alpha_1-\alpha_2)(\alpha_1-\alpha_3)\ldots(\alpha_1-\alpha_n)\times(\alpha_2-\alpha_1)(\alpha_2-\alpha_3)\ldots(\alpha_2-\alpha_n)\times{}\\
+{}\times(\alpha_3-\alpha_1)(\alpha_3-\alpha_2)(\alpha_3-\alpha_4)\ldots(\alpha_3-\alpha_n)\ldots(\alpha_n-\alpha_1)(\alpha_n-\alpha_2)\ldots(\alpha_n-\alpha_{n-1})\,.
+\end{gathered}
+\]
+In diesem Producte tritt aber jede Differenz zweimal auf, einmal
+positiv und einmal negativ, und da man aus $n$ Elementen $\dfrac{n(n-1)}{2}$
+solche Differenzen bilden kann, so ist:
+\weq{I}{\Delta_f = R_{f,f_1} = \dfrac{(-1)^{\frac{n(n-1)}{2}}}{n^n}\cdot\prod_{\substack{i=1\\k=2}}^{\substack{i=n-1\\k=n}}(\alpha_i-\alpha_k)^2\,,\quad i<k.}
+Anderntheils erhält man den Werth der Discriminante in Function
+der Co\"efficienten von $f$, wegen
+\[
+\Delta_f = R_{f_1,f_2}\,,
+\]
+ausgedrückt durch die Determinante:
+%CONT>>
+
+
+% ===== pdf idx 201, printed 187.0 =====
+% !PRINTED 187
+\weberpage{187}
+%<<CONT
+% [column spec widened array 9->10] a row carried more cells than the spec declared,
+% which is a fatal alignment error. The spec was widened rather than a cell
+% deleted, so no transcribed content is lost; whether Weber's grid really has
+% that many columns is a question for a pass with the scan open.
+
+\S.\,14. Die Discriminante.
+
+\[
+R_{f_1,f_2} =
+\left|
+\begin{array}{cccccccccc}
+1, & \dfrac{n-1}{n}a_1, & \dfrac{n-2}{n}a_2 & \cdots & \dfrac{a_{n-1}}{n} & 0 & 0 & \cdots & 0 \\[2ex]
+0 & 1, & \dfrac{n-1}{n}a_1 & \cdots & \cdots & \dfrac{a_{n-1}}{n}, & 0 & \cdots & 0 \\[2ex]
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\[1ex]
+0 & 0 & \cdots & \cdots & 1, & \dfrac{n-1}{n}a_1, & \dfrac{n-2}{n}a_2 & \cdot & \dfrac{a_{n-1}}{n} \\[2ex]
+\dfrac{a_1}{n} & \dfrac{2a_2}{n} & \dfrac{3a_3}{n} & \cdots & \cdots & a_n & 0 & 0 & \cdots & 0 \\[2ex]
+0 & \dfrac{a_1}{n} & \dfrac{2a_2}{n} & \cdots & \dfrac{(n-1)}{n}a_{n-1}, & a_n & 0 & \cdots & 0 \\[2ex]
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\[1ex]
+0 & 0 & \cdots & \cdots & \dfrac{a_1}{n} & \dfrac{2a_2}{n} & \cdots & \dfrac{(n-1)}{n}a_{n-1}, & a_n
+\end{array}
+\right| \tag{II}
+\]
+
+Wir haben somit die Discriminante von $f$ in zwei verschiedenen Formen ausgedrückt und wollen im Folgenden noch zwei weitere Beweise geben für die Uebereinstimmung der Ausdrücke (II) und (I).
+
+175. \gesperrt{Zweiter Beweis.} Wir wissen (vgl. Nr.\,40 Beispiel 2 und 3), dass das Differenzenproduct
+\[
+P = (\alpha_1 - \alpha_2)(\alpha_1 - \alpha_3)(\alpha_1 - \alpha_4) \cdots (\alpha_1 - \alpha_n) \times
+\]
+\[
+(\alpha_2 - \alpha_3)(\alpha_2 - \alpha_4) \cdots (\alpha_2 - \alpha_n) \times
+\]
+\[
+\cdots \cdots \cdots \cdots
+\]
+\[
+(\alpha_{n-2} - \alpha_{n-1})(n-2 - \alpha_n) \times % [sic] printed without alpha before "n-2" in the second factor
+\]
+\[
+(\alpha_{n-1} - \alpha_n)
+\]
+sich darstellen lässt durch die Determinante:
+\[
+P =
+\left|
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & \cdots & 1 \\
+\alpha_1 & \alpha_2 & \alpha_3 & \alpha_4 & \cdots & \alpha_n \\
+\alpha_1^2 & \alpha_2^2 & \alpha_3^2 & \alpha_4^2 & \cdots & \alpha_n^2 \\
+\alpha_1^3 & \alpha_2^3 & \cdot & \cdot & \cdot & \alpha_n^3 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+\alpha_1^{n-1} & \alpha_2^{n-1} & \alpha_3^{n-1} & \alpha_4^{n-1} & \cdot\cdot & \alpha_n^{n-1}
+\end{array}
+\right| .
+\]
+Bezeichnen wir nun die Summe der $\nu^{\mathrm{ten}}$ Potenzen aller Wurzeln mit $s_\nu$, setzen also wie früher (Nr.\,168)
+\[
+s_\nu = \alpha_1^{\ \nu} + \alpha_2^{\ \nu} + \alpha_3^{\ \nu} + \cdots + \alpha_n^{\ \nu},
+\]
+so ist das Quadrat dieser Determinante, das wir durch Multiplication von Zeile mit Zeile bilden wollen, gegeben in der neuen Determinante:
+%CONT>>
+
+
+% ===== pdf idx 202, printed 188.0 =====
+% !PRINTED 188
+\weberpage{188}
+%<<CONT
+% [column spec widened array 8->9] a row carried more cells than the spec declared,
+% which is a fatal alignment error. The spec was widened rather than a cell
+% deleted, so no transcribed content is lost; whether Weber's grid really has
+% that many columns is a question for a pass with the scan open.
+
+Zweiter Theil. Anwendungen der Determinantentheorie.
+
+\[
+P^2 =
+\left|
+\begin{array}{ccccc}
+s_0 & s_1 & s_2 & \cdots & s_{n-1} \\
+s_1 & s_2 & s_3 & \cdots & s_n \\
+s_2 & s_3 & s_4 & \cdots & s_{n+1} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+s_{n-1} & s_n & s_{n+1} & \cdot\cdot & s_{2n-2}
+\end{array}
+\right| .
+\]
+Wir wollen nun dieselbe so umformen, dass sie mit Hilfe der Newton\-schen Formeln in die Determinante (II) Nr.\,174, bis auf einen Zahlenfactor übergeht.
+
+176. Stürzen wir nun zunächst die Matrix der $(n-1)$ ersten Zeilen der Determinante $P^2$. Da hiebei alle Elemente in ihren Colonnen bleiben, also in den zweiten Indices keine Derangements entstehen, so ändert sich hiebei das Vorzeichen um $(-1)^\nu$, hiebei ist $\nu$ gleich der Summe aller Derangements der $n-1$ ersten Indices dieser Matrix, also
+\[
+\nu = \sum_{k=1}^{k=n-2} k = \dfrac{(n-1)(n-2)}{2} .
+\]
+Multipliciren wir hierauf die letzte Zeile noch mit $(-1)$, so erhalten wir
+\[
+(-1)^{\frac{(n-1)(n-2)}{2}+1} \cdot P^2 =
+\left|
+\begin{array}{ccccc}
+s_{n-2} & s_{n-1} & s_n & \cdots & s_{2n-3} \\
+s_{n-3} & s_{n-2} & s_{n-1} & \cdots & s_{2n-4} \\
+s_{n-4} & \cdot & \cdot & \cdot & s_{2n-5} \\
+\cdot & \cdot & \cdot & \cdot & \cdot \\
+s_0 & s_1 & s_2 & \cdots & s_{n-1} \\
+-s_{n-1} & -s_n & -s_{n+1} & \cdots & -s_{2n-2}
+\end{array}
+\right| .
+\]
+Diese Determinante ist aber der eine der beiden Factoren, in welche die Determinante
+\[
+D =
+\left|
+\begin{array}{ccccccccc}
+s_0 & s_1 & s_2 & \cdots & s_{n-2} & s_{n-1} & s_n & \cdots & s_{2n-3} \\
+0 & s_0 & s_1 & \cdots & s_{n-3} & s_{n-2} & \cdot & \cdot & s_{2n-4} \\
+0 & 0 & s_0 & \cdots & s_{n-4} & \cdot & \cdot & \cdot & s_{2n-5} \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & \cdots & \cdots & s_0 & s_1 & s_2 & \cdots & s_{n-1} \\
+-s_1 & -s_2 & -s_3 & \cdots & -s_{n-1} & -s_n & -s_{n+1} & \cdots & -s_{2n-2} \\
+s_0 & 0 & 0 & \cdots & 0 & 0 & 0 & \cdots & 0 \\
+0 & s_0 & 0 & \cdots & 0 & 0 & 0 & \cdots & 0 \\
+0 & 0 & s_0 & \cdots & 0 & 0 & 0 & \cdots & 0 \\
+\cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
+0 & 0 & 0 & \cdots & s_0 & 0 & 0 & \cdots & 0
+\end{array}
+\right|
+\]
+gemäss dem Laplace'schen Satze zerfällt.
+
+
+% ===== pdf idx 203, printed 189.0 =====
