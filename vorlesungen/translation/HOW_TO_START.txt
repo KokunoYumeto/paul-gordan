@@ -1,0 +1,19 @@
+HOW TO START (about two minutes; after that Claude works on its own)
+
+1. Unzip this folder somewhere, for example on your desktop.
+
+2. Optional, to use your Anthropic API credit instead of your normal Claude usage: copy an API key from
+   https://console.anthropic.com/settings/keys and set it in the terminal you start Claude Code from.
+     Windows (PowerShell):  $env:ANTHROPIC_API_KEY = "sk-ant-..."
+     Mac / Linux:           export ANTHROPIC_API_KEY="sk-ant-..."
+   Never paste the key into the chat.
+
+3. Open Claude Code in this folder (in the same terminal: cd into the folder and type: claude
+   or, in the Claude desktop app, open the Code tab and choose this folder). Pick the strongest model and the
+   highest effort setting, and paste this:
+
+   Read INSTRUCTIONS.md in this folder and follow it.
+
+Claude explains what it will do and asks once whether that is OK. After your yes it works through to the end and
+makes gordan_vorlesungen_en.zip, which you send back by WhatsApp. If it stops on a usage limit, open it again in this
+folder later and say: continue
