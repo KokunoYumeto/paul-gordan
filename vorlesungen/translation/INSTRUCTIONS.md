@@ -33,16 +33,17 @@ in 9 parts (vol. I pp. 1–28 are already in English). Do vol. II first, then vo
    > Anthropic API credit if your API key is set (it stays under €200 and I check the cost after every batch) and
    > otherwise your normal Claude usage; check the translation against the original; and put the result in one zip
    > that you can send back. I install nothing, upload nothing and touch nothing outside this folder.
-   > I assume you're okay with me doing this; this is what your mate asked me to do. I also assume you want me to use
-   > your API credit (I stay under €200). If you'd rather I use your normal Claude usage instead, say so now and I'll
-   > use that. Or, if you'd rather do this later, for example at the end of your week with whatever usage you have
-   > left over, say so: I'll stop now, and you open me in this folder then and say "start". Otherwise just say yes
-   > and I'll begin.
+   > I assume you're okay with me doing this; this is what your mate asked me to do. I'll do it one of three ways:
+   > 1. I use your API credit now (I stay under €200). That's what I'll do if you just say yes.
+   > 2. I use your normal Claude usage now instead. Tell me if you prefer that.
+   > 3. I wait until <date X>, the day before your weekly usage resets, and then use up whatever usage you have left.
+   >    Tell me if you prefer that; on that day, open me in this folder and say "start".
 
-   If no `ANTHROPIC_API_KEY` is set, add: "To use your API credit I need your API key set as in step 2 of
-   HOW_TO_START.txt; set it and start me again, or tell me to use your normal usage." Their answer chooses the way:
-   API credit (way A), normal usage (way B), or stop and wait for "start". This message is not repeated on "start" or
-   "continue".
+   For <date X>, use the weekly reset date if your environment shows it (for example a usage tool); if it does not,
+   write "the day before your weekly usage resets (type /usage in Claude Code to see the date)". If no
+   `ANTHROPIC_API_KEY` is set, add to option 1: "For this, set your API key as in step 2 of HOW_TO_START.txt and
+   start me again." Their answer chooses the way: API credit (way A), normal usage (way B), or stop and wait for
+   "start" (then way B, until the usage runs out). This message is not repeated on "start" or "continue".
 2. **Only if the API credit runs out** (see way A), ask exactly:
    > I used up most of the API credit, and it would not be smart to continue, because then it might go over the €200
    > credit. Would you like me to continue using your normal weekly credit amount? I will only continue if you confirm.
