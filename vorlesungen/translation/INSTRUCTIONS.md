@@ -24,6 +24,14 @@ in 9 parts (vol. I pp. 1–28 are already in English). Do vol. II first, then vo
 
 ## Talking to the person: three messages only
 
+0. **Before anything else, check your settings.** You must run on the most capable model at the highest effort
+   ("max"). Check what you can see of your own model and effort (in Claude Code the model is named in your system
+   information; `/model` shows and sets both). If you are not on max, or cannot confirm that you are, tell the person
+   exactly this and wait until they have changed it:
+   > Please set me to max (in Claude Code: type /model, choose Opus and the highest effort). This is literally
+   > advanced mathematics; I need to be on max to make sure this is as accurate as possible.
+
+   Then continue with message 1. Do not start any work below a max setting.
 1. **First, before any work:** explain in plain, friendly words what this is, so they know it is harmless, then ask
    once for their go-ahead. For example:
    > Your mate sent you a kit for translating an old German maths book (Paul Gordan's lectures on invariant theory,
