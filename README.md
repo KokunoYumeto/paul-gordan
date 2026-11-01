@@ -5,14 +5,14 @@ typeset in LaTeX from scans of the prints, and English translations.
 
 | Work | Original | English | Status |
 | --- | --- | --- | --- |
-| *De linea geodetica*, dissertation (Berlin, 1862) | [Latin PDF](de-linea-geodetica/pdf/Gordan_De_linea_geodetica_Latin.pdf) | [PDF](de-linea-geodetica/pdf/Gordan_De_linea_geodetica_English.pdf) | complete, with [apparatus](de-linea-geodetica/pdf/Gordan_De_linea_geodetica_Apparatus.pdf) |
-| *Ueber die Transformation der Θ-Functionen*, Habilitationsschrift (Gießen, 1863) | [German PDF](thetafunctionen/pdf/Gordan_Thetafunctionen_German.pdf) | [PDF](thetafunctionen/pdf/Gordan_Thetafunctionen_English.pdf) | complete, with [apparatus](thetafunctionen/pdf/Gordan_Thetafunctionen_Apparatus.pdf) |
-| A. Clebsch and P. Gordan, *Theorie der Abelschen Functionen* (Leipzig: Teubner, 1866) | [German PDF](abelsche-functionen/pdf/Clebsch_Gordan_Abelsche_Functionen_German.pdf) | [PDF](abelsche-functionen/pdf/Clebsch_Gordan_Abelsche_Functionen_English.pdf) | complete |
-| *Ueber das Formensystem binaerer Formen* (Leipzig: Teubner, 1875) | [German PDF](formensystem/pdf/Gordan_Formensystem_German.pdf) | [PDF](formensystem/pdf/Gordan_Formensystem_English.pdf) | complete |
-| *Vorlesungen über Invariantentheorie*, ed. G. Kerschensteiner, vol. I, *Determinanten* (1885) | [German PDF](vorlesungen/pdf/Gordan_Vorlesungen_Band_I_German.pdf) | [pp. 1–28](vorlesungen/pdf/Gordan_Vorlesungen_Band_I_pp001-028_English.pdf) | German: first transcription, complete; English: pages 1–28 |
-| *Vorlesungen über Invariantentheorie*, vol. II, *Binäre Formen* (1887) | [German PDF](vorlesungen/pdf/Gordan_Vorlesungen_Band_II_German.pdf) | — | German: complete; collated in part with a second transcription |
+| *De linea geodetica*, dissertation (Berlin, 1862) | [Latin PDF](de-linea-geodetica/pdf/Gordan_De_linea_geodetica_Latin.pdf) · [LaTeX](de-linea-geodetica/tex/latin) | [PDF](de-linea-geodetica/pdf/Gordan_De_linea_geodetica_English.pdf) · [LaTeX](de-linea-geodetica/tex/english) | complete, with [apparatus](de-linea-geodetica/pdf/Gordan_De_linea_geodetica_Apparatus.pdf) ([LaTeX](de-linea-geodetica/tex/apparatus)) |
+| *Ueber die Transformation der Θ-Functionen*, Habilitationsschrift (Gießen, 1863) | [German PDF](thetafunctionen/pdf/Gordan_Thetafunctionen_German.pdf) · [LaTeX](thetafunctionen/tex/Gordan_Thetafunctionen_German.tex) | [PDF](thetafunctionen/pdf/Gordan_Thetafunctionen_English.pdf) · [LaTeX](thetafunctionen/tex/Gordan_Thetafunctionen_English.tex) | complete, with [apparatus](thetafunctionen/pdf/Gordan_Thetafunctionen_Apparatus.pdf) ([LaTeX](thetafunctionen/tex/Gordan_Thetafunctionen_Apparatus.tex)) |
+| A. Clebsch and P. Gordan, *Theorie der Abelschen Functionen* (Leipzig: Teubner, 1866) | [German PDF](abelsche-functionen/pdf/Clebsch_Gordan_Abelsche_Functionen_German.pdf) · [LaTeX](abelsche-functionen/tex/Clebsch_Gordan_Abelsche_Functionen_German.tex) | [PDF](abelsche-functionen/pdf/Clebsch_Gordan_Abelsche_Functionen_English.pdf) · [LaTeX](abelsche-functionen/tex/Clebsch_Gordan_Abelsche_Functionen_English.tex) | complete |
+| *Ueber das Formensystem binaerer Formen* (Leipzig: Teubner, 1875) | [German PDF](formensystem/pdf/Gordan_Formensystem_German.pdf) · [LaTeX](formensystem/tex/Gordan_Formensystem_German.tex) | [PDF](formensystem/pdf/Gordan_Formensystem_English.pdf) · [LaTeX](formensystem/tex/Gordan_Formensystem_English.tex) | complete |
+| *Vorlesungen über Invariantentheorie*, ed. G. Kerschensteiner, vol. I, *Determinanten* (1885) | [German PDF](vorlesungen/pdf/Gordan_Vorlesungen_Band_I_German.pdf) · [LaTeX](vorlesungen/tex/Gordan_Vorlesungen_Band_I_German.tex) | [pp. 1–28](vorlesungen/pdf/Gordan_Vorlesungen_Band_I_pp001-028_English.pdf) · [LaTeX](vorlesungen/tex/Gordan_Vorlesungen_Band_I_pp001-028_English.tex) | German: first transcription, complete; English: pages 1–28 |
+| *Vorlesungen über Invariantentheorie*, vol. II, *Binäre Formen* (1887) | [German PDF](vorlesungen/pdf/Gordan_Vorlesungen_Band_II_German.pdf) · [LaTeX](vorlesungen/tex/Gordan_Vorlesungen_Band_II_German.tex) | — | German: complete; collated in part with a second transcription |
 
-The LaTeX sources are in the `tex/` folder of each work.
+Each PDF has its LaTeX source beside it in the table; all sources are in the `tex/` folder of each work.
 
 ## Quality and completeness
 
