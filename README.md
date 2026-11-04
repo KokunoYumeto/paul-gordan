@@ -70,11 +70,6 @@ Run `pdflatex` twice on each source: in the `tex/` folders, and for *De linea ge
 Gordan's and Clebsch's texts are in the public domain, as is Kerschensteiner's editorial work on the *Vorlesungen*.
 The transcriptions, translations and typesetting are dedicated to the public domain under [CC0 1.0](LICENSE).
 
-## Earlier versions
-
-Earlier versions were published on Zenodo, [doi:10.5281/zenodo.20616260](https://doi.org/10.5281/zenodo.20616260).
-Zenodo has blocked access to our account, so please use this repository from now on.
-
 ---
 
 [Sponsor this work](https://github.com/sponsors/KokunoYumeto)
