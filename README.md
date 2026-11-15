@@ -46,12 +46,12 @@ To help translate the rest of the *Vorlesungen* with your own Claude, see [vorle
 ## How it was made
 
 The complete German transcriptions of both volumes of the *Vorlesungen* were made by Claude (Anthropic) in August
-2026: Claude Sonnet 5 (effort not recorded) agents in Claude Code workflows, one printed page per agent. The second transcription of volume
+2026: Claude Sonnet 5 agents at effort max (the user's default then) in Claude Code workflows, one printed page per agent. The second transcription of volume
 II, pages 1–192, used for the collation, and the first draft of its front matter were made with OpenAI models in
-ChatGPT; the disagreements and the front matter were checked against the scan by Claude Opus 5.5 (Anthropic, effort not recorded) agents on
+ChatGPT; the disagreements and the front matter were checked against the scan by Claude Opus 5.5 (Anthropic) agents at effort max on
 27 October 2026. All other texts, including the German and English of volume I, pages 1–28, were transcribed from
 scans, and translated, by AI (OpenAI models in ChatGPT and Codex). The spot check and corrections of 27 October 2026
-were made by Claude Opus 5.5 (Anthropic, effort not recorded).
+were made by Claude Opus 5.5 (Anthropic) at effort max.
 
 ## Sources
 
